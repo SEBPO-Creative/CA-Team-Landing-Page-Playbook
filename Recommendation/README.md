@@ -27,7 +27,7 @@ Team Leader: Responsible for overseeing the entire process and ensuring that the
 - Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/) 
 - To ensure consistency and avoid style conflicts, production must exclusively utilize Blaze UI and CitrusStylesSE CSS framework from CDN. Inline styles and external CSS files are prohibited.
 
-### Naming Convention: 
+### Naming Convention:
 - The team should utilize BEM methodologies and SMACSS architecture to organize their CSS and CSS rules.
 - To prevent conflicts with existing code, always use the `CitrusStylesSE` prefix when naming classes, IDs, functions, variables, and other CSS elements in your stylesheets. This will help differentiate your styles from those already present in the codebase, making it easier to manage and maintain the code. For example, instead of using a class name like `.button`, use `.CitrusStylesSE-button`. Similarly, instead of using an ID like `#header`, use `#CitrusStylesSE-header`. This convention will help ensure that your styles don't accidentally override existing styles or cause unintended consequences. Remember, consistency is key when it comes to writing clean, maintainable code. By following this convention, you'll make it easier for yourself and others to understand and modify the code in the future.
 
