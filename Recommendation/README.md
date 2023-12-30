@@ -1,87 +1,123 @@
-<p align="center">
-  <a href="https://docsify.js.org">
-    <img alt="docsify" src="./docs/_media/icon.svg">
-  </a>
-</p>
+# SOP for CitrusAd Team’s Landing Page Standard Coding, Testing, and Deployment
 
-<p align="center">
-  A magical documentation site generator.
-</p>
+### Document Control Information
+- Creation Date: Monday, 25 December 2023
+- Last Update: Monday, 26 December 2023
+- Last Update By: Shafayatul Islam Pavel, Creative Development Manager
+- Document Author: Shafayatul Islam Pavel, Creative Development Manager
+- Document Owner: Creative Development, ServicEngine Ltd.
+- Reviewed by: Saiful Momen, Operation Manager, Creative Development
+- Approved by: Saiful Momen, Operation Manager, Creative Development
+- Document ID:
+- Document Version: 1.00
 
-<p align="center">
-  <a href="#backers"><img alt="Backers on Open Collective" src="https://opencollective.com/docsify/backers/badge.svg?style=flat-square"></a>
-  <a href="#sponsors">
-    <img alt="Sponsors on Open Collective" src="https://opencollective.com/docsify/sponsors/badge.svg?style=flat-square"></a>
-  <a href="https://github.com/docsifyjs/docsify/actions/workflows/test.yml"><img src="https://github.com/docsifyjs/docsify/actions/workflows/test.yml/badge.svg" alt="Build & Test"></a>
-  <a href="https://www.npmjs.com/package/docsify"><img alt="npm" src="https://img.shields.io/npm/v/docsify.svg?style=flat-square"></a>
-  <a href="https://github.com/QingWei-Li/donate"><img alt="donate" src="https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square"></a>
-  <a href="https://discord.gg/3NwKFyR"><img alt="Join Discord community and chat about Docsify" src="https://img.shields.io/discord/713647066802421792.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&cacheSeconds=60"></a>
-  <a href="https://gitpod.io/#https://github.com/docsifyjs/docsify"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
-</p>
+### Purpose
+To ensure consistent and high-quality delivery of landing pages, this SOP outlines the standards and procedures for coding, testing, and deploying landing pages.
 
-<p align="center">Gold Sponsor via <a href="https://opencollective.com/docsify">Open Collective</a></p>
+### Scope
+This SOP applies to all landing pages developed by the SEBPO CitrusAd team, regardless of the technology stack used.
 
-<p align="center">
-  <a href="https://opencollective.com/docsify/order/3254">
-    <img src="https://opencollective.com/docsify/tiers/gold-sponsor.svg?avatarHeight=36">
-  </a>
-</p>
+### Responsibility
+- Developers: Responsible for implementing the landing page according to the approved design and requirements.
+- QA Engineers: Responsible for testing the landing page and reporting any defects or issues.
+- Developers: Responsible for deploying the landing page to the production environment.
+Team Leader: Responsible for overseeing the entire process and ensuring that the landing page meets the client's requirements and is delivered on time.
 
-Docsify turns one or more Markdown files into a Website, with no build process required.
+### Framework: 
+- Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/) 
+- To ensure consistency and avoid style conflicts, production must exclusively utilize Blaze UI and CitrusStylesSE CSS framework from CDN. Inline styles and external CSS files are prohibited.
 
-## Features
+### Naming Convention: 
+- The team should utilize BEM methodologies and SMACSS architecture to organize their CSS and CSS rules.
+- To prevent conflicts with existing code, always use the `CitrusStylesSE` prefix when naming classes, IDs, functions, variables, and other CSS elements in your stylesheets. This will help differentiate your styles from those already present in the codebase, making it easier to manage and maintain the code. For example, instead of using a class name like `.button`, use `.CitrusStylesSE-button`. Similarly, instead of using an ID like `#header`, use `#CitrusStylesSE-header`. This convention will help ensure that your styles don't accidentally override existing styles or cause unintended consequences. Remember, consistency is key when it comes to writing clean, maintainable code. By following this convention, you'll make it easier for yourself and others to understand and modify the code in the future.
 
-- No statically built html files
-- Simple and lightweight
-- Smart full-text search plugin
-- Multiple themes
-- Useful plugin API
-- Support embedded files
+### Code Organization:
+- Code should be organized, readable, and maintainable, with clear and descriptive variable names and comments.
+- Use clear and consistent file naming conventions.
+- Organize code into logical sections for readability and maintainability.
+- Employ comments to explain code functionality and non-obvious logic.
 
-## Quick Start
+### Coding Standards:
+- Follow established HTML and CSS coding best practices.
+- Use version control systems to track changes and collaborate with team members.
+- Adhere to accessibility guidelines (e.g., WCAG).
+- Ensure that all code is tested and validated before moving to the next phase.
 
-Get going fast by using a static web server or GitHub Pages with this ready-to-use [Docsify Template](https://github.com/docsifyjs/docsify-template), review the [quick start tutorial](https://docsify.js.org/#/quickstart) or jump right into a CodeSandbox example site with the button below.
+### Coding Optimization:
+- Use HTML, CSS, and JavaScript for building the landing page, unless otherwise specified by the task requirements.
+- Follow the responsive design principles to ensure that the landing page looks good on all devices and screen sizes.
+- Optimize images and graphics to minimize load times and improve page speed.
+- Use appropriate meta tags, alt tags, and descriptions for SEO optimization.
 
-[![Edit 307qqv236](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/307qqv236)
+### Testing:
+QA reviewer will perform thorough testing of the landing page, including but not limited to:
 
-## Showcase
+**Validation:**
+- Use W3C HTML and CSS validators to ensure code compliance with standards.
+- Check for cross-browser and cross-device compatibility.
+**Functionality Testing:**
+- Thoroughly test all interactive elements (buttons, forms, links, etc.).
+- Verify content rendering and responsiveness across different screen sizes.
+- Conduct user testing to gather feedback on usability and identify potential issues.
+**Performance testing:** 
+- Check page load times, browser compatibility, and mobile responsiveness
+**Security testing:** 
+- Identify vulnerabilities and weaknesses in the code
+**User acceptance testing:** 
+- Ensure that the landing page meets the client's requirements and expectations
+**QA Process for Landing Page**
+- The QA reviewer will document all defects and issues found during testing and report them to the development team.
+- Developers will fix the reported issues and update the landing page accordingly.
+- The QA reviewer will retest the updated landing page to ensure that all issues have been resolved.
+- Passing this QA checklist is mandatory for each landing page during every testing phase.
 
-A large collection of showcase projects are included in [awesome-docsify](https://github.com/docsifyjs/awesome-docsify#showcase).
+### Deployment:
+- Once the landing page has passed all testing phases, it will be deployed to the production environment.
+- Developer will handle the deployment process, which includes uploading the files to the web server, configuring DNS settings, and setting up analytics and tracking codes.
+- The deployed landing page will be reviewed by the project manager and QA engineer to ensure that it matches the approved design and functions correctly.
 
-## Links
+### Post-Deployment Activities:
+**Pre-Deployment Checks:**
+- Perform final code review and testing in a staging environment in the Github.
+- Obtain necessary approvals for deployment.
+**Deployment Process:**
+- Prepare landing page handoff files and upload to the designated server location.
+- Configure server settings as needed (e.g., redirects, caching).
+- Thoroughly test the deployed landing page in the live and staging environment.
+**Post-Deployment Monitoring:**
+- Monitor the landing page's performance and make adjustments as needed to optimize its loading speed, and overall user experience.
+- Address any issues or bugs that arise promptly.
+- Provide training and support to the client on how to use and maintain the landing page if needed.
+- Continuously monitor the landing page's security and address any potential vulnerabilities if needed.
 
-- [Documentation](https://docsify.js.org)
-- [Docsify CLI (Command Line Interface)](https://github.com/docsifyjs/docsify-cli)
-- CDN: [UNPKG](https://unpkg.com/docsify/) | [jsDelivr](https://cdn.jsdelivr.net/npm/docsify/) | [cdnjs](https://cdnjs.com/libraries/docsify)
-- [`develop` branch preview](https://docsify-preview.vercel.app/)
-- [Awesome docsify](https://github.com/docsifyjs/awesome-docsify)
-- [Community chat](https://discord.gg/3NwKFyR)
+### Documentation:
+Maintain accurate and up-to-date documentation throughout the entire process, including design mockups, code snippets, testing plans, css or html selectors and deployment instructions.
+Document any lessons learned or challenges faced during the task, and use them to improve future landing page development processes.
 
-## Contributing
+### Version Control:
+Use a version control system (e.g., Git) to track changes, manage code versions, and facilitate collaboration.
+To ensure clear separation of development and production stages, all development activities should be conducted on the designated development branch. Client reviews will happen using the production branch accessed through staging links, guaranteeing a final review of the content as it will appear on the live website.
+To ensure smooth deployment and maintainability, final deliverables will be sourced from the main branch, which will also serve as the foundation for future updates.
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+### Code Reviews:
+Conduct regular code reviews to ensure quality, identify potential issues, and promote knowledge sharing.
 
-## Backers
+### Keeping CitrusStylesSE Framework Consistent:
+Adding new styles to CitrusStylesSE requires both careful consideration and clear documentation. This ensures consistency, maintainability, and avoids confusion for the team moving forward. Here's how:
+Explain your reasons:
+Before diving into code, document the need for the new style. Explain the problem it solves or the improvement it brings. This context helps others understand the purpose and value of the change.
+Document the changes: 
+Once you've written the new code, document it meticulously. This includes:
+A descriptive comment within the code itself: Briefly explain what the new style does and how it's used.
+An update in the CitrusStylesSE framework documentation: Explain the new style within the existing documentation, including how to use it and potential interactions with other styles.
+Visual examples: Screenshots or code snippets showcasing the new style in action can be incredibly helpful for understanding its impact.
+Share and discuss:
+Present your changes to the team, explaining the rationale, documentation updates, and visual examples. This transparency fosters collaboration, identifies potential conflicts, and ensures everyone's on the same page.
+Remember:
+Documenting new styles takes time, but it pays off in the long run.
+Clear explanations and visual aids make understanding and using the new style easier for everyone.
+Consistent documentation keeps CitrusStylesSE framework clean, maintainable, and a pleasure to work with.
+By following these steps, we can ensure that all additions to the CitrusStylesSE framework are well-informed, documented, and understood by the entire team. This collaborative approach contributes to a stronger, more cohesive framework for everyone to build upon.
 
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/docsify#backers)]
-
-<a href="https://opencollective.com/docsify#backers" target="_blank"><img src="https://opencollective.com/docsify/backers.svg?width=890"></a>
-
-## Sponsors
-
-Thank you for supporting this project！:heart: [[Become a sponsor](https://opencollective.com/docsify)]
-
-<img src="https://opencollective.com/docsify/sponsors.svg?width=890" />
-
-## Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/docsifyjs/docsify/graphs/contributors"><img src="https://opencollective.com/docsify/contributors.svg?width=890" /></a>
-
-## License
-
-[MIT](LICENSE)
-
-## Special Thanks
-
-A preview of Docsify's PR and develop branch is <a href="https://vercel.com/?utm_source=docsifyjs&utm_campaign=oss" target="_blank">Powered by <img src="https://cdn.jsdelivr.net/gh/docsifyjs/docsify/docs/_media/vercel_logo.svg" alt="Vercel" width="133px"></a>
+### Conclusion:
+Following this SOP will help ensure that our landing pages are developed efficiently, effectively, and consistently, resulting in higher-quality deliverables and increased customer satisfaction.
