@@ -131,3 +131,4 @@ Following this SOP will help ensure that our landing pages are developed efficie
 - [Scalable and Modular Architecture for CSS](https://smacss.com/book/applicability/)
 - [BEM — Block Element Modifier](https://getbem.com/)
 - [What is Prefix, Base Word, Suffix](https://ies.ed.gov/ncee/rel/regions/southeast/pdf/prefix_base_word_suffix.pdf)
+- [Migrating from GitHub to jsDelivr](https://www.jsdelivr.com/github)
