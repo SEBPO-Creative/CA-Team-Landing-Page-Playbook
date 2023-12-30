@@ -24,8 +24,9 @@ This SOP applies to all landing pages developed by the SEBPO CitrusAd team, rega
 Team Leader: Responsible for overseeing the entire process and ensuring that the landing page meets the client's requirements and is delivered on time.
 
 ### Framework: 
-- Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/) 
-- To ensure consistency and avoid style conflicts, production must exclusively utilize Blaze UI and CitrusStylesSE CSS framework from CDN. Inline styles and external CSS files are prohibited.
+- Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/)
+- To ensure consistency and avoid style conflicts, production must exclusively utilize only [blaze.css](https://unpkg.com/@blaze/css/dist/blaze/blaze.css) and [CitrusStylesSE]() CSS framework from CDN. 
+- Inline styles and external CSS files are prohibited.
 
 ### Naming Convention:
 - The team should utilize BEM methodologies and SMACSS architecture to organize their CSS and CSS rules.
@@ -92,32 +93,42 @@ QA reviewer will perform thorough testing of the landing page, including but not
 
 ### Documentation:
 - Maintain accurate and up-to-date documentation throughout the entire process, including design mockups, code snippets, testing plans, css or html selectors and deployment instructions.
-Document any lessons learned or challenges faced during the task, and use them to improve future landing page development processes.
+- Document any lessons learned or challenges faced during the task, and use them to improve future landing page development processes.
 
 ### Version Control:
-Use a version control system (e.g., Git) to track changes, manage code versions, and facilitate collaboration.
-To ensure clear separation of development and production stages, all development activities should be conducted on the designated development branch. Client reviews will happen using the production branch accessed through staging links, guaranteeing a final review of the content as it will appear on the live website.
-To ensure smooth deployment and maintainability, final deliverables will be sourced from the main branch, which will also serve as the foundation for future updates.
+- Use a version control system (e.g., Git) to track changes, manage code versions, and facilitate collaboration.
+- To ensure clear separation of development and production stages, all development activities should be conducted on the designated development branch. Client reviews will happen using the production branch accessed through staging links, guaranteeing a final review of the content as it will appear on the live website.
+- To ensure smooth deployment and maintainability, final deliverables will be sourced from the main branch, which will also serve as the foundation for future updates.
 
 ### Code Reviews:
-Conduct regular code reviews to ensure quality, identify potential issues, and promote knowledge sharing.
+- Conduct regular code reviews to ensure quality, identify potential issues, and promote knowledge sharing.
 
 ### Keeping CitrusStylesSE Framework Consistent:
-Adding new styles to CitrusStylesSE requires both careful consideration and clear documentation. This ensures consistency, maintainability, and avoids confusion for the team moving forward. Here's how:
+- Adding new styles to CitrusStylesSE requires both careful consideration and clear documentation. This ensures consistency, maintainability, and avoids confusion for the team moving forward. Here's how:
 Explain your reasons:
-Before diving into code, document the need for the new style. Explain the problem it solves or the improvement it brings. This context helps others understand the purpose and value of the change.
+- Before diving into code, document the need for the new style. Explain the problem it solves or the improvement it brings. This context helps others understand the purpose and value of the change.
 Document the changes: 
-Once you've written the new code, document it meticulously. This includes:
-A descriptive comment within the code itself: Briefly explain what the new style does and how it's used.
-An update in the CitrusStylesSE framework documentation: Explain the new style within the existing documentation, including how to use it and potential interactions with other styles.
-Visual examples: Screenshots or code snippets showcasing the new style in action can be incredibly helpful for understanding its impact.
+- Once you've written the new code, document it meticulously. This includes:
+- A descriptive comment within the code itself: Briefly explain what the new style does and how it's used.
+- An update in the CitrusStylesSE framework documentation: Explain the new style within the existing documentation, including how to use it and potential interactions with other styles.
+- Visual examples: Screenshots or code snippets showcasing the new style in action can be incredibly helpful for understanding its impact.
 Share and discuss:
-Present your changes to the team, explaining the rationale, documentation updates, and visual examples. This transparency fosters collaboration, identifies potential conflicts, and ensures everyone's on the same page.
+- Present your changes to the team, explaining the rationale, documentation updates, and visual examples. This transparency fosters collaboration, identifies potential conflicts, and ensures everyone's on the same page.
 Remember:
-Documenting new styles takes time, but it pays off in the long run.
-Clear explanations and visual aids make understanding and using the new style easier for everyone.
-Consistent documentation keeps CitrusStylesSE framework clean, maintainable, and a pleasure to work with.
+- Documenting new styles takes time, but it pays off in the long run.
+- Clear explanations and visual aids make understanding and using the new style easier for everyone.
+- Consistent documentation keeps CitrusStylesSE framework clean, maintainable, and a pleasure to work with.
 By following these steps, we can ensure that all additions to the CitrusStylesSE framework are well-informed, documented, and understood by the entire team. This collaborative approach contributes to a stronger, more cohesive framework for everyone to build upon.
 
 ### Conclusion:
 Following this SOP will help ensure that our landing pages are developed efficiently, effectively, and consistently, resulting in higher-quality deliverables and increased customer satisfaction.
+
+### Reference or Related Document
+- [Blaze UI: Geeksforgeeks](https://www.geeksforgeeks.org/blaze-ui/)
+- [BEMIT: Taking the BEM Naming Convention a Step Further](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/#responsive-suffixes)
+- [More Transparent UI Code with Namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+- [SEBPO CitrusAd Team Github Repository](https://github.com/SEBPO-Creative/CitrusAd-LP)
+- [Scalable and Modular Architecture for CSS](https://smacss.com/book/applicability/)
+- [BEM — Block Element Modifier](https://getbem.com/)
+- [What is Prefix, Base Word, Suffix](https://ies.ed.gov/ncee/rel/regions/southeast/pdf/prefix_base_word_suffix.pdf)
+- [Migrating from GitHub to jsDelivr](https://www.jsdelivr.com/github)
