@@ -14,7 +14,7 @@
 ## Purpose
 To ensure consistent and high-quality delivery of landing pages, this SOP outlines the standards and procedures for coding, testing, and deploying landing pages.
 
-### Scope
+## Scope
 This SOP applies to all landing pages developed by the SEBPO CitrusAd team, regardless of the technology stack used.
 
 ## Responsibility
