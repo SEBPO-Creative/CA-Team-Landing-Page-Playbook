@@ -91,7 +91,7 @@ QA reviewer will perform thorough testing of the landing page, including but not
 - Continuously monitor the landing page's security and address any potential vulnerabilities if needed.
 
 ### Documentation:
-Maintain accurate and up-to-date documentation throughout the entire process, including design mockups, code snippets, testing plans, css or html selectors and deployment instructions.
+- Maintain accurate and up-to-date documentation throughout the entire process, including design mockups, code snippets, testing plans, css or html selectors and deployment instructions.
 Document any lessons learned or challenges faced during the task, and use them to improve future landing page development processes.
 
 ### Version Control:
