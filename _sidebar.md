@@ -1,21 +1,26 @@
-- Getting started
+ - [SOP of Landing Page](/)
 
-  - [Introduction](quickstart.md)
-  - [Writing more pages](more-pages.md)
-  - [Custom navbar](custom-navbar.md)
-  - [Cover page](cover.md)
+ Getting started
 
-- Customization
+  - [Introduction](introduction.md)
+  - [Code Organization](code-organization.md)
+  - [Coding Standards](coding-standards.md)
+  - [Coding Optimization](coding-optimization.md)
+  - [Testing](testing.md)
+  - [Deployment](deployment.md)
+  - [Documentation](documentation.md)
+  - [Version Control](version-control.md)
+  - [Code Reviews](code-reviews.md)
 
-  - [Configuration](configuration.md)
-  - [Themes](themes.md)
-  - [List of Plugins](plugins.md)
-  - [Write a Plugin](write-a-plugin.md)
-  - [Markdown configuration](markdown.md)
-  - [Language highlighting](language-highlight.md)
+  CitrusStylesSE
+
+  - [CitrusStylesSE](citrusStylesSE.md)
+
+  Customization
+
   - [Emoji](emoji.md)
 
-- Guide
+ Guide
 
   - [Deploy](deploy.md)
   - [Helpers](helpers.md)
