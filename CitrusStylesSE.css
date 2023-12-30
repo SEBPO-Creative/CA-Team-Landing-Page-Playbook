@@ -4,11 +4,46 @@
  * Copyright 2024 the SEBPO Authors (https://sebpo.com/)
  * Licensed under SEBPO (https://sebpo.com/)
  */
- /* ===================== Collapsibles/Accordion ===================== */
+  /* ===================== CSS Variable ===================== */
+  :root {
+    --citrusStylesSE-blue: #0d6efd;
+    --citrusStylesSE-indigo: #6610f2;
+    --citrusStylesSE-purple: #6f42c1;
+    --citrusStylesSE-pink: #d63384;
+    --citrusStylesSE-red: #dc3545;
+    --citrusStylesSE-orange: #fd7e14;
+    --citrusStylesSE-yellow: #ffc107;
+    --citrusStylesSE-green: #198754;
+    --citrusStylesSE-teal: #20c997;
+    --citrusStylesSE-cyan: #0dcaf0;
+    --citrusStylesSE-black: #000;
+    --citrusStylesSE-white: #fff;
+    --citrusStylesSE-gray: #6c757d;
+    --citrusStylesSE-gray-dark: #343a40;
+    --citrusStylesSE-gray-100: #f8f9fa;
+    --citrusStylesSE-gray-200: #e9ecef;
+    --citrusStylesSE-gray-300: #dee2e6;
+    --citrusStylesSE-gray-400: #ced4da;
+    --citrusStylesSE-gray-500: #adb5bd;
+    --citrusStylesSE-gray-600: #6c757d;
+    --citrusStylesSE-gray-700: #495057;
+    --citrusStylesSE-gray-800: #343a40;
+    --citrusStylesSE-gray-900: #212529;
+    --citrusStylesSE-primary: #0d6efd;
+    --citrusStylesSE-secondary: #6c757d;
+    --citrusStylesSE-success: #198754;
+    --citrusStylesSE-info: #0dcaf0;
+    --citrusStylesSE-warning: #ffc107;
+    --citrusStylesSE-danger: #dc3545;
+    --citrusStylesSE-light: #f8f9fa;
+    --citrusStylesSE-dark: #212529;
+  }
+  
+ /* ===================== Accordion ===================== */
  /* Style the buttons that are used to open and close the accordion panel */
-.CitrusStylesSE__accordion {
-    background-color: #eee;
-    color: #444;
+.citrusStylesSE__accordion {
+    background-color: var(--citrusStylesSE-gray-400);
+    color: var(--citrusStylesSE-black);
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -19,14 +54,14 @@
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .CitrusStylesSE__active, .CitrusStylesSE__accordion:hover {
-    background-color: #ccc;
+  .citrusStylesSE__accordion--active, .citrusStylesSE--accordion:hover {
+    background-color: var(--citrusStylesSE-white-400);;
   }
   
   /* Style the accordion panel. Note: hidden by default */
-  .CitrusStylesSE__panel {
+  .citrusStylesSE__accordion--panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: var(--citrusStylesSE-white);;
     display: none;
     overflow: hidden;
   }

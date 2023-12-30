@@ -25,7 +25,10 @@ Team Leader: Responsible for overseeing the entire process and ensuring that the
 
 ### Framework: 
 - Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/)
-- To ensure consistency and avoid style conflicts, production must exclusively utilize only [blaze.css](https://unpkg.com/@blaze/css/dist/blaze/blaze.css) and [CitrusStylesSE]() CSS framework from CDN. 
+- To ensure consistency and avoid style conflicts, production must exclusively utilize only using the CSS and js framework from CDN 
+- [blaze.css CDN](https://unpkg.com/@blaze/css/dist/blaze/blaze.css) and 
+- [CitrusStylesSE.css CDN](https://cdn.jsdelivr.net/gh/SEBPO-Creative/CA-Team-Landing-Page-Playbook@main/CitrusStylesSE.css)
+- [CitrusStylesSE.js CDN](https://cdn.jsdelivr.net/gh/SEBPO-Creative/CA-Team-Landing-Page-Playbook@main/CitrusStylesSE.js)
 - Inline styles and external CSS files are prohibited.
 
 ### Naming Convention:
