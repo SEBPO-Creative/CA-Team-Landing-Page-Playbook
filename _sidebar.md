@@ -16,9 +16,9 @@
 
   - [CitrusStylesSE](citrusStylesSE.md)
 
-  Customization
+  UI Components
 
-  - [Emoji](emoji.md)
+  - [Accordion](accordion.md)
 
  Guide
 

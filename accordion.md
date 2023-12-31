@@ -1,0 +1,105 @@
+# Accordion
+
+## Create An Accordion
+Step 1) Add HTML:
+```html
+<h2>Accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+<button class="citrusStylesSE__accordion">Section 1</button>
+<div class="citrusStylesSE__accordionPanel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="citrusStylesSE__accordion">Section 2</button>
+<div class="citrusStylesSE__accordionPanel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="citrusStylesSE__accordion">Section 3</button>
+<div class="citrusStylesSE__accordionPanel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+```
+
+Step 2) Add CSS:
+```css
+/* ===================== Accordion ===================== */
+ /* Style the buttons that are used to open and close the accordion panel */
+.citrusStylesSE__accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.citrusStylesSE__accordion--active, .citrusStylesSE__accordion:hover {
+  background-color: #ccc;
+}
+
+.citrusStylesSE__accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 0px;
+}
+
+.citrusStylesSE__accordion--active:after {
+  content: "\2212";
+}
+
+.citrusStylesSE__accordionPanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+```
+
+Step 3) Add JavaScript:
+```javascript
+// Configuration
+var allowMultiplePanels = false; // Set to true to allow both panels open
+
+// Function to toggle the accordion panel
+function toggleAccordionPanel(accordion, accordionPanel) {
+    accordion.classList.toggle("citrusStylesSE__accordion--active");
+    accordionPanel.style.maxHeight = accordionPanel.style.maxHeight ? null : accordionPanel.scrollHeight + "px";
+}
+
+// Function to close all panels except the clicked one
+function closeOtherPanels(accordionList, clickedAccordion) {
+    if (!allowMultiplePanels) {
+        for (var i = 0; i < accordionList.length; i++) {
+            var otherAccordion = accordionList[i];
+            if (otherAccordion !== clickedAccordion) {
+                var otherPanel = otherAccordion.nextElementSibling;
+                otherPanel.style.maxHeight = null;
+                otherAccordion.classList.remove("citrusStylesSE__accordion--active");
+            }
+        }
+    }
+}
+
+// Event listener for each accordion button
+function accordionClickHandler() {
+    var accordionPanel = this.nextElementSibling;
+
+    closeOtherPanels(citrusStylesSEaccordion, this);
+    toggleAccordionPanel(this, accordionPanel);
+}
+
+// Attach event listeners to accordion buttons
+var citrusStylesSEaccordion = document.getElementsByClassName("citrusStylesSE__accordion");
+
+for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
+    citrusStylesSEaccordion[i].addEventListener("click", accordionClickHandler);
+}
+```
