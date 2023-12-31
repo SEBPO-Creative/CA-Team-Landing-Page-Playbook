@@ -3,21 +3,40 @@ CitrusStylesSE  v1.0 (https://getbootstrap.com/)
 Copyright 2024 the SEBPO Authors (https://sebpo.com/)
 Licensed under SEBPO (https://sebpo.com/) */
 
-var citrusStylesSEaccordion = document.getElementsByClassName("citrusStylesSE__accordion");
-var citrusStylesSE__i;
+// Configuration
+var allowMultiplePanels = false; // Set to true to allow both panels open
 
-for (citrusStylesSE__i = 0; citrusStylesSE__i < acc.length; citrusStylesSE__i++) {
-    citrusStylesSEaccordion[citrusStylesSE__i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("citrusStylesSE__accordion--active");
+// Function to toggle the accordion panel
+function toggleAccordionPanel(accordion, accordionPanel) {
+    accordion.classList.toggle("citrusStylesSE__accordion--active");
+    accordionPanel.style.maxHeight = accordionPanel.style.maxHeight ? null : accordionPanel.scrollHeight + "px";
+}
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+// Function to close all panels except the clicked one
+function closeOtherPanels(accordionList, clickedAccordion) {
+    if (!allowMultiplePanels) {
+        for (var i = 0; i < accordionList.length; i++) {
+            var otherAccordion = accordionList[i];
+            if (otherAccordion !== clickedAccordion) {
+                var otherPanel = otherAccordion.nextElementSibling;
+                otherPanel.style.maxHeight = null;
+                otherAccordion.classList.remove("citrusStylesSE__accordion--active");
+            }
+        }
     }
-  });
+}
+
+// Event listener for each accordion button
+function accordionClickHandler() {
+    var accordionPanel = this.nextElementSibling;
+
+    closeOtherPanels(citrusStylesSEaccordion, this);
+    toggleAccordionPanel(this, accordionPanel);
+}
+
+// Attach event listeners to accordion buttons
+var citrusStylesSEaccordion = document.getElementsByClassName("citrusStylesSE__accordion");
+
+for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
+    citrusStylesSEaccordion[i].addEventListener("click", accordionClickHandler);
 }
