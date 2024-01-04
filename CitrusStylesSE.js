@@ -4,7 +4,7 @@ Copyright 2024 the SEBPO Authors (https://sebpo.com/)
 Licensed under SEBPO (https://sebpo.com/) */
 
 // Configuration
-var allowMultiplePanels = false; // Set to true to allow both panels open
+var allowMultiplePanels = true; // Set to true to allow both panels open
 
 // Function to toggle the accordion panel
 function toggleAccordionPanel(accordion, accordionPanel) {
