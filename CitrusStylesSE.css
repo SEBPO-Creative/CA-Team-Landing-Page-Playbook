@@ -136,6 +136,17 @@
       --citrusStylesSE-z-over-everything: 500;
   }
   
+  @font-face {
+    font-family: 'PetcoCircular';
+    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+   body {
+    font-family: 'PetcoCircular';
+   }
+
   /* ===================== Accordion ===================== */
  /* Style the buttons that are used to open and close the accordion panel */
 .citrusStylesSE__accordion {
