@@ -37,6 +37,88 @@
     --citrusStylesSE-danger: #dc3545;
     --citrusStylesSE-light: #f8f9fa;
     --citrusStylesSE-dark: #212529;
+    
+    /* Grid */
+    --citrusStylesSE-grid-gutter: 1em;
+
+    /* Spacing */
+    --citrusStylesSE-spacing-super: 3em;
+    --citrusStylesSE-spacing-xlarge: 2em;
+    --citrusStylesSE-spacing-large: 1.5em;
+    --citrusStylesSE-spacing-medium: 1em;
+    --citrusStylesSE-spacing-small: 0.5em;
+    --citrusStylesSE-spacing-xsmall: 0.25em;
+    --citrusStylesSE-spacing-tiny: 0.125em;
+
+    /* Screen widths */
+    --citrusStylesSE-screen-limit-xsmall: 20em;
+    --citrusStylesSE-screen-limit-small: 30em;
+    --citrusStylesSE-screen-limit-medium: 48em;
+    --citrusStylesSE-screen-limit-large: 64em;
+    --citrusStylesSE-screen-limit-xlarge: 78em;
+    --citrusStylesSE-screen-limit-super: 116em;
+
+      /* Modals */
+      --citrusStylesSE-modal-background: var(--card-background);
+      --citrusStylesSE-modal-background--ghost: transparent;
+      --citrusStylesSE-modal-border-radius: var(--border-radius);
+      --citrusStylesSE-modal-close-color: var(--color-0);
+      --citrusStylesSE-modal-close-color--ghost: var(--color-10);
+
+        /* Tabs */
+      --citrusStylesSE-tab-heading-color: var(--color-text);
+      --citrusStylesSE-tab-heading-background: transparent;
+      --citrusStylesSE-tab-heading-border-color: transparent;
+
+      --citrusStylesSE-tab-heading-color--active: var(--color-text);
+      --citrusStylesSE-tab-heading-background--active: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--active: var(--color-2);
+
+      --citrusStylesSE-tab-heading-color--hover: var(--color-text);
+      --citrusStylesSE-tab-heading-background--hover: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--hover: var(--color-2);
+
+      --citrusStylesSE-tab-heading-color--brand: var(--color-text);
+      --citrusStylesSE-tab-heading-background--brand: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--brand: var(--color-brand);
+
+      --citrusStylesSE-tab-heading-color--info: var(--color-text);
+      --citrusStylesSE-tab-heading-background--info: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--info: var(--color-info);
+
+      --citrusStylesSE-tab-heading-color--warning: var(--color-text);
+      --citrusStylesSE-tab-heading-background--warning: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--warning: var(--color-warning);
+
+      --citrusStylesSE-tab-heading-color--success: var(--color-text);
+      --citrusStylesSE-tab-heading-background--success: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--success: var(--color-success);
+
+      --citrusStylesSE-tab-heading-color--error: var(--color-text);
+      --citrusStylesSE-tab-heading-background--error: var(--color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--error: var(--color-error);
+
+      --citrusStylesSE-tab-heading-border-radius: var(--border-radius);
+
+      /* Borders */
+      --citrusStylesSE-border-width: 1px;
+      --citrusStylesSE-border-style: solid;
+      --citrusStylesSE-border-color: var(--color-4);
+      --citrusStylesSE-border-radius: 6px;
+      --citrusStylesSE-border-radius-rounded: 30em;
+
+      /* Box shadows */
+      --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+      --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+      --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+      --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+
+      /* Z Indexes */
+      --citrusStylesSE-z-over-content: 100;
+      --citrusStylesSE-z-over-control: 200;
+      --citrusStylesSE-z-over-page: 300;
+      --citrusStylesSE-z-over-screen: 400;
+      --citrusStylesSE-z-over-everything: 500;
   }
   
   /* ===================== Accordion ===================== */
