@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Example</title>
     <link rel="stylesheet" href="../citrusStylesSE.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
 </head>
 <body>
     <!-- Basic Grid -->
@@ -21,6 +22,19 @@
           <div class="citrusStylesSE__grid-text">third</div>
         </div>
       </div>
+      <code class="language-html">
+        <div class="o-grid o-grid--demo">
+          <div class="o-grid__cell">
+            <div class="o-grid-text">first</div>
+          </div>
+          <div class="o-grid__cell">
+            <div class="o-grid-text">second</div>
+          </div>
+          <div class="o-grid__cell">
+            <div class="o-grid-text">third</div>
+          </div>
+        </div>
+      </code>
 
       <!-- Widths examples -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Widths</h1>
@@ -245,5 +259,13 @@
               <div class="citrusStylesSE__grid-text">third</div>
             </div>
         </div>
+
+        <!-- highlight js -->
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+
+        <script>hljs.highlightAll();</script>
 </body>
 </html>
