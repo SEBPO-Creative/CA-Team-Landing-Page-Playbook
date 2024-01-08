@@ -6,11 +6,16 @@
     <title>Grid Example</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
 </head>
 <body>
     <!-- Basic Grid -->
     <h1 class="citrusStylesSE__heading citrusStylesSE__super">Basic Grid</h1>
-    <p>Use the <code>.citrusStylesSE__grid</code> class to wrap your .citrusStylesSE__grid__cell elements.</p>
+   <pre>
+    <code class="language-html">
+      <p>Use the .citrusStylesSE__grid class to wrap your .citrusStylesSE__grid__cell elements.</p>
+    </code>
+   </pre>
     <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -25,7 +30,11 @@
 
       <!-- Widths examples -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Widths</h1>
-      <p>Use the .citrusStylesSE__grid__cell--width-xx class to apply widths to your cells. If you add a width to one cell the other cells will automatically take up the rest of the space equally.</p>
+      <pre>
+        <code class="language-html">
+          <p>Use the .citrusStylesSE__grid__cell--width-xx class to apply widths to your cells. If you add a width to one cell the other cells will automatically take up the rest of the space equally.</p>
+        </code>
+      </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell citrusStylesSE__grid__cell--width-50">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -40,7 +49,11 @@
   
       <!-- Use of full width -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Full Width</h1>
-      <p>and use the .citrusStylesSE__grid--full class to make all the cells full width.</p>
+     <pre>
+      <code class="language-html">
+        <p>and use the .citrusStylesSE__grid--full class to make all the cells full width.</p>
+      </code>
+     </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--full citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -55,7 +68,11 @@
 
       <!-- Offsets -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Offsets</h1>
-      <p>To "push" a cell horizontally across the grid use the .o-grid__cell--offset-xx class. Use in-conjunction with widths to perfectly align your cells.</p>
+      <pre>
+        <code class="language-html">
+          <p>To "push" a cell horizontally across the grid use the .o-grid__cell--offset-xx class. Use in-conjunction with widths to perfectly align your cells.</p>
+        </code>
+      </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell citrusStylesSE__grid__cell--width-20">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -67,8 +84,12 @@
 
       <!-- Wrapping -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Wrapping</h1>
-      <p>A grid is essentially a row of cells. However cells can wrap onto the next line within the grid.</p>
-      <P>Here we have 2 cells, 50% and 66.6666% wide, but the grid is only 100% wide...eek!</P>
+     <pre>
+      <code class="language-html">
+        <p>A grid is essentially a row of cells. However cells can wrap onto the next line within the grid.</p>
+        <P>Here we have 2 cells, 50% and 66.6666% wide, but the grid is only 100% wide...eek!</P>
+      </code>
+     </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell citrusStylesSE__grid__cell--width-50">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -78,7 +99,11 @@
         </div>
       </div>
 
-      <p>To solve this we can wrap the cells within the grid by adding the .o-grid--wrap modifier class.</p>
+     <pre>
+      <code class="language-html">
+        <p>To solve this we can wrap the cells within the grid by adding the .citrusStylesSE__grid--wrap modifier class.</p>
+      </code>
+     </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--wrap citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell citrusStylesSE__grid__cell--width-50">
           <div class="citrusStylesSE__grid-text">first</div>
@@ -90,7 +115,11 @@
 
       <!-- Nesting -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Nesting</h1>
-      <p>You can nest grids inside cells with relative ease...with nesting you're into advanced territory!</p>
+      <pre>
+        <code class="language-html">
+          <p>You can nest grids inside cells with relative ease...with nesting you're into advanced territory!</p>
+        </code>
+      </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
         <div class="citrusStylesSE__grid__cell">
           <div class="citrusStylesSE__grid">
@@ -114,11 +143,17 @@
           <div class="citrusStylesSE__grid-text">fifth</div>
         </div>
       </div>
+
       <p>We've added padding to the cells as part of the demo.</p>
 
       <!-- Vertical Alignment -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Vertical Alignment</h1>
       <p>Per .citrusStylesSE__grid</p>
+      <pre>
+        <code class="language-html">
+          Per .citrusStylesSE__grid
+        </code>
+      </pre>
       <p>If one of your cells is tall you can apply a vertical alignment modifier class to the grid.</p>
       <P>.citrusStylesSE__grid--top, .citrusStylesSE__grid--center and .citrusStylesSE__grid--bottom are supported.</P>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--bottom citrusStylesSE__grid--demo">
@@ -145,6 +180,11 @@
 
       <!-- Per .o-grid__cell -->
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Per .citrusStylesSE__grid__cell</h1>
+      <pre>
+        <code class="language-html">
+          .citrusStylesSE__grid__cell
+        </code>
+      </pre>
       <p>You can override the vertical alignment of all the cells in the grid by specifying per cell.</p>
       <p>.citrusStylesSE__grid__cell--top, .citrusStylesSE__grid__cell--center and .citrusStylesSE__grid__cell--bottom are supported.</p>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--bottom citrusStylesSE__grid--demo">
@@ -172,7 +212,11 @@
       <h1 class="citrusStylesSE__heading citrusStylesSE__super">Responsiveness</h1>
       <p>The grid can be instructed to go full width at certain break points to maximise the screen space and help produce great user experiences on all sorts of devices.</p>
       <p>The grid has a fit or full class modifier that is used at different screen sizes.</p>
-      <p>.citrusStylesSE__grid--{small | medium | large}-{fit | full}</p>
+      <pre>
+        <code class="language-html">
+          <p>.citrusStylesSE__grid--{small | medium | large}-{fit | full}</p>
+        </code>
+      </pre>
       <div class="citrusStylesSE__grid citrusStylesSE__grid--small-full citrusStylesSE__grid--medium-fit citrusStylesSE__grid--large-full citrusStylesSE__grid--demo">
             <div class="citrusStylesSE__grid__cell">
             <div class="citrusStylesSE__grid-text">first</div>
@@ -184,6 +228,7 @@
             <div class="citrusStylesSE__grid-text">third</div>
             </div>
         </div>
+
         <p>The above example will display the cells full width for small and large size screens. For medium screens the cells will adjust to fit the available space. Try it out, either resize your browser or rotate your phone into landscape.</p>
 
         <!-- Responsive Suffixes -->
@@ -207,7 +252,11 @@
         <!-- Gutters -->
         <h1 class="citrusStylesSE__heading citrusStylesSE__super">Gutters</h1>
         <p>Blaze's grid comes with a gutter around each grid cell; some padding either side.</p>
-        <p>Sometimes you want your cells to be flush with each other. To turn off all gutters use .citrusStylesSE__grid--no-gutter</p>
+        <pre>
+          <code class="language-html">
+            <p>Sometimes you want your cells to be flush with each other. To turn off all gutters use .citrusStylesSE__grid--no-gutter</p>
+          </code>
+        </pre>
         <div class="citrusStylesSE__grid citrusStylesSE__grid--no-gutter citrusStylesSE__grid--demo">
             <div class="citrusStylesSE__grid__cell">
               <div class="citrusStylesSE__grid-text">first</div>
@@ -219,7 +268,11 @@
               <div class="citrusStylesSE__grid-text">third</div>
             </div>
         </div>
-        <p>..or cell specific .citrusStylesSE__grid__cell--no-gutter</p>
+        <pre>
+          <code class="language-html">
+            <p>..or cell specific .citrusStylesSE__grid__cell--no-gutter</p>
+          </code>
+        </pre>
         <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
             <div class="citrusStylesSE__grid__cell">
               <div class="citrusStylesSE__grid-text">first</div>
@@ -234,7 +287,11 @@
 
         <!-- Fixed widths -->
         <h1 class="citrusStylesSE__heading citrusStylesSE__super">Fixed widths</h1>
-        <p>Usually cells in a grid will be fluid and responsive. If however you want to set a cell to a fixed width add the .o-grid__cell--width-fixed modifier and give it a specific width.</p>
+        <pre>
+          <code class="language-html">
+            <p>Usually cells in a grid will be fluid and responsive. If however you want to set a cell to a fixed width add the .citrusStylesSE__grid__cell--width-fixed modifier and give it a specific width.</p>
+          </code>
+        </pre>
         <div class="citrusStylesSE__grid citrusStylesSE__grid--demo">
             <div class="citrusStylesSE__grid__cell">
               <div class="citrusStylesSE__grid-text">first</div>
@@ -247,12 +304,8 @@
             </div>
         </div>
 
-        <!-- highlight js -->
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
-
-        <!-- and it's easy to individually load additional languages -->
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
-
-        <script>hljs.highlightAll();</script>
+       
+        <!-- Prism js -->
+        <script src="../prism.js"></script>
 </body>
 </html>

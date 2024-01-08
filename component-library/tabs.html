@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../prism.css">
+<style>
+.CitrusStylesSE__tabs[role=tablist] {
+  display: block;
+}
+
+.CitrusStylesSE__tabs__headings {
+  display: flex;
+  text-align: center;
+}
+
+.CitrusStylesSE__tabs__nav {
+  overflow: hidden;
+}
+.CitrusStylesSE__tabs__nav .CitrusStylesSE__tabs__headings {
+  margin-bottom: -1em;
+  padding-bottom: 1em;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.CitrusStylesSE__tab-heading[role=tab] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: inherit;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  flex: 1;
+  margin: 0;
+  padding: var(--spacing-medium);
+  color: var(--CitrusStylesSE__tab-heading-color);
+  white-space: nowrap;
+  background: var(--CitrusStylesSE__tab-heading-background);
+  border-bottom: var(--spacing-xsmall) solid var(--CitrusStylesSE__tab-heading-border-color);
+  border-radius: var(--CitrusStylesSE__tab-heading-border-radius) var(--CitrusStylesSE__tab-heading-border-radius) 0 0;
+}
+.CitrusStylesSE__tab-heading[role=tab]:disabled, .CitrusStylesSE__tab-heading[role=tab][disabled] {
+  cursor: not-allowed;
+  opacity: var(--disabled-opacity);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
+  border-color: var(--border-color-focus);
+  box-shadow: var(--box-shadow-focus);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--hover);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--hover);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--hover);
+}
+.CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--active);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--active);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--active);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover.CitrusStylesSE__tab-heading--brand, .CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active.CitrusStylesSE__tab-heading--brand {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--brand);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--brand);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--brand);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover.CitrusStylesSE__tab-heading--info, .CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active.CitrusStylesSE__tab-heading--info {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--info);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--info);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--info);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover.CitrusStylesSE__tab-heading--warning, .CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active.CitrusStylesSE__tab-heading--warning {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--warning);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--warning);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--warning);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover.CitrusStylesSE__tab-heading--success, .CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active.CitrusStylesSE__tab-heading--success {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--success);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--success);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--success);
+}
+.CitrusStylesSE__tab-heading[role=tab]:not(:disabled):hover.CitrusStylesSE__tab-heading--error, .CitrusStylesSE__tab-heading[role=tab].CitrusStylesSE__tab-heading--active.CitrusStylesSE__tab-heading--error {
+  --CitrusStylesSE__tab-heading-color: var(--CitrusStylesSE__tab-heading-color--error);
+  --CitrusStylesSE__tab-heading-background: var(--CitrusStylesSE__tab-heading-background--error);
+  --CitrusStylesSE__tab-heading-border-color: var(--CitrusStylesSE__tab-heading-border-color--error);
+}
+
+.CitrusStylesSE__tabs__tab[role=tabpanel] {
+  padding: var(--CitrusStylesSE__spacing-medium);
+}
+</style>
+</head>
+<body>
+
+    <!-- Basic Tabs -->
+    <div class="citrusStylesSE__cell">
+        <h1 class="citrusStylesSE__heading citrusStylesSE__super">Basic Tabs</h1>
+    </div>
+    <div role="tablist" class="CitrusStylesSE__tabs">
+        <div class="CitrusStylesSE__tabs__nav">
+          <div class="CitrusStylesSE__tabs__headings">
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active">Wide tabs with nav</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading" disabled>Disabled</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Three</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Four</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Five</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Six</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Seven</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Eight</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Nine</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading">Ten</button>
+          </div>
+        </div>
+        <div role="tabpanel" class="CitrusStylesSE__tabs__tab">This is tab one</div>
+        <div role="tabpanel" hidden class="CitrusStylesSE__tabs__tab">This is tab two</div>
+      </div>
+      <pre>
+        <code class="language-html">
+          <div role="tablist" class="CitrusStylesSE__tabs">
+            <div class="CitrusStylesSE__tabs__nav">
+              <div class="CitrusStylesSE__tabs__headings">
+                <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active">Wide tabs with nav</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading" disabled>Disabled</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Three</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Four</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Five</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Six</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Seven</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Eight</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Nine</button>
+                <button role="tab" class="CitrusStylesSE__tab-heading">Ten</button>
+              </div>
+            </div>
+            <div role="tabpanel" class="CitrusStylesSE__tabs__tab">This is tab one</div>
+            <div role="tabpanel" hidden class="CitrusStylesSE__tabs__tab">This is tab two</div>
+          </div>
+        </code>
+      </pre>
+
+      <!-- Colors -->
+      <div class="citrusStylesSE__cell">
+        <h1 class="citrusStylesSE__heading citrusStylesSE__super">Colors</h1>
+    </div>
+      <div role="tablist" class="CitrusStylesSE__tabs">
+        <div class="CitrusStylesSE__tabs__nav">
+          <div class="CitrusStylesSE__tabs__headings">
+            <button role="tab" class="CitrusStylesSE__tab-heading">Default</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading" disabled>Disabled</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--brand">Brand</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--info">Info</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--warning">Warning</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--success">Success</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--error">Error</button>
+          </div>
+        </div>
+        <div role="tabpanel" class="CitrusStylesSE__tabs__tab">This is tab one</div>
+        <div hidden class="CitrusStylesSE__tabs__tab">This is tab two</div>
+      </div>
+
+      <!-- Active -->
+      <div class="citrusStylesSE__cell">
+        <h1 class="citrusStylesSE__heading citrusStylesSE__super">Active</h1>
+    </div>
+      <div role="tablist" class="CitrusStylesSE__tabs">
+        <div class="CitrusStylesSE__tabs__nav">
+          <div class="CitrusStylesSE__tabs__headings">
+            <button role="tab" class="CitrusStylesSE__tab-heading">Default</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading" disabled>Disabled</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active">Active</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active CitrusStylesSE__tab-heading--brand">Brand</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active CitrusStylesSE__tab-heading--info">Info</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active CitrusStylesSE__tab-heading--warning">Warning</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active CitrusStylesSE__tab-heading--success">Success</button>
+            <button role="tab" class="CitrusStylesSE__tab-heading CitrusStylesSE__tab-heading--active CitrusStylesSE__tab-heading--error">Error</button>
+          </div>
+        </div>
+        <div role="tabpanel" class="CitrusStylesSE__tabs__tab">This is tab one</div>
+        <div hidden class="CitrusStylesSE__tabs__tab">This is tab two</div>
+      </div>
+
+
+      <script src="../prism.js"></script>
+
+</body>
+</html>
