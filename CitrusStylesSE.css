@@ -37,6 +37,80 @@
     --citrusStylesSE-danger: #dc3545;
     --citrusStylesSE-light: #f8f9fa;
     --citrusStylesSE-dark: #212529;
+    --citrusStylesSE-color--background: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--background-offset: var(--citrusStylesSE-color--9);
+    --citrusStylesSE-color--background-offset-2: var(--citrusStylesSE-color--8);
+    --citrusStylesSE-color--text: var(--citrusStylesSE-color--0);
+    --citrusStylesSE-color--citrusStylesSE-text-inverse: var(--citrusStylesSE-color--background);
+    --citrusStylesSE-color--quiet: var(--citrusStylesSE-color--4);
+    --citrusStylesSE-color--00: #000;
+    --citrusStylesSE-color--0: #1f1f1f;
+    --citrusStylesSE-color--1: #3a3a3a;
+    --citrusStylesSE-color--2: #6a6a6a;
+    --citrusStylesSE-color--3: #8a8a8a;
+    --citrusStylesSE-color--4: #aaa;
+    --citrusStylesSE-color--5: #bababa;
+    --citrusStylesSE-color--6: #cacaca;
+    --citrusStylesSE-color--7: #dadada;
+    --citrusStylesSE-color--8: #eaeaea;
+    --citrusStylesSE-color--9: #fafafa;
+    --citrusStylesSE-color--10: #fff;
+    --citrusStylesSE-color--outline: #4267ff;
+    --citrusStylesSE-color--brand: #e717fa;
+    --citrusStylesSE-color--info: #4267ff;
+    --citrusStylesSE-color--warning: #ffa500;
+    --citrusStylesSE-color--success: #088a05;
+    --citrusStylesSE-color--error: #ee0202;
+    --citrusStylesSE-color--highlight: #ffef14;
+    --citrusStylesSE-color--citrusStylesSE-text-brand: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--citrusStylesSE-text-info: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--citrusStylesSE-text-warning: var(--citrusStylesSE-color--0);
+    --citrusStylesSE-color--citrusStylesSE-text-success: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--citrusStylesSE-text-error: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
+    --citrusStylesSE-color--transparent: transparent;
+
+    /* Disabled */
+
+    --citrusStylesSE-disabled-opacity: 0.5;
+    --citrusStylesSE-disabled-opacity: 0.5;
+    --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
+    --citrusStylesSE-color--disabled-background: var(--citrusStylesSE-color--8);
+
+    /* Buttons */
+    --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
+    --citrusStylesSE-button-background: var(--citrusStylesSE-color--text);
+    --citrusStylesSE-button-color--ghost: var(--citrusStylesSE-color--text);
+    --citrusStylesSE-button-color--ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
+    --citrusStylesSE-button-background--ghost: transparent;
+    --citrusStylesSE-button-color--close: var(--citrusStylesSE-color--text);
+    --citrusStylesSE-button-color--brand: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
+    --citrusStylesSE-button-color--brand-ghost: var(--citrusStylesSE-color--brand);
+    --citrusStylesSE-button-color--brand-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
+    --citrusStylesSE-button-background--brand: var(--citrusStylesSE-color--brand);
+    --citrusStylesSE-button-background--brand-ghost: transparent;
+    --citrusStylesSE-button-color--info: var(--citrusStylesSE-color--citrusStylesSE-text-info);
+    --citrusStylesSE-button-color--info-ghost: var(--citrusStylesSE-color--info);
+    --citrusStylesSE-button-color--info-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-info);
+    --citrusStylesSE-button-background--info: var(--citrusStylesSE-color--info);
+    --citrusStylesSE-button-background--info-ghost: transparent;
+    --citrusStylesSE-button-color--warning: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
+    --citrusStylesSE-button-color--warning-ghost: var(--citrusStylesSE-color--warning);
+    --citrusStylesSE-button-color--warning-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
+    --citrusStylesSE-button-background--warning: var(--citrusStylesSE-color--warning);
+    --citrusStylesSE-button-background--warning-ghost: transparent;
+    --citrusStylesSE-button-color--success: var(--citrusStylesSE-color--citrusStylesSE-text-success);
+    --citrusStylesSE-button-color--success-ghost: var(--citrusStylesSE-color--success);
+    --citrusStylesSE-button-color--success-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-success);
+    --citrusStylesSE-button-background--success: var(--citrusStylesSE-color--success);
+    --citrusStylesSE-button-background--success-ghost: transparent;
+    --citrusStylesSE-button-color--error: var(--citrusStylesSE-color--citrusStylesSE-text-error);
+    --citrusStylesSE-button-color--error-ghost: var(--citrusStylesSE-color--error);
+    --citrusStylesSE-button-color--error-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-error);
+    --citrusStylesSE-button-background--error: var(--citrusStylesSE-color--error);
+    --citrusStylesSE-button-background--error-ghost: transparent;
+    --citrusStylesSE-button-border-radius: var(--citrusStylesSE-border-radius);
+    /* End Buttons */
     
     /* Grid */
     --citrusStylesSE-grid-gutter: 1em;
@@ -195,6 +269,197 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/* Buttons */
+.citrusStylesSE-button {
+  color: var(--citrusStylesSE-button-color);
+  background: var(--citrusStylesSE-button-background);
+  border: 1px solid transparent;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: var(--citrusStylesSE-spacing-small);
+  overflow: hidden;
+  font-size: 1em;
+  font-family: inherit;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  border-radius: var(--citrusStylesSE-button-border-radius);
+  outline: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  user-select: none;
+}
+.citrusStylesSE-button.citrusStylesSE-button--active {
+  filter: brightness(0.95);
+}
+.citrusStylesSE-button:not(:disabled, [disabled]):not(:active):hover {
+  filter: brightness(0.95);
+}
+.citrusStylesSE-button:not(:disabled, [disabled]):focus {
+  border-color: var(--citrusStylesSE-border-color-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
+}
+.citrusStylesSE-button:not(:disabled, [disabled]):active {
+  filter: brightness(0.9);
+}
+.citrusStylesSE-button:disabled, .citrusStylesSE-button[disabled] {
+  cursor: not-allowed;
+  opacity: var(--citrusStylesSE-disabled-opacity);
+}
+.citrusStylesSE-button.citrusStylesSE-button--close {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--close);
+  --citrusStylesSE-background: transparent;
+  color: var(--citrusStylesSE-button-color);
+  background: var(--citrusStylesSE-button-background);
+  border: 1px solid transparent;
+  position: absolute;
+  right: var(--citrusStylesSE-spacing-small);
+  padding: 0;
+  font-weight: var(--citrusStylesSE-text-font-weight-heavy);
+  font-size: 1.4em;
+  line-height: 1;
+  outline: 0;
+}
+.citrusStylesSE-button.citrusStylesSE-button--close.citrusStylesSE-button--active {
+  filter: brightness(0.95);
+}
+.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):not(:active):hover {
+  filter: brightness(0.95);
+}
+.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):focus {
+  border-color: var(--citrusStylesSE-border-color-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
+}
+.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):active {
+  filter: brightness(0.9);
+}
+.citrusStylesSE-button.citrusStylesSE-button--block {
+  display: inline-block;
+  width: 100%;
+}
+.citrusStylesSE-button.citrusStylesSE-button--rounded {
+  border-radius: var(--citrusStylesSE-border-radius-rounded);
+}
+.citrusStylesSE-button.citrusStylesSE-button--brand {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--brand);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--brand);
+}
+.citrusStylesSE-button.citrusStylesSE-button--info {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--info);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--info);
+}
+.citrusStylesSE-button.citrusStylesSE-button--warning {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--warning);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--warning);
+}
+.citrusStylesSE-button.citrusStylesSE-button--success {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--success);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--success);
+}
+.citrusStylesSE-button.citrusStylesSE-button--error {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--error);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--error);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--ghost);
+  border: 1px solid var(--citrusStylesSE-button-color);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--active {
+  color: var(--citrusStylesSE-button-color--ghost-hover);
+  background: var(--citrusStylesSE-button-color);
+  border-color: 1px solid transparent;
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):not(:active):hover {
+  color: var(--citrusStylesSE-button-color--ghost-hover);
+  background: var(--citrusStylesSE-button-color);
+  border-color: 1px solid transparent;
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):focus {
+  border-color: var(--citrusStylesSE-border-color-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):active, .citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled])[aria-current] {
+  color: var(--citrusStylesSE-button-color--ghost-hover);
+  background: var(--citrusStylesSE-button-color);
+  border-color: 1px solid transparent;
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--brand {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--brand-ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--brand-ghost);
+  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--brand-ghost-hover);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--info {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--info-ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--info-ghost);
+  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--info-ghost-hover);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--warning {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--warning-ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--warning-ghost);
+  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--warning-ghost-hover);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--success {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--success-ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--success-ghost);
+  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--success-ghost-hover);
+}
+.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--error {
+  --citrusStylesSE-color: var(--citrusStylesSE-color--error-ghost);
+  --citrusStylesSE-background: var(--citrusStylesSE-background--error-ghost);
+  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--error-ghost-hover);
+}
+.citrusStylesSE-button.citrusStylesSE-button--nude {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: inherit;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.citrusStylesSE-button.citrusStylesSE-button--nude:disabled, .citrusStylesSE-button.citrusStylesSE-button--nude[disabled] {
+  cursor: not-allowed;
+  opacity: var(--disabled-opacity);
+}
+.citrusStylesSE-button.citrusStylesSE-button--nude:not(:disabled, [disabled]):not(:active):focus {
+  border-color: var(--citrusStylesSE-border-color-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
+}
+
+.citrusStylesSE-button__icon-left {
+  padding-right: var(--citrusStylesSE-spacing-small);
+}
+
+.citrusStylesSE-button__icon-right {
+  padding-left: var(--citrusStylesSE-spacing-small);
+}
+/*End Buttons */
+
+/* Common Class */
+  .citrusStylesSE-container{
+    margin: 0 auto;
+}
+
+.citrusStylesSE-container--large{
+    max-width: 64em;
+}
+/* End Common Class */
+
 
 
 /* ===================== Grid ===================== */
