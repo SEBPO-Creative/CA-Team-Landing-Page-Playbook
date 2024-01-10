@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <main class="citrusStylesSE__container citrusStylesSE__container--medium">
+    <main class="citrusStylesSE-container citrusStylesSE-container--medium">
         <!-- Cards -->
-        <h1 class="citrusStylesSE__heading citrusStylesSE__super">Cards</h1>
+        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Cards</h1>
         <p>Cards are a common minimalistic design tool used to segregate sections of your content.</p>
         <!-- Basic card -->
-        <h1 class="citrusStylesSE__heading citrusStylesSE__super">Basic Card</h1>
+        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Basic Card</h1>
         <div class="output">
-            <div class="citrusStylesSE__card">
-                <div class="citrusStylesSE__card__body">
-                    <p class="citrusStylesSE__paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+            <div class="citrusStylesSE-card">
+                <div class="citrusStylesSE-card__body">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
                         eloquentiam
                         sea et.</p>
                 </div>
@@ -29,13 +29,57 @@
 
         </div>
         <pre><code class="language-html">
-            &lt;div class="citrusStylesSE__card"&gt;
-            &lt;div class="citrusStylesSE__card__body"&gt;
-            &lt;p class="citrusStylesSE__paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+            &lt;div class="citrusStylesSE-card"&gt;
+            &lt;div class="citrusStylesSE-card__body"&gt;
+            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
             &lt;/div&gt;
             &lt;/div&gt;
         </code></pre>
         <!-- ./End Basic Card -->
+
+        <!-- Dividers -->
+        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Dividers</h1>
+        <!-- output -->
+        <div class="output">
+            <div class="citrusStylesSE-card">
+                <div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider">Header</div>
+                <div class="citrusStylesSE-card__item  ">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                </div>
+                <div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider">Divider</div>
+                <div class="citrusStylesSE-card__item">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                </div>
+                <div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider">Footer</div>
+            </div>
+        </div>
+        <pre><code class="language-html">
+                    &lt;div class="citrusStylesSE-card"&gt;
+                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Header&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item "&gt;
+                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam et.&lt;/p&gt; 
+                    &lt;/div&gt;
+                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Divider&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item"&gt;
+                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Footer&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                </code></pre>
+        <!-- ./End Dividers -->
     </main>
     <!-- Prism js -->
     <script src="../prism.js"></script>

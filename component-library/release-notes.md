@@ -21,3 +21,8 @@
 
 - cards started
 - card css file now maintain different style file, latter I will merge them
+
+## 9 January 2024 by Imran-Ahmed
+
+- card divider added
+- cards css added with 'citrusStylesSE-' prefix

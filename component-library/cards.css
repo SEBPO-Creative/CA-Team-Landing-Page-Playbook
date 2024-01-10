@@ -1,6 +1,6 @@
 /* container style use for center main box */
 @media screen and (min-width: 768px) {
-  .citrusStylesSE__container {
+  .citrusStylesSE-container {
     width: 80%;
     margin: auto;
   }
@@ -11,4 +11,292 @@
   padding: 1rem;
   border-radius: 5px;
   margin: 2rem 0;
+}
+/* above code for demo */
+
+.citrusStylesSE-card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.citrusStylesSE-card > .citrusStylesSE-image:not(:first-child) {
+  padding: var(--spacing-medium) 0 0;
+}
+
+.citrusStylesSE-card + .citrusStylesSE-card {
+  margin: var(--spacing-small) 0 0 0;
+}
+
+.citrusStylesSE-card__header {
+  padding: var(--spacing-medium) var(--spacing-medium) 0;
+}
+
+.citrusStylesSE-card__header .citrusStylesSE-heading {
+  padding: 0;
+}
+
+.citrusStylesSE-card__body,
+.citrusStylesSE-card__footer {
+  padding: var(--spacing-medium);
+}
+
+.citrusStylesSE-card__footer--block {
+  padding: var(--spacing-small) 0 0;
+}
+
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button {
+  border-bottom: 0;
+}
+
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button:first-child {
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+}
+
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button:last-child {
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+}
+
+.citrusStylesSE-card__item {
+  background: var(--card-item-background);
+  color: var(--card-item-color);
+  margin: 0;
+  padding: var(--spacing-small);
+}
+
+.citrusStylesSE-card__item:disabled,
+.citrusStylesSE-card__item[disabled] {
+  cursor: not-allowed;
+  opacity: var(--disabled-opacity);
+}
+
+.citrusStylesSE-card__item--divider[role="separator"] {
+  --card-item-color: var(--card-item-color--divider);
+  --card-item-background: var(--card-item-background--divider);
+  font-weight: var(--text-font-weight-heavy);
+}
+
+.citrusStylesSE-card__item--brand {
+  --card-item-color: var(--card-item-color--brand);
+  --card-item-background: var(--card-item-background--brand);
+}
+
+.citrusStylesSE-card__item--info {
+  --card-item-color: var(--card-item-color--info);
+  --card-item-background: var(--card-item-background--info);
+}
+
+.citrusStylesSE-card__item--warning {
+  --card-item-color: var(--card-item-color--warning);
+  --card-item-background: var(--card-item-background--warning);
+}
+
+.citrusStylesSE-card__item--success {
+  --card-item-color: var(--card-item-color--success);
+  --card-item-background: var(--card-item-background--success);
+}
+
+.citrusStylesSE-card__item--error {
+  --card-item-color: var(--card-item-color--error);
+  --card-item-background: var(--card-item-background--error);
+}
+
+.citrusStylesSE-card__item + .citrusStylesSE-card__footer--block {
+  padding: 0;
+}
+
+.citrusStylesSE-card--grouped .citrusStylesSE-card__item:not(:last-child) {
+  border-bottom: 0;
+}
+
+.citrusStylesSE-card__divider[role="separator"] {
+  background-color: var(--border-color);
+  height: var(--border-width);
+  overflow: hidden;
+}
+
+.citrusStylesSE-card__control {
+  --button-color: var(--card-control-color);
+  --button-background: var(--card-control-background);
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--button-background);
+  border: 0;
+  border-radius: var(--button-border-radius);
+  border-radius: 0;
+  color: var(--button-color);
+  display: inline-block;
+  display: block;
+  font-family: inherit;
+  font-size: 1em;
+  line-height: normal;
+  margin: 0;
+  max-width: 100%;
+  outline: 0;
+  overflow: hidden;
+  padding: var(--spacing-small);
+  position: relative;
+  text-align: center;
+  text-align: inherit;
+  text-decoration: none;
+  text-decoration: inherit;
+  text-overflow: ellipsis;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.citrusStylesSE-card__control:disabled,
+.citrusStylesSE-card__control[disabled] {
+  cursor: not-allowed;
+  opacity: var(--disabled-opacity);
+}
+
+.citrusStylesSE-card__control.citrusStylesSE-button--active,
+.citrusStylesSE-card__control:not(:disabled, [disabled]):not(:active):hover {
+  filter: brightness(0.95);
+}
+
+.citrusStylesSE-card__control:not(:disabled, [disabled]):focus {
+  border-color: var(--border-color-focus);
+  box-shadow: var(--box-shadow-focus);
+}
+
+.citrusStylesSE-card__control:not(:disabled, [disabled]):active {
+  filter: brightness(0.9);
+}
+
+.citrusStylesSE-card__control[aria-expanded="true"] {
+  filter: brightness(0.95);
+  font-weight: var(--text-font-weight-heavy);
+}
+
+.citrusStylesSE-card__control.citrusStylesSE-card__control--active {
+  filter: brightness(0.95);
+}
+
+.citrusStylesSE-card--menu[role="menu"] {
+  border: var(--card-menu-border);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  display: inline-block;
+  margin-top: 0.5em;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  text-overflow: ellipsis;
+  width: auto;
+}
+
+.citrusStylesSE-card--menu[role="menu"]
+  .citrusStylesSE-card__control[role="menuitem"] {
+  --button-color: var(--card-control-color--menu);
+  --button-background: var(--card-control-background--menu);
+}
+
+.citrusStylesSE-card--accordion
+  .citrusStylesSE-card__control[aria-expanded]:after {
+  background-image: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  content: "";
+  height: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1em;
+}
+.citrusStylesSE-card--accordion
+  .citrusStylesSE-card__control[aria-expanded][aria-expanded="true"]:after {
+  transform: rotate(180deg);
+}
+
+.citrusStylesSE-card__item--pane {
+  margin: 0;
+  padding: var(--spacing-small);
+}
+
+.citrusStylesSE-card__control[aria-expanded="false"]
+  + .citrusStylesSE-card__item--pane {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.citrusStylesSE-card__body .citrusStylesSE-panel {
+  padding: var(--spacing-small);
+}
+
+/* Modal card */
+.citrusStylesSE-modal[role="dialog"] .citrusStylesSE-card {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.citrusStylesSE-modal[role="dialog"]
+  .citrusStylesSE-card
+  .citrusStylesSE-card__body {
+  position: relative;
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--ghost {
+  background: var(--modal-background--ghost);
+  color: #fff;
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--ghost
+  .citrusStylesSE-heading {
+  color: #fff;
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--ghost
+  .citrusStylesSE-button--close {
+  color: var(--modal-close-color--ghost);
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--full {
+  height: calc(100% - 2em);
+  left: 1em;
+  top: 1em;
+  transform: none;
+  width: calc(100% - 2em);
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--full
+  .citrusStylesSE-card:first-child {
+  box-shadow: none;
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--full
+  .citrusStylesSE-card__body {
+  -webkit-overflow-scrolling: touch;
+  bottom: 4em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 3.5em;
+  width: 100%;
+}
+
+.citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--full
+  .citrusStylesSE-card__footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
