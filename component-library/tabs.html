@@ -5,190 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabs Example</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
     <link rel="stylesheet" href="../prism.css">
-<style>
-.citrusStylesSE-tabs[role=tablist] {
-  display: block;
-}
-
-.citrusStylesSE-tabs__headings {
-  display: flex;
-  text-align: center;
-}
-
-.citrusStylesSE-tabs__nav {
-  overflow: hidden;
-}
-.citrusStylesSE-tabs__nav .citrusStylesSE-tabs__headings {
-  margin-bottom: -1em;
-  padding-bottom: 1em;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.citrusStylesSE-tab-heading[role=tab] {
-  width: auto;
-  margin: 0;
-  padding: 0;
-  overflow: visible;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  text-align: inherit;
-  text-decoration: inherit;
-  vertical-align: inherit;
-  background: inherit;
-  border: 0;
-  border-radius: 0;
-  outline: 0;
-  -webkit-appearance: none;
-  appearance: none;
-  display: block;
-  flex: 1;
-  margin: 0;
-  padding: var(--spacing-medium);
-  color: var(--citrusStylesSE-tab-heading-color);
-  white-space: nowrap;
-  background: var(--citrusStylesSE-tab-heading-background);
-  border-bottom: var(--spacing-xsmall) solid var(--citrusStylesSE-tab-heading-border-color);
-  border-radius: var(--citrusStylesSE-tab-heading-border-radius) var(--citrusStylesSE-tab-heading-border-radius) 0 0;
-}
-.citrusStylesSE-tab-heading[role=tab]:disabled, .citrusStylesSE-tab-heading[role=tab][disabled] {
-  cursor: not-allowed;
-  opacity: var(--disabled-opacity);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
-  border-color: var(--border-color-focus);
-  box-shadow: var(--box-shadow-focus);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--hover);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--hover);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--hover);
-}
-.citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--active);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--active);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--active);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--brand, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--brand {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--brand);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--brand);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--brand);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--info, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--info {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--info);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--info);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--info);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--warning, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--warning {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--warning);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--warning);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--warning);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--success, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--success {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--success);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--success);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--success);
-}
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--error, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--error {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--error);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--error);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--error);
-}
-
-.citrusStylesSE-tabs__tab[role=tabpanel] {
-  padding: var(--citrusStylesSE-spacing-medium);
-}
-</style>
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
 </head>
 <body>
 
-    <!-- Basic Tabs -->
-    <div class="citrusStylesSE-cell">
-        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Basic Tabs</h1>
-    </div>
-    <div role="tablist" class="citrusStylesSE-tabs">
-        <div class="citrusStylesSE-tabs__nav">
-          <div class="citrusStylesSE-tabs__headings">
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active">Wide tabs with nav</button>
-            <button role="tab" class="citrusStylesSE-tab-heading" disabled>Disabled</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Three</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Four</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Five</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Six</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Seven</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Eight</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Nine</button>
-            <button role="tab" class="citrusStylesSE-tab-heading">Ten</button>
-          </div>
-        </div>
-        <div role="tabpanel" class="citrusStylesSE-tabs__tab">This is tab one</div>
-        <div role="tabpanel" hidden class="citrusStylesSE-tabs__tab">This is tab two</div>
-      </div>
-      <pre>
-        <code class="language-html">
-          <div role="tablist" class="citrusStylesSE-tabs">
-            <div class="citrusStylesSE-tabs__nav">
-              <div class="citrusStylesSE-tabs__headings">
-                <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active">Wide tabs with nav</button>
-                <button role="tab" class="citrusStylesSE-tab-heading" disabled>Disabled</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Three</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Four</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Five</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Six</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Seven</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Eight</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Nine</button>
-                <button role="tab" class="citrusStylesSE-tab-heading">Ten</button>
-              </div>
-            </div>
-            <div role="tabpanel" class="citrusStylesSE-tabs__tab">This is tab one</div>
-            <div role="tabpanel" hidden class="citrusStylesSE-tabs__tab">This is tab two</div>
-          </div>
-        </code>
-      </pre>
-
-      <!-- Colors -->
-      <div class="citrusStylesSE-cell">
-        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Colors</h1>
-    </div>
-      <div role="tablist" class="citrusStylesSE-tabs">
-        <div class="citrusStylesSE-tabs__nav">
-          <div class="citrusStylesSE-tabs__headings">
-            <button role="tab" class="citrusStylesSE-tab-heading">Default</button>
-            <button role="tab" class="citrusStylesSE-tab-heading" disabled>Disabled</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--brand">Brand</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--info">Info</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--warning">Warning</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--success">Success</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--error">Error</button>
-          </div>
-        </div>
-        <div role="tabpanel" class="citrusStylesSE-tabs__tab">This is tab one</div>
-        <div hidden class="citrusStylesSE-tabs__tab">This is tab two</div>
-      </div>
-
-      <!-- Active -->
-      <div class="citrusStylesSE-cell">
-        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Active</h1>
-    </div>
-      <div role="tablist" class="citrusStylesSE-tabs">
-        <div class="citrusStylesSE-tabs__nav">
-          <div class="citrusStylesSE-tabs__headings">
-            <button role="tab" class="citrusStylesSE-tab-heading">Default</button>
-            <button role="tab" class="citrusStylesSE-tab-heading" disabled>Disabled</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active">Active</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--brand">Brand</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--info">Info</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--warning">Warning</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--success">Success</button>
-            <button role="tab" class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--error">Error</button>
-          </div>
-        </div>
-        <div role="tabpanel" class="citrusStylesSE-tabs__tab">This is tab one</div>
-        <div hidden class="citrusStylesSE-tabs__tab">This is tab two</div>
-      </div>
+   
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-super">Tabs</h1>
+		<p class="citrusStylesSE-paragraph">Tabbed content, useful to toggle between content without jumping around the page or across pages.</p>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge">Basic Tabs</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<!---->
+			<div class="citrusStylesSE-tabs">
+				<div class="citrusStylesSE-tabs" role="tablist">
+					<div class="citrusStylesSE-tabs__nav">
+						<div class="citrusStylesSE-tabs__headings">
+							<button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--brand citrusStylesSE-tab-heading--active" role="tab">One</button><button class="citrusStylesSE-tab-heading" disabled role="tab">Two (disabled)</button><button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--info" role="tab">Three</button><button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--warning" role="tab">Four</button><button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--success" role="tab">Five</button><button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--error" role="tab">Six</button><button class="citrusStylesSE-tab-heading" role="tab">Seven</button><button class="citrusStylesSE-tab-heading" role="tab">Eight</button><button class="citrusStylesSE-tab-heading" role="tab">Nine</button><button class="citrusStylesSE-tab-heading" role="tab">Ten</button>
+						</div>
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab citrusStylesSE-tabs__tab--brand" role="tabpanel">
+						This is tab one
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+						This is tab two
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab citrusStylesSE-tabs__tab--info" hidden="" role="tabpanel">
+						This is tab three
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab citrusStylesSE-tabs__tab--warning" hidden="" role="tabpanel">
+						This is tab four
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab citrusStylesSE-tabs__tab--success" hidden="" role="tabpanel">
+						This is tab five
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab citrusStylesSE-tabs__tab--error" hidden="" role="tabpanel">
+						This is tab six
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+						This is tab seven
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+						This is tab eight
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+						This is tab nine
+					</div><!---->
+					<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+						This is tab ten
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">blaze-tabs</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"brand"</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"One"</span> <span class="hljs-attr">open</span>&gt;</span>This is tab one<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">disabled</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Two (disabled)"</span>&gt;</span>This is tab two<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Three"</span>&gt;</span>This is tab three<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Four"</span>&gt;</span>This is tab four<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Five"</span>&gt;</span>This is tab five<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"error"</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Six"</span>&gt;</span>This is tab six<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Seven"</span>&gt;</span>This is tab seven<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Eight"</span>&gt;</span>This is tab eight<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Nine"</span>&gt;</span>This is tab nine<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"Ten"</span>&gt;</span>This is tab ten<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tab</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-tabs</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading">Attributes</h2>
+		<table class="citrusStylesSE-table">
+			<thead class="citrusStylesSE-table__head">
+				<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<th class="citrusStylesSE-table__cell">Name</th>
+					<th class="citrusStylesSE-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="citrusStylesSE-table__body">
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">type: string</td>
+					<td class="citrusStylesSE-table__cell">The color of the tabs</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">open: boolean</td>
+					<td class="citrusStylesSE-table__cell">Specify which tab should be selected on load</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">disabled: boolean</td>
+					<td class="citrusStylesSE-table__cell">Disable specific tabs to prevent them from opening</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">header: string</td>
+					<td class="citrusStylesSE-table__cell">The text that should appear in each tab</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">Methods</h2>
+		<table class="citrusStylesSE-table">
+			<thead class="citrusStylesSE-table__head">
+				<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<th class="citrusStylesSE-table__cell">Name</th>
+					<th class="citrusStylesSE-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="citrusStylesSE-table__body">
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">currentTab(): Promise&lt;number&gt;</td>
+					<td class="citrusStylesSE-table__cell">returns the index of the current tab</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">openTab(tabIndex: number)</td>
+					<td class="citrusStylesSE-table__cell">Programmatically select a tab to open</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">CSS</h2>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge">Basic Tabs</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<div class="citrusStylesSE-tabs" role="tablist">
+				<div class="citrusStylesSE-tabs__nav">
+					<div class="citrusStylesSE-tabs__headings">
+						<button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active" role="tab">Wide tabs with nav</button> <button class="citrusStylesSE-tab-heading" disabled role="tab">Disabled</button> <button class="citrusStylesSE-tab-heading" role="tab">Three</button> <button class="citrusStylesSE-tab-heading" role="tab">Four</button> <button class="citrusStylesSE-tab-heading" role="tab">Five</button> <button class="citrusStylesSE-tab-heading" role="tab">Six</button> <button class="citrusStylesSE-tab-heading" role="tab">Seven</button> <button class="citrusStylesSE-tab-heading" role="tab">Eight</button> <button class="citrusStylesSE-tab-heading" role="tab">Nine</button> <button class="citrusStylesSE-tab-heading" role="tab">Ten</button>
+					</div>
+				</div>
+				<div class="citrusStylesSE-tabs__tab" role="tabpanel">
+					This is tab one
+				</div>
+				<div class="citrusStylesSE-tabs__tab" hidden="" role="tabpanel">
+					This is tab two
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__nav"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__headings"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active"</span>&gt;</span>Wide tabs with nav<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span> <span class="hljs-attr">disabled</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Three<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Four<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Five<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Six<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Seven<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Eight<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Nine<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Ten<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab one<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="colors">Colors</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<div class="citrusStylesSE-tabs" role="tablist">
+				<div class="citrusStylesSE-tabs__nav">
+					<div class="citrusStylesSE-tabs__headings">
+						<button class="citrusStylesSE-tab-heading" role="tab">Default</button> <button class="citrusStylesSE-tab-heading" disabled role="tab">Disabled</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--brand" role="tab">Brand</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--info" role="tab">Info</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--warning" role="tab">Warning</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--success" role="tab">Success</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--error" role="tab">Error</button>
+					</div>
+				</div>
+				<div class="citrusStylesSE-tabs__tab" role="tabpanel">
+					This is tab one
+				</div>
+				<div class="citrusStylesSE-tabs__tab" hidden="">
+					This is tab two
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__nav"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__headings"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span> <span class="hljs-attr">disabled</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab one<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="active">Active</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<div class="citrusStylesSE-tabs" role="tablist">
+				<div class="citrusStylesSE-tabs__nav">
+					<div class="citrusStylesSE-tabs__headings">
+						<button class="citrusStylesSE-tab-heading" role="tab">Default</button> <button class="citrusStylesSE-tab-heading" disabled role="tab">Disabled</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active" role="tab">Active</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--brand" role="tab">Brand</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--info" role="tab">Info</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--warning" role="tab">Warning</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--success" role="tab">Success</button> <button class="citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--error" role="tab">Error</button>
+					</div>
+				</div>
+				<div class="citrusStylesSE-tabs__tab" role="tabpanel">
+					This is tab one
+				</div>
+				<div class="citrusStylesSE-tabs__tab" hidden="">
+					This is tab two
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tablist"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__nav"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__headings"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading"</span> <span class="hljs-attr">disabled</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tab"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tab-heading citrusStylesSE-tab-heading--active citrusStylesSE-tab-heading--error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"tabpanel"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab one<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-tabs__tab"</span>&gt;</span>This is tab two<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+	</main>
 
 
       <script src="../prism.js"></script>
