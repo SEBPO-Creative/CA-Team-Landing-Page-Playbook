@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+   
+
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-super">Lists</h1>
+		<p class="citrusStylesSE-paragraph">Ordered, un-ordered, indented, Blaze has you covered when it comes to making lists.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-list">
+				<li class="citrusStylesSE-list__item">Lorem ipsum dolor sit amet</li>
+				<li class="citrusStylesSE-list__item">Consectetur adipiscing elit</li>
+				<li class="citrusStylesSE-list__item">Nulla volutpat aliquam velit
+					<ul class="citrusStylesSE-list">
+						<li class="citrusStylesSE-list__item">Phasellus iaculis neque</li>
+						<li class="citrusStylesSE-list__item">Purus sodales ultricies</li>
+						<li class="citrusStylesSE-list__item">Vestibulum laoreet porttitor sem</li>
+						<li class="citrusStylesSE-list__item">Ac tristique libero volutpat at</li>
+					</ul>
+				</li>
+				<li class="citrusStylesSE-list__item">Faucibus porta lacus fringilla vel</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Nulla volutpat aliquam velit
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Phasellus iaculis neque<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Purus sodales ultricies<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Vestibulum laoreet porttitor sem<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Ac tristique libero volutpat at<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Faucibus porta lacus fringilla vel<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="ordered">Ordered</h2>
+		<p class="citrusStylesSE-paragraph">The <code class="citrusStylesSE-code">.list--ordered</code> modifier will apply correct numbering to ordered lists and nested lists.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ol class="citrusStylesSE-list citrusStylesSE-list--ordered">
+				<li class="citrusStylesSE-list__item">Lorem ipsum dolor sit amet</li>
+				<li class="citrusStylesSE-list__item">Consectetur adipiscing elit</li>
+				<li class="citrusStylesSE-list__item">Nulla volutpat aliquam velit
+					<ol class="citrusStylesSE-list citrusStylesSE-list--ordered">
+						<li class="citrusStylesSE-list__item">Phasellus iaculis neque</li>
+						<li class="citrusStylesSE-list__item">Purus sodales ultricies
+							<ol class="citrusStylesSE-list citrusStylesSE-list--ordered">
+								<li class="citrusStylesSE-list__item">Lorem ipsum dolor sit amet</li>
+								<li class="citrusStylesSE-list__item">Consectetur adipiscing elit</li>
+							</ol>
+						</li>
+						<li class="citrusStylesSE-list__item">Vestibulum laoreet porttitor sem</li>
+						<li class="citrusStylesSE-list__item">Ac tristique libero volutpat at</li>
+					</ol>
+				</li>
+				<li class="citrusStylesSE-list__item">Faucibus porta lacus fringilla vel</li>
+			</ol>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list citrusStylesSE-list--ordered"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Nulla volutpat aliquam velit
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list citrusStylesSE-list--ordered"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Phasellus iaculis neque<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Purus sodales ultricies
+        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list citrusStylesSE-list--ordered"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Lorem ipsum dolor sit amet<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Vestibulum laoreet porttitor sem<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Ac tristique libero volutpat at<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Faucibus porta lacus fringilla vel<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="un-styled">Un-styled</h2>
+		<p class="citrusStylesSE-paragraph">Applying <code class="citrusStylesSE-code">.list--unstyled</code> to a list will remove the bullet points.</p>
+		<p class="citrusStylesSE-paragraph">You can remove bullet points on individual items by adding the <code class="citrusStylesSE-code">.list__item--unstyled</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-list citrusStylesSE-list--unstyled">
+				<li class="citrusStylesSE-list__item">This list is unstyled</li>
+				<li class="citrusStylesSE-list__item">Consectetur adipiscing elit</li>
+				<li class="citrusStylesSE-list__item">Nulla volutpat aliquam velit
+					<ul class="citrusStylesSE-list">
+						<li class="citrusStylesSE-list__item">Phasellus iaculis neque</li>
+						<li class="citrusStylesSE-list__item">Purus sodales ultricies</li>
+						<li class="citrusStylesSE-list__item citrusStylesSE-list__item--unstyled">This is an unstyled item</li>
+						<li class="citrusStylesSE-list__item">Ac tristique libero volutpat at</li>
+					</ul>
+				</li>
+				<li class="citrusStylesSE-list__item">Faucibus porta lacus fringilla vel</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list citrusStylesSE-list--unstyled"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>This list is unstyled<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Consectetur adipiscing elit<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Nulla volutpat aliquam velit
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Phasellus iaculis neque<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Purus sodales ultricies<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item citrusStylesSE-list__item--unstyled"</span>&gt;</span>This is an unstyled item<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Ac tristique libero volutpat at<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Faucibus porta lacus fringilla vel<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="inline">Inline</h2>
+		<p class="citrusStylesSE-paragraph">To make your list items flow left to right apply the <code class="citrusStylesSE-code">.list--inline</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-list citrusStylesSE-list--inline">
+				<li class="citrusStylesSE-list__item">Lorem</li>
+				<li class="citrusStylesSE-list__item">ipsum</li>
+				<li class="citrusStylesSE-list__item">dolor</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="citrusStylesSE-pre"><code aria-hidden="" class="citrusStylesSE-code citrusStylesSE-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list citrusStylesSE-list--inline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>Lorem<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>ipsum<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-list__item"</span>&gt;</span>dolor<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+	</main>
+
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>

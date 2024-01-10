@@ -711,6 +711,81 @@
 }
 /* End Headings */
 
+/* List */
+ul.citrusStylesSE-list,
+ol.citrusStylesSE-list,
+.citrusStylesSE-list[role=list] {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 var(--citrusStylesSE-spacing-medium);
+  list-style-position: outside;
+}
+ul.citrusStylesSE-list ul.citrusStylesSE-list,
+ul.citrusStylesSE-list ol.citrusStylesSE-list,
+ul.citrusStylesSE-list .citrusStylesSE-list[role=list],
+ol.citrusStylesSE-list ul.citrusStylesSE-list,
+ol.citrusStylesSE-list ol.citrusStylesSE-list,
+ol.citrusStylesSE-list .citrusStylesSE-list[role=list],
+.citrusStylesSE-list[role=list] ul.citrusStylesSE-list,
+.citrusStylesSE-list[role=list] ol.citrusStylesSE-list,
+.citrusStylesSE-list[role=list] .citrusStylesSE-list[role=list] {
+  padding: 0 0 0 var(--citrusStylesSE-spacing-medium);
+}
+ul.citrusStylesSE-list .citrusStylesSE-list__item,
+ol.citrusStylesSE-list .citrusStylesSE-list__item,
+.citrusStylesSE-list[role=list] .citrusStylesSE-list__item {
+  padding: 0;
+}
+ul.citrusStylesSE-list .citrusStylesSE-list__item--unstyled,
+ol.citrusStylesSE-list .citrusStylesSE-list__item--unstyled,
+.citrusStylesSE-list[role=list] .citrusStylesSE-list__item--unstyled {
+  list-style: none;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--unstyled,
+ol.citrusStylesSE-list.citrusStylesSE-list--unstyled,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--unstyled {
+  padding: 0;
+  list-style: none;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--ordered,
+ol.citrusStylesSE-list.citrusStylesSE-list--ordered,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--ordered {
+  padding: 0;
+  list-style: none;
+  counter-reset: ordered;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--ordered .citrusStylesSE-list__item::before,
+ol.citrusStylesSE-list.citrusStylesSE-list--ordered .citrusStylesSE-list__item::before,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--ordered .citrusStylesSE-list__item::before {
+  padding: 0 var(--citrusStylesSE-spacing-small) 0 0;
+  content: counters(ordered, ".") " ";
+  counter-increment: ordered;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--inline,
+ol.citrusStylesSE-list.citrusStylesSE-list--inline,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--inline {
+  padding: 0;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list--inline,
+ol.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list--inline,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--inline .citrusStylesSE-list--inline {
+  padding: 0;
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list__item,
+ol.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list__item,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--inline .citrusStylesSE-list__item {
+  display: inline-block;
+  width: auto;
+  padding-right: var(--citrusStylesSE-spacing-medium);
+}
+ul.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before,
+ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before,
+.citrusStylesSE-list[role=list].citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before {
+  padding: 0 var(--citrusStylesSE-spacing-small) 0 0;
+  content: "•";
+}
+/* End List */
+
 
 /* Responsiveness */
 @media (max-width: 19.99em) {
