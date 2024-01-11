@@ -70,6 +70,11 @@
     --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
     --citrusStylesSE-color--transparent: transparent;
 
+     /* Avatars */
+    --citrusStylesSE-avatar-color: var(--citrusStylesSE-color-text-brand);
+    --citrusStylesSE-avatar-background: var(--citrusStylesSE-color-brand);
+    --citrusStylesSE-avatar-border-radius: var(--citrusStylesSE-border-radius-rounded);
+
     /* Badges */
     --citrusStylesSE-badge-color: var(--citrusStylesSE-color-text-inverse);
     --citrusStylesSE-badge-color--ghost: var(--citrusStylesSE-color-text);
@@ -323,6 +328,45 @@
   font-weight: 900;
   font-style: normal;
   }
+
+  /* ===================== Avatar ===================== */
+/* Style the avatars */
+/* Avatar */
+.citrusStylesSE-avatar {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  color: var(--citrusStylesSE-avatar-color);
+  background: var(--citrusStylesSE-avatar-background);
+  border-radius: var(--citrusStylesSE-avatar-border-radius);
+}
+
+.citrusStylesSE-avatar[data-text]::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: attr(data-text);
+}
+
+.citrusStylesSE-avatar__img[alt] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--citrusStylesSE-avatar-border-radius);
+}
+
+.citrusStylesSE-avatar__img[alt] + .citrusStylesSE-avatar__img[alt] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+}
+/* End Avatar */
   
 /* ===================== Accordion ===================== */
 /* Style the buttons that are used to open and close the accordion panel */
