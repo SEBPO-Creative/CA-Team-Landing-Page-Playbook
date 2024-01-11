@@ -107,6 +107,20 @@
     --citrusStylesSE-badge-border-color--error: transparent;
     --citrusStylesSE-badge-border-color--error-ghost: var(--citrusStylesSE-badge-color--error-ghost);
 
+    
+    /* Borders */
+    --citrusStylesSE-border-width: 1px;
+    --citrusStylesSE-border-style: solid;
+    --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
+    --citrusStylesSE-border-radius: 6px;
+    --citrusStylesSE-border-radius-rounded: 30em;
+
+    /* Box shadows */
+    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+
     /* Buttons */
     --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
     --citrusStylesSE-button-background: var(--citrusStylesSE-color--text);
@@ -250,19 +264,6 @@
 
     --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
 
-    /* Borders */
-    --citrusStylesSE-border-width: 1px;
-    --citrusStylesSE-border-style: solid;
-    --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
-    --citrusStylesSE-border-radius: 6px;
-    --citrusStylesSE-border-radius-rounded: 30em;
-
-    /* Box shadows */
-    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
-    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
-
     /* Typography */
     --citrusStylesSE-text-font-family-sans-serif: sans-serif;
     --citrusStylesSE-text-font-family-serif: serif;
@@ -277,6 +278,22 @@
     --citrusStylesSE-text-font-weight: normal;
     --citrusStylesSE-text-font-weight-heavy: bold;
     --citrusStylesSE-text-line-height: 1.55;
+
+    /* Tables */
+    --citrusStylesSE-table-caption-color: var(--citrusStylesSE-color-quiet);
+    --citrusStylesSE-table-striped-background: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-table-heading-background: var(--citrusStylesSE-color-background);
+
+    --citrusStylesSE-table-row-color: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-table-row-background: var(--citrusStylesSE-color-background);
+
+    --citrusStylesSE-table-row-color--clickable: var(--citrusStylesSE-link-color);
+    --citrusStylesSE-table-row-background--clickable: var(--citrusStylesSE-color-background-offset-2);
+
+    --citrusStylesSE-table-row-color--disabled: var(--citrusStylesSE-color-4);
+    --citrusStylesSE-table-row-background--disabled: inherit;
+
+    --citrusStylesSE-table-heading-border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style) var(--citrusStylesSE-border-color);
 
     /* Z Indexes */
     --citrusStylesSE-z-over-content: 100;
@@ -950,6 +967,92 @@
   margin-left: 100%;
 }
 /* End Grid width */
+
+
+/* ===================== Tables ===================== */
+/* All the Tables styles added here */
+/* Tables */
+.citrusStylesSE-table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.citrusStylesSE-table__caption {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0;
+  max-width: 100%;
+  padding: var(--citrusStylesSE-spacing-small) 0;
+  color: var(--citrusStylesSE-table-caption-color);
+  font-size: var(--citrusStylesSE-text-font-size-small);
+  text-align: left;
+}
+
+.citrusStylesSE-table__row,
+.citrusStylesSE-table__head,
+.citrusStylesSE-table__body {
+  display: flex;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.citrusStylesSE-table--striped :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row:nth-of-type(odd) {
+  color: inherit;
+  background: var(--citrusStylesSE-table-striped-background);
+}
+
+.citrusStylesSE-table__cell {
+  display: flex;
+  flex: 1;
+  padding: var(--citrusStylesSE-spacing-small);
+  overflow: auto;
+  text-align: left;
+}
+
+.citrusStylesSE-table__row--heading .citrusStylesSE-table__cell {
+  display: flex;
+  flex: 1;
+  color: inherit;
+  font-weight: var(--citrusStylesSE-text-font-weight-heavy);
+  font-size: var(--citrusStylesSE-text-font-size-medium);
+  background: var(--citrusStylesSE-table-heading-background);
+  border-bottom: var(--citrusStylesSE-table-heading-border);
+}
+
+.citrusStylesSE-table--clickable :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row:hover .citrusStylesSE-table__cell,
+.citrusStylesSE-table__row--clickable:hover .citrusStylesSE-table__cell {
+  color: var(--citrusStylesSE-table-row-color--clickable);
+  background: var(--citrusStylesSE-table-row-background--clickable);
+}
+
+.citrusStylesSE-table__row--disabled .citrusStylesSE-table__cell {
+  color: var(--citrusStylesSE-table-row-color--disabled);
+  background: var(--citrusStylesSE-table-row-background--disabled);
+  cursor: default;
+}
+
+.citrusStylesSE-table--clickable :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row--disabled:hover .citrusStylesSE-table__cell,
+.citrusStylesSE-table__row--disabled:hover .citrusStylesSE-table__cell {
+  color: var(--citrusStylesSE-table-row-color--disabled);
+  background: var(--citrusStylesSE-table-row-background--disabled);
+  cursor: not-allowed;
+}
+
+.citrusStylesSE-table--condensed {
+  font-size: var(--citrusStylesSE-text-font-size-small);
+}
+.citrusStylesSE-table--condensed .citrusStylesSE-table__cell {
+  padding: var(--citrusStylesSE-spacing-xsmall);
+}
+/* End Tables */
 
 /* ===================== Utility Class ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */

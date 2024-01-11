@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-super">Tables</h1>
+		<p class="citrusStylesSE-paragraph">Tables; great for displaying tabular data.</p>
+		<h2 class="citrusStylesSE-heading u-xlarge">Basic Table</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<table class="citrusStylesSE-table">
+				<caption class="citrusStylesSE-table__caption">
+					Basic table
+				</caption>
+				<thead class="citrusStylesSE-table__head">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+						<th class="citrusStylesSE-table__cell">First name</th>
+						<th class="citrusStylesSE-table__cell">Last name</th>
+						<th class="citrusStylesSE-table__cell">Username</th>
+					</tr>
+				</thead>
+				<tbody class="citrusStylesSE-table__body">
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Jim</td>
+						<td class="citrusStylesSE-table__cell">Kirk</td>
+						<td class="citrusStylesSE-table__cell">@captaink</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Mr.</td>
+						<td class="citrusStylesSE-table__cell">Spock</td>
+						<td class="citrusStylesSE-table__cell">@science101</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Nyota</td>
+						<td class="citrusStylesSE-table__cell">Uhura</td>
+						<td class="citrusStylesSE-table__cell">@comms</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">caption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>Basic table<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__head"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__body"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="striped">Striped Table</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<table class="citrusStylesSE-table citrusStylesSE-table--striped">
+				<caption class="citrusStylesSE-table__caption">
+					Striped rows
+				</caption>
+				<thead class="citrusStylesSE-table__head">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+						<th class="citrusStylesSE-table__cell">First name</th>
+						<th class="citrusStylesSE-table__cell">Last name</th>
+						<th class="citrusStylesSE-table__cell">Username</th>
+					</tr>
+				</thead>
+				<tbody class="citrusStylesSE-table__body">
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Jim</td>
+						<td class="citrusStylesSE-table__cell">Kirk</td>
+						<td class="citrusStylesSE-table__cell">@captaink</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Mr.</td>
+						<td class="citrusStylesSE-table__cell">Spock</td>
+						<td class="citrusStylesSE-table__cell">@science101</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Nyota</td>
+						<td class="citrusStylesSE-table__cell">Uhura</td>
+						<td class="citrusStylesSE-table__cell">@comms</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table citrusStylesSE-table--striped"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">caption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>Striped rows<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__head"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__body"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="clickable">Clickable Table</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<table class="citrusStylesSE-table citrusStylesSE-table--clickable">
+				<caption class="citrusStylesSE-table__caption">
+					Clickable table with disabled row
+				</caption>
+				<thead class="citrusStylesSE-table__head">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+						<th class="citrusStylesSE-table__cell">First name</th>
+						<th class="citrusStylesSE-table__cell">Last name</th>
+						<th class="citrusStylesSE-table__cell">Username</th>
+					</tr>
+				</thead>
+				<tbody class="citrusStylesSE-table__body">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--disabled">
+						<td class="citrusStylesSE-table__cell">Jim</td>
+						<td class="citrusStylesSE-table__cell">Kirk</td>
+						<td class="citrusStylesSE-table__cell">@captaink</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Mr.</td>
+						<td class="citrusStylesSE-table__cell">Spock</td>
+						<td class="citrusStylesSE-table__cell">@science101</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Nyota</td>
+						<td class="citrusStylesSE-table__cell">Uhura</td>
+						<td class="citrusStylesSE-table__cell">@comms</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table citrusStylesSE-table--clickable"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">caption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>Clickable table with disabled row<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__head"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__body"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="clickable-row">Clickable Row</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<table class="citrusStylesSE-table">
+				<caption class="citrusStylesSE-table__caption">
+					Clickable row, disabled row
+				</caption>
+				<thead class="citrusStylesSE-table__head">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+						<th class="citrusStylesSE-table__cell">First name</th>
+						<th class="citrusStylesSE-table__cell">Last name</th>
+						<th class="citrusStylesSE-table__cell">Username</th>
+					</tr>
+				</thead>
+				<tbody class="citrusStylesSE-table__body">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--clickable">
+						<td class="citrusStylesSE-table__cell">Jim</td>
+						<td class="citrusStylesSE-table__cell">Kirk</td>
+						<td class="citrusStylesSE-table__cell">@captaink</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--disabled">
+						<td class="citrusStylesSE-table__cell">Mr.</td>
+						<td class="citrusStylesSE-table__cell">Spock</td>
+						<td class="citrusStylesSE-table__cell">@science101</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Nyota</td>
+						<td class="citrusStylesSE-table__cell">Uhura</td>
+						<td class="citrusStylesSE-table__cell">@comms</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">caption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>Clickable row, disabled row<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__head"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__body"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--clickable"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--disabled"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="condensed">Condensed</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<table class="citrusStylesSE-table citrusStylesSE-table--condensed">
+				<caption class="citrusStylesSE-table__caption">
+					Small table and text
+				</caption>
+				<thead class="citrusStylesSE-table__head">
+					<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+						<th class="citrusStylesSE-table__cell">First name</th>
+						<th class="citrusStylesSE-table__cell">Last name</th>
+						<th class="citrusStylesSE-table__cell">Username</th>
+					</tr>
+				</thead>
+				<tbody class="citrusStylesSE-table__body">
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Jim</td>
+						<td class="citrusStylesSE-table__cell">Kirk</td>
+						<td class="citrusStylesSE-table__cell">@captaink</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Mr.</td>
+						<td class="citrusStylesSE-table__cell">Spock</td>
+						<td class="citrusStylesSE-table__cell">@science101</td>
+					</tr>
+					<tr class="citrusStylesSE-table__row">
+						<td class="citrusStylesSE-table__cell">Nyota</td>
+						<td class="citrusStylesSE-table__cell">Uhura</td>
+						<td class="citrusStylesSE-table__cell">@comms</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table citrusStylesSE-table--condensed"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">caption</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>Small table and text<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__head"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__body"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="divs">Using divs</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<div class="citrusStylesSE-table citrusStylesSE-table--striped">
+				<div class="citrusStylesSE-table__caption">
+					divs instead of trs ths tds
+				</div>
+				<div class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<span class="citrusStylesSE-table__cell">First name</span> <span class="citrusStylesSE-table__cell">Last name</span> <span class="citrusStylesSE-table__cell">Username</span>
+				</div>
+				<div class="citrusStylesSE-table__row">
+					<span class="citrusStylesSE-table__cell">Jim</span> <span class="citrusStylesSE-table__cell">Kirk</span> <span class="citrusStylesSE-table__cell">@captaink</span>
+				</div>
+				<div class="citrusStylesSE-table__row">
+					<span class="citrusStylesSE-table__cell">Mr.</span> <span class="citrusStylesSE-table__cell">Spock</span> <span class="citrusStylesSE-table__cell">@science101</span>
+				</div>
+				<div class="citrusStylesSE-table__row">
+					<span class="citrusStylesSE-table__cell">Nyota</span> <span class="citrusStylesSE-table__cell">Uhura</span> <span class="citrusStylesSE-table__cell">@comms</span>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table citrusStylesSE-table--striped"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__caption"</span>&gt;</span>divs instead of trs ths tds<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row citrusStylesSE-table__row--heading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Username<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Jim<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Kirk<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@captaink<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Spock<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@science101<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Nyota<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>Uhura<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-table__cell"</span>&gt;</span>@comms<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+	</main>
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>
