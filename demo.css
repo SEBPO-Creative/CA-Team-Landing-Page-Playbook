@@ -7,13 +7,13 @@ body {
     font-weight: 700;
   }
 
-  .citrusStylesSE__grid--demo .citrusStylesSE__grid{
+  .citrusStylesSE-grid--demo .citrusStylesSE-grid{
     border: 2px solid #ff69b4;
   }
 
-  .citrusStylesSE__grid--demo .citrusStylesSE__grid__cell {
-    background-color: #b2f5b5;
-    border: 2px solid #00bfff;
+.citrusStylesSE-grid--demo .citrusStylesSE-grid__cell {
+  background-color: #b2f5b5;
+  border: 2px solid #00bfff;
 }
 
 .hljs-string{
