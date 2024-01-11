@@ -208,107 +208,107 @@
     --citrusStylesSE-screen-limit-xlarge: 78em;
     --citrusStylesSE-screen-limit-super: 116em;
 
-      /* Modals */
-      --citrusStylesSE-modal-background: var(--card-background);
-      --citrusStylesSE-modal-background--ghost: transparent;
-      --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
-      --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
-      --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
+    /* Modals */
+    --citrusStylesSE-modal-background: var(--card-background);
+    --citrusStylesSE-modal-background--ghost: transparent;
+    --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
+    --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
+    --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
 
-      /* Tabs */
-      --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background: transparent;
-      --citrusStylesSE-tab-heading-border-color: transparent;
+    /* Tabs */
+    --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background: transparent;
+    --citrusStylesSE-tab-heading-border-color: transparent;
 
-      --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-color-2);
+    --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-color-2);
 
-      --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--hover: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--hover: var(--citrusStylesSE-color-2);
+    --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--hover: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--hover: var(--citrusStylesSE-color-2);
 
-      --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--brand: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--brand: var(--citrusStylesSE-color-brand);
+    --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--brand: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--brand: var(--citrusStylesSE-color-brand);
 
-      --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--info: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--info: var(--citrusStylesSE-color-info);
+    --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--info: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--info: var(--citrusStylesSE-color-info);
 
-      --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--warning: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--warning: var(--citrusStylesSE-color-warning);
+    --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--warning: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--warning: var(--citrusStylesSE-color-warning);
 
-      --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--success: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--success: var(--citrusStylesSE-color-success);
+    --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--success: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--success: var(--citrusStylesSE-color-success);
 
-      --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
-      --citrusStylesSE-tab-heading-background--error: var(--citrusStylesSE-color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--error: var(--citrusStylesSE-color-error);
+    --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-tab-heading-background--error: var(--citrusStylesSE-color-background-offset);
+    --citrusStylesSE-tab-heading-border-color--error: var(--citrusStylesSE-color-error);
 
-      --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
+    --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
 
-      /* Borders */
-      --citrusStylesSE-border-width: 1px;
-      --citrusStylesSE-border-style: solid;
-      --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
-      --citrusStylesSE-border-radius: 6px;
-      --citrusStylesSE-border-radius-rounded: 30em;
+    /* Borders */
+    --citrusStylesSE-border-width: 1px;
+    --citrusStylesSE-border-style: solid;
+    --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
+    --citrusStylesSE-border-radius: 6px;
+    --citrusStylesSE-border-radius-rounded: 30em;
 
-      /* Box shadows */
-      --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
-      --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
-      --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
-      --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+    /* Box shadows */
+    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
 
-      /* Typography */
-      --citrusStylesSE-text-font-family-sans-serif: sans-serif;
-      --citrusStylesSE-text-font-family-serif: serif;
-      --citrusStylesSE-text-font-family-mono: monospace;
-      --citrusStylesSE-text-font-family: var(--citrusStylesSE-text-font-family-sans-serif);
-      --citrusStylesSE-text-font-size-super: 2em;
-      --citrusStylesSE-text-font-size-xlarge: 1.5em;
-      --citrusStylesSE-text-font-size-large: 1.25em;
-      --citrusStylesSE-text-font-size-medium: 1em;
-      --citrusStylesSE-text-font-size-small: 0.8em;
-      --citrusStylesSE-text-font-size-xsmall: 0.67em;
-      --citrusStylesSE-text-font-weight: normal;
-      --citrusStylesSE-text-font-weight-heavy: bold;
-      --citrusStylesSE-text-line-height: 1.55;
+    /* Typography */
+    --citrusStylesSE-text-font-family-sans-serif: sans-serif;
+    --citrusStylesSE-text-font-family-serif: serif;
+    --citrusStylesSE-text-font-family-mono: monospace;
+    --citrusStylesSE-text-font-family: var(--citrusStylesSE-text-font-family-sans-serif);
+    --citrusStylesSE-text-font-size-super: 2em;
+    --citrusStylesSE-text-font-size-xlarge: 1.5em;
+    --citrusStylesSE-text-font-size-large: 1.25em;
+    --citrusStylesSE-text-font-size-medium: 1em;
+    --citrusStylesSE-text-font-size-small: 0.8em;
+    --citrusStylesSE-text-font-size-xsmall: 0.67em;
+    --citrusStylesSE-text-font-weight: normal;
+    --citrusStylesSE-text-font-weight-heavy: bold;
+    --citrusStylesSE-text-line-height: 1.55;
 
-      /* Z Indexes */
-      --citrusStylesSE-z-over-content: 100;
-      --citrusStylesSE-z-over-control: 200;
-      --citrusStylesSE-z-over-page: 300;
-      --citrusStylesSE-z-over-screen: 400;
-      --citrusStylesSE-z-over-everything: 500;
+    /* Z Indexes */
+    --citrusStylesSE-z-over-content: 100;
+    --citrusStylesSE-z-over-control: 200;
+    --citrusStylesSE-z-over-page: 300;
+    --citrusStylesSE-z-over-screen: 400;
+    --citrusStylesSE-z-over-everything: 500;
+}
+
+@font-face {
+  font-family: 'PetcoCircular-Regular';
+  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'PetcoCircular-Bold';
+  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'PetcoCircularCap-Bold@900';
+  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
+  font-weight: 900;
+  font-style: normal;
   }
   
-  @font-face {
-    font-family: 'PetcoCircular-Regular';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-   }
-
-   @font-face {
-    font-family: 'PetcoCircular-Bold';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
-    font-weight: 700;
-    font-style: normal;
-   }
-
-   @font-face {
-    font-family: 'PetcoCircularCap-Bold@900';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
-    font-weight: 900;
-    font-style: normal;
-   }
-   
-  /* ===================== Accordion ===================== */
- /* Style the buttons that are used to open and close the accordion panel */
+/* ===================== Accordion ===================== */
+/* Style the buttons that are used to open and close the accordion panel */
 .citrusStylesSE-accordion {
   background-color: var(--citrusStylesSE-gray-dark);
   color: var(--citrusStylesSE-black);
@@ -346,7 +346,8 @@
   transition: max-height 0.2s ease-out;
 }
 
-/* Badges */
+/* ===================== Badge ===================== */
+/* All the styles for badges */
 .citrusStylesSE-badge {
   display: inline-block;
   margin: 0;
@@ -419,12 +420,10 @@
   color: var(--citrusStylesSE-badge-color--error-ghost);
   border-color: var(--citrusStylesSE-badge-border-color--error-ghost);
 }
-
-/*# sourceMappingURL=base.css.map */
-
 /* End Badges */
 
-/* Buttons */
+/* ===================== Buttons ===================== */
+/* All the styles for Buttons */
 .citrusStylesSE-button {
   color: var(--citrusStylesSE-button-color);
   background: var(--citrusStylesSE-button-background);
@@ -604,7 +603,8 @@
 }
 /*End Buttons */
 
-/* Common Class */
+/* ===================== Common Class ===================== */
+/* All the Common Class added here */
   .citrusStylesSE-container{
     margin: 0 auto;
 }
@@ -614,7 +614,150 @@
 }
 /* End Common Class */
 
-
+/* ===================== Containers ===================== */
+/* All sizes containers styles */
+.citrusStylesSE-container {
+  margin: auto;
+}
+@media (min-width: 20em) {
+  .citrusStylesSE-container--xsmall\@xsmall {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@xsmall {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@xsmall {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@xsmall {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@xsmall {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@xsmall {
+    max-width: 116em;
+  }
+}
+@media (min-width: 30em) {
+  .citrusStylesSE-container--xsmall\@small {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@small {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@small {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@small {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@small {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@small {
+    max-width: 116em;
+  }
+}
+@media (min-width: 48em) {
+  .citrusStylesSE-container--xsmall\@medium {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@medium {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@medium {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@medium {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@medium {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@medium {
+    max-width: 116em;
+  }
+}
+@media (min-width: 64em) {
+  .citrusStylesSE-container--xsmall\@large {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@large {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@large {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@large {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@large {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@large {
+    max-width: 116em;
+  }
+}
+@media (min-width: 78em) {
+  .citrusStylesSE-container--xsmall\@xlarge {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@xlarge {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@xlarge {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@xlarge {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@xlarge {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@xlarge {
+    max-width: 116em;
+  }
+}
+@media (min-width: 116em) {
+  .citrusStylesSE-container--xsmall\@super {
+    max-width: 20em;
+  }
+  .citrusStylesSE-container--small\@super {
+    max-width: 30em;
+  }
+  .citrusStylesSE-container--medium\@super {
+    max-width: 48em;
+  }
+  .citrusStylesSE-container--large\@super {
+    max-width: 64em;
+  }
+  .citrusStylesSE-container--xlarge\@super {
+    max-width: 78em;
+  }
+  .citrusStylesSE-container--super\@super {
+    max-width: 116em;
+  }
+}
+.citrusStylesSE-container--xsmall {
+  max-width: 20em;
+}
+.citrusStylesSE-container--small {
+  max-width: 30em;
+}
+.citrusStylesSE-container--medium {
+  max-width: 48em;
+}
+.citrusStylesSE-container--large {
+  max-width: 64em;
+}
+.citrusStylesSE-container--xlarge {
+  max-width: 78em;
+}
+.citrusStylesSE-container--super {
+  max-width: 116em;
+}
+/* End Containers */
 
 /* ===================== Grid ===================== */
 /* All styles for grid */
@@ -808,7 +951,8 @@
 }
 /* End Grid width */
 
-/* Utility Class */
+/* ===================== Utility Class ===================== */
+/* Utility styles - need to be added rest of the utitlity styles */
 .citrusStylesSE-grid__cell--top {
   align-self: flex-start;
 }
@@ -833,7 +977,8 @@
 }
 /* End Utility class */
 
-/* Headings */
+/* ===================== Headings ===================== */
+/* All the headings styles */
 .citrusStylesSE-super {
   font-size: var(--citrusStylesSE-text-font-size-super);
 }
@@ -865,6 +1010,8 @@
 }
 /* End Headings */
 
+/* ===================== List ===================== */
+/* All the list styles */
 /* List */
 ul.citrusStylesSE-list,
 ol.citrusStylesSE-list,
@@ -940,7 +1087,8 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 }
 /* End List */
 
-/* Modals */
+/* ===================== Modals ===================== */
+/* All the Modals styles */
 /* .citrusStylesSE-modal[role=dialog] {
   position: fixed;
   top: 50%;
@@ -1008,7 +1156,8 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 } */
 /* End Modals */
 
-/* Sizes */
+/* ===================== Sizes ===================== */
+/* All the Sizes styles */
 .citrusStylesSE-super {
   font-size: var(--citrusStylesSE-text-font-size-super);
 }
@@ -1034,8 +1183,8 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 }
 /* End Sizes */
 
-
-/* Responsiveness */
+/* ===================== Responsiveness ===================== */
+/* All the Responsiveness styles */
 @media (max-width: 19.99em) {
   .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
     flex: 1;
@@ -3240,7 +3389,8 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 }
 /* End Responsiveness */
 
-/* Tabs start */
+/* ===================== Tabs ===================== */
+/* All the Tabs styles */
 .citrusStylesSE-tabs[role=tablist] {
   display: block;
 }
@@ -3280,11 +3430,11 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   display: block;
   flex: 1;
   margin: 0;
-  padding: var(--spacing-medium);
+  padding: var(--citrusStylesSE-spacing-medium);
   color: var(--citrusStylesSE-tab-heading-color);
   white-space: nowrap;
   background: var(--citrusStylesSE-tab-heading-background);
-  border-bottom: var(--spacing-xsmall) solid var(--citrusStylesSE-tab-heading-border-color);
+  border-bottom: var(--citrusStylesSE-spacing-xsmall) solid var(--citrusStylesSE-tab-heading-border-color);
   border-radius: var(--citrusStylesSE-tab-heading-border-radius) var(--citrusStylesSE-tab-heading-border-radius) 0 0;
 }
 .citrusStylesSE-tab-heading[role=tab]:disabled, .citrusStylesSE-tab-heading[role=tab][disabled] {
@@ -3293,7 +3443,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 }
 .citrusStylesSE-tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
-  box-shadow: var(--box-shadow-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
 .citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover {
   --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--hover);

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+    
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-super">Containers</h1>
+		<p class="citrusStylesSE-paragraph">Containers provide media query screen width restrictions on your content.</p>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--xsmall"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--medium"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--large"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--xlarge"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-container citrusStylesSE-container--super"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="sizes">Container sizes</h2>
+		<p class="citrusStylesSE-paragraph">Containers work off the screen size variables:</p>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-scss hljs" tabindex="-1"><span class="hljs-variable">$screen-width-xsmall</span>:  <span class="hljs-number">20em</span>;
+<span class="hljs-variable">$screen-width-small</span>:   <span class="hljs-number">30em</span>;
+<span class="hljs-variable">$screen-width-medium</span>:  <span class="hljs-number">48em</span>;
+<span class="hljs-variable">$screen-width-large</span>:   <span class="hljs-number">64em</span>;
+<span class="hljs-variable">$screen-width-xlarge</span>:  <span class="hljs-number">78em</span>;
+<span class="hljs-variable">$screen-width-super</span>:   <span class="hljs-number">116em</span>;</code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading" id="responsiveness">Responsiveness</h2>
+		<p class="citrusStylesSE-paragraph">Each container can also be applied at certain screen sizes. <code class="u-code">.citrusStylesSE-container--small@large</code> for example will restrict the horizontal width to small when the viewport has a large or more width. Each size container has an xsmall, small, medium, large, xlarge and super responsive suffix.</p>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-large citrusStylesSE-text--mono" id="xsmall">.citrusStylesSE-container--xsmall</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--xsmall">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-large citrusStylesSE-text--mono" id="small">.citrusStylesSE-container--small</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--small">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-large citrusStylesSE-text--mono" id="medium">.citrusStylesSE-container--medium</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--medium">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-large citrusStylesSE-text--mono" id="large">.citrusStylesSE-container--large</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--large">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-large citrusStylesSE-text--mono" id="xlarge">.citrusStylesSE-container--xlarge</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--xlarge">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3 class="citrusStylesSE-heading citrusStylesSE-text--mono" id="super">.citrusStylesSE-container--super</h3>
+		<div class="citrusStylesSE-container citrusStylesSE-container--super">
+			<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</main>
+
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>
