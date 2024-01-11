@@ -135,49 +135,49 @@
       /* Modals */
       --citrusStylesSE-modal-background: var(--card-background);
       --citrusStylesSE-modal-background--ghost: transparent;
-      --citrusStylesSE-modal-border-radius: var(--border-radius);
-      --citrusStylesSE-modal-close-color: var(--color-0);
-      --citrusStylesSE-modal-close-color--ghost: var(--color-10);
+      --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
+      --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
+      --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
 
-        /* Tabs */
-      --citrusStylesSE-tab-heading-color: var(--color-text);
+      /* Tabs */
+      --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
       --citrusStylesSE-tab-heading-background: transparent;
       --citrusStylesSE-tab-heading-border-color: transparent;
 
-      --citrusStylesSE-tab-heading-color--active: var(--color-text);
-      --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-gray-300);
-      --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-blue);
+      --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-color-2);
 
-      --citrusStylesSE-tab-heading-color--hover: var(--color-text);
-      --citrusStylesSE-tab-heading-background--hover: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--hover: var(--color-2);
+      --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--hover: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--hover: var(--citrusStylesSE-color-2);
 
-      --citrusStylesSE-tab-heading-color--brand: var(--color-text);
-      --citrusStylesSE-tab-heading-background--brand: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--brand: var(--color-brand);
+      --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--brand: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--brand: var(--citrusStylesSE-color-brand);
 
-      --citrusStylesSE-tab-heading-color--info: var(--color-text);
-      --citrusStylesSE-tab-heading-background--info: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--info: var(--color-info);
+      --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--info: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--info: var(--citrusStylesSE-color-info);
 
-      --citrusStylesSE-tab-heading-color--warning: var(--color-text);
-      --citrusStylesSE-tab-heading-background--warning: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--warning: var(--color-warning);
+      --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--warning: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--warning: var(--citrusStylesSE-color-warning);
 
-      --citrusStylesSE-tab-heading-color--success: var(--color-text);
-      --citrusStylesSE-tab-heading-background--success: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--success: var(--color-success);
+      --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--success: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--success: var(--citrusStylesSE-color-success);
 
-      --citrusStylesSE-tab-heading-color--error: var(--color-text);
-      --citrusStylesSE-tab-heading-background--error: var(--color-background-offset);
-      --citrusStylesSE-tab-heading-border-color--error: var(--color-error);
+      --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
+      --citrusStylesSE-tab-heading-background--error: var(--citrusStylesSE-color-background-offset);
+      --citrusStylesSE-tab-heading-border-color--error: var(--citrusStylesSE-color-error);
 
-      --citrusStylesSE-tab-heading-border-radius: var(--border-radius);
+      --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
 
       /* Borders */
       --citrusStylesSE-border-width: 1px;
       --citrusStylesSE-border-style: solid;
-      --citrusStylesSE-border-color: var(--color-4);
+      --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
       --citrusStylesSE-border-radius: 6px;
       --citrusStylesSE-border-radius-rounded: 30em;
 
@@ -212,21 +212,21 @@
   
   @font-face {
     font-family: 'PetcoCircularCap-Regular';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircularCap-Regular.woff2') format('woff');
+    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
    }
 
    @font-face {
     font-family: 'PetcoCircularCap-Bold';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircularCap-Bold.woff2') format('woff');
+    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
     font-weight: 700;
     font-style: normal;
    }
 
    @font-face {
     font-family: 'PetcoCircularCap-Bold@900';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircularCap-Bold.woff2') format('woff');
+    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
     font-weight: 900;
     font-style: normal;
    }
@@ -3044,7 +3044,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   opacity: var(--disabled-opacity);
 }
 .citrusStylesSE-tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
-  border-color: var(--border-color-focus);
+  border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--box-shadow-focus);
 }
 .citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover {
