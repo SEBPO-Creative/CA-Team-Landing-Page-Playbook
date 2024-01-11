@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+   
+
+
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading u-super">Modals</h1>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small modal-demo">
+			<!---->
+			<div aria-hidden="" class="citrusStylesSE-overlay citrusStylesSE-overlay--fullpage citrusStylesSE-overlay--visible"></div>
+			<div class="citrusStylesSE-modal citrusStylesSE-modal--visible" role="dialog">
+				<button class="citrusStylesSE-button citrusStylesSE-button--close" type="button">×</button> <!---->
+				<div class="citrusStylesSE-card">
+					<!---->
+					<header class="citrusStylesSE-card__header">
+						<h2 class="citrusStylesSE-heading u-xlarge">Heading</h2>
+						<div class="citrusStylesSE-heading__sub">
+							<h2 class="citrusStylesSE-heading u-xlarge">Sub-heading</h2>
+						</div>
+					</header><!---->
+					<div class="citrusStylesSE-card__body">
+						<p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+					</div><!---->
+					<footer class="citrusStylesSE-card__footer">
+						<div class="c-input-group">
+							<button class="citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--brand">Button</button> <button class="citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--info">Button</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">blaze-modal</span> <span class="hljs-attr">open</span> <span class="hljs-attr">dismissible</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-card</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blaze-card-header</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading u-xlarge"</span>&gt;</span>
+        Heading
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading__sub"</span>&gt;</span>Sub-heading<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blaze-card-header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blaze-card-body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph"</span>&gt;</span>
+        Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blaze-card-body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blaze-card-footer</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--brand"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--info"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blaze-card-footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">blaze-card</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-modal</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading">Attributes</h2>
+		<table class="c-table">
+			<thead class="c-table__head">
+				<tr class="c-table__row c-table__row--heading">
+					<th class="c-table__cell">Attribute</th>
+					<th class="c-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__body">
+				<tr class="c-table__row">
+					<td class="c-table__cell">open (boolean)</td>
+					<td class="c-table__cell">Initial open/close state of the modal</td>
+				</tr>
+				<tr class="c-table__row">
+					<td class="c-table__cell">dismissible (boolean)</td>
+					<td class="c-table__cell">Allow the modal to be closed by clicking on the overlay or close button</td>
+				</tr>
+				<tr class="c-table__row">
+					<td class="c-table__cell">full (boolean)</td>
+					<td class="c-table__cell">Toggles the fullscreen style</td>
+				</tr>
+				<tr class="c-table__row">
+					<td class="c-table__cell">ghost (boolean)</td>
+					<td class="c-table__cell">Toggles the ghost modal style</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">Methods</h2>
+		<p class="citrusStylesSE-paragraph">To access public methods on the element first select it using <code class="u-code">document.querySelector()</code>.</p>
+		<table class="c-table">
+			<thead class="c-table__head">
+				<tr class="c-table__row c-table__row--heading">
+					<th class="c-table__cell">Method</th>
+					<th class="c-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="c-table__body">
+				<tr class="c-table__row">
+					<td class="c-table__cell">show()</td>
+					<td class="c-table__cell">Opens the modal</td>
+				</tr>
+				<tr class="c-table__row">
+					<td class="c-table__cell">close()</td>
+					<td class="c-table__cell">Hides the modal</td>
+				</tr>
+				<tr class="c-table__row">
+					<td class="c-table__cell">isOpen()</td>
+					<td class="c-table__cell">Promise&lt;true or false&gt;</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">CSS</h2>
+		<h2 class="citrusStylesSE-heading">Basic Modal</h2>
+		<p class="citrusStylesSE-paragraph">Your basic modal has a variety of elements to it. <code class="u-code">.citrusStylesSE-overlay</code> will expand to fill the current space, more information on <a class="c-link" href="/components/overlays">overlays</a> is available.</p>
+		<p class="citrusStylesSE-paragraph">The modal body it self consists of <a class="c-link" href="/components/cards">cards</a>, providing you with a consistent way of building structured content. Please familiarise yourself with what is possible with cards to make full use of modals.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small modal-demo">
+			<div aria-hidden="" class="citrusStylesSE-overlay citrusStylesSE-overlay--visible"></div>
+			<div class="citrusStylesSE-modal citrusStylesSE-modal--visible" role="dialog">
+				<div class="citrusStylesSE-card">
+					<header class="citrusStylesSE-card__header">
+						<button class="citrusStylesSE-button citrusStylesSE-button--close" type="button">×</button>
+						<h2 class="citrusStylesSE-heading">Modal heading</h2>
+					</header>
+					<div class="citrusStylesSE-card__body">
+						This is the modal body
+					</div>
+					<footer class="citrusStylesSE-card__footer">
+						<button class="citrusStylesSE-button citrusStylesSE-button--brand" type="button">Close</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">aria-hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-overlay citrusStylesSE-overlay--visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-modal citrusStylesSE-modal--visible"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading"</span>&gt;</span>Modal heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__body"</span>&gt;</span>
+      This is the modal body
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__footer"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--brand"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading" id="ghost">Ghost Modal</h2>
+		<p class="citrusStylesSE-paragraph">This modal has no body, hence "ghost". Lol.</p>
+		<p class="citrusStylesSE-paragraph">To make a ghost modal simply add the <code class="u-code">.citrusStylesSE-modal--ghost</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small modal-demo">
+			<div aria-hidden="" class="citrusStylesSE-overlay citrusStylesSE-overlay--visible"></div>
+			<div class="citrusStylesSE-modal citrusStylesSE-modal--ghost citrusStylesSE-modal--visible" role="dialog">
+				<div class="citrusStylesSE-card">
+					<header class="citrusStylesSE-card__header">
+						<button class="citrusStylesSE-button citrusStylesSE-button--close" type="button">×</button>
+						<h2 class="citrusStylesSE-heading">Modal heading</h2>
+					</header>
+					<div class="citrusStylesSE-card__body">
+						This is the modal body
+					</div>
+					<footer class="citrusStylesSE-card__footer">
+						<button class="citrusStylesSE-button citrusStylesSE-button--brand" type="button">Close</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">aria-hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-overlay citrusStylesSE-overlay--visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-modal citrusStylesSE-modal--ghost citrusStylesSE-modal--visible"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading"</span>&gt;</span>Modal heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__body"</span>&gt;</span>
+      This is the modal body
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__footer"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--brand"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading" id="scrollable">Scrollable content</h2>
+		<p class="citrusStylesSE-paragraph">To make a scrollable modal add the <code class="u-code">.o-panel</code> class to the modal body, and apply a fixed height so long content starts to scroll.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small modal-demo">
+			<div aria-hidden="" class="citrusStylesSE-overlay citrusStylesSE-overlay--visible"></div>
+			<div class="citrusStylesSE-modal citrusStylesSE-modal--visible" role="dialog">
+				<div class="citrusStylesSE-card">
+					<header class="citrusStylesSE-card__header">
+						<button class="citrusStylesSE-button citrusStylesSE-button--close" type="button">×</button>
+						<h2 class="citrusStylesSE-heading">Modal heading</h2>
+					</header>
+					<div class="citrusStylesSE-card__body o-panel" style="height:300px">
+						Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+					</div>
+					<footer class="citrusStylesSE-card__footer">
+						<button class="citrusStylesSE-button citrusStylesSE-button--brand" type="button">Close</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">aria-hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-overlay citrusStylesSE-overlay--visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-modal citrusStylesSE-modal--visible"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading"</span>&gt;</span>Modal heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__body o-panel"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"height:300px"</span>&gt;</span>
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated
+      they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named
+      Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which
+      roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind
+      texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+      decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands
+      of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
+      her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills
+      of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline
+      of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her
+      cheek, then
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__footer"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--brand"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading" id="full">Full screen modal</h2>
+		<p class="citrusStylesSE-paragraph">To make a full screen modal simply add the <code class="u-code">.citrusStylesSE-modal--full</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small modal-demo">
+			<div aria-hidden="" class="citrusStylesSE-overlay citrusStylesSE-overlay--visible"></div>
+			<div class="citrusStylesSE-modal citrusStylesSE-modal--full citrusStylesSE-modal--visible" role="dialog">
+				<div class="citrusStylesSE-card">
+					<header class="citrusStylesSE-card__header">
+						<button class="citrusStylesSE-button citrusStylesSE-button--close" type="button">×</button>
+						<h2 class="citrusStylesSE-heading">Modal heading</h2>
+					</header>
+					<div class="citrusStylesSE-card__body">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui sollicitudin. Suspendisse enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna est, ullamcorper eget feugiat ac, condimentum id diam. Cras tempor felis sit amet facilisis sollicitudin. Ut posuere malesuada feugiat. Morbi ex ex, pretium sit amet dolor eget, malesuada gravida est. Nullam id malesuada massa, ac facilisis elit. Nullam ut metus sit amet nisi finibus mollis. Praesent augue felis, feugiat placerat aliquam ut, ultrices sit amet dolor. Phasellus porta ligula nec sapien tempus commodo. Pellentesque hendrerit aliquet ornare. Integer nec tempus quam, vitae bibendum lectus. Suspendisse vestibulum pulvinar neque at scelerisque. Suspendisse accumsan dolor vitae nulla commodo, volutpat commodo nunc bibendum. Integer ut magna ac velit pharetra molestie. Nullam vestibulum est mattis, posuere augue id, suscipit nulla. Praesent vestibulum sapien hendrerit, sodales elit et, eleifend est. Aliquam ornare iaculis diam, commodo iaculis erat consectetur a. Quisque ut porta est. Mauris vulputate est eu auctor vestibulum. Vestibulum velit libero, cursus vel viverra et, fringilla et est. Donec nibh ipsum, finibus eu urna sed, ullamcorper sollicitudin velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet bibendum nunc, ut iaculis tellus. Aenean ornare velit vel venenatis scelerisque. Ut ac elit enim. Nulla nec congue ex. Cras nulla ligula, porttitor non pulvinar fermentum, hendrerit sit amet neque. Etiam pulvinar suscipit metus, at lobortis erat eleifend id. Suspendisse scelerisque sem et orci rhoncus posuere. Vivamus faucibus mi et feugiat elementum. Nulla tempor, ligula non ullamcorper condimentum, lorem lorem sagittis tortor, at interdum tellus nunc elementum purus. Nulla tincidunt augue nibh. Ut et augue a ex pretium sodales. Pellentesque quam neque, tincidunt eu fringilla nec, volutpat eget risus. Fusce sit amet arcu sodales, vestibulum quam vel, lacinia mauris. Mauris ut placerat libero, eu gravida lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia felis vel nibh blandit, in vestibulum nisl congue. Integer ac dignissim nisi, id vehicula tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In posuere vitae metus in fermentum. Quisque venenatis ut eros at posuere. Etiam pulvinar, ipsum eu interdum vestibulum, arcu urna dapibus lorem, quis volutpat tortor enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula. Fusce aliquet mauris tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis aliquam accumsan.
+					</div>
+					<footer class="citrusStylesSE-card__footer">
+						<button class="citrusStylesSE-button citrusStylesSE-button--brand" type="button">Close</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">aria-hidden</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-overlay citrusStylesSE-overlay--visible"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"dialog"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-modal citrusStylesSE-modal--full citrusStylesSE-modal--visible"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--close"</span>&gt;</span><span class="hljs-symbol">&amp;times;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-heading"</span>&gt;</span>Modal heading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__body"</span>&gt;</span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta urna. Vivamus
+      gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui sollicitudin. Suspendisse
+      enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna est, ullamcorper eget feugiat ac, condimentum
+      id diam. Cras tempor felis sit amet facilisis sollicitudin. Ut posuere malesuada feugiat. Morbi ex ex, pretium
+      sit amet dolor eget, malesuada gravida est. Nullam id malesuada massa, ac facilisis elit. Nullam ut metus sit
+      amet nisi finibus mollis. Praesent augue felis, feugiat placerat aliquam ut, ultrices sit amet dolor. Phasellus
+      porta ligula nec sapien tempus commodo. Pellentesque hendrerit aliquet ornare. Integer nec tempus quam, vitae
+      bibendum lectus. Suspendisse vestibulum pulvinar neque at scelerisque. Suspendisse accumsan dolor vitae nulla
+      commodo, volutpat commodo nunc bibendum. Integer ut magna ac velit pharetra molestie. Nullam vestibulum est mattis,
+      posuere augue id, suscipit nulla. Praesent vestibulum sapien hendrerit, sodales elit et, eleifend est. Aliquam
+      ornare iaculis diam, commodo iaculis erat consectetur a. Quisque ut porta est. Mauris vulputate est eu auctor
+      vestibulum. Vestibulum velit libero, cursus vel viverra et, fringilla et est. Donec nibh ipsum, finibus eu urna
+      sed, ullamcorper sollicitudin velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet bibendum nunc, ut
+      iaculis tellus. Aenean ornare velit vel venenatis scelerisque. Ut ac elit enim. Nulla nec congue ex. Cras nulla
+      ligula, porttitor non pulvinar fermentum, hendrerit sit amet neque. Etiam pulvinar suscipit metus, at lobortis
+      erat eleifend id. Suspendisse scelerisque sem et orci rhoncus posuere. Vivamus faucibus mi et feugiat elementum.
+      Nulla tempor, ligula non ullamcorper condimentum, lorem lorem sagittis tortor, at interdum tellus nunc elementum
+      purus. Nulla tincidunt augue nibh. Ut et augue a ex pretium sodales. Pellentesque quam neque, tincidunt eu fringilla
+      nec, volutpat eget risus. Fusce sit amet arcu sodales, vestibulum quam vel, lacinia mauris. Mauris ut placerat
+      libero, eu gravida lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia felis vel nibh
+      blandit, in vestibulum nisl congue. Integer ac dignissim nisi, id vehicula tellus. Class aptent taciti sociosqu
+      ad litora torquent per conubia nostra, per inceptos himenaeos. In posuere vitae metus in fermentum. Quisque venenatis
+      ut eros at posuere. Etiam pulvinar, ipsum eu interdum vestibulum, arcu urna dapibus lorem, quis volutpat tortor
+      enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula. Fusce aliquet mauris tortor, id euismod
+      neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis aliquam accumsan.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__footer"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-button citrusStylesSE-button--brand"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+	</main>
+
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>

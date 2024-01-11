@@ -71,7 +71,6 @@
     --citrusStylesSE-color--transparent: transparent;
 
     /* Disabled */
-
     --citrusStylesSE-disabled-opacity: 0.5;
     --citrusStylesSE-disabled-opacity: 0.5;
     --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
@@ -785,6 +784,74 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   content: "•";
 }
 /* End List */
+
+/* Modals */
+/* .citrusStylesSE-modal[role=dialog] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: var(--z-over-everything);
+  display: block;
+  width: 75%;
+  overflow: hidden;
+  background: var(--citrusStylesSE-modal-background);
+  border: 0;
+  border-radius: var(--citrusStylesSE-modal-border-radius);
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+}
+.citrusStylesSE-modal[role=dialog] .citrusStylesSE-card {
+  background-color: transparent;
+  box-shadow: none;
+}
+.citrusStylesSE-modal[role=dialog] .citrusStylesSE-card .citrusStylesSE-card__body {
+  position: relative;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost {
+  color: #fff;
+  background: var(--citrusStylesSE-modal-background--ghost);
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost .citrusStylesSE-heading {
+  color: #fff;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost .citrusStylesSE-button--close {
+  color: var(--citrusStylesSE-modal-close-color--ghost);
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full {
+  top: 1em;
+  left: 1em;
+  width: calc(100% - 2em);
+  height: calc(100% - 2em);
+  transform: none;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card:first-child {
+  box-shadow: none;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card__body {
+  position: absolute;
+  top: 3.5em;
+  bottom: 4em;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.citrusStylesSE-button--close {
+  top: var(--citrusStylesSE-spacing-small);
+  color: var(--citrusStylesSE-modal-close-color);
+} */
+/* End Modals */
 
 
 /* Responsiveness */
