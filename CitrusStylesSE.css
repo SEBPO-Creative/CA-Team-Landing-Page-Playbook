@@ -853,6 +853,32 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 } */
 /* End Modals */
 
+/* Sizes */
+.citrusStylesSE-super {
+  font-size: var(--citrusStylesSE-text-font-size-super);
+}
+
+.citrusStylesSE-xlarge {
+  font-size: var(--citrusStylesSE-text-font-size-xlarge);
+}
+
+.citrusStylesSE-large {
+  font-size: var(--citrusStylesSE-text-font-size-large);
+}
+
+.citrusStylesSE-medium {
+  font-size: var(--citrusStylesSE-text-font-size-medium);
+}
+
+.citrusStylesSE-small {
+  font-size: var(--citrusStylesSE-text-font-size-small);
+}
+
+.citrusStylesSE-xsmall {
+  font-size: var(--citrusStylesSE-text-font-size-xsmall);
+}
+/* End Sizes */
+
 
 /* Responsiveness */
 @media (max-width: 19.99em) {
