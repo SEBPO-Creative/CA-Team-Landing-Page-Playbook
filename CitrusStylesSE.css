@@ -70,11 +70,42 @@
     --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
     --citrusStylesSE-color--transparent: transparent;
 
-    /* Disabled */
-    --citrusStylesSE-disabled-opacity: 0.5;
-    --citrusStylesSE-disabled-opacity: 0.5;
-    --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
-    --citrusStylesSE-color--disabled-background: var(--citrusStylesSE-color--8);
+    /* Badges */
+    --citrusStylesSE-badge-color: var(--citrusStylesSE-color-text-inverse);
+    --citrusStylesSE-badge-color--ghost: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-badge-background: var(--citrusStylesSE-color-text);
+    --citrusStylesSE-badge-border-color: transparent;
+    --citrusStylesSE-badge-border-color--ghost: var(--citrusStylesSE-badge-color--ghost);
+  
+    --citrusStylesSE-badge-color--brand: var(--citrusStylesSE-color-text-brand);
+    --citrusStylesSE-badge-color--brand-ghost: var(--citrusStylesSE-color-brand);
+    --citrusStylesSE-badge-background--brand: var(--citrusStylesSE-color-brand);
+    --citrusStylesSE-badge-border-color--brand: transparent;
+    --citrusStylesSE-badge-border-color--brand-ghost: var(--citrusStylesSE-badge-color--brand-ghost);
+  
+    --citrusStylesSE-badge-color--info: var(--citrusStylesSE-color-text-info);
+    --citrusStylesSE-badge-color--info-ghost: var(--citrusStylesSE-color-info);
+    --citrusStylesSE-badge-background--info: var(--citrusStylesSE-color-info);
+    --citrusStylesSE-badge-border-color--info: transparent;
+    --citrusStylesSE-badge-border-color--info-ghost: var(--citrusStylesSE-badge-color--info-ghost);
+  
+    --citrusStylesSE-badge-color--warning: var(--citrusStylesSE-color-text-warning);
+    --citrusStylesSE-badge-color--warning-ghost: var(--citrusStylesSE-color-warning);
+    --citrusStylesSE-badge-background--warning: var(--citrusStylesSE-color-warning);
+    --citrusStylesSE-badge-border-color--warning: transparent;
+    --citrusStylesSE-badge-border-color--warning-ghost: var(--citrusStylesSE-badge-color--warning-ghost);
+  
+    --citrusStylesSE-badge-color--success: var(--citrusStylesSE-color-text-success);
+    --citrusStylesSE-badge-color--success-ghost: var(--citrusStylesSE-color-success);
+    --citrusStylesSE-badge-background--success: var(--citrusStylesSE-color-success);
+    --citrusStylesSE-badge-border-color--success: transparent;
+    --citrusStylesSE-badge-border-color--success-ghost: var(--citrusStylesSE-badge-color--success-ghost);
+  
+    --citrusStylesSE-badge-color--error: var(--citrusStylesSE-color-text-error);
+    --citrusStylesSE-badge-color--error-ghost: var(--citrusStylesSE-color-error);
+    --citrusStylesSE-badge-background--error: var(--citrusStylesSE-color-error);
+    --citrusStylesSE-badge-border-color--error: transparent;
+    --citrusStylesSE-badge-border-color--error-ghost: var(--citrusStylesSE-badge-color--error-ghost);
 
     /* Buttons */
     --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
@@ -110,6 +141,52 @@
     --citrusStylesSE-button-background--error-ghost: transparent;
     --citrusStylesSE-button-border-radius: var(--citrusStylesSE-border-radius);
     /* End Buttons */
+
+    /* Colors */
+    --citrusStylesSE-color-background: var(--citrusStylesSE-color-10);
+    --citrusStylesSE-color-background-offset: var(--citrusStylesSE-color-9);
+    --citrusStylesSE-color-background-offset-2: var(--citrusStylesSE-color-8);
+    --citrusStylesSE-color-text: var(--citrusStylesSE-color-0);
+    --citrusStylesSE-color-text-inverse: var(--citrusStylesSE-color-background);
+    --citrusStylesSE-color-quiet: var(--citrusStylesSE-color-4);
+
+    --citrusStylesSE-color-00: #000;
+    --citrusStylesSE-color-0: #1f1f1f;
+    --citrusStylesSE-color-1: #3a3a3a;
+    --citrusStylesSE-color-2: #6a6a6a;
+    --citrusStylesSE-color-3: #8a8a8a;
+    --citrusStylesSE-color-4: #aaa;
+    --citrusStylesSE-color-5: #bababa;
+    --citrusStylesSE-color-6: #cacaca;
+    --citrusStylesSE-color-7: #dadada;
+    --citrusStylesSE-color-8: #eaeaea;
+    --citrusStylesSE-color-9: #fafafa;
+    --citrusStylesSE-color-10: #fff;
+
+    --citrusStylesSE-color-outline: #4267ff;
+    --citrusStylesSE-color-brand: #2c3e50;;
+    --citrusStylesSE-color-info: #4267ff;
+    --citrusStylesSE-color-warning: #ffa500;
+    --citrusStylesSE-color-success: #088a05;
+    --citrusStylesSE-color-error: #ee0202;
+    --citrusStylesSE-color-highlight: #ffef14;
+
+    --citrusStylesSE-color-text-brand: var(--citrusStylesSE-color-10);
+    --citrusStylesSE-color-text-info: var(--citrusStylesSE-color-10);
+    --citrusStylesSE-color-text-warning: var(--citrusStylesSE-color-0);
+    --citrusStylesSE-color-text-success: var(--citrusStylesSE-color-10);
+    --citrusStylesSE-color-text-error: var(--citrusStylesSE-color-10);
+    --citrusStylesSE-color-text-highlight: var(--citrusStylesSE-color-0);
+
+    --citrusStylesSE-color-disabled: var(--citrusStylesSE-color-4);
+    --citrusStylesSE-color-disabled-background: var(--citrusStylesSE-color-8);
+    --citrusStylesSE-color-transparent: transparent;
+    
+    /* Disabled */
+    --citrusStylesSE-disabled-opacity: 0.5;
+    --citrusStylesSE-disabled-opacity: 0.5;
+    --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
+    --citrusStylesSE-color--disabled-background: var(--citrusStylesSE-color--8);
     
     /* Grid */
     --citrusStylesSE-grid-gutter: 1em;
@@ -210,14 +287,14 @@
   }
   
   @font-face {
-    font-family: 'PetcoCircularCap-Regular';
+    font-family: 'PetcoCircular-Regular';
     src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
    }
 
    @font-face {
-    font-family: 'PetcoCircularCap-Bold';
+    font-family: 'PetcoCircular-Bold';
     src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
     font-weight: 700;
     font-style: normal;
@@ -268,6 +345,84 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/* Badges */
+.citrusStylesSE-badge {
+  display: inline-block;
+  margin: 0;
+  padding: var(--citrusStylesSE-spacing-xsmall) var(--citrusStylesSE-spacing-small);
+  color: var(--citrusStylesSE-badge-color);
+  font-weight: var(--citrusStylesSE-text-font-weight-heavy);
+  font-size: 0.8em;
+  line-height: 1.2;
+  background: var(--citrusStylesSE-badge-background);
+  border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style) var(--citrusStylesSE-badge-border-color);
+  border-radius: var(--citrusStylesSE-border-radius);
+}
+.citrusStylesSE-badge.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--ghost);
+  background: transparent;
+  border-color: var(--citrusStylesSE-badge-border-color--ghost);
+}
+
+.citrusStylesSE-badge--rounded {
+  border-radius: var(--citrusStylesSE-border-radius-rounded);
+}
+
+.citrusStylesSE-badge--brand {
+  color: var(--citrusStylesSE-badge-color--brand);
+  background: var(--citrusStylesSE-badge-background--brand);
+  border-color: var(--citrusStylesSE-badge-border-color--brand);
+  margin: var(--citrusStylesSE-spacing-small);
+}
+.citrusStylesSE-badge--brand.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--brand-ghost);
+  border-color: var(--citrusStylesSE-badge-border-color--brand-ghost);
+}
+
+.citrusStylesSE-badge--info {
+  color: var(--citrusStylesSE-badge-color--info);
+  background: var(--citrusStylesSE-badge-background--info);
+  border-color: var(--citrusStylesSE-badge-border-color--info);
+}
+.citrusStylesSE-badge--info.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--info-ghost);
+  border-color: var(--citrusStylesSE-badge-border-color--info-ghost);
+}
+
+.citrusStylesSE-badge--warning {
+  color: var(--citrusStylesSE-badge-color--warning);
+  background: var(--citrusStylesSE-badge-background--warning);
+  border-color: var(--citrusStylesSE-badge-border-color--warning);
+}
+.citrusStylesSE-badge--warning.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--warning-ghost);
+  border-color: var(--citrusStylesSE-badge-border-color--warning-ghost);
+}
+
+.citrusStylesSE-badge--success {
+  color: var(--citrusStylesSE-badge-color--success);
+  background: var(--citrusStylesSE-badge-background--success);
+  border-color: var(--citrusStylesSE-badge-border-color--success);
+}
+.citrusStylesSE-badge--success.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--success-ghost);
+  border-color: var(--citrusStylesSE-badge-border-color--success-ghost);
+}
+
+.citrusStylesSE-badge--error {
+  color: var(--citrusStylesSE-badge-color--error);
+  background: var(--citrusStylesSE-badge-background--error);
+  border-color: var(--citrusStylesSE-badge-border-color--error);
+}
+.citrusStylesSE-badge--error.citrusStylesSE-badge--ghost {
+  color: var(--citrusStylesSE-badge-color--error-ghost);
+  border-color: var(--citrusStylesSE-badge-border-color--error-ghost);
+}
+
+/*# sourceMappingURL=base.css.map */
+
+/* End Badges */
 
 /* Buttons */
 .citrusStylesSE-button {

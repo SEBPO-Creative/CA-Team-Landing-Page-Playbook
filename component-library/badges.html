@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+   
+
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-super">Badges</h1>
+		<p class="citrusStylesSE-paragraph">They're useful when you want to add additional info. Like a version number of a project or for status messages for individual items.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<!----><span class="citrusStylesSE-badge">default</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--brand">brand</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--info">info</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--warning">warning</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--success">success</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--error">error</span><br>
+			<br>
+			<!----><span class="citrusStylesSE-badge citrusStylesSE-badge--rounded">default</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--brand citrusStylesSE-badge--rounded">brand</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--info citrusStylesSE-badge--rounded">info</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--warning citrusStylesSE-badge--rounded">warning</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--success citrusStylesSE-badge--rounded">success</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--error citrusStylesSE-badge--rounded">error</span><br>
+			<br>
+			<!----><span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">default</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--brand citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">brand</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--info citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">info</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--warning citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">warning</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--success citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">success</span> <!----><span class="citrusStylesSE-badge citrusStylesSE-badge--error citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost">error</span>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span>&gt;</span>default<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"brand"</span>&gt;</span>brand<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>&gt;</span>info<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"error"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span>&gt;</span>default<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"brand"</span>&gt;</span>brand<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>&gt;</span>info<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"error"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span>&gt;</span>default<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"brand"</span>&gt;</span>brand<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>&gt;</span>info<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span>&gt;</span>warning<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>&gt;</span>success<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">blaze-badge</span> <span class="hljs-attr">ghost</span> <span class="hljs-attr">rounded</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"error"</span>&gt;</span>error<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-badge</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading">Attributes</h2>
+		<table class="citrusStylesSE-table">
+			<thead class="citrusStylesSE-table__head">
+				<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<th class="citrusStylesSE-table__cell">Name</th>
+					<th class="citrusStylesSE-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="citrusStylesSE-table__body">
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">type: string</td>
+					<td class="citrusStylesSE-table__cell">The color of the badge</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">rounded: boolean</td>
+					<td class="citrusStylesSE-table__cell">Toggle the rounded borders</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">ghost: boolean</td>
+					<td class="citrusStylesSE-table__cell">Toggle ghost mode</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">CSS</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<span class="citrusStylesSE-badge">34 unread messages</span>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge"</span>&gt;</span>34 unread messages<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="colors">Colors</h2>
+		<p class="citrusStylesSE-paragraph">Badges come as default, brand, info, warning, success and error</p>
+		<p class="citrusStylesSE-paragraph">To use, add the color modifier class:</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<span class="citrusStylesSE-badge">Default</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--brand">Brand</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--info">Info</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--warning">Warning</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--success">Success</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--error">Error</span>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="rounded">Rounded</h2>
+		<p class="citrusStylesSE-paragraph">Make your badges rounded with the <code class="u-code">.citrusStylesSE-badge--rounded</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<span class="citrusStylesSE-badge citrusStylesSE-badge--rounded">Default</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--brand">Brand</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--info">Info</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--warning">Warning</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--success">Success</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--error">Error</span>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="ghost">Ghost</h2>
+		<p class="citrusStylesSE-paragraph">Remove your badges bodies with the <code class="u-code">.citrusStylesSE-badge--ghost</code> modifier.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge">Default</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--brand">Brand</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--info">Info</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--warning">Warning</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--success">Success</span> <span class="citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--error">Error</span>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--info"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--warning"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--success"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-badge citrusStylesSE-badge--rounded citrusStylesSE-badge--ghost citrusStylesSE-badge--error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></code></pre>
+		</div>
+	</main>
+
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>
