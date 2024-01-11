@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="../demo.css">
     <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+    <link rel="stylesheet" href="variable.css">
     <link rel="stylesheet" href="cards.css">
 </head>
 
@@ -30,9 +32,9 @@
         </div>
         <pre><code class="language-html">
             &lt;div class="citrusStylesSE-card"&gt;
-            &lt;div class="citrusStylesSE-card__body"&gt;
-            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
-            &lt;/div&gt;
+                &lt;div class="citrusStylesSE-card__body"&gt;
+                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                &lt;/div&gt;
             &lt;/div&gt;
         </code></pre>
         <!-- ./End Basic Card -->
@@ -63,23 +65,122 @@
                 <div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider">Footer</div>
             </div>
         </div>
-        <pre><code class="language-html">
+        <pre>
+            <code class="language-html">
                     &lt;div class="citrusStylesSE-card"&gt;
-                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Header&lt;/div&gt;
-                    &lt;div class="citrusStylesSE-card__item "&gt;
-                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
-                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam et.&lt;/p&gt; 
+                        &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Header&lt;/div&gt;
+                        &lt;div class="citrusStylesSE-card__item "&gt;
+                            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam et.&lt;/p&gt; 
+                        &lt;/div&gt;
+                        &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Divider&lt;/div&gt;
+                        &lt;div class="citrusStylesSE-card__item"&gt;
+                            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                            &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Footer&lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Divider&lt;/div&gt;
-                    &lt;div class="citrusStylesSE-card__item"&gt;
-                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
-                    &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div role="separator" class="citrusStylesSE-card__item citrusStylesSE-card__item--divider"&gt;Footer&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                </code></pre>
+            </code>
+        </pre>
         <!-- ./End Dividers -->
+
+        <!-- Colors -->
+        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Colors</h1>
+        <p class="citrusStylesSE-paragraph">Add <code class="u-code">--brand</code>, <code class="u-code">--info</code>,
+            <code class="u-code">--warning</code>, <code class="u-code">--successful</code> or <code
+                class="u-code">--error</code>
+            modifier to the card items to change their background colors.
+        </p>
+        <!-- output -->
+        <div class="output">
+            <div class="citrusStylesSE-card">
+                <div class="citrusStylesSE-card__item citrusStylesSE-card__item--brand">Header</div>
+                <div class="citrusStylesSE-card__item citrusStylesSE-card__item--info">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                </div>
+                <div class="citrusStylesSE-card__item citrusStylesSE-card__item--warning">Divider</div>
+                <div class="citrusStylesSE-card__item citrusStylesSE-card__item--success">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                </div>
+                <div class="citrusStylesSE-card__item citrusStylesSE-card__item--error">Footer</div>
+            </div>
+        </div>
+        <pre>
+            <code class="language-html">
+                &lt;div class="citrusStylesSE-card"&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--brand"&gt;Header&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--info"&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--warning"&gt;Divider&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--success"&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--error"&gt;Footer&lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        <!-- ./End colors -->
+
+        <!-- Header, Body and Footer -->
+        <h1 class="citrusStylesSE-heading citrusStylesSE-super">Header, Body and Footer</h1>
+        <p class="citrusStylesSE-paragraph">Use the header, body and footer element classes to construct some nice
+            cards.</p>
+        <!-- output -->
+        <div class="output">
+            <div class="citrusStylesSE-card">
+                <header class="citrusStylesSE-card__header">
+                    <h2 class="citrusStylesSE-heading">
+                        Heading
+                        <div class="citrusStylesSE-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="citrusStylesSE-card__body">
+                    <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint
+                        eloquentiam
+                        sea et.</p>
+                </div>
+                <footer class="citrusStylesSE-card__footer">
+                    <div class="citrusStylesSE-input-group">
+                        <button
+                            class="citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--brand">Button</button>
+                        <button
+                            class="citrusStylesSE-button citrusStylesSE-button--block citrusStylesSE-button--info">Button</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <pre>
+            <code class="language-html">
+                &lt;div class="citrusStylesSE-card"&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--brand"&gt;Header&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--info"&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea  et.&lt;/p&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--warning"&gt;Divider&lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--success"&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                        &lt;p class="citrusStylesSE-paragraph"&gt;Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="citrusStylesSE-card__item citrusStylesSE-card__item--error"&gt;Footer&lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+        <!-- ./End Header, Body and Footer -->
     </main>
     <!-- Prism js -->
     <script src="../prism.js"></script>

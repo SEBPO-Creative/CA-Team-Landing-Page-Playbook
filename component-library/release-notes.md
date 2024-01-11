@@ -26,3 +26,8 @@
 
 - card divider added
 - cards css added with 'citrusStylesSE-' prefix
+
+## 10 January 2024 by Imran-Ahmed
+
+- variable css added for using existing color styles. I don't change variables name
+- cards components added

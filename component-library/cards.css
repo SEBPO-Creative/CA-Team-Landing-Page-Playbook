@@ -13,7 +13,6 @@
   margin: 2rem 0;
 }
 /* above code for demo */
-
 .citrusStylesSE-card {
   background: var(--card-background);
   border-radius: var(--border-radius);
@@ -299,4 +298,144 @@
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button {
+  border-bottom: 0;
+}
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button:first-child {
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+}
+.citrusStylesSE-card__footer--block
+  .citrusStylesSE-input-group
+  .citrusStylesSE-button:last-child {
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+}
+.citrusStylesSE-input-group {
+  display: flex;
+}
+.citrusStylesSE-input-group .citrusStylesSE-button {
+  border-radius: 0;
+}
+.citrusStylesSE-input-group .citrusStylesSE-button:not(:first-child) {
+  border-left-width: 0;
+}
+.citrusStylesSE-input-group .citrusStylesSE-button:first-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+.citrusStylesSE-input-group .citrusStylesSE-button:last-child {
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.citrusStylesSE-input-group .o-field {
+  flex: 1;
+}
+.citrusStylesSE-input-group .o-field .citrusStylesSE-field {
+  border-radius: 0;
+}
+.citrusStylesSE-input-group .o-field:not(:first-child) .citrusStylesSE-field {
+  border-left-width: 0;
+}
+.citrusStylesSE-input-group .o-field:first-child .citrusStylesSE-field {
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+.citrusStylesSE-input-group .o-field:last-child .citrusStylesSE-field {
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.citrusStylesSE-input-group .o-field--fixed {
+  flex: 0 1 auto;
+}
+.citrusStylesSE-input-group--label .citrusStylesSE-button,
+.citrusStylesSE-input-group--label .o-field {
+  margin: var(--spacing-small) 0 0 0;
+}
+.citrusStylesSE-input-group--rounded .citrusStylesSE-button:first-child {
+  border-bottom-left-radius: var(--border-radius-rounded);
+  border-top-left-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--rounded .citrusStylesSE-button:last-child {
+  border-bottom-right-radius: var(--border-radius-rounded);
+  border-top-right-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--rounded
+  .o-field:first-child
+  .citrusStylesSE-field {
+  border-bottom-left-radius: var(--border-radius-rounded);
+  border-top-left-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--rounded .o-field:last-child .citrusStylesSE-field {
+  border-bottom-right-radius: var(--border-radius-rounded);
+  border-top-right-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--rounded-left .citrusStylesSE-button:first-child,
+.citrusStylesSE-input-group--rounded-left
+  .o-field:first-child
+  .citrusStylesSE-field {
+  border-bottom-left-radius: var(--border-radius-rounded);
+  border-top-left-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--rounded-right .citrusStylesSE-button:last-child,
+.citrusStylesSE-input-group--rounded-right
+  .o-field:last-child
+  .citrusStylesSE-field {
+  border-bottom-right-radius: var(--border-radius-rounded);
+  border-top-right-radius: var(--border-radius-rounded);
+}
+.citrusStylesSE-input-group--stacked {
+  display: flex;
+  flex-wrap: wrap;
+}
+.citrusStylesSE-input-group--stacked .citrusStylesSE-button,
+.citrusStylesSE-input-group--stacked .o-field {
+  flex: 0 0 100%;
+  margin-left: 0;
+  max-width: 100%;
+}
+.citrusStylesSE-input-group--stacked .citrusStylesSE-button:not(:first-child) {
+  border-left-width: var(--border-width);
+  border-top: 0;
+}
+.citrusStylesSE-input-group--stacked
+  .citrusStylesSE-button:not(:first-child, :last-child) {
+  border-radius: 0;
+}
+.citrusStylesSE-input-group--stacked .citrusStylesSE-button:first-child {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.citrusStylesSE-input-group--stacked .citrusStylesSE-button:last-child {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.citrusStylesSE-input-group--stacked
+  .o-field:not(:first-child)
+  .citrusStylesSE-field {
+  border-left-width: var(--border-width);
+  border-top: 0;
+}
+.citrusStylesSE-input-group--stacked
+  .o-field:not(:first-child, :last-child)
+  .citrusStylesSE-field {
+  border-left-width: var(--border-width);
+  border-radius: 0;
+}
+.citrusStylesSE-input-group--stacked
+  .o-field:first-child
+  .citrusStylesSE-field {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.citrusStylesSE-input-group--stacked .o-field:last-child .citrusStylesSE-field {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.citrusStylesSE-button.citrusStylesSE-button--info {
+  --button-color: var(--button-color--info);
+  --button-background: var(--button-background--info);
 }
