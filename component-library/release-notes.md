@@ -48,3 +48,12 @@
 - Container examples and css added
 - Sticky examples and css added
 - Tables examples and css added
+
+## 12 January 2024 by Shahinur
+
+- Alignment exaples and styles added
+- Letter Box exaples and styles added
+- Visibility exaples and styles added
+- Timeline exaples and styles added
+- Petco basic variable color added
+
