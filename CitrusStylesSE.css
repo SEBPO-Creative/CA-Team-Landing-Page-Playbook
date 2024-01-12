@@ -1100,6 +1100,47 @@
 
 /* ===================== Utility Class ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */
+
+/* Alignments */
+.citrusStylesSE-centered {
+  text-align: center;
+}
+
+.citrusStylesSE-justified {
+  text-align: justify;
+}
+
+.citrusStylesSE-left {
+  text-align: left;
+}
+
+.citrusStylesS-right {
+  text-align: right;
+}
+
+.citrusStylesS-center-block {
+  position: relative;
+}
+
+.citrusStylesS-center-block__content,
+.citrusStylesS-absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.citrusStylesS-center-block__content--vertical {
+  left: auto;
+  transform: translateY(-50%);
+}
+
+.citrusStylesS-center-block__content--horizontal {
+  top: auto;
+  transform: translateX(-50%);
+}
+/* End Alignments */
+
 .citrusStylesSE-grid__cell--top {
   align-self: flex-start;
 }
