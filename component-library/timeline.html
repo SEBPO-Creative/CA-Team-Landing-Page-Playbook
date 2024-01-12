@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="../CitrusStylesSE.css">
+</head>
+<body>
+
+
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading citrusStylesSE-heading">Timelines</h1>
+		<p class="citrusStylesSE-paragraph">Timelines are good to illustrate a connected set of events that have happened or are planned to happen.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<!---->
+			<ol class="citrusStylesSE-timeline citrusStylesSE-timeline--loading">
+				<!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--left">
+					<div class="citrusStylesSE-timeline-item__body">
+						Nothing
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--brand">
+					<div class="citrusStylesSE-timeline-item__body">
+						Big bang
+						<p class="citrusStylesSE-paragraph">Widely considered to be how the universe began</p>
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--info">
+					<div class="citrusStylesSE-timeline-item__body">
+						Galaxies go everywhere
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--warning">
+					<div class="citrusStylesSE-timeline-item__body">
+						Solar systems form
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--success">
+					<div class="citrusStylesSE-timeline-item__body">
+						Earth appears
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--error">
+					<div class="citrusStylesSE-timeline-item__body">
+						Human infestation occurs!
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last">
+					<div class="citrusStylesSE-timeline-item__body">
+						All this has happened before and will happen again
+					</div>
+				</li><!---->
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--loading">
+					<div class="citrusStylesSE-timeline-item__body">
+						Evolution
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline</span> <span class="hljs-attr">loading</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">left</span>&gt;</span>Nothing<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"brand"</span>&gt;</span>
+    Big bang
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph"</span>&gt;</span>
+      Widely considered to be how the universe began
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>&gt;</span>Galaxies go everywhere<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span>&gt;</span>Solar systems form<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>&gt;</span>Earth appears<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"error"</span>&gt;</span>Human infestation occurs!<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">last</span>&gt;</span>All this has happened before and will happen again<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blaze-timeline-item</span> <span class="hljs-attr">loading</span>&gt;</span>Evolution<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline-item</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blaze-timeline</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading">Attributes</h2>
+		<h3 class="citrusStylesSE-heading">Timeline</h3>
+		<table class="citrusStylesSE-table">
+			<thead class="citrusStylesSE-table__head">
+				<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<th class="citrusStylesSE-table__cell">Name</th>
+					<th class="citrusStylesSE-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="citrusStylesSE-table__body">
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">alternate: boolean</td>
+					<td class="citrusStylesSE-table__cell">Styles the line of time centrally</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">loading: boolean</td>
+					<td class="citrusStylesSE-table__cell">Enables the loading item to occupy the last spot in the list</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3 class="citrusStylesSE-heading">Timeline item</h3>
+		<table class="citrusStylesSE-table">
+			<thead class="citrusStylesSE-table__head">
+				<tr class="citrusStylesSE-table__row citrusStylesSE-table__row--heading">
+					<th class="citrusStylesSE-table__cell">Name</th>
+					<th class="citrusStylesSE-table__cell">Description</th>
+				</tr>
+			</thead>
+			<tbody class="citrusStylesSE-table__body">
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">last: boolean</td>
+					<td class="citrusStylesSE-table__cell">Removes the line of time for this item</td>
+				</tr>
+				<tr class="citrusStylesSE-table__row">
+					<td class="citrusStylesSE-table__cell">loading: boolean</td>
+					<td class="citrusStylesSE-table__cell">Styles the item differently to indicate the content is not ready</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="citrusStylesSE-heading">CSS</h2>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="standard">Standard</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-timeline">
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Nothing
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Big bang
+						<p class="citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small">Widely considered to be how the universe began</p>
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Galaxies go everywhere
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Solar systems form
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Earth appears
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Human infestation occurs!
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last">
+					<div class="citrusStylesSE-timeline-item__body">
+						All this has happened before, and will happen again
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Nothing
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Big bang
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small"</span>&gt;</span>
+        Widely considered to be how the universe began
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Galaxies go everywhere<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Solar systems form<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Earth appears<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Human infestation occurs!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      All this has happened before, and will happen again
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="colours">Colours</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-timeline">
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Nothing
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--brand">
+					<div class="citrusStylesSE-timeline-item__body">
+						Big bang
+						<p class="citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small">Widely considered to be how the universe began</p>
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--info">
+					<div class="citrusStylesSE-timeline-item__body">
+						Galaxies go everywhere
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--warning">
+					<div class="citrusStylesSE-timeline-item__body">
+						Solar systems form
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--success">
+					<div class="citrusStylesSE-timeline-item__body">
+						Earth appears
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--error">
+					<div class="citrusStylesSE-timeline-item__body">
+						Human infestation occurs!
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last">
+					<div class="citrusStylesSE-timeline-item__body">
+						All this has happened before, and will happen again
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Nothing
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--brand"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Big bang
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small"</span>&gt;</span>
+        Widely considered to be how the universe began
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--info"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Galaxies go everywhere<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--warning"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Solar systems form<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--success"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Earth appears<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--error"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Human infestation occurs!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      All this has happened before, and will happen again
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="loading">Loading last item</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-timeline citrusStylesSE-timeline--loading">
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Nothing
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Big bang
+						<p class="citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small">Widely considered to be how the universe began</p>
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Galaxies go everywhere
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Solar systems form
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Earth appears
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item">
+					<div class="citrusStylesSE-timeline-item__body">
+						Human infestation occurs!
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last">
+					<div class="citrusStylesSE-timeline-item__body">
+						All this has happened before, and will happen again
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--loading">
+					<div class="citrusStylesSE-timeline-item__body">
+						...Evolution
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline citrusStylesSE-timeline--loading"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Nothing
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Big bang
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small"</span>&gt;</span>
+        Widely considered to be how the universe began
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Galaxies go everywhere<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Solar systems form<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Earth appears<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Human infestation occurs!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--last"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      All this has happened before, and will happen again
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--loading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      ...Evolution
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+		<h2 class="citrusStylesSE-heading citrusStylesSE-xlarge" id="alternate">Alternating items</h2>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<ul class="citrusStylesSE-timeline citrusStylesSE-timeline--alternate citrusStylesSE-timeline--loading">
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--left">
+					<div class="citrusStylesSE-timeline-item__body">
+						Nothing
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--brand">
+					<div class="citrusStylesSE-timeline-item__body">
+						Big bang
+						<p class="citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small">Widely considered to be how the universe began</p>
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--info citrusStylesSE-timeline-item--left">
+					<div class="citrusStylesSE-timeline-item__body">
+						Galaxies go everywhere
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--warning">
+					<div class="citrusStylesSE-timeline-item__body">
+						Solar systems form
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--success citrusStylesSE-timeline-item--left">
+					<div class="citrusStylesSE-timeline-item__body">
+						Earth appears
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--error">
+					<div class="citrusStylesSE-timeline-item__body">
+						Human infestation occurs!
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--left citrusStylesSE-timeline-item--last">
+					<div class="citrusStylesSE-timeline-item__body">
+						All this has happened before, and will happen again
+					</div>
+				</li>
+				<li class="citrusStylesSE-timeline-item citrusStylesSE-timeline-item--loading">
+					<div class="citrusStylesSE-timeline-item__body">
+						...Evolution
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline citrusStylesSE-timeline--alternate citrusStylesSE-timeline--loading"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Nothing
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--brand"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      Big bang
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-paragraph citrusStylesSE-text--quiet citrusStylesSE-small"</span>&gt;</span>
+        Widely considered to be how the universe began
+      <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--info citrusStylesSE-timeline-item--left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Galaxies go everywhere<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--warning"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Solar systems form<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--success citrusStylesSE-timeline-item--left"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Earth appears<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--error"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>Human infestation occurs!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--left citrusStylesSE-timeline-item--last"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      All this has happened before, and will happen again
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item citrusStylesSE-timeline-item--loading"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-timeline-item__body"</span>&gt;</span>
+      ...Evolution
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+		</div>
+	</main>
+
+    <!-- Prism js -->
+    <script src="../prism.js"></script>
+
+</body>
+</html>
