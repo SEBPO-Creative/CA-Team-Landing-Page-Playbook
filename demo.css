@@ -28,3 +28,8 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+/* Code font color */
+code[class*=language-], pre[class*=language-]{
+  font-weight: normal;
+}
