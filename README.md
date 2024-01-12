@@ -27,8 +27,9 @@ Team Leader: Responsible for overseeing the entire process and ensuring that the
 - Each of the landing page should be developed by using this library or framework [Blaze UI](https://www.blazeui.com/)
 - To ensure consistency and avoid style conflicts, production must exclusively utilize only using the CSS and js framework from CDN 
 - [blaze.css CDN](https://unpkg.com/@blaze/css/dist/blaze/blaze.css) 
-- [CitrusStylesSE.css CDN](https://cdn.jsdelivr.net/gh/SEBPO-Creative/CA-Team-Landing-Page-Playbook@main/CitrusStylesSE.css)
-- [CitrusStylesSE.js CDN](https://cdn.jsdelivr.net/gh/SEBPO-Creative/CA-Team-Landing-Page-Playbook@main/CitrusStylesSE.js)
+- [CitrusStylesSE.css CDN](https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css)
+- [CitrusStylesSE.js CDN](https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js)
+- [Placeholders Images](https://picsum.photos/)
 - Inline styles and external CSS files are prohibited.
 
 ## Naming Convention:
@@ -118,3 +119,4 @@ Following this SOP will help ensure that our landing pages are developed efficie
 - [BEM — Block Element Modifier](https://getbem.com/)
 - [What is Prefix, Base Word, Suffix](https://ies.ed.gov/ncee/rel/regions/southeast/pdf/prefix_base_word_suffix.pdf)
 - [Migrating from GitHub to jsDelivr](https://www.jsdelivr.com/github)
+- [Placeholders Images](https://picsum.photos/)
