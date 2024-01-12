@@ -6,20 +6,19 @@
  */
   /* ===================== CSS Variable ===================== */
   :root {
-    --citrusStylesSE-blue: #0d6efd;
-    --citrusStylesSE-indigo: #6610f2;
-    --citrusStylesSE-purple: #6f42c1;
-    --citrusStylesSE-pink: #d63384;
-    --citrusStylesSE-red: #dc3545;
-    --citrusStylesSE-orange: #fd7e14;
-    --citrusStylesSE-yellow: #ffc107;
-    --citrusStylesSE-green: #198754;
-    --citrusStylesSE-teal: #20c997;
-    --citrusStylesSE-cyan: #0dcaf0;
-    --citrusStylesSE-black: #000;
-    --citrusStylesSE-white: #fff;
-    --citrusStylesSE-gray: #6c757d;
-    --citrusStylesSE-gray-dark: #343a40;
+    --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
+    --citrusStylesSE-secondary-navy: #00205B; /* -Mostly used for bg color */
+    --citrusStylesSE-navy-021B4E: #021B4E; /* need new naming*/
+    --citrusStylesSE-navy-light: #1F52A0; /* -Mostly used for bg color */
+    --citrusStylesSE-blue-15-percent: #6EDCFA; /* -Mostly used for bg color */
+    --citrusStylesSE-white: #ffffff;
+    --citrusStylesSE-black: #000000;
+    --citrusStylesSE-black-light: #333333;
+    --citrusStylesSE-gray-light: #D8D8D8;
+    --citrusStylesSE-gray-F6F6F6: #F6F6F6; /* need new naming*/
+    --citrusStylesSE-silver: #F4F7FF; /* need new naming*/
+    --citrusStylesSE-pink-10-percent: #DF3995;
+
     --citrusStylesSE-gray-100: #f8f9fa;
     --citrusStylesSE-gray-200: #e9ecef;
     --citrusStylesSE-gray-300: #dee2e6;
@@ -37,7 +36,7 @@
     --citrusStylesSE-danger: #dc3545;
     --citrusStylesSE-light: #f8f9fa;
     --citrusStylesSE-dark: #212529;
-    --citrusStylesSE-color--background: var(--citrusStylesSE-color--10);
+    --citrusStylesSE-color--background: var(--citrusStylesSE-secondary);
     --citrusStylesSE-color--background-offset: var(--citrusStylesSE-color--9);
     --citrusStylesSE-color--background-offset-2: var(--citrusStylesSE-color--8);
     --citrusStylesSE-color--text: var(--citrusStylesSE-color--0);
@@ -69,6 +68,7 @@
     --citrusStylesSE-color--citrusStylesSE-text-error: var(--citrusStylesSE-color--10);
     --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
     --citrusStylesSE-color--transparent: transparent;
+    /* We need to discuss about brand color definitons since every brand has different color, so how we will define/use those colors */
 
      /* Avatars */
     --citrusStylesSE-avatar-color: var(--citrusStylesSE-color-text-brand);
@@ -116,8 +116,13 @@
     /* Borders */
     --citrusStylesSE-border-width: 1px;
     --citrusStylesSE-border-style: solid;
-    --citrusStylesSE-border-color: var(--citrusStylesSE-color-4);
+    --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+    --citrusStylesSE-border-radius-5: 5px;
     --citrusStylesSE-border-radius: 6px;
+    --citrusStylesSE-border-radius-10: 10px;
+    --citrusStylesSE-border-radius-15: 15px;
+    --citrusStylesSE-border-radius-20: 20px;
+    --citrusStylesSE-border-radius-30: 30px;
     --citrusStylesSE-border-radius-rounded: 30em;
 
     /* Box shadows */
@@ -128,7 +133,7 @@
 
     /* Buttons */
     --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
-    --citrusStylesSE-button-background: var(--citrusStylesSE-color--text);
+    --citrusStylesSE-button-background: var(--citrusStylesSE-secondary);
     --citrusStylesSE-button-color--ghost: var(--citrusStylesSE-color--text);
     --citrusStylesSE-button-color--ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
     --citrusStylesSE-button-background--ghost: transparent;
