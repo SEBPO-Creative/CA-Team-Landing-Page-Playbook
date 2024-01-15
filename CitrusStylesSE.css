@@ -17,7 +17,7 @@
     --citrusStylesSE-gray-light: #D8D8D8;
     --citrusStylesSE-gray-F6F6F6: #F6F6F6; /* need new naming*/
     --citrusStylesSE-silver: #F4F7FF; /* need new naming*/
-    --citrusStylesSE-pink-10-percent: #DF3995;
+    --citrusStylesSE-pink-10-percent: #DF3995; /* -Mostly used for bg color */
 
     --citrusStylesSE-gray-100: #f8f9fa;
     --citrusStylesSE-gray-200: #e9ecef;
@@ -210,7 +210,7 @@
     --citrusStylesSE-disabled-opacity: 0.5;
     --citrusStylesSE-disabled-opacity: 0.5;
     --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
-    --citrusStylesSE-color--disabled-background: var(--citrusStylesSE-color--8);
+    --citrusStylesSE-color--citrusStylesSE-disabled-background: var(--citrusStylesSE-color--8);
     
     /* Grid */
     --citrusStylesSE-grid-gutter: 1em;
@@ -233,7 +233,7 @@
     --citrusStylesSE-screen-limit-super: 116em;
 
     /* Modals */
-    --citrusStylesSE-modal-background: var(--card-background);
+    --citrusStylesSE-modal-background: var(--citrusStylesSE-card-background);
     --citrusStylesSE-modal-background--ghost: transparent;
     --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
     --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
@@ -666,7 +666,7 @@
 }
 .citrusStylesSE-button.citrusStylesSE-button--nude:disabled, .citrusStylesSE-button.citrusStylesSE-button--nude[disabled] {
   cursor: not-allowed;
-  opacity: var(--disabled-opacity);
+  opacity: var(--citrusStylesSE-disabled-opacity);
 }
 .citrusStylesSE-button.citrusStylesSE-button--nude:not(:disabled, [disabled]):not(:active):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
@@ -710,8 +710,8 @@
 }
 /* above code for demo */
 .citrusStylesSE-card {
-  background: var(--card-background);
-  border-radius: var(--border-radius);
+  background: var(--citrusStylesSE-card-background);
+  border-radius: var(--citrusStylesSE-border-radius);
   display: block;
   overflow: hidden;
   padding: 0;
@@ -719,15 +719,15 @@
 }
 
 .citrusStylesSE-card > .citrusStylesSE-image:not(:first-child) {
-  padding: var(--spacing-medium) 0 0;
+  padding: var(--citrusStylesSE-spacing-medium) 0 0;
 }
 
 .citrusStylesSE-card + .citrusStylesSE-card {
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--citrusStylesSE-spacing-small) 0 0 0;
 }
 
 .citrusStylesSE-card__header {
-  padding: var(--spacing-medium) var(--spacing-medium) 0;
+  padding: var(--citrusStylesSE-spacing-medium) var(--citrusStylesSE-spacing-medium) 0;
 }
 
 .citrusStylesSE-card__header .citrusStylesSE-heading {
@@ -736,11 +736,11 @@
 
 .citrusStylesSE-card__body,
 .citrusStylesSE-card__footer {
-  padding: var(--spacing-medium);
+  padding: var(--citrusStylesSE-spacing-medium);
 }
 
 .citrusStylesSE-card__footer--block {
-  padding: var(--spacing-small) 0 0;
+  padding: var(--citrusStylesSE-spacing-small) 0 0;
 }
 
 .citrusStylesSE-card__footer--block
@@ -766,47 +766,47 @@
 }
 
 .citrusStylesSE-card__item {
-  background: var(--card-item-background);
-  color: var(--card-item-color);
+  background: var(--citrusStylesSE-card-item-background);
+  color: var(--citrusStylesSE-card-item-color);
   margin: 0;
-  padding: var(--spacing-small);
+  padding: var(--citrusStylesSE-spacing-small);
 }
 
 .citrusStylesSE-card__item:disabled,
 .citrusStylesSE-card__item[disabled] {
   cursor: not-allowed;
-  opacity: var(--disabled-opacity);
+  opacity: var(--citrusStylesSE-disabled-opacity);
 }
 
 .citrusStylesSE-card__item--divider[role="separator"] {
-  --card-item-color: var(--card-item-color--divider);
-  --card-item-background: var(--card-item-background--divider);
-  font-weight: var(--text-font-weight-heavy);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--divider);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--divider);
+  font-weight: var(--citrusStylesSE-text-font-weight-heavy);
 }
 
 .citrusStylesSE-card__item--brand {
-  --card-item-color: var(--card-item-color--brand);
-  --card-item-background: var(--card-item-background--brand);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--brand);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--brand);
 }
 
 .citrusStylesSE-card__item--info {
-  --card-item-color: var(--card-item-color--info);
-  --card-item-background: var(--card-item-background--info);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--info);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--info);
 }
 
 .citrusStylesSE-card__item--warning {
-  --card-item-color: var(--card-item-color--warning);
-  --card-item-background: var(--card-item-background--warning);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--warning);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--warning);
 }
 
 .citrusStylesSE-card__item--success {
-  --card-item-color: var(--card-item-color--success);
-  --card-item-background: var(--card-item-background--success);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--success);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--success);
 }
 
 .citrusStylesSE-card__item--error {
-  --card-item-color: var(--card-item-color--error);
-  --card-item-background: var(--card-item-background--error);
+  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--error);
+  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--error);
 }
 
 .citrusStylesSE-card__item + .citrusStylesSE-card__footer--block {
@@ -818,21 +818,21 @@
 }
 
 .citrusStylesSE-card__divider[role="separator"] {
-  background-color: var(--border-color);
-  height: var(--border-width);
+  background-color: var(--citrusStylesSE-border-color);
+  height: var(--citrusStylesSE-border-width);
   overflow: hidden;
 }
 
 .citrusStylesSE-card__control {
-  --button-color: var(--card-control-color);
-  --button-background: var(--card-control-background);
+  --citrusStylesSE-button-color: var(--citrusStylesSE-card-control-color);
+  --citrusStylesSE-button-background: var(--citrusStylesSE-card-control-background);
   -webkit-appearance: none;
   appearance: none;
-  background: var(--button-background);
+  background: var(--citrusStylesSE-button-background);
   border: 0;
-  border-radius: var(--button-border-radius);
+  border-radius: var(--citrusStylesSE-button-border-radius);
   border-radius: 0;
-  color: var(--button-color);
+  color: var(--citrusStylesSE-button-color);
   display: inline-block;
   display: block;
   font-family: inherit;
@@ -842,7 +842,7 @@
   max-width: 100%;
   outline: 0;
   overflow: hidden;
-  padding: var(--spacing-small);
+  padding: var(--citrusStylesSE-spacing-small);
   position: relative;
   text-align: center;
   text-align: inherit;
@@ -858,7 +858,7 @@
 .citrusStylesSE-card__control:disabled,
 .citrusStylesSE-card__control[disabled] {
   cursor: not-allowed;
-  opacity: var(--disabled-opacity);
+  opacity: var(--citrusStylesSE-disabled-opacity);
 }
 
 .citrusStylesSE-card__control.citrusStylesSE-button--active,
@@ -867,8 +867,8 @@
 }
 
 .citrusStylesSE-card__control:not(:disabled, [disabled]):focus {
-  border-color: var(--border-color-focus);
-  box-shadow: var(--box-shadow-focus);
+  border-color: var(--citrusStylesSE-border-color-focus);
+  box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
 
 .citrusStylesSE-card__control:not(:disabled, [disabled]):active {
@@ -877,7 +877,7 @@
 
 .citrusStylesSE-card__control[aria-expanded="true"] {
   filter: brightness(0.95);
-  font-weight: var(--text-font-weight-heavy);
+  font-weight: var(--citrusStylesSE-text-font-weight-heavy);
 }
 
 .citrusStylesSE-card__control.citrusStylesSE-card__control--active {
@@ -885,8 +885,8 @@
 }
 
 .citrusStylesSE-card--menu[role="menu"] {
-  border: var(--card-menu-border);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border: var(--citrusStylesSE-card-menu-border);
+  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
   display: inline-block;
   margin-top: 0.5em;
   max-height: 300px;
@@ -899,8 +899,8 @@
 
 .citrusStylesSE-card--menu[role="menu"]
   .citrusStylesSE-card__control[role="menuitem"] {
-  --button-color: var(--card-control-color--menu);
-  --button-background: var(--card-control-background--menu);
+  --citrusStylesSE-button-color: var(--citrusStylesSE-card-control-color--menu);
+  --citrusStylesSE-button-background: var(--citrusStylesSE-card-control-background--menu);
 }
 
 .citrusStylesSE-card--accordion
@@ -922,7 +922,7 @@
 
 .citrusStylesSE-card__item--pane {
   margin: 0;
-  padding: var(--spacing-small);
+  padding: var(--citrusStylesSE-spacing-small);
 }
 
 .citrusStylesSE-card__control[aria-expanded="false"]
@@ -935,7 +935,7 @@
 }
 
 .citrusStylesSE-card__body .citrusStylesSE-panel {
-  padding: var(--spacing-small);
+  padding: var(--citrusStylesSE-spacing-small);
 }
 
 /* Modal card */
@@ -951,7 +951,7 @@
 }
 
 .citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--ghost {
-  background: var(--modal-background--ghost);
+  background: var(--citrusStylesSE-modal-background--ghost);
   color: #fff;
 }
 
@@ -962,7 +962,7 @@
 
 .citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--ghost
   .citrusStylesSE-button--close {
-  color: var(--modal-close-color--ghost);
+  color: var(--citrusStylesSE-modal-close-color--ghost);
 }
 
 .citrusStylesSE-modal[role="dialog"].citrusStylesSE-modal--full {
@@ -1024,12 +1024,12 @@
   border-left-width: 0;
 }
 .citrusStylesSE-input-group .citrusStylesSE-button:first-child {
-  border-bottom-left-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--citrusStylesSE-border-radius);
+  border-top-left-radius: var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group .citrusStylesSE-button:last-child {
-  border-bottom-right-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--citrusStylesSE-border-radius);
+  border-top-right-radius: var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group .citrusStylesSE-field {
   flex: 1;
@@ -1041,51 +1041,51 @@
   border-left-width: 0;
 }
 .citrusStylesSE-input-group .citrusStylesSE-field:first-child .citrusStylesSE-field {
-  border-bottom-left-radius: var(--border-radius);
-  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--citrusStylesSE-border-radius);
+  border-top-left-radius: var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group .citrusStylesSE-field:last-child .citrusStylesSE-field {
-  border-bottom-right-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--citrusStylesSE-border-radius);
+  border-top-right-radius: var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group .citrusStylesSE-field--fixed {
   flex: 0 1 auto;
 }
 .citrusStylesSE-input-group--label .citrusStylesSE-button,
 .citrusStylesSE-input-group--label .citrusStylesSE-field {
-  margin: var(--spacing-small) 0 0 0;
+  margin: var(--citrusStylesSE-spacing-small) 0 0 0;
 }
 .citrusStylesSE-input-group--rounded .citrusStylesSE-button:first-child {
-  border-bottom-left-radius: var(--border-radius-rounded);
-  border-top-left-radius: var(--border-radius-rounded);
+  border-bottom-left-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-left-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--rounded .citrusStylesSE-button:last-child {
-  border-bottom-right-radius: var(--border-radius-rounded);
-  border-top-right-radius: var(--border-radius-rounded);
+  border-bottom-right-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-right-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--rounded
   .citrusStylesSE-field:first-child
   .citrusStylesSE-field {
-  border-bottom-left-radius: var(--border-radius-rounded);
-  border-top-left-radius: var(--border-radius-rounded);
+  border-bottom-left-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-left-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--rounded .citrusStylesSE-field:last-child .citrusStylesSE-field {
-  border-bottom-right-radius: var(--border-radius-rounded);
-  border-top-right-radius: var(--border-radius-rounded);
+  border-bottom-right-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-right-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--rounded-left .citrusStylesSE-button:first-child,
 .citrusStylesSE-input-group--rounded-left
   .citrusStylesSE-field:first-child
   .citrusStylesSE-field {
-  border-bottom-left-radius: var(--border-radius-rounded);
-  border-top-left-radius: var(--border-radius-rounded);
+  border-bottom-left-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-left-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--rounded-right .citrusStylesSE-button:last-child,
 .citrusStylesSE-input-group--rounded-right
   .citrusStylesSE-field:last-child
   .citrusStylesSE-field {
-  border-bottom-right-radius: var(--border-radius-rounded);
-  border-top-right-radius: var(--border-radius-rounded);
+  border-bottom-right-radius: var(--citrusStylesSE-border-radius-rounded);
+  border-top-right-radius: var(--citrusStylesSE-border-radius-rounded);
 }
 .citrusStylesSE-input-group--stacked {
   display: flex;
@@ -1098,7 +1098,7 @@
   max-width: 100%;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-button:not(:first-child) {
-  border-left-width: var(--border-width);
+  border-left-width: var(--citrusStylesSE-border-width);
   border-top: 0;
 }
 .citrusStylesSE-input-group--stacked
@@ -1106,34 +1106,34 @@
   border-radius: 0;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-button:first-child {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-radius: var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius) 0 0;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-button:last-child {
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group--stacked
   .citrusStylesSE-field:not(:first-child)
   .citrusStylesSE-field {
-  border-left-width: var(--border-width);
+  border-left-width: var(--citrusStylesSE-border-width);
   border-top: 0;
 }
 .citrusStylesSE-input-group--stacked
   .citrusStylesSE-field:not(:first-child, :last-child)
   .citrusStylesSE-field {
-  border-left-width: var(--border-width);
+  border-left-width: var(--citrusStylesSE-border-width);
   border-radius: 0;
 }
 .citrusStylesSE-input-group--stacked
   .citrusStylesSE-field:first-child
   .citrusStylesSE-field {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-radius: var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius) 0 0;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-field:last-child .citrusStylesSE-field {
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-button.citrusStylesSE-button--info {
-  --button-color: var(--button-color--info);
-  --button-background: var(--button-background--info);
+  --citrusStylesSE-button-color: var(--citrusStylesSE-button-color--info);
+  --citrusStylesSE-button-background: var(--citrusStylesSE-button-background--info);
 }
 /* End Card */
 
@@ -4861,7 +4861,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 }
 .citrusStylesSE-tab-heading[role=tab]:disabled, .citrusStylesSE-tab-heading[role=tab][disabled] {
   cursor: not-allowed;
-  opacity: var(--disabled-opacity);
+  opacity: var(--citrusStylesSE-disabled-opacity);
 }
 .citrusStylesSE-tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
