@@ -57,3 +57,7 @@
 - Timeline exaples and styles added
 - Petco basic variable color added
 
+## 15 January 2024 by Shahinur
+- Missing variables name updated.
+- Hero POV examples, styles and js added. need to merge the js.
+
