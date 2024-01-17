@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - FAQ -- Hero Banner</title>
+    <!-- citrusStylesSE library css -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "PetcoCircularTT-Regular", arial !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-family: "PetcoCircularTT-Bold", arial !important;
+            line-height: auto;
+            color: #000;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "PetcoCircularTT-Regular", arial !important;
+            line-height: auto;
+            color: #000;
+        }
+
+        a {
+            font-family: "PetcoCircularTT-Regular", arial !important;
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* hero banner */
+        .citrusStylesSE-container--large {
+            margin: auto;
+        }
+
+        .citrusStylesSE-position-relative {
+            position: relative;
+        }
+
+        .citrusSpotlight__heroImage-box img {
+            width: 100%;
+            /* max-width: 1440px; */
+            object-fit: cover;
+        }
+
+        .citrusSpotlight__heroImage-copy {
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto 5%;
+        }
+
+        .hero-left {
+            column-gap: 40px;
+        }
+
+        .spotlightLogo img {
+            width: 100%;
+            max-width: 204px;
+        }
+
+        .spotlightCopy h1 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 900;
+        }
+
+        .spotlightCopy h1 span {
+            display: block;
+            font-size: 80px;
+            color: #6af4a8;
+        }
+
+        .spotlightCopy p {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 34px;
+            color: #fff;
+        }
+
+        a.hero-rightCTA {
+            font-family: "PetcoCircularTT-Bold", arial !important;
+            display: block;
+            min-width: 127px;
+            line-height: 50px;
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            background: #00205b;
+            border: 1px solid #00205b;
+            border-radius: 7px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 1s ease;
+        }
+
+        .citrusSpotlight__disclaimer-hero {
+            font-size: 12px;
+            line-height: 12px;
+            color: #00205b;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        @media all and (min-width: 922px) and (max-width: 1100px) {
+            .spotlightCopy h1 {
+                font-size: 22px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 44px;
+            }
+
+            .spotlightCopy p {
+                font-size: 17px;
+                line-height: 17px;
+            }
+
+            .citrusSpotlight__FAQ {
+                width: 94%;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width: 921px) {
+            .spotlightLogo img {
+                max-width: 150px;
+            }
+
+            .citrusSpotlight__heroImage-copy {
+                width: 96%;
+                margin: auto 2%;
+            }
+
+            .spotlightCopy h1 {
+                font-size: 20px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 40px;
+            }
+
+            .spotlightCopy p {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+            .citrusSpotlight__heroImage-copy {
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .hero-left {
+                column-gap: 0px;
+            }
+
+            .spotlightCopy h1 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 32px;
+            }
+
+            .spotlightCopy p {
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 15px;
+            }
+
+            a.hero-rightCTA {
+                min-width: max-content;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 900;
+                color: #fff;
+                text-decoration: underline;
+                text-transform: capitalize;
+                text-align: left;
+                border: none;
+                background: none;
+            }
+
+            .citrusSpotlight__disclaimer-hero {
+                color: #fff;
+            }
+
+            a.hero-rightCTA:hover {
+                background: none;
+                color: #fff;
+            }
+        }
+
+        @media all and (min-width: 476px) and (max-width: 767px) {
+            .spotlightCopy h1 {
+                font-size: 28px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 60px;
+            }
+
+            .spotlightCopy p {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero banner start -->
+    <section class="citrusStylesSE-container--large  citrusStylesSE-container--super">
+        <div class="citrusStylesSE-position-relative">
+            <!-- full width image -->
+            <div class="citrusSpotlight__heroImage-box">
+                <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                    src="images/spotlightHeroBackground-desktop.png" alt="">
+                <img class="citrusStylesSE-display-none@medium" src="images/spotlightHeroBackground-mobile.png" alt="">
+            </div>
+            <div class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusSpotlight__heroImage-copy">
+                <div
+                    class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid__cell--center@medium hero-left">
+                    <div class="spotlightLogo citrusStylesSE-grid__cell--center">
+                        <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                            src="images/SpotLightLogoBoxieCat.png" alt="">
+                    </div>
+                    <div class="citrusStylesSE-grid__cell--center spotlightCopy">
+                        <h1>BUY 1, GET 1 <span>15% OFF</span></h1>
+                        <p>Select Hills Cat & <br class="citrusStylesSE-display-none@medium">Dog products.</p>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-centered">
+                    <a class="hero-rightCTA" href="#">Shop Now</a>
+                    <p class="citrusSpotlight__disclaimer-hero">Disclaimer here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero banner -->
+
+</body>
+
+</html>

@@ -58,6 +58,11 @@
 - Petco basic variable color added
 
 ## 15 January 2024 by Shahinur
+
 - Missing variables name updated.
 - Hero POV examples, styles and js added. need to merge the js.
 
+## 17 January 2024 by Imran-Ahmed
+
+- Brand spotlight Education FAQ hero banner converted to our library with full responsive
+- need to check this component location is correct or not. Please update location if applicable.
