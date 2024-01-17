@@ -1293,81 +1293,45 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
-
-.citrusStylesSE-carousel .citrusStylesSE-carousel-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
   width: 100%;
-  overflow: hidden;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start !important;
-  -ms-flex-align: start !important;
-  align-items: flex-start !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: none;
 }
 
-.citrusStylesSE-carousel .citrusStylesSE-carousel-inner .citrusStylesSE-carousel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
+.citrusStylesSE-carousel__inner {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  transition: all ease 0.5s;
+}
+
+.citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel-item {
+  justify-content: flex-start;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  background-position: center;
+  width: 100%;
+}
+
+.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
+  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV1.png");
+}
+.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov3 {
+  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV2.png");
+}
+.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
+  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV3.png");
+}
+.citrusStylesSE-carousel-item {
+  width: 100%;
+  display: flex;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100%;
+  background-color: #e9faff;
 }
-
-.citrusStylesSE-carousel-controls .prev {
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-image: url("prev.svg");
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  opacity: .5;
-}
-
-.citrusStylesSE-carousel-controls .next {
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-image: url("next.svg");
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  opacity: .5;
-}
-
-.prev:hover, .next:hover {
-  opacity: 1;
-}
-
 .citrusStylesSE-carousel-indicators {
   position: absolute;
   bottom: 0;
@@ -1375,9 +1339,8 @@
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px 5px 0 0;
-  padding: 10px 10px 5px !important;
+  padding: 10px 10px 5px;
 }
-
 .citrusStylesSE-carousel-indicators span {
   display: inline-block;
   border: 2px solid #09205c;
@@ -1386,7 +1349,6 @@
   cursor: pointer;
   margin: 0 5px;
 }
-
 .citrusStylesSE-carousel-indicators span.active {
   background-color: #09205c;
 }

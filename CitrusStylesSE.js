@@ -45,13 +45,13 @@ for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
 // Hero POV
 let carousel = document.querySelector('.citrusStylesSE-carousel');
 
-let carouselInner = document.querySelector('.citrusStylesSE-carousel-inner');
+let carouselInner = document.querySelector('.citrusStylesSE-carousel__inner ');
 
 let prev = document.querySelector('.citrusStylesSE-carousel-controls .prev');
 
 let next = document.querySelector('.citrusStylesSE-carousel-controls .next');
 
-let slides =  document.querySelectorAll('.citrusStylesSE-carousel-inner .citrusStylesSE-carousel-item');
+let slides =  document.querySelectorAll('.citrusStylesSE-carousel__inner  .citrusStylesSE-carousel__inner--item ');
 
 let totalSlides = slides.length;
 
