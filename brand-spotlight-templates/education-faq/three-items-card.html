@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - FAQ -- Hero Banner</title>
+    <!-- citrusStylesSE library css -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        :root {
+            --citrusStylesSE-grid-gutter: .5em;
+            --citrusStylesSE-border-radius-8: 8px;
+            --citrusStylesSE-card-bg: #d9d9d9;
+
+            --citrusStylesSE-cards-wrapper: 71em;
+            --citrusStylesSE-card-elm: 20em;
+            --citrusStylesSE-card-elmimg-height: 14em;
+        }
+       body{
+            background-color: var(--citrusStylesSE-white);
+        }
+        
+        .citrusStylesSE-grid--cards
+        {
+        width: var(--citrusStylesSE-cards-wrapper);
+        max-width: 100%;
+        overflow-x: auto;
+        margin: auto;
+        }
+        .citrusStylesSE-card
+        {
+        width: var(--citrusStylesSE-card-elm);
+        max-width: 100%;
+        background: var(--citrusStylesSE-card-bg);
+        border: 2px solid #00205b;
+        border-radius: var(--citrusStylesSE-border-radius-8);
+        }
+        
+        .citrusStylesSE-card img {
+            background: #fff;
+            height: var(--citrusStylesSE-card-elmimg-height);
+            border-radius: var(--citrusStylesSE-border-radius-8);
+        }
+        .citrusStylesSE-card__header{
+        /* padding: var(--citrusStylesSE-spacing-small); */
+        }
+        .citrusStylesSE-card__body{
+        padding: var(--citrusStylesSE-spacing-medium);
+        }
+        
+        .citrusStylesSE__card-CTA {
+        margin-left: var(--citrusStylesSE-spacing-medium);
+        margin-bottom: var(--citrusStylesSE-spacing-large);
+        }
+        .citrusStylesSE__card-CTA a {
+        display: block;
+        width: 210px;
+        height: 53px;
+        background: #001952;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        font-size: var(--citrusStylesSE-text-font-size-medium);
+        line-height: 55px;
+        font-weight: 700;
+        color: var(--citrusStylesSE-white);
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #001952;
+        border-radius: var(--citrusStylesSE-border-radius);
+        transition: background 1s ease;
+        text-decoration: none;
+        }
+        .citrusStylesSE__card-CTA a:hover {
+        background: #fff;
+        color: #001952;
+        }
+
+        @media all and (max-width: 767px) {
+            .citrusStylesSE-card {
+            width: 267px;
+            }
+            .citrusStylesSE__card-CTA a {
+            width: max-content;
+            height: max-content;
+            background: none;
+            color: #001952;
+            line-height: 20px;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-align: left;
+            border: none;
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- 3 Items Cards -->
+
+    <section class="citrusStylesSE-container citrusStylesSE-container--large">
+
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--cards">
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrusStylesSE-card">
+                    <img alt="placeholder" class="citrusStylesSE-image" src="https://picsum.photos/id/237/360/230">
+                    <div class="citrusStylesSE-card__body">
+                      <h3 class="citrusStylesSE-heading">H3 - Petco Circular Bold - 16px</h3>
+                      <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="citrusStylesSE__card-CTA">
+                        <a href="#">CTA Text Here</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrusStylesSE-card">
+                    <img alt="placeholder" class="citrusStylesSE-image" src="https://picsum.photos/id/237/360/230">
+                    <div class="citrusStylesSE-card__body">
+                      <h3 class="citrusStylesSE-heading">H3 - Petco Circular Bold - 16px</h3>
+                      <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="citrusStylesSE__card-CTA">
+                        <a href="#">CTA Text Here</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrusStylesSE-card">
+                    <img alt="placeholder" class="citrusStylesSE-image" src="https://picsum.photos/id/237/360/230">
+                    <div class="citrusStylesSE-card__body">
+                      <h3 class="citrusStylesSE-heading">H3 - Petco Circular Bold - 16px</h3>
+                      <p class="citrusStylesSE-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="citrusStylesSE__card-CTA">
+                        <a href="#">CTA Text Here</a>
+                    </div>
+                  </div>
+            </div>       
+    	</div>
+
+    </section>
+    <!-- End hero banner -->
+
+</body>
+
+</html>
