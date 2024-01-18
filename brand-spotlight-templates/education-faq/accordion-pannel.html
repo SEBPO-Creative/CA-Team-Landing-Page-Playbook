@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Pannel - FAQ</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .accordion-parent {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .citrusX__faqLeft {
+            width: 315px;
+        }
+
+        .citrusX__faqImage-box {
+            text-align: center;
+        }
+
+        .citrusX__faqImage-box img {
+            max-width: 315px;
+            width: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+            pointer-events: none;
+        }
+
+        .citrusHillsFaq__iframe {
+            position: relative;
+        }
+
+        .citrusHillsFaq__iframe iframe {
+            width: 313px;
+            max-width: 100%;
+            margin: auto;
+            height: 100%;
+            border-radius: 8px;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .citrusHills-yt-video button {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: unset;
+        }
+
+        .citrusHills .show-video {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fff;
+            padding: 10px;
+            padding-left: 0;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .citrusHills .show-video span:hover {
+            color: #fff;
+            background: #e4425c;
+            border: 1px solid #e4425c;
+        }
+
+        .citrusHills .show-video iframe {
+            min-height: 100%;
+        }
+
+        .citrusHills-yt-video .button {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        @media screen and (min-width: 769px) {
+            .citrusX__banner {
+                padding-top: 20px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .citrusX__faqLeft {
+                overflow-x: auto;
+            }
+
+            .citrusX__faqImage-box {
+                text-align: center;
+                width: 745px;
+                max-width: 100%;
+                overflow-x: auto;
+                display: -webkit-box;
+                justify-content: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                gap: 20px;
+                padding-bottom: 10px;
+            }
+
+            .citrusHillsFaq__iframe iframe {
+                width: 100%;
+                min-width: 100%;
+                margin: auto;
+                height: 100%;
+                border-radius: 8px;
+                border: none;
+                left: 0;
+            }
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .citrusX__faqImage-box::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .citrusX__faqImage-box {
+                -ms-overflow-style: none;
+                /* IE and Edge */
+                scrollbar-width: none;
+                /* Firefox */
+                width: 100%;
+
+                border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        @media screen and (min-width:660px) and (max-width:767px) {
+            .citrusX__faqImage-box {
+                display: flex;
+            }
+        }
+
+        /* ===================== Accordion ===================== */
+        /* Style the buttons that are used to open and close the accordion panel */
+        .citrusStylesSE__accordion {
+            background-color: unset;
+            /* background-color: #eee; */
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        /* .citrusStylesSE__accordion--active,
+.citrusStylesSE__accordion:hover {
+  background-color: #ccc;
+} */
+
+        .citrusStylesSE__accordion:after {
+            content: "\002B";
+            /* color: #777; */
+            color: #001952;
+            font-weight: bold;
+            float: right;
+            margin-left: 0px;
+        }
+
+        .citrusStylesSE__accordion--active:after {
+            content: "\2212";
+        }
+
+        .citrusStylesSE__accordionPanel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        /* Custom  Css Accordion Pannel*/
+        .accordion-title-pannel {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        }
+
+        .accordion-title-pannel h2 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 700;
+            color: #001952;
+            font-family: "PetcoCircular-Bold", arial !important;
+        }
+
+        .accordion-title-pannel p,
+        .citrusStylesSE__accordionPanel p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            padding-bottom: 18px;
+            font-family: "petcocircular-regular", arial !important;
+            padding-right: 9%;
+            color: #000;
+        }
+
+        .accordion-item {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            ;
+        }
+
+        .accordion-item button {
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 700;
+            color: #001952;
+            font-family: "PetcoCircular-Bold", arial !important;
+            padding-right: 20px;
+        }
+
+
+        .accordion-button {
+            padding-top: 28px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .accordion-button button {
+            width: 140px;
+            height: 55px;
+            flex-shrink: 0;
+            text-transform: uppercase;
+            border-radius: 5px;
+            background: #00205B;
+            color: #fff;
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-weight: 700;
+        }
+
+        .citrusStylesSE-text-content {
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .citrusStylesSE-text-content {
+                padding: 0;
+            }
+
+            .accordion-title-pannel {
+                padding-left: 10px;
+            }
+
+            .accordion-item {
+                padding-left: 10px;
+            }
+
+            .citrusStylesSE__accordionPanel {
+                padding-left: 0;
+            }
+
+            .accordion-button {
+                justify-content: space-evenly;
+                padding-right: 0;
+                margin-right: 0;
+
+            }
+
+            .accordion-button button {
+                color: #001952;
+                text-transform: capitalize;
+                background: unset;
+                border: none;
+                border-radius: 0;
+                width: max-content;
+                height: max-content;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: underline;
+                margin: 0 auto;
+            }
+
+            .citrusStylesSE__accordion {
+                padding-left: 10px;
+            }
+
+            .accordion-item button {
+                padding-left: 0;
+            }
+
+        }
+
+
+        @media screen and (max-width: 425px) {
+            .citrusStylesSE-text-content {
+                padding: 0 0;
+            }
+
+            .accordion-title-pannel {
+                padding-left: 10px;
+            }
+
+            .accordion-item {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Accordion Pannel Start -->
+    <section class="citrusStylesSE-container citrusStylesSE-container--super">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter accordion-parent">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-30 citrusX__faqLeft">
+                <div class="citrusX__faqImage-box">
+                    <div class="citrusHillsFaq__iframe">
+                        <div class="citrusHills-yt-video">
+                            <button onclick="citrusHills_footer_video()" data-id="xiiKjm8cZCU">
+                                <img id="citrusFooterVideo" src="images/citrusHills_Youtube.png" alt="">
+                            </button>
+                            <div class="show-video"></div>
+                        </div>
+                    </div>
+
+                    <div class="citrusX__banner">
+                        <img src="images/citrusHills_footer_image.png"
+                            alt="Hill’s Transforming Lives logo, U.S. veterinarians’ No. one recommended brand, Hill’s Food, Shelter, Love logo and one hundred percent guaranteed.">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-70 right ">
+                <div class="citrusStylesSE-text-content">
+                    <div class="accordion-title-pannel">
+                        <h2>Accordion with symbols</h2>
+                        <p>In this example we have added a "plus" sign to each button. When the user clicks on the
+                            button, the "plus" sign is replaced with a "minus" sign.</p>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="citrusStylesSE__accordion">Accordion Item Headline 1</button>
+                        <div class="citrusStylesSE__accordionPanel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="citrusStylesSE__accordion">Accordion Item Headline 2</button>
+                        <div class="citrusStylesSE__accordionPanel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="citrusStylesSE__accordion">Accordion Item Headline 3</button>
+                        <div class="citrusStylesSE__accordionPanel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="citrusStylesSE__accordion">Accordion Item Headline 4</button>
+                        <div class="citrusStylesSE__accordionPanel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-button">
+                        <button type="button" class="citrusStylesSE-button citrusStylesSE-button--info">Button</button>
+                        <button type="button" class="citrusStylesSE-button citrusStylesSE-button--info">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Accordion Pannel -->
+
+    <!-- You-tube Video Js -->
+    <script>
+        function citrusHills_footer_video() {
+            var el = event.target.parentElement.querySelector('.show-video');
+            console.log(event.target.dataset.id);
+            el.style.display = "block"
+            el.innerHTML = `
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${event.target.dataset.id}?autoplay=1" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+            manual_cm_sp="sponsoredbrandpage:hillssciencediet:sciencelednutrtion:1::video" onclick="clickTrackLink(this);"></iframe>
+            `;
+        }
+
+        // If we need to add cancel button 'X' then add below <span> to the above and hideVideo() function as is.
+
+
+        // <span onclick="hideVideo()">&times;</span>
+        // function hideVideo() {
+        //     event.target.parentElement.style.display = 'none';
+        //     event.target.parentElement.innerHTML = '';
+        // }
+
+    </script>
+
+    <!-- Accordion JS -->
+    <script>
+        // Configuration
+        var allowMultiplePanels = false; // Set to true to allow both panels open
+
+        // Function to toggle the accordion panel
+        function toggleAccordionPanel(accordion, accordionPanel) {
+            console.log(accordion, accordionPanel)
+            accordion.classList.toggle("citrusStylesSE__accordion--active");
+            accordionPanel.style.maxHeight = accordionPanel.style.maxHeight ? null : accordionPanel.scrollHeight + "px";
+        }
+
+        // Function to close all panels except the clicked one
+        function closeOtherPanels(accordionList, clickedAccordion) {
+            if (!allowMultiplePanels) {
+                for (var i = 0; i < accordionList.length; i++) {
+                    var otherAccordion = accordionList[i];
+                    if (otherAccordion !== clickedAccordion) {
+                        var otherPanel = otherAccordion.nextElementSibling;
+                        otherPanel.style.maxHeight = null;
+                        otherAccordion.classList.remove("citrusStylesSE__accordion--active");
+                    }
+                }
+            }
+        }
+
+        // Event listener for each accordion button
+        function accordionClickHandler() {
+            var accordionPanel = this.nextElementSibling;
+
+            closeOtherPanels(citrusStylesSEaccordion, this);
+            toggleAccordionPanel(this, accordionPanel);
+        }
+
+        // Attach event listeners to accordion buttons
+        var citrusStylesSEaccordion = document.getElementsByClassName("citrusStylesSE__accordion");
+
+        for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
+            citrusStylesSEaccordion[i].addEventListener("click", accordionClickHandler);
+        }
+    </script>
+</body>
+
+</html>
