@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta hp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="copy writer should be provide description on real project.">
+    <title>Big-Hero -- Hero Banner</title>
+    <!-- citrusStylesSE library css -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <!-- custom css -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: "PetcoCircular-regular", arial !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: 0;
+            font-family: "PetcoCircular-Bold", arial !important;
+            line-height: auto;
+            color: #000;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "PetcoCircular-regular", arial !important;
+            line-height: auto;
+            color: #000;
+        }
+
+        a {
+            font-family: "PetcoCircular-regular", arial !important;
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        /* common styling */
+        /* hero banner */
+        .citrusStylesSE-container--large {
+            margin: auto;
+        }
+
+        /* hero banner */
+        .citrusSpotlight__heroContainer {
+            position: relative;
+        }
+
+        .citrusSpotlight__heroImage-box img {
+            width: 100%;
+            /* max-width: 1440px; */
+        }
+
+        .citrusSpotlight__heroImage-copy {
+            position: absolute;
+            width: 90%;
+            /* height: 100%; */
+            top: 3%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: auto 5%;
+        }
+
+        .spotlightLogo img {
+            width: 100%;
+            max-width: 221px;
+        }
+
+        .spotlightCopy h1 {
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        .spotlightCopy h1 span {
+            display: block;
+            color: #6af4a8;
+            font-size: 80px;
+            line-height: 98px;
+            font-weight: 900;
+        }
+
+        .spotlightCopy p {
+            margin-bottom: 15px;
+            font-size: 28px;
+            line-height: 34px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .hero-rightCTA a {
+            display: block;
+            width: 171px;
+            /* height: 50px; */
+            background: #fff;
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-size: 16px;
+            line-height: 50px;
+            font-weight: 900;
+            text-align: center;
+            color: #00205b;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background 1s ease;
+        }
+
+        .hero-rightCTA a:hover {
+            background: #00205b;
+            color: #fff;
+        }
+
+        .citrusSpotlight__disclaimer {
+            margin-top: 35px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #fff;
+            text-align: left;
+        }
+
+        @media all and (min-width: 922px) and (max-width: 1100px) {
+            .citrusSpotlight__heroImage-copy {
+                top: 0%;
+            }
+
+            .spotlightLogo img {
+                width: 100%;
+                max-width: 190px;
+            }
+
+            .spotlightCopy h1 {
+                font-size: 28px;
+                line-height: 28px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 70px;
+                line-height: 78px;
+            }
+
+            .spotlightCopy p {
+                margin-bottom: 10px;
+                font-size: 24px;
+                line-height: 24px;
+            }
+
+            .citrusSpotlight__disclaimer {
+                margin-top: 10px;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width: 921px) {
+            .citrusSpotlight__heroImage-copy {
+                top: -2%;
+                align-items: flex-start;
+            }
+
+            .spotlightLogo img {
+                width: 100%;
+                max-width: 140px;
+            }
+
+            .spotlightCopy h1 {
+                font-size: 24px;
+                line-height: 24px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 50px;
+                line-height: 48px;
+            }
+
+            .spotlightCopy p {
+                margin-bottom: 10px;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            .citrusSpotlight__disclaimer {
+                margin-top: 10px;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+
+            /* hero banner */
+            .citrusSpotlight__heroImage-copy {
+                top: 10%;
+                align-items: flex-start;
+            }
+
+            .spotlightCopy h1 {
+                font-size: 23px;
+                line-height: 23px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 42px;
+                line-height: 42px;
+            }
+
+            .spotlightCopy p {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .hero-rightCTA a {
+                display: block;
+                width: max-content;
+                /* height: 50px; */
+                background: none;
+                line-height: 20px;
+                text-align: left;
+                color: #fff;
+                border: none;
+                text-decoration: underline;
+            }
+
+            .citrusSpotlight__disclaimer {
+                margin-top: 15px;
+            }
+        }
+
+        @media all and (min-width: 476px) and (max-width: 767px) {
+            .spotlightCopy h1 {
+                font-size: 36px;
+                line-height: 36px;
+            }
+
+            .spotlightCopy h1 span {
+                font-size: 80px;
+                line-height: 98px;
+            }
+
+            .spotlightCopy p {
+                margin-bottom: 10px;
+                font-size: 28px;
+                line-height: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- hero banner start -->
+    <section class="citrusStylesSE-container--large  citrusStylesSE-container--super">
+        <div class="citrusStylesSE-position-relative">
+            <!-- full width image -->
+            <div class="citrusSpotlight__heroImage-box">
+                <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                    src="images/SpotLight-Big-hero-banner-desktop.png" alt="">
+                <img class="citrusStylesSE-display-none@medium" src="images/SpotLight-Big-hero-banner-mobile.png"
+                    alt="">
+            </div>
+            <!-- hero copy container -->
+            <div class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusSpotlight__heroImage-copy">
+                <div class="hero-left">
+                    <div class="spotlightLogo">
+                        <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                            src="images/SpotLightLogoBoxieCat.png" alt="">
+                    </div>
+                    <div class="spotlightCopy">
+                        <h1>BUY 1, GET 1 <span>15% OFF</span></h1>
+                        <p>Select Hills Cat & Dog products.</p>
+                    </div>
+                    <div class="hero-rightCTA">
+                        <a href="#">Shop Now</a>
+                        <p class="citrusSpotlight__disclaimer">Disclaimer here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero banner -->
+</body>
+
+</html>
