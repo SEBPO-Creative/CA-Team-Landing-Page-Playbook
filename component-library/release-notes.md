@@ -66,3 +66,8 @@
 
 - Brand spotlight Education FAQ hero banner converted to our library with full responsive
 - need to check this component location is correct or not. Please update location if applicable.
+
+## 17 January 2024 by Shahinur
+
+- Working on Hero POV carousel 50% completed.
+- PetcoCircular-Black font added from Petco site.
