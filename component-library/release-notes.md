@@ -71,3 +71,7 @@
 
 - Working on Hero POV carousel 50% completed.
 - PetcoCircular-Black font added from Petco site.
+
+## 17 January 2024 by Imran-Ahmed
+
+- Brand spotlight Big-hero hero-banner converted to our library with full responsive
