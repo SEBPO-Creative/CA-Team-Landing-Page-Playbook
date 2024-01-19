@@ -9,7 +9,7 @@ let CitrusStylesSEcarousel = document.querySelector(".citrusStylesSE-carousel");
         let activeIndicator = 0;
         let direction = -1;
         let jump = 1;
-        let interval = 5000;
+        let interval = 500000;
         let time;
         //Init CitrusStylesSEcarousel
         CitrusStylesSEcarouselInner.style.minWidth = totalSlides * 100 + "%";

@@ -325,26 +325,35 @@
     --citrusStylesSE-z-over-everything: 500;
 }
 
+/* All the Fonts from Petco.com */
+@font-face {
+font-family: 'PetcoCircular-Bold';
+src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+  font-family: 'PetcoCircular-Black';
+  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Black.otf') format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'PetcoCircular-Regular';
   src: url('https://www.petco.com/assets/fonts/PetcoCircular-Regular.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
-  }
+}
 
-  @font-face {
-  font-family: 'PetcoCircular-Bold';
-  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Bold.woff2') format('woff');
+@font-face {
+  font-family: 'PetcoCircular-Medium';
+  src: url('https://www.petco.com/assets/fonts/PetcoCircular-Medium.otf') format('otf');
   font-weight: 700;
   font-style: normal;
-  }
+}
 
-  @font-face {
-    font-family: 'PetcoCircular-Black';
-    src: url('https://www.petco.com/assets/fonts/PetcoCircular-Black.otf') format('otf');
-    font-weight: 700;
-    font-style: normal;
-  }
 
   /* ===================== Avatar ===================== */
 /* Style the avatars */
@@ -683,24 +692,36 @@
 
 /* ===================== Common Class ===================== */
 /* All the Common Class added here */
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
   .citrusStylesSE-container{
     margin: 0 auto;
 }
 
 .citrusStylesSE-container--large{
-    max-width: 64em;
+    max-width: 78em;
 }
+
+		
+@media screen and (min-width: 320px) {
+  .d-hide {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .d-hide {
+    display: none;
+  }
+}
+
 /* End Common Class */
 
 /* ===================== Card ===================== */
 /* All the Card styles added here */
-@media screen and (min-width: 768px) {
-  .citrusStylesSE-container {
-    width: 80%;
-    margin: auto;
-  }
-}
-
 .citrusStylesSE-output {
   background-color: #fafafa;
   padding: 1rem;
@@ -1283,7 +1304,8 @@
 
 /* ===================== Hero POV ===================== */
 /* All sizes containers styles */
-.citrusStylesSE-carousel {
+ /* Carousels - POV */
+ .citrusStylesSE-carousel {
   overflow-x: hidden;
   position: relative;
   display: -webkit-box;
@@ -1296,20 +1318,9 @@
   display: none;
 }
 
-
 .citrusStylesSE-carousel__inner {
   display: flex;
   transition: all ease 0.5s;
-}
-
-.citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel-item {
-  justify-content: flex-start;
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  flex: 1;
-  background-position: center;
-  width: 100%;
 }
 
 .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
@@ -1321,10 +1332,9 @@
 .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
   background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV3.png");
 }
-.citrusStylesSE-carousel-item {
+.citrusStylesSE-carousel__inner--item  {
   width: 100%;
   display: flex;
-  align-items: center;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1366,6 +1376,7 @@
 }
 .citrusStylesSE-grid--center {
   align-items: center;
+  justify-content: center;
 }
 .citrusStylesSE-grid--bottom {
   align-items: flex-end;

@@ -75,3 +75,6 @@
 ## 17 January 2024 by Imran-Ahmed
 
 - Brand spotlight Big-hero hero-banner converted to our library with full responsive
+
+## 18 January 2024 by Shahinur
+- Working on Hero POV carousel 90% completed.
