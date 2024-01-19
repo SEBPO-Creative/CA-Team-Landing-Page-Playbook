@@ -2,14 +2,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
  }
 
- code {
-    color: red;
-    font-weight: 700;
-  }
+code {
+  color: red;
+  font-weight: 700;
+}
 
-  .citrusStylesSE-grid--demo .citrusStylesSE-grid{
-    border: 2px solid #ff69b4;
-  }
+.citrusStylesSE-grid--demo .citrusStylesSE-grid{
+  border: 2px solid #ff69b4;
+}
 
 .citrusStylesSE-grid--demo .citrusStylesSE-grid__cell {
   background-color: #b2f5b5;
