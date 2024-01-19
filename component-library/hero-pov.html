@@ -10,9 +10,18 @@
         <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
         <link rel="stylesheet" href="../CitrusStylesSE.css">
         <style>
-            /* Carousels - POV */
-            
+			/* Common Styles */
+			h1, h2, h3{
+				font-family: PetcoCircular-Bold, arial!important;
+				font-weight: 700;
+			}
 
+			p{
+				font-family: PetcoCircular-Regular, arial!important;
+				font-weight: normal;
+			}
+
+            /* Carousels - POV */
             .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
                 background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV1.png");
             }
@@ -23,68 +32,123 @@
                 background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV3.png");
             }
             
-            .d-hide {
-                display: none;
-            }
-            .Okocatpet-flex.pov-cta a {
-                font-family: "PetcoCircularTT-Bold", arial !important;
-                color: #fff;
-                border-radius: 8px;
-                text-decoration: none;
-            }
+			.citrusStylesSE-pov__img img{
+				max-width: 100%;
+			}
+
+			.citrusStylesSE-container{
+				width: 100%;
+			}
+
+			.citrusStylesSE-cta__box--color a{
+				text-decoration: underline;
+				color: var(--citrusStylesSE-primary-navy);
+				font-size: 16px;
+				font-family: PetcoCircular-Bold, arial!important;
+				font-weight: 700;
+			}
+
+			
+			@media screen and (min-width: 320px) {
+				.d-hide {
+					display: block;
+				}
+
+				.citrusStylesSE-pov__text{
+					text-align: center;
+					padding: var(--citrusStylesSE-spacing-small);
+				}
+
+				.citrusStylesSE-cta__box--color{
+					padding-bottom: var(--citrusStylesSE-spacing-large);
+				}
+
+				.citrusStylesSE-demo-pov3 .citrusStylesSE-cta__box--color{
+					padding-bottom: var(--citrusStylesSE-spacing-small);
+				}
+			}
+
+			@media screen and (min-width: 768px) {
+				.d-hide {
+					display: none;
+				}
+
+				.citrusStylesSE-pov__text{
+					text-align: left;
+					padding: var(--citrusStylesSE-spacing-large);
+				}
+
+				/* CTA Box with background color */
+				.citrusStylesSE-cta__box--color{
+					width: 211px;
+					height: 56px;
+					border-radius: var(--citrusStylesSE-border-radius-5);
+					background: var(--citrusStylesSE-primary-navy);
+					padding-bottom: 0;
+				}
+
+				.citrusStylesSE-cta__box--color a{
+					color: var(--citrusStylesSE-white);
+					text-align: center;
+					text-decoration: none;
+				}
+			}
+
             /* ----------------------------------------- */
         </style>
     </head>
 
 <body>
-    <main class="citrusStylesSE-container citrusStylesSE-container--xlarge\@xlarge">
+    <main class="citrusStylesSE-container citrusStylesSE-container--xlarge citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
 		<!-- POV section start -->
 		<section class="citrusStylesSE-carousel">
 			<div class="citrusStylesSE-carousel__inner ">
 				<!-- POV 01 -->
-				<div class="Okocatpet-flex citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov1">
-					<div class="pov-img" title="A woman reading a book on her bed with her cat."><img alt="A woman reading a book on her bed with her cat." class="d-hide" src="img/citrusOkocat_Mobile-citrusStylesSE-demo-pov1.png"></div>
-					<div class="pov-text">
-						<div class="pov-text__wrapper Okocatpet-flex">
-							<div class="pov-logo"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
-							<h1 class="pov-text__title">NEXT GENERATION<br class="d-hide">
+				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov1">
+					<div class="citrusStylesSE-pov__img citrusStylesSE-grid--small-full" title="A woman reading a book on her bed with her cat.">
+						<img alt="A woman reading a book on her bed with her cat." class="d-hide" src="https://picsum.photos/seed/picsum/750/444">
+					</div>
+					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
+						<div class="citrusStylesSE-pov__text__wrapper">
+							<div class="citrusStylesSE-pov__logo"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
+							<h1 class="citrusStylesSE-pov__text__title">NEXT GENERATION<br class="d-hide">
 							<span style="white-space: nowrap;">PLANT-BASED</span>&nbsp;LITTER</h1>
-							<p class="pov-text__subhead">Biodegradable and planet-friendly with<br class="d-hide">
+							<p class="citrusStylesSE-pov__text__subhead">Biodegradable and planet-friendly with<br class="d-hide">
 							superior&nbsp;performance.</p>
-							<div class="Okocatpet-flex pov-cta">
-								<a class="citrus-diamonpet-cta-box" href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
+							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
 							</div>
 						</div>
 					</div>
 				</div><!-- POV 02 -->
-				<div class="Okocatpet-flex citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov3">
-					<div class="pov-img" title="A bag of Okocat Low-Tracking litter being poured into a bowl."><img alt="A bag of Okocat Low-Tracking litter being poured into a bowl." class="d-hide" src="img/citrusOkocat_Mobile-citrusStylesSE-demo-pov2.png"></div>
-					<div class="pov-text">
-						<div class="Okocatpet-flex pov-text__wrapper">
-							<div class="pov-logo" id="citrusOkoCat_logo3"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
-							<h1 class="pov-text__title">WOOD WORKS<br class="d-hide">
+				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov2">
+					<div class="citrusStylesSE-pov__img" title="A bag of Okocat Low-Tracking litter being poured into a bowl."><img alt="A bag of Okocat Low-Tracking litter being poured into a bowl." class="d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
+					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
+						<div class="citrusStylesSE-pov__text__wrapper">
+							<div class="citrusStylesSE-pov__logo" id="citrusOkoCat_logo3"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
+							<h1 class="citrusStylesSE-pov__text__title">WOOD WORKS<br class="d-hide">
 							NATURALLY</h1>
-							<p class="pov-text__subhead">Liquid is absorbed on contact, stopping<br class="d-hide">
+							<p class="citrusStylesSE-pov__text__subhead">Liquid is absorbed on contact, stopping<br class="d-hide">
 							the creation of ammonia and odor.</p>
-							<div class="Okocatpet-flex pov-cta">
-								<a class="citrus-diamonpet-cta-box" href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
+							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
 							</div>
 						</div>
 					</div>
 				</div><!-- POV 03 -->
-				<div class="Okocatpet-flex citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov2">
-					<div class="pov-img" title="A cat next to a bag of Okocat Featherweight litter."><img alt="A cat next to a bag of Okocat Featherweight litter." class="d-hide" src="img/citrusOkocat_Mobile-citrusStylesSE-demo-pov3.png"></div>
-					<div class="pov-text">
-						<div class="Okocatpet-flex pov-text__wrapper">
-							<div class="pov-logo"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
-							<h1 class="pov-text__title">LITTER THAT<br class="d-hide">
+				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov3">
+					<div class="citrusStylesSE-pov__img" title="A cat next to a bag of Okocat Featherweight litter."><img alt="A cat next to a bag of Okocat Featherweight litter." class="d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
+					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
+						<div class="citrusStylesSE-pov__text__wrapper">
+							<div class="citrusStylesSE-pov__logo"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
+							<h1 class="citrusStylesSE-pov__text__title">LITTER THAT<br class="d-hide">
 							LASTS LONGER</h1>
-							<p class="pov-text__subhead">With regular scooping, your base<br class="d-hide">
+							<p class="citrusStylesSE-pov__text__subhead">With regular scooping, your base<br class="d-hide">
 							litter can last up to 7&nbsp;weeks.*</p>
-							<div class="Okocatpet-flex pov-cta">
-								<a class="citrus-diamonpet-cta-box" href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
+							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="https://www.petco.com/shop/en/petcostore/brand/okocat" onclick="clickTrackLink(this);">Shop Now</a>
 							</div>
-							<p class="citrusOkocat__disclaimer">*Depending on number of cats using the litter box, how often they use it and type of scoop used.</p>
+							<p class="citrusOkocat__disclaimer citrusStylesSE-container--small">*Depending on number of cats using the litter box, how often they use it and type of scoop used.</p>
 						</div>
 					</div>
 				</div>
@@ -96,6 +160,7 @@
 		</section><!-- End POV section -->
 	</main>
     <!-- custom js code for POV section -->
+	<!-- <script src="../CitrusStylesSE.js"></script> -->
 	<script src="../heroCarousel.js"></script>
 </body>
 
