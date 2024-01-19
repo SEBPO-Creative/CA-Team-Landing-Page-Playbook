@@ -322,8 +322,7 @@
 <body>
     <!-- Accordion Pannel Start -->
     <section class="citrusStylesSE-container citrusStylesSE-container--super">
-        <div
-            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter accordion-parent">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter accordion-parent">
             <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-30 citrusX__faqLeft">
                 <div class="citrusX__faqImage-box">
                     <div class="citrusHillsFaq__iframe">
@@ -423,12 +422,12 @@
 
     <!-- Accordion JS -->
     <script>
-        // Configuration
+       // Configuration
         var allowMultiplePanels = false; // Set to true to allow both panels open
+        var openFirstPanelByDefault = true; // Set to true to open the first panel by default
 
         // Function to toggle the accordion panel
         function toggleAccordionPanel(accordion, accordionPanel) {
-            console.log(accordion, accordionPanel)
             accordion.classList.toggle("citrusStylesSE__accordion--active");
             accordionPanel.style.maxHeight = accordionPanel.style.maxHeight ? null : accordionPanel.scrollHeight + "px";
         }
@@ -460,7 +459,14 @@
 
         for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
             citrusStylesSEaccordion[i].addEventListener("click", accordionClickHandler);
+
+            // Open the first panel by default
+            if (openFirstPanelByDefault && i === 0) {
+                var firstAccordionPanel = citrusStylesSEaccordion[i].nextElementSibling;
+                toggleAccordionPanel(citrusStylesSEaccordion[i], firstAccordionPanel);
+            }
         }
+
     </script>
 </body>
 
