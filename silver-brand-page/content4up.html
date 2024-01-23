@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Content 4 up</title>
+        <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <link rel="stylesheet" href="../CitrusStylesSE.css">
+        <style>
+            /* Variables */
+            :root {
+                --citrusStylesSE-brand-bg: rgb(64 64 65 / 0.05)  /* #404041; */
+            }
+			/* Common Styles */
+			.citrusStylesSE-container h1, h2, h3{
+				font-family: PetcoCircular-Bold, arial!important;
+				font-weight: 700;
+			}
+
+			.citrusStylesSE-container p{
+				font-family: PetcoCircular-Regular, arial!important;
+				font-weight: normal;
+			}
+
+
+            /* Section styles start here */
+            .citrusStylesSE-section4up{
+                background: var(--citrusStylesSE-brand-bg);
+                padding: var(--citrusStylesSE-spacing-super);
+
+            }
+
+            .citrusStylesSE-section4up .citrusStylesSE-grid__cell{
+                padding: var(--citrusStylesSE-spacing-xlarge);
+            }
+
+            .citrusStylesSE-section4up .citrusStylesSE-grid__cell img{
+                max-width: 104px;
+            }
+
+            /* Custom class need to match or update in css library */
+            .citrusStylesSE-container--xlarge-1440 {
+                max-width: 90em;
+            }
+
+
+
+			
+			@media screen and (min-width: 320px) {
+				.d-hide {
+					display: block;
+				}
+
+				.citrusStylesSE-pov__text--title{
+					padding-top: var(--citrusStylesSE-spacing-small);
+					padding-bottom: var(--citrusStylesSE-spacing-small);
+					margin: 0;
+				}
+
+				.citrusStylesSE-grid__cell{
+					padding-left: 0;
+				}
+
+			}
+
+			@media screen and (min-width: 768px) {
+				.d-hide {
+					display: none;
+				}
+
+                /* CTA Box with background color */
+				.citrusStylesSE-cta__box--color{
+					width: 211px;
+					height: 56px;
+					border-radius: var(--citrusStylesSE-border-radius-5);
+					background: var(--citrusStylesSE-primary-navy);
+                    margin: 0 auto;
+				}
+
+				.citrusStylesSE-cta__box--color a{
+					color: var(--citrusStylesSE-white);
+					text-align: center;
+					text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: PetcoCircular-Bold, arial!important;
+				    font-weight: 700;
+				}
+
+			}
+
+            @media (max-width: 47.93em){
+                .citrusStylesSE-section4up{
+                    overflow: hidden;
+                    width: 100%;
+                }
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid{
+                    overflow-x: auto;
+                    width: 250%;
+                }
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell{
+                    width: 45%;
+                }
+
+                .citrusStylesSE-section4up{
+                    padding: var(--citrusStylesSE-spacing-small);
+                }
+            }
+
+
+            @media (min-width: 20em) and (max-width: 29.99em) {
+
+
+                
+            }
+
+            @media (min-width: 30em) and (max-width: 47.99em) {
+                
+            }
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+    <body>
+        <main class="citrusStylesSE-container citrusStylesSE-container--xlarge-1440">
+            <section class="citrusStylesSE-section4up">
+                <h2 class="citrusStylesSE-section__title citrusStylesSE-centered">What makes Nulo different</h2> <!-- Title styles could be a commmon style -->
+                <div class="citrusStylesSE-grid">
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered ">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_backed_by_science_icon" alt="">
+                        <h3>Backed by science</h3>
+                        <p>Formulated by animal nutritionists and tested through multi-step quality and safety programs.</p>
+                    </div>
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_high_in_animal-based_protein" alt="">
+                        <h3>High in animal-based protein</h3>
+                        <p>Models your pet’s ancestral diet and provides essential amino acids.</p>
+                    </div>
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_low_in_carbohydrates" alt="">
+                        <h3>Low in carbohydrates</h3>
+                        <p>Low-carb, low-glycemic ingredients help them maintain a healthy weight.</p>
+                    </div>
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_BC30TM_probiotic" alt="">
+                        <h3>BC30™ probiotic</h3>
+                        <p>Patented probiotic with viability to support gut and immune health.</p>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center citrusStylesSE-centered">
+                    <a href="">Shop Now</a>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>

@@ -1323,15 +1323,6 @@ font-style: normal;
   transition: all ease 0.5s;
 }
 
-.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
-  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV1.png");
-}
-.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov3 {
-  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV2.png");
-}
-.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
-  background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV3.png");
-}
 .citrusStylesSE-carousel__inner--item  {
   width: 100%;
   display: flex;

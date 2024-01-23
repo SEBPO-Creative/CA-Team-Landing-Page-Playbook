@@ -78,3 +78,7 @@
 
 ## 18 January 2024 by Shahinur
 - Working on Hero POV carousel 90% completed.
+
+## 19 January 2024 by Shahinur
+- Hero POV completed.
+- Working on content 4up, 95% completed.
