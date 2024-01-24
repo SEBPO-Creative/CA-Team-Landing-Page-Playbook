@@ -5,22 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="copy writer should be provide description on real project.">
-    <!-- <link rel="shortcut icon" href="assets/images/SpotLightLogoEducation.png" type="image/x-icon"> -->
-    <title>CONAIRPROPET GoodBone Treatmaker | Petco</title>
+    <title>Education - FAQ -- Hero Banner</title>
+    <!-- citrusStylesSE library css -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
-      
 
-.citrusStylesSE-container {
-  width: 100%;
-  max-width: 74em;
-  margin: auto;
-}
-
-/* Video section start */
-
+.citrusStylesSE-grid__cell {
+    padding-left: 0;
+}        
 /* video style */
-.citrusConair__video {
+.citrusStylesSEspotlight {
   width: 100%;
   max-width: 1150px;
   margin: 40px auto 40px;
@@ -28,25 +22,20 @@
   border-radius: 10px;
 }
 
-.citrusConair__videoRow {
+.citrusStylesSE-video__Row {
   width: 1150px;
   max-width: 100%;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 20px auto;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
   position: relative;
   margin-bottom: -4px;
 }
-.citrusConair_top_video {
+.citrusStylesSE-top__video {
   width: 370px;
   max-width: 100%;
   border-radius: 8px;
   border: none;
 }
-.citrusConair_top_video img {
+.citrusStylesSE-top__video img {
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -58,11 +47,11 @@
   -o-object-fit: contain;
   object-fit: contain;
 }
-.citrusConair__iframe {
+.citrusStylesSE-top__iframe {
   position: relative;
 }
 
-.citrusConair__videoText {
+.citrusStylesSE-video__Text {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,14 +67,14 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.citrusConair__videoText h2 {
+.citrusStylesSE-video__Text h2 {
   font-family: "PetcoCircularTT-Regular", arial !important;
   font-size: 16px;
   line-height: 22px;
   color: #000;
   font-weight: 700;
 }
-.citrusConair__videoText p {
+.citrusStylesSE-video__Text p {
   max-width: 90%;
   margin: 10px 0 20px;
   font-family: "PetcoCircularTT-Regular", arial !important;
@@ -102,7 +91,7 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
-.citrusConairSpotlight__videoCTA {
+.citrusStylesSE-video__CTA {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +103,7 @@
   justify-content: left;
   margin-top: 25px;
 }
-.citrusConairSpotlight__videoCTA a {
+.citrusStylesSE-video__CTA a {
   min-width: 211px;
   line-height: 56px;
   background: #001952;
@@ -130,19 +119,19 @@
   -o-transition: background 1s ease;
   transition: background 1s ease;
 }
-.citrusConairSpotlight__videoCTA a:hover {
+.citrusStylesSE-video__CTA a:hover {
   background: #fff;
   color: #001952;
   border: 1px solid #001952;
 }
 
 /* Video Popup */
-.citrusConairSpotlight .citrusConairSpotlight-yt-video {
+.citrusStylesSEspotlight .citrusStylesSE-yt__video {
   position: relative;
 }
 
-.citrusConairSpotlight .citrusConairSpotlight-yt-video button,
-.citrusConairSpotlight .citrusConairSpotlight-yt-video button:focus-visible {
+.citrusStylesSEspotlight .citrusStylesSE-yt__video button,
+.citrusStylesSEspotlight .citrusStylesSE-yt__video button:focus-visible {
   background: none;
   border: none;
   outline: none;
@@ -150,7 +139,7 @@
   padding: 0;
 }
 
-.citrusConairSpotlight .show-video-top {
+.citrusStylesSEspotlight .citrusStylesSE-show__top__video {
   display: none;
   position: absolute;
   top: 0;
@@ -160,7 +149,7 @@
   width: 100%;
 }
 
-.citrusConairSpotlight .show-video-top span {
+.citrusStylesSEspotlight .citrusStylesSE-show__top__video span {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -180,13 +169,13 @@
   display: none;
 }
 
-.citrusConairSpotlight .show-video-top span:hover {
+.citrusStylesSEspotlight .citrusStylesSE-show__top__video span:hover {
   color: #fff;
   background: #e4425c;
   border: 1px solid #e4425c;
 }
 
-.citrusConairSpotlight .show-video-top iframe {
+.citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
   width: 100%;
   min-height: 238px;
   background-color: #000 !important;
@@ -194,7 +183,7 @@
   border-radius: 9px;
 }
 
-.citrusConairSpotlight .show-video {
+.citrusStylesSEspotlight .show-video {
   display: none;
   position: absolute;
   top: 0;
@@ -205,7 +194,7 @@
   width: 100%;
 }
 
-.citrusConairSpotlight .show-video span {
+.citrusStylesSEspotlight .show-video span {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -225,20 +214,20 @@
   display: none;
 }
 
-.citrusConairSpotlight .show-video span:hover {
+.citrusStylesSEspotlight .show-video span:hover {
   color: #fff;
   background: #e4425c;
   border: 1px solid #e4425c;
 }
 
-.citrusConairSpotlight .show-video iframe {
+.citrusStylesSEspotlight .show-video iframe {
   min-height: 100%;
 }
 
 
 @media all and (max-width: 768px) {
 
-  .citrusConair_top_video {
+  .citrusStylesSE-top__video {
     width: 100%;
   }
 
@@ -247,33 +236,33 @@
     width: 95%;
     margin: 20px auto 40px;
   }
-  .citrusConair__videoRow {
+  .citrusStylesSE-video__Row {
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     -ms-grid-columns: unset;
     grid-template-columns: unset;
   }
-  .citrusConair__videoRow > *:nth-child(1) {
+  .citrusStylesSE-video__Row > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .citrusConair_top_video img {
+  .citrusStylesSE-top__video img {
     max-width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     min-height: 440px;
   }
 
-  .citrusConairSpotlight .citrusConairSpotlight-yt-video button,
-  .citrusConairSpotlight .citrusConairSpotlight-yt-video button:focus-visible {
+  .citrusStylesSEspotlight .citrusStylesSE-yt__video button,
+  .citrusStylesSEspotlight .citrusStylesSE-yt__video button:focus-visible {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 0;
   }
-  .citrusConairSpotlight .show-video-top {
+  .citrusStylesSEspotlight .citrusStylesSE-show__top__video {
     display: none;
     position: absolute;
     top: 0;
@@ -282,7 +271,7 @@
     border-radius: 10px;
     width: 100%;
   }
-  .citrusConairSpotlight .show-video-top span {
+  .citrusStylesSEspotlight .citrusStylesSE-show__top__video span {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -301,17 +290,17 @@
     cursor: pointer;
     display: none;
   }
-  .citrusConairSpotlight .show-video-top span:hover {
+  .citrusStylesSEspotlight .citrusStylesSE-show__top__video span:hover {
     color: #fff;
     background: #e4425c;
     border: 1px solid #e4425c;
   }
-  .citrusConairSpotlight .show-video-top iframe {
+  .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
     min-height: 460px;
   }
 
-  .citrusConair__videoText {
+  .citrusStylesSE-video__Text {
     min-height: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -328,7 +317,7 @@
     align-items: flex-start;
     padding-left: 25px;
   }
-  .citrusConairSpotlight .show-video {
+  .citrusStylesSEspotlight .show-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -337,7 +326,7 @@
     width: 100%;
     padding: 0;
   }
-  .citrusConairSpotlight .show-video span {
+  .citrusStylesSEspotlight .show-video span {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -356,12 +345,12 @@
     cursor: pointer;
     display: none;
   }
-  .citrusConairSpotlight .show-video span:hover {
+  .citrusStylesSEspotlight .show-video span:hover {
     color: #fff;
     background: #e4425c;
     border: 1px solid #e4425c;
   }
-  .citrusConairSpotlight .show-video iframe {
+  .citrusStylesSEspotlight .show-video iframe {
     width: 100%;
     min-height: 440px;
   }
@@ -373,16 +362,18 @@
     border-radius: 8px;
     border: none;
   }
-  .citrusConairSpotlight .show-video iframe {
+  .citrusStylesSEspotlight .show-video iframe {
     min-height: 494px;
   }
+  
+
 }
 @media all and (min-width: 755px) and (max-width: 768px) {
-  .citrusConair_top_video img {
+  /* .citrusStylesSE-top__video img {
     padding: 3px;
     width: 100% !important;
     display: block;
-  }
+  } */
 }
 
 @media all and (max-width: 425px) {
@@ -394,84 +385,94 @@
 
 @media all and (max-width: 320px) {
   
-  .citrusConair_top_video img {
+  .citrusStylesSE-top__video img {
     min-height: 280px;
   }
-  .citrusConairSpotlight .show-video-top iframe {
+  .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
     min-height: 280px;
   }
-  .citrusConairSpotlight .show-video iframe {
+  .citrusStylesSEspotlight .show-video iframe {
     min-height: 315px;
   }
 }
 
+       
+@media all and (max-width: 767px) {
+}
+
+@media all and (max-width: 375px) {
+}
+        
+
+        
 
     </style>
 </head>
 
 <body>
-    <main class="citrusConairSpotlight">
-        
-        <!-- video section start -->
-        <section class="citrusConair__video">
-            <div class="citrusConair__videoRow">
-                <div class="citrusConair__videoCol order1">
-                    <div class="citrusConair_top_video">
-                        <div class="citrusConair__iframe">
-                            <div class="citrusConairSpotlight-yt-video">
-                                <button onclick="citrusConairSpotlight_top_video()" data-id="aDQh69-kiBk">
-                                    <img id="citrustopVideo" src="images/CoverPhoto-video-1.png"
-                                        alt="100 percent icon">
-                                </button>
-                                <div class="show-video-top"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="citrusConair__videoCol order2">
-                    <div class="citrusConair__videoText">
-                        <h2 class="citrusConair__sectionTitle">Cater to your pet’s favorite foods</h2>
-                        <p>The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
-                            for any dietary restrictions or allergies.</p>
-                        <div class="citrusConairSpotlight-section__tab-content">
-                            <!-- shop now CTA -->
-                            <div class="citrusConairSpotlight__videoCTA">
-                                <a href="#"
-                                    onclick="clickTrackLink(this);">Shop Now</a>
-                            </div>
+
+    <main>
+
+    <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
+        <div class="citrusStylesSEspotlight">
+        <div class="citrusStylesSE-video__Row">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--medium-full citrusStylesSE-grid--small-full citrusStylesSE-grid--xsmall-full">
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrusStylesSE-top__video">
+                    <div class="citrusStylesSE-top__iframe">
+                        <div class="citrusStylesSE-yt__video">
+                            <button onclick="citrusStylesSEspotlight_top_video()" data-id="aDQh69-kiBk">
+                                <img id="citrusStylesSE-citrustopVideo" src="images/CoverPhoto-video-1.png"
+                                    alt="100 percent icon">
+                            </button>
+                            <div class="citrusStylesSE-show__top__video"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End video section -->
-       
 
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-66">
+                <div class="citrusStylesSE-video__Text">
+                    <h2 class="citrusStylesSE-sectionTitle">Cater to your pet’s favorite foods</h2>
+                    <p>The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
+                        for any dietary restrictions or allergies.</p>
+                    <div class="citrusStylesSE-section__tab-content">
+                        <!-- shop now CTA -->
+                        <div class="citrusStylesSE-video__CTA">
+                            <a href="#"
+                                onclick="clickTrackLink(this);">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
 
-        <!-- JS - Videos -->
-        <script>
+    	</div>
+    </div>
+</div>
+    </section>
+</main>
+      <!-- JS - Videos -->
+      <script>
 
-            function citrusConairSpotlight_top_video() {
-                var el = event.target.parentElement.querySelector('.show-video-top');
-                console.log(event.target.dataset.id);
-                el.style.display = "block"
-                el.innerHTML = `
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${event.target.dataset.id}?autoplay=1" 
-                title="It's Pet Food Seriously Ep 3: Picky Cats" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
-                manual_cm_sp="sponsoredbrandpage:conairpropet:contentbanner:1:catertoyourpetsfavoritefoods:video"
-                                    onclick="clickTrackLink(this);"></iframe>
-                <span onclick="hideVideo()">&times;</span>`;
-            }
-            function hideVideo() {
-                event.target.parentElement.style.display = 'none';
-                event.target.parentElement.innerHTML = '';
-            }
+        function citrusStylesSEspotlight_top_video() {
+            var el = event.target.parentElement.querySelector('.citrusStylesSE-show__top__video');
+            console.log(event.target.dataset.id);
+            el.style.display = "block"
+            el.innerHTML = `
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${event.target.dataset.id}?autoplay=1" 
+            title="It's Pet Food Seriously Ep 3: Picky Cats" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+            manual_cm_sp="sponsoredbrandpage:conairpropet:contentbanner:1:catertoyourpetsfavoritefoods:video"
+                                onclick="clickTrackLink(this);"></iframe>
+            <span onclick="hideVideo()">&times;</span>`;
+        }
+        function hideVideo() {
+            event.target.parentElement.style.display = 'none';
+            event.target.parentElement.innerHTML = '';
+        }
 
-        </script>
-
-    </main>
+    </script>
 </body>
 
 </html>
