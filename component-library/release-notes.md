@@ -82,3 +82,6 @@
 ## 19 January 2024 by Shahinur
 - Hero POV completed.
 - Working on content 4up, 95% completed.
+
+## 23 January 2024 by Shahinur
+- Content 4up reqular and box design completed
