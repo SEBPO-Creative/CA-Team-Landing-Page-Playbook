@@ -85,3 +85,6 @@
 
 ## 23 January 2024 by Shahinur
 - Content 4up reqular and box design completed
+
+## 25 January 2024 by Shahinur
+- Content 4up video 50% completed
