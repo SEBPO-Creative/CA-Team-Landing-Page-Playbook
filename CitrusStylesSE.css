@@ -692,13 +692,13 @@ font-style: normal;
 
 /* ===================== Common Class ===================== */
 /* All the Common Class added here */
-  body{
-    margin: 0;
-    padding: 0;
-  }
+body{
+  margin: 0;
+  padding: 0;
+}
 
-  .citrusStylesSE-container{
-    margin: 0 auto;
+.citrusStylesSE-container{
+  margin: 0 auto;
 }
 
 .citrusStylesSE-container--large{
