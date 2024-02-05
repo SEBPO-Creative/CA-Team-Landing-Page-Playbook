@@ -30,8 +30,7 @@
   margin-bottom: -4px;
 }
 .citrusStylesSE-top__video {
-  width: 370px;
-  max-width: 100%;
+  max-width: 400px;
   border-radius: 8px;
   border: none;
 }
@@ -66,6 +65,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-left: 30px;
 }
 .citrusStylesSE-video__Text h2 {
   font-family: "PetcoCircularTT-Regular", arial !important;
@@ -101,7 +101,7 @@
   -webkit-box-pack: left;
   -ms-flex-pack: left;
   justify-content: left;
-  margin-top: 25px;
+  margin-bottom: 30px;
 }
 .citrusStylesSE-video__CTA a {
   min-width: 211px;
@@ -112,6 +112,7 @@
   font-weight: 900;
   text-align: center;
   color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
   border: 1px solid #001952;
   border-radius: 7px;
@@ -120,9 +121,18 @@
   transition: background 1s ease;
 }
 .citrusStylesSE-video__CTA a:hover {
-  background: #fff;
-  color: #001952;
+  min-width: 211px;
+  line-height: 56px;
+  background: #001952;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
   border: 1px solid #001952;
+  border-radius: 7px;
 }
 
 /* Video Popup */
@@ -177,7 +187,7 @@
 
 .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
   width: 100%;
-  min-height: 238px;
+  min-height: 254px;
   background-color: #000 !important;
   margin-top: 0px;
   border-radius: 9px;
@@ -297,7 +307,7 @@
   }
   .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
-    min-height: 460px;
+    min-height: 440px;
   }
 
   .citrusStylesSE-video__Text {
@@ -315,7 +325,6 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding-left: 25px;
   }
   .citrusStylesSEspotlight .show-video {
     position: absolute;
@@ -378,19 +387,26 @@
 
 @media all and (max-width: 425px) {
   
-  .citrusConairFaq__iframe {
-    width: 300px;
+  .citrusStylesSE-top__video img {
+    min-height: 260px;
+}
+.citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
+    width: 100%;
+    min-height: 266px;
+  }
+  .citrusStylesSEspotlight .show-video iframe {
+    min-height: 315px;
   }
 }
 
 @media all and (max-width: 320px) {
   
   .citrusStylesSE-top__video img {
-    min-height: 280px;
+    min-height: 200px;
   }
   .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
-    min-height: 280px;
+    min-height: 200px;
   }
   .citrusStylesSEspotlight .show-video iframe {
     min-height: 315px;
@@ -418,8 +434,7 @@
         <div class="citrusStylesSEspotlight">
         <div class="citrusStylesSE-video__Row">
         <div class="citrusStylesSE-grid citrusStylesSE-grid--medium-full citrusStylesSE-grid--small-full citrusStylesSE-grid--xsmall-full">
-            <div class="citrusStylesSE-grid__cell">
-                <div class="citrusStylesSE-top__video">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-top__video">
                     <div class="citrusStylesSE-top__iframe">
                         <div class="citrusStylesSE-yt__video">
                             <button onclick="citrusStylesSEspotlight_top_video()" data-id="aDQh69-kiBk">
@@ -429,21 +444,18 @@
                             <div class="citrusStylesSE-show__top__video"></div>
                         </div>
                     </div>
-                </div>
             </div>
 
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-66">
+            <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-video__Text">
                     <h2 class="citrusStylesSE-sectionTitle">Cater to your pet’s favorite foods</h2>
                     <p>The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
                         for any dietary restrictions or allergies.</p>
-                    <div class="citrusStylesSE-section__tab-content">
-                        <!-- shop now CTA -->
-                        <div class="citrusStylesSE-video__CTA">
-                            <a href="#"
-                                onclick="clickTrackLink(this);">Shop Now</a>
-                        </div>
-                    </div>
+                      <!-- shop now CTA -->
+                      <div class="citrusStylesSE-video__CTA">
+                          <a href="#"
+                              onclick="clickTrackLink(this);">Shop Now</a>
+                      </div>
                 </div>
             </div> 
 
