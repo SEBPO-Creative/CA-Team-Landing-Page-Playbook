@@ -92,3 +92,6 @@
 ## 05 February 2024 by Shahinur
 - Content 4up video 100% completed
 - Education mode media 60% done
+
+## 06 February 2024 by Masudur-Rahman
+- Article 2up 100% completed
