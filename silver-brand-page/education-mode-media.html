@@ -24,6 +24,12 @@
 				font-weight: normal;
 			}
 
+            .citrusStylesSE-container a{
+				text-decoration: none;
+                color: #000;
+			}
+
+
             
             .citrusStylesSE-container img{
                 width: 100%;
@@ -33,11 +39,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 1em;
             }
 
             .citrusStylesSE-section__title{
                 text-align: center;
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding: 0;
             }
 
             /* Custom class need to match or update in css library */
@@ -54,9 +63,51 @@
                 align-items: center; /* using instead .citrusStylesSE-center-block__content--vertical */
             }
 
+            .citrusStylesSE-educationMedia__text{
+                padding: 40px 20px;
+            }
+
+            .citrusStylesSE-educationMedia__text h2{
+                margin: 0;
+				font-family: PetcoCircular-Bold, arial!important;
+                font-weight: 700;
+                font-size: 25px;
+                text-align: center;
+                color: #000;
+            }
+
+            .citrusStylesSE-educationMedia__text a{
+                font-size: 12px;
+                padding: 10px 0 0;
+                display: block;
+            }
+
+            .citrusStylesSE-educationMedia__text .citrusStylesSE-cta__box--color a{
+                padding: 0;
+            }
+
+            .citrusStylesSE-educationMedia__text p{
+                max-width: 495px;
+                margin: 20px auto;
+                font-family: PetcoCircular-Regular, arial!important;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000;
+            }
+
+            .citrusStylesSE-educationMedia__text a span{
+                font-weight: 700;
+            }
+
             .citrusStylesSE-educationMedia__item{
                 max-width: 155px;
                 margin: 0 auto;
+            }
+
+            .citrusStylesSE-educationMedia__item h3{
+                margin: 0;
+                padding: 20px 0 0;
+                font-size: 18px;
             }
 
 
@@ -91,6 +142,14 @@
                     font-family: PetcoCircular-Bold, arial!important;
 				    font-weight: 700;
 				}
+
+                .citrusStylesSE-educationMedia .citrusStylesSE-grid{
+                    flex-wrap: wrap;
+                }
+
+                .citrusStylesSE-educationMedia__item{
+                    padding: 15px;
+                }
 
             }
 
