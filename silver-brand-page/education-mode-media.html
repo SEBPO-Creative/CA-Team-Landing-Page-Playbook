@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Education mode - media</title>
+        <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+            /* Variables */
+            :root {
+                --citrusStylesSE-brand-bg: #fcd1d3;
+            }
+			/* Common Styles */
+			.citrusStylesSE-container h1, h2, h3{
+				font-family: PetcoCircular-Bold, arial!important;
+				font-weight: 700;
+			}
+
+			.citrusStylesSE-container p{
+				font-family: PetcoCircular-Regular, arial!important;
+				font-weight: normal;
+			}
+
+            .citrusStylesSE-container a{
+				text-decoration: none;
+                color: #000;
+			}
+
+
+            
+            .citrusStylesSE-container img{
+                width: 100%;
+            }
+
+            .citrusStylesSE-flexBox{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .citrusStylesSE-section__title{
+                text-align: center;
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding: 0;
+            }
+
+            /* Custom class need to match or update in css library */
+            .citrusStylesSE-container--xlarge-1440 {
+                max-width: 90em;
+                margin: 0 auto;
+            }
+
+            .citrusStylesSE-educationMedia{
+                background: var(--citrusStylesSE-brand-bg);
+            }
+
+            .citrusStylesSE-educationMedia .citrusStylesSE-grid{
+                align-items: center; /* using instead .citrusStylesSE-center-block__content--vertical */
+            }
+
+            .citrusStylesSE-educationMedia__text{
+                padding: 40px 20px;
+            }
+
+            .citrusStylesSE-educationMedia__text h2{
+                margin: 0;
+				font-family: PetcoCircular-Bold, arial!important;
+                font-weight: 700;
+                font-size: 25px;
+                text-align: center;
+                color: #000;
+            }
+
+            .citrusStylesSE-educationMedia__text a{
+                font-size: 12px;
+                padding: 10px 0 0;
+                display: block;
+            }
+
+            .citrusStylesSE-educationMedia__text .citrusStylesSE-cta__box--color a{
+                padding: 0;
+            }
+
+            .citrusStylesSE-educationMedia__text p{
+                max-width: 495px;
+                margin: 20px auto;
+                font-family: PetcoCircular-Regular, arial!important;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000;
+            }
+
+            .citrusStylesSE-educationMedia__text a span{
+                font-weight: 700;
+            }
+
+            .citrusStylesSE-educationMedia__item{
+                max-width: 155px;
+                margin: 0 auto;
+                padding: 15px;
+            }
+
+            .citrusStylesSE-educationMedia__item h3{
+                margin: 0;
+                padding: 20px 0 0;
+                font-size: 18px;
+            }
+
+
+
+            @media (min-width: 48em){
+                /* CTA Box with background color */
+                .citrusStylesSE-cta__box--color{
+                    width: 211px;
+                    height: 56px;
+                    border-radius: var(--citrusStylesSE-border-radius-5);
+                    background: var(--citrusStylesSE-primary-navy);
+                    margin: 0 auto;
+                }
+
+                .citrusStylesSE-cta__box--color a{
+                    color: var(--citrusStylesSE-white);
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: PetcoCircular-Bold, arial!important;
+                    font-weight: 700;
+                }
+            }
+
+
+            @media (max-width: 47.99em){
+                /* CTA Box without background color on Mobile */
+				.citrusStylesSE-cta__box--color a{
+					color: var(--citrusStylesSE-primary-navy);
+					text-align: center;
+					text-decoration: underline;
+                    font-family: PetcoCircular-Bold, arial!important;
+				    font-weight: 700;
+				}
+
+                .citrusStylesSE-educationMedia .citrusStylesSE-grid{
+                    flex-wrap: wrap;
+                }
+
+                .citrusStylesSE-educationMedia__text a span {
+                    display: block;
+                }
+
+            }
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+    <body>
+        <main class="citrusStylesSE-container citrusStylesSE-container--xlarge-1440">
+            <section class="citrusStylesSE-educationMedia">
+                <div class="citrusStylesSE-grid citrusStylesSE-grid--large-fit">
+                    <!-- Left column -->
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall">
+                        <div class="citrusStylesSE-educationMedia__text">
+                            <h2>A positive impact on pets, people and the planet</h2>
+                            <p>Royal Canin is building a sustainable and socially responsible business starting with reducing their carbon footprint with their puppy and kitten products.</p>
+                            <div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center citrusStylesSE-centered">
+                                <a href="">Shop Now</a>
+                            </div>
+                            <a href="">For more information, go to <span>royalcanin.com/us/about-us/sustainability</span></a>
+                        </div>
+                    </div>
+                     <!-- Right column -->
+                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-flexBox citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall">
+                        <div class="citrusStylesSE-educationMedia__item">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/royal-footerClimate-Action1" alt="AltPlaceHolder">
+                            <h3>PLANET</h3>
+                        </div>
+                        <div class="citrusStylesSE-educationMedia__item">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/royal-footerClimate-Action-12" alt="AltPlaceHolder">
+                            <h3>PEOPLE</h3>
+                        </div>
+                        <div class="citrusStylesSE-educationMedia__item">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/royal-footerDog3" alt="AltPlaceHolder">
+                            <h3>PETS</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>
