@@ -95,3 +95,9 @@
 
 ## 06 February 2024 by Masudur-Rahman
 - Article 2up 100% completed
+
+## 07 February 2024 by Masudur-Rahman
+- Article-2 up Square Box with in image copy 100% completed
+
+## 08 February 2024 by Masudur-Rahman
+- Bottom Hero Media with Products 100% completed
