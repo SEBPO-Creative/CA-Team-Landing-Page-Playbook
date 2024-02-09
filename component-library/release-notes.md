@@ -100,4 +100,10 @@
 - Article-2 up Square Box with in image copy 100% completed
 
 ## 08 February 2024 by Masudur-Rahman
-- Bottom Hero Media with Products 100% completed
+- Bottom Hero Lifecycle Section 100% completed
+
+## 09 February 2024 by Masudur-Rahman
+- Regular Product Scroller 100% completed
+
+## 09 February 2024 by Masudur-Rahman
+- Species Product Tab Scroller 100% completed
