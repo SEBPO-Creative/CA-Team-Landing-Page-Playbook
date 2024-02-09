@@ -113,40 +113,42 @@
 
 /* ===================== Common styles ===================== */
 /* Adding the common styles class here */
-.citrusStylesSE-main h1, h2, h3, h4{
+.citrusStylesSE-header1,
+.citrusStylesSE-header2,
+.citrusStylesSE-header3,
+.citrusStylesSE-header4{
   font-family: "PetcoCircular-Bold", arial !important;
   font-weight: 700; /* Might not need to use for default: 700, font-weight since it was declared on the @font-face */
   margin: 0;
 }
 
-.citrusStylesSE-main p{
+.citrusStylesSE-para{
   margin: 0;
   font-family: "PetcoCircular-Regular", arial !important;
   font-weight: normal; /* Might not need to use font-weight since it was declared on the @font-face */
 }
 
-.citrusStylesSE-main a{  /* We could define a parent class for .citrusStylesSE */
+.citrusStylesSE-url{  /* We could define a parent class for .citrusStylesSE */
   text-decoration: none;
   color: #000;
 }
       
-.citrusStylesSE-main img{ /* We could define a parent class for .citrusStylesSE */
+.citrusStylesSE-img{ /* We could define a parent class for .citrusStylesSE */
     width: 100%;
 }
 
 .citrusStylesSE-section__title{
     padding: 3.5em 1em;
     text-align: center;
-
 }
 
-.citrusStylesSE-section__title h2, h3{
+.citrusStylesSE-section__title .citrusStylesSE-header2, .citrusStylesSE-header3{
   font-size: 25px; /* Can be change as per mock */
   text-align: inherit;
   color: var(--citrusStylesSE-black);
 }
 
-.citrusStylesSE-section__title p{
+.citrusStylesSE-section__title .citrusStylesSE-para{
   color: var(--citrusStylesSE-black);
   padding: 1em 0 0;
   text-align: inherit;
@@ -156,30 +158,25 @@
     padding: 0;
 }
 
-.citrusStylesSE-d__hide{
-  display: none; /* This one will be reverse on mobile break-point */
-}
-
-.citrusStylesSE-m__hide{
-  display: block; /* This one will be reverse on mobile break-point */
-}
-
 .citrusStylesSE-cta__underline{
   display: block;
+  text-align: center;
 }
 
-.citrusStylesSE-cta__underline a{
+.citrusStylesSE-cta__underline .citrusStylesSE-url{
   color: var(--citrusStylesSE-primary-navy);
   font-size: 16px;
-  text-align: center;
+  text-align: inherit;
   text-decoration: underline;
   font-family: "PetcoCircular-Bold", arial !important;
   font-weight: 700;
 }
 
-.citrusStylesSE-cta__underline a:hover{
+.citrusStylesSE-cta__underline .citrusStylesSE-url:hover{
   color: var(--citrusStylesSE-primary-navy);
 }
+
+
 
 
 /* ===================== Hero - Carousel POV ===================== */
@@ -633,7 +630,7 @@
 
 @media (min-width: 64em) { /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
     /* CTA Box-Button with background color */
-    .citrusStylesSE-cta__box--color{
+    .citrusStylesSE-cta__box{
       width: 211px;
       height: 56px;
       border-radius: var(--citrusStylesSE-border-radius-5);
@@ -641,7 +638,7 @@
       margin: 0 auto;
   }
 
-  .citrusStylesSE-cta__box a{
+  .citrusStylesSE-cta__box .citrusStylesSE-url {
       color: var(--citrusStylesSE-white);
       font-size: 16px;
       text-align: center;
@@ -651,20 +648,13 @@
       font-weight: 700;
   }
 
-  .citrusStylesSE-cta__box a:hover{
+  .citrusStylesSE-cta__box .citrusStylesSE-url:hover{
     color: var(--citrusStylesSE-white);
   }
+  
 }
 
-@media (min-width: 63.99em) { /* min-width:1023.99px, we could make the underline button styles on this break-point. The box button will be apply above the 64em (1024px) */
-
-}
-
-@media (min-width: 64em) { /* min-width:1248px */
-
-}
-
-@media (max-width: 47.99em) { /* max-width:767.99px, all the mobile styles can be used this break-point*/
+@media (max-width: 63.99em){
   /* Reverse CTA for Box-Button - without background color on Mobile */
   .citrusStylesSE-cta__box a{
     color: var(--citrusStylesSE-primary-navy);
@@ -678,6 +668,18 @@
   .citrusStylesSE-cta__box a:hover{
     color: var(--citrusStylesSE-primary-navy);
   }
+}
+
+@media (min-width: 63.99em) { /* min-width:1023.99px, we could make the underline button styles on this break-point. The box button will be apply above the 64em (1024px) */
+
+}
+
+@media (min-width: 64em) { /* min-width:1248px */
+
+}
+
+@media (max-width: 47.99em) { /* max-width:767.99px, all the mobile styles can be used this break-point*/
+
 
 }
 
