@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         body {
             margin: 0;
@@ -45,12 +46,13 @@
             justify-content: center;
         }
 
-        .citrusStylesSE-article2up-card--details h2 {
+        .citrusStylesSE-article2up-card--details h3 {
             font-family: PetcoCircular-Bold, arial !important;
             font-size: 20px;
             line-height: initial;
             font-weight: 700;
             color: #000000;
+            margin: 0;
         }
 
         .citrusStylesSE-article2up-card--details h2,
@@ -67,11 +69,9 @@
             color: #000000;
         }
 
-        .citrusStylesSE-article2up-card--details a {
-            color: #001952;
-            text-decoration: underline;
-            font-family: PetcoCircular-Bold, arial !important;
-            font-weight: 700;
+        .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
+            padding-top: 0 !important ;
+            padding-bottom: 0 !important ;
         }
 
         .citrusStylesSE-article-in-image-section {
@@ -90,9 +90,9 @@
 
         }
 
-        .citrusStylesSE-article-image-copy h3 {
+        .citrusStylesSE-article-image-copy h4 {
             color: #fff;
-            font-family: PetcoCircular-Bold, arial !important;
+            font-family: "PetcoCircular-Bold", arial !important;
             font-size: 16px;
             line-height: 16px;
             margin: 0;
@@ -116,17 +116,6 @@
             /* IE and Edge */
             scrollbar-width: none;
             /* Firefox */
-        }
-
-
-        @media screen and (max-width: 768px) {
-            .citrusStylesSE-article2up-card--image {
-                height: 210px;
-            }
-
-            .citrusStylesSE-article-image-copy img {
-                max-width: 80px;
-            }
         }
 
         @media screen and (max-width: 767px) {
@@ -188,58 +177,55 @@
 <body>
     <!-- Article 2 up Box -->
     <section class="citrusStylesSE-article2up">
-        <div
-            class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-fit citrusStylesSE-grid--small-fit citrusStylesSE-grid--medium-fit citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
-            <div
-                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-50@xsmall citrusStylesSE-article2up--card">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-fit citrusStylesSE-grid--small-fit citrusStylesSE-grid--medium-fit citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-50@xsmall citrusStylesSE-article2up--card">
                 <div class="citrusStylesSE-article2up-card--image">
                     <img alt="placeholder" class="citrusStylesSE-image"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_product1">
                 </div>
                 <div class="citrusStylesSE-article2up-card--details">
-                    <h2 class="citrusStylesSE-centered">
+                    <h3 class="citrusStylesSE-centered">
                         Heading Goes Here, 18px - 20px.
-                    </h2>
+                    </h3>
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <a href="###" class="citrusStylesSE-centered">Shop
-                        Now</a>
+                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
                 </div>
             </div>
-            <div
-                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-50@xsmall citrusStylesSE-article2up--card">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-50@xsmall citrusStylesSE-article2up--card">
                 <div class="citrusStylesSE-article2up-card--image">
                     <div class="citrusStylesSE-grid citrusStylesSE-article-in-image-section">
                         <div class="citrusStylesSE-grid__cell citrusStylesSE-article-image-copy">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
                                 alt="">
-                            <h3 class="citrusStylesSE-centered">PetcoCircular-Bold. font size 16px</h3>
+                            <h4 class="citrusStylesSE-centered">PetcoCircular-Bold. font size 16px</h4>
                         </div>
                         <div class="citrusStylesSE-grid__cell citrusStylesSE-article-image-copy"
                             id="citrusStylesSE-article-image-copy--middle-column">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
                                 alt="">
-                            <!-- <h3 class="citrusStylesSE-centered">in-image copy</h3> -->
-                            <h3 class="citrusStylesSE-centered">Font size 16px</h3>
+                            <h4 class="citrusStylesSE-centered">Font size 16px</h4>
                         </div>
                         <div class="citrusStylesSE-grid__cell citrusStylesSE-article-image-copy">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
                                 alt="">
-                            <!-- <h3 class="citrusStylesSE-centered">in-image copy</h3> -->
-                            <h3 class="citrusStylesSE-centered">PetcoCircular-Bold.</h3>
+                            <h4 class="citrusStylesSE-centered">PetcoCircular-Bold.</h4>
                         </div>
                     </div>
                 </div>
                 <div class="citrusStylesSE-article2up-card--details">
-                    <h2 class="citrusStylesSE-centered">
+                    <h3 class="citrusStylesSE-centered">
                         Heading Goes Here, 18px - 20px.
-                    </h2>
+                    </h3>
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <a href="###" class="citrusStylesSE-centered">Shop
-                        Now</a>
+                        <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                            <a href="" class="citrusStylesSE-url">Shop Now</a>
+                        </div>
                 </div>
             </div>
         </div>
