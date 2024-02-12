@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bottom-hero-products</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         /* Education Media Banner Style */
         .citrusStylesSE-grid__cell {
@@ -32,7 +33,7 @@
             margin: auto;
         }
 
-        .citrusStylesSE-educationMedia__text h2 {
+        .citrusStylesSE-educationMedia__text h3 {
             margin: 0;
             font-family: PetcoCircular-Bold, arial !important;
             font-weight: 700;
@@ -40,16 +41,6 @@
             text-align: center;
             color: #000;
             text-align: center;
-        }
-
-        .citrusStylesSE-educationMedia__text a {
-            font-size: 12px;
-            padding: 10px 0 0;
-            display: block;
-        }
-
-        .citrusStylesSE-educationMedia__text .citrusStylesSE-cta__box--color a {
-            padding: 0;
         }
 
         .citrusStylesSE-educationMedia__text p {
@@ -60,10 +51,6 @@
             line-height: 22px;
             color: #000;
             text-align: center;
-        }
-
-        .citrusStylesSE-educationMedia__text a span {
-            font-weight: 700;
         }
 
         .citrusStyleSE-educationMedia-produtc--items {
@@ -83,35 +70,23 @@
             font-family: PetcoCircular-Regular, arial !important;
         }
 
-
         /* CTA Box with background color */
-        .citrusStyleSE-educationMedia-cta--box {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding-bottom: 4px;
+        .citrusStylesSE-letter-box-super {
+            margin: 0 !important;
+            padding: 0 !important;
         }
 
-        .citrusStylesSE-cta__box--color {
-            text-align: center;
+        .citrusStyleSE-educationMedia-cta--box {
             display: flex;
+            flex-direction: row !important;
             justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
             gap: 20px;
         }
 
-        .citrusStylesSE-cta__box--color a {
-            width: 211px;
-            height: 56px;
-            border-radius: var(--citrusStylesSE-border-radius-5);
-            background: var(--citrusStylesSE-primary-navy);
-            color: var(--citrusStylesSE-white);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: PetcoCircular-Bold, arial !important;
+        .citrusStyleSE-educationMedia-cta--box a {
+            padding: 0;
         }
 
         .citrusStyleSE-educationMedia--desktop-hide {
@@ -122,37 +97,21 @@
             display: block;
         }
 
-
-        @media screen and (max-width:1024px) {
-            .citrusStylesSE-cta__box--color a {
-                width: 150px;
-            }
-        }
-
         @media screen and (max-width: 767px) {
+            .citrusStylesSE-educationMedia .citrusStylesSE-grid {
+                flex-direction: column;
+            }
+
             .citrusStylesSE-educationMedia__text {
                 padding-bottom: 0;
             }
 
+            .citrusStyleSE-educationMedia-produtc--items {
+                padding-bottom: 20px;
+            }
+
             .citrusStyleSE-educationMedia--products-cell {
                 flex-direction: column;
-            }
-
-            .citrusStylesSE-cta__box--color {
-                padding-top: 17.5px;
-                padding-bottom: 35px;
-            }
-
-            .citrusStylesSE-cta__box--color a {
-                width: fit-content;
-                height: 100%;
-                background: none;
-                color: var(--citrusStylesSE-primary-navy);
-                text-align: center;
-                text-decoration: underline;
-                font-family: PetcoCircular-Bold, arial !important;
-                font-weight: 700;
-                text-transform: none;
             }
 
             .citrusStyleSE-educationMedia--products-cell {
@@ -179,8 +138,8 @@
                 max-width: 117px;
             }
         }
-
         /* ----------------------------------------- */
+        
     </style>
 </head>
 
@@ -204,24 +163,40 @@
                         </div>
                     </div>
 
-                    <div class="citrusStyleSE-educationMedia-cta--box citrusStyleSE-educationMedia--desktop-hide">
-                        <div class="citrusStylesSE-cta__box--color">
-                            <a href="">Shop Dog</a>
-                            <a href="">Shop Dog</a>
+                    <!-- CTA Box -->
+                    <div class="citrusStylesSE-letter-box-super citrusStyleSE-educationMedia--desktop-hide">
+                        <div class="citrusStyleSE-educationMedia-cta--box">
+                            <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                                <a href="" class="citrusStylesSE-url">Shop Dog</a>
+                            </div>
+
+                            <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                                <a href="" class="citrusStylesSE-url">Shop Cat</a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- Right column -->
                 <div
                     class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall citrusStyleSE-educationMedia--details-cell">
                     <div class="citrusStylesSE-educationMedia__text">
-                        <h2>Headline. PetcoCircular-Bold. 20px - 25px</h2>
+                        <h3>Headline. PetcoCircular-Bold. 20px - 25px</h3>
                         <p>Subheadline Goes Here. Font Family PetcoCircular-Regular. Font Size Should be 16px.</p>
-                        <div class="citrusStyleSE-educationMedia-cta--box citrusStyleSE-educationMedia--mobile-hide">
-                            <div class="citrusStylesSE-cta__box--color">
-                                <a href="">Shop Dog</a>
-                                <a href="">Shop Cat</a>
+
+                        <!-- CTA Box -->
+                        <div
+                            class="citrusStylesSE-letter-box-super citrusStyleSE-educationMedia--mobile-hide">
+                            <div class="citrusStyleSE-educationMedia-cta--box">
+                                <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Dog</a>
+                                </div>
+    
+                                <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Cat</a>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

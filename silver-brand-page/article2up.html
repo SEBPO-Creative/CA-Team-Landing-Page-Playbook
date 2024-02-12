@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article2up</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         body {
             margin: 0;
@@ -46,12 +50,13 @@
             justify-content: center;
         }
 
-        .citrusStylesSE-article2up-card--details h2 {
-            font-family: PetcoCircular-Bold, arial !important;
+        .citrusStylesSE-article2up-card--details h3 {
+            font-family: "PetcoCircular-Bold", arial !important;
             font-size: 20px;
             line-height: initial;
             font-weight: 700;
             color: #000000;
+            margin: 0;
         }
 
         .citrusStylesSE-article2up-card--details h2,
@@ -68,11 +73,9 @@
             color: #000000;
         }
 
-        .citrusStylesSE-article2up-card--details a {
-            color: #001952;
-            text-decoration: underline;
-            font-family: PetcoCircularTT-Bold, arial !important;
-            font-weight: 700;
+        .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
+            padding-top: 0 !important ;
+            padding-bottom: 0 !important ;
         }
 
         @media screen and (max-width: 1250px) {
@@ -81,13 +84,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
-            .citrusStylesSE-article2up-card--image {
-                height: 210px;
-            }
-        }
-
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 767px) { 
             .citrusStylesSE-article2up-card--image {
                 height: 314px;
             }
@@ -141,18 +138,15 @@
                     <img alt="placeholder" class="citrusStylesSE-image" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Ollie-food-philosophy_image">
                 </div>
                 <div class="citrusStylesSE-article2up-card--details">
-                    <h2 class="citrusStylesSE-centered">
+                    <h3 class="citrusStylesSE-centered">
                         Heading Goes Here, 18px - 20px.
-                    </h2>
+                    </h3>
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <a href="###" class="citrusStylesSE-centered">Shop
-                        Now</a>
-
-                    <div class="citrusStylesSE-center-block">
-
-                    </div>
+                        <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                            <a href="" class="citrusStylesSE-url">Shop Now</a>
+                        </div>
                 </div>
             </div>
             <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
@@ -162,18 +156,17 @@
                         allowfullscreen></iframe>
                 </div>
                 <div class="citrusStylesSE-article2up-card--details">
-                    <h2 class="citrusStylesSE-centered">
+                    <h3 class="citrusStylesSE-centered">
                         Heading Goes Here, 18px - 20px.
-                    </h2>
+                    </h3>
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <a href="###" class="citrusStylesSE-centered">Shop
-                        Now</a>
+                        <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                            <a href="" class="citrusStylesSE-url">Shop Now</a>
+                        </div>
 
-                    <div class="citrusStylesSE-center-block">
-
-                    </div>
+                    
                 </div>
             </div>
         </div>
