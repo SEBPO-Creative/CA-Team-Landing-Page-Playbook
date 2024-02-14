@@ -58,7 +58,7 @@
         .citrusHills-wrapper::-webkit-scrollbar,
         .citrusHills__productCarousel-wrapper::-webkit-scrollbar,
         .citrusHills__dogProductCarousel-wrapper::-webkit-scrollbar,
-        .citrusHills__tabcontent_wrapper::-webkit-scrollbar {
+        .citrusStylesSE__tabcontent_wrapper::-webkit-scrollbar {
             display: none;
         }
 
@@ -144,7 +144,7 @@
 
         /* Product Carousel section And Dog Cat Category Section Combined CSS */
         /* tab button style */
-        .citrusHills__tabcontent_wrapper,
+        .citrusStylesSE__tabcontent_wrapper,
         .citrusHills__dogProductCarousel-wrapper {
             width: 100%;
             max-width: 1273px;
@@ -357,7 +357,7 @@
         }
 
         @media screen and (min-width: 769px) and (max-width: 1200px) {
-            .citrusHills__tabcontent_wrapper {
+            .citrusStylesSE__tabcontent_wrapper {
                 width: 95%;
             }
         }
@@ -448,7 +448,7 @@
             </section>
 
             <!-- Dog Food Items -->
-            <div id="citrusHills__species-dog" class="citrusHills__tabcontent_wrapper">
+            <div id="citrusHills__species-dog" class="citrusStylesSE__tabcontent_wrapper">
                 <!-- product tab main content -->
                 <div class="citrusHills__main-tab-content">
                     <!-- tab button -->
@@ -2190,7 +2190,7 @@
             <!-- End Dog Food Items -->
 
             <!-- Cat Food Items -->
-            <div id="citrusHills__species-cat" class="citrusHills__tabcontent_wrapper">
+            <div id="citrusHills__species-cat" class="citrusStylesSE__tabcontent_wrapper">
                 <!-- product tab main content -->
                 <div class="citrusHills__main-tab-content">
                     <!-- tab button -->
@@ -3715,13 +3715,13 @@
     <script>
         // Species
         function filterSpeciesTab(species) {
-            // Hide all elements with class="citrusHills__tabcontent_wrapper" by default */
-            var i, citrusHills__tabcontent_wrapper, citrusHills__speciesTablinks;
-            citrusHills__tabcontent_wrapper = document.getElementsByClassName(
-                "citrusHills__tabcontent_wrapper"
+            // Hide all elements with class="citrusStylesSE__tabcontent_wrapper" by default */
+            var i, citrusStylesSE__tabcontent_wrapper, citrusHills__speciesTablinks;
+            citrusStylesSE__tabcontent_wrapper = document.getElementsByClassName(
+                "citrusStylesSE__tabcontent_wrapper"
             );
-            for (i = 0; i < citrusHills__tabcontent_wrapper.length; i++) {
-                citrusHills__tabcontent_wrapper[i].style.display = "none";
+            for (i = 0; i < citrusStylesSE__tabcontent_wrapper.length; i++) {
+                citrusStylesSE__tabcontent_wrapper[i].style.display = "none";
             }
 
             // Show the specific tab content

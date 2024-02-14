@@ -176,7 +176,52 @@
   color: var(--citrusStylesSE-primary-navy);
 }
 
+.citrusStylesSE-container{
+  max-width: 90em;
+  margin: 0 auto;
+}
 
+
+ 
+/* ===================== Accordion ===================== */
+/* Style the buttons that are used to open and close the accordion panel */
+.citrusStylesSE-accordion {
+  background-color: var(--citrusStylesSE-gray-dark);
+  color: var(--citrusStylesSE-black);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.citrusStylesSE-accordion--active, .citrusStylesSE-accordion:hover {
+  background-color: #ccc;
+}
+
+.citrusStylesSE-accordion:after {
+  content: '\002B';
+  color: var(--citrusStylesSE-black);
+  font-weight: bold;
+  float: right;
+  margin-left: 0px;
+}
+
+.citrusStylesSE-accordion--active:after {
+  content: "\2212";
+}
+
+.citrusStylesSE-accordionPanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* End Accordion */
 
 
 /* ===================== Hero - Carousel POV ===================== */
