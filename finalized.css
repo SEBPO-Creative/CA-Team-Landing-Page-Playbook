@@ -4,166 +4,158 @@
  * Copyright 2024 the SEBPO Authors (https://sebpo.com/)
  * Licensed under SEBPO (https://sebpo.com/)
  */
-  /* ===================== CSS Variable ===================== */
-  :root {
-    --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
-    --citrusStylesSE-secondary-navy: #00205B; /* -Mostly used for bg color */
-    --citrusStylesSE-navy-021B4E: #021B4E; /* need new naming*/
-    --citrusStylesSE-navy-light: #1F52A0; /* -Mostly used for bg color */
-    --citrusStylesSE-blue-15-percent: #6EDCFA; /* -Mostly used for bg color */
-    --citrusStylesSE-white: #ffffff;
-    --citrusStylesSE-black: #000000;
-    --citrusStylesSE-black-light: #333333;
-    --citrusStylesSE-gray-light: #D8D8D8;
-    --citrusStylesSE-gray-F6F6F6: #F6F6F6; /* need new naming*/
-    --citrusStylesSE-silver: #F4F7FF; /* need new naming*/
-    --citrusStylesSE-pink-10-percent: #DF3995; /* -Mostly used for bg color */
-    
-    /* Borders */
-    --citrusStylesSE-border-width: 1px;
-    --citrusStylesSE-border-style: solid;
-    --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
-    --citrusStylesSE-border-radius-5: 5px;
-    --citrusStylesSE-border-radius: 6px;
-    --citrusStylesSE-border-radius-10: 10px;
-    --citrusStylesSE-border-radius-15: 15px;
-    --citrusStylesSE-border-radius-20: 20px;
-    --citrusStylesSE-border-radius-30: 30px;
-    --citrusStylesSE-border-radius-rounded: 30em;
+/* ===================== CSS Variable ===================== */
+:root {
+  --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
+  --citrusStylesSE-secondary-navy: #00205b; /* -Mostly used for bg color */
+  --citrusStylesSE-navy-021B4E: #021b4e; /* need new naming*/
+  --citrusStylesSE-navy-light: #1f52a0; /* -Mostly used for bg color */
+  --citrusStylesSE-blue-15-percent: #6edcfa; /* -Mostly used for bg color */
+  --citrusStylesSE-white: #ffffff;
+  --citrusStylesSE-black: #000000;
+  --citrusStylesSE-black-light: #333333;
+  --citrusStylesSE-gray-light: #d8d8d8;
+  --citrusStylesSE-gray-F6F6F6: #f6f6f6; /* need new naming*/
+  --citrusStylesSE-silver: #f4f7ff; /* need new naming*/
+  --citrusStylesSE-pink-10-percent: #df3995; /* -Mostly used for bg color */
 
-    /* Box shadows */
-    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
-    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
-    
-    /* Disabled */
-    --citrusStylesSE-no-opacity: 0;
-    --citrusStylesSE-disabled-opacity: 0.5;
-    
-    /* Grid */
-    --citrusStylesSE-grid-gutter: 1em;
+  /* Borders */
+  --citrusStylesSE-border-width: 1px;
+  --citrusStylesSE-border-style: solid;
+  --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+  --citrusStylesSE-border-radius-5: 5px;
+  --citrusStylesSE-border-radius: 6px;
+  --citrusStylesSE-border-radius-10: 10px;
+  --citrusStylesSE-border-radius-15: 15px;
+  --citrusStylesSE-border-radius-20: 20px;
+  --citrusStylesSE-border-radius-30: 30px;
+  --citrusStylesSE-border-radius-rounded: 30em;
 
-    /* Spacing */
-    --citrusStylesSE-spacing-super: 3em;
-    --citrusStylesSE-spacing-xlarge: 2em;
-    --citrusStylesSE-spacing-large: 1.5em;
-    --citrusStylesSE-spacing-medium: 1em;
-    --citrusStylesSE-spacing-small: 0.5em;
-    --citrusStylesSE-spacing-xsmall: 0.25em;
-    --citrusStylesSE-spacing-tiny: 0.125em;
+  /* Box shadows */
+  --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+  --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
 
-    /* Screen widths */
-    --citrusStylesSE-screen-limit-xsmall: 20em;
-    --citrusStylesSE-screen-limit-small: 30em;
-    --citrusStylesSE-screen-limit-medium: 48em;
-    --citrusStylesSE-screen-limit-large: 64em;
-    --citrusStylesSE-screen-limit-xlarge: 78em;
-    --citrusStylesSE-screen-limit-super: 116em;
+  /* Disabled */
+  --citrusStylesSE-no-opacity: 0;
+  --citrusStylesSE-disabled-opacity: 0.5;
 
-    /* Z Indexes */
-    --citrusStylesSE-z-over-content: 100;
-    --citrusStylesSE-z-over-control: 200;
-    --citrusStylesSE-z-over-page: 300;
-    --citrusStylesSE-z-over-screen: 400;
-    --citrusStylesSE-z-over-everything: 500;
+  /* Grid */
+  --citrusStylesSE-grid-gutter: 1em;
+
+  /* Spacing */
+  --citrusStylesSE-spacing-super: 3em;
+  --citrusStylesSE-spacing-xlarge: 2em;
+  --citrusStylesSE-spacing-large: 1.5em;
+  --citrusStylesSE-spacing-medium: 1em;
+  --citrusStylesSE-spacing-small: 0.5em;
+  --citrusStylesSE-spacing-xsmall: 0.25em;
+  --citrusStylesSE-spacing-tiny: 0.125em;
+
+  /* Screen widths */
+  --citrusStylesSE-screen-limit-xsmall: 20em;
+  --citrusStylesSE-screen-limit-small: 30em;
+  --citrusStylesSE-screen-limit-medium: 48em;
+  --citrusStylesSE-screen-limit-large: 64em;
+  --citrusStylesSE-screen-limit-xlarge: 78em;
+  --citrusStylesSE-screen-limit-super: 116em;
+
+  /* Z Indexes */
+  --citrusStylesSE-z-over-content: 100;
+  --citrusStylesSE-z-over-control: 200;
+  --citrusStylesSE-z-over-page: 300;
+  --citrusStylesSE-z-over-screen: 400;
+  --citrusStylesSE-z-over-everything: 500;
 }
 
 /* Importing Petco Circular Font to use on Petco Website */
 @font-face {
   font-family: "PetcoCircular-Regular";
-  src: url("font/PetcoCircular-Regular.woff2") /* for local use, we can use otf font that will match the font in local and staging */
+  src: url("font/PetcoCircular-Regular.woff2")
+    /* for local use, we can use otf font that will match the font in local and staging */
     format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "PetcoCircular-Bold";
-  src: url("font/PetcoCircular-Bold.woff2")  /* for local use, we can use otf font that will match the font in local and staging */
+  src: url("font/PetcoCircular-Bold.woff2")
+    /* for local use, we can use otf font that will match the font in local and staging */
     format("woff");
-  font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
   font-family: "PetcoCircular-Black";
-  src: url("font/PetcoCircular-Black.otf")
-    format("otf");
-  font-weight: 700;
-  font-style: normal;
+  src: url("font/PetcoCircular-Black.otf") format("otf");
 }
 
 @font-face {
   font-family: "PetcoCircular-Medium";
-  src: url("font/PetcoCircular-Medium.otf")
-    format("otf");
-  font-weight: 700;
-  font-style: normal;
+  src: url("font/PetcoCircular-Medium.otf") format("otf");
 }
 
 @font-face {
   font-family: "PetcoCircular-Book";
-  src: url("font/PetcoCircular-Book.otf")
-    format("otf");
-  font-weight: 500;
-  font-style: normal;
+  src: url("font/PetcoCircular-Book.otf") format("otf");
 }
-  
 
 /* ===================== Common styles ===================== */
 /* Adding the common styles class here */
 .citrusStylesSE-header1,
 .citrusStylesSE-header2,
 .citrusStylesSE-header3,
-.citrusStylesSE-header4{
+.citrusStylesSE-header4 {
   font-family: "PetcoCircular-Bold", arial !important;
   font-weight: 700; /* Might not need to use for default: 700, font-weight since it was declared on the @font-face */
   margin: 0;
 }
 
-.citrusStylesSE-para{
+.citrusStylesSE-para {
   margin: 0;
   font-family: "PetcoCircular-Regular", arial !important;
   font-weight: normal; /* Might not need to use font-weight since it was declared on the @font-face */
 }
 
-.citrusStylesSE-url{  /* We could define a parent class for .citrusStylesSE */
+.citrusStylesSE-url {
+  /* We could define a parent class for .citrusStylesSE */
   text-decoration: none;
   color: #000;
 }
-      
-.citrusStylesSE-img{ /* We could define a parent class for .citrusStylesSE */
-    width: 100%;
+
+.citrusStylesSE-img {
+  /* We could define a parent class for .citrusStylesSE */
+  width: 100%;
 }
 
-.citrusStylesSE-section__title{
-    padding: 3.5em 1em;
-    text-align: center;
+.citrusStylesSE-section__title {
+  padding: 3.5em 1em;
+  text-align: center;
 }
 
-.citrusStylesSE-section__title .citrusStylesSE-header2, .citrusStylesSE-header3{
+.citrusStylesSE-section__title .citrusStylesSE-header2,
+.citrusStylesSE-header3 {
   font-size: 25px; /* Can be change as per mock */
   text-align: inherit;
   color: var(--citrusStylesSE-black);
 }
 
-.citrusStylesSE-section__title .citrusStylesSE-para{
+.citrusStylesSE-section__title .citrusStylesSE-para {
   color: var(--citrusStylesSE-black);
   padding: 1em 0 0;
   text-align: inherit;
 }
 
-.citrusStylesSE-grid__cell{  /* This can be removed*/
-    padding: 0;
+.citrusStylesSE-grid__cell {
+  /* This can be removed*/
+  padding: 0;
 }
 
-.citrusStylesSE-cta__underline{
+.citrusStylesSE-cta__underline {
   display: block;
   text-align: center;
 }
 
-.citrusStylesSE-cta__underline .citrusStylesSE-url{
+.citrusStylesSE-cta__underline .citrusStylesSE-url {
   color: var(--citrusStylesSE-primary-navy);
   font-size: 16px;
   text-align: inherit;
@@ -172,7 +164,7 @@
   font-weight: 700;
 }
 
-.citrusStylesSE-cta__underline .citrusStylesSE-url:hover{
+.citrusStylesSE-cta__underline .citrusStylesSE-url:hover {
   color: var(--citrusStylesSE-primary-navy);
 }
 
@@ -226,7 +218,7 @@
 
 /* ===================== Hero - Carousel POV ===================== */
 /* All sizes containers styles */
- .citrusStylesSE-carousel {
+.citrusStylesSE-carousel {
   overflow-x: hidden;
   position: relative;
   display: -webkit-box;
@@ -244,7 +236,7 @@
   transition: all ease 0.5s;
 }
 
-.citrusStylesSE-carousel__inner--item  {
+.citrusStylesSE-carousel__inner--item {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -274,7 +266,6 @@
   background-color: #09205c;
 }
 /* End Hero POV */
-
 
 /* ===================== Splide CSS ===================== */
 /* default splide js library style */
@@ -394,11 +385,11 @@
 
 @keyframes splide-loading {
   0% {
-      transform: rotate(0);
+    transform: rotate(0);
   }
 
   to {
-      transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
 
@@ -409,13 +400,13 @@
   user-select: none;
 }
 
-.splide__track--fade>.splide__list>.splide__slide {
+.splide__track--fade > .splide__list > .splide__slide {
   margin: 0 !important;
   opacity: 0;
   z-index: 0;
 }
 
-.splide__track--fade>.splide__list>.splide__slide.is-active {
+.splide__track--fade > .splide__list > .splide__slide.is-active {
   opacity: 1;
   z-index: 1;
 }
@@ -424,7 +415,7 @@
   direction: rtl;
 }
 
-.splide__track--ttb>.splide__list {
+.splide__track--ttb > .splide__list {
   display: block;
 }
 
@@ -548,31 +539,31 @@
 
 @supports (outline-offset: -3px) {
   .splide__slide:focus-visible {
-      outline: 3px solid #0bf;
-      outline-offset: -3px;
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
   }
 }
 
 @media screen and (-ms-high-contrast: none) {
   .splide__slide:focus-visible {
-      border: 3px solid #0bf;
+    border: 3px solid #0bf;
   }
 }
 
 @supports (outline-offset: -3px) {
   .splide.is-focus-in .splide__slide:focus {
-      outline: 3px solid #0bf;
-      outline-offset: -3px;
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
   }
 }
 
 @media screen and (-ms-high-contrast: none) {
   .splide.is-focus-in .splide__slide:focus {
-      border: 3px solid #0bf;
+    border: 3px solid #0bf;
   }
 
-  .splide.is-focus-in .splide__track>.splide__list>.splide__slide:focus {
-      border-color: #0bf;
+  .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
+    border-color: #0bf;
   }
 }
 
@@ -590,12 +581,12 @@
   outline-offset: 3px;
 }
 
-.splide__track--nav>.splide__list>.splide__slide {
+.splide__track--nav > .splide__list > .splide__slide {
   border: 3px solid transparent;
   cursor: pointer;
 }
 
-.splide__track--nav>.splide__list>.splide__slide.is-active {
+.splide__track--nav > .splide__list > .splide__slide.is-active {
   border: 3px solid #000;
 }
 
@@ -653,55 +644,54 @@
 
 /* End Splide CSS */
 
-
 /* ===================== Responsive Media Break-Point ===================== */
 /* All the common used break-point adding here */
 
-@media (min-width: 20em) and (max-width: 29.99em) { /* min-width:320px and max-width: 479.99*/
-
+@media (min-width: 20em) and (max-width: 29.99em) {
+  /* min-width:320px and max-width: 479.99*/
 }
 
-@media (min-width: 30em) and (max-width: 47.99em) { /* min-width:480px and max-width: 767.99*/
-
+@media (min-width: 30em) and (max-width: 47.99em) {
+  /* min-width:480px and max-width: 767.99*/
 }
 
-@media (min-width: 48em) and (max-width: 63.99em) { /* min-width:768px and max-width: 1023.99*/
-
+@media (min-width: 48em) and (max-width: 63.99em) {
+  /* min-width:768px and max-width: 1023.99*/
 }
 
-@media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
-
+@media (min-width: 64em) and (max-width: 77.99em) {
+  /* min-width:1024px and max-width: 1247.99*/
 }
 
-@media (min-width: 64em) { /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
-    /* CTA Box-Button with background color */
-    .citrusStylesSE-cta__box{
-      width: 211px;
-      height: 56px;
-      border-radius: var(--citrusStylesSE-border-radius-5);
-      background: var(--citrusStylesSE-primary-navy);
-      margin: 0 auto;
+@media (min-width: 64em) {
+  /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
+  /* CTA Box-Button with background color */
+  .citrusStylesSE-cta__box {
+    width: 211px;
+    height: 56px;
+    border-radius: var(--citrusStylesSE-border-radius-5);
+    background: var(--citrusStylesSE-primary-navy);
+    margin: 0 auto;
   }
 
   .citrusStylesSE-cta__box .citrusStylesSE-url {
-      color: var(--citrusStylesSE-white);
-      font-size: 16px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-weight: 700;
+    color: var(--citrusStylesSE-white);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
   }
 
-  .citrusStylesSE-cta__box .citrusStylesSE-url:hover{
+  .citrusStylesSE-cta__box .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-white);
   }
-  
 }
 
-@media (max-width: 63.99em){
+@media (max-width: 63.99em) {
   /* Reverse CTA for Box-Button - without background color on Mobile */
-  .citrusStylesSE-cta__box a{
+  .citrusStylesSE-cta__box a {
     color: var(--citrusStylesSE-primary-navy);
     font-size: 16px;
     text-align: center;
@@ -710,34 +700,30 @@
     font-weight: 700;
   }
 
-  .citrusStylesSE-cta__box a:hover{
+  .citrusStylesSE-cta__box a:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
 }
 
-@media (min-width: 63.99em) { /* min-width:1023.99px, we could make the underline button styles on this break-point. The box button will be apply above the 64em (1024px) */
-
+@media (min-width: 63.99em) {
+  /* min-width:1023.99px, we could make the underline button styles on this break-point. The box button will be apply above the 64em (1024px) */
 }
 
-@media (min-width: 64em) { /* min-width:1248px */
-
+@media (min-width: 64em) {
+  /* min-width:1248px */
 }
 
-@media (max-width: 47.99em) { /* max-width:767.99px, all the mobile styles can be used this break-point*/
-
-
+@media (max-width: 47.99em) {
+  /* max-width:767.99px, all the mobile styles can be used this break-point*/
 }
 
 /* Small Devices */
 @media (max-width: 19.99em) {
-
 }
-
-
 
 /* Suggestions to Remove from CSS Library */
 .citrusStylesSE-grid__cell {
-  flex: 1;  /*flex: 1 can stay as is*/
+  flex: 1; /*flex: 1 can stay as is*/
   padding-right: var(--citrusStylesSE-grid-gutter);
   padding-left: var(--citrusStylesSE-grid-gutter);
 }
