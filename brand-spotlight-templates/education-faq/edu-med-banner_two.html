@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Banner</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../../finalized.css">
+</head>
+<style>
+    section {
+        background: #5fc5bf;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .citrusStylesSE-container--large {
+        max-width: 90em;
+    }
+    /* Common Styles */
+    .citrusStylesSE-container h1, h2, h3{
+        font-family: PetcoCircular-Bold, arial!important;
+        font-weight: 700;
+    }
+    .citrusStylesSE-container p{
+        font-family: PetcoCircular-Regular, arial!important;
+        font-weight: normal;
+    }
+    .citrusStylesSE-container a {
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        text-decoration: none;
+        color: #000;
+    }
+    /* Section styles start here */
+    .citrucitrusStyleSE-lifestyle__Image {
+        width: 100%;
+        position: relative;
+    }
+
+    .citrucitrusStyleSE-lifestyle__Image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .citrucitrusStyleSE-lifestyle__text-block {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: #e5f6f5;
+        color: #001952;
+        border-radius: 0 10px 0 0;
+        font-size: 14px;
+        line-height: 20px;
+        width: 269px;
+        }
+
+        .citrucitrusStyleSE-lifestyle__text-block h4 {
+        margin: auto;
+        padding: 10px;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "PetcoCircularTT-Bold", arial !important;
+        }
+
+
+    .citrusStylesSE-grid-text {
+        text-align: center;
+        padding: 0 20px 20px;
+    }
+    .citrusHonest_desktop_br {
+        display: block;
+    }
+    .citrusStylesSE-cta__box {
+
+        margin: 25px auto;
+    }
+    @media (max-width: 63.999em) {
+        .citrusHonest_desktop_br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        section {
+            margin-top: 0px;
+        }
+        .citrusStylesSE-grid-text {
+            
+            padding: 0 20px;
+            margin: 50px auto;
+
+        }
+
+        .citrucitrusStyleSE-lifestyle__Image {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+        }
+        .citrucitrusStyleSE-lifestyle__Image img {
+            top: 0;
+        }
+
+        .citrucitrusStyleSE-lifestyle__text-block {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+    }
+</style>
+
+<body>
+
+    <section class="citrusStylesSE-container citrusStylesSE-container--large">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-grid__cell--width-60@large citrusStylesSE-grid__cell--width-60@medium citrusStylesSE-grid__cell--width-100@xsmall">
+                <div class="citrusStylesSE-grid-text citrusStylesSE-section__title citrusStylesSE-centered">
+                    <h2 class="citrusStylesSE-centered">The first human grade pet food brand</h2>
+                    <p class="citrusStylesSE-centered">he Honest Kitchen uses real ingredients sourced from folks they<br class="citrusHonest_desktop_br">
+                        know and trust. As a Certified B Corporation, they ensure their<br class="citrusHonest_desktop_br">
+                        impact goes beyond the bowl.</p>
+                        <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                            <a href="#" class="citrusStylesSE-url">Shop Now</a>
+                        </div>
+                </div>
+            </div>
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-100@xsmall">
+                
+                <div class="citrucitrusStyleSE-lifestyle__Image">
+
+                    <img src="images/CitrusHonest_Lifestyle_img.png" alt="#" />
+
+                    <div class="citrucitrusStyleSE-lifestyle__text-block">
+                        <h4>Founded in 2002 by Lucy Postins, Chief Integrity Officer</h4>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+
+</html>
