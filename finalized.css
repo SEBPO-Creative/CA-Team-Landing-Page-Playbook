@@ -619,14 +619,12 @@
   /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
   /* CTA Box-Button with background color */
   .citrusStylesSE-cta__box {
-    width: 211px;
-    height: 56px;
-    border-radius: var(--citrusStylesSE-border-radius-5);
-    background: var(--citrusStylesSE-primary-navy);
     margin: 0 auto;
   }
 
   .citrusStylesSE-cta__box .citrusStylesSE-url {
+    border-radius: var(--citrusStylesSE-border-radius-5);
+    background: var(--citrusStylesSE-primary-navy);
     color: var(--citrusStylesSE-white);
     font-size: 16px;
     text-align: center;
@@ -634,6 +632,8 @@
     text-transform: uppercase;
     font-family: "PetcoCircular-Bold", arial !important;
     font-weight: 700;
+    width: 211px;
+    padding: 1.125em 0;
   }
 
   .citrusStylesSE-cta__box .citrusStylesSE-url:hover {
@@ -641,10 +641,11 @@
   }
 }
 
-@media (max-width: 63.99em) {
+@media (max-width: 63.999em) {
   /* Reverse CTA for Box-Button - without background color on Mobile */
-  .citrusStylesSE-cta__box a {
+  .citrusStylesSE-cta__box .citrusStylesSE-url {
     color: var(--citrusStylesSE-primary-navy);
+    padding: 0;
     font-size: 16px;
     text-align: center;
     text-decoration: underline;
