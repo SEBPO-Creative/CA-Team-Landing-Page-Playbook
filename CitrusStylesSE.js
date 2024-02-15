@@ -45,7 +45,7 @@ for (var i = 0; i < citrusStylesSEaccordion.length; i++) {
   citrusStylesSEaccordion[i].addEventListener("click", accordionClickHandler);
 }
 
-// Hero POV
+// *** Hero POV Carousel ***
 let CitrusStylesSEcarousel = document.querySelector(".citrusStylesSE-carousel");
 let CitrusStylesSEcarouselInner = document.querySelector(
   ".citrusStylesSE-carousel__inner "
@@ -245,3 +245,4 @@ function loop(status) {
 document.addEventListener("DOMContentLoaded", function () {
   CitrusStylesSEcarousel.style.display = "flex";
 });
+// *** End Hero POV Carousel ***
