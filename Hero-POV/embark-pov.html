@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="../finalized.css">
     <!-- custom css -->
     <style>
+        .citrusStylesSE-desktop-version {
+            display: block;
+        }
+
+        .citrusStylesSE-mobile-version {
+            display: none;
+        }
+
         /* POV style */
         .citrusStylesSE-carousel {
             width: 100%;
+            max-width: 1440px;
+            margin: auto;
             position: relative;
             display: none;
             justify-content: flex-start;
@@ -46,12 +56,7 @@
         /* pov text */
         .citrusEmbark__pov-img {
             position: relative;
-        }
-
-        .citrusEmbark__pov-img img {
             width: 100%;
-            text-align: center;
-            object-fit: cover;
         }
 
         .citrusEmbark_pov-text {
@@ -75,41 +80,29 @@
             object-fit: contain;
         }
 
+        .citrusStylesSE-cta__box .citrusStylesSE-url {
+            padding: 1.25em;
+        }
+
         h1.citrusEmbark_pov-text__title {
-            margin: 0;
-            font-family: "PetcoCircularTT-Bold";
             font-size: 2rem;
             line-height: 2.1rem;
-            font-weight: bolder;
             color: #000;
         }
 
         p.citrusEmbark_pov-text__subhead {
             margin: 5px 0;
             width: 431px;
+            height: max-content;
             max-width: 95%;
-            font-family: "PetcoCircularTT-Bold";
             font-size: 1rem;
             font-weight: 400;
             color: #000;
         }
 
-        .citrusEmbark_pov-cta {
-            position: relative;
-        }
-
-        .citrusEmbark_pov-cta a {
-            font-family: "PetcoCircularTT-Bold";
-            font-size: 16px;
-            line-height: 22px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #fff;
-            background-color: #001952;
-            padding: 18px 22px 16px;
-            border-radius: 7px;
-            display: inline-block;
-            width: fit-content;
+        .citrusEmbark_pov-text .citrusStylesSE-cta__box {
+            display: flex;
+            margin-top: 10px;
         }
 
         .citrusEmbark_pov-text p.citrusEmbark__disclaimer {
@@ -140,37 +133,13 @@
             background-color: #09205c;
         }
 
-        @media screen and (min-width: 1800px) {
-            .citrusEmbark_pov-logo img {
-                width: 375px;
-                object-fit: contain;
-            }
-
-            h1.citrusEmbark_pov-text__title {
-                font-size: 2.5rem;
-                line-height: 2.8rem;
-            }
-
-            p.citrusEmbark_pov-text__subhead {
-                width: 75%;
-                margin: 5px 0;
-                font-size: 1.5rem;
-                line-height: 1.8rem;
-            }
-
-            .citrusEmbark_pov-cta {
-                margin-top: 20px;
-            }
-
-            .citrusEmbark_pov-cta a {
-                font-size: 18px;
-                padding: 20px 24px 18px;
+        @media (max-width: 63.999em) {
+            .citrusStylesSE-cta__box .citrusStylesSE-url {
+                padding: 0;
             }
         }
 
-        @media screen and (min-width: 922px) and (max-width: 1240px) {}
-
-        @media screen and (min-width: 769px) and (max-width: 1240px) {
+        @media screen and (min-width: 768px) and (max-width: 1240px) {
 
             .citrusStylesSE-carousel,
             .citrusStylesSE-carousel__inner,
@@ -186,7 +155,15 @@
             }
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 767px) {
+            .citrusStylesSE-desktop-version {
+                display: none;
+            }
+
+            .citrusStylesSE-mobile-version {
+                display: block;
+            }
+
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item {
                 align-items: flex-start;
                 flex-wrap: wrap;
@@ -231,12 +208,8 @@
                 margin: 5px auto;
             }
 
-            .citrusEmbark_pov-cta a {
-                background-color: unset;
-                text-transform: capitalize;
-                color: #001952;
-                text-decoration: underline;
-                padding: 0;
+            .citrusEmbark_pov-text .citrusStylesSE-cta__box {
+                justify-content: center;
             }
 
             .citrusEmbark_pov-text p.citrusEmbark__disclaimer {
@@ -253,28 +226,31 @@
             <!-- POV 01 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusEmbark__pov-img">
-                    <img class="citrusEmbark__mobile_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero1"
                         alt="Phone screens show Oliver the dog’s health and breed summaries. Oliver poses with Dog DNA Test box.">
-                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV1Lifestyle"
-                        class="citrusEmbark__desktop_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-mobilversion"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV1Lifestyle"
                         alt="Phone screens show Oliver the dog’s health and breed summaries. Oliver poses with Dog DNA Test box.">
                 </div>
                 <div class="citrusEmbark_pov-text">
                     <div class="citrusEmbark_pov-text__wrapper">
                         <div class="citrusEmbark_pov-logo">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
                                 alt="Embark logo">
                         </div>
                         <div>
-                            <h1 class="citrusEmbark_pov-text__title">KNOW YOUR DOG<br>DOWN TO THEIR DNA</h1>
-                            <p class="citrusEmbark_pov-text__subhead">Decode breed mix, screen for health
+                            <h1 class="citrusStylesSE-header1 citrusEmbark_pov-text__title">KNOW YOUR DOG<br>DOWN TO
+                                THEIR DNA</h1>
+                            <p class="citrusStylesSE-para citrusEmbark_pov-text__subhead">Decode breed mix, screen for
+                                health
                                 conditions, connect
                                 with relatives and more.</p>
-                            <div class="citrusEmbark_pov-cta">
-                                <a href="https://www.petco.com/shop/en/petcostore/product/embark-vet-breed-and-health-dog-dna-test"
-                                    manual_cm_sp="sponsoredbrandpage:embark:herobanner:1:knowyourdogdowntotheirdna:shopbreedkitandhealthkit"
-                                    onclick="clickTrackLink(this);">Shop Breed & Health
+                            <div class="citrusStylesSE-cta__box">
+                                <a class="citrusStylesSE-url"
+                                    href="https://www.petco.com/shop/en/petcostore/product/embark-vet-breed-and-health-dog-dna-test"
+                                    manual_cm_sp="" onclick="clickTrackLink(this);">Shop Breed & Health
                                     Kit</a>
                             </div>
                         </div>
@@ -284,27 +260,29 @@
             <!-- POV 02 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusEmbark__pov-img">
-                    <img class="citrusEmbark__mobile_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero2"
                         alt="Oliver’s health summary on phone screen. Oliver smiles outside.">
-                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV2Lifestyle"
-                        class="citrusEmbark__desktop_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-mobile-version"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV2Lifestyle"
                         alt="Oliver’s health summary on phone screen. Oliver smiles outside.">
                 </div>
                 <div class="citrusEmbark_pov-text">
                     <div class="citrusEmbark_pov-text__wrapper">
                         <div class="citrusEmbark_pov-logo">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
                                 alt="Embark logo">
                         </div>
                         <div>
-                            <h1 class="citrusEmbark_pov-text__title">PROACTIVE CARE<br>YOUR DOG DESERVES</h1>
+                            <h1 class="citrusStylesSE-header1 citrusEmbark_pov-text__title">PROACTIVE CARE<br>YOUR DOG
+                                DESERVES</h1>
                             <p class="citrusEmbark_pov-text__subhead">Learn about your dog’s unique health needs to
                                 help give
                                 them the best care possible.</p>
-                            <div class="citrusEmbark_pov-cta">
-                                <a href="https://www.petco.com/shop/en/petcostore/brand/embark-vet"
-                                    manual_cm_sp="sponsoredbrandpage:embark:herobanner:2:proactivecareyourdogdeserves:shopkits"
+                            <div class="citrusStylesSE-cta__box">
+                                <a class="citrusStylesSE-url"
+                                    href="https://www.petco.com/shop/en/petcostore/brand/embark-vet" manual_cm_sp=""
                                     onclick="clickTrackLink(this);">Shop Kits</a>
                             </div>
                         </div>
@@ -314,28 +292,30 @@
             <!-- POV 03 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusEmbark__pov-img">
-                    <img class="citrusEmbark__mobile_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero3"
                         alt="Closed Dog DNA Test box next to an open box featuring the 3-step instructions and test swab.">
-                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV3Lifestyle"
-                        class="citrusEmbark__desktop_hide"
+                    <img class="citrusStylesSE-img citrusStylesSE-mobile-version"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV3Lifestyle"
                         alt="Closed Dog DNA Test box next to an open box featuring the 3-step instructions and test swab.">
                 </div>
                 <div class="citrusEmbark_pov-text">
                     <div class="citrusEmbark_pov-text__wrapper">
                         <div class="citrusEmbark_pov-logo">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-logo"
                                 alt="Embark logo">
                         </div>
                         <div>
-                            <h1 class="citrusEmbark_pov-text__title">THE MOST SCIENTIFICALLY<br>ADVANCED DOG DNA
+                            <h1 class="citrusStylesSE-header1 citrusEmbark_pov-text__title">THE MOST
+                                SCIENTIFICALLY<br>ADVANCED DOG DNA
                                 TEST*
                             </h1>
                             <p class="citrusEmbark_pov-text__subhead">Developed in partnership with the Cornell
                                 University College of Veterinary Medicine.</p>
-                            <div class="citrusEmbark_pov-cta">
-                                <a href="https://www.petco.com/shop/en/petcostore/brand/embark-vet"
-                                    manual_cm_sp="sponsoredbrandpage:embark:herobanner:3:themostscientificallyadvanceddogdnatest:shopembark"
+                            <div class="citrusStylesSE-cta__box">
+                                <a class="citrusStylesSE-url"
+                                    href="https://www.petco.com/shop/en/petcostore/brand/embark-vet" manual_cm_sp=""
                                     onclick="clickTrackLink(this);">Shop Embark</a>
                             </div>
                             <p class="citrusEmbark__disclaimer">*Based on competitor analysis on
@@ -355,7 +335,8 @@
     <!-- End POV slider -->
 
 
-    <script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script>
+    <!-- <script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script> -->
+    <script src="../CitrusStylesSE.js"></script>
 </body>
 
 </html>
