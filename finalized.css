@@ -168,13 +168,11 @@
   color: var(--citrusStylesSE-primary-navy);
 }
 
-.citrusStylesSE-container{
+.citrusStylesSE-container {
   max-width: 90em;
   margin: 0 auto;
 }
 
-
- 
 /* ===================== Accordion ===================== */
 /* Style the buttons that are used to open and close the accordion panel */
 .citrusStylesSE-accordion {
@@ -190,12 +188,13 @@
   transition: 0.4s;
 }
 
-.citrusStylesSE-accordion--active, .citrusStylesSE-accordion:hover {
+.citrusStylesSE-accordion--active,
+.citrusStylesSE-accordion:hover {
   background-color: #ccc;
 }
 
 .citrusStylesSE-accordion:after {
-  content: '\002B';
+  content: "\002B";
   color: var(--citrusStylesSE-black);
   font-weight: bold;
   float: right;
@@ -214,7 +213,6 @@
   transition: max-height 0.2s ease-out;
 }
 /* End Accordion */
-
 
 /* ===================== Hero - Carousel POV ===================== */
 /* All sizes containers styles */
@@ -668,6 +666,7 @@
   /* CTA Box-Button with background color */
   .citrusStylesSE-cta__box {
     margin: 0 auto;
+    display: flex;
   }
 
   .citrusStylesSE-cta__box .citrusStylesSE-url {
@@ -690,6 +689,7 @@
 }
 
 @media (max-width: 63.999em) {
+  /*max with 767px*/
   /* Reverse CTA for Box-Button - without background color on Mobile */
   .citrusStylesSE-cta__box .citrusStylesSE-url {
     color: var(--citrusStylesSE-primary-navy);
