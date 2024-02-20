@@ -664,7 +664,8 @@
 @media (min-width: 64em) {
   /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
   /* CTA Box-Button with background color */
-  .citrusStylesSE-cta__box {
+  .citrusStylesSE-cta__box,
+  .citrusStylesSE-cta__box-white {
     margin: 0 auto;
     display: flex;
   }
@@ -683,8 +684,32 @@
     padding: 1.125em 0;
   }
 
+  .citrusStylesSE-cta__box .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:focus-visible{
+    outline: none;
+  }
+
   .citrusStylesSE-cta__box .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-white);
+  }
+
+  /* CTA Box-Button with white background color */
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+    border-radius: var(--citrusStylesSE-border-radius-5);
+    background: var(--citrusStylesSE-white);
+    color: var(--citrusStylesSE-primary-navy);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+    width: 211px;
+    padding: 1.125em 0;
+  }
+
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:hover {
+    color: var(--citrusStylesSE-primary-navy);
   }
 }
 
@@ -701,7 +726,28 @@
     font-weight: 700;
   }
 
+  
+  .citrusStylesSE-cta__box .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:focus-visible{
+    outline: none;
+  }
+
   .citrusStylesSE-cta__box a:hover {
+    color: var(--citrusStylesSE-primary-navy);
+  }
+
+  /* Reverse CTA for Box-Button - white without background color on Mobile */
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+    color: var(--citrusStylesSE-primary-navy);
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+  }
+
+  .citrusStylesSE-cta__box-white a:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
 }
