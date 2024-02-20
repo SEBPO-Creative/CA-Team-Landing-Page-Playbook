@@ -738,7 +738,7 @@
 
   /* Reverse CTA for Box-Button - white without background color on Mobile */
   .citrusStylesSE-cta__box-white .citrusStylesSE-url {
-    color: var(--citrusStylesSE-primary-navy);
+    color: var(--citrusStylesSE-white);
     padding: 0;
     font-size: 16px;
     text-align: center;
@@ -748,7 +748,7 @@
   }
 
   .citrusStylesSE-cta__box-white a:hover {
-    color: var(--citrusStylesSE-primary-navy);
+    color: var(--citrusStylesSE-white);
   }
 }
 
