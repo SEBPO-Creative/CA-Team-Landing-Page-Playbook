@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        /* Timeline Custom CSS */
+        .citrusStyleSE-timeline__container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-grid {
+            gap: 20px;
+        }
+
+        .citrusStyleSE-timeline__img img {
+            max-width: 100%;
+        }
+
+        .citrusStyleSE-timeline__citrusStyleSE_timeline__steps {
+            margin: 0 auto;
+        }
+
+        .citrusStyleSE_timeline__step {
+            display: flex;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                left: 15px;
+                top: 32px;
+                height: 0;
+                width: 2px;
+                background-color: #001952;
+            }
+
+            .citrusStyleSE_timeline__info {
+                margin: 0px 0 73px;
+            }
+
+            .citrusStyleSE_timeline__title {
+                font-family: PetcoCircular-Bold, arial !important;
+                font-weight: 700;
+                font-size: 25px;
+                margin: 0 0 8px;
+                color: #001952;
+            }
+
+            .citrusStyleSE_timeline__text {
+                font-family: PetcoCircular-Regular, arial !important;
+                font-weight: normal;
+                font-size: 18px;
+                color: #000;
+                padding-bottom: 0;
+                margin: 0;
+            }
+
+            &:not(:last-child) {
+                &:after {
+                    height: 100%;
+                    margin-left: 1.5px;
+                }
+            }
+        }
+
+        .citrusStyleSE_timeline__number {
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 2px solid #001952;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            margin-right: 20px;
+            background-color: #001952;
+            font-family: PetcoCircular-Bold, arial !important;
+            font-weight: 700;
+
+            &.completed {
+                background-color: #001952;
+            }
+
+        }
+
+        @media screen and (max-width:767px) {
+            .citrusStylesSE-grid {
+                flex-wrap: wrap;
+            }
+
+            .citrusStyleSE-timeline__wrapper {
+                width: 98%;
+                margin: auto;
+            }
+        }
+
+        @media screen and (max-width:319px) {
+            .citrusStylesSE-grid {
+                flex-direction: column;
+            }
+        }
+
+        /* End Timeline CSS */
+    </style>
+</head>
+
+<body>
+    <div class="citrusStyleSE-timeline__container">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid--no-gutter">
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-40@large">
+                <div class="citrusStyleSE-timeline__img">
+                    <img alt="placeholder" class="citrusStylesSE-image"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_instinct_transitionTo_raw_dsk">
+                </div>
+            </div>
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-60@medium citrusStylesSE-grid__cell--width-60@large">
+                <div class='citrusStyleSE-timeline__wrapper'>
+                    <div class='citrusStyleSE-timeline__steps' id='citrusStyleSE-timeline__steps'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Js -->
+    <script>
+        let steps = document.querySelector("#citrusStyleSE-timeline__steps");
+        let wizards = [
+            {
+                complete: false,
+                number: 1,
+                title: "1st Headline Goes Here",
+                text:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? "
+            },
+            {
+                complete: false,
+                number: 2,
+                title: "2nd Headline Goes Here",
+                text:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? "
+            },
+            {
+                complete: false,
+                number: 3,
+                title: "3rd Headline Goes Here",
+                text:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? "
+            },
+
+            {
+                complete: false,
+                number: 4,
+                title: "4th Headline Goes Here",
+                text:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? "
+            },
+
+            {
+                complete: false,
+                number: 5,
+                title: "5th Headline Goes Here",
+                text:
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat pariatur minima nemo? "
+            },
+        ];
+
+        steps.innerHTML = wizards
+            .map(function (wizard) {
+                return (
+                    `<div class='citrusStyleSE_timeline__step'>` +
+                    `<div class='citrusStyleSE_timeline__number'>${wizard.number} </div>` +
+                    `<div class='citrusStyleSE_timeline__info'>` +
+                    `<p class='citrusStyleSE_timeline__title'>${wizard.title}</p>` +
+                    `<p class='citrusStyleSE_timeline__text'>${wizard.text}</p>` +
+                    "</div>" +
+                    "</div>"
+                );
+            })
+            .join("");
+    </script>
+</body>
+
+</html>
