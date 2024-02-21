@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ************** Product Scroller Card With Lifestyle Image *************************** */
+    .citrusStyleSE-lifestyle-product {
+      width: 1240px;
+      max-width: 100%;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+
+    .citrusStyleSE-lifestyle-product h2 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      font-family: "PetcoCircular-Bold", arial !important;
+      font-weight: 900;
+      font-size: 25px;
+    }
+
+    .citrusStyleSE-lifestyle-product-content {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #000;
+      padding: 14px 20px 25px 0;
+    }
+
+    .citrusStyleSE-lifestyle-product-content p {
+      margin: 0;
+      font-family: "PetcoCircular-Regular", arial !important;
+      font-size: 16px;
+      padding-right: 20px;
+    }
+
+    .citrusStyleSE-lifestyle-product-content--cta {
+      font-family: "PetcoCircular-Bold", arial !important;
+      font-weight: bold;
+      color: #001952;
+      text-decoration: underline;
+      text-transform: capitalize;
+      font-size: 16px;
+      min-width: max-content;
+    }
+
+    /* Lifestyle Image and Product Container */
+    .citrusStyleSE-lifestyle-product--row {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      align-items: center;
+      margin-top: 20px;
+      /* grid-gap: 15px; */
+    }
+
+    .citrusStyleSE-lifestyle-product--col {
+      position: relative;
+    }
+
+    .citrusStyleSE-lifestyle-product--col img {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+    .citrusStyleSE-lifestyle-img--copy img {
+      object-fit: contain;
+      position: absolute;
+    }
+
+    .citrusStyleSE-lifestyle-img--copy p {
+      width: 118px;
+      position: absolute;
+      left: 2%;
+      top: 50%;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #001951;
+      font-family: "PetcoCircular-Regular", arial !important;
+    }
+
+    #citrusStyleSE-lifestyle-copy--arrow {
+      position: absolute;
+      left: 11%;
+      top: 61%;
+      width: auto;
+      height: 40px;
+    }
+
+    .citrusStyleSE-product--row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+    }
+
+    .citrusStyleSE-product--card__img {
+      text-align: center;
+      margin-top: 3px;
+      height: 170px;
+    }
+
+    .citrusStyleSE-product--card__img img {
+      width: 190px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .citrusStyleSE-product--card__txt {
+      font-family: "PetcoCircular-Regular", arial !important;
+      font-size: 16px;
+    }
+
+    .citrusStyleSE-product--card__txt p {
+      font-family: "PetcoCircular-Regular", arial !important;
+      color: #333333;
+      font-size: 13px;
+      text-align: left;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /* max-height: 4em; */
+      margin-bottom: 24px;
+    }
+
+
+    .citrusStyleSE-product--card__txt a {
+      font-family: "PetcoCircular-Bold", arial !important;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #001952;
+    }
+
+    .citrusStyleSE-lifestyle-product--disclaimer {
+      font-family: "PetcoCircular-Regular", arial !important;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+    .citrusStyleSE-lifestyle-img {
+      padding-right: 30px;
+    }
+
+
+    /* some common style */
+    .citrusStyleSE-d-hide {
+      display: none;
+    }
+
+    .citrusStyleSE-m-hide {
+      display: block;
+    }
+
+    /* Hide Scrollbar */
+    .citrusStyleSE-product--container {
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    /* Hide Scrollbar */
+    .citrusStyleSE-product--container::-webkit-scrollbar {
+      display: none;
+      /* Safari and Chrome */
+    }
+
+    @media screen and (max-width:1250px) {
+      .citrusStyleSE-lifestyle-product {
+        /* padding: 0 20px; */
+      }
+    }
+
+
+    @media all and (min-width: 769px) and (max-width: 991px) {
+      /* ---------------------- */
+
+
+      .citrusStyleSE-product--card__img {
+        height: 140px;
+      }
+
+      .citrusStyleSE-product--card__txt p {
+        font-size: 12px;
+      }
+    }
+
+    @media all and (max-width: 768px) {
+      .citrusStyleSE-d-hide {
+        display: block;
+      }
+
+      .citrusStyleSE-m-hide {
+        display: none;
+      }
+
+      .citrusStyleSE-lifestyle-product h2 {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .citrusStyleSE-lifestyle-product-content {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        border-color: #fff;
+      }
+
+      .citrusStyleSE-lifestyle-product--row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        grid-gap: 0px;
+      }
+
+      .citrusStyleSE-product--container {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      .citrusStyleSE-lifestyle-img {
+        padding-right: 0px;
+      }
+
+      .citrusStyleSE-lifestyle-img--copy p {
+        left: 25.5%;
+        top: 68%;
+      }
+
+      .citrusStyleSE-product--row {
+        margin-top: 20px;
+        display: flex;
+        width: 170%;
+      }
+
+      .citrusStyleSE-product--card__img {
+        height: 150px;
+      }
+
+      .citrusStyleSE-product--card {
+        margin-bottom: 15px;
+      }
+
+      .citrusStyleSE-product--container {
+        padding-left: 20px;
+      }
+
+    }
+
+    @media all and (max-width: 680px) {
+      .citrusStyleSE-product--row {
+        width: 185%;
+      }
+    }
+
+    @media all and (max-width: 620px) {
+      .citrusStyleSE-product--row {
+        width: 200%;
+      }
+    }
+
+    @media all and (max-width: 575px) {
+      .citrusStyleSE-product--row {
+        width: 220%;
+      }
+    }
+
+    @media all and (max-width: 520px) {
+      .citrusStyleSE-product--row {
+        width: 240%;
+      }
+    }
+
+    @media all and (max-width: 425px) {
+      .citrusStyleSE-lifestyle-img--copy p {
+        left: 20.5%;
+        top: 62%;
+      }
+
+      .citrusStyleSE-product--row {
+        width: 290%;
+      }
+    }
+
+    @media all and (max-width: 375px) {
+      .citrusStyleSE-lifestyle-img--copy p {
+        left: 18.5%;
+        top: 60%;
+      }
+
+      .citrusStyleSE-product--row {
+        width: 300%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!---------------------- Product Scroller With Lifestyle Image Card V2 ----------------------------- -->
+  <section class="citrusStyleSE-lifestyle-product">
+    <div>
+      <h2>
+        Headline <br class="citrusStyleSE-d-hide" />Goes Here
+      </h2>
+    </div>
+    <div class="citrusStyleSE-lifestyle-product-content">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi doloremque sit molestias, omnis corrupti
+        dignissimos facere soluta sint. Vitae, porro.
+      </p>
+      <a class="citrusStyleSE-lifestyle-product-content--cta citrusStyleSE-m-hide" href="" manual_cm_sp=""
+        onclick="clickTrackLink(this);">Shop All</a>
+    </div>
+    <!-- <div class="citrusStyleSE-lifestyle-product--container"> -->
+    <div class="citrusStyleSE-lifestyle-product--row">
+      <!-- left column -->
+      <div class="citrusStyleSE-lifestyle-product--col">
+        <div class="citrusStyleSE-lifestyle-img">
+          <img class="citrusStyleSE-m-hide"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_cat_premium_pate_desktop"
+            alt="" />
+          <img class="citrusStyleSE-d-hide"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_cat_premium_pate_mobile"
+            alt="" />
+        </div>
+        <div class="citrusStyleSE-lifestyle-img--copy">
+          <p>in-image copy goes here</p>
+
+          <img class="citrusStyleSE-m-hide" id="citrusStyleSE-lifestyle-copy--arrow"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_premium_pate_arrow" alt="" />
+        </div>
+      </div>
+      <!-- right column -->
+      <div class="citrusStyleSE-lifestyle-product--col">
+        <div class="citrusStyleSE-product--container">
+          <div class="citrusStyleSE-product--row">
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 41" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 41" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 42" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 43" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 44" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- single product -->
+            <div class="citrusStyleSE-product--col">
+              <div class="citrusStyleSE-product--card">
+                <div class="citrusStyleSE-product--card__img">
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/acana-Image 45" alt="" />
+                  </a>
+                </div>
+                <div class="citrusStyleSE-product--card__txt">
+                  <p>
+                    Product Name Goes Here
+                  </p>
+                  <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- disclaimer -->
+    <p class="citrusStyleSE-lifestyle-product--disclaimer">*Legal Copy Goes Here</p>
+    <!-- </div> -->
+  </section>
+  <!---------------------- Product Scroller With Lifestyle Image Card V2 ----------------------------->
+</body>
+
+</html>
