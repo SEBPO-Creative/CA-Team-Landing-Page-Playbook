@@ -110,3 +110,6 @@
 
 ## 12 February 2024 by Masudur-Rahman
 - Species Product Tab Scroller 100% completed
+
+## 21 February 2024 by Shahinur
+- Merrick pov carousel 50% completed
