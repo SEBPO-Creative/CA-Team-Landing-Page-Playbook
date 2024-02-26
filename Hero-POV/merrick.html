@@ -19,10 +19,24 @@
                 background-repeat: no-repeat;
             }
 
+            .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov__img img{
+                max-width: 311px;
+            }
+
             .citrusStylesSE-carousel__inner--item{
                 align-items: center;
                 background: unset;
             }
+
+            .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                text-align: center;
+            }
+
+            .citrusStylesSE-pov__text .citrusStylesSE-para{
+                text-align: center;
+                padding: 20px 0;
+            }
+
             .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
                 
             }
@@ -32,6 +46,31 @@
             .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
                 
             }
+
+            /* ===================== Responsive Media Break-Point ===================== */
+            /* All the common used break-point adding here */
+
+            @media (min-width: 64em) {
+                .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov__img:last-child{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: 36px;
+                    color: var(--citrusStylesSE-white);
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: 18px;
+                    color: var(--citrusStylesSE-white);
+                }
+            }
+
+            @media (max-width: 63.999em) {
+           
+            }
+
 		
 
             /* ----------------------------------------- */
@@ -45,10 +84,10 @@
 			<div class="citrusStylesSE-carousel__inner">
 				<!-- POV 01 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-100@xsmall">
                         <img src="images/citrus-merrick-pov1-img1.png" alt="">
                     </div>
-                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall">
                         <h2 class="citrusStylesSE-header1">TRY THE MERRICK DIFFERENCE</h2>
                         <p class="citrusStylesSE-para">Making the right choice is easy with Merrick. Choose from a variety of options, including Grain-Free or with Healthy Grains recipes.</p>
                         <div class="citrusStylesSE-cta__box">
@@ -56,7 +95,7 @@
                             <a href="" class="citrusStylesSE-url">Shop Cat</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-100@xsmall">
                         <img src="images/citrus-merrick-pov1-img2.png" alt="">
                     </div>
 				</div>
