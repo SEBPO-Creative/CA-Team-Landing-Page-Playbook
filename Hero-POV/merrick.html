@@ -20,12 +20,14 @@
             }
 
             .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov__img img{
-                max-width: 311px;
+                max-width: 320px;
             }
 
             .citrusStylesSE-carousel__inner--item{
                 align-items: center;
                 background: unset;
+                max-height: 240px;
+                min-height: 240px;
             }
 
             .citrusStylesSE-pov__text .citrusStylesSE-header1{
@@ -34,23 +36,28 @@
 
             .citrusStylesSE-pov__text .citrusStylesSE-para{
                 text-align: center;
-                padding: 20px 0;
+                padding: 12px 0 20px;
+                max-width: 600px;
+                margin: 0 auto;
             }
 
-            .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
-                
+            .citrusStylesSE-cta__box-white{
+                gap: 20px;
             }
-            .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov3 {
-                
-            }
-            .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
-                
+
+            .citrusStylesSE-grid__cell{
+                padding-left: 0;
+                padding-right: 0;
             }
 
             /* ===================== Responsive Media Break-Point ===================== */
             /* All the common used break-point adding here */
+            @media (min-width: 64em) and (max-width: 77.99em) {
+            /* min-width:1024px and max-width: 1247.99*/
+            
+            }
 
-            @media (min-width: 64em) {
+            @media (min-width: 64em) { /* min-width: 1024px */
                 .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov__img:last-child{
                     display: flex;
                     justify-content: flex-end;
@@ -65,10 +72,90 @@
                     font-size: 18px;
                     color: var(--citrusStylesSE-white);
                 }
+
+                .citrusStylesSE-pov__text{
+                    min-width: 50%;
+                }
+
+                
+                .citrusStylesSE-pov3 .citrusStylesSE-pov__text {
+                    min-width: 60%;
+                }
             }
 
+            @media (min-width: 48em) and (max-width: 63.99em) { 
+                .citrusStylesSE-pov__text{
+                    min-width: 50%;
+                }
+
+                .citrusStylesSE-pov3 .citrusStylesSE-pov__text {
+                    min-width: 60%;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    font-size: 20px !important;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: 14px !important;
+                }
+           }
+
             @media (max-width: 63.999em) {
-           
+                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: 20px;
+                    color: var(--citrusStylesSE-white);
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: 14px;
+                    color: var(--citrusStylesSE-white);
+                    text-align: center;
+                    padding: 10px 0;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: 25px;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                .citrusStylesSE-carousel__inner--item {
+                    max-height: unset;
+                }
+
+                .citrusStylesSE-pov__img:first-child img:nth-child(2){
+                    max-width: 130px;
+                    margin: 20px auto 15px;
+
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: 25px;
+                    max-width: 290px;
+                    line-height: 25px;
+                    margin: 0 auto;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 10px 0 20px;
+                    max-width: 350px;
+                }
+
+                .citrusStylesSE-cta__box-white{
+                    gap: 60px;
+                }
+                
             }
 
 		
@@ -83,53 +170,56 @@
 		<section class="citrusStylesSE-carousel citrusStylesSE-container">
 			<div class="citrusStylesSE-carousel__inner">
 				<!-- POV 01 -->
-				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-100@xsmall">
-                        <img src="images/citrus-merrick-pov1-img1.png" alt="">
+				<div class="citrusStylesSE-carousel__inner--item">
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="images/citrus-merrick-pov1-img1.png" alt="" class="citrusStylesSE-m-hide">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" alt="" class="citrusStylesSE-d-hide">
                     </div>
-                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__text">
                         <h2 class="citrusStylesSE-header1">TRY THE MERRICK DIFFERENCE</h2>
                         <p class="citrusStylesSE-para">Making the right choice is easy with Merrick. Choose from a variety of options, including Grain-Free or with Healthy Grains recipes.</p>
-                        <div class="citrusStylesSE-cta__box">
+                        <div class="citrusStylesSE-cta__box-white">
                             <a href="" class="citrusStylesSE-url">Shop Dog</a>
                             <a href="" class="citrusStylesSE-url">Shop Cat</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-40@large citrusStylesSE-grid__cell--width-100@xsmall">
-                        <img src="images/citrus-merrick-pov1-img2.png" alt="">
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="images/citrus-merrick-pov1-img2.png" alt="" class="citrusStylesSE-m-hide">
+                        <img src="images/citrus-merrick-pov1-img-mob.png" alt="" class="citrusStylesSE-d-hide">
                     </div>
 				</div>
 				<!-- POV 02 -->
-				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
-                        <img src="images/citrus-merrick-pov1-img1.png" alt="">
+				<div class="citrusStylesSE-carousel__inner--item">
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="images/citrus-merrick-pov1-img1.png" alt="" class="citrusStylesSE-m-hide">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" alt="" class="citrusStylesSE-d-hide">
                     </div>
-                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
-                        <h2 class="citrusStylesSE-header1">TRY THE MERRICK DIFFERENCE</h2>
-                        <p class="citrusStylesSE-para">Making the right choice is easy with Merrick. Choose from a variety of options, including Grain-Free or with Healthy Grains recipes.</p>
-                        <div class="citrusStylesSE-cta__box">
+                    <div class="citrusStylesSE-pov__text">
+                        <h2 class="citrusStylesSE-header1">REAL WHOLE FOODS</h2>
+                        <p class="citrusStylesSE-para">Premium ingredients from real meats as well as fresh fruits and vegetables for superior nutrition and delicious taste.</p>
+                        <div class="citrusStylesSE-cta__box-white">
                             <a href="" class="citrusStylesSE-url">Shop Dog</a>
                             <a href="" class="citrusStylesSE-url">Shop Cat</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__img">
                         <img src="images/citrus-merrick-pov1-img2.png" alt="">
                     </div>
 				</div>
                 <!-- POV 03 -->
-				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
-                        <img src="images/citrus-merrick-pov1-img1.png" alt="">
+				<div class="citrusStylesSE-carousel__inner--item">
+                    <div class="citrusStylesSE-pov__img ">
+                        <img src="images/citrus-merrick-pov1-img1.png" alt="" class="citrusStylesSE-m-hide">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" alt="" class="citrusStylesSE-d-hide">
                     </div>
-                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
-                        <h2 class="citrusStylesSE-header1">TRY THE MERRICK DIFFERENCE</h2>
-                        <p class="citrusStylesSE-para">Making the right choice is easy with Merrick. Choose from a variety of options, including Grain-Free or with Healthy Grains recipes.</p>
-                        <div class="citrusStylesSE-cta__box">
+                    <div class="citrusStylesSE-pov__text ">
+                        <h2 class="citrusStylesSE-header1">FEED THEM A PROTEIN-RICH ANCESTRAL DIET</h2>
+                        <p class="citrusStylesSE-para">Delivers a unique combination of freeze-dried, raw-coated kibble with real freeze-dried raw pieces of meat, fish or poultry.</p>
+                        <div class="citrusStylesSE-cta__box-white">
                             <a href="" class="citrusStylesSE-url">Shop Dog</a>
-                            <a href="" class="citrusStylesSE-url">Shop Cat</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall">
+                    <div class="citrusStylesSE-pov__img ">
                         <img src="images/citrus-merrick-pov1-img2.png" alt="">
                     </div>
 				</div>

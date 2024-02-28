@@ -154,6 +154,15 @@
   padding: 0;
 }
 
+/* Show/Hide Class */
+.citrusStylesSE-d-hide{ /* Hide one desktop */
+  display: none;
+}
+
+.citrusStylesSE-m-hide{ /* Hide one mobile */
+  display: block;
+}
+
 .citrusStylesSE-cta__underline {
   display: block;
   text-align: center;
@@ -649,6 +658,15 @@
 /* ===================== Responsive Media Break-Point ===================== */
 /* All the common used break-point adding here */
 
+ /*Common block for CTA Box-Button with background color */
+.citrusStylesSE-cta__box,
+.citrusStylesSE-cta__box-white {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 20em) and (max-width: 29.99em) {
   /* min-width:320px and max-width: 479.99*/
 }
@@ -668,12 +686,6 @@
 @media (min-width: 64em) {
   /* min-width:1024px, we could make the box-button styles on this break-point. The underline button will be apply below the 63.99em (1023.99px) */
   /* CTA Box-Button with background color */
-  .citrusStylesSE-cta__box,
-  .citrusStylesSE-cta__box-white {
-    margin: 0 auto;
-    display: flex;
-  }
-
   .citrusStylesSE-cta__box .citrusStylesSE-url {
     border-radius: var(--citrusStylesSE-border-radius-5);
     background: var(--citrusStylesSE-primary-navy);
@@ -719,6 +731,7 @@
 
 @media (max-width: 63.999em) {
   /*max with 767px*/
+
   /* Reverse CTA for Box-Button - without background color on Mobile */
   .citrusStylesSE-cta__box .citrusStylesSE-url {
     color: var(--citrusStylesSE-primary-navy);
@@ -754,6 +767,7 @@
   .citrusStylesSE-cta__box-white a:hover {
     color: var(--citrusStylesSE-white);
   }
+
 }
 
 @media (min-width: 63.99em) {
@@ -766,6 +780,24 @@
 
 @media (max-width: 47.99em) {
   /* max-width:767.99px, all the mobile styles can be used this break-point*/
+
+  
+  /* Show/Hide Class */
+  .citrusStylesSE-d-hide{ /* Hide one desktop */
+    display: block;
+  }
+
+  .citrusStylesSE-m-hide{ /* Hide one mobile */
+    display: none;
+  }
+
+  
+  /* Hero POV flex directions column in mobile */
+  .citrusStylesSE-carousel__inner--item{
+    flex-direction: column;
+  }
+
+
 }
 
 /* Small Devices */
