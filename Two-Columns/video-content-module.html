@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-content-module</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+</head>
+<style>
+    .citusStyleSE-media-content__banner {
+        background: #D8BDDC;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .citusStyleSE-media-content__container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .citrusStylesSE-grid__cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .citusStyleSE-media-content__banner p {
+        font-family: "PetcoCircular-Regular", arial !important;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .citrusStyleSE-iframe {
+        width: 100%;
+        max-width: 550px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .citrusStyleSE-iframe iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -30px;
+        border-radius: 6px;
+    }
+
+    .citrusStylesSE-grid-text {
+        text-align: center;
+        padding: 0 100px 20px;
+    }
+
+    .citrusStylesSE-grid-text h2 {
+        font-family: "PetcoCircular-Bold", arial !important;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width:767px) {
+        .citrusStylesSE-grid-text {
+            padding: 0 40px 20px;
+        }
+
+        .citrusStyleSE-iframe iframe {
+            top: 0;
+        }
+    }
+
+    @media screen and (max-width: 319px) {
+        .citrusStylesSE-grid {
+            flex-wrap: wrap;
+        }
+    }
+</style>
+
+<body>
+    <section class="citrusStylesSE-container citusStyleSE-media-content__banner">
+        <div class="citusStyleSE-media-content__container">
+            <div
+                class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-centered">
+                    <div class="citrusStylesSE-grid-text">
+                        <h2 class="citrusStylesSE-heading citrusStylesSE-centered">Leave old school clay and chemicals
+                            in
+                            the dust</h2>
+                        <p class="citrusStylesSE-centered citrusStyleSE-paragraph">Made entirely of sustainably sourced
+                            wood
+                            or paper fiber free of fragrance,chemicals and dyes.</p>
+                        <h2 class="citrusStylesSE-heading citrusStylesSE-centered">Leave old school clay and chemicals
+                            in
+                            the dust</h2>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
+                    <div class="citrusStyleSE-iframe">
+                        <iframe src="https://www.youtube.com/embed/zmaM9LmRlnQ" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <b>Quod.iste</b>!</p>
+        </div>
+    </section>
+</body>
+
+</html>
