@@ -61,7 +61,7 @@ let activeSlide = 0;
 let activeIndicator = 0;
 let direction = -1;
 let jump = 1;
-let interval = 5000;
+let interval = 50000;
 let time;
 //Init CitrusStylesSEcarousel
 CitrusStylesSEcarouselInner.style.minWidth = totalSlides * 100 + "%";

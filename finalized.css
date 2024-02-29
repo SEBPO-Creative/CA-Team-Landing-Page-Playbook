@@ -259,19 +259,19 @@
 .citrusStylesSE-carousel-indicators {
   position: absolute;
   bottom: 0;
-  left: calc(100% / 2 - 52px);
+  left: calc(100% / 2 - 47px);
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px 5px 0 0;
-  padding: 10px 10px 5px;
+  padding: 8px 9.5px 5px;
 }
 .citrusStylesSE-carousel-indicators span {
   display: inline-block;
-  border: 2px solid #09205c;
-  padding: 7px;
+  border: 1px solid #09205c;
+  padding: 5.5px;
   border-radius: 20px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 .citrusStylesSE-carousel-indicators span.active {
   background-color: #09205c;
