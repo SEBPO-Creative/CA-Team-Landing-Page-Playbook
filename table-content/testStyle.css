@@ -1,70 +1,67 @@
 /* hide scroll bar */
-.citrusTrio__comparison--container::-webkit-scrollbar {
+.citrusStylesSE-container::-webkit-scrollbar {
   display: none;
 }
 /* hide scroll bar IE firefox */
-.citrusTrio__comparison--container {
+.citrusStylesSE-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
 /* comparison imran */
-.citrusTrio__comparison--container {
+.citrusStylesSE-table--container {
   width: 1440px;
   max-width: 100%;
   margin: auto;
   overflow: auto;
 }
 
-.citrusTrio__comparison-chart {
+.citrusStylesSE-table {
   width: 1440px;
 }
 
-.citrusTrio__comparison-chart .citrusTrio__comparison-row {
+.citrusStylesSE-table .citrusStylesSE-table--row {
   position: relative;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
-.citrusTrio__comparison-chart
-  .citrusTrio__comparison-row
-  .citrusTrio__Comparison--col-2 {
+.citrusStylesSE-table .citrusStylesSE-table--row .citrusStylesSE-table--col-2 {
   width: 263px;
 }
 
-.citrusTrio__comparison-chart
-  .citrusTrio__comparison-row.thead
-  .citrusTrio__Comparison--col-2
+.citrusStylesSE-table
+  .citrusStylesSE-table--row.thead
+  .citrusStylesSE-table--col-2
   img {
   max-width: 210px;
 }
 
-.citrusTrio__comparison-row .citrusTrio__Comparison--col-2 {
+.citrusStylesSE-table--row .citrusStylesSE-table--col-2 {
   border-right: 5px solid rgba(100, 201, 209, 0.3);
   border-left: 5px solid rgba(100, 201, 209, 0.3);
 }
 
-.citrusTrio__comparison-row.thead .citrusTrio__Comparison--col-2 {
+.citrusStylesSE-table--row.thead .citrusStylesSE-table--col-2 {
   border-top: 5px solid rgba(100, 201, 209, 0.3);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-.citrusTrio__comparison-row
-  .citrusTrio__Comparison--col-2.bottom-radius-border {
+.citrusStylesSE-table--row .citrusStylesSE-table--col-2.bottom-radius-border {
   border-bottom: 5px solid rgba(100, 201, 209, 0.3);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
-.citrusTrio__comparison-chart .thead img {
+.citrusStylesSE-table .thead img {
   padding: 3em 0;
   max-width: 133px;
   margin: 0 auto;
 }
 
-.title h2 {
+.citrusStylesSE-table--Cell-title h2 {
   font-size: 18px;
   color: #000;
   display: flex;
@@ -78,7 +75,7 @@
   border-bottom: 1px solid #aeaeae;
 }
 
-.citrusTrio__check-mark,
+.citrusStylesSE-check-mark,
 .citrusTrio__radio {
   height: 73px;
   display: flex;
@@ -86,7 +83,7 @@
   justify-content: center;
 }
 
-.citrusTrio__check-mark img {
+.citrusStylesSE-check-mark img {
   width: 17.17px;
   height: 20px;
   object-fit: contain;
@@ -109,6 +106,7 @@
 }
 
 .chart-cta {
+  margin: auto;
   margin-top: 11px;
   margin-bottom: 20px;
   width: 203px;
@@ -126,53 +124,59 @@
   top: 27px;
 }
 
-.chart-disclaimer .citrusTrio__disclaimer {
+.chart-disclaimer .citrusStylesSE-disclaimer {
   margin: 0 0 0 10px;
   text-align: left;
   font-size: 12px !important;
 }
-
+.citrusStylesSE-url {
+  color: var(--citrusStylesSE-white);
+}
 /* imran */
 @media screen and (max-width: 767px) {
   /* comparison */
-  .citrusTrio__comparison-chart {
+  .citrusStylesSE-table {
     width: 1000px;
   }
 
-  .citrusTrio__comparison-chart
-    .citrusTrio__comparison-row
-    .citrusTrio__Comparison--col-2 {
+  .citrusStylesSE-table
+    .citrusStylesSE-table--row
+    .citrusStylesSE-table--col-2 {
     width: 182px;
   }
 
-  .citrusTrio__comparison-chart
-    .citrusTrio__comparison-row.thead
-    .citrusTrio__Comparison--col-2
+  .citrusStylesSE-table
+    .citrusStylesSE-table--row.thead
+    .citrusStylesSE-table--col-2
     img {
     max-width: 140px;
   }
 
-  .citrusTrio__comparison-chart .thead img {
+  .citrusStylesSE-table .thead img {
     padding: 1em 0;
     max-width: 98px;
     text-align: center;
   }
 
-  .citrusTrio__comparison-row.title h2 {
+  .citrusStylesSE-table--row.citrusStylesSE-table--Cell-title h2 {
     font-size: 16px;
   }
 
-  .title h2 {
+  .citrusStylesSE-table--Cell-title h2 {
     font-size: 12px;
     height: 49px;
   }
 
-  .citrusTrio__check-mark,
+  .citrusStylesSE-check-mark,
   .citrusTrio__radio {
     height: 49px;
   }
 
   .chart-cta {
     width: max-content;
+    background: unset;
+  }
+  .citrusStylesSE-url {
+    color: var(--citrusStylesSE-primary-navy);
   }
 }
