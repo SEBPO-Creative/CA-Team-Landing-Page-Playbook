@@ -113,3 +113,9 @@
 
 ## 21 February 2024 by Shahinur
 - Merrick pov carousel 50% completed
+
+## 06 March 2024 by Shahinur
+- Hero Banner with bg and buttons (2 banners completed)
+
+## 07 March 2024 by Shahinur
+- Hero Banner with two buttons completed Hero POV acana 80% done
