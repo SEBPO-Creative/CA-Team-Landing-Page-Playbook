@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Banner</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+</head>
+<style>
+    section {
+        background: #ECECEF;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .citrusStylesSE-pethonesty--lifestyle{
+            max-width: 1190px;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+    .citrusStylesSE-taste--image img
+    {
+        width: 100%;
+    }
+    .citrusStyleSE-pethonesty--iframe {
+        width: 100%;
+        max-width: 480px;
+        height: 320px;
+        margin: auto;
+    }
+
+    .citrusStyleSE-pethonesty--iframe iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -100px;
+    }
+    .citrusStyleSE-content--title
+    {
+        font-family: "PetcoCircular-Bold", arial !important;  
+        font-size: 24px;
+        margin: 12px 0;
+        line-height: initial;
+        font-weight: 700;
+    }
+    .citrusStyleSE-content--paragraph
+    {
+        font-family: "PetcoCircularTT-Regular", arial !important;
+        font-size: 22px;
+        margin: 20px 0;
+        line-height: initial;
+    }
+
+    .citrusStylesSE-grid-text {
+        text-align: center;
+        padding: 0 20px 20px;
+    }
+
+    .citrusStylesSE-bannerCTA {
+        width: 212px;
+        height: 55px;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background: #00205B;
+        color: #fff;
+        font-family: "PetcoCircular-Bold", arial !important;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width:767px) {
+        section {
+            margin-top: 0px;
+        }
+
+        .citrusStylesSE-order2-sm {
+            order: 2;
+        }
+
+        .citrusStylesSE-order1-sm {
+            order: 1;
+        }
+
+        .citrusStylesSE-grid-text {
+            padding: 0 20px;
+        }
+
+        .citrusStyleSE-pethonesty--iframe
+        {
+            margin-bottom: 30px;
+            max-width: 100%;
+            min-height: 350px;
+        }
+        .citrusStyleSE-pethonesty--iframe iframe {
+            top: 0;
+            max-width: 100%;
+        }
+
+        .citrusStylesSE-bannerCTA {
+            color: #001952;
+            background: none;
+            width: fit-content;
+            height: fit-content;
+            text-transform: capitalize;
+            text-decoration: underline;
+            padding-bottom: 40px;
+        }
+    }
+</style>
+
+<body>
+
+    <section>
+        <div class="citrusStylesSE-pethonesty--lifestyle citrusStylesSE-centered">
+            <div
+                class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order2-sm  citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@xsmall">
+                    <div class="citrusStylesSE-grid-text">
+                        <img src="images/pethonesty_text_logo.png" alt="pethonesty whole items">
+                        <h2 class="citrusStyleSE-content--title citrusStylesSE-centered">A taste your pet will love and results you can trust</h2>
+                        <p class="citrusStyleSE-content--paragraph citrusStylesSE-centered">Made with natural, premium ingredients.</p>
+                        <button type="button" class="citrusStylesSE-button citrusStylesSE-bannerCTA">Shop
+                            Now</button>                            
+                    </div>                   
+                    <div class="citrusStylesSE-taste--image">
+                        <img class="citrusStylesSE-m-hide" src="images/pethonesty_whole_items.png" alt="pethonesty whole items">
+
+                        <img class="citrusStylesSE-d-hide" src="images/pethonesty_mob_taste.png" alt="pethonesty items">
+                    </div> 
+                </div>                
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-order1-sm  citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@xsmall">
+                    <div class="citrusStyleSE-pethonesty--iframe">
+                        <iframe src="https://www.youtube.com/embed/JVGYYZ8uf0A" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

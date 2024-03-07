@@ -3,173 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - FAQ -- Hero Banner</title>
-    <!-- citrusStylesSE library css -->
+    <title>article2up</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
-        :root {
-            --citrusStylesSE-grid-gutter: .75em;
-            --citrusStylesSE-border-radius-8: 8px;
-        }
-        .citrusStylesSE-card__sectionTitle {
-        margin: 0;
-        font-family: PetcoCircular-Bold, arial !important;
-        font-size: 1.5em;
-        line-height: 1.75em;
-        text-align: center;
-        color: #000;
-        font-weight: 700;
-        padding: .5em 0;
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .citrusStylesSE-grid--cards
-        {
-        width: 74em;
-        max-width: 100%;
-        overflow-x: auto;
-        margin: auto;
-        padding: 0.5em 0;
+        .citrusStylesSE-article2up {
         }
-        .citrusStylesSE-card
-        {
-        max-width: 100%;
-        background-color: #f1efd9;
-        border-radius: 0;
+
+        .citrusStylesSE-article2up--container {
+            width: 1094px;
+            margin: auto;
+            gap: 20px;
         }
-        
-        .citrusStylesSE-card__img img {
+
+        .citrusStylesSE-article2up--card {
+            background-color: rgb(230, 230, 188);
+        }
+
+        .citrusStylesSE-article2up--card img {
             width: 100%;
-            object-fit: contain;
+            height: 100%;
         }
-        .citrusStylesSE-card__body {
-        min-height: 130px;
-        padding: 0;
-        margin: 20px 20px 20px;
+
+        .citrusStylesSE-article2up--card iframe {
+            width: 100%;
+            min-height: 100%;
         }
-        .citrusStylesSE-card__body h3 {
-            font-size: 16px;
-            line-height: 20px;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            color: #000;
-            padding-top: 20px;
-        }
-        .citrusStylesSE-card__body p {
-            margin-top: 20px;
-            font-size: 16px;
-            line-height: 20px;
-            font-family: "petcocircular-regular", arial !important;
-            font-weight: 400;
-            color: #000;
-        }
-        .citrusStylesSE-cta
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1em 0;
-        }
-        .citrusStylesSE-cta-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-transform: uppercase;
-            background-color: #001952;
-            border: none;
-            border-radius: 0.313rem;
-            font-weight: bold;
-            width: 287px;
-            height: 55px;
-            text-align: center;
-            text-decoration: none;
+
+
+        .citrusStylesSE-card__sectionTitle {
+            color: #000000;
+            font-size: 25px;
             font-family: "PetcoCircularTT-Bold", arial !important;
-            font-weight: 700;
-            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            padding-bottom: 10px;
         }
 
-
-        /* overflow scroll bar hide */
-        .citrusStylesSE-grid--cards::-webkit-scrollbar,
-        .citrusStylesSE-grid--cards::-webkit-scrollbar {
-        display: none;
-        }
-
-        @media all and (min-width: 768px) and (max-width: 1100px) {
-            .citrusStylesSE-card__body {
-             
-             min-height: 145px;
-             margin: 10px 20px 20px;
-
+        @media screen and (max-width: 1250px) {
+            .citrusStylesSE-article2up--container {
+                width: 100%;
             }
         }
 
-        @media all and (max-width: 767px) {
-            .citrusStylesSE-card {
-            width: 267px;
-            }
-            .citrusStylesSE-card__body {
-             
-             min-height: 145px;
-             margin: 10px 20px 20px;
-
-            }
-            .citrusStylesSE-card__body p {
-            margin: unset;
-            width: 224px;
-            }
-            .citrusStylesSE-card__img {
-            height: unset;
-            }
+        @media screen and (max-width: 767px) { 
+            .citrusStylesSE-article2up--card iframe {
+            width: 100%;
+            min-height: 400px;
         }
 
-        @media all and (max-width: 375px) {
-            .citrusStylesSE__sectionTitle {
-                font-size: 20px;
-                line-height: 24px;
-                width: 242px;
-                margin: auto;
-            }
         }
-        
 
-        
+        @media screen and (max-width: 520px) {
+            .citrusStylesSE-article2up--card iframe {
+            width: 100%;
+            min-height: 300px;
+        }
+        }
 
+        @media screen and (max-width: 475px) {
+
+            .citrusStylesSE-article2up--card iframe {
+            width: 100%;
+            min-height: 250px;
+        }
+        }
+
+
+        @media screen and (max-width: 375px) {
+            .citrusStylesSE-article2up--card iframe {
+            width: 100%;
+            min-height: 220px;
+        }
+        }
     </style>
 </head>
 
 <body>
-
-    <main>
-    <!-- 3 Items Cards -->
-    <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
-        <h2 class="citrusStylesSE-card__sectionTitle">NextStar™ starts killing in minutes</h2>
-        <div class="citrusStylesSE-grid">
-            <div class="citrusStylesSE-grid__cell">
-                <div class="citrusStylesSE-card">
-                    <div class="citrusStylesSE-card__img">
-                        <img src="images/petiq_nextstar_capstar_controll-kills.png" alt="">
-                    </div>
-                  </div>
+    <!-- Article 2 up Box -->
+    <section class="citrusStylesSE-article2up">
+        <h2 class="citrusStylesSE-card__sectionTitle citrusStylesSE-centered">NextStar™ starts killing in minutes</h2>
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
+                    <img alt="placeholder" class="citrusStylesSE-image" src="images/petiq_nextstar_capstar_controll-kills.png">
             </div>
-
-            <div class="citrusStylesSE-grid__cell">
-                <div class="citrusStylesSE-card">
-                    <div class="citrusStylesSE-card__img">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pXRpq-_UF9Y"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                  </div>
-            </div>     
-    	</div>
-
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
+                    <iframe src="https://www.youtube.com/embed/pXRpq-_UF9Y" title="ABC" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
-</main>
-    <!-- JS - Videos -->
 </body>
 
 </html>
