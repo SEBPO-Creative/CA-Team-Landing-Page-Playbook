@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Banner with Background images</title>
+        <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <link rel="stylesheet" href="../finalized.css">
+        <style>
+			/* Common Styles */
+
+            /* Hero Banner with bg*/
+
+            .citrusStylesSE-heroBanner .citrusStylesSE-header2{
+                text-align: center;
+            }
+
+            .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                text-align: center;
+                padding: 10px 0 15px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .citrusStylesSE-heroBanner .citrusStylesSE-grid{
+                align-items: center;
+                min-height: 312px;
+                background-size: 100% 100%;
+            }
+
+            .citrusStylesSE-heroBanner .citrusStylesSE-grid__cell:nth-child(2){
+                padding: 0 2em;
+            }
+
+            .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                padding: 20px 0;
+            }
+
+            /* ===================== Responsive Media Break-Point ===================== */
+            /* All the common used break-point adding here */
+            @media (min-width: 64em) and (max-width: 77.99em) {
+            /* min-width:1024px and max-width: 1247.99*/
+
+            
+            }
+
+            @media (min-width: 64em) { /* min-width: 1024px */
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-header2{
+                    font-size: 35px;
+                    color: var(--citrusStylesSE-primary-navy);
+                    line-height: 35px;
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                    font-size: 16px;
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+            }
+
+            @media (min-width: 48em){
+                /* min-width:768px ^all the desktop-tab contents*/
+                .citrusStylesSE-heroBanner .citrusStylesSE-grid{
+                    background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_footer-x");
+                    background-repeat: no-repeat;
+                }
+            }
+
+            @media (min-width: 48em) and (max-width: 63.99em) { 
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-header2 {
+                    font-size: 20px !important;
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                    font-size: 14px !important;
+                }
+           }
+
+            @media (max-width: 63.999em) {
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-header2{
+                    font-size: 20px;
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                    font-size: 14px;
+                    color: var(--citrusStylesSE-primary-navy);
+                    text-align: center;
+                    padding: 15px 0;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-header2{
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                    font-size: 16px;
+                    line-height: 17px;
+                    padding: 15px 0;
+                }
+
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                /* Hero Banner with bg */
+                .citrusStylesSE-heroBanner .citrusStylesSE-header2{
+                    font-size: 18px;
+                    line-height: normal;
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-para{
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 15px 0;
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-grid__cell {
+                    flex: 0 0 100%;
+                    padding: 1em;
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-grid__cell:nth-child(2){
+                    padding: 1.5em 1em;
+                }
+
+                .citrusStylesSE-heroBanner .citrusStylesSE-grid{
+                    flex-direction: column;
+                }
+
+                
+            }
+
+		
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+<body>
+    <main class="citrusStylesSE-main">
+		<!-- Hero Banner start -->
+		<section class="citrusStylesSE-container citrusStylesSE-heroBanner">
+			<div class="citrusStylesSE-grid">
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@medium">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_mobile-footer" alt="" class="citrusStylesSE-d-hide">
+                </div>
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@medium">
+                    <h2 class="citrusStylesSE-header2">About ORIJEN dog and cat nutrition</h2>
+                    <p class="citrusStylesSE-para">Made with at least 85%* premium animal ingredients, ORIJEN offers essential protein, vitamins and minerals your pet needs to thrive.</p>
+                </div>
+            </div>
+		</section><!-- Hero Banner End -->
+	</main>
+</body>
+
+</html>

@@ -679,6 +679,10 @@
   /* min-width:768px and max-width: 1023.99*/
 }
 
+@media (min-width: 48em){
+  /* min-width:768px ^all the desktop-tab contents*/
+}
+
 @media (min-width: 64em) and (max-width: 77.99em) {
   /* min-width:1024px and max-width: 1247.99*/
 }
