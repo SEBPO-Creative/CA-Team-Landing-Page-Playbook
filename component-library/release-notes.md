@@ -119,3 +119,6 @@
 
 ## 07 March 2024 by Shahinur
 - Hero Banner with two buttons completed Hero POV acana 80% done
+
+## 08 March 2024 by Shahinur
+- Acana Hero POV completed, Halo POV ongoing, 60% done.
