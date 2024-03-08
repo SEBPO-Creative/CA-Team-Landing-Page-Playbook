@@ -79,6 +79,12 @@
                 margin: 0;
             }
 
+            .citrusStylesSE-acana .citrusStylesSE-disclaimer {
+                font-size: 12px;
+                margin: 0;
+                padding: 10px 0;
+            }
+
             .citrusStylesSE-grid__cell{
                 padding-left: 0;
                 padding-right: 0;
@@ -130,12 +136,20 @@
 
                 .citrusStylesSE-carousel__inner--item {
                     max-height: unset;
-                    min-height: unset;
+                    min-height: 150px;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
                     font-size: 20px;
                     color: var(--citrusStylesSE-primary-navy);
+                    font-size: 20px;
+                    max-width: 290px;
+                    line-height: 20px;
+                    margin: 0;   
+                }
+
+                .citrusStylesSE-acana__copy {
+                    max-width: 340px;
                 }
 
                 .citrusStylesSE-acana .citrusStylesSE-cta__box .citrusStylesSE-url{
@@ -153,9 +167,29 @@
                     display: none;
                 }
 
+                .citrusStylesSE-acana__pov2 .citrusStylesSE-cta__box {
+                    padding: 10px 0 0;
+                }
+
+                .citrusStylesSE-acana .citrusStylesSE-disclaimer {
+                    padding: 10px 0;
+                }
+
             }
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__text {
+                    padding: 0 0 0 1em;
+                }
+
+                .citrusStylesSE-acana__copy {
+                    max-width: 380px;
+                }
+
+                .citrusStylesSE-acana__pov2 .citrusStylesSE-acana__copy {
+                    max-width: 350px;
+                }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
                     font-size: 25px;
@@ -164,7 +198,11 @@
 
                 .citrusStylesSE-acana .citrusStylesSE-pov__logo {
                     padding: 0 0 10px;
-                    max-width: 180px;
+                    max-width: 140px;
+                }
+
+                .citrusStylesSE-acana__pov2  .citrusStylesSE-pov__logo {
+                    max-width: 110px;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
@@ -173,12 +211,17 @@
                     padding: 8px 0 12px;
                 }
 
+                .citrusStylesSE-acana .citrusStylesSE-cta__box {
+                    gap: 10px;
+
+                } 
+
             }
 
             @media (min-width: 48em) { /* min-width:768px*/
                 .citrusStylesSE-acana .citrusStylesSE-cta__box {
                     justify-content: flex-start;
-                    gap: 20px;
+                    gap: 10px;
 
                 }   
             }
@@ -213,17 +256,17 @@
                 }
 
                 .citrusStylesSE-acana .citrusStylesSE-pov__text{
-                    padding: 40px 15px 0;
+                    padding: 20px 15px;
                 }
 
                 .citrusStylesSE-carousel__inner--item {
                     max-height: unset;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
-                    max-width: 290px;
-                    line-height: 25px;
+                .citrusStylesSE-acana .citrusStylesSE-header1,
+                .citrusStylesSE-acana .citrusStylesSE-para,
+                .citrusStylesSE-acana .citrusStylesSE-disclaimer {
+                    text-align: center;
                     margin: 0 auto;
                 }
 
@@ -231,8 +274,22 @@
                     font-size: 16px;
                     text-align: center;
                     padding: 10px 0 20px;
-                    max-width: 350px;
+                    max-width: 90%;
                 }
+
+                .citrusStylesSE-acana .citrusStylesSE-disclaimer {
+                    font-size: 14px;
+                }
+
+                .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
+                    gap: 30px;
+                }
+
+                .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__img {
+                    display: flex;
+                }
+
+
 
                 
             }
@@ -256,7 +313,7 @@
                     <div class="citrusStylesSE-pov__text">
                         <div class="citrusStylesSE-acana__copy">
                             <h2 class="citrusStylesSE-header1">NUTRITION THEY NEED, FLAVOR THEY LOVE</h2>
-                            <p class="citrusStylesSE-para">Rich in animal protein, ACANA® recipes satisfy your cat completely with premium nutrition and flavor.</p>
+                            <p class="citrusStylesSE-para">Rich in animal protein, ACANA<sup>®</sup> recipes satisfy your cat completely with premium nutrition and flavor.</p>
                             <div class="citrusStylesSE-cta__box">
                                 <a href="" class="citrusStylesSE-url">Shop Cat</a>
                             </div>
@@ -275,7 +332,7 @@
                                 <a href="" class="citrusStylesSE-url">Shop Dog</a>
                                 <a href="" class="citrusStylesSE-url">Shop Cat</a>
                             </div>
-                            <p class="citrusStylesSE-disclaimer">Ingredients may vary, depicted pre-processing. Quantities ≠ one serving.<br> Retailer decides price. Based on MSRP, average cost per day.</p>   
+                            <p class="citrusStylesSE-disclaimer">Ingredients may vary, depicted pre-processing. Quantities ≠ one serving. Retailer decides price. Based on MSRP, average cost per day.</p>   
                         </div>
                         <div class="citrusStylesSE-pov__logo citrusStylesSE-m-hide">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_acana_logo" alt="">
