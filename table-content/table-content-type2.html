@@ -8,7 +8,227 @@
     <!-- css library -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="../finalized.css">
-    <link rel="stylesheet" href="testStyle.css">
+    <style>
+        /* overflow scroll bar hide */
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .citrusStylesSE-comparisonTable::-webkit-scrollbar,
+        .citrusRoyal-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .citrusStylesSE-comparisonTable {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        /* Comparison Chart /Find the right solution for your pet  */
+        #citrusStylesSE-comparisonContainer-fluid {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .citrusStylesSE-comparisonTable {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-comparisonContainer {
+            width: 1085px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-comparison__row {
+            padding: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr repeat(3, 2fr);
+            height: 100%;
+            align-items: center;
+            border-bottom: 1px solid #e2e2e2;
+        }
+
+        .citrusStylesSE-comTitle h2 {
+            margin: 0;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .citrusStylesSE-comparison__row:first-child {
+            margin-top: 50px;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        #citrusStylesSE-titleRow {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .citrusStylesSE-comparison__titleLogo img {
+            width: 204px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-0,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-1,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: "PetcoCircularTT-Regular", arial !important;
+            font-size: 13px;
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-0 img,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-1 img {
+            width: 250px;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-2 img {
+            width: 105px;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__rowTitle,
+        .citrusStylesSE-comparison__rowText {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+
+        .citrusStylesSE-comparison__rowTitle img,
+        .citrusStylesSE-comparison__rowText img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .citrusStylesSE-featurePackage-title01 p,
+        .citrusStylesSE-featurePackage-title02 p,
+        .citrusStylesSE-featurePackage-title03 p {
+            margin: 0;
+            padding: 0 30px;
+            font-family: "PetcoCircularTT-Bold", arial !important;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .citrusStylesSE-featurePackage-title01 p,
+        .citrusStylesSE--heder01 {
+            color: #74613c;
+            line-height: 19px;
+        }
+
+        .citrusStylesSE-featurePackage-title02 p,
+        .citrusStylesSE--heder02 {
+            color: #701283;
+            line-height: 19px;
+        }
+
+        .citrusStylesSE-featurePackage-title03 p,
+        .citrusStylesSE--heder03 {
+            color: #628fb5;
+        }
+
+        .citrusStylesSE-comparison__rowTitle p {
+            margin: 0;
+            font-family: "PetcoCircularTT-Bold", arial !important;
+            font-size: 13px;
+            line-height: 19px;
+            font-weight: bold;
+        }
+
+        .citrusStylesSE-comparison__rowText p {
+            font-family: "PetcoCircularTT-Regular", arial !important;
+            font-size: 13px;
+            color: #333333;
+        }
+
+        .citrusStylesSE-rowBorder-0 {
+            border-bottom: none;
+        }
+
+        .citrusStylesSE-mb-30 {
+            margin-bottom: 30px;
+        }
+
+        .citrusStylesSE-comparison__rowCta {
+            text-align: center;
+        }
+
+        .citrusStylesSE-comparison__rowCta a {
+            font-family: "PetcoCircularTT-Bold", arial !important;
+            font-size: 16px;
+            font-weight: bold;
+            color: #001952;
+        }
+
+        p.citrusStylesSE-disclaimer {
+            margin: auto;
+            width: 868px;
+            max-width: 100%;
+            color: #000;
+        }
+
+        /* common styling */
+        .citrusStylesSE-desktop__hide {
+            display: none;
+        }
+
+        .citrusStylesSE-mobile__hide {
+            display: block;
+        }
+
+        /*----------------------------------- responsive styling------------------------------------- */
+        @media all and (min-width: 769px) and (max-width: 1200px) {
+            .citrusStylesSE-comparisonContainer {
+                padding-left: 5%;
+            }
+        }
+
+        @media all and (max-width: 768px) {
+
+            /* common styling */
+            .citrusStylesSE-desktop__hide {
+                display: block;
+            }
+
+            .citrusStylesSE-mobile__hide {
+                display: none;
+            }
+
+            p.citrusStylesSE-disclaimer {
+                margin-top: 0;
+                padding-bottom: 20px;
+            }
+
+            /* Comparison Chart / Find the right solution for your pet  */
+            .citrusStylesSE-comparisonContainer {
+                width: 870px;
+            }
+
+            .citrusStylesSE-comparisonContainer {
+                padding-left: 5%;
+            }
+
+            .citrusStylesSE-comparison__row {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media all and (max-width: 360px) {
+            p.citrusStylesSE-disclaimer {
+                padding-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -132,7 +352,7 @@
                     </div>
                 </div>
                 <!-- row -->
-                <div class="citrusStylesSE-comparison__row BiRowBorder-0">
+                <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0">
                     <div class="citrusStylesSE-mobile__hide">
                         <!-- this div stay blank -->
                     </div>
@@ -153,7 +373,7 @@
                     </div>
                 </div>
                 <!-- row -->
-                <div class="citrusStylesSE-comparison__row BiRowBorder-0 Bi-mb-30">
+                <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0 citrusStylesSE-mb-30">
                     <div class="citrusStylesSE-mobile__hide">
                         <!-- this div stay blank -->
                     </div>
