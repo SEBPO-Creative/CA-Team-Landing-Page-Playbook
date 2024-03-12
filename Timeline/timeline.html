@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
         /* Timeline Custom CSS */
-        .citrusStyleSE-timeline__container {
+        .citrusStylesSE-timeline__container {
             max-width: 1100px;
             margin: 0 auto;
         }
@@ -17,15 +17,15 @@
             gap: 20px;
         }
 
-        .citrusStyleSE-timeline__img img {
+        .citrusStylesSE-timeline__img img {
             max-width: 100%;
         }
 
-        .citrusStyleSE-timeline__citrusStyleSE_timeline__steps {
+        .citrusStylesSE-timeline__citrusStylesSE_timeline__steps {
             margin: 0 auto;
         }
 
-        .citrusStyleSE_timeline__step {
+        .citrusStylesSE_timeline__step {
             display: flex;
             position: relative;
 
@@ -39,11 +39,11 @@
                 background-color: #001952;
             }
 
-            .citrusStyleSE_timeline__info {
+            .citrusStylesSE_timeline__info {
                 margin: 0px 0 73px;
             }
 
-            .citrusStyleSE_timeline__title {
+            .citrusStylesSE_timeline__title {
                 font-family: PetcoCircular-Bold, arial !important;
                 font-weight: 700;
                 font-size: 25px;
@@ -51,7 +51,7 @@
                 color: #001952;
             }
 
-            .citrusStyleSE_timeline__text {
+            .citrusStylesSE_timeline__text {
                 font-family: PetcoCircular-Regular, arial !important;
                 font-weight: normal;
                 font-size: 18px;
@@ -68,7 +68,7 @@
             }
         }
 
-        .citrusStyleSE_timeline__number {
+        .citrusStylesSE_timeline__number {
             width: 32px;
             height: 32px;
             background-color: transparent;
@@ -97,7 +97,7 @@
                 flex-wrap: wrap;
             }
 
-            .citrusStyleSE-timeline__wrapper {
+            .citrusStylesSE-timeline__wrapper {
                 width: 98%;
                 margin: auto;
             }
@@ -114,19 +114,19 @@
 </head>
 
 <body>
-    <div class="citrusStyleSE-timeline__container">
+    <div class="citrusStylesSE-timeline__container">
         <div class="citrusStylesSE-grid citrusStylesSE-grid--no-gutter">
             <div
                 class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-40@large">
-                <div class="citrusStyleSE-timeline__img">
+                <div class="citrusStylesSE-timeline__img">
                     <img alt="placeholder" class="citrusStylesSE-image"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_instinct_transitionTo_raw_dsk">
                 </div>
             </div>
             <div
                 class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-60@medium citrusStylesSE-grid__cell--width-60@large">
-                <div class='citrusStyleSE-timeline__wrapper'>
-                    <div class='citrusStyleSE-timeline__steps' id='citrusStyleSE-timeline__steps'></div>
+                <div class='citrusStylesSE-timeline__wrapper'>
+                    <div class='citrusStylesSE-timeline__steps' id='citrusStylesSE-timeline__steps'></div>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
 
     <!-- Timeline Js -->
     <script>
-        let steps = document.querySelector("#citrusStyleSE-timeline__steps");
+        let steps = document.querySelector("#citrusStylesSE-timeline__steps");
         let wizards = [
             {
                 complete: false,
@@ -178,11 +178,11 @@
         steps.innerHTML = wizards
             .map(function (wizard) {
                 return (
-                    `<div class='citrusStyleSE_timeline__step'>` +
-                    `<div class='citrusStyleSE_timeline__number'>${wizard.number} </div>` +
-                    `<div class='citrusStyleSE_timeline__info'>` +
-                    `<p class='citrusStyleSE_timeline__title'>${wizard.title}</p>` +
-                    `<p class='citrusStyleSE_timeline__text'>${wizard.text}</p>` +
+                    `<div class='citrusStylesSE_timeline__step'>` +
+                    `<div class='citrusStylesSE_timeline__number'>${wizard.number} </div>` +
+                    `<div class='citrusStylesSE_timeline__info'>` +
+                    `<p class='citrusStylesSE_timeline__title'>${wizard.title}</p>` +
+                    `<p class='citrusStylesSE_timeline__text'>${wizard.text}</p>` +
                     "</div>" +
                     "</div>"
                 );
