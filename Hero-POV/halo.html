@@ -13,22 +13,15 @@
 			/* Common Styles */
 
             /* Carousels - POV */
-            .citrusStylesSE-carousel__inner{
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
             .citrusStylesSE-halo .citrusStylesSE-pov__img {
                 max-width: 190px;
-                display: flex;
                 align-items: center;
             }
 
             .citrusStylesSE-carousel__inner--item {
-                background-size: cover;
                 background-repeat: no-repeat;
                 justify-content: flex-start;
-                min-height: 334px;
+                background-size: 100% 100%;
             }
 
             .citrusStylesSE-halo__pov1 {
@@ -40,12 +33,19 @@
             }
 
             .citrusStylesSE-halo .citrusStylesSE-pov__text{
-                padding: 0 0 0 2em;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: row;
                 gap: 20px;
+            }
+
+            .citrusStylesSE-halo__pov1 .citrusStylesSE-pov__text{
+                padding: 1.5em;
+            }
+
+            .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text{
+                padding: 0 0 0 15%;
             }
 
             .citrusStylesSE-halo__logo {
@@ -58,7 +58,7 @@
             }
 
             .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
-                max-width: 560px;
+                max-width: 640px;
             }
 
             .citrusStylesSE-halo .citrusStylesSE-pov__logo{
@@ -94,6 +94,22 @@
             @media (min-width: 64em) and (max-width: 77.99em) {
             /* min-width:1024px and max-width: 1247.99*/
 
+                .citrusStylesSE-halo__logo {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    padding: 1em 0;
+                    max-width: 350px;
+                }
+
+                .citrusStylesSE-halo .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text {
+                    padding: 0 0 0 10%;
+                }
+
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
+                    gap: 30px !important;
+                }
             
             }
 
@@ -116,10 +132,6 @@
                     background: transparent;
                 }
 
-                .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text {
-                    padding: 0 0 0 15%;
-                }
-
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
                     flex-direction: row;
                     display: flex;
@@ -130,28 +142,60 @@
                     padding-top: 0;
                 }
 
+                .citrusStylesSE-halo .citrusStylesSE-pov__img {
+                    display: flex;
+                }
+
             }
 
             @media (min-width: 48em) and (max-width: 63.99em) { 
 
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
+                .citrusStylesSE-halo__logo {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-halo__pov1 .citrusStylesSE-pov__text{
+                    padding: 0 0 0 1em;
+                }
+
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    padding: 1em 0;
+                    max-width: 350px;
                     font-size: 20px !important;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px !important;
+                .citrusStylesSE-halo .citrusStylesSE-pov__img {
+                    display: flex;
                 }
+
            }
 
-            @media (max-width: 63.999em) {
+            @media (max-width: 63.999em) {  /* max-width:1023.99px */
+
+                .citrusStylesSE-halo .citrusStylesSE-pov__img {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-halo__logo {
+                    max-width: 100px;
+                }
+
+                .citrusStylesSE-halo__pov1 .citrusStylesSE-pov__text{
+                    padding: 0;
+                }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
                     font-size: 20px;
-                    color: var(--citrusStylesSE-primary-navy);
+                    color: var(--citrusStylesSE-white);
                     font-size: 20px;
                     max-width: 290px;
                     line-height: 20px;
                     margin: 0;   
+                    padding: 0.5em 0 0.5em 0
                 }
 
                 .citrusStylesSE-halo__copy {
@@ -159,38 +203,45 @@
                 }
 
                 .citrusStylesSE-halo .citrusStylesSE-cta__box .citrusStylesSE-url{
-                    color: var(--citrusStylesSE-primary-navy);
+                    color: var(--citrusStylesSE-white);
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
                     font-size: 14px;
-                    color: var(--citrusStylesSE-primary-navy);
+                    color: var(--citrusStylesSE-white);
                     text-align: left;
                     padding: 10px 0;
-                }
-
-                .citrusStylesSE-halo .citrusStylesSE-pov__logo{
-                    display: none;
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-cta__box {
                     padding: 10px 0 0;
                 }
 
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text {
+                    padding: 0 0 0 12%;
+                }
+
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
+                    flex-direction: row;
+                    display: flex;
+                    gap: 20px;
+                }
+
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__logo {
+                    max-width: 80px;
+                }
+
+
             }
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
-
-                .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text {
-                    padding: 0 0 0 1em;
-                }
 
                 .citrusStylesSE-halo__copy {
                     max-width: 380px;
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
-                    max-width: 350px;
+                    max-width: 475px;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
@@ -244,7 +295,8 @@
                 }
 
                 .citrusStylesSE-carousel__inner--item {
-                    max-height: unset;
+                    min-height: 607px;
+                    justify-content: end;
                 }
 
                 .citrusStylesSE-halo .citrusStylesSE-header1,
@@ -264,8 +316,15 @@
                     gap: 30px;
                 }
 
-                .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__img {
+                .citrusStylesSE-halo__copy {
+                    margin: 0 auto;
                     display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
+                    flex-direction: column;
                 }
               
             }
