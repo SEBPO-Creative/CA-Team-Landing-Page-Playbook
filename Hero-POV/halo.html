@@ -89,6 +89,10 @@
                 padding-right: 0;
             }
 
+            .citrusStylesSE-halo .citrusStylesSE-carousel-indicators {
+                left: calc(100% / 2 - 34.5px);
+            }
+
             /* ===================== Responsive Media Break-Point ===================== */
             /* All the common used break-point adding here */
             @media (min-width: 64em) and (max-width: 77.99em) {
@@ -135,7 +139,7 @@
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
                     flex-direction: row;
                     display: flex;
-                    gap: 60px;
+                    gap: 30px;
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
@@ -305,6 +309,12 @@
                     margin: 0 auto;
                 }
 
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding: 1em 0;
+                }
+
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
                     font-size: 16px;
                     text-align: center;
@@ -321,10 +331,20 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    padding: 3em 0;
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
                     flex-direction: column;
+                    gap: 0;
+                }
+
+                .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__logo {
+                    max-width: 100px;
+                }
+
+                .citrusStylesSE-halo .citrusStylesSE-carousel__inner--item {
+                    background-size: cover;
                 }
               
             }
