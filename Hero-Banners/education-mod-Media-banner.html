@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Banner</title>
+    <title>Educational Mod - Media Banner</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
 </head>
 <style>
+
     section {
         background: #f5f5f5;
         position: relative;
@@ -18,27 +20,19 @@
     .citrusStylesSE-container--large {
         max-width: 78em;
     }
-    .citrusStylesSE-desktop__version {
-    display: block;
-    }
 
-.citrusNulo-mobile__version {
-  display: none;
-}
-
-
-    .citrucitrusStyleSE-lifestyle__Image {
+    .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-lifestyle__Image {
         width: 100%;
         max-width: 550px;
+        height: 100%;
         position: relative;
     }
-
-    .citrucitrusStyleSE-lifestyle__Image img {
+    .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-lifestyle__Image img {
         width: 100%;
         height: 100%;
     }
-
-    .citrusNulo_Lifestyle_text-block {
+    .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-lifestyle__Image .citrucitrusStyleSE-Lifestyle_text-block 
+    {
         position: absolute;
         bottom: 0px;
         left: 0px;
@@ -49,34 +43,28 @@
         width: 100%;
         margin: auto;
         text-align: center;
-        }
+    }
 
-        .citrusNulo_Lifestyle_text-block h4 {
+    .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-Lifestyle_text-block h4 {
         margin: auto;
         padding: 20px;
         font-size: 14px;
         line-height: 16px;
         color: white;
         font-family: "PetcoCircularTT-Bold", arial !important;
-        }
-
-
-    .citrusStylesSE-grid-text {
-        text-align: center;
-        padding: 0 20px 20px;
     }
 
-    .citrusStylesSE-bannerCTA {
-        width: 212px;
-        height: 55px;
-        flex-shrink: 0;
-        text-transform: uppercase;
-        border-radius: 5px;
-        background: #00205B;
-        color: #fff;
-        font-family: "PetcoCircular-Bold", arial !important;
-        font-weight: 700;
+    .citrucitrusStyleSE-twoCol__lifestyle .citrusStylesSE-para
+    {
+        max-width: 435px;
+        margin: 0 auto;
     }
+
+    .citrucitrusStyleSE-twoCol__lifestyle .citrusStylesSE-letter-box-large
+    {
+        padding-bottom: 0 !important;
+    }
+
 
     @media screen and (max-width:767px) {
         section {
@@ -91,59 +79,44 @@
             order: 1;
         }
 
-        .citrusStylesSE-grid-text {
-            padding: 0 20px;
-        }
-
-        .citrucitrusStyleSE-lifestyle__Image {
+        .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-lifestyle__Image {
             width: 100%;
             max-width: 100%;
             position: relative;
         }
-        .citrucitrusStyleSE-lifestyle__Image img {
+        .citrucitrusStyleSE-twoCol__lifestyle .citrucitrusStyleSE-lifestyle__Image img {
             top: 0;
-        }
-        .citrusStylesSE-desktop__version {
-            display: none;
-        }
-
-        .citrusNulo-mobile__version {
-            display: block;
-        }
-
-        .citrusStylesSE-bannerCTA {
-            color: #001952;
-            background: none;
-            width: fit-content;
-            height: fit-content;
-            text-transform: capitalize;
-            text-decoration: underline;
-            padding-bottom: 40px;
         }
     }
 </style>
 
 <body>
-    <section class="citrusStylesSE-container--large citrusStylesSE-container--large">
+    <section class="citrusStylesSE-container--large citrusStylesSE-container--large citrucitrusStyleSE-twoCol__lifestyle">
         <div
             class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
             <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
                 <div class="citrucitrusStyleSE-lifestyle__Image">
-                    <img class="citrusStylesSE-desktop__version" src="images/Nulo_lifestyle_image.png"
+                    
+                    <img class="citrusStylesSE-m-hide" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_lifestyle_image"
                         alt="A man pushing weights with his dog next to him. Ingredients on a countertop. A woman holding her cat." />
-              <img class="citrusNulo-mobile__version" src="images/Nulo_lifestyle_image_mobile.png" alt="A photo of all-American athlete and founder Michael Landa and his dog Max" />
-              <div class="citrusNulo_Lifestyle_text-block">
-                <h4>All-American athlete and founder Michael Landa and his dog Max</h4>
-              </div>
-            </div>
-                
+                    
+                        <img class="citrusStylesSE-d-hide" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_lifestyle_image_mobile" alt="A photo of all-American athlete and founder Michael Landa and his dog Max" />
+                    
+                    <div class="citrucitrusStyleSE-Lifestyle_text-block">
+                        <h4>All-American athlete and founder Michael Landa and his dog Max</h4>
+                    </div>
+
+                </div>                
             </div>
             <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm">
-                <div class="citrusStylesSE-grid-text citrusStylesSE-centered">
-                    <h2 class="citrusStylesSE-heading citrusStylesSE-centered">Enrich the way you feed your pet</h2>
-                    <p class="citrusStylesSE-centered citrusStyleSE-paragraph">Nulo recipes feature industry-leading levels of animal-based protein your pet needs to thrive.</p>
-                    <button type="button" class="citrusStylesSE-button citrusStylesSE-bannerCTA">Shop
-                        Now</button>
+                <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">Enrich the way you feed your&nbsp;pet</h2>
+                    <p class="citrusStylesSE-para citrusStylesSE-centered">Nulo recipes feature industry-leading levels of animal-based protein your pet needs to thrive.</p>
+                    <div class="citrusStylesSE-letter-box-large">
+                        <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                            <a href="" class="citrusStylesSE-url">Shop Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

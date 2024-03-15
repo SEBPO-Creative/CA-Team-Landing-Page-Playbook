@@ -8,20 +8,16 @@
     <title>Education - FAQ -- Hero Banner</title>
     <!-- citrusStylesSE library css -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         :root {
             --citrusStylesSE-grid-gutter: .75em;
             --citrusStylesSE-border-radius-8: 8px;
         }
-        .citrusStylesSE-card__sectionTitle {
-        margin: 0;
-        font-family: PetcoCircular-Bold, arial !important;
-        font-size: 1.5em;
-        line-height: 1.75em;
-        text-align: center;
-        color: #000;
-        font-weight: 700;
-        padding: .5em 0;
+
+        .citrusStylesSE-section__title {
+            padding: 2.5em 1em;
+            text-align: center;
         }
 
         .citrusStylesSE-grid--cards
@@ -48,49 +44,12 @@
         padding: 0;
         margin: 20px 20px 20px;
         }
-        .citrusStylesSE-card__body h3 {
-            font-size: 16px;
-            line-height: 20px;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            color: #000;
-            padding-top: 20px;
-        }
-        .citrusStylesSE-card__body p {
-            margin-top: 20px;
-            font-size: 16px;
-            line-height: 20px;
-            font-family: "petcocircular-regular", arial !important;
-            font-weight: 400;
-            color: #000;
-        }
-        .citrusStylesSE-cta
+
+        .citrusStylesSE-section__title .citrusStylesSE-para
         {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1em 0;
+            max-width: 270px;
+            margin: 0 auto;
         }
-        .citrusStylesSE-cta-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-transform: uppercase;
-            background-color: #001952;
-            border: none;
-            border-radius: 0.313rem;
-            font-weight: bold;
-            width: 287px;
-            height: 55px;
-            text-align: center;
-            text-decoration: none;
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-weight: 700;
-            font-size: 16px;
-        }
-
-
         /* overflow scroll bar hide */
         .citrusStylesSE-grid--cards::-webkit-scrollbar,
         .citrusStylesSE-grid--cards::-webkit-scrollbar {
@@ -134,9 +93,6 @@
             }
         }
         
-
-        
-
     </style>
 </head>
 
@@ -145,28 +101,20 @@
     <main>
     <!-- 3 Items Cards -->
     <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
-        <h2 class="citrusStylesSE-card__sectionTitle">ACANA commitments</h2>
+
+        <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+            <h2 class="citrusStylesSE-header2">ACANA commitments</h2>
+        </div>
+
         <div class="citrusStylesSE-grid citrusStylesSE-grid--cards">
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
                     <div class="citrusStylesSE-card__img">
-                        <img src="images/1-whole_food_nutrition.jpg" alt="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_whole_food_nutrition" alt="">
                     </div>
-                    <div class="citrusStylesSE-card__body citrusStylesSE-centered">
-                      <h3>Whole food nutrition</h3>
-                      <p>Complete and balanced recipes made with ingredients you know and love.</p>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="citrusStylesSE-grid__cell">
-                <div class="citrusStylesSE-card">
-                    <div class="citrusStylesSE-card__img">
-                        <img src="images/2-care_at_every_step.jpg" alt="">
-                    </div>
-                    <div class="citrusStylesSE-card__body citrusStylesSE-centered">
-                      <h3>Care at every step</h3>
-                      <p>Nutritious ingredients delivered daily by trusted suppliers.</p>
+                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                      <h3 class="citrusStylesSE-header3">Whole food nutrition</h3>
+                      <p class="citrusStylesSE-para">Complete and balanced recipes made with ingredients you know and love.</p>
                     </div>
                   </div>
             </div>
@@ -174,11 +122,23 @@
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
                     <div class="citrusStylesSE-card__img">
-                        <img src="images/3-visible_vibrancy.jpg" alt="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_care_at_every_step" alt="">
                     </div>
-                    <div class="citrusStylesSE-card__body citrusStylesSE-centered">
-                      <h3>Visible vibrancy and health</h3>
-                      <p>Carefully crafted to help support your pet’s long-term wellbeing.</p>
+                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                      <h3 class="citrusStylesSE-header3">Care at every step</h3>
+                      <p class="citrusStylesSE-para">Nutritious ingredients delivered daily by trusted suppliers.</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrusStylesSE-card">
+                    <div class="citrusStylesSE-card__img">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_visible_vibrancy" alt="">
+                    </div>
+                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                      <h3 class="citrusStylesSE-header3">Visible vibrancy and health</h3>
+                      <p class="citrusStylesSE-para">Carefully crafted to help support your pet’s long-term wellbeing.</p>
                     </div>
                   </div>
             </div>       
