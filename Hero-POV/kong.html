@@ -42,25 +42,44 @@
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: row;
-                gap: 20px;
+                padding: 1em 1em 1em 2em;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
             }
 
             .citrusStylesSE-kong .citrusStylesSE-kong__logo{
-                max-width: 150px;
-                margin: 0 auto;
-                padding: 0 0 20px;
-            }
-
-            .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                text-align: left;
-                padding: 30px 0;
-                color: var(--citrusStylesSE-white);
-            }
-
-            .citrusStylesSE-pov__text .citrusStylesSE-para{
-                text-align: left;
-                padding: 10px 0 15px;
+                max-width: 110px;
                 margin: 0;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-header1{
+                text-align: left;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+                position: relative;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-header1 sup {
+                font-size: 14px;
+                padding: 0 0 0 1px;
+                position: absolute;
+                top: -2px;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-para{
+                text-align: left;
+                margin: 0;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+                max-width: 60%;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-para { 
+                max-width: 70%;
             }
 
             .citrusStylesSE-grid__cell{
@@ -68,36 +87,43 @@
                 padding-right: 0;
             }
 
+            .citrusStylesSE-kong .citrusStylesSE-cta__box-white {
+                margin: 0;
+                justify-content: flex-start;
+            }
+
             /* ===================== Responsive Media Break-Point ===================== */
             /* All the common used break-point adding here */
             @media (min-width: 64em) and (max-width: 77.99em) {
             /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
 
                 .citrusStylesSE-kong__logo {
                     max-width: 130px;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    padding: 1em 0;
                     max-width: 350px;
                 }
 
-                .citrusStylesSE-kong .citrusStylesSE-kong__pov2 .citrusStylesSE-pov__text {
-                    padding: 0 0 0 10%;
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    gap: 0.8em;
                 }
             
             }
 
             @media (min-width: 64em) { /* min-width: 1024px */
 
-                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                .citrusStylesSE-kong .citrusStylesSE-header1{
                     font-size: 35px;
                     line-height: 35px;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                .citrusStylesSE-kong .citrusStylesSE-para{
                     font-size: 16px;
-                    color: var(--citrusStylesSE-primary-navy);
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-cta__box .citrusStylesSE-url {
@@ -105,10 +131,6 @@
                     padding: 0.75em 0;
                     border: 1px solid var(--citrusStylesSE-white);
                     background: transparent;
-                }
-
-                .citrusStylesSE-kong__pov2 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    padding-top: 0;
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-pov__img {
@@ -123,8 +145,7 @@
                     max-width: 130px;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    padding: 1em 0;
+                .citrusStylesSE-kong .citrusStylesSE-header1 {
                     max-width: 350px;
                     font-size: 20px !important;
                 }
@@ -137,6 +158,10 @@
 
             @media (max-width: 63.999em) {  /* max-width:1023.99px */
 
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
                 .citrusStylesSE-kong .citrusStylesSE-pov__img {
                     max-width: 130px;
                 }
@@ -145,41 +170,34 @@
                     max-width: 100px;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                .citrusStylesSE-kong .citrusStylesSE-header1{
                     font-size: 20px;
                     color: var(--citrusStylesSE-white);
                     font-size: 20px;
                     max-width: 290px;
                     line-height: 20px;
                     margin: 0;   
-                    padding: 0.5em 0 0.5em 0
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-cta__box .citrusStylesSE-url{
                     color: var(--citrusStylesSE-white);
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                .citrusStylesSE-kong .citrusStylesSE-para{
                     font-size: 14px;
                     color: var(--citrusStylesSE-white);
                     text-align: left;
-                    padding: 10px 0;
                 }
 
-                .citrusStylesSE-kong__pov2 .citrusStylesSE-cta__box {
-                    padding: 10px 0 0;
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    gap: 0.5em;
                 }
-
-                .citrusStylesSE-kong__pov2 .citrusStylesSE-pov__text {
-                    padding: 0 0 0 12%;
-                }
-
 
             }
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
 
-                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                .citrusStylesSE-kong .citrusStylesSE-pov__text .citrusStylesSE-header1{
                     font-size: 25px;
                     line-height: 25px;
                 }
@@ -189,16 +207,11 @@
                     max-width: 140px;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                .citrusStylesSE-kong .citrusStylesSE-para{
                     font-size: 16px;
                     line-height: 17px;
-                    padding: 8px 0 12px;
                 }
 
-                .citrusStylesSE-kong .citrusStylesSE-cta__box {
-                    gap: 10px;
-
-                } 
 
             }
 
@@ -206,8 +219,12 @@
                 .citrusStylesSE-kong .citrusStylesSE-cta__box {
                     justify-content: flex-start;
                     gap: 10px;
-
                 }   
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov2 .citrusStylesSE-pov__text,
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-pov__text {
+                    padding-left: 30%;
+                }
             }
 
             @media (max-width: 47.99em) { /* max-width: 767.99px */
@@ -225,13 +242,18 @@
                     background-image: url(images/citrus-kong-pov3-mob.png);
                 }
 
-                .citrusStylesSE-kong .citrusStylesSE-pov__text{
-                    padding: 20px 15px;
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: 540px;
+                    justify-content: end;
                 }
 
-                .citrusStylesSE-carousel__inner--item {
-                    min-height: 607px;
-                    justify-content: end;
+                .citrusStylesSE-kong .citrusStylesSE-pov__text {
+                    padding: 2em 1em 3em;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-header1,
@@ -243,13 +265,19 @@
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
                     font-size: 24px;
                     line-height: 24px;
-                    padding: 1em 0;
                 }
 
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                .citrusStylesSE-kong .citrusStylesSE-para{
                     font-size: 16px;
                     text-align: center;
-                    padding: 10px 0 20px;
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para {
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-para {
                     max-width: 90%;
                 }
 
@@ -274,8 +302,8 @@
                             <div class="citrusStylesSE-kong__logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
                             </div>
-                            <h2 class="citrusStylesSE-header1">NATURAL <b>NUTRITION,</b>
-                                BACKED BY <b>SCIENCE</b> </h2>
+                            <h2 class="citrusStylesSE-header1">IT’S NOT JUST A TOY, IT’S A KONG</h2>
+                            <p class="citrusStylesSE-para">Explore the variety of entertaining toys and reward your pet with fun.</p>
                             <div class="citrusStylesSE-cta__box-white">
                                 <a href="" class="citrusStylesSE-url">Shop All</a>
                             </div>
@@ -289,12 +317,11 @@
                             <div class="citrusStylesSE-kong__logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
                             </div>
-                            <div class="citrusStylesSE-wrapper">
-                                <h2 class="citrusStylesSE-header1">OBSESSIVELY GOOD INGREDIENTS™</h2>
-                                <div class="citrusStylesSE-cta__box-white">
-                                    <a href="" class="citrusStylesSE-url">Shop Dry Food</a>
-                                </div> 
-                            </div>
+                            <h2 class="citrusStylesSE-header1">DOGS NEED TO PLAY<sup>®</sup></h2>
+                            <p class="citrusStylesSE-para">KONG toys encourage play, satisfy instinctual needs and strengthen the bond between dog and pet parent.</p>
+                            <div class="citrusStylesSE-cta__box-white">
+                                <a href="" class="citrusStylesSE-url">Shop Dog</a>
+                            </div> 
                         </div>
                      </div>
 				</div>
@@ -305,12 +332,11 @@
                             <div class="citrusStylesSE-kong__logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
                             </div>
-                            <div class="citrusStylesSE-wrapper">
-                                <h2 class="citrusStylesSE-header1">OBSESSIVELY GOOD INGREDIENTS™</h2>
-                                <div class="citrusStylesSE-cta__box-white">
-                                    <a href="" class="citrusStylesSE-url">Shop Dry Food</a>
-                                </div> 
-                            </div>
+                            <h2 class="citrusStylesSE-header1">CATS NEED TO PLAY<sup>®</sup></h2>
+                            <p class="citrusStylesSE-para">KONG toys are designed to tap into your cat’s natural curiosity and hunting instinct.</p>
+                            <div class="citrusStylesSE-cta__box-white">
+                                <a href="" class="citrusStylesSE-url">Shop Cat</a>
+                            </div> 
                         </div>
                      </div>
 				</div>
