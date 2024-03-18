@@ -27,6 +27,15 @@
             max-width: 900px;
         }
 
+        .citrusStylesSE-section__title {
+            padding: 1em 1em;
+            text-align: left;
+        }
+        .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
+            color:#fff;
+        }
+
+
         .citrusStylesSE-desktop__version {
             display: block;
         }
@@ -63,32 +72,15 @@
             height: auto;
         }
 
-        .citrusStylesSE-grid-text h3 {
-            color: #fff;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            font-size: 20px;
-            text-align: left;
-        }
-
-        .citrusStylesSE-grid-text p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            font-size: 16px;
-            color: #fff;
-            font-weight: 400;
-            text-align: left;
-            margin: auto;
-            padding-bottom: 20px;
-
-        }
         .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white
         {
             justify-content: left;
         }
 
-
-        .citrusStylesSE-grid-text {
-            padding: 0 20px 20px;
+        .citrusStylesSE-cta__box-white .citrusStylesSE-url
+        {
+            width: 180px;
+            padding: 1em 0;
         }
 
         @media screen and (max-width:767px) {
@@ -128,29 +120,18 @@
                 display: block;
                 text-align: center;
             }
-            .citrusStylesSE-grid-text h3 {
-                color: #000;
-                font-size: 20px;
+            
+            .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
                 text-align: center;
+                color:#000;
             }
-
-        .citrusStylesSE-grid-text p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            font-size: 20px;
-            color: #000;
-            text-align: center;
-        }
-        .citrusStylesSE-cta__box-white .citrusStylesSE-url {
-            color: #000;
-            font-size: 20px;
-            text-align: center;
-            text-decoration: underline;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-        }
-        .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
-            justify-content: center;
-        }
+           
+            .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+                color: #000;
+            }
+            .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
+                justify-content: center;
+            }
 
         }
 
@@ -170,10 +151,14 @@
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/PureBites_Logo_White"
                             alt="">
                     </div>
-                    <h3 class="citrusStylesSE-centered">Two paws up for PureBites</h3>
-                    <p class="citrusStylesSE-centered">Give your dog or cat PureBites to support a happy, wholesome future.</p>
-                    <div class="citrusStylesSE-cta__box-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                        <a href="" class="citrusStylesSE-url">Shop All</a>
+                    <div class="citrusStylesSE-section__title">
+                        <h3 class="citrusStylesSE-header3">Two paws up for PureBites</h3>
+                        <p class="citrusStylesSE-para">Give your dog or cat PureBites to support a happy, wholesome future.</p>
+                        <div class="citrusStylesSE-letter-box-small">
+                            <div class="citrusStylesSE-cta__box-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                <a href="" class="citrusStylesSE-url">Shop All</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

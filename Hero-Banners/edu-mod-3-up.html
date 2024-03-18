@@ -34,17 +34,14 @@
         background-color: #f1efd9;
         border-radius: 0;
         }
-        
+        .citrusStylesSE-card .citrusStylesSE-section__title
+        {
+            min-height: 90px;
+        }
         .citrusStylesSE-card__img img {
             width: 100%;
             object-fit: contain;
         }
-        .citrusStylesSE-card__body {
-        min-height: 130px;
-        padding: 0;
-        margin: 20px 20px 20px;
-        }
-
         .citrusStylesSE-section__title .citrusStylesSE-para
         {
             max-width: 270px;
@@ -56,28 +53,16 @@
         display: none;
         }
 
-        @media all and (min-width: 768px) and (max-width: 1100px) {
-            .citrusStylesSE-card__body {
-             
-             min-height: 145px;
-             margin: 10px 20px 20px;
-
+        @media all and (max-width: 1100px) {
+            .citrusStylesSE-card .citrusStylesSE-section__title
+            {
+                min-height: 140px;
             }
         }
 
         @media all and (max-width: 767px) {
             .citrusStylesSE-card {
             width: 267px;
-            }
-            .citrusStylesSE-card__body {
-             
-             min-height: 145px;
-             margin: 10px 20px 20px;
-
-            }
-            .citrusStylesSE-card__body p {
-            margin: unset;
-            width: 224px;
             }
             .citrusStylesSE-card__img {
             height: unset;
