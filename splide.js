@@ -14,7 +14,7 @@
 
             // Show the specific tab content
             document.getElementById(species).style.display = "block";
-            if (species === "ccitrusStylesSE-btn__dog") {
+            if (species === "citrusStylesSE-btn__dog") {
                 filterDogProducts("citrusHills-puppy_Dog-product");
             } else {
                 filterProducts("citrusHills-kitten_Cat-product");
