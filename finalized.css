@@ -732,6 +732,8 @@
   }
 }
 
+
+
 @media (max-width: 63.999em) {
   /*max with 767px*/
 
@@ -773,12 +775,8 @@
 
 }
 
-@media (min-width: 63.99em) {
-  /* min-width:1023.99px, we could make the underline button styles on this break-point. The box button will be apply above the 64em (1024px) */
-}
-
-@media (min-width: 64em) {
-  /* min-width:1248px */
+@media (min-width: 48em) { /* min-width: 768px */
+  
 }
 
 @media (max-width: 47.99em) {
