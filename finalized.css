@@ -809,7 +809,7 @@
 
 /* Suggestions to Remove from CSS Library */
 .citrusStylesSE-grid__cell {
-  flex: 1; /*flex: 1 can stay as is*/
+  /* flex: 1; flex: 1 can stay as is */
   padding-right: var(--citrusStylesSE-grid-gutter);
   padding-left: var(--citrusStylesSE-grid-gutter);
 }

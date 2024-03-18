@@ -46,11 +46,6 @@
                 width: 100%;;
             }
 
-            /* Custom class need to match or update in css library */
-            .citrusStylesSE-container--xlarge-1440 {
-                max-width: 90em;
-            }
-
             .citrusStylesSE-section4up a{
                 text-decoration: none;
                 max-width: 322px;
@@ -66,8 +61,37 @@
                 font-size: 1em;
             }
 
+            .citrusStylesSE-wrapper {
+                overflow: hidden;
+                width: 100%;
+            }
+
+             .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+                flex: unset;
+            }
 
 
+            @media screen and (min-width: 64em) and (max-width: 77.99em) {  /* min-width: 1024px and max-width: 1247.99px */
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid {
+                    overflow-x: auto;
+                }
+
+                .citrusStylesSE-section4up a {
+                    min-width: 300px;
+                }
+            }
+
+            @media screen and (max-width: 63.99em) {  /* max-width: 1023.99px */
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+                    flex: 0 0 100%;
+                }
+
+                .citrusStylesSE-section4up .citrusStylesSE-text__wrapper p {
+                    min-height: 60px;
+                }
+                            }
 			
 			@media screen and (min-width: 320px) {
 				.d-hide {
@@ -105,7 +129,7 @@
 				}
 
                 .citrusStylesSE-section4up .citrusStylesSE-grid__cell a{
-                    padding: var(--citrusStylesSE-spacing-large);
+                    padding: var(--citrusStylesSE-spacing-medium);
                 }
 
 			}
@@ -116,7 +140,7 @@
                 }
             }
 
-            @media (max-width: 47.93em){
+            @media (max-width: 47.99em){
 
                 .citrusStylesSE-section4up .citrusStylesSE-grid{
                     overflow-x: auto;
@@ -133,46 +157,51 @@
     </head>
 
     <body>
-        <main class="citrusStylesSE-container citrusStylesSE-container--xlarge-1440">
+        <main class="citrusStylesSE-container">
             <section class="citrusStylesSE-section4up">
-                <h2 class="citrusStylesSE-section__title citrusStylesSE-centered">Choose the best Chuckit!® ball for your dog</h2> <!-- Title styles could be a commmon style -->
-                <p class="citrusStylesSE-section__subhead citrusStylesSE-centered">Select from multiple options based on your dog’s size.</p>
-                <div class="citrusStylesSE-grid">
-                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-60@xsmall">
-                        <a href="">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options1" alt="">
-                            <div class="citrusStylesSE-text__wrapper">
-                                <h3>Small</h3>
-                                <p>2-inch balls. Compatible with Sport style launchers.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-60@xsmall">
-                        <a href="">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options2" alt="">
-                            <div class="citrusStylesSE-text__wrapper">
-                                <h3>Medium</h3>
-                                <p>2.5-inch balls. Compatible with Classic, Pro and Sport style launchers.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-60@xsmall">
-                        <a href="">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options3" alt="">
-                            <div class="citrusStylesSE-text__wrapper">
-                                <h3>Large</h3>
-                                <p>3-inch balls. Compatible with Pro and Sport style launchers.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-60@xsmall">
-                        <a href="">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options4" alt="">
-                            <div class="citrusStylesSE-text__wrapper">
-                                <h3>X-Large</h3>
-                                <p>3.5-inch balls. Compatible with the Chuckit! Pro launcher.</p>
-                            </div>
-                        </a>
+                <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <!-- Common Section Title -->
+                    <h2 class="citrusStylesSE-header2">Choose the best Chuckit!<sup>®</sup> ball for your dog</h2>
+                    <p class="citrusStylesSE-para">Select from multiple options based on your dog’s size.</p>
+                </div>
+                <div class="citrusStylesSE-wrapper">
+                    <div class="citrusStylesSE-grid">
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-60@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options1" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Small</h3>
+                                    <p class="citrusStylesSE-para">2-inch balls. Compatible with Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-60@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options2" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Medium</h3>
+                                    <p class="citrusStylesSE-para">2.5-inch balls. Compatible with Classic, Pro and Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-60@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options3" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Large</h3>
+                                    <p class="citrusStylesSE-para">3-inch balls. Compatible with Pro and Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-60@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options4" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>X-Large</h3>
+                                    <p class="citrusStylesSE-para">3.5-inch balls. Compatible with the Chuckit! Pro launcher.</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
