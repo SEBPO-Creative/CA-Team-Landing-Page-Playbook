@@ -41,6 +41,7 @@
         .citrusStylesSE-article2up-card--image iframe {
             width: 100%;
             min-height: 100%;
+            border: none;
         }
 
         .citrusStylesSE-article2up-card--details {
@@ -74,8 +75,22 @@
         }
 
         .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
-            padding-top: 0 !important ;
-            padding-bottom: 0 !important ;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .citrusStylesSE-article2up::-webkit-scrollbar, 
+        .citrusStylesSE-article2up--container::-webkit-scrollbar {
+            /* Safari and Chrome */
+            display: none;
+        }
+
+        .citrusStylesSE-article2up,.citrusStylesSE-article2up--container{
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
+            overflow-y: scroll;
         }
 
         @media screen and (max-width: 1250px) {
@@ -84,7 +99,7 @@
             }
         }
 
-        @media screen and (min-width: 767px) { 
+        @media screen and (min-width: 767px) {
             .citrusStylesSE-article2up-card--image {
                 height: 314px;
             }
@@ -135,7 +150,8 @@
             class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
             <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
                 <div class="citrusStylesSE-article2up-card--image">
-                    <img alt="placeholder" class="citrusStylesSE-image" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Ollie-food-philosophy_image">
+                    <img alt="placeholder" class="citrusStylesSE-image"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Ollie-food-philosophy_image">
                 </div>
                 <div class="citrusStylesSE-article2up-card--details">
                     <h3 class="citrusStylesSE-centered">
@@ -144,14 +160,14 @@
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                        <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                            <a href="" class="citrusStylesSE-url">Shop Now</a>
-                        </div>
+                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
                 </div>
             </div>
             <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
                 <div class="citrusStylesSE-article2up-card--image">
-                    <iframe src="https://www.youtube.com/embed/eL_MaSCgA8A" title="ABC" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/eL_MaSCgA8A" title="ABC" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
@@ -162,11 +178,11 @@
                     <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                        <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                            <a href="" class="citrusStylesSE-url">Shop Now</a>
-                        </div>
+                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
 
-                    
+
                 </div>
             </div>
         </div>
