@@ -1,0 +1,138 @@
+<!-- DES-856 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content-6up-YT-video</title>
+    <!-- css library -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <link rel="stylesheet" href="../table-content/testStyle.css">
+</head>
+
+<body>
+    <section class="citrus-explore-food-area">
+        <div class="citrus-custom-container">
+            <div class="citrusStylesSE-section__title">
+                <h2 class="citrusStylesSE-header2">Explore all of Weruva’s cat food brands</h2>
+            </div>
+            <div class="citrus-explore-food-section-flex">
+                <!-- single item 01 -->
+                <div class="citrus-explore-food-single-item ">
+                    <div class="items-wrapper">
+                        <div class="citrus-yt-video">
+                            <button onclick="show_video()" data-id="ozn7jsZuAJk">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_1"
+                                    alt="Play Soulistic video." />
+                            </button>
+                            <div class="show-video"></div>
+                        </div>
+                        <h1>Soulistic</h1>
+                        <p>Natural solutions to help support your cat’s health.</p>
+                        <a href="https://www.petco.com/shop/en/petcostore/brand/soulistic" manual_cm_sp=""
+                            onclick="clickTrackLink(this);">Shop Now</a>
+                    </div>
+
+                </div>
+
+                <!-- single item 02 -->
+                <div class="citrus-explore-food-single-item">
+                    <div class="item-wrapper">
+                        <div class="citrus-yt-video">
+                            <button onclick="show_video()" data-id="wJKyGHCGsaY">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_2"
+                                    alt="Play Weruva video." />
+                            </button>
+                            <div class="show-video"></div>
+                        </div>
+                        <h1>Weruva</h1>
+                        <p><span style="white-space: nowrap">Hand-prepared</span> ingredients with <span
+                                style="white-space: nowrap">single-source</span> protein options.</p>
+                        <a href="https://www.petco.com/shop/en/petcostore/brand/weruva/cat" manual_cm_sp=""
+                            onclick="clickTrackLink(this);">Shop Now</a>
+                    </div>
+                </div>
+                <!-- single item 03 -->
+                <div class="citrus-explore-food-single-item">
+                    <div class="citrus-yt-video">
+                        <button onclick="show_video()" data-id="uRYXPAgEh0M">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_3"
+                                alt="Play Cats in the Kitchen video." />
+                        </button>
+                        <div class="show-video"></div>
+                    </div>
+                    <h1>Cats in the Kitchen</h1>
+                    <p>Unique protein combinations with added fish oils.</p>
+                    <a href="https://www.petco.com/shop/en/petcostore/brand/cats-in-the-kitchen" manual_cm_sp=""
+                        onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+
+                <!-- single item 04 -->
+                <div class="citrus-explore-food-single-item ">
+                    <div class="citrus-yt-video">
+                        <button onclick="show_video()" data-id="B3FSY3wzamg">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_4"
+                                alt="Play BFF video." />
+                        </button>
+                        <div class="show-video"></div>
+                    </div>
+
+                    <h1>B.F.F.</h1>
+                    <p>Recipes for picky cats with major flavor to fuel them.</p>
+                    <a href="https://www.petco.com/shop/en/petcostore/brand/bff" manual_cm_sp=""
+                        onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+                <!-- single item 0-5 -->
+                <div class="citrus-explore-food-single-item">
+                    <div class="citrus-yt-video">
+                        <button onclick="show_video()" data-id="w7JiLVZ6WIE">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_5"
+                                alt="Play Truluxe video" />
+                        </button>
+                        <div class="show-video"></div>
+                    </div>
+                    <h1>Truluxe</h1>
+                    <p>Premium nutrition for the most discriminating cats.</p>
+                    <a href="https://www.petco.com/shop/en/petcostore/brand/weruva#facet:&productBeginIndex:0&orderBy:2&pageView:grid&minPrice:&maxPrice:&pageSize:&"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+                <!-- single item 06 -->
+                <div class="citrus-explore-food-single-item">
+                    <div class="citrus-yt-video">
+                        <button onclick="show_video()" data-id="qW-rqzDHw8g">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_weruva_fav_cat_food_6"
+                                alt="Play Patch Up video." />
+                        </button>
+                        <div class="show-video"></div>
+                    </div>
+                    <h1>Patch Up!</h1>
+                    <p>Natural pumpkin for digestive health support.</p>
+                    <a href="https://www.petco.com/shop/en/petcostore/brand/patch-up/cat" manual_cm_sp=""
+                        onclick="clickTrackLink(this);">Shop Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- JS - Videos -->
+    <script>
+
+        function show_video() {
+            var el = event.target.parentElement.querySelector('.show-video');
+            el.style.display = "block"
+            el.innerHTML = `
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${event.target.getAttribute('data-id')}?autoplay=1" title="It's Pet Food Seriously Ep 3: Picky Cats" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <span onclick="hideVideo()">&times;</span>`;
+        }
+
+        function hideVideo() {
+            event.target.parentElement.style.display = 'none';
+            event.target.parentElement.innerHTML = '';
+        }
+
+    </script>
+</body>
+
+</html>
