@@ -1332,9 +1332,6 @@
 
 /* ===================== Containers ===================== */
 /* All sizes containers styles */
-.citrusStylesSE-container {
-  margin: auto;
-}
 @media (min-width: 20em) {
   .citrusStylesSE-container--xsmall\@xsmall {
     max-width: 20em;
