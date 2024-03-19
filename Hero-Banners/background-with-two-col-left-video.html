@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>media-content-banner-with-logo</title>
+    <title>Nature of the dog</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
@@ -21,24 +21,15 @@
         {
             max-width: 1440px;
         }
-
-        .citrusStylesSE-desktop__version {
-            display: block;
-        }
-
-        .citrucitrusStyleSE-mobile__version {
-            display: none;
-        }
-
         .citrusStylesSE-grid__cell {
             display: flex;
         }
 
         .citrucitrusStyleSE-product__video {
              width: 100%;
+             max-width: 650px;
              min-height: 350px;
              margin-bottom: 30px;
-
         }
 
         .citrucitrusStyleSE-product__video iframe {
@@ -46,106 +37,32 @@
             min-height: 100%;
         }
 
-        .citrusStyleSE-grid_logo {
-            display: block;
+        .citrusStylesSE-section__title{
+            margin: 0 auto;
+        }
+        .citrusStylesSE-section__title .citrusStylesSE-header2{
+            font-size: 36px;
+            color:#fff;
+        }
+        .citrusStylesSE-section__title .citrusStylesSE-para{
+            font-size: 20px;
+            color:#fff;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
-        .citrusStyleSE-grid_logo img {
-            max-width: 342px;
-            width: 100%;
-            height: auto;
-        }
 
-        .citrusStylesSE-grid-text h2 {
-            color: #fff;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            font-size: 42px;
-            text-align: center;
-        }
-
-        .citrusStylesSE-grid-text p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            font-size: 24px;
-            color: #fff;
-            font-weight: 400;
-            text-align: center;
-            margin: auto;
-            padding-bottom: 20px;
-
-        }
-        .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white
+        @media screen and (max-width:767px) 
         {
-            justify-content: left;
-        }
-
-
-        .citrusStylesSE-grid-text {
-            padding: 0 20px 20px;
-        }
-
-        @media screen and (max-width:767px) {
-            .citrusStylesSE-desktop__version {
-                display: none;
-            }
-
-            .citrucitrusStyleSE-mobile__version {
-                display: block;
-            }
-
-            .citrusStylesSE-order2-sm {
-                order: 2;
-            }
-
-            .citrusStylesSE-order1-sm {
-                order: 1;
-                display: block;
-            }
-
-            .citrusStylesSE-grid-text {
-                width: 75%;
-                margin: auto;
-                padding: 30px 0;
-            }
-
-            .citrucitrusStyleSE-product__video {
-                width: 100%;
-                max-width: 100%;
-                position: relative;
-            }
-
-            .citrucitrusStyleSE-product__video img {
-                top: 0;
-            }
             .citrucitrusStyleSE-product__video {
              margin-bottom: 0px;
-        }
-        .citrusStylesSE-grid-text h2 {
-            color: #fff;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            font-size: 42px;
-            text-align: center;
-        }
-
-        .citrusStylesSE-grid-text p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            font-size: 20px;
-            color: #fff;
-            text-align: center;
-        }
-        .citrusStylesSE-cta__box-white .citrusStylesSE-url {
-            color: #fff;
-            font-size: 20px;
-            text-align: center;
-            text-decoration: underline;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-        }
-        .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
-            justify-content: center;
-        }
-
+            }
+            .citrusStylesSE-section__title .citrusStylesSE-header2{
+            font-size: 30px;
+            }
+            .citrusStylesSE-section__title .citrusStylesSE-para{
+                font-size: 16px;
+            }
         }
 
         /* End Media Content Banners With Logo */
@@ -157,7 +74,7 @@
     <section class="citrusStyleSE-natureDog__twoCol">
         <div class="citrusStylesSE-container citrusStyleSE-mediaBanner__container">
         <div
-            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+            class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
             
             <div class="citrusStylesSE-grid__cell citrucitrusStyleSE-product__video">
                 <div class="citrucitrusStyleSE-product__video">
@@ -166,11 +83,10 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center">
-                <div class="citrusStylesSE-grid-text">
-                    <h2 class="citrusStylesSE-centered">Nature of the dog</h2>
-                    <p class="citrusStylesSE-centered">Give your dog a KONG to fulfill their natural instincts and help prevent problem behaviors before they start.</p>
-                    
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-centered">
+                <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <h2 class="citrusStylesSE-header2">Nature of the&nbsp;dog</h2>
+                    <p class="citrusStylesSE-para">Give your dog a KONG to fulfill their natural instincts and help prevent problem behaviors before they start.</p>                    
                 </div>
             </div>            
         </div>

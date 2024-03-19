@@ -8,6 +8,7 @@
     <title>Education - FAQ -- Hero Banner</title>
     <!-- citrusStylesSE library css -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
 
 .citrusStylesSE-grid__cell {
@@ -49,7 +50,18 @@
 .citrusStylesSE-top__iframe {
   position: relative;
 }
-
+.citrusStylesSE-section__title {
+    padding: 1.75em 1em;
+    text-align: left;
+}
+.citrusStylesSE-letter-box-large
+{
+  padding-bottom: 0 !important;
+}
+.citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white
+{
+  justify-content: left;
+}
 .citrusStylesSE-video__Text {
   height: 100%;
   display: -webkit-box;
@@ -154,7 +166,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
   width: 100%;
 }
@@ -413,10 +425,6 @@
   }
 }
 
-       
-@media all and (max-width: 767px) {
-}
-
 @media all and (max-width: 375px) {
 }
         
@@ -446,16 +454,17 @@
                     </div>
             </div>
 
-            <div class="citrusStylesSE-grid__cell">
-                <div class="citrusStylesSE-video__Text">
-                    <h2 class="citrusStylesSE-sectionTitle">Cater to your pet’s favorite foods</h2>
-                    <p>The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center">
+                <div class="citrusStylesSE-section__title">
+                    <h2 class="citrusStylesSE-header2">Cater to your pet’s favorite&nbsp;foods</h2>
+                    <p class="citrusStylesSE-para">The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
                         for any dietary restrictions or allergies.</p>
                       <!-- shop now CTA -->
-                      <div class="citrusStylesSE-video__CTA">
-                          <a href="#"
-                              onclick="clickTrackLink(this);">Shop Now</a>
-                      </div>
+                      <div class="citrusStylesSE-letter-box-large">
+                        <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                            <a href="" class="citrusStylesSE-url">CTA TEXT HERE</a>
+                        </div>
+                    </div>
                 </div>
             </div> 
 

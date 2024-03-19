@@ -5,25 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - FAQ -- Hero Banner</title>
+    <title>Love is in the Details</title>
     <!-- citrusStylesSE library css -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         :root {
             --citrusStylesSE-grid-gutter: .75em;
             --citrusStylesSE-border-radius-8: 8px;
         }
-        .citrusStylesSE-card__sectionTitle {
-        margin: 0;
-        font-family: PetcoCircular-Bold, arial !important;
-        font-size: 1.5em;
-        line-height: 1.75em;
-        text-align: center;
-        color: #000;
-        font-weight: 700;
-        padding: .5em 0;
-        }
 
+        .citrusStylesSE-section__title {
+            padding: 1.5em 1em;
+        }
         .citrusStylesSE-grid--cards
         {
         width: 74em;
@@ -68,31 +62,6 @@
             font-weight: 400;
             color: #000;
         }
-        .citrusStylesSE-cta
-        {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1em 0;
-        }
-        .citrusStylesSE-cta-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-transform: uppercase;
-            background-color: #001952;
-            border: none;
-            border-radius: 0.313rem;
-            font-weight: bold;
-            width: 287px;
-            height: 55px;
-            text-align: center;
-            text-decoration: none;
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-weight: 700;
-            font-size: 16px;
-        }
 
 
         /* overflow scroll bar hide */
@@ -123,17 +92,7 @@
         }
 
         @media all and (max-width: 375px) {
-            .citrusStylesSE__sectionTitle {
-                font-size: 20px;
-                line-height: 24px;
-                width: 242px;
-                margin: auto;
-            }
         }
-        
-
-        
-
     </style>
 </head>
 
@@ -142,7 +101,9 @@
     <main>
     <!-- 3 Items Cards -->
     <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
-        <h2 class="citrusStylesSE-card__sectionTitle">Love is in the Details<sup>&#174;</sup></h2>
+        <div class="citrusStylesSE-section__title">
+            <h3 class="citrusStylesSE-header3">Love is in the Details<sup>&#174;</sup></h3>
+        </div>
         <div class="citrusStylesSE-grid citrusStylesSE-grid--cards">
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
@@ -155,7 +116,6 @@
                     </div>
                   </div>
             </div>
-
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
                     <div class="citrusStylesSE-card__img">
@@ -167,7 +127,6 @@
                     </div>
                   </div>
             </div>
-
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
                     <div class="citrusStylesSE-card__img">
@@ -178,17 +137,19 @@
                       <p>Real seafood, poultry or beef. Aged cheddar. A touch of milk. Fancy Feast knows what cats crave.</p>
                     </div>
                   </div>
-            </div>       
+            </div>                   
     	</div>
-        <div class="citrusStylesSE-cta">
-            <a class="citrusStylesSE-cta-box" href="#" onclick="clickTrackLink(this);">Shop Fancy Feast</a>
+        <div class="citrusStylesSE-letter-box-large">
+            <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                <a href="" class="citrusStylesSE-url">Shop Fancy Feast</a>
+            </div>
         </div>
-
-        <h2 class="citrusStylesSE-card__sectionTitle">Impeccable delights for your cat</h2>
+        <div class="citrusStylesSE-section__title">
+            <h3 class="citrusStylesSE-header3">Impeccable delights for your cat</h3>
+        </div>
 
     </section>
 </main>
-    <!-- JS - Videos -->
 </body>
 
 </html>
