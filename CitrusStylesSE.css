@@ -6,6 +6,78 @@
  */
   /* ===================== CSS Variable ===================== */
   :root {
+
+  /* ===================== Finalised Variables ===================== */
+  /* Finalising all the variables that used most */
+
+    --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
+    --citrusStylesSE-secondary-navy: #00205b; /* -Mostly used for bg color */
+    --citrusStylesSE-navy-021B4E: #021b4e; /* need new naming*/
+    --citrusStylesSE-navy-light: #1f52a0; /* -Mostly used for bg color */
+    --citrusStylesSE-blue-15-percent: #6edcfa; /* -Mostly used for bg color */
+    --citrusStylesSE-white: #ffffff;
+    --citrusStylesSE-black: #000000;
+    --citrusStylesSE-black-light: #333333;
+    --citrusStylesSE-gray-light: #d8d8d8;
+    --citrusStylesSE-gray-F6F6F6: #f6f6f6; /* need new naming*/
+    --citrusStylesSE-silver: #f4f7ff; /* need new naming*/
+    --citrusStylesSE-pink-10-percent: #df3995; /* -Mostly used for bg color */
+  
+    /* Borders */
+    --citrusStylesSE-border-width: 1px;
+    --citrusStylesSE-border-style: solid;
+    --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+    --citrusStylesSE-border-radius-5: 5px;
+    --citrusStylesSE-border-radius: 6px;
+    --citrusStylesSE-border-radius-10: 10px;
+    --citrusStylesSE-border-radius-15: 15px;
+    --citrusStylesSE-border-radius-20: 20px;
+    --citrusStylesSE-border-radius-30: 30px;
+    --citrusStylesSE-border-radius-rounded: 30em;
+  
+    /* Box shadows */
+    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+  
+    /* Disabled */
+    --citrusStylesSE-no-opacity: 0;
+    --citrusStylesSE-disabled-opacity: 0.5;
+  
+    /* Grid */
+    --citrusStylesSE-grid-gutter: 1em;
+  
+    /* Spacing */
+    --citrusStylesSE-spacing-super: 3em;
+    --citrusStylesSE-spacing-xlarge: 2em;
+    --citrusStylesSE-spacing-large: 1.5em;
+    --citrusStylesSE-spacing-medium: 1em;
+    --citrusStylesSE-spacing-small: 0.5em;
+    --citrusStylesSE-spacing-xsmall: 0.25em;
+    --citrusStylesSE-spacing-tiny: 0.125em;
+  
+    /* Screen widths */
+    --citrusStylesSE-screen-limit-xsmall: 20em;
+    --citrusStylesSE-screen-limit-small: 30em;
+    --citrusStylesSE-screen-limit-medium: 48em;
+    --citrusStylesSE-screen-limit-large: 64em;
+    --citrusStylesSE-screen-limit-xlarge: 78em;
+    --citrusStylesSE-screen-limit-super: 116em;
+  
+    /* Z Indexes */
+    --citrusStylesSE-z-over-content: 100;
+    --citrusStylesSE-z-over-control: 200;
+    --citrusStylesSE-z-over-page: 300;
+    --citrusStylesSE-z-over-screen: 400;
+    --citrusStylesSE-z-over-everything: 500;
+
+  /* ===================== End Variables ===================== */
+
+
+  /* ===================== All Blaze Variables ===================== */
+  /* We can delete all of them but the examples component from Blaze-UI "examples" won't be working (This won't be affected on our "real" component */
+
     --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
     --citrusStylesSE-secondary-navy: #00205B; /* -Mostly used for bg color */
     --citrusStylesSE-navy-021B4E: #021B4E; /* need new naming*/
@@ -325,7 +397,12 @@
     --citrusStylesSE-z-over-everything: 500;
 }
 
+/* ===================== End All Blaze Variables ===================== */
+
+
+/* ===================== Petco Fonts ===================== */
 /* Importing Petco Circular Font to use on Petco Website */
+
 @font-face {
   font-family: "PetcoCircular-Regular";
   src: url("font/PetcoCircular-Regular.woff2") /* for local use, we can use otf font that will match the font in local and staging */
@@ -366,10 +443,12 @@
   font-style: normal;
 }
 
+/* ===================== End Petco Fonts ===================== */
 
-  /* ===================== Avatar ===================== */
-/* Style the avatars */
-/* Avatar */
+
+/* ===================== Avatar ===================== */
+/* We are not using the Blaze Avatar so, we can delete this */
+
 .citrusStylesSE-avatar {
   position: relative;
   display: inline-block;
@@ -404,7 +483,9 @@
   width: 50%;
   height: 50%;
 }
-/* End Avatar */
+
+/* ===================== End Avatar ===================== */
+
   
 /* ===================== Accordion ===================== */
 /* Style the buttons that are used to open and close the accordion panel */
@@ -445,8 +526,12 @@
   transition: max-height 0.2s ease-out;
 }
 
-/* ===================== Badge ===================== */
-/* All the styles for badges */
+/* ===================== End Accordion ===================== */
+
+
+/* ===================== Badges ===================== */
+/* We are not using the Blaze Badges so, we can delete this */
+
 .citrusStylesSE-badge {
   display: inline-block;
   margin: 0;
@@ -519,10 +604,12 @@
   color: var(--citrusStylesSE-badge-color--error-ghost);
   border-color: var(--citrusStylesSE-badge-border-color--error-ghost);
 }
-/* End Badges */
+/* ===================== End Badges ===================== */
 
-/* ===================== Buttons ===================== */
-/* All the styles for Buttons */
+
+/* ===================== Blaze Buttons ===================== */
+/* We are not using those buttons so, we could delete them */
+
 .citrusStylesSE-button {
   color: var(--citrusStylesSE-button-color);
   background: var(--citrusStylesSE-button-background);
@@ -700,28 +787,113 @@
 .citrusStylesSE-button__icon-right {
   padding-left: var(--citrusStylesSE-spacing-small);
 }
-/*End Buttons */
+
+/* ===================== End Blaze Buttons ===================== */
+
 
 /* ===================== Common Class ===================== */
 /* All the Common Class added here */
-body{
+
+.citrusStylesSE-header1,
+.citrusStylesSE-header2,
+.citrusStylesSE-header3,
+.citrusStylesSE-header4 {
+  font-family: "PetcoCircular-Bold", arial !important;
+  font-weight: 700; /* Might not need to use for default: 700, font-weight since it was declared on the @font-face */
+  margin: 0;
+}
+
+.citrusStylesSE-para {
+  margin: 0;
+  font-family: "PetcoCircular-Regular", arial !important;
+  font-weight: normal; /* Might not need to use font-weight since it was declared on the @font-face */
+}
+
+.citrusStylesSE-url {
+  /* We could define a parent class for .citrusStylesSE */
+  text-decoration: none;
+  color: #000;
+}
+
+.citrusStylesSE-main { /* This class could be add on the body tag to remove the default maring and padding */
   margin: 0;
   padding: 0;
 }
 
-.citrusStylesSE-container{
+.citrusStylesSE-main img{
+  width: 100%;
+}
+
+.citrusStylesSE-section__title {
+  padding: 3.5em 1em;
+  text-align: center;
+}
+
+.citrusStylesSE-section__title .citrusStylesSE-header2,
+.citrusStylesSE-header3 {
+  font-size: 25px; /* Can be change as per mock */
+  text-align: inherit;
+  color: var(--citrusStylesSE-black);
+}
+
+.citrusStylesSE-section__title .citrusStylesSE-para {
+  color: var(--citrusStylesSE-black);
+  padding: 1em 0 0;
+  text-align: inherit;
+}
+
+.citrusStylesSE-grid__cell {
+  /* This can be removed*/
+  padding: 0;
+}
+
+/* Show/Hide Class */
+.citrusStylesSE-d-hide{ /* Hide one desktop */
+  display: none;
+}
+
+.citrusStylesSE-m-hide{ /* Hide one mobile */
+  display: block;
+}
+
+.citrusStylesSE-cta__underline {
+  display: block;
+  text-align: center;
+}
+
+.citrusStylesSE-cta__underline .citrusStylesSE-url {
+  color: var(--citrusStylesSE-primary-navy);
+  font-size: 16px;
+  text-align: inherit;
+  text-decoration: underline;
+  font-family: "PetcoCircular-Bold", arial !important;
+  font-weight: 700;
+}
+
+.citrusStylesSE-cta__underline .citrusStylesSE-url:hover {
+  color: var(--citrusStylesSE-primary-navy);
+}
+
+/*Common block for CTA Box-Button with background color */
+.citrusStylesSE-cta__box,
+.citrusStylesSE-cta__box-white {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.citrusStylesSE-container {
+  max-width: 90em;
   margin: 0 auto;
 }
 
-.citrusStylesSE-container--large{
-    max-width: 78em;
-}
+/* ===================== End Common Class ===================== */
 
-/* End Common Class */
 
 /* ===================== Card ===================== */
 /* All the Card styles added here */
-.citrusStylesSE-output {
+.citrusStylesSE-output {  /* Need to remove this */
   background-color: #fafafa;
   padding: 1rem;
   border-radius: 5px;
@@ -1154,7 +1326,9 @@ body{
   --citrusStylesSE-button-color: var(--citrusStylesSE-button-color--info);
   --citrusStylesSE-button-background: var(--citrusStylesSE-button-background--info);
 }
-/* End Card */
+
+/* ===================== End Card ===================== */
+
 
 /* ===================== Containers ===================== */
 /* All sizes containers styles */
@@ -1299,11 +1473,48 @@ body{
 .citrusStylesSE-container--super {
   max-width: 116em;
 }
-/* End Containers */
 
-/* ===================== Hero POV ===================== */
-/* All sizes containers styles */
- /* Carousels - POV */
+/* ===================== End Containers ===================== */
+
+
+/* ===================== Petco Fonts ===================== */
+ /* All the Fonts adding from local Font-Styles that will be reflected in the Petco Site */
+
+ @font-face {
+  font-family: "PetcoCircular-Regular";
+  src: url("font/PetcoCircular-Regular.woff2")
+    /* for local use, we can use otf font that will match the font in local and staging */
+    format("woff");
+}
+
+@font-face {
+  font-family: "PetcoCircular-Bold";
+  src: url("font/PetcoCircular-Bold.woff2")
+    /* for local use, we can use otf font that will match the font in local and staging */
+    format("woff");
+}
+
+@font-face {
+  font-family: "PetcoCircular-Black";
+  src: url("font/PetcoCircular-Black.otf") format("otf");
+}
+
+@font-face {
+  font-family: "PetcoCircular-Medium";
+  src: url("font/PetcoCircular-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: "PetcoCircular-Book";
+  src: url("font/PetcoCircular-Book.otf") format("otf");
+}
+
+/* ===================== End Petco Fonts ===================== */
+
+
+/* ===================== Hero POV Carousels ===================== */
+ /* All the Hero POV Carousels styles added here */
+
  .citrusStylesSE-carousel {
   overflow-x: hidden;
   position: relative;
@@ -1322,7 +1533,7 @@ body{
   transition: all ease 0.5s;
 }
 
-.citrusStylesSE-carousel__inner--item  {
+.citrusStylesSE-carousel__inner--item {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -1333,27 +1544,30 @@ body{
 .citrusStylesSE-carousel-indicators {
   position: absolute;
   bottom: 0;
-  left: calc(100% / 2 - 52px);
+  left: calc(100% / 2 - 47px);
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px 5px 0 0;
-  padding: 10px 10px 5px;
+  padding: 8px 9.5px 5px;
 }
 .citrusStylesSE-carousel-indicators span {
   display: inline-block;
-  border: 2px solid #09205c;
-  padding: 7px;
+  border: 1px solid #09205c;
+  padding: 5.5px;
   border-radius: 20px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 .citrusStylesSE-carousel-indicators span.active {
   background-color: #09205c;
 }
-/* End Hero POV */
+
+/* ===================== End Hero POV Carousels ===================== */
+
 
 /* ===================== Grid ===================== */
 /* All styles for grid */
+
 .citrusStylesSE-grid {
   display: flex;
 }
@@ -2691,6 +2905,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     margin-left: 0;
   }
 }
+
 @media (min-width: 20em) and (max-width: 29.99em) { /* min-width:320px and max-width: 479.99*/
   .citrusStylesSE-grid.citrusStylesSE-grid--small-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
     flex: 1;
@@ -2704,6 +2919,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     margin-left: 0;
   }
 }
+
 @media (min-width: 30em) and (max-width: 47.99em) { /* min-width:480px and max-width: 767.99*/
   .citrusStylesSE-grid.citrusStylesSE-grid--medium-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
     flex: 1;
@@ -2717,6 +2933,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     margin-left: 0;
   }
 }
+
 @media (min-width: 48em) and (max-width: 63.99em) { /* min-width:768px and max-width: 1023.99*/
   .citrusStylesSE-grid.citrusStylesSE-grid--large-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
     flex: 1;
@@ -2744,6 +2961,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     margin-left: 0;
   }
 }
+
 @media (min-width: 64em) { /* min-width:1248px */
   .citrusStylesSE-grid.citrusStylesSE-grid--super-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
     flex: 1;
@@ -2756,7 +2974,124 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     max-width: 100%;
     margin-left: 0;
   }
+
+  /* CTA Box-Button with background color */
+  .citrusStylesSE-cta__box .citrusStylesSE-url {
+    border-radius: var(--citrusStylesSE-border-radius-5);
+    background: var(--citrusStylesSE-primary-navy);
+    color: var(--citrusStylesSE-white);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+    width: 211px;
+    padding: 1.125em 0;
+  }
+
+  .citrusStylesSE-cta__box .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:focus-visible{
+    outline: none;
+  }
+
+  .citrusStylesSE-cta__box .citrusStylesSE-url:hover {
+    color: var(--citrusStylesSE-white);
+  }
+
+  /* CTA Box-Button with white background color */
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+    border-radius: var(--citrusStylesSE-border-radius-5);
+    background: var(--citrusStylesSE-white);
+    color: var(--citrusStylesSE-primary-navy);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+    width: 211px;
+    padding: 1.125em 0;
+  }
+
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:hover {
+    color: var(--citrusStylesSE-primary-navy);
+  }
+
 }
+
+@media (max-width: 63.999em) { /* max-width: 1023.99px */
+
+  /* Reverse CTA for Box-Button - without background color on Mobile */
+  .citrusStylesSE-cta__box .citrusStylesSE-url {
+    color: var(--citrusStylesSE-primary-navy);
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+  }
+
+  
+  .citrusStylesSE-cta__box .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url:focus-visible{
+    outline: none;
+  }
+
+  .citrusStylesSE-cta__box a:hover {
+    color: var(--citrusStylesSE-primary-navy);
+  }
+
+  /* Reverse CTA for Box-Button - white without background color on Mobile */
+  .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+    color: var(--citrusStylesSE-white);
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "PetcoCircular-Bold", arial !important;
+    font-weight: 700;
+  }
+
+  .citrusStylesSE-cta__box-white a:hover {
+    color: var(--citrusStylesSE-white);
+  }
+
+}
+
+@media (min-width: 48em) { /* min-width: 768px */
+  
+}
+
+@media (max-width: 47.99em) {
+  /* max-width:767.99px, all the mobile styles can be used this break-point*/
+
+  
+  /* Show/Hide Class */
+  .citrusStylesSE-d-hide{ /* Hide one desktop */
+    display: block;
+  }
+
+  .citrusStylesSE-m-hide{ /* Hide one mobile */
+    display: none;
+  }
+
+  
+  /* Hero POV flex directions column in mobile */
+  .citrusStylesSE-carousel__inner--item{
+    flex-direction: column;
+  }
+
+
+}
+
+/* Small Devices - below 320px */
+@media (max-width: 19.99em) {
+
+}
+
+
 @media (min-width: 20em) {
   .citrusStylesSE-grid__cell--hidden\@xsmall {
     display: none;
@@ -4883,7 +5218,387 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     flex: 0 1 auto;
   }
 }
-/* End Responsiveness */
+
+/* ===================== End Responsiveness ===================== */
+
+
+/* ===================== Splide CSS ===================== */
+/* default splide js library style */
+.splide__container {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.splide__list {
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.splide.is-initialized:not(.is-active) .splide__list {
+  display: block;
+}
+
+.splide__pagination {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  pointer-events: none;
+}
+
+.splide__pagination li {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+  display: none;
+}
+
+.splide__progress__bar {
+  width: 0;
+}
+
+.splide {
+  position: relative;
+  visibility: hidden;
+}
+
+.splide.is-initialized,
+.splide.is-rendered {
+  visibility: visible;
+}
+
+.splide__slide {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+  position: relative;
+}
+
+.splide__slide img {
+  vertical-align: bottom;
+}
+
+.splide__spinner {
+  animation: splide-loading 1s linear infinite;
+  border: 2px solid #999;
+  border-left-color: transparent;
+  border-radius: 50%;
+  bottom: 0;
+  contain: strict;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.splide__sr {
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.splide__toggle.is-active .splide__toggle__play,
+.splide__toggle__pause {
+  display: none;
+}
+
+.splide__toggle.is-active .splide__toggle__pause {
+  display: inline;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes splide-loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.splide__track--draggable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.splide__track--fade > .splide__list > .splide__slide {
+  margin: 0 !important;
+  opacity: 0;
+  z-index: 0;
+}
+
+.splide__track--fade > .splide__list > .splide__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.splide--rtl {
+  direction: rtl;
+}
+
+.splide__track--ttb > .splide__list {
+  display: block;
+}
+
+.splide__arrow {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #122359;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 2.2em;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2.2em;
+  z-index: 1;
+}
+
+.splide__arrow svg {
+  fill: #122359;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+.splide__arrow:hover:not(:disabled) {
+  opacity: 1;
+}
+
+.splide__arrow:disabled {
+  opacity: 0;
+}
+
+.splide__arrow:focus-visible {
+  outline: 1px solid #122359;
+  outline-offset: 3px;
+}
+
+.splide__arrow--prev {
+  left: 0em;
+}
+
+.splide__arrow--prev svg {
+  transform: scaleX(-1);
+}
+
+.splide__arrow--next {
+  right: 0em;
+}
+
+.splide.is-focus-in .splide__arrow:focus {
+  outline: 1px solid #122359;
+  outline-offset: 3px;
+}
+
+.splide__pagination {
+  bottom: 0.5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 3px;
+  opacity: 0.7;
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s linear;
+  width: 8px;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff;
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.splide__pagination__page:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.splide__pagination__page:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__pagination__page:focus {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__progress__bar {
+  background: #ccc;
+  height: 3px;
+}
+
+.splide__slide {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.splide__slide:focus {
+  outline: 0;
+}
+
+@supports (outline-offset: -3px) {
+  .splide__slide:focus-visible {
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .splide__slide:focus-visible {
+    border: 3px solid #0bf;
+  }
+}
+
+@supports (outline-offset: -3px) {
+  .splide.is-focus-in .splide__slide:focus {
+    outline: 3px solid #0bf;
+    outline-offset: -3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .splide.is-focus-in .splide__slide:focus {
+    border: 3px solid #0bf;
+  }
+
+  .splide.is-focus-in .splide__track > .splide__list > .splide__slide:focus {
+    border-color: #0bf;
+  }
+}
+
+.splide__toggle {
+  cursor: pointer;
+}
+
+.splide__toggle:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__toggle:focus {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+.splide__track--nav > .splide__list > .splide__slide {
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: 3px solid #000;
+}
+
+.splide__arrows--rtl .splide__arrow--prev {
+  left: auto;
+  right: 1em;
+}
+
+.splide__arrows--rtl .splide__arrow--prev svg {
+  transform: scaleX(1);
+}
+
+.splide__arrows--rtl .splide__arrow--next {
+  left: 1em;
+  right: auto;
+}
+
+.splide__arrows--rtl .splide__arrow--next svg {
+  transform: scaleX(-1);
+}
+
+.splide__arrows--ttb .splide__arrow {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.splide__arrows--ttb .splide__arrow--prev {
+  top: 1em;
+}
+
+.splide__arrows--ttb .splide__arrow--prev svg {
+  transform: rotate(-90deg);
+}
+
+.splide__arrows--ttb .splide__arrow--next {
+  bottom: 1em;
+  top: auto;
+}
+
+.splide__arrows--ttb .splide__arrow--next svg {
+  transform: rotate(90deg);
+}
+
+.splide__pagination--ttb {
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: auto;
+  padding: 1em 0;
+  right: 0.5em;
+  top: 0;
+}
+
+/* ===================== End Splide CSS ===================== */
+
 
 /* ===================== Tabs ===================== */
 /* All the Tabs styles */

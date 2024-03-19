@@ -122,9 +122,9 @@
   color: #000;
 }
 
-.citrusStylesSE-img {
-  /* We could define a parent class for .citrusStylesSE */
-  width: 100%;
+.citrusStylesSE-main { /* This class could be add on the body tag to remove the default maring and padding */
+  margin: 0;
+  padding: 0;
 }
 
 .citrusStylesSE-main img{
@@ -276,6 +276,7 @@
   background-color: #09205c;
 }
 /* End Hero POV */
+
 
 /* ===================== Splide CSS ===================== */
 /* default splide js library style */
@@ -652,7 +653,8 @@
   top: 0;
 }
 
-/* End Splide CSS */
+/* ===================== End Splide CSS ===================== */
+
 
 /* ===================== Responsive Media Break-Point ===================== */
 /* All the common used break-point adding here */
@@ -734,8 +736,7 @@
 
 
 
-@media (max-width: 63.999em) {
-  /*max with 767px*/
+@media (max-width: 63.999em) { /* max-width: 1023.99px */
 
   /* Reverse CTA for Box-Button - without background color on Mobile */
   .citrusStylesSE-cta__box .citrusStylesSE-url {
