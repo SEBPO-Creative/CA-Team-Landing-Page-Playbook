@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
-
-.citrusStylesSE-grid__cell {
-    padding-left: 0;
-}        
+      
 /* video style */
-.citrusStylesSEspotlight {
+.citrusStylesSE-spotlight {
   width: 100%;
   max-width: 1150px;
   margin: 40px auto 40px;
@@ -23,137 +20,48 @@
   border-radius: 10px;
 }
 
-.citrusStylesSE-video__Row {
+.citrusStylesSE-spotlight__video__Row {
   width: 1150px;
   max-width: 100%;
   margin: auto;
   position: relative;
   margin-bottom: -4px;
 }
-.citrusStylesSE-top__video {
+.citrusStylesSE-spotlight__top__video {
   max-width: 400px;
   border-radius: 8px;
   border: none;
 }
-.citrusStylesSE-top__video img {
+.citrusStylesSE-spotlight__top__video img {
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   min-height: 100%;
   pointer-events: none;
 }
-.citrusConair_top_vide img {
-  max-width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.citrusStylesSE-top__iframe {
+.citrusStylesSE-spotlight__top__iframe {
   position: relative;
 }
-.citrusStylesSE-section__title {
-    padding: 1.75em 1em;
+.citrusStylesSE-spotlight .citrusStylesSE-section__title {
+    padding: 1.50em 2em;
     text-align: left;
 }
 .citrusStylesSE-letter-box-large
 {
   padding-bottom: 0 !important;
 }
-.citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white
+.citrusStylesSE-spotlight .citrusStylesSE-cta__box, .citrusStylesSE-spotlight .citrusStylesSE-cta__box-white
 {
   justify-content: left;
 }
-.citrusStylesSE-video__Text {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 30px;
-}
-.citrusStylesSE-video__Text h2 {
-  font-family: "PetcoCircularTT-Regular", arial !important;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000;
-  font-weight: 700;
-}
-.citrusStylesSE-video__Text p {
-  max-width: 90%;
-  margin: 10px 0 20px;
-  font-family: "PetcoCircularTT-Regular", arial !important;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000;
-  text-align: left;
-}
-.citrusConair__videoCTA {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.citrusStylesSE-video__CTA {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-  margin-bottom: 30px;
-}
-.citrusStylesSE-video__CTA a {
-  min-width: 211px;
-  line-height: 56px;
-  background: #001952;
-  font-family: "PetcoCircularTT-Bold", arial !important;
-  font-size: 16px;
-  font-weight: 900;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid #001952;
-  border-radius: 7px;
-  -webkit-transition: background 1s ease;
-  -o-transition: background 1s ease;
-  transition: background 1s ease;
-}
-.citrusStylesSE-video__CTA a:hover {
-  min-width: 211px;
-  line-height: 56px;
-  background: #001952;
-  font-family: "PetcoCircularTT-Bold", arial !important;
-  font-size: 16px;
-  font-weight: 900;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid #001952;
-  border-radius: 7px;
-}
 
 /* Video Popup */
-.citrusStylesSEspotlight .citrusStylesSE-yt__video {
+.citrusStylesSE-spotlight .citrusStylesSE-yt__video {
   position: relative;
 }
 
-.citrusStylesSEspotlight .citrusStylesSE-yt__video button,
-.citrusStylesSEspotlight .citrusStylesSE-yt__video button:focus-visible {
+.citrusStylesSE-spotlight .citrusStylesSE-yt__video button,
+.citrusStylesSE-spotlight .citrusStylesSE-yt__video button:focus-visible {
   background: none;
   border: none;
   outline: none;
@@ -161,7 +69,7 @@
   padding: 0;
 }
 
-.citrusStylesSEspotlight .citrusStylesSE-show__top__video {
+.citrusStylesSE-spotlight .citrusStylesSE-show__top__video {
   display: none;
   position: absolute;
   top: 0;
@@ -171,7 +79,7 @@
   width: 100%;
 }
 
-.citrusStylesSEspotlight .citrusStylesSE-show__top__video span {
+.citrusStylesSE-spotlight .citrusStylesSE-show__top__video span {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -191,13 +99,13 @@
   display: none;
 }
 
-.citrusStylesSEspotlight .citrusStylesSE-show__top__video span:hover {
+.citrusStylesSE-spotlight .citrusStylesSE-show__top__video span:hover {
   color: #fff;
   background: #e4425c;
   border: 1px solid #e4425c;
 }
 
-.citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
+.citrusStylesSE-spotlight .citrusStylesSE-show__top__video iframe {
   width: 100%;
   min-height: 254px;
   background-color: #000 !important;
@@ -205,7 +113,7 @@
   border-radius: 9px;
 }
 
-.citrusStylesSEspotlight .show-video {
+.citrusStylesSE-spotlight .show-video {
   display: none;
   position: absolute;
   top: 0;
@@ -216,7 +124,7 @@
   width: 100%;
 }
 
-.citrusStylesSEspotlight .show-video span {
+.citrusStylesSE-spotlight .show-video span {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -236,55 +144,66 @@
   display: none;
 }
 
-.citrusStylesSEspotlight .show-video span:hover {
+.citrusStylesSE-spotlight .show-video span:hover {
   color: #fff;
   background: #e4425c;
   border: 1px solid #e4425c;
 }
 
-.citrusStylesSEspotlight .show-video iframe {
+.citrusStylesSE-spotlight .show-video iframe {
   min-height: 100%;
 }
 
+.citrusStylesSE-spotlight .citrusStylesSE-grid__cell
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 @media all and (max-width: 768px) {
 
-  .citrusStylesSE-top__video {
+  .citrusStylesSE-spotlight 
+  {
+    width: 95%;
+  }
+  .citrusStylesSE-spotlight .citrusStylesSE-section__title {
+    padding: 1.50em 1.5em;
+    text-align: center;
+  } 
+  .citrusStylesSE-spotlight .citrusStylesSE-cta__box, .citrusStylesSE-spotlight .citrusStylesSE-cta__box-white
+  {
+    justify-content: center;
+  }
+  .citrusStylesSE-spotlight__top__video {
     width: 100%;
   }
-
-  
-  .citrusConair__video {
-    width: 95%;
-    margin: 20px auto 40px;
-  }
-  .citrusStylesSE-video__Row {
+  .citrusStylesSE-spotlight__video__Row {
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     -ms-grid-columns: unset;
     grid-template-columns: unset;
   }
-  .citrusStylesSE-video__Row > *:nth-child(1) {
+  .citrusStylesSE-spotlight__video__Row > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .citrusStylesSE-top__video img {
+  .citrusStylesSE-spotlight__top__video img {
     max-width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     min-height: 440px;
   }
 
-  .citrusStylesSEspotlight .citrusStylesSE-yt__video button,
-  .citrusStylesSEspotlight .citrusStylesSE-yt__video button:focus-visible {
+  .citrusStylesSE-spotlight .citrusStylesSE-yt__video button,
+  .citrusStylesSE-spotlight .citrusStylesSE-yt__video button:focus-visible {
     background: none;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 0;
   }
-  .citrusStylesSEspotlight .citrusStylesSE-show__top__video {
+  .citrusStylesSE-spotlight .citrusStylesSE-show__top__video {
     display: none;
     position: absolute;
     top: 0;
@@ -293,7 +212,7 @@
     border-radius: 10px;
     width: 100%;
   }
-  .citrusStylesSEspotlight .citrusStylesSE-show__top__video span {
+  .citrusStylesSE-spotlight .citrusStylesSE-show__top__video span {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -312,33 +231,16 @@
     cursor: pointer;
     display: none;
   }
-  .citrusStylesSEspotlight .citrusStylesSE-show__top__video span:hover {
+  .citrusStylesSE-spotlight .citrusStylesSE-show__top__video span:hover {
     color: #fff;
     background: #e4425c;
     border: 1px solid #e4425c;
   }
-  .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
+  .citrusStylesSE-spotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
     min-height: 440px;
   }
-
-  .citrusStylesSE-video__Text {
-    min-height: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-  .citrusStylesSEspotlight .show-video {
+  .citrusStylesSE-spotlight .show-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -347,7 +249,7 @@
     width: 100%;
     padding: 0;
   }
-  .citrusStylesSEspotlight .show-video span {
+  .citrusStylesSE-spotlight .show-video span {
     position: absolute;
     right: 5px;
     top: 5px;
@@ -366,117 +268,99 @@
     cursor: pointer;
     display: none;
   }
-  .citrusStylesSEspotlight .show-video span:hover {
+  .citrusStylesSE-spotlight .show-video span:hover {
     color: #fff;
     background: #e4425c;
     border: 1px solid #e4425c;
   }
-  .citrusStylesSEspotlight .show-video iframe {
+  .citrusStylesSE-spotlight .show-video iframe {
     width: 100%;
     min-height: 440px;
   }
-  .citrusConairFaq__iframe iframe {
-    width: 100%;
-    min-width: 100%;
-    margin: auto;
-    height: 100%;
-    border-radius: 8px;
-    border: none;
-  }
-  .citrusStylesSEspotlight .show-video iframe {
+  .citrusStylesSE-spotlight .show-video iframe {
     min-height: 494px;
   }
-  
-
-}
-@media all and (min-width: 755px) and (max-width: 768px) {
-  /* .citrusStylesSE-top__video img {
-    padding: 3px;
-    width: 100% !important;
-    display: block;
-  } */
 }
 
 @media all and (max-width: 425px) {
+
+  .citrusStylesSE-spotlight 
+  {
+    width: 100%;
+  }
   
-  .citrusStylesSE-top__video img {
+  .citrusStylesSE-spotlight__top__video img {
     min-height: 260px;
 }
-.citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
+.citrusStylesSE-spotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
     min-height: 266px;
   }
-  .citrusStylesSEspotlight .show-video iframe {
+  .citrusStylesSE-spotlight .show-video iframe {
     min-height: 315px;
   }
 }
 
 @media all and (max-width: 320px) {
   
-  .citrusStylesSE-top__video img {
+  .citrusStylesSE-spotlight__top__video img {
     min-height: 200px;
   }
-  .citrusStylesSEspotlight .citrusStylesSE-show__top__video iframe {
+  .citrusStylesSE-spotlight .citrusStylesSE-show__top__video iframe {
     width: 100%;
     min-height: 200px;
   }
-  .citrusStylesSEspotlight .show-video iframe {
+  .citrusStylesSE-spotlight .show-video iframe {
     min-height: 315px;
   }
 }
 
-@media all and (max-width: 375px) {
-}
-        
-
-        
-
-    </style>
+</style>
 </head>
 
 <body>
 
     <main>
+          <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
+            <div class="citrusStylesSE-spotlight">
+              <div class="citrusStylesSE-spotlight__video__Row citrusStylesSE-centered">
+                  <div class="citrusStylesSE-grid citrusStylesSE-grid--medium-full citrusStylesSE-grid--small-full citrusStylesSE-grid--xsmall-full">
 
-    <section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
-        <div class="citrusStylesSEspotlight">
-        <div class="citrusStylesSE-video__Row citrusStylesSE-centered">
-        <div class="citrusStylesSE-grid citrusStylesSE-grid--medium-full citrusStylesSE-grid--small-full citrusStylesSE-grid--xsmall-full">
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-top__video">
-                    <div class="citrusStylesSE-top__iframe">
-                        <div class="citrusStylesSE-yt__video">
-                            <button onclick="citrusStylesSEspotlight_top_video()" data-id="aDQh69-kiBk">
-                                <img id="citrusStylesSE-citrustopVideo" src="https://placehold.co/800x509/png"
-                                    alt="100 percent icon">
-                            </button>
-                            <div class="citrusStylesSE-show__top__video"></div>
-                        </div>
-                    </div>
-            </div>
+                          <div class="citrusStylesSE-grid__cell citrusStylesSE-spotlight__top__video">
+                                  <div class="citrusStylesSE-spotlight__top__iframe">
+                                      <div class="citrusStylesSE-yt__video">
+                                          <button onclick="citrusStylesSE-spotlight_top_video()" data-id="aDQh69-kiBk">
+                                              <img id="citrusStylesSE-citrustopVideo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/ConairCoverPhoto-video-1"
+                                                  alt="100 percent icon">
+                                          </button>
+                                          <div class="citrusStylesSE-show__top__video"></div>
+                                      </div>
+                                  </div>
+                          </div>
 
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center">
-                <div class="citrusStylesSE-section__title">
-                    <h2 class="citrusStylesSE-header2">Cater to your pet’s favorite&nbsp;foods</h2>
-                    <p class="citrusStylesSE-para">The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
-                        for any dietary restrictions or allergies.</p>
-                      <!-- shop now CTA -->
-                      <div class="citrusStylesSE-letter-box-large">
-                        <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
-                            <a href="" class="citrusStylesSE-url">Cta Text Here</a>
-                        </div>
+                          <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center">
+                              <div class="citrusStylesSE-section__title">
+                                  <h2 class="citrusStylesSE-header2">Cater to your pet’s favorite&nbsp;foods</h2>
+                                  <p class="citrusStylesSE-para">The included Cuisinart recipe book offers a range of customizable treat recipes you can adapt
+                                      for any dietary restrictions or allergies.</p>
+                                    <!-- shop now CTA -->
+                                    <div class="citrusStylesSE-letter-box-large">
+                                      <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                                          <a href="" class="citrusStylesSE-url">Cta Text Here</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> 
+
                     </div>
                 </div>
-            </div> 
+            </div>
+          </section>
+      </main>
 
-    	</div>
-    </div>
-</div>
-    </section>
-</main>
       <!-- JS - Videos -->
       <script>
-
-        function citrusStylesSEspotlight_top_video() {
+        function citrusStylesSE-spotlight_top_video() {
             var el = event.target.parentElement.querySelector('.citrusStylesSE-show__top__video');
             console.log(event.target.dataset.id);
             el.style.display = "block"
