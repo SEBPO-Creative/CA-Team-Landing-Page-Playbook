@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Species Product Carousel</title>
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
         /* Universal styles */
         .citrusStylesSE--main {
@@ -27,6 +27,7 @@
             scrollbar-width: none;
             /* Firefox */
         }
+
         /* End Universal CSS */
 
 
@@ -86,7 +87,6 @@
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            line-clamp: 2;
             -webkit-box-orient: vertical;
             max-height: 4em;
             /*standard size is 4em*/
@@ -114,7 +114,6 @@
             margin: auto;
             padding: 10px 35px;
             -webkit-line-clamp: 4;
-            line-clamp: unset;
             min-height: 4em;
             max-height: unset;
         }
@@ -172,6 +171,14 @@
             font-weight: 700;
             line-height: 0.3;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .citrusStylesSE-species--tab span{
+            padding: 15px 0;
         }
 
         .citrusStylesSE-species--tab.citrusStylesSE-species-active-tab {
@@ -229,6 +236,7 @@
         .splide__arrow:disabled {
             opacity: 0;
         }
+
         /* End Dog Cat Category Section Combined CSS */
     </style>
 </head>
@@ -252,13 +260,13 @@
                             onclick="citrusStylesSE__filter_species('citrusStylesSE-dog-product')">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Dog"
                                 alt="Dog icon" />
-                            <p>DOG</p>
+                            <span>DOG</span>
                         </button>
                         <button class="citrusStylesSE-species--tab"
                             onclick="citrusStylesSE__filter_species('citrusStylesSE-cat-product')">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Cat"
                                 alt="Cat icon" />
-                            <p>CAT</p>
+                            <span>CAT</span>
                         </button>
                     </div>
                 </div>
@@ -282,9 +290,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -303,9 +311,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -324,9 +332,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -345,9 +353,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -375,9 +383,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -396,9 +404,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -417,9 +425,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
@@ -438,9 +446,9 @@
                                                 <p class="citrusStylesSE-species--details">
                                                     Product Name and Description Goes Here
                                                 </p>
-                                                <button class="citrusStylesSE-product--cta">
+                                                <span class="citrusStylesSE-product--cta">
                                                     Shop Now
-                                                </button>
+                                                </span>
                                             </div>
                                         </a>
                                     </div>
