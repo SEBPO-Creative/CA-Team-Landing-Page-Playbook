@@ -7,161 +7,135 @@
     <title>Earth Animal POV</title>
     <!-- css library -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
-        .citrus_earth_animal_carousel {
-            overflow-x: hidden;
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
+        .citrusStylesSE-carousel h1 {
+            font-family: "PetcoCircular-Bold", arial !important;
         }
 
+        .citrusStylesSE-carousel p {
+            font-family: "PetcoCircular-Regular", arial !important;
+        }
 
-        .citrusStylesSE-carousel__inner {
-            display: flex;
-            transition: all ease .5s;
+        .citrusStylesSE-cta-box {
+            width: 210px;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-cta-box a {
+            border-radius: 5px;
+            padding: 15px;
+            display: block;
+            text-align: center;
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .citrusStylesSE-custom-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-full {
             width: 100%;
-            overflow: hidden;
-            justify-content: space-between;
-            align-items: flex-end !important;
         }
 
-        .citrusStylesSE-carousel__inner--item {
+        .citrusStylesSE-pov-flex-box {
             display: flex;
             align-items: center;
-            justify-content: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
+            justify-content: space-between;
+            flex-wrap: nowrap;
         }
 
-        .citrusStylesSE-carousel__inner--item .custom-container {
+        .citrusStylesSE-carousel__inner--item .citrusStylesSE-custom-container {
             justify-content: space-between;
         }
 
-        .citrus_earth_animal_carousel__inner--item__col {
+        .citrusStylesSE-carousel-item__col {
             width: 50%;
             justify-content: flex-start !important;
             flex-wrap: wrap !important;
         }
 
-        .citrus_earth_animal_carousel__inner--item__col:first-child {
+        .citrusStylesSE-carousel-item__col:first-child {
             padding: 30px 0 30px 30px;
             min-height: 290px;
         }
 
-        .citrus_earth_animal__pov--text {
+        .citrusStylesSE-pov--text {
             width: 100%;
         }
 
-        .citrus_earth_animal__pov--text h1 {
+        .citrusStylesSE-pov--text h1 {
             font-size: 35px;
             color: #fff;
             padding: 15px 0;
         }
 
-
-        .pov3 .citrus_earth_animal__pov--text h1 {
-            color: #00205B;
+        .citrusStylesSE-pov3 .citrusStylesSE-pov--text h1 {
+            color: #00205b;
         }
 
-        .pov3 .citrus_earth_animal__pov--text p {
-            color: #00205B;
+        .citrusStylesSE-pov3 .citrusStylesSE-pov--text p {
+            color: #00205b;
         }
 
-        .pov3 .citrus_earth_animal__pov--cta a {
-            background: #00205B !important;
+        .citrusStylesSE-pov3 .citrusStylesSE-pov--cta a {
+            background: #00205b !important;
             color: #fff !important;
-            border: 1px solid #00205B !important;
+            border: 1px solid #00205b !important;
         }
 
-        .pov3 .citrus_earth_animal__pov--cta a:hover {
+        .citrusStylesSE-pov3 .citrusStylesSE-pov--cta a:hover {
             background: #fff !important;
-            color: #00205B !important;
+            color: #00205b !important;
         }
 
-        .citrus_earth_animal__pov--text p {
+        .citrusStylesSE-pov--text p {
             font-size: 16px;
             color: #fff;
             padding-bottom: 20px;
         }
 
-        .citrus_earth_animal__pov--cta {
-            width: 100%;
+        .citrusStylesSE-pov--cta {
+            /* width: 212px; */
             margin: initial !important;
         }
 
-        .citrus_earth_animal__pov--cta a {
+        .citrusStylesSE-pov--cta a {
             background: #fff !important;
             color: #001952 !important;
             border: 1px solid #fff !important;
         }
 
-        .citrus_earth_animal__pov--cta a:hover {
+        .citrusStylesSE-pov--cta a:hover {
             background: #001952 !important;
             color: #fff !important;
             border: 1px solid #001952 !important;
         }
 
-        .citrus_earth_animal__pov--logo {
+        .citrusStylesSE-pov--logo {
             max-width: 160px;
         }
 
-        .citrus_earth_animal__pov--shots {
+        .citrusStylesSE-pov--shots {
             max-width: 400px;
         }
 
-        .citrusStylesSE-carousel__inner .pov1 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-pov1 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov1-dsk");
         }
 
-        .citrusStylesSE-carousel__inner .pov2 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov2-dsk");
         }
 
-        .citrusStylesSE-carousel__inner .pov3 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-pov3 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov3-dsk");
         }
 
-        .citrus_earth_animal_carousel-controls .prev {
-            display: inline-block;
-            height: 32px;
-            width: 32px;
-            position: absolute;
-            left: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-image: url('prev.svg');
-            background-position: center;
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            cursor: pointer;
-            opacity: .5;
-        }
-
-        .citrus_earth_animal_carousel-controls .next {
-            display: inline-block;
-            height: 32px;
-            width: 32px;
-            position: absolute;
-            right: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-image: url('next.svg');
-            background-position: center;
-            background-size: auto 100%;
-            background-repeat: no-repeat;
-            cursor: pointer;
-            opacity: .5;
-        }
-
-        .prev:hover,
-        .next:hover {
-            opacity: 1;
-        }
-
-        .citrus_earth_animal_carousel-indicators {
+        .citrusStylesSE-carousel-indicators {
             position: absolute;
             bottom: 0;
             left: calc(100% / 2 - 52px);
@@ -171,7 +145,7 @@
             padding: 10px 10px 5px;
         }
 
-        .citrus_earth_animal_carousel-indicators span {
+        .citrusStylesSE-carousel-indicators span {
             display: inline-block;
             border: 2px solid #09205c;
             padding: 7px;
@@ -180,138 +154,149 @@
             margin: 0 5px;
         }
 
-        .citrus_earth_animal_carousel-indicators span.active {
+        .citrusStylesSE-carousel-indicators span.active {
             background-color: #09205c;
         }
 
+        /* Responsive styles */
         @media only screen and (min-width: 768px) and (max-width: 1023px) {
-
-            /* POV Section */
-            .citrus_earth_animal__pov--text h1 {
+            .citrusStylesSE-pov--text h1 {
                 font-size: 30px;
             }
         }
 
+        /* Mobile devices */
         @media only screen and (max-width: 767px) {
-            .citrusStylesSE-carousel__inner--item .custom-container {
+            .citrusStylesSE-cta-box {
+                width: 100%;
+            }
+
+            .citrusStylesSE-cta-box a {
+                text-transform: capitalize;
+                text-decoration: underline;
+                color: #001952 !important;
+                background: none !important;
+                border: none !important;
+            }
+
+            .citrusStylesSE-cta-box a:hover {
+                color: #001952;
+                border: none;
+            }
+
+            .citrusStylesSE-carousel__inner--item .citrusStylesSE-custom-container {
                 flex-wrap: wrap;
             }
 
-            .citrusStylesSE-carousel__inner {
-                align-items: flex-start !important;
-            }
-
-            .citrusStylesSE-carousel__inner .pov1 {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov1 {
                 background-image: none;
                 background: #489399;
             }
 
-            .citrusStylesSE-carousel__inner .pov2 {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 {
                 background-image: none;
                 background: #001952;
             }
 
-            .citrusStylesSE-carousel__inner .pov3 {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov3 {
                 background-image: none;
-                background: #D58641;
+                background: #d58641;
             }
 
-            .citrusStylesSE-carousel__inner .pov1 .citrus_earth_animal_carousel__inner--item__col:last-child {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov1 .citrusStylesSE-carousel-item__col:last-child {
                 background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov1-mob");
             }
 
-            .citrusStylesSE-carousel__inner .pov2 .citrus_earth_animal_carousel__inner--item__col:last-child {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-carousel-item__col:last-child {
                 background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov2-mob");
             }
 
-            .citrusStylesSE-carousel__inner .pov3 .citrus_earth_animal_carousel__inner--item__col:last-child {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov3 .citrusStylesSE-carousel-item__col:last-child {
                 background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov3-mob");
             }
 
-            .citrusStylesSE-carousel__inner .pov2 .citrus_earth_animal_carousel__inner--item__col:last-child .citrus_earth_animal__pov--shots {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-carousel-item__col:last-child .citrusStylesSE-pov--shots {
                 opacity: 1;
             }
 
-            .citrus_earth_animal_carousel__inner--item__col {
+            .citrusStylesSE-carousel-item__col {
                 width: 100%;
             }
 
-            .citrus_earth_animal_carousel__inner--item__col:first-child {
+            .citrusStylesSE-carousel-item__col:first-child {
                 order: 2;
                 padding: 40px 15px;
                 min-height: 290px;
             }
 
-            .citrus_earth_animal__pov--logo {
+            .citrusStylesSE-pov--logo {
                 max-width: 130px;
                 margin: 0 auto;
             }
 
-            .citrus_earth_animal__pov--shots {
+            .citrusStylesSE-pov--shots {
                 max-width: 70%;
             }
 
-            .citrusStylesSE-carousel__inner .pov3 .citrus_earth_animal__pov--shots {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-pov3 .citrusStylesSE-pov--shots {
                 margin: 0 auto;
             }
 
-            .citrus_earth_animal__pov--text {
+            .citrusStylesSE-pov--text {
                 padding: 0 15px;
             }
 
-            .citrus_earth_animal__pov--text h1 {
+            .citrusStylesSE-pov--text h1 {
                 font-size: 25px;
                 text-align: center;
             }
 
-            .citrus_earth_animal__pov--text p {
+            .citrusStylesSE-pov--text p {
                 text-align: center;
             }
 
-            .citrus_earth_animal_carousel__inner--item__col .citrus_earth_animal__pov--cta a {
+            .citrusStylesSE-carousel-item__col .citrusStylesSE-pov--cta a {
                 color: #fff !important;
             }
 
-            .pov3 .citrus_earth_animal_carousel__inner--item__col .citrus_earth_animal__pov--cta a {
-                color: #00205B !important;
+            .citrusStylesSE-pov3 .citrusStylesSE-carousel-item__col .citrusStylesSE-pov--cta a {
+                color: #00205b !important;
+                background: none !important;
+                border: 0 !important;
             }
         }
+    </style>
+    <style>
 
-        .flex-box {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-        }
     </style>
 </head>
 
 <body>
-    <section class="citrusStylesSE-container citrusStylesSE-carousel">
-        <div class="citrusStylesSE-carousel__inner flex-box">
+    <section class="citrusStylesSE-carousel">
+        <div class="citrusStylesSE-carousel__inner citrusStylesSE-pov-flex-box">
             <!-- POV 01 -->
-            <div class="citrusStylesSE-carousel__inner--item pov1"
+            <div class="citrusStylesSE-carousel__inner--item citrusStylesSE-pov1"
                 title="Bags of Earth Animal no-hide chews with a dog biting on a chew.">
-                <div class="custom-container flex-box"
+                <div class="citrusStylesSE-custom-container citrusStylesSE-pov-flex-box"
                     title="Bags of Earth Animal no-hide chews with a dog biting on a chew.">
-                    <div class="citrusStylesSE-carousel__inner--item__col flex-box">
-                        <div class="citrus_earth_animal__pov--logo">
+                    <div class="citrusStylesSE-carousel-item__col citrusStylesSE-pov-flex-box">
+                        <div class="citrusStylesSE-pov--logo">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus-earth-animal-logo"
                                 alt="Earth Animal logo.">
                         </div>
-                        <div class="citrus_earth_animal__pov--text">
-                            <h1>PURE CHEWABLE BLISS </h1>
-                            <p>Made with 6 simple ingredients + 1 sustainably sourced protein. </p>
+                        <div class="citrusStylesSE-pov--text">
+                            <h1 class="citrusStylesSE-header1">PURE CHEWABLE BLISS </h1>
+                            <p class="citrusStylesSE-para">Made with 6 simple ingredients + 1 sustainably sourced
+                                protein. </p>
                         </div>
-                        <div class="citrus_earth_animal__pov--cta cta-box">
-                            <a href="https://www.petco.com/shop/en/petcostore/brand/earth-animal"
-                                manual_cm_sp="sponsoredbrandpage:earthanimal:heropov:1:purechewablebliss:shownow"
-                                onclick="clickTrackLink(this);">Shop Now</a>
+                        <div class="citrusStylesSE-pov--cta citrusStylesSE-cta-box">
+                            <a class="citrusStylesSE-url" href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop
+                                Now</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-carousel__inner--item__col">
-                        <div class="citrus_earth_animal__pov--shots">
+                    <div class="citrusStylesSE-carousel-item__col">
+                        <div class="citrusStylesSE-pov--shots">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov-product1"
                                 alt="Bags of Earth Animal no-hide chews with a dog biting on a chew.">
@@ -320,27 +305,28 @@
                 </div>
             </div>
             <!-- POV 02 -->
-            <div class="citrusStylesSE-carousel__inner--item pov2" title="A dog outside with a chew in their mouth.">
-                <div class="custom-container flex-box" title="A dog outside with a chew in their mouth.">
-                    <div class="citrusStylesSE-carousel__inner--item__col flex-box container-full">
-                        <div class="citrus_earth_animal__pov--logo">
+            <div class="citrusStylesSE-carousel__inner--item citrusStylesSE-pov2"
+                title="A dog outside with a chew in their mouth.">
+                <div class="citrusStylesSE-custom-container citrusStylesSE-pov-flex-box"
+                    title="A dog outside with a chew in their mouth.">
+                    <div class="citrusStylesSE-carousel-item__col citrusStylesSE-pov-flex-box citrusStylesSE-full">
+                        <div class="citrusStylesSE-pov--logo">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus-earth-animal-logo"
                                 alt="Earth Animal logo.">
                         </div>
-                        <div class="citrus_earth_animal__pov--text">
-                            <h1>WHOLESOME AND LONG-LASTING CHEWS </h1>
-                            <p>Promote healthy teeth and gums while maintaining high digestibility and nutrition. </p>
+                        <div class="citrusStylesSE-pov--text">
+                            <h1 class="citrusStylesSE-header1">WHOLESOME AND LONG-LASTING CHEWS </h1>
+                            <p class="citrusStylesSE-para">Promote healthy teeth and gums while maintaining high
+                                digestibility and nutrition. </p>
                         </div>
-                        <div class="citrus_earth_animal__pov--cta cta-box">
-                            <a href="https://www.petco.com/shop/en/petcostore/brand/earth-animal"
-                                manual_cm_sp="sponsoredbrandpage:earthanimal:heropov:2:wholesomelonglastingchews:shownow"
-                                onclick="clickTrackLink(this);">Shop Now</a>
+                        <div class="citrusStylesSE-pov--cta citrusStylesSE-cta-box">
+                            <a class="citrusStylesSE-url" href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop
+                                Now</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-carousel__inner--item__col"
-                        title="A dog outside with a chew in their mouth.">
-                        <div class="citrus_earth_animal__pov--shots" style="opacity: 0;">
+                    <div class="citrusStylesSE-carousel-item__col" title="A dog outside with a chew in their mouth.">
+                        <div class="citrusStylesSE-pov--shots" style="opacity: 0;">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov-product1"
                                 alt="A dog outside with a chew in their mouth.">
@@ -349,28 +335,27 @@
                 </div>
             </div>
             <!-- POV 03 -->
-            <div class="citrusStylesSE-carousel__inner--item pov3"
+            <div class="citrusStylesSE-carousel__inner--item citrusStylesSE-pov3"
                 title="A close-up of a chew with a sketch of an open field in the background.">
-                <div class="custom-container flex-box"
+                <div class="citrusStylesSE-custom-container citrusStylesSE-pov-flex-box"
                     title="A close-up of a chew with a sketch of an open field in the background.">
-                    <div class="citrusStylesSE-carousel__inner--item__col flex-box">
-                        <div class="citrus_earth_animal__pov--logo">
+                    <div class="citrusStylesSE-carousel-item__col citrusStylesSE-pov-flex-box">
+                        <div class="citrusStylesSE-pov--logo">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus-earth-animal-logo"
                                 alt="Earth Animal logo.">
                         </div>
-                        <div class="citrus_earth_animal__pov--text">
-                            <h1>SCRUMPTIOUS CHEWS OF GOODNESS</h1>
-                            <p>Made in the USA with Earth’s finest ingredients.</p>
+                        <div class="citrusStylesSE-pov--text">
+                            <h1 class="citrusStylesSE-header1">SCRUMPTIOUS CHEWS OF GOODNESS</h1>
+                            <p class="citrusStylesSE-para">Made in the USA with Earth’s finest ingredients.</p>
                         </div>
-                        <div class="citrus_earth_animal__pov--cta cta-box">
-                            <a href="https://www.petco.com/shop/en/petcostore/brand/earth-animal"
-                                manual_cm_sp="sponsoredbrandpage:earthanimal:heropov:3:scrumptioussticks:shownow"
-                                onclick="clickTrackLink(this);">Shop Now</a>
+                        <div class="citrusStylesSE-pov--cta citrusStylesSE-cta-box">
+                            <a class="citrusStylesSE-url" href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop
+                                Now</a>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-carousel__inner--item__col">
-                        <div class="citrus_earth_animal__pov--shots">
+                    <div class="citrusStylesSE-carousel-item__col">
+                        <div class="citrusStylesSE-pov--shots">
                             <img class="citrusStylesSE-img"
                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/petco-earth-animal-pov-product3"
                                 alt="A close-up of a chew with a sketch of an open field in the background.">
@@ -387,8 +372,8 @@
         <div class="citrusStylesSE-carousel-indicators"></div>
     </section>
 
-    <!-- <script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script> -->
-    <script src="../CitrusStylesSE.js"></script>
+    <script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script>
+    <!-- <script src="../CitrusStylesSE.js"></script> -->
 </body>
 
 </html>
