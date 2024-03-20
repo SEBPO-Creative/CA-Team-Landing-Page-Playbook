@@ -28,9 +28,9 @@
             // for dog active class filter
             var dogBtnContainer = document.getElementById("citrusHills__speciesTabBtn");
             var dogBtns = dogBtnContainer.getElementsByClassName(
-                "citrusHills__speciesTab_item"
+                "citrusStylesSE-speciesTab_item"
             );
-            addActiveClass(dogBtns, "citrusHills__species_active_tab");
+            addActiveClass(dogBtns, "citrusStylesSE-species-active--tab");
         });
         function addActiveClass(element, activeClass) {
             for (var i = 0; i < element.length; i++) {

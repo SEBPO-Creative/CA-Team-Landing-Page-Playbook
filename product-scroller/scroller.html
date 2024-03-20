@@ -49,7 +49,7 @@
             line-height: initial;
         }
 
-        .citrusHills__sectionGap {
+        .citrusStylesSE-sectionGap {
             margin: 0;
             padding-bottom: 40px;
         }
@@ -71,30 +71,7 @@
             /* Firefox */
         }
 
-        /* Style tab links */
-        .citrusHills__species_header {
-            color: #000;
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-align: center;
-            padding-bottom: 10px !important;
-        }
-
-        .citrusHills__species_subheader {
-            color: #000;
-            text-align: center;
-            font-family: "PetcoCircularTT-Regular", arial !important;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            padding-bottom: 20px !important;
-        }
-
-        .citrusHills__speciesTab_buttons {
+        .citrusStylesSE-speciesTab--buttons {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -111,7 +88,7 @@
             margin: 0 0 30px;
         }
 
-        .citrusHills__speciesTab_item {
+        .citrusStylesSE-speciesTab_item {
             text-transform: uppercase;
             padding: 12px 50px;
             margin: 0px 10px;
@@ -128,18 +105,11 @@
             padding-top: 0;
         }
 
-        .citrusHills__speciesTab_item p {
+        .citrusStylesSE-speciesTab_item p {
             margin: 5px 0;
             font-family: "PetcoCircular-Bold", arial !important;
             font-weight: 700;
             color: inherit;
-        }
-
-        @media screen and (max-width: 520px) {
-            .citrusHills__species_subheader {
-                max-width: 275px;
-                margin: auto !important;
-            }
         }
 
         /* Product Carousel section And Dog Cat Category Section Combined CSS */
@@ -316,13 +286,13 @@
             color: #00205b;
         }
 
-        .citrusHills__speciesTab_container {
+        .citrusStylesSE-speciesTab_container {
             width: 1253px;
             max-width: 100%;
             margin: 0 auto;
         }
 
-        .citrusHills__speciesTab_container .citrusHills__speciesTab_buttons .citrusHills__speciesTab_item.citrusHills__species_active_tab {
+        .citrusStylesSE-speciesTab_container .citrusStylesSE-speciesTab--buttons .citrusStylesSE-speciesTab_item.citrusStylesSE-species-active--tab {
             color: #001952;
             border-bottom: 10px solid #001952;
             border-radius: 0;
@@ -394,7 +364,7 @@
                 display: none;
             }
 
-            .citrusHills__speciesTab_item {
+            .citrusStylesSE-speciesTab_item {
                 width: 50%;
                 margin: 0 !important;
             }
@@ -421,23 +391,23 @@
 <body>
     <div class="citrusStylesSE-main">
         <!-- Product Scroller Start -->
-        <div class="citrusHills__species_foodvariantCotainer citrusHills__sectionGap">
-            <h2 class="citrusHills__species_header">
-                Explore Hill’s Science Diet
-            </h2>
-            <p class="citrusHills__species_subheader">Nutrition that starts with science for differences you can
-                see, feel and trust.</p>
+        <div class="citrusStylesSE-sectionGap">
+            <div class="citrusStylesSE-section__title">
+                <h2 class="citrusStylesSE-header2">Explore Hill’s Science Diet</h2>
+                <p class="citrusStylesSE-para">Nutrition that starts with science for differences you can
+                    see, feel and trust.</p>
+            </div>
             <!-- Species Variant  -->
-            <section class="citrusHills__speciesTab_container">
-                <div class="citrusHills__speciesTab_buttons" id="citrusHills__speciesTabBtn">
-                    <button class="citrusHills__speciesTab_item citrusHills__species_active_tab"
+            <section class="citrusStylesSE-speciesTab_container">
+                <div class="citrusStylesSE-speciesTab--buttons" id="citrusStylesSE-speciesTabBtn">
+                    <button class="citrusStylesSE-speciesTab_item citrusStylesSE-species-active--tab"
                         manual_cm_sp="sponsoredbrandpage:hillssciencediet::1:dog:tab"
                         onclick="filterSpeciesTab('citrusHills__species-dog')" id="defaultOpen">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_dog_icon"
                             alt="Dog icon" />
                         <p>DOG</p>
                     </button>
-                    <button class="citrusHills__speciesTab_item"
+                    <button class="citrusStylesSE-speciesTab_item"
                         manual_cm_sp="sponsoredbrandpage:hillssciencediet::2:cat:tab"
                         onclick="filterSpeciesTab('citrusHills__species-cat')">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_cat_icon"
