@@ -28,45 +28,44 @@
         .citrusStylesSE_timeline__step {
             display: flex;
             position: relative;
-
-            &:after {
-                content: "";
-                position: absolute;
-                left: 15px;
-                top: 32px;
-                height: 0;
-                width: 2px;
-                background-color: #001952;
-            }
-
-            .citrusStylesSE_timeline__info {
-                margin: 0px 0 73px;
-            }
-
-            .citrusStylesSE_timeline__title {
-                font-family: PetcoCircular-Bold, arial !important;
-                font-weight: 700;
-                font-size: 25px;
-                margin: 0 0 8px;
-                color: #001952;
-            }
-
-            .citrusStylesSE_timeline__text {
-                font-family: PetcoCircular-Regular, arial !important;
-                font-weight: normal;
-                font-size: 18px;
-                color: #000;
-                padding-bottom: 0;
-                margin: 0;
-            }
-
-            &:not(:last-child) {
-                &:after {
-                    height: 100%;
-                    margin-left: 1.5px;
-                }
-            }
         }
+
+        .citrusStylesSE_timeline__step:after {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 32px;
+            height: 0;
+            width: 2px;
+            background-color: #001952;
+        }
+
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__info {
+            margin: 0px 0 73px;
+        }
+
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__title {
+            font-family: PetcoCircular-Bold, arial !important;
+            font-weight: 700;
+            font-size: 25px;
+            margin: 0 0 8px;
+            color: #001952;
+        }
+
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__text {
+            font-family: PetcoCircular-Regular, arial !important;
+            font-weight: normal;
+            font-size: 18px;
+            color: #000;
+            padding-bottom: 0;
+            margin: 0;
+        }
+
+        .citrusStylesSE_timeline__step:not(:last-child):after {
+            height: 100%;
+            margin-left: 1.5px;
+        }
+
 
         .citrusStylesSE_timeline__number {
             width: 32px;
@@ -85,11 +84,6 @@
             background-color: #001952;
             font-family: PetcoCircular-Bold, arial !important;
             font-weight: 700;
-
-            &.completed {
-                background-color: #001952;
-            }
-
         }
 
         @media screen and (max-width:767px) {
@@ -119,8 +113,10 @@
             <div
                 class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-40@large">
                 <div class="citrusStylesSE-timeline__img">
-                    <img alt="placeholder" class="citrusStylesSE-image"
+                    <img alt="" class="citrusStylesSE-image citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_instinct_transitionTo_raw_dsk">
+                    <img alt="" class="citrusStylesSE-image citrusStylesSE-d-hide"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_instinct_transitionTo_raw_mob">
                 </div>
             </div>
             <div
