@@ -28,51 +28,47 @@
         .citrusStylesSE_timeline__step {
             display: flex;
             position: relative;
+        }
 
-            &:after {
-                content: "";
-                position: absolute;
-                left: 15px;
-                top: 32px;
-                height: 0;
-                width: 2px;
-                background-color: #001952;
-            }
+        .citrusStylesSE_timeline__step:after {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 32px;
+            height: 0;
+            width: 2px;
+            background-color: #001952;
+        }
 
-            .citrusStylesSE_timeline__info {
-                margin: 0px 0 50px;
-            }
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__info {
+            margin: 0px 0 50px;
+        }
 
-            .citrusStylesSE_timeline__title {
-                font-family: PetcoCircular-Bold, arial !important;
-                font-weight: 700;
-                font-size: 25px;
-                margin: 0 0 8px;
-                color: #001952;
-            }
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__title {
+            font-family: PetcoCircular-Bold, arial !important;
+            font-weight: 700;
+            font-size: 25px;
+            margin: 0 0 8px;
+            color: #001952;
+        }
 
-            .citrusStylesSE_timeline__text {
-                font-family: PetcoCircular-Regular, arial !important;
-                font-weight: normal;
-                font-size: 18px;
-                color: #000;
-                padding-bottom: 0;
-                margin: 0;
-            }
+        .citrusStylesSE_timeline__step .citrusStylesSE_timeline__text {
+            font-family: PetcoCircular-Regular, arial !important;
+            font-weight: normal;
+            font-size: 18px;
+            color: #000;
+            padding-bottom: 0;
+            margin: 0;
+        }
 
-            &:not(:last-child) {
-                &:after {
-                    height: 100%;
-                    margin-left: 1.5px;
-                }
-            }
+        .citrusStylesSE_timeline__step:not(:last-child):after {
+            height: 100%;
+            margin-left: 1.5px;
+        }
 
-            &:last-child {
-                &:after {
-                    height: 78%;
-                    margin-left: 1.5px;
-                }
-            }
+        .citrusStylesSE_timeline__step:last-child:after {
+            height: 78%;
+            margin-left: 1.5px;
         }
 
         .citrusStylesSE_timeline__number {
@@ -92,12 +88,12 @@
             background-color: #001952;
             font-family: PetcoCircular-Bold, arial !important;
             font-weight: 700;
-
-            &.completed {
-                background-color: #001952;
-            }
-
         }
+
+        .citrusStylesSE_timeline__number.completed {
+            background-color: #001952;
+        }
+
 
         @media screen and (max-width:767px) {
             .citrusStylesSE-grid {
@@ -113,14 +109,11 @@
                 margin: auto;
             }
 
-            .citrusStylesSE_timeline__step {
-                &:last-child {
-                    &:after {
-                        height: 48%;
-                        margin-left: 1.5px;
-                    }
-                }
+            .citrusStylesSE_timeline__step:last-child:after {
+                height: 48%;
+                margin-left: 1.5px;
             }
+
 
         }
 
