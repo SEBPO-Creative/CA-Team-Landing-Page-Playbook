@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Scroller With Lifestyle Card</title>
-  <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+  <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
   <style>
     body {
       margin: 0;
@@ -68,7 +68,7 @@
       font-family: "PetcoCircular-Regular", arial !important;
       font-weight: 400;
       color: #333333;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 22px;
       text-align: left;
       margin: 20px 0 10px;
@@ -78,11 +78,12 @@
       display: -webkit-box;
       -webkit-box-orient: vertical;
       max-height: 4em;
+      -webkit-line-clamp: 2;
       /*standard size is 4em*/
     }
 
     .citrusStylesSE-product--cta a,
-    .citrusStylesSE-product--cta button {
+    .citrusStylesSE-product--cta span {
       border: 0;
       margin: 0;
       padding-left: 0;
@@ -95,6 +96,7 @@
       color: #001952;
       text-align: left;
       cursor: pointer;
+
     }
 
     .citrusStylesSE-lifestyle--feature {
@@ -118,7 +120,6 @@
       font-family: "PetcoCircular-Bold", arial !important;
       font-size: 20px;
       font-weight: bold;
-      line-height: auto;
       color: #000;
       margin: 0;
     }
@@ -129,14 +130,12 @@
       margin: 22px auto 25px;
       font-family: "PetcoCircular-Regular", arial !important;
       font-size: 16px;
-      line-height: auto;
       color: #000;
     }
 
     .citrusStylesSE-feature--text a {
       font-family: "PetcoCircular-Bold", arial !important;
       font-size: 16px;
-      line-height: auto;
       font-weight: bold;
       color: #001952;
       text-decoration: underline;
@@ -199,8 +198,13 @@
         padding-left: 30px;
       }
 
+    }
 
-
+    @media screen and (max-width:425px) {
+      .citrusStylesSE-product--card {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
     }
 
     /* End Product Scroller With Lifestyle Card */
@@ -236,13 +240,14 @@
                     <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
                       <div class="citrusStylesSE-product--image">
                         <div class="citrusStylesSE-product--card__img">
-                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product1">
+                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product1"
+                            alt="">
                         </div>
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
                         <p>Product Name and Description Goes Here</p>
                         <div class="citrusStylesSE-product--cta">
-                          <button>Shop Now</button>
+                          <span>Shop Now</span>
                         </div>
                       </div>
                     </a>
@@ -252,13 +257,14 @@
                     <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
                       <div class="citrusStylesSE-product--image">
                         <div class="citrusStylesSE-product--card__img">
-                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product2">
+                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product2"
+                            alt="">
                         </div>
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
                         <p>Product Name and Description Goes Here</p>
                         <div class="citrusStylesSE-product--cta">
-                          <button>Shop Now</button>
+                          <span>Shop Now</span>
                         </div>
                       </div>
                     </a>
@@ -271,13 +277,14 @@
                     <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
                       <div class="citrusStylesSE-product--image">
                         <div class="citrusStylesSE-product--card__img">
-                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product1">
+                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product1"
+                            alt="">
                         </div>
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
                         <p>Product Name and Description Goes Here</p>
                         <div class="citrusStylesSE-product--cta">
-                          <button>Shop Now</button>
+                          <span>Shop Now</span>
                         </div>
                       </div>
                     </a>
@@ -287,13 +294,14 @@
                     <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
                       <div class="citrusStylesSE-product--image">
                         <div class="citrusStylesSE-product--card__img">
-                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product2">
+                          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-nutri-product2"
+                            alt="">
                         </div>
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
                         <p>Product Name and Description Goes Here</p>
                         <div class="citrusStylesSE-product--cta">
-                          <button>Shop Now</button>
+                          <span>Shop Now</span>
                         </div>
                       </div>
                     </a>
