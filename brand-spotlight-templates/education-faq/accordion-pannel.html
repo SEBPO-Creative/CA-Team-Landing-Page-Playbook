@@ -7,12 +7,6 @@
     <title>Accordion Pannel - FAQ</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         /* Custom CSS Accordion Section*/
         .citrusStylesSE-accordion--parent {
             max-width: 1150px;
@@ -58,28 +52,6 @@
             margin: 0;
             border: none;
             background: unset;
-        }
-
-        .citrusHills .citrusStylesSE-show--video {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #fff;
-            padding: 10px;
-            padding-left: 0;
-            border-radius: 5px;
-            width: 100%;
-        }
-
-        .citrusHills .citrusStylesSE-show--video span:hover {
-            color: #fff;
-            background: #e4425c;
-            border: 1px solid #e4425c;
-        }
-
-        .citrusHills .citrusStylesSE-show--video iframe {
-            min-height: 100%;
         }
 
         .citrusStylesSE-iframe--video .button {
@@ -322,14 +294,16 @@
                     <div class="citrusStylesSE-content--iframe">
                         <div class="citrusStylesSE-iframe--video">
                             <button onclick="citrusStylesSE__iframe_video()" data-id="xiiKjm8cZCU">
-                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_Youtube" alt="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_Youtube"
+                                    alt="">
                             </button>
                             <div class="citrusStylesSE-show--video"></div>
                         </div>
                     </div>
 
                     <div class="citrusStylesSE-media--banner">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_footer_image" alt="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_footer_image"
+                            alt="">
                     </div>
 
                 </div>
@@ -401,15 +375,6 @@
             manual_cm_sp="sponsoredbrandpage:hillssciencediet:sciencelednutrtion:1::video" onclick="clickTrackLink(this);"></iframe>
             `;
         }
-
-        // If we need to add cancel button 'X' then add below <span> to the above and hideVideo() function as is.
-
-
-        // <span onclick="hideVideo()">&times;</span>
-        // function hideVideo() {
-        //     event.target.parentElement.style.display = 'none';
-        //     event.target.parentElement.innerHTML = '';
-        // }
 
     </script>
 
