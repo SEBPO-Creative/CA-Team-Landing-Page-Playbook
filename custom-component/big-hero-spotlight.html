@@ -1,0 +1,253 @@
+<!-- DES-2166 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Hero brand spotlight</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <style>
+        .citrusStylesSE-desktop-version {
+            display: block;
+        }
+
+        .citrusStylesSE-mobile-version {
+            display: none;
+        }
+
+        /* hero banner */
+        .citrusStylesSE-container {
+            position: relative;
+        }
+
+        .citrusStylesSE-heroImage-copy {
+            position: absolute;
+            width: 94%;
+            height: 100%;
+            top: 0;
+            display: flex;
+            margin: auto 5%;
+        }
+
+        .citrusStylesSE-hero-copy-center {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .citrusStylesSE-logo img {
+            width: 100%;
+            max-width: 132px;
+        }
+
+        .citrusStylesSE-heroCopy h1 {
+            font-size: 45px;
+            line-height: 45px;
+            color: #fff;
+            padding-bottom: 60px;
+        }
+
+        .citrusStylesSE-hero-rightCTA a {
+            display: block;
+            width: 170px;
+            background: #fff;
+            font-family: "PetcoCircular-Black", arial !important;
+            font-size: 16px;
+            line-height: 52px;
+            font-weight: 700;
+            text-align: center;
+            color: #00205b;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .citrusStylesSE-petcoBadge {
+            width: 6% !important;
+            position: absolute;
+            right: 9%;
+            top: 20%;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .citrusStylesSE-hero-copy-center {
+                gap: 25px;
+            }
+
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .citrusStylesSE-logo img {
+                max-width: 120px;
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            .citrusStylesSE-heroCopy h1 {
+                padding-bottom: 50px;
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+
+        @media all and (min-width: 922px) and (max-width: 1100px) {
+            .citrusStylesSE-heroImage-copy {
+                top: -3%;
+            }
+
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 28px;
+                line-height: 28px;
+                padding-bottom: 30px;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            .citrusStylesSE-hero-copy-center {
+                column-gap: 15px;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width: 921px) {
+            .citrusStylesSE-heroImage-copy {
+                top: 0;
+                align-items: flex-start;
+            }
+
+            .citrusStylesSE-logo img {
+                max-width: 105px;
+            }
+
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 24px;
+                line-height: 24px;
+                padding-bottom: 30px;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+            .citrusStylesSE-desktop-version {
+                display: none;
+            }
+
+            .citrusStylesSE-mobile-version {
+                display: block;
+            }
+
+            .citrusStylesSE-heroImage-copy {
+                width: 100% !important;
+                margin: 0 auto !important;
+                justify-content: center;
+                align-items: flex-start;
+                height: 50%;
+            }
+
+            .citrusStylesSE-hero-copy-center {
+                gap: 0;
+            }
+
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 30px;
+                line-height: 34px;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+
+            .citrusStylesSE-hero-rightCTA {
+                display: flex;
+                justify-content: center;
+            }
+
+            .citrusStylesSE-hero-rightCTA a {
+                width: max-content;
+                background: none;
+                line-height: 20px;
+                text-align: left;
+                color: #fff;
+                border: none;
+                text-decoration: underline;
+                text-transform: none;
+            }
+
+            .citrusStylesSE-petcoBadge {
+                width: 15% !important;
+                position: absolute;
+                right: 10%;
+                bottom: 20%;
+                top: unset;
+            }
+        }
+
+        @media all and (min-width: 476px) and (max-width: 767px) {
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 36px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            .citrusStylesSE-heroCopy h1 {
+                padding-bottom: 30px;
+            }
+
+            .citrusStylesSE-petcoBadge {
+                bottom: 25%;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .citrusStylesSE-heroImage-copy {
+                top: 2%;
+            }
+
+            .citrusStylesSE-heroCopy h1 {
+                font-size: 24px;
+                line-height: 28px;
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="citrusStylesSE-container">
+        <!-- full width image -->
+        <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusFriskies_hero-desktop"
+            alt="New at Petco. A cat looking up. Three pack shots of Friskies products.">
+        <img class="citrusStylesSE-img citrusStylesSE-mobile-version"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusFriskies_hero-mobile"
+            alt="New at Petco. Three pack shots of Friskies products.">
+        <!-- ./End full width image -->
+        <!-- hero copy container -->
+        <div class="citrusStylesSE-heroImage-copy">
+            <div class="citrusStylesSE-hero-copy-center">
+                <div class="citrusStylesSE-logo">
+                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusFriskies_logo"
+                        alt="Purina. Friskies.">
+                </div>
+                <div class="citrusStylesSE-heroCopy">
+                    <h1 class="citrusStylesSE-header1">FEED YOUR CAT’S <br>PLAYFULNESS AND <br>CURIOSITY</h1>
+                    <div class="citrusStylesSE-hero-rightCTA">
+                        <a class="citrusStylesSE-url" href="#" manual_cm_sp="">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="citrusStylesSE-img citrusStylesSE-petcoBadge"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusFriskies_newAtPetco-badge"
+            alt="NEW at petco">
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Content 4 up Squre Box</title>
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+            /* Variables */
+            :root {
+                --citrusStylesSE-brand-bg: rgba(0,119,192,.2);
+            }
+
+
+            /* Section styles start here */
+            .citrusStylesSE-section4up{
+                background: var(--citrusStylesSE-white);
+                padding: var(--citrusStylesSE-spacing-super);
+            }
+
+            .citrusStylesSE-section4up .citrusStylesSE-text__wrapper{
+                background: var(--citrusStylesSE-brand-bg);
+                width: 100%;
+                padding: var(--citrusStylesSE-spacing-small);
+            }   
+
+            .citrusStylesSE-section4up .citrusStylesSE-text__wrapper p{
+                min-height: 54px;
+            }
+
+            .citrusStylesSE-section4up .citrusStylesSE-grid__cell img{
+                width: 100%;;
+            }
+
+            .citrusStylesSE-section4up a{
+                text-decoration: none;
+                max-width: 322px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .citrusStylesSE-section4up a h3, p{
+                color: var(--citrusStylesSE-primary-navy);
+            }
+
+            .citrusStylesSE-section4up a, p{
+                font-size: 1em;
+            }
+
+            .citrusStylesSE-wrapper {
+                overflow: hidden;
+                width: 100%;
+            }
+
+             .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+                flex: unset;
+            }
+
+
+            @media screen and (min-width: 64em) and (max-width: 77.99em) {  /* min-width: 1024px and max-width: 1247.99px */
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid {
+                    overflow-x: auto;
+                }
+
+                .citrusStylesSE-section4up a {
+                    min-width: 300px;
+                }
+            }
+
+            @media screen and (max-width: 63.99em) {  /* max-width: 1023.99px */
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+                    flex: 0 0 100%;
+                }
+
+                .citrusStylesSE-section4up .citrusStylesSE-text__wrapper p {
+                    min-height: 60px;
+                }
+                            }
+			
+			@media screen and (min-width: 320px) {
+				.d-hide {
+					display: block;
+				}
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell a{
+                    padding: var(--citrusStylesSE-spacing-small);
+                }
+
+				.citrusStylesSE-grid__cell{
+					padding: 0;
+				}
+
+                /* Hide scrollbar for Chrome, Safari and Opera */
+                .citrusStylesSE-section4up .citrusStylesSE-grid::-webkit-scrollbar {
+                display: none;
+                }
+
+                /* Hide scrollbar for IE, Edge and Firefox */
+                .citrusStylesSE-section4up .citrusStylesSE-grid {
+                -ms-overflow-style: none;  /* IE and Edge */
+                scrollbar-width: none;  /* Firefox */
+                }
+
+                .citrusStylesSE-cta__box--color{
+                    margin-bottom: var(--citrusStylesSE-spacing-large);
+                }
+
+			}
+
+			@media screen and (min-width: 768px) {
+				.d-hide {
+					display: none;
+				}
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell a{
+                    padding: var(--citrusStylesSE-spacing-medium);
+                }
+
+			}
+
+            @media screen and (max-width: 63.99em) {
+                .citrusStylesSE-section4up .citrusStylesSE-grid {
+                    overflow-x: auto;
+                }
+            }
+
+            @media (max-width: 47.99em){
+
+                .citrusStylesSE-section4up .citrusStylesSE-grid{
+                    overflow-x: auto;
+                }
+
+                .citrusStylesSE-section4up{
+                    padding: var(--citrusStylesSE-spacing-small);
+                }
+            }
+
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+    <body>
+        <main class="citrusStylesSE-container">
+            <section class="citrusStylesSE-section4up">
+                <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <!-- Common Section Title -->
+                    <h2 class="citrusStylesSE-header2">Choose the best Chuckit!<sup>®</sup> ball for your dog</h2>
+                    <p class="citrusStylesSE-para">Select from multiple options based on your dog’s size.</p>
+                </div>
+                <div class="citrusStylesSE-wrapper">
+                    <div class="citrusStylesSE-grid">
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options1" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Small</h3>
+                                    <p class="citrusStylesSE-para">2-inch balls. Compatible with Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options2" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Medium</h3>
+                                    <p class="citrusStylesSE-para">2.5-inch balls. Compatible with Classic, Pro and Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options3" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>Large</h3>
+                                    <p class="citrusStylesSE-para">3-inch balls. Compatible with Pro and Sport style launchers.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <a href="">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options4" alt="">
+                                <div class="citrusStylesSE-text__wrapper">
+                                    <h3>X-Large</h3>
+                                    <p class="citrusStylesSE-para">3.5-inch balls. Compatible with the Chuckit! Pro launcher.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - FAQ -- Hero Banner</title>
+    <!-- citrusStylesSE library css -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+
+    <style>
+        .citrusStylesSE-position-relative {
+            position: relative;
+        }
+
+        .citrusStylesSE-__heroImage-box img {
+            width: 100%;
+            /* max-width: 1440px; */
+            object-fit: cover;
+        }
+
+        .citrusStylesSE-__heroImage-copy {
+            position: absolute;
+            width: 90%;
+            height: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto 5%;
+        }
+
+        .citrusStylesSE-hero-left {
+            column-gap: 40px;
+        }
+
+        .citrusStylesSE-spotlightLogo img {
+            width: 100%;
+            max-width: 204px;
+        }
+
+        .citrusStylesSE-spotlightCopy h1 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 900;
+        }
+
+        .citrusStylesSE-spotlightCopy h1 span {
+            display: block;
+            font-size: 80px;
+            color: #6af4a8;
+        }
+
+        .citrusStylesSE-spotlightCopy p {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 34px;
+            color: #fff;
+        }
+
+        a.citrusStylesSE-hero--rightCTA {
+            font-family: "PetcoCircular-Bold", arial;
+            display: block;
+            min-width: 127px;
+            line-height: 50px;
+            font-size: 16px;
+            font-weight: 900;
+            color: #fff;
+            background: #00205b;
+            border: 1px solid #00205b;
+            border-radius: 7px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 1s ease;
+        }
+
+        .citrusStylesSE-disclaimer--hero {
+            font-size: 12px;
+            line-height: 12px;
+            color: #00205b;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        @media all and (min-width: 922px) and (max-width: 1100px) {
+            .citrusStylesSE-spotlightCopy h1 {
+                font-size: 22px;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 span {
+                font-size: 44px;
+            }
+
+            .citrusStylesSE-spotlightCopy p {
+                font-size: 17px;
+                line-height: 17px;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width: 921px) {
+            .citrusStylesSE-spotlightLogo img {
+                max-width: 150px;
+            }
+
+            .citrusStylesSE-__heroImage-copy {
+                width: 96%;
+                margin: auto 2%;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 {
+                font-size: 20px;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 span {
+                font-size: 40px;
+            }
+
+            .citrusStylesSE-spotlightCopy p {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+            .citrusStylesSE-__heroImage-copy {
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .citrusStylesSE-hero-left {
+                column-gap: 0px;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 span {
+                font-size: 32px;
+            }
+
+            .citrusStylesSE-spotlightCopy p {
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 15px;
+            }
+
+            a.citrusStylesSE-hero--rightCTA {
+                min-width: max-content;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 900;
+                color: #fff;
+                text-decoration: underline;
+                text-transform: capitalize;
+                text-align: left;
+                border: none;
+                background: none;
+            }
+
+            .citrusStylesSE-disclaimer--hero {
+                color: #fff;
+            }
+
+            a.citrusStylesSE-hero--rightCTA:hover {
+                background: none;
+                color: #fff;
+            }
+        }
+
+        @media all and (min-width: 476px) and (max-width: 767px) {
+            .citrusStylesSE-spotlightCopy h1 {
+                font-size: 28px;
+            }
+
+            .citrusStylesSE-spotlightCopy h1 span {
+                font-size: 60px;
+            }
+
+            .citrusStylesSE-spotlightCopy p {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero banner start -->
+    <section class="citrusStylesSE-container">
+        <div class="citrusStylesSE-position-relative">
+            <!-- full width image -->
+            <div class="citrusStylesSE-__heroImage-box">
+                <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                    src="https://citrusad-sebpo.github.io/Brand-Spotlight-Pages/Education-FAQ/assets/images/spotlightHeroBackground-desktop.png"
+                    alt="">
+                <img class="citrusStylesSE-display-none@medium"
+                    src="https://citrusad-sebpo.github.io/Brand-Spotlight-Pages/Education-FAQ/assets/images/spotlightHeroBackground-mobile.png"
+                    alt="">
+            </div>
+            <div class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-__heroImage-copy">
+                <div
+                    class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid__cell--center@medium citrusStylesSE-hero-left">
+                    <div class="citrusStylesSE-spotlightLogo citrusStylesSE-grid__cell--center">
+                        <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
+                            src="https://citrusad-sebpo.github.io/Brand-Spotlight-Pages/Education-FAQ/assets/images/citrusStylesSE-spotlightLogoBoxieCat.png"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-grid__cell--center citrusStylesSE-spotlightCopy">
+                        <h1 class="citrusStylesSE-header1">BUY 1, GET 1 <span>15% OFF</span></h1>
+                        <p class="citrusStylesSE-para">Select Hills Cat & <br
+                                class="citrusStylesSE-display-none@medium">Dog products.</p>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-centered">
+                    <a class="citrusStylesSE-url citrusStylesSE-hero--rightCTA" href="#">Shop Now</a>
+                    <p class="citrusStylesSE-para citrusStylesSE-disclaimer--hero">Disclaimer here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End hero banner -->
+
+</body>
+
+</html>

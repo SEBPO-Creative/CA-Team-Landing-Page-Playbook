@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Banner</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+</head>
+<style>
+    section {
+        background: #6edcfa20;
+        position: relative;
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .citrusStyleSE-iframe {
+        width: 100%;
+        max-width: 550px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .citrusStyleSE-iframe iframe {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -30px;
+        border-radius: 6px;
+    }
+
+    .citrusStylesSE-grid-text {
+        text-align: center;
+        padding: 0 20px 20px;
+    }
+
+    .citrusStylesSE-bannerCTA {
+        width: 212px;
+        height: 55px;
+        flex-shrink: 0;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background: #00205B;
+        color: #fff;
+        font-family: "PetcoCircular-Bold", arial !important;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width:767px) {
+        section {
+            margin-top: 0px;
+        }
+
+        .citrusStylesSE-order2-sm {
+            order: 2;
+        }
+
+        .citrusStylesSE-order1-sm {
+            order: 1;
+        }
+
+        .citrusStylesSE-grid-text {
+            padding: 0 20px;
+        }
+
+        .citrusStyleSE-iframe iframe {
+            top: 0;
+        }
+
+        .citrusStylesSE-bannerCTA {
+            color: #001952;
+            background: none;
+            width: fit-content;
+            height: fit-content;
+            text-transform: capitalize;
+            text-decoration: underline;
+            padding-bottom: 40px;
+        }
+    }
+</style>
+
+<body>
+    <section class="citrusStylesSE-container--large citrusStylesSE-container--super">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
+                <div class="citrusStyleSE-iframe">
+                    <iframe src="https://www.youtube.com/embed/zmaM9LmRlnQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm">
+                <div class="citrusStylesSE-grid-text">
+                    <h2 class="citrusStylesSE-heading citrusStylesSE-centered">Leave old school clay and chemicals in
+                        the dust</h2>
+                    <p class="citrusStylesSE-centered citrusStyleSE-paragraph">Made entirely of sustainably sourced wood
+                        or paper fiber free of fragrance,chemicals and dyes.</p>
+                    <button type="button" class="citrusStylesSE-button citrusStylesSE-bannerCTA">Shop
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

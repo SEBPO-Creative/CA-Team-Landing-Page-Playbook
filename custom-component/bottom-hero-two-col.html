@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-content-banner-with-logo</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <style>
+        /* Media Content Banners With Logo */
+        .citrusStyleSE-mediaBanner__withLogo {
+            position: relative;
+        }
+        .citrusStylesSE-container::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 210px;
+            background: #343a40;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .citrusStylesSE-container
+        {
+            max-width: 900px;
+        }
+
+        .citrusStylesSE-section__title {
+            padding: 1em 1em;
+            text-align: left;
+        }
+        .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
+            color:#fff;
+        }
+
+
+        .citrusStylesSE-desktop__version {
+            display: block;
+        }
+
+        .citrucitrusStyleSE-mobile__version {
+            display: none;
+        }
+
+        .citrusStylesSE-grid__cell {
+            display: flex;
+        }
+
+        .citrucitrusStyleSE-product__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5%;
+
+        }
+
+        .citrucitrusStyleSE-product__image img {
+            max-width: 100%;
+            max-height: 327px;
+            padding: 20px;
+        }
+
+        .citrusStyleSE-grid_logo {
+            display: block;
+        }
+
+        .citrusStyleSE-grid_logo img {
+            max-width: 342px;
+            width: 100%;
+            height: auto;
+        }
+
+        .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white
+        {
+            justify-content: left;
+        }
+
+        .citrusStylesSE-cta__box-white .citrusStylesSE-url
+        {
+            width: 180px;
+            padding: 1em 0;
+        }
+
+        @media screen and (max-width:767px) {
+            .citrusStylesSE-desktop__version {
+                display: none;
+            }
+
+            .citrucitrusStyleSE-mobile__version {
+                display: block;
+            }
+
+            .citrusStylesSE-order2-sm {
+                order: 2;
+            }
+
+            .citrusStylesSE-order1-sm {
+                order: 1;
+                display: block;
+            }
+
+            .citrusStylesSE-grid-text {
+                width: 75%;
+                margin: auto;
+                padding: 30px 0;
+            }
+
+            .citrucitrusStyleSE-product__image {
+                width: 100%;
+                max-width: 100%;
+                position: relative;
+            }
+
+            .citrucitrusStyleSE-product__image img {
+                top: 0;
+            }
+            .citrusStyleSE-grid_logo {
+                display: block;
+                text-align: center;
+            }
+            
+            .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
+                text-align: center;
+                color:#000;
+            }
+           
+            .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+                color: #000;
+            }
+            .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
+                justify-content: center;
+            }
+
+        }
+
+        /* End Media Content Banners With Logo */
+    </style>
+</head>
+
+
+<body>
+    <section class="citrusStyleSE-mediaBanner__withLogo">
+        <div class="citrusStylesSE-container citrusStyleSE-mediaBanner__container">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center">
+                <div class="citrusStylesSE-grid-text">
+                    <div class="citrusStyleSE-grid_logo">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/PureBites_Logo_White"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-section__title">
+                        <h3 class="citrusStylesSE-header3">Two paws up for PureBites</h3>
+                        <p class="citrusStylesSE-para">Give your dog or cat PureBites to support a happy, wholesome future.</p>
+                        <div class="citrusStylesSE-letter-box-small">
+                            <div class="citrusStylesSE-cta__box-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                <a href="" class="citrusStylesSE-url">Shop All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="citrusStylesSE-grid__cell">
+                <div class="citrucitrusStyleSE-product__image">
+                    <img class="citrusStylesSE-desktop__version"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/purebites_footer-product"
+                        alt="" />
+                    <img class="citrucitrusStyleSE-mobile__version"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/purebites_footer-product"
+                        alt="" />
+                </div>
+            </div>            
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

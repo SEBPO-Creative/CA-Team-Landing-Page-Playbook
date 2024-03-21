@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article2up</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .citrusStylesSE-article2up {
+            overflow: auto;
+        }
+
+        .citrusStylesSE-article2up--container {
+            width: 1094px;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .citrusStylesSE-article2up--card {
+            background-color: rgb(230, 230, 188);
+        }
+
+        .citrusStylesSE-article2up-card--image {
+            height: 300px;
+        }
+
+        .citrusStylesSE-article2up-card--image img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+
+        .citrusStylesSE-article2up-card--image iframe {
+            width: 100%;
+            min-height: 100%;
+            border: none;
+        }
+
+        .citrusStylesSE-article2up-card--details {
+            height: 214px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .citrusStylesSE-article2up-card--details h3 {
+            font-family: "PetcoCircular-Bold", arial !important;
+            font-size: 20px;
+            line-height: initial;
+            font-weight: 700;
+            color: #000000;
+            margin: 0;
+        }
+
+        .citrusStylesSE-article2up-card--details h2,
+        .citrusStylesSE-article2up-card--details p {
+            margin: 0;
+        }
+
+        .citrusStylesSE-article2up-card--details p {
+            padding: 25px 25px 30px 25px;
+            font-family: PetcoCircular-Regular, arial !important;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .citrusStylesSE-article2up::-webkit-scrollbar, 
+        .citrusStylesSE-article2up--container::-webkit-scrollbar {
+            /* Safari and Chrome */
+            display: none;
+        }
+
+        .citrusStylesSE-article2up,.citrusStylesSE-article2up--container{
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
+            overflow-y: scroll;
+        }
+
+        @media screen and (max-width: 1250px) {
+            .citrusStylesSE-article2up--container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 767px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 314px;
+            }
+
+            .citrusStylesSE-article2up--container {
+                gap: 40px;
+            }
+
+        }
+
+        @media screen and (max-width: 680px) {
+            .citrusStylesSE-article2up--container {
+                width: 100%;
+            }
+
+            .citrusStylesSE-article2up-card--image {
+                height: 300px;
+            }
+        }
+
+
+        @media screen and (max-width: 520px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 230px;
+            }
+        }
+
+        @media screen and (max-width: 475px) {
+
+            .citrusStylesSE-article2up-card--image {
+                height: 220px;
+            }
+        }
+
+
+        @media screen and (max-width: 375px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 210px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Article 2 up Box -->
+    <section class="citrusStylesSE-article2up">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
+                <div class="citrusStylesSE-article2up-card--image">
+                    <img alt="placeholder" class="citrusStylesSE-image"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Ollie-food-philosophy_image">
+                </div>
+                <div class="citrusStylesSE-article2up-card--details">
+                    <h3 class="citrusStylesSE-centered">
+                        Heading Goes Here, 18px - 20px.
+                    </h3>
+                    <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
+                <div class="citrusStylesSE-article2up-card--image">
+                    <iframe src="https://www.youtube.com/embed/eL_MaSCgA8A" title="ABC" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="citrusStylesSE-article2up-card--details">
+                    <h3 class="citrusStylesSE-centered">
+                        Heading Goes Here, 18px - 20px.
+                    </h3>
+                    <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

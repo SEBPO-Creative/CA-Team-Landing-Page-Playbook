@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero POV - Kong</title>
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+			/* Common Styles */
+
+            /* Carousels - POV */
+            .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                max-width: 550px;
+                align-items: center;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-hills__pov1 .citrusStylesSE-pov__img {
+                max-width: 420px;
+            }
+
+            .citrusStylesSE-carousel__inner--item {
+                justify-content: space-around;
+                background-size: 100% 100%;
+                min-height: 330px;
+                background-image: url(https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills-curve-dsk1);
+                padding: 1em;
+                align-items: flex-start;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-pov__text{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row;
+                padding: 2em 1em 1em 2em;
+                gap: 30px
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-hills__copy {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-hills__pov2 .citrusStylesSE-hills__copy {
+                gap: 0.7em
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-hills-pov__logo{
+                max-width: 110px;
+                margin: 0;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-header1{
+                text-align: left;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+                position: relative;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-header1 sup {
+                font-size: 14px;
+                padding: 0 0 0 1px;
+                position: absolute;
+                top: -2px;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-para{
+                text-align: left;
+                margin: 0;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-disclaimer {
+                margin: 0;
+                font-size: 12px;
+                color: var(--citrusStylesSE-white);
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .citrusStylesSE-hills .citrusStylesSE-cta__box-white {
+                margin: 0;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            /* ===================== Responsive Media Break-Point ===================== */
+            /* All the common used break-point adding here */
+            @media (min-width: 64em) and (max-width: 77.99em) {
+            /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
+                .citrusStylesSE-hills-pov__logo {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: 19px;
+                    line-height: 20px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__logo {
+                    padding: 0 0 10px;
+                    max-width: 140px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-para{
+                    font-size: 14px !important;
+                    line-height: 17px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__copy {
+                    gap: 0.6em;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+                    font-size: 12px;
+                    padding: 1em 8px !important;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                    max-width: 380px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__pov1 .citrusStylesSE-pov__img {
+                    max-width: 320px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__text {
+                    padding: 1em;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills-pov__logo {
+                    max-width: 100px;
+                }
+                            
+            }
+
+            @media (min-width: 64em) { /* min-width: 1024px */
+
+                .citrusStylesSE-hills .citrusStylesSE-header1{
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-para{
+                    font-size: 16px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+                    width: auto;
+                    padding: 1em 0.5em;
+                    border: 1px solid var(--citrusStylesSE-white);
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                    display: flex;
+                }
+
+            }
+
+            @media (min-width: 48em) and (max-width: 63.99em) { 
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: 200px !important;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-para{
+                    font-size: 14px !important;
+                    line-height: 15px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__copy {
+                    gap: 0.6em;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white .citrusStylesSE-url {
+                    font-size: 12px;
+                    padding: 1em 8px !important;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                    max-width: 280px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__pov1 .citrusStylesSE-pov__img {
+                    max-width: 220px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__text {
+                    padding: 1em;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills-pov__logo {
+                    max-width: 80px;
+                }
+
+           }
+
+            @media (max-width: 63.999em) {  /* max-width:1023.99px */
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                    max-width: 280px;
+                }
+
+                .citrusStylesSE-hills-pov__logo {
+                    max-width: 100px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-header1{
+                    font-size: 20px;
+                    color: var(--citrusStylesSE-white);
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin: 0;   
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white .citrusStylesSE-url{
+                    color: var(--citrusStylesSE-white);
+                    text-align: left;
+                    padding: 0 !important;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-para{
+                    font-size: 14px;
+                    color: var(--citrusStylesSE-white);
+                    text-align: left;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__copy {
+                    gap: 0.5em;
+                }
+
+            }
+
+            @media (min-width: 48em) { /* min-width:768px*/
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white {
+                    justify-content: flex-start;
+                    gap: 10px;
+                }   
+
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                /* Hero POV */
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: 460px;
+                    background-image: url(https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills-curve-mob);
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__text {
+                    padding: 1em 0;
+                    justify-content: center;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__copy {
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.8em;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-header1,
+                .citrusStylesSE-hills .citrusStylesSE-para {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-para{
+                    font-size: 16px;
+                    text-align: center;
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-pov__img {
+                    max-width: 100%;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-hills__pov1 .citrusStylesSE-pov__img {
+                    padding: 0 5%;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-carousel__inner--item {
+                    background-size: cover;
+                    align-items: center;
+                }
+
+                .citrusStylesSE-hills .citrusStylesSE-cta__box-white {
+                    flex-direction: column;
+                    gap: 0.8em;
+                }
+              
+            }
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+<body>
+    <main class="citrusStylesSE-main">
+		<!-- POV section start -->
+		<section class="citrusStylesSE-carousel citrusStylesSE-container citrusStylesSE-hills">
+			<div class="citrusStylesSE-carousel__inner">
+				<!-- POV 01 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-hills__pov1">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-hills-pov__logo citrusStylesSE-m-hide">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_presciptionDiet__logo-new" alt="LogoAlt">
+                        </div>
+                        <div class="citrusStylesSE-hills__copy">
+                            <h2 class="citrusStylesSE-header1">OVER 70% OF PETS LOST WEIGHT WITHIN 10 &nbsp;WEEKS*</h2>
+                            <div class="citrusStylesSE-cta__box-white">
+                                <a href="" class="citrusStylesSE-url">Shop Dog Weight Management</a>
+                                <a href="" class="citrusStylesSE-url">Shop Cat Weight Management</a>
+                            </div>
+                            <p class="citrusStylesSE-disclaimer"> *Research on file, Hill’s Pet Nutrition 2011.</p>
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petco_hills_pov1" alt="AltText">
+                    </div>
+				</div>
+				<!-- POV 02 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-hills__pov2">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-hills-pov__logo citrusStylesSE-m-hide">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_presciptionDiet__logo-new" alt="LogoAlt">
+                        </div>
+                        <div class="citrusStylesSE-hills__copy">
+                            <h2 class="citrusStylesSE-header1">AS PETS AGE, THEIR NUTRITIONAL NEEDS &nbsp;CHANGE</h2>
+                            <p class="citrusStylesSE-para"> for pets of every age, all sizes and those with a variety of unique needs.</p>
+                            <div class="citrusStylesSE-cta__box-white">
+                                <a href="" class="citrusStylesSE-url">Shop Dog Food</a>
+                                <a href="" class="citrusStylesSE-url">Shop Cat Food</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petco_hills_pov2" alt="AltText">
+                    </div>
+				</div>
+                <!-- POV 03 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-hills__pov3">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-hills-pov__logo citrusStylesSE-m-hide">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_presciptionDiet__logo-new" alt="LogoAlt">
+                        </div>
+                        <div class="citrusStylesSE-hills__copy">
+                            <h2 class="citrusStylesSE-header1">CRAVED BY PETS. TRUSTED BY VETS.</h2>
+                            <p class="citrusStylesSE-para"> for a meal that’s equal parts nutritious and delicious.</p>
+                            <div class="citrusStylesSE-cta__box-white">
+                                <a href="" class="citrusStylesSE-url">Shop Dog Food</a>
+                                <a href="" class="citrusStylesSE-url">Shop Cat Food</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-pov__img">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petco_hills_pov3" alt="AltText">
+                    </div>
+				</div>
+			</div>
+			<div class="citrusStylesSE-carousel-controls">
+				<span class="prev"></span> <span class="next"></span>
+			</div>
+			<div class="citrusStylesSE-carousel-indicators"></div>
+		</section><!-- End POV section -->
+	</main>
+    <!-- custom js code for POV section -->
+	<script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script>
+</body>
+
+</html>

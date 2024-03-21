@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab-item-product-scroller</title>
+  <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+  <style>
+    /* universal styles */
+    .citrusStylesSE--main {
+      width: 100%;
+      max-width: 1440px;
+      margin: auto;
+      font-family: "PetcoCircular-Regular", arial !important;
+    }
+
+    /* Tab Item Product Scroller */
+    .citrusStylesSE-tab-items {
+      width: 100%;
+      max-width: 1273px;
+      margin: auto;
+      overflow-x: auto;
+    }
+
+    .citrusStylesSE-tab-items::-webkit-scrollbar {
+      display: none;
+    }
+
+    .citrusStylesSE-tab-id {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .citrusStylesSE-tab-area {
+      overflow: hidden;
+      padding-top: 35px;
+      padding-bottom: 26px;
+    }
+
+    .citrusStylesSE-tab-container {
+      max-width: 1273px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .citrusStylesSE--product {
+      display: none;
+    }
+
+    .citrusStylesSE-tab-card--image img {
+      max-width: 100%;
+      max-height: 175px;
+    }
+
+    .citrusStylesSE-product-tab--card>a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .citrusStylesSE-product-tab--card p {
+      font-family: "PetcoCircular-Regular", arial !important;
+      color: #333333;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: left;
+      margin: 20px 0 10px;
+      text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      max-height: 4em;
+      /*standard size is 4em*/
+    }
+
+    .citrusStylesSE-product--cta {
+      border: 0;
+      padding-left: 0;
+      background: none;
+      text-decoration: underline;
+      font-family: "PetcoCircular-Bold", arial !important;
+      color: #001952;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .citrusStylesSE-tab--products {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .citrusStylesSE-tab-card--image {
+      padding: 0 10px;
+      margin: auto;
+    }
+
+    .citrusStylesSE-TabShow {
+      display: block;
+    }
+
+    .citrusStylesSE-tab--item {
+      text-transform: uppercase;
+      padding: 12px 20px;
+      margin: 0px 10px;
+      font-size: 14px;
+      text-decoration: none;
+      background-color: #ffffff;
+      border: none;
+      border-bottom: 10px solid #fff;
+      cursor: pointer;
+      color: #6e6b6b;
+      font-family: "PetcoCircular-Regular", arial !important;
+      font-weight: 700;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .citrusStylesSE-tab--item.citrusStylesSE-active_tab {
+      color: #001952;
+      border-bottom: 10px solid #001952;
+      border-radius: 0;
+    }
+
+    .citrusStylesSE-tab-id {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #021b4e;
+    }
+
+    @media all and (max-width: 1301px) {
+      .citrusStylesSE-tab-container {
+        width: 90%;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .citrusStylesSE-tab--item {
+        max-width: 100%;
+      }
+
+      .citrusStylesSE-tab-area {
+        padding-top: 0px;
+      }
+
+      .splide__arrows {
+        display: none;
+      }
+
+      .citrusStylesSE-tab-id {
+        width: max-content;
+        margin: 0 auto 20px;
+      }
+
+      .citrusStylesSE-tab-container {
+        width: 100%;
+      }
+
+      .citrusStylesSE-product-tab--content {
+        margin-left: 15px;
+      }
+
+      .citrusStylesSE-product-tab--card p {
+        font-size: 17px;
+      }
+    }
+
+    /* End Product Scroller Section */
+  </style>
+</head>
+
+<body>
+  <main class="citrusStylesSE--main">
+    <!-- Product carousal section -->
+    <section class="citrusStylesSE-tab-area">
+      <div class="citrusStylesSE-tab-container">
+        <div class="citrusStylesSE-section__title">
+          <h2 class="citrusStylesSE-header2">Section Title Goes Here</h2>
+          <p class="citrusStylesSE-para">Section Subhead Goes Here</p>
+        </div>
+        <!-- product tab main content -->
+        <div class="citrusStylesSE-product-tab-container">
+          <!-- Start tab button -->
+          <div class="citrusStylesSE-tab-items">
+            <div id="citrusStylesSE-tab-id" class="citrusStylesSE-tab-id">
+              <button class="citrusStylesSE-tab--item" onclick="filterProducts('citrusStylesSE-brandName-x-food')">DRY
+                FOOD</button>
+              <button class="citrusStylesSE-tab--item citrusStylesSE-active_tab"
+                onclick="filterProducts('citrusStylesSE-brandName-d-food')">WET
+                FOOD</button>
+              <button class="citrusStylesSE-tab--item"
+                onclick="filterProducts('citrusStylesSE-brandName-c-food')">TREATS</button>
+            </div>
+          </div>
+          <!-- End tab button -->
+
+          <!-- product content -->
+          <div class="citrusStylesSE-product-tab--content">
+            <!-- DRY FOOD RAW product row 01 -->
+            <div id="citrusStylesSE-brandName-x-food" class="splide citrusStylesSE-tab--products">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <!-- tab item 01-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-adult-high-protein-chicken-dry-dog-food-24-lbs-3844364"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.1-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Adult High
+                            Protein Chicken Dry Dog Food, 24 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 02-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-adult-high-protein-salmon-dry-dog-food-28-lbs-3747661"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.2-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Adult
+                            High Protein Salmon Dry Dog Food, 28 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 03-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-puppy-high-protein-chicken-dry-dog-food-45-lbs-3747855"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.3-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Puppy
+                            High Protein Chicken Dry Dog Food, 4.5 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 04-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-large-breed-adult-high-protein-chicken-dry-dog-food-28-lbs-3747644"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.4-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Large
+                            Breed Adult High Protein Chicken Dry Dog Food, 28 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 05-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-large-breed-adult-high-protein-salmon-dry-dog-food-28-lbs-3747724"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.5-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Large
+                            Breed Adult High Protein Salmon Dry Dog Food, 28 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 06-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-adult-high-protein-duck-dry-dog-food-28-lbs-3747791"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.6-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Adult
+                            High Protein Duck Dry Dog Food, 28 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 07-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-senior-high-protein-chicken-dry-dog-food-28-lbs-3747775"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.7-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Senior
+                            High Protein Chicken Dry Dog Food, 28 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 08-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-adult-healthy-weight-high-protein-chicken-dry-dog-food-28-lbs-3747960"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.8-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Adult
+                            Healthy Weight High Protein Chicken Dry Dog Food, 28
+                            lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 9 -->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-x-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-plus-wholesome-grains-natural-adult-high-protein-salmon-dry-dog-food-13-lbs-3747986"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-DryFood-tab1.9-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Plus Wholesome Grains Natural Adult
+                            High Protein Salmon Dry Dog Food, 13 lbs.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                </div>
+              </div>
+            </div>
+            <!-- End DRY FOOD RAW product row 01 -->
+
+            <!-- WET FOOD product row 02 -->
+            <div id="citrusStylesSE-brandName-d-food" class="splide citrusStylesSE-tab--products">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <!-- tab item 01-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-turkey-and-chicken-canned-puppy-food-125-oz-2286129"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.1-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Puppy Turkey & Chicken Grill Wet Dog
+                            Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 02-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-beef-and-chicken-canned-dog-food-2645355"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.2-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Beef & Chicken Grill Adult Wet Dog
+                            Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 03-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-canned-dog-food-335134"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.3-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Salmon & Chicken Grill Wet Dog Food,
+                            12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 04-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-wolf-creek-stew-beef-canned-dog-food-case-of-12-2286049"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.4-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Wolf Creek Stew Hearty Beef Stew Wet
+                            Dog Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 05-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-turkey-and-chicken-senior-canned-dog-food-125-oz-2286111"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.5-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Senior Turkey & Chicken Grill Wet
+                            Dog Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 06-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-canned-dog-food-323250"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.6-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Turkey & Chicken Grill Wet Dog Food,
+                            12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 07-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-rocky-mountain-recipe-with-red-meat-adult-canned-dog-food-125-oz-2286102"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.7-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Rocky Mountain Recipe Adult Red Meat
+                            Dinner Wet Dog Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 08-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-wolf-creek-stew-grain-free-chicken-canned-dog-food-case-of-12-2286090"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.8-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Wolf Creek Stew Chunky Chicken Stew
+                            Wet Dog Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 09-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-canned-dog-food-346322"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.9-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Duck & Chicken Grill Canned Dog
+                            Food, 12.5 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 10-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-d-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-trail-toppers-salmon-wild-cuts-dog-food-topper-3-oz-2349206"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-WetFood-tab2.10-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Toppers Salmon Wild Cuts Dog
+                            Food Topper, 3 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                </div>
+              </div>
+            </div>
+            <!-- End WET FOOD product row 02 -->
+
+            <!-- TREATS FOOD product row 03 -->
+            <div id="citrusStylesSE-brandName-c-food" class="splide citrusStylesSE-tab--products">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <!-- tab item 01-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-wild-bits-chicken-dog-training-treats-4-oz-2277249"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.1-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Chicken Wild Bits Dog
+                            Treats, 4 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 02-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-wild-bits-duck-dog-training-treats-4-oz-2277257"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.2-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Duck Wild Bits Dog
+                            Treats, 4 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 03-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-wild-bits-salmon-dog-training-treats-4-oz-2277206"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.3-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Salmon Wild Bits Dog
+                            Treats, 4 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 04-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-trail-treats-grain-free-salmon-dog-biscuits-10-oz-1371223"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.4-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Salmon Biscuits Dog
+                            Treats, 10 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 05-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-bits-chicken-value-added-vitamins-dog-treat-10-oz-2920492"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.5-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Wilderness Bits Chicken Value Added Vitamins Dog
+                            Treat, 10 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 06-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-trail-treats-grain-free-duck-dog-biscuits-10-oz-1381466"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.6-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Duck Biscuits Dog
+                            Treats, 10 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 07-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-bits-salmon-dog-treat-10-oz-2920505"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.7-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Wilderness Bits Salmon Dog Treat, 10 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 08-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-blue-wilderness-rocky-mountain-recipe-bison-recipe-biscuits-8-oz-2454743"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.8-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Rocky Mountain Recipe Bison Recipe
+                            Biscuits, 8 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 09-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-trail-treats-grain-free-turkey-dog-biscuits-10-oz-1371215"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.9-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Turkey Biscuits Dog
+                            Treats, 10 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                  <!-- tab item 10-->
+                  <div class="citrusStylesSE--product citrusStylesSE-brandName-c-food splide__slide">
+                    <div class="citrusStylesSE-product-tab--card">
+                      <a href="https://www.petco.com/shop/en/petcostore/product/blue-buffalo-wilderness-grain-free-wild-bites-chicken-treats-1530712"
+                        manual_cm_sp="" onclick="clickTrackLink(this);">
+                        <div class="citrusStylesSE-tab-card--image">
+                          <img
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-Treats-tab3.10-product"
+                            alt="" />
+                        </div>
+                        <div class="citrusStylesSE-product-tab--cardBody">
+                          <p>Blue Buffalo Blue Wilderness Trail Treats Chicken Wild Bites Dog
+                            Treats, 4 oz.</p>
+                          <span class="citrusStylesSE-product--cta">Shop Now</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- tab item -->
+                </div>
+              </div>
+            </div>
+            <!-- End TREATS FOOD product row 03 -->
+
+          </div>
+          <!-- End Product content -->
+        </div>
+        <!-- product tab main content -->
+      </div>
+    </section>
+    <!-- End product carousal section -->
+
+  </main>
+
+  <!-- splide js library-->
+  <script src="https://ca-team-landing-page-playbook.pages.dev/splide.js"></script>
+  <!-- custom javascript -->
+  <script>
+    //  product scroller
+    advanceArrows("citrusStylesSE-brandName-d-food");
+    function advanceArrows(idx) {
+      var splideElement = "#" + idx;
+      var splideDefaultOptions = {
+        arrows: true,
+        type: "slide",
+        start: 0,
+        focus: 0,
+        pagination: false,
+        rewindSpeed: 500,
+        speed: 500,
+        pauseOnHover: true,
+        perPage: 6,
+        perMove: 1,
+        gap: 20,
+        omitEnd: true,
+        breakpoints: {
+          375: {
+            perPage: 1.5,
+          },
+          576: {
+            perPage: 1.75,
+          },
+          768: {
+            perPage: 2.5,
+          },
+          991: {
+            perPage: 3,
+          },
+          992: {
+            perPage: 3,
+          },
+          1024: {
+            perPage: 4,
+          },
+          1200: {
+            perPage: 4,
+          },
+          1340: {
+            perPage: 4,
+          },
+          1440: {
+            perPage: 6,
+          },
+        },
+      };
+      new Splide(splideElement, splideDefaultOptions).mount();
+    }
+
+    /* ************************************************************************************** */
+    //for tab sweater & loader added
+    document.addEventListener("DOMContentLoaded", function () {
+      filterProducts("citrusStylesSE-brandName-d-food");
+    });
+    // for dog filter function
+    function filterProducts(c) {
+      var x, i;
+      x = document.getElementsByClassName("citrusStylesSE--product");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        RemoveClass(x[i], "citrusStylesSE-TabShow");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], " citrusStylesSE-TabShow");
+      }
+      advanceArrows(c);
+    }
+    function AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    document.addEventListener("DOMContentLoaded", function () {
+      // for dog active class filter
+      var dogBtnContainer = document.getElementById("citrusStylesSE-tab-id");
+      var dogBtns = dogBtnContainer.getElementsByClassName("citrusStylesSE-tab--item");
+      addActiveClass(dogBtns, "citrusStylesSE-active_tab");
+    });
+    function addActiveClass(element, activeClass) {
+      for (var i = 0; i < element.length; i++) {
+        element[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName(activeClass);
+          current[0].className = current[0].className.replace(
+            " " + activeClass,
+            ""
+          );
+          this.className += " " + activeClass;
+        });
+      }
+    }
+    //for Dog best seller tab switcher
+
+
+
+
+  </script>
+  <!-- End Brand Page Code -->
+</body>
+
+</html>
