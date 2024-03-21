@@ -663,25 +663,12 @@
   --citrusStylesSE-background: var(--citrusStylesSE-background--ghost);
   border: 1px solid var(--citrusStylesSE-button-color);
 }
-.citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--active {
-  color: var(--citrusStylesSE-button-color--ghost-hover);
-  background: var(--citrusStylesSE-button-color);
-  border-color: 1px solid transparent;
-}
-.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):not(:active):hover {
-  color: var(--citrusStylesSE-button-color--ghost-hover);
-  background: var(--citrusStylesSE-button-color);
-  border-color: 1px solid transparent;
-}
+
 .citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
-.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):active, .citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled])[aria-current] {
-  color: var(--citrusStylesSE-button-color--ghost-hover);
-  background: var(--citrusStylesSE-button-color);
-  border-color: 1px solid transparent;
-}
+
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--brand {
   --citrusStylesSE-color: var(--citrusStylesSE-color--brand-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--brand-ghost);
