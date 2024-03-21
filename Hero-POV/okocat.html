@@ -7,18 +7,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hero POV</title>
-        <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
         <style>
-			/* Common Styles */
-			.citrusStylesSE-container h1, h2, h3{
-				font-family: PetcoCircular-Bold, arial!important;
-				font-weight: 700;
-			}
-
-			.citrusStylesSE-container p{
-				font-family: PetcoCircular-Regular, arial!important;
-				font-weight: normal;
-			}
 
             /* Carousels - POV */
             .citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
@@ -31,12 +21,8 @@
                 background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/DES-2140_OkoCat_SilverBP_Refresh/img/citrusOkocat_Desktop-POV3.png");
             }
             
-			.citrusStylesSE-pov__img img{
-				max-width: 100%;
-			}
-
-			.citrusStylesSE-container{
-				width: 100%;
+			.citrusStylesSE-okocat .citrusStylesSE-pov__logo {
+				max-width: 140px;
 			}
 
 			.citrusStylesSE-cta__box--color a{
@@ -47,9 +33,14 @@
 				font-weight: 700;
 			}
 
+			.citrusStylesSE-okocat .citrusStylesSE-carousel__inner--item {
+				background-size: 100% 100%;
+			}
+
 			
 			@media screen and (min-width: 320px) {
-				.d-hide {
+
+				.citrusStylesSE-d-hide {
 					display: block;
 				}
 
@@ -89,19 +80,54 @@
 
 				.citrusStylesSE-grid__cell{
 					padding-left: 0;
+					flex: 1;
+				}
+
+				.citrusStylesSE-grid__cell {
+					padding: 0 1em;
 				}
 
 			}
 
-			@media screen and (min-width: 768px) {
-				.d-hide {
-					display: none;
+			@media screen and (min-width: 48em) and (max-width: 63.99em) {
+				.citrusStylesSE-okocat .citrusStylesSE-carousel__inner--item {
+					max-height: 250px;
 				}
 
+				.citrusStylesSE-okocat .citrusStylesSE-pov__text--title {
+					padding: 0.5em 0;
+				}
+
+				.citrusStylesSE-okocat .citrusStylesSE-cta__box {
+					padding: 0.7em 0;
+				}
+
+				.citrusStylesSE-okocat .citrusStylesSE-pov__text--title {
+					font-size: 25px;
+				}
+			}
+
+			@media screen and (min-width: 48em) {
+				.citrusStylesSE-d-hide {
+					display: none;
+				}
+/* 			
+				.citrusStylesSE-pov__text--wrapper {
+					max-width: 50%;
+				} */
 				.citrusStylesSE-pov__text{
 					text-align: left;
 					padding-left: var(--citrusStylesSE-spacing-super);
 				}
+
+				
+			.citrusStylesSE-pov__text--subhead {
+				max-width: 50%;
+			}
+
+			.citrusStylesSE-okocat .citrusStylesSE-disclaimer {
+				max-width: 50%;
+			}
 				
 				/* CTA Box with background color */
 				.citrusStylesSE-cta__box--color{
@@ -122,65 +148,95 @@
 					width: 50%;
 				}
 
+				.citrusStylesSE-cta__box {
+					justify-content: flex-start;
+					padding: 1em 0;
+				}
 
+
+			}
+
+			@media screen and (max-width: 47.99em) {
+				.citrusStylesSE-okocat .citrusStylesSE-pov__logo {
+					margin: 0 auto;
+				}
+
+				.citrusStylesSE-cta__box {
+					justify-content: center;
+					padding: 1em 0;
+				}
+
+				.citrusStylesSE-carousel__inner--item {
+					background: #e9faff;
+				}
+
+				.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov1 {
+					background-image: unset;
+				}
+				.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov3 {
+					background-image: unset;
+				}
+				.citrusStylesSE-carousel__inner .citrusStylesSE-demo-pov2 {
+					background-image: unset;
+				}
 			}
 
             /* ----------------------------------------- */
         </style>
     </head>
 
-<body>
-    <main class="citrusStylesSE-container citrusStylesSE-container--xlarge">
+<body class="citrusStylesSE-main">
+    <main class="citrusStylesSE-container citrusStylesSE-container--xlarge citrusStylesSE-okocat">
 		<!-- POV section start -->
 		<section class="citrusStylesSE-carousel">
 			<div class="citrusStylesSE-carousel__inner ">
 				<!-- POV 01 -->
-				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-demo-pov1 citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-full">
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-demo-pov1 citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-fit">
 					<div class="citrusStylesSE-pov__img citrusStylesSE-grid__cell--no-gutter citrusStylesSE-grid--small-full" title="A woman reading a book on her bed with her cat.">
-						<img alt="A woman reading a book on her bed with her cat." class="d-hide" src="https://picsum.photos/seed/picsum/750/444">
+						<img alt="A woman reading a book on her bed with her cat." class="citrusStylesSE-d-hide" src="https://picsum.photos/seed/picsum/750/444">
 					</div>
 					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
 						<div class="citrusStylesSE-pov__text--wrapper">
 							<div class="citrusStylesSE-pov__logo">
 								<img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo">
 							</div>
-							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super">NEXT GENERATION<br class="d-hide">
+							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super citrusStylesSE-header1">NEXT GENERATION<br class="citrusStylesSE-d-hide">
 							<span style="white-space: nowrap;">PLANT-BASED</span>&nbsp;LITTER</h1>
-							<p class="citrusStylesSE-pov__text--subhead">Biodegradable and planet-friendly with<br class="d-hide">
+							<p class="citrusStylesSE-pov__text--subhead citrusStylesSE-para">Biodegradable and planet-friendly with<br class="citrusStylesSE-d-hide">
 							superior&nbsp;performance.</p>
-							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
-								<a href="">Shop Now</a>
+							<div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="" class="citrusStylesSE-url">Shop Now</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- POV 02 -->
-				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov2">
-					<div class="citrusStylesSE-pov__img" title="A bag of Okocat Low-Tracking litter being poured into a bowl."><img alt="A bag of Okocat Low-Tracking litter being poured into a bowl." class="d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
+				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov2  citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-fit">
+					<div class="citrusStylesSE-pov__img" title="A bag of Okocat Low-Tracking litter being poured into a bowl."><img alt="A bag of Okocat Low-Tracking litter being poured into a bowl." class="citrusStylesSE-d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
 					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
 						<div class="citrusStylesSE-pov__text--wrapper">
 							<div class="citrusStylesSE-pov__logo" id="citrusOkoCat_logo3"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
-							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super">WOOD WORKS<br class="d-hide">
+							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super citrusStylesSE-header1">WOOD WORKS<br class="citrusStylesSE-d-hide">
 							NATURALLY</h1>
-							<p class="citrusStylesSE-pov__text--subhead">Liquid is absorbed on contact, stopping<br class="d-hide">
+							<p class="citrusStylesSE-pov__text--subhead citrusStylesSE-para">Liquid is absorbed on contact, stopping<br class="citrusStylesSE-d-hide">
 							the creation of ammonia and odor.</p>
-							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
-								<a href="">Shop Now</a>
+							<div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="" class="citrusStylesSE-url">Shop Now</a>
 							</div>
 						</div>
 					</div>
 				</div><!-- POV 03 -->
-				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov3">
-					<div class="citrusStylesSE-pov__img" title="A cat next to a bag of Okocat Featherweight litter."><img alt="A cat next to a bag of Okocat Featherweight litter." class="d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
+				<div class="citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-carousel__inner--item  citrusStylesSE-demo-pov3 citrusStylesSE-grid citrusStylesSE-grid--wrap citrusStylesSE-grid--medium-fit citrusStylesSE-grid--small-fit">
+					<div class="citrusStylesSE-pov__img" title="A cat next to a bag of Okocat Featherweight litter."><img alt="A cat next to a bag of Okocat Featherweight litter." class="citrusStylesSE-d-hide" src="https://picsum.photos/seed/picsum/750/444"></div>
 					<div class="citrusStylesSE-pov__text citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100">
 						<div class="citrusStylesSE-pov__text--wrapper">
 							<div class="citrusStylesSE-pov__logo"><img alt="Okocat logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/okocat-logo"></div>
-							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super">LITTER THAT<br class="d-hide">
+							<h1 class="citrusStylesSE-pov__text--title citrusStylesSE-grid-text citrusStylesSE-super citrusStylesSE-header1">LITTER THAT<br class="citrusStylesSE-d-hide">
 							LASTS LONGER</h1>
-							<p class="citrusStylesSE-pov__text--subhead">With regular scooping, your base<br class="d-hide">
+							<p class="citrusStylesSE-pov__text--subhead citrusStylesSE-para">With regular scooping, your base<br class="citrusStylesSE-d-hide">
 							litter can last up to 7&nbsp;weeks.*</p>
-							<div class="citrusStylesSE-cta__box--color citrusStylesSE-grid citrusStylesSE-grid--center">
-								<a href="">Shop Now</a>
+							<div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+								<a href="" class="citrusStylesSE-url">Shop Now</a>
 							</div>
 							<p class="citrusStylesSE-disclaimer citrusStylesSE-container--full citrusStylesSE-xsmall">*Depending on number of cats using the litter box, how often they use it and type of scoop used.</p>
 						</div>
@@ -194,8 +250,8 @@
 		</section><!-- End POV section -->
 	</main>
     <!-- custom js code for POV section -->
-	<script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script>
-	<!-- <script src="../heroCarousel.js"></script> -->
+	<!-- <script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script> -->
+	<script src="../heroCarousel.js"></script>
 </body>
 
 </html>
