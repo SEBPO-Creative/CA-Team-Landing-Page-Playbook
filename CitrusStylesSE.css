@@ -400,52 +400,6 @@
 /* ===================== End All Blaze Variables ===================== */
 
 
-/* ===================== Petco Fonts ===================== */
-/* Importing Petco Circular Font to use on Petco Website */
-
-@font-face {
-  font-family: "PetcoCircular-Regular";
-  src: url("font/PetcoCircular-Regular.woff2") /* for local use, we can use otf font that will match the font in local and staging */
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PetcoCircular-Bold";
-  src: url("font/PetcoCircular-Bold.woff2")  /* for local use, we can use otf font that will match the font in local and staging */
-    format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PetcoCircular-Black";
-  src: url("font/PetcoCircular-Black.otf")
-    format("otf");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PetcoCircular-Medium";
-  src: url("font/PetcoCircular-Medium.otf")
-    format("otf");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PetcoCircular-Book";
-  src: url("font/PetcoCircular-Book.otf")
-    format("otf");
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* ===================== End Petco Fonts ===================== */
-
-
 /* ===================== Avatar ===================== */
 /* We are not using the Blaze Avatar so, we can delete this */
 
@@ -897,13 +851,7 @@
 
 /* ===================== Card ===================== */
 /* All the Card styles added here */
-.citrusStylesSE-output {  /* Need to remove this */
-  background-color: #fafafa;
-  padding: 1rem;
-  border-radius: 5px;
-  margin: 2rem 0;
-}
-/* above code for demo */
+
 .citrusStylesSE-card {
   background: var(--citrusStylesSE-card-background);
   border-radius: var(--citrusStylesSE-border-radius);
@@ -1758,7 +1706,8 @@
 .citrusStylesSE-grid__cell--offset-100 {
   margin-left: 100%;
 }
-/* End Grid width */
+
+/* ===================== End Grid width===================== */
 
 
 /* ===================== Tables ===================== */
@@ -1844,7 +1793,9 @@
 .citrusStylesSE-table--condensed .citrusStylesSE-table__cell {
   padding: var(--citrusStylesSE-spacing-xsmall);
 }
-/* End Tables */
+
+/* ===================== End Tables ===================== */
+
 
 /* ===================== Timeline ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */
@@ -1952,7 +1903,8 @@
   position: absolute;
   top: 0;
 }
-/* End Timeline */
+/* ===================== End Timeline ===================== */
+
 
 /* ===================== Utility Class ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */
@@ -2683,7 +2635,8 @@
 .citrusStylesSE-grid__cell--visible {
   display: initial;
 }
-/* End Utility class */
+/* ===================== End Utility Class ===================== */
+
 
 /* ===================== Headings ===================== */
 /* All the headings styles */
@@ -2716,11 +2669,12 @@
   opacity: .6;
   padding: 0;
 }
-/* End Headings */
+/* ===================== End Headings ===================== */
+
 
 /* ===================== List ===================== */
 /* All the list styles */
-/* List */
+
 ul.citrusStylesSE-list,
 ol.citrusStylesSE-list,
 .citrusStylesSE-list[role=list] {
@@ -2793,76 +2747,6 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   padding: 0 var(--citrusStylesSE-spacing-small) 0 0;
   content: "•";
 }
-/* End List */
-
-/* ===================== Modals ===================== */
-/* All the Modals styles */
-/* .citrusStylesSE-modal[role=dialog] {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: var(--z-over-everything);
-  display: block;
-  width: 75%;
-  overflow: hidden;
-  background: var(--citrusStylesSE-modal-background);
-  border: 0;
-  border-radius: var(--citrusStylesSE-modal-border-radius);
-  transform: translate(-50%, -50%);
-  visibility: hidden;
-  opacity: 0;
-}
-.citrusStylesSE-modal[role=dialog] .citrusStylesSE-card {
-  background-color: transparent;
-  box-shadow: none;
-}
-.citrusStylesSE-modal[role=dialog] .citrusStylesSE-card .citrusStylesSE-card__body {
-  position: relative;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost {
-  color: #fff;
-  background: var(--citrusStylesSE-modal-background--ghost);
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost .citrusStylesSE-heading {
-  color: #fff;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--ghost .citrusStylesSE-button--close {
-  color: var(--citrusStylesSE-modal-close-color--ghost);
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full {
-  top: 1em;
-  left: 1em;
-  width: calc(100% - 2em);
-  height: calc(100% - 2em);
-  transform: none;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card:first-child {
-  box-shadow: none;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card__body {
-  position: absolute;
-  top: 3.5em;
-  bottom: 4em;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--full .citrusStylesSE-card__footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.citrusStylesSE-modal[role=dialog].citrusStylesSE-modal--visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.citrusStylesSE-button--close {
-  top: var(--citrusStylesSE-spacing-small);
-  color: var(--citrusStylesSE-modal-close-color);
-} */
-/* End Modals */
 
 /* ===================== Sizes ===================== */
 /* All the Sizes styles */
@@ -2889,7 +2773,8 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 .citrusStylesSE-xsmall {
   font-size: var(--citrusStylesSE-text-font-size-xsmall);
 }
-/* End Sizes */
+
+/* ===================== End Sizes ===================== */
 
 /* ===================== Responsiveness ===================== */
 /* All the Responsiveness styles */
@@ -5697,4 +5582,5 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 .citrusStylesSE-tabs__tab[role=tabpanel] {
   padding: var(--citrusStylesSE-spacing-medium);
 }
-/* End Tabs */
+
+/* ===================== Tabs ===================== */
