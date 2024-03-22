@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 
-    citrusStylesSE-pov__title -- section custom class declare
- -->
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +9,11 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <!-- custom css -->
     <style>
-        .citrusStylesSE-desktop-version {
+        .citrusStylesSE-m-hide {
             display: block;
         }
 
-        .citrusStylesSE-mobile-version {
+        .citrusStylesSE-d-hide {
             display: none;
         }
 
@@ -73,7 +70,6 @@
             height: 100%;
             align-items: center;
             justify-content: center;
-            /* top: -5%; */
         }
 
         .citrusStylesSE_pov-logo img {
@@ -103,6 +99,7 @@
 
         .citrusStylesSE_pov-text .citrusStylesSE-cta__box {
             margin-top: 10px;
+            justify-content: flex-start;
         }
 
         .citrusStylesSE_pov-text p.citrusStylesSE__disclaimer {
@@ -139,7 +136,7 @@
             }
         }
 
-        @media screen and (min-width: 768px) and (max-width: 1240px) {
+        @media screen and (min-width: 769px) and (max-width: 1240px) {
 
             .citrusStylesSE-carousel,
             .citrusStylesSE-carousel__inner,
@@ -155,17 +152,17 @@
             }
         }
 
-        @media only screen and (max-width: 767px) {
-            .citrusStylesSE-desktop-version {
+        @media only screen and (max-width: 768px) {
+            .citrusStylesSE-m-hide {
                 display: none;
             }
 
-            .citrusStylesSE-mobile-version {
+            .citrusStylesSE-d-hide {
                 display: block;
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item {
-                align-items: flex-start;
+                align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
                 flex: 1;
@@ -226,7 +223,7 @@
             <!-- POV 01 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusStylesSE__pov-img">
-                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
+                    <img class="citrusStylesSE-img citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero1"
                         alt="Phone screens show Oliver the dog’s health and breed summaries. Oliver poses with Dog DNA Test box.">
                     <img class="citrusStylesSE-img citrusStylesSE-mobilversion"
@@ -261,10 +258,10 @@
             <!-- POV 02 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusStylesSE__pov-img">
-                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
+                    <img class="citrusStylesSE-img citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero2"
                         alt="Oliver’s health summary on phone screen. Oliver smiles outside.">
-                    <img class="citrusStylesSE-img citrusStylesSE-mobile-version"
+                    <img class="citrusStylesSE-img citrusStylesSE-d-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV2Lifestyle"
                         alt="Oliver’s health summary on phone screen. Oliver smiles outside.">
                 </div>
@@ -278,7 +275,8 @@
                         <div>
                             <h1 class="citrusStylesSE-header1 citrusStylesSE_pov-text__title">PROACTIVE CARE<br>YOUR DOG
                                 DESERVES</h1>
-                            <p class="citrusStylesSE_pov-text__subhead">Learn about your dog’s unique health needs to
+                            <p class="citrusStylesSE-para citrusStylesSE_pov-text__subhead">Learn about your dog’s
+                                unique health needs to
                                 help give
                                 them the best care possible.</p>
                             <div class="citrusStylesSE-cta__box">
@@ -293,10 +291,10 @@
             <!-- POV 03 -->
             <div class="citrusStylesSE-carousel__inner--item">
                 <div class="citrusStylesSE__pov-img">
-                    <img class="citrusStylesSE-img citrusStylesSE-desktop-version"
+                    <img class="citrusStylesSE-img citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-Hero3"
                         alt="Closed Dog DNA Test box next to an open box featuring the 3-step instructions and test swab.">
-                    <img class="citrusStylesSE-img citrusStylesSE-mobile-version"
+                    <img class="citrusStylesSE-img citrusStylesSE-d-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Embark-POV3Lifestyle"
                         alt="Closed Dog DNA Test box next to an open box featuring the 3-step instructions and test swab.">
                 </div>
@@ -312,7 +310,8 @@
                                 SCIENTIFICALLY<br>ADVANCED DOG DNA
                                 TEST*
                             </h1>
-                            <p class="citrusStylesSE_pov-text__subhead">Developed in partnership with the Cornell
+                            <p class="citrusStylesSE-para citrusStylesSE_pov-text__subhead">Developed in partnership
+                                with the Cornell
                                 University College of Veterinary Medicine.</p>
                             <div class="citrusStylesSE-cta__box">
                                 <a class="citrusStylesSE-url"
