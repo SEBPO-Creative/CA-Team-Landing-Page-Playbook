@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <!-- custom css -->
     <style>
+        .citrusStylesSE-d-hide {
+            display: none;
+        }
+
+        .citrusStylesSE-m-hide {
+            display: block;
+        }
+
         /* POV style */
         .citrusStylesSE-carousel {
             width: 100%;
@@ -145,8 +153,15 @@
         }
 
         @media only screen and (max-width: 768px) {
+            .citrusStylesSE-m-hide {
+                display: none;
+            }
+
+            .citrusStylesSE-d-hide {
+                display: block;
+            }
+
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item {
-                align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
                 flex: 1;
