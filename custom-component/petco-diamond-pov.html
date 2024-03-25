@@ -69,7 +69,7 @@
             color: #00205B;
         }
 
-        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-pov-text {
+        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text {
             color: #fff;
         }
 
@@ -78,8 +78,8 @@
             color: #00205B;
         }
 
-        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__title,
-        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__subhead {
+        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__title,
+        .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__subhead {
             color: #fff !important;
         }
 
@@ -122,21 +122,21 @@
             transition: all ease .5s;
         }
 
-        .citrusStylesSE-carousel__inner .citrusStylesSE-pov1 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov1 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamondpet-pov1-full.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
 
-        .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamondpet-pov2-full.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
 
-        .citrusStylesSE-carousel__inner .pov3 {
+        .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov3 {
             background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamondpet-pov3-full.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -147,29 +147,6 @@
         .citrusStylesSE-carousel__inner--item {
             width: 100%;
             overflow: hidden;
-        }
-
-        .citrusStylesSE-carousel-indicators {
-            position: absolute;
-            bottom: 0;
-            left: calc(100%/2 - 52px);
-            text-align: center;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 5px 5px 0 0;
-            padding: 10px 10px 5px;
-        }
-
-        .citrusStylesSE-carousel-indicators span {
-            display: inline-block;
-            border: 2px solid #09205c;
-            padding: 7px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin: 0 5px;
-        }
-
-        .citrusStylesSE-carousel-indicators span.active {
-            background-color: #09205c;
         }
 
         /* Responsive */
@@ -217,16 +194,16 @@
             }
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 47.999em) {
 
             .citrusStylesSE-d-hide {
                 display: block;
             }
 
             /* POV */
-            .citrusStylesSE-carousel__inner .citrusStylesSE-pov1,
-            .citrusStylesSE-carousel__inner .citrusStylesSE-pov2,
-            .citrusStylesSE-carousel__inner .pov3 {
+            .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov1,
+            .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2,
+            .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov3 {
                 background-image: unset;
             }
 
@@ -238,7 +215,7 @@
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text {
                 max-width: 100%;
                 order: 2;
-                padding: 30px 15px;
+                padding: 40px 15px;
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__title {
@@ -263,7 +240,7 @@
                 text-decoration: underline;
             }
 
-            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__wrapper .pov-cta .citrus-diamonpet-cta-box {
+            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__wrapper .pov-cta .citrus-diamonpet-cta-box {
                 color: #fff !important;
             }
 
@@ -276,15 +253,15 @@
                 justify-content: center;
             }
 
-            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov1 {
+            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov1 {
                 background: #5796B2;
             }
 
-            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-pov2 {
+            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 {
                 background: #7E6144;
             }
 
-            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .pov3 {
+            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov3 {
                 background: #859B91;
             }
         }
@@ -299,7 +276,7 @@
         <div class="citrusStylesSE-carousel">
             <div class="citrusStylesSE-carousel__inner">
                 <!-- POV 01 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-pov1">
+                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov1">
                     <div class="citrusStylesSE-pov-text">
                         <div class="citrusStylesSE-pov-text__wrapper citrusStylesSE-carousel__flex">
                             <div class="citrusStylesSE-pov-logo">
@@ -326,7 +303,7 @@
                     </div>
                 </div>
                 <!-- POV 02 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-pov2">
+                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov2">
                     <div class="citrusStylesSE-pov-text">
                         <div class="citrusStylesSE-carousel__flex citrusStylesSE-pov-text__wrapper">
                             <div class="citrusStylesSE-pov-logo">
@@ -358,7 +335,7 @@
                     </div>
                 </div>
                 <!-- POV 03 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item pov3">
+                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov3">
                     <div class="citrusStylesSE-pov-text">
                         <div class="citrusStylesSE-carousel__flex citrusStylesSE-pov-text__wrapper">
                             <div class="citrusStylesSE-pov-logo">
