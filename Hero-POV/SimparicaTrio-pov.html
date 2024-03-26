@@ -16,12 +16,10 @@
     .citrusStylesSE-main-wrapper h1,
     h2,
     h3 {
-      font-family: "PetcoCircular-Bold", arial !important;
       margin: 0;
     }
 
     .citrusStylesSE-main-wrapper p {
-      font-family: "PetcoCircular-Regular", arial !important;
       margin: 0;
     }
 
@@ -29,13 +27,13 @@
       width: 100%;
     }
 
-    .citrusStylesSE-desktop_hide {
+    /* .citrusStylesSE-d-hide {
       display: none !important;
     }
 
-    .citrusStylesSE-mobile_hide {
+    .citrusStylesSE-m-hide {
       display: block;
-    }
+    } */
 
     /* Hero POV  Start*/
     .citrusStylesSE-pov-container {
@@ -101,8 +99,12 @@
       text-align: center;
     }
 
-    .citrusStylesSE-pov2 .citrusStylesSE-carousel--text .citrusTrio-cta__box--color {
-      margin: 0 auto;
+    .citrusStylesSE-carousel--text .citrusStylesSE-btn-primary-navy {
+      justify-content: flex-start;
+    }
+
+    .citrusStylesSE-pov2 .citrusStylesSE-carousel--text .citrusStylesSE-btn-primary-navy {
+      justify-content: center;
     }
 
     .citrusStylesSE-pov1 .citrusStyleSE-btn-primary-navy,
@@ -192,6 +194,7 @@
       .citrusStylesSE-carousel {
         height: 230px;
       }
+
       .citrusStylesSE-carousel--text h2 {
         padding: 0 0 10px !important;
         font-size: 19px;
@@ -260,16 +263,6 @@
 
 
     @media screen and (max-width: 767px) {
-
-      /* Common class */
-      .citrusStylesSE-desktop_hide {
-        display: block !important;
-      }
-
-      .citrusStylesSE-mobile_hide {
-        display: none !important;
-      }
-
       /* Hero Carousel */
       .citrusStylesSE-carousel--inner-item {
         flex-wrap: wrap;
@@ -290,7 +283,7 @@
 
       .citrusStylesSE-carousel--text h2 {
         max-width: 100%;
-        font-size: 23px;
+        font-size: calc(var(var(--citrusStylesSE-text-font-size-xlarge)) - 1px);
         max-width: 300px;
         margin: 0 !important;
       }
@@ -306,6 +299,10 @@
 
       .citrusStylesSE-pov2 .citrusStyleSE-btn-primary-navy {
         justify-content: flex-start;
+      }
+
+      .citrusStylesSE-pov2 .citrusStylesSE-carousel--text .citrusStylesSE-btn-primary-navy {
+        justify-content: start;
       }
 
       .citrusStylesSE-pov2 .citrusStylesSE-carousel--text .citrusStylesSE-carousel--disclaimer {
@@ -348,19 +345,19 @@
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__logo" alt="">
           </div>
           <div class="citrusStylesSE-carousel--text">
-            <h2>DESIGNED FOR DEFENSE</h2>
-            <p>A single monthly chew does the job of two or three parasiticides.</p>
-            <div class="citrusStyleSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
-              <a href="" class="citrusStylesSE-url" onclick="clickTrackLink(this);">Shop Now</a>
+            <h2 class="citrusStylesSE-PetcoBold">DESIGNED FOR DEFENSE</h2>
+            <p class="citrusStylesSE-PetcoRegular">A single monthly chew does the job of two or three parasiticides.</p>
+            <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
+              <a href="" class="citrusStylesSE-url">Shop Now</a>
             </div>
 
-            <p class="citrusStylesSE-carousel--disclaimer">Valid prescription required.</p>
+            <p class="citrusStylesSE-PetcoRegular citrusStylesSE-carousel--disclaimer">Valid prescription required.</p>
           </div>
           <div class="citrusStylesSE-carousel--shots">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel1--shots" alt=""
-              class="citrusStylesSE-mobile_hide">
+              class="citrusStylesSE-m-hide">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel1--shots-mob" alt=""
-              class="citrusStylesSE-desktop_hide">
+              class="citrusStylesSE-d-hide">
           </div>
         </div>
         <!-- POV 02 -->
@@ -369,18 +366,19 @@
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__logo" alt="">
           </div>
           <div class="citrusStylesSE-carousel--text">
-            <h2>HIGHLY EFFECTIVE PROTECTION AGAINST HEARTWORM DISEASE</h2>
-            <div class="citrusStyleSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
-              <a href="" class="citrusStylesSE-url" onclick="clickTrackLink(this);">Shop Now</a>
+            <h2 class="citrusStylesSE-PetcoBold">HIGHLY EFFECTIVE PROTECTION AGAINST HEARTWORM DISEASE</h2>
+            <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
+              <a href="" class="citrusStylesSE-url">Shop Now</a>
             </div>
-            <p class="citrusStylesSE-carousel--disclaimer">*Studies to support FDA approval showed that one dose
+            <p class="citrusStylesSE-PetcoRegular citrusStylesSE-carousel--disclaimer">*Studies to support FDA approval
+              showed that one dose
               provided 100% protection.</p>
           </div>
           <div class="citrusStylesSE-carousel--shots">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel2--shots" alt=""
-              class="citrusStylesSE-mobile_hide">
+              class="citrusStylesSE-m-hide">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel2--shots-mob" alt=""
-              class="citrusStylesSE-desktop_hide">
+              class="citrusStylesSE-d-hide">
           </div>
         </div>
         <!-- POV 03 -->
@@ -389,17 +387,18 @@
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__logo" alt="">
           </div>
           <div class="citrusStylesSE-carousel--text">
-            <h2>FDA-APPROVED TO PREVENT LYME INFECTIONS**</h2>
-            <div class="citrusStyleSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
-              <a href="" class="citrusStylesSE-url" onclick="clickTrackLink(this);">Shop Now</a>
+            <h2 class="citrusStylesSE-PetcoBold">FDA-APPROVED TO PREVENT LYME INFECTIONS**</h2>
+            <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
+              <a href="" class="citrusStylesSE-url">Shop Now</a>
             </div>
-            <p class="citrusStylesSE-carousel--disclaimer">**As a direct result of killing deer ticks.</p>
+            <p class="citrusStylesSE-PetcoRegular citrusStylesSE-carousel--disclaimer">**As a direct result of killing
+              deer ticks.</p>
           </div>
           <div class="citrusStylesSE-carousel--shots">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel3--shots" alt=""
-              class="citrusStylesSE-mobile_hide">
+              class="citrusStylesSE-m-hide">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__carousel3--shots-mob" alt=""
-              class="citrusStylesSE-desktop_hide">
+              class="citrusStylesSE-d-hide">
           </div>
         </div>
       </div>
@@ -424,7 +423,7 @@
     let activeIndicator = 0;
     let direction = -1;
     let jump = 1;
-    let interval = 5000;
+    let interval = 1255000;
     let time;
     //Init CitrusStylesSEcarousel
     CitrusStylesSEcarouselInner.style.minWidth = totalSlides * 100 + "%";
