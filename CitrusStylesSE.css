@@ -963,12 +963,12 @@
   display: block;
 }
 
-.citrusStylesSE-btn-primary-underline-navy {
+.citrusStyleSE-btn-primary-underline-navy {
   display: block;
   text-align: center;
 }
 
-.citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url {
+.citrusStyleSE-btn-primary-underline-navy .citrusStylesSE-url {
   color: var(--citrusStylesSE-primary-navy);
   font-size: 16px;
   text-align: inherit;
@@ -977,13 +977,13 @@
   font-weight: 700;
 }
 
-.citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url:hover {
+.citrusStyleSE-btn-primary-underline-navy .citrusStylesSE-url:hover {
   color: var(--citrusStylesSE-primary-navy);
 }
 
 /*Common block for CTA Box-Button with background color */
-.citrusStylesSE-btn-primary-navy,
-.citrusStylesSE-btn-secondary-white {
+.citrusStyleSE-btn-primary-navy,
+.citrusStyleSE-btn-secondary-white {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -3157,7 +3157,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
   }
 
   /* CTA Box-Button with background color */
-  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url {
     border-radius: var(--citrusStylesSE-border-radius-5);
     background: var(--citrusStylesSE-primary-navy);
     color: var(--citrusStylesSE-white);
@@ -3171,17 +3171,17 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
     padding: 1.125em 0;
   }
 
-  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
-  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
+  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
     outline: none;
   }
 
-  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:hover {
+  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-white);
   }
 
   /* CTA Box-Button with white background color */
-  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
+  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url {
     border-radius: var(--citrusStylesSE-border-radius-5);
     background: var(--citrusStylesSE-white);
     color: var(--citrusStylesSE-primary-navy);
@@ -3195,7 +3195,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
     padding: 1.125em 0;
   }
 
-  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:hover {
+  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
 }
@@ -3204,7 +3204,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
   /* max-width: 1023.99px */
 
   /* Reverse CTA for Box-Button - without background color on Mobile */
-  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url {
     color: var(--citrusStylesSE-primary-navy);
     padding: 0;
     font-size: 16px;
@@ -3214,17 +3214,17 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
     font-weight: 700;
   }
 
-  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
-  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
+  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
     outline: none;
   }
 
-  .citrusStylesSE-btn-primary-navy a:hover {
+  .citrusStyleSE-btn-primary-navy a:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
 
   /* Reverse CTA for Box-Button - white without background color on Mobile */
-  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
+  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url {
     color: var(--citrusStylesSE-white);
     padding: 0;
     font-size: 16px;
@@ -3234,7 +3234,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
     font-weight: 700;
   }
 
-  .citrusStylesSE-btn-secondary-white a:hover {
+  .citrusStyleSE-btn-secondary-white a:hover {
     color: var(--citrusStylesSE-white);
   }
 }
