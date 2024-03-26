@@ -7,13 +7,6 @@
   <title>Product Scroller With Lifestyle Card</title>
   <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-
     /* Product Scroller With Lifestyle Card Styles */
     .citrusStylesSE-product--container {
       width: 1000px;
@@ -39,18 +32,15 @@
       padding-right: 20px;
     }
 
-    .citrusStylesSE-product--card>a {
-      color: #333333;
+    /* .citrusStylesSE-product--card>a {
+      color: var(--citrusStylesSE-black-light);
       text-decoration: none;
-    }
+    } */
 
     .citrusStylesSE-product--card__img {
       width: 100%;
       max-width: 190px;
       margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .citrusStylesSE-product--card__img img {
@@ -58,38 +48,29 @@
       align-items: center;
     }
 
+    .citrusStylesSE-product--card__txt a {
+      text-decoration: none;
+    }
+
     .citrusStylesSE-product--card__txt p {
-      font-family: "PetcoCircular-Regular", arial !important;
-      font-weight: 400;
-      color: #333333;
-      font-size: 18px;
-      line-height: 22px;
+      color: var(--citrusStylesSE-black-light);
+      font-size: calc(var(--citrusStylesSE-text-font-size-medium)+2px);
+      line-height: var(--citrusStylesSE-spacing-large);
       text-align: left;
       margin: 20px 0 10px;
-      text-decoration: none;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       max-height: 4em;
+      text-decoration: none;
       /*standard size is 4em*/
     }
 
-    .citrusStylesSE-product--cta a,
-    .citrusStylesSE-product--cta span {
-      border: 0;
-      margin: 0;
-      padding-left: 0;
-      background: none;
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 20px;
-      text-decoration: underline;
-      color: #001952;
+
+    .citrusStylesSE-product--card .citrusStylesSE-btn-primary-underline-navy {
       text-align: left;
-      cursor: pointer;
     }
 
     .citrusStylesSE-lifestyle--feature {
@@ -111,10 +92,8 @@
     }
 
     .citrusStylesSE-feature--title {
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-size: 18px;
-      font-weight: bold;
-      color: #000;
+      font-size: calc(var(--citrusStylesSE-text-font-size-medium)+2px);
+      color: var(--citrusStylesSE-black);
     }
 
     .citrusStylesSE-feature--text p {
@@ -136,38 +115,38 @@
       text-align: center;
     }
 
-   
+
 
     @media screen and (max-width:928px) {
-      .citrusStylesSE-product--card {
+      .citrusStylesSE-product--container__row .citrusStylesSE-product--card {
         padding-left: 20px;
       }
 
-      .splide__arrow--prev {
+      .citrusStylesSE-product--container__row .splide__arrow--prev {
         left: 1em;
       }
     }
 
     @media screen and (max-width:900px) {
-      .splide__arrow--prev {
+      .citrusStylesSE-product--container__row .splide__arrow--prev {
         left: 2.5em;
       }
     }
 
     @media screen and (max-width:860px) {
-      .splide__arrow--prev {
+      .citrusStylesSE-product--container__row .splide__arrow--prev {
         left: 3.5em;
       }
     }
 
     @media screen and (max-width:840px) {
-      .splide__arrow--prev {
+      .citrusStylesSE-product--container__row .splide__arrow--prev {
         left: 4.5em;
       }
     }
 
     @media screen and (max-width:810px) {
-      .splide__arrow--prev {
+      .citrusStylesSE-product--container__row .splide__arrow--prev {
         left: 6.5em;
       }
     }
@@ -214,7 +193,7 @@
         padding-left: 10px;
       }
 
-      .splide__arrows {
+      .citrusStylesSE-product--container__row .splide__arrows {
         display: none;
       }
 
@@ -245,9 +224,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -260,9 +240,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -278,9 +259,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -293,9 +275,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -311,9 +294,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -326,9 +310,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -344,9 +329,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -359,9 +345,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -377,9 +364,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -392,9 +380,10 @@
                           alt="">
                       </div>
                       <div class="citrusStylesSE-product--card__txt">
-                        <p>Product Name and Description Goes Here</p>
-                        <div class="citrusStylesSE-product--cta">
-                          <span>Shop Now</span>
+                        <p class="citrusStylesSE-PetcoRegular">Product Name and Description Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                          <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                            Now</a>
                         </div>
                       </div>
                     </a>
@@ -409,7 +398,7 @@
           <div class="citrusStylesSE-lifestyle--feature">
             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Blue-classic-feature-banners" alt="">
             <div class="citrusStylesSE-feature--text">
-              <h3 class="citrusStylesSE-feature--title">Headline Goes Here</h3>
+              <h3 class="citrusStylesSE-feature--title citrusStylesSE-PetcoBold">Headline Goes Here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rerum iste hic labore quo voluptas a
                 ipsam nihil placeat laudantium.</p>
               <a class="citrusStylesSE-feature--cta" href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop
