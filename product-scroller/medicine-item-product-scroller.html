@@ -89,16 +89,14 @@
         }
 
         .citrusStylesSE-tab-card p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            color: #333333;
-            font-size: 13px;
+            color: var(--citrusStylesSE-black-light);
+            font-size: var(--citrusStylesSE-text-font-size-medium);
             line-height: 23px;
             text-align: left;
             margin: 20px 0 14px;
             text-decoration: none;
             overflow: hidden;
             max-height: 4em;
-            font-weight: 500;
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -135,6 +133,10 @@
             width: fit-content;
         }
 
+        .citrusStylesSE-tab-cardBody .citrusStylesSE-btn-primary-underline-navy{
+            text-align: left;
+        }
+
         .citrusStylesSE__tab_show {
             display: block;
         }
@@ -150,15 +152,13 @@
             border-bottom: 10px solid transparent;
             cursor: pointer;
             color: #9b9b9b;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
             line-height: 1.3;
             text-align: center;
         }
 
         .citrusStylesSE__tab_item.citrusStylesSE__active_tab {
-            color: #001952;
-            border-bottom: 10px solid #001952;
+            color: var(--citrusStylesSE-primary-navy);
+            border-bottom: 10px solid var(--citrusStylesSE-primary-navy);
             border-radius: 0;
         }
 
@@ -178,7 +178,7 @@
             -ms-flex-align: center;
             align-items: center;
             margin-bottom: 30px;
-            border-bottom: 1px solid #021B4E;
+            border-bottom: 1px solid var(--citrusStylesSE-navy-021B4E);
         }
 
         button.citrusStylesSE__tab_item span {
@@ -238,7 +238,7 @@
                 justify-content: flex-start;
             }
 
-            .splide__arrow {
+            .citrusStylesSE-product-tab-container .splide__arrow {
                 display: none !important;
             }
         }
@@ -266,11 +266,6 @@
             }
         }
 
-        /* custom css */
-        .splide__arrow:disabled {
-            opacity: 0;
-        }
-
         @media screen and (max-width:768px) {
             .splide__track--draggable {
                 padding-right: 20px !important;
@@ -294,7 +289,7 @@
                     <!-- tab button -->
                     <div class="citrusStylesSE-product--item">
                         <div id="citrusStylesSE--tab-id" class="citrusStylesSE--tab-id">
-                            <button class="citrusStylesSE__tab_item citrusStylesSE__active_tab"
+                            <button class="citrusStylesSE-PetcoBold citrusStylesSE__tab_item citrusStylesSE__active_tab"
                                 onclick="citrusStylesSE__filter_products('citrusStylesSE-chewables-products')"
                                 manual_cm_sp="">
                                 <img
@@ -302,7 +297,7 @@
                                 <span>CHEWABLES</span>
                             </button>
 
-                            <button class="citrusStylesSE__tab_item"
+                            <button class="citrusStylesSE-PetcoBold citrusStylesSE__tab_item"
                                 onclick="citrusStylesSE__filter_products('citrusStylesSE-tablets-product')"
                                 manual_cm_sp="">
                                 <img
@@ -328,15 +323,14 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_chewable-1" alt="" />
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel Chewable 3.6 MG RX Tablets for Dogs, Count of 30
                                                 </p>
 
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -350,14 +344,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_chewable-2" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel Chewable 5.4 MG RX Tablets for Dogs, Count of 30
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -371,14 +364,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_chewable-3" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel Chewable 16 MG RX Tablets for Dogs, Count of 30
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -401,14 +393,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-1" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 16 mg, 30 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -422,14 +413,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-2" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 5.4 mg, 30 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -443,14 +433,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-3" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 3.6 mg, 30 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -464,14 +453,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-4" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 16 mg, 100 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -485,14 +473,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-5" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 5.4 mg, 100 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -506,14 +493,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-6" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 3.6 mg, 100 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -527,14 +513,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-7" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 16 mg, 15 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
@@ -548,14 +533,13 @@
                                                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusZoestis_tablet-8" alt=""/>
                                             </div>
                                             <div class="citrusStylesSE-tab-cardBody citrusStryleSE--second-tab">
-                                                <p>
+                                                <p class="citrusStylesSE-PetcoRegular">
                                                     Apoquel 3.6 mg, 15 Tablets
                                                 </p>
-                                                <div
-                                                    class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                                                    <a href="" class="citrusStylesSE-url"
-                                                        onclick="clickTrackLink(this);">Shop Now</a>
-                                                </div>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                                      Now</a>
+                                                  </div>
                                             </div>
                                         </div>
                                     </div>
