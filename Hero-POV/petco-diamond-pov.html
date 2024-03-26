@@ -7,12 +7,6 @@
     <title>POV</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         .citrusStylesSE-main-wrapper {
             overflow: hidden;
             margin: 0 auto;
@@ -32,19 +26,7 @@
         }
 
         .citrusStylesSE-main-wrapper p {
-            font-family: "PetcoCircular-Regular", arial !important;
             line-height: 18px;
-        }
-
-        .citrusStylesSE-d-hide {
-            display: none;
-        }
-
-        .citrusStylesSE-carousel__flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: nowrap;
         }
 
         /* Carousels - POV */
@@ -66,21 +48,22 @@
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text {
-            color: #00205B;
+            color: var(--citrusStylesSE-secondary-navy);
+            align-items: center;
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text {
-            color: #fff;
+            color: var(--citrusStylesSE-white);
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__title,
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__subhead {
-            color: #00205B;
+            color: var(--citrusStylesSE-secondary-navy);
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__title,
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__subhead {
-            color: #fff !important;
+            color: var(--citrusStylesSE-white) !important;
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper {
@@ -97,16 +80,13 @@
             padding: 15px 0;
             font-size: 2.25rem;
             line-height: normal;
-            font-weight: 700;
-            font-family: "PetcoCircular-Bold", arial !important;
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
             padding-bottom: 20px;
             line-height: normal;
             width: 100%;
-            font-family: "PetcoCircular-Regular", arial !important;
-            color: #00205B;
+            color: var(--citrusStylesSE-secondary-navy);
         }
 
         .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .pov-cta {
@@ -156,22 +136,22 @@
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__title {
-                font-size: 2.5rem;
+                font-size: calc(var(--citrusStylesSE-text-font-size-super) + var(--citrusStylesSE-text-font-size-xsmall));
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
-                font-size: 16px;
+                font-size: var(--citrusStylesSE-text-font-size-medium);
             }
         }
 
         @media screen and (min-width:1024px) and (max-width: 1279px) {
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__title {
-                font-size: 1.5rem;
+                font-size: var(--citrusStylesSE-text-font-size-xlarge);
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
-                font-size: 14px;
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px );
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
@@ -186,25 +166,26 @@
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__title {
-                font-size: 1.5rem;
+                font-size: var(--citrusStylesSE-text-font-size-xlarge);
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
-                font-size: 14px;
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px );
             }
         }
 
         @media screen and (max-width: 47.999em) {
-
-            .citrusStylesSE-d-hide {
-                display: block;
-            }
 
             /* POV */
             .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov1,
             .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2,
             .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov3 {
                 background-image: unset;
+            }
+
+            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item {
@@ -221,12 +202,12 @@
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__title {
                 text-align: center;
                 padding: 20px 0;
-                font-size: 1.5rem;
+                font-size: var(--citrusStylesSE-text-font-size-xlarge);
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .citrusStylesSE-pov-text__subhead {
                 text-align: center;
-                font-size: 14px;
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px );
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .pov-cta {
@@ -241,16 +222,11 @@
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov2 .citrusStylesSE-pov-text .citrusStylesSE-pov-text__wrapper .pov-cta .citrus-diamonpet-cta-box {
-                color: #fff !important;
+                color: var(--citrusStylesSE-white) !important;
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-pov-text__wrapper .pov-cta a:nth-child(1) {
                 margin-right: 0;
-            }
-
-            .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-carousel__inner--item .citrusStylesSE-carousel__flex {
-                flex-wrap: wrap;
-                justify-content: center;
             }
 
             .citrusStylesSE-carousel .citrusStylesSE-carousel__inner .citrusStylesSE-diamond__pov1 {
@@ -265,7 +241,6 @@
                 background: #859B91;
             }
         }
-
         /* End POV */
     </style>
 </head>
@@ -276,82 +251,80 @@
         <div class="citrusStylesSE-carousel">
             <div class="citrusStylesSE-carousel__inner">
                 <!-- POV 01 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov1">
-                    <div class="citrusStylesSE-pov-text">
-                        <div class="citrusStylesSE-pov-text__wrapper citrusStylesSE-carousel__flex">
+                <div class="citrusStylesSE-grid citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov1">
+                    <div class="citrusStylesSE-pov-text citrusStylesSE-grid">
+                        <div class="citrusStylesSE-grid citrusStylesSE-pov-text__wrapper">
                             <div class="citrusStylesSE-pov-logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamonpet-logo.png"
                                     alt="">
                             </div>
-                            <h1 class="citrusStylesSE-pov-text__title">A MODERN DIET, INSPIRED BY NATURE </h1>
-                            <div class="citrusStylesSE-carousel__flex pov-cta">
+                            <h1 class="citrusStylesSE-pov-text__title citrusStylesSE-PetcoBold">A MODERN DIET, INSPIRED
+                                BY NATURE </h1>
+                            <div class="citrusStylesSE-grid pov-cta">
                                 <div
-                                    class="citrusStyleSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                                    <a href="" class="citrusStylesSE-url"
-                                        onclick="clickTrackLink(this)">Shop Now</a>
+                                    class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Now</a>
                                 </div>
                                 <div
-                                    class="citrusStyleSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                                    <a href="" class="citrusStylesSE-url" onclick="clickTrackLink(this)">Shop Now</a>
+                                    class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov-img" >
+                    <div class="citrusStylesSE-pov-img">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamondpet-pov1-mob.jpg"
                             class="citrusStylesSE-d-hide" alt="">
                     </div>
                 </div>
                 <!-- POV 02 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov2">
-                    <div class="citrusStylesSE-pov-text">
-                        <div class="citrusStylesSE-carousel__flex citrusStylesSE-pov-text__wrapper">
+                <div class="citrusStylesSE-grid citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov2">
+                    <div class="citrusStylesSE-pov-text citrusStylesSE-grid">
+                        <div class="citrusStylesSE-grid citrusStylesSE-pov-text__wrapper">
                             <div class="citrusStylesSE-pov-logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamonpet-logo.png"
                                     alt="">
                             </div>
-                            <h1 class="citrusStylesSE-pov-text__title">TASTE OF THE WILD PREY® </h1>
-                            <p class="citrusStylesSE-pov-text__subhead">These limited-ingredient, protein-rich recipes
+                            <h1 class="citrusStylesSE-pov-text__title citrusStylesSE-PetcoBold">TASTE OF THE WILD PREY®
+                            </h1>
+                            <p class="citrusStylesSE-pov-text__subhead citrusStylesSE-PetcoRegular">These limited-ingredient, protein-rich recipes
                                 are a simplified
                                 approach to dog and cat food. </p>
-                            <div class="citrusStylesSE-carousel__flex pov-cta">
+                            <div class="citrusStylesSE-grid pov-cta">
                                 <div
-                                    class="citrusStyleSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                                    <a href="" class="citrusStylesSE-url"
-                                        onclick="clickTrackLink(this)">Shop Now</a>
+                                    class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Now</a>
                                 </div>
                                 <div
-                                    class="citrusStyleSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                                    <a href="" class="citrusStylesSE-url" onclick="clickTrackLink(this)">Shop Now</a>
+                                    class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="citrusStylesSE-pov-img"
-                       >
+                    <div class="citrusStylesSE-pov-img">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamondpet-pov2-mob.jpg"
-                            class="citrusStylesSE-d-hide"
-                            alt="">
+                            class="citrusStylesSE-d-hide" alt="">
                     </div>
                 </div>
                 <!-- POV 03 -->
-                <div class="citrusStylesSE-carousel__flex citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov3">
-                    <div class="citrusStylesSE-pov-text">
-                        <div class="citrusStylesSE-carousel__flex citrusStylesSE-pov-text__wrapper">
+                <div class="citrusStylesSE-grid citrusStylesSE-carousel__inner--item citrusStylesSE-diamond__pov3">
+                    <div class="citrusStylesSE-pov-text citrusStylesSE-grid">
+                        <div class="citrusStylesSE-grid citrusStylesSE-pov-text__wrapper">
                             <div class="citrusStylesSE-pov-logo">
                                 <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/diamonpet-logo.png"
                                     alt="">
                             </div>
-                            <h1 class="citrusStylesSE-pov-text__title">HIGH LEVELS OF UNIQUE, PROPRIETARY PROBIOTICS
+                            <h1 class="citrusStylesSE-pov-text__title citrusStylesSE-PetcoBold">HIGH LEVELS OF UNIQUE,
+                                PROPRIETARY PROBIOTICS
                             </h1>
-                            <p class="citrusStylesSE-pov-text__subhead">Feed your dog or cat nutrition that helps
+                            <p class="citrusStylesSE-pov-text__subhead citrusStylesSE-PetcoRegular">Feed your dog or cat nutrition that helps
                                 support their
                                 digestive, immune and overall health. </p>
-                            <div class="citrusStylesSE-carousel__flex pov-cta">
+                            <div class="citrusStylesSE-grid pov-cta">
                                 <div
-                                    class="citrusStyleSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
-                                    <a href="" class="citrusStylesSE-url"
-                                        onclick="clickTrackLink(this)">Shop Now</a>
+                                    class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                                    <a href="" class="citrusStylesSE-url">Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +361,7 @@
         let activeIndicator = 0;
         let direction = -1;
         let jump = 1;
-        let interval = 5000;
+        let interval = 11515000;
         let time;
         //Init CitrusStylesSEcarousel
         CitrusStylesSEcarouselInner.style.minWidth = totalSlides * 100 + "%";
