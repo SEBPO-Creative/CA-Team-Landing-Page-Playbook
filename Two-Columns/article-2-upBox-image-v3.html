@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
         .citrusStylesSE-article2up {
             width: 1100px;
             margin: auto;
@@ -40,7 +33,6 @@
 
         .citrusStylesSE-article2up-card--image {
             height: 286px;
-
         }
 
         .citrusStylesSE-article2up-card--image img {
@@ -55,15 +47,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             background-color: #CCE3F8;
         }
 
         .citrusStylesSE-article2up-card--details h3 {
-            font-family: "PetcoCircular-Bold", arial !important;
             font-size: 20px;
             line-height: initial;
-            font-weight: 700;
-            color: #000000;
+            color: var(--citrusStylesSE-black);
             margin: 0;
         }
 
@@ -73,12 +64,10 @@
         }
 
         .citrusStylesSE-article2up-card--details p {
-            padding: 25px 25px 30px 25px;
-            font-family: "PetcoCircular-Regular", arial !important;
+            padding: 10px 10px;
             font-size: 16px;
             line-height: 21px;
-            font-weight: 500;
-            color: #000000;
+            color: var(--citrusStylesSE-black);
         }
 
         .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
@@ -122,11 +111,11 @@
                     <img alt="placeholder" class="citrusStylesSE-image"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_day-group">
                 </div>
-                <div class="citrusStylesSE-article2up-card--details">
-                    <h3 class="citrusStylesSE-centered">
+                <div class="citrusStylesSE-article2up-card--details citrusStylesSE-grid">
+                    <h3 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">
                         Heading Goes Here, 18px - 20px.
                     </h3>
-                    <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
+                    <p class="citrusStylesSE-centered citrusStylesSE-PetcoRegular">Subhead line goes here. 14px-16px. Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
                     <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
