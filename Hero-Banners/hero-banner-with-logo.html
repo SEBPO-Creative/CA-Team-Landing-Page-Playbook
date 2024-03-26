@@ -6,19 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media-content-banner-with-logo</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         /* Media Content Banners With Logo */
         .citrusStylesSE-mediaBanner__withLogo {
             background: #1f52a0;
-        }
-
-        .citrusStylesSE-desktop__version {
-            display: block;
-        }
-
-        .citrucitrusStylesSE-mobile__version {
-            display: none;
         }
 
         .citrusStylesSE-grid__cell {
@@ -49,18 +40,14 @@
         }
 
         .citrusStylesSE-grid-text h3 {
-            color: #fff;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
-            font-size: 20px;
+            color: var(--citrusStylesSE-white);
+            font-size: var(--citrusStylesSE-text-font-size-large);
             text-align: center;
         }
 
         .citrusStylesSE-grid-text p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            font-size: 16px;
-            color: #fff;
-            font-weight: 400;
+            font-size: var(--citrusStylesSE-text-font-size-medium);
+            color: var(--citrusStylesSE-white);
             width: 85%;
             margin: auto;
             padding-bottom: 20px;
@@ -72,13 +59,6 @@
         }
 
         @media screen and (max-width:767px) {
-            .citrusStylesSE-desktop__version {
-                display: none;
-            }
-
-            .citrucitrusStylesSE-mobile__version {
-                display: block;
-            }
 
             .citrusStylesSE-order2-sm {
                 order: 2;
@@ -121,10 +101,10 @@
             class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
             <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
                 <div class="citrucitrusStylesSE-product__image">
-                    <img class="citrusStylesSE-desktop__version"
+                    <img class="citrusStylesSE-d-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_scinecDiet__vets-transform__desktop"
                         alt="" />
-                    <img class="citrucitrusStylesSE-mobile__version"
+                    <img class="citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_scinecDiet__vets-transform__desktop"
                         alt="" />
                 </div>
@@ -136,11 +116,11 @@
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusHills_presciptionDiet__logo"
                             alt="">
                     </div>
-                    <h3 class="citrusStylesSE-centered">Headline Goes Here</h3>
-                    <p class="citrusStylesSE-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h3 class="citrusStylesSE-PetcoBold citrusStylesSE-centered">Headline Goes Here</h3>
+                    <p class="citrusStylesSE-PetcoRegular citrusStylesSE-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Veritatis quaerat porro, laborum autem sapiente repudiandae adipisci culpa voluptas nemo
                         facilis.</p>
-                    <div class="citrusStylesSE-cta__box-white citrusStylesSE-grid citrusStylesSE-grid--center">
+                    <div class="citrusStylesSE-btn-secondary-white citrusStylesSE-grid citrusStylesSE-grid--center">
                         <a href="" class="citrusStylesSE-url">Shop Now</a>
                     </div>
                 </div>
