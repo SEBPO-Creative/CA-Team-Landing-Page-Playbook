@@ -351,15 +351,24 @@
     --citrusStylesSE-text-font-family-serif: serif;
     --citrusStylesSE-text-font-family-mono: monospace;
     --citrusStylesSE-text-font-family: var(--citrusStylesSE-text-font-family-sans-serif);
-    --citrusStylesSE-text-font-size-super: 2em;
-    --citrusStylesSE-text-font-size-xlarge: 1.5em;
-    --citrusStylesSE-text-font-size-large: 1.25em;
-    --citrusStylesSE-text-font-size-medium: 1em;
-    --citrusStylesSE-text-font-size-small: 0.8em;
-    --citrusStylesSE-text-font-size-xsmall: 0.67em;
+    --citrusStylesSE-text-font-size-super: 2em; /* 32px */
+    --citrusStylesSE-text-font-size-xlarge: 1.5em; /* 24px */
+    --citrusStylesSE-text-font-size-large: 1.25em; /* 20px */
+    --citrusStylesSE-text-font-size-medium: 1em; /* 16px */
+    --citrusStylesSE-text-font-size-small: 0.75em; /* 12px */
+    --citrusStylesSE-text-font-size-xsmall: 0.5em; /* 8px */
     --citrusStylesSE-text-font-weight: normal;
     --citrusStylesSE-text-font-weight-heavy: bold;
     --citrusStylesSE-text-line-height: 1.55;
+    --citrusStylesSE-text-font-weight-Regular: 400;
+    --citrusStylesSE-text-font-weight-Medium: 500;
+    --citrusStylesSE-text-font-weight-Bold: 700;
+    --citrusStylesSE-text-font-weight-Black: 900;
+    --citrusStylesSE-font-family-PetcoRegular: "PetcoCircular-Regular";
+    --citrusStylesSE-font-family-PetcoMedium: "PetcoCircular-Medium";
+    --citrusStylesSE-font-family-PetcoBold: "PetcoCircular-Bold";
+    --citrusStylesSE-font-family-PetcoBlack: "PetcoCircular-Black";
+
 
     /* Tables */
     --citrusStylesSE-table-caption-color: var(--citrusStylesSE-color-quiet);
@@ -1444,6 +1453,27 @@
   font-family: "PetcoCircular-Book";
   src: url("font/PetcoCircular-Book.otf") format("otf");
 }
+
+.citrusStylesSE-PetcoRegular {
+  font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+  font-weight: var(--citrusStylesSE-text-font-weight-Regular);
+}
+
+.citrusStylesSE-PetcoMedium {
+  font-family: var(--citrusStylesSE-font-family-PetcoMedium);
+  font-weight: var(--citrusStylesSE-text-font-weight-Medium);
+}
+
+.citrusStylesSE-PetcoBold {
+  font-family: var(--citrusStylesSE-font-family-PetcoBold);
+  font-weight: var(--citrusStylesSE-text-font-weight-Bold);
+}
+
+.citrusStylesSE-PetcoBlack {
+  font-family: var(--citrusStylesSE-font-family-PetcoBlack);
+  font-weight: var(--citrusStylesSE-text-font-weight-Black);
+}
+
 
 /* ===================== End Petco Fonts ===================== */
 
