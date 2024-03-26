@@ -4,410 +4,534 @@
  * Copyright 2024 the SEBPO Authors (https://sebpo.com/)
  * Licensed under SEBPO (https://sebpo.com/)
  */
-  /* ===================== CSS Variable ===================== */
-  :root {
-
+/* ===================== CSS Variable ===================== */
+:root {
   /* ===================== Finalised Variables ===================== */
   /* Finalising all the variables that used most */
 
-    --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
-    --citrusStylesSE-secondary-navy: #00205b; /* -Mostly used for bg color */
-    --citrusStylesSE-navy-021B4E: #021b4e; /* need new naming*/
-    --citrusStylesSE-navy-light: #1f52a0; /* -Mostly used for bg color */
-    --citrusStylesSE-blue-15-percent: #6edcfa; /* -Mostly used for bg color */
-    --citrusStylesSE-white: #ffffff;
-    --citrusStylesSE-black: #000000;
-    --citrusStylesSE-black-light: #333333;
-    --citrusStylesSE-gray-light: #d8d8d8;
-    --citrusStylesSE-gray-F6F6F6: #f6f6f6; /* need new naming*/
-    --citrusStylesSE-silver: #f4f7ff; /* need new naming*/
-    --citrusStylesSE-pink-10-percent: #df3995; /* -Mostly used for bg color */
-  
-    /* Borders */
-    --citrusStylesSE-border-width: 1px;
-    --citrusStylesSE-border-style: solid;
-    --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
-    --citrusStylesSE-border-radius-5: 5px;
-    --citrusStylesSE-border-radius: 6px;
-    --citrusStylesSE-border-radius-10: 10px;
-    --citrusStylesSE-border-radius-15: 15px;
-    --citrusStylesSE-border-radius-20: 20px;
-    --citrusStylesSE-border-radius-30: 30px;
-    --citrusStylesSE-border-radius-rounded: 30em;
-  
-    /* Box shadows */
-    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
-    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
-  
-    /* Disabled */
-    --citrusStylesSE-no-opacity: 0;
-    --citrusStylesSE-disabled-opacity: 0.5;
-  
-    /* Grid */
-    --citrusStylesSE-grid-gutter: 1em;
-  
-    /* Spacing */
-    --citrusStylesSE-spacing-super: 3em;
-    --citrusStylesSE-spacing-xlarge: 2em;
-    --citrusStylesSE-spacing-large: 1.5em;
-    --citrusStylesSE-spacing-medium: 1em;
-    --citrusStylesSE-spacing-small: 0.5em;
-    --citrusStylesSE-spacing-xsmall: 0.25em;
-    --citrusStylesSE-spacing-tiny: 0.125em;
-  
-    /* Screen widths */
-    --citrusStylesSE-screen-limit-xsmall: 20em;
-    --citrusStylesSE-screen-limit-small: 30em;
-    --citrusStylesSE-screen-limit-medium: 48em;
-    --citrusStylesSE-screen-limit-large: 64em;
-    --citrusStylesSE-screen-limit-xlarge: 78em;
-    --citrusStylesSE-screen-limit-super: 116em;
-  
-    /* Z Indexes */
-    --citrusStylesSE-z-over-content: 100;
-    --citrusStylesSE-z-over-control: 200;
-    --citrusStylesSE-z-over-page: 300;
-    --citrusStylesSE-z-over-screen: 400;
-    --citrusStylesSE-z-over-everything: 500;
+  --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
+  --citrusStylesSE-secondary-navy: #00205b; /* -Mostly used for bg color */
+  --citrusStylesSE-navy-021B4E: #021b4e; /* need new naming*/
+  --citrusStylesSE-navy-light: #1f52a0; /* -Mostly used for bg color */
+  --citrusStylesSE-blue-15-percent: #6edcfa; /* -Mostly used for bg color */
+  --citrusStylesSE-white: #ffffff;
+  --citrusStylesSE-black: #000000;
+  --citrusStylesSE-black-light: #333333;
+  --citrusStylesSE-gray-light: #d8d8d8;
+  --citrusStylesSE-gray-F6F6F6: #f6f6f6; /* need new naming*/
+  --citrusStylesSE-silver: #f4f7ff; /* need new naming*/
+  --citrusStylesSE-pink-10-percent: #df3995; /* -Mostly used for bg color */
+
+  /* Borders */
+  --citrusStylesSE-border-width: 1px;
+  --citrusStylesSE-border-style: solid;
+  --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+  --citrusStylesSE-border-radius-5: 5px;
+  --citrusStylesSE-border-radius: 6px;
+  --citrusStylesSE-border-radius-10: 10px;
+  --citrusStylesSE-border-radius-15: 15px;
+  --citrusStylesSE-border-radius-20: 20px;
+  --citrusStylesSE-border-radius-30: 30px;
+  --citrusStylesSE-border-radius-rounded: 30em;
+
+  /* Box shadows */
+  --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+  --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+
+  /* Disabled */
+  --citrusStylesSE-no-opacity: 0;
+  --citrusStylesSE-disabled-opacity: 0.5;
+
+  /* Grid */
+  --citrusStylesSE-grid-gutter: 1em;
+
+  /* Spacing */
+  --citrusStylesSE-spacing-super: 3em;
+  --citrusStylesSE-spacing-xlarge: 2em;
+  --citrusStylesSE-spacing-large: 1.5em;
+  --citrusStylesSE-spacing-medium: 1em;
+  --citrusStylesSE-spacing-small: 0.5em;
+  --citrusStylesSE-spacing-xsmall: 0.25em;
+  --citrusStylesSE-spacing-tiny: 0.125em;
+
+  /* Screen widths */
+  --citrusStylesSE-screen-limit-xsmall: 20em;
+  --citrusStylesSE-screen-limit-small: 30em;
+  --citrusStylesSE-screen-limit-medium: 48em;
+  --citrusStylesSE-screen-limit-large: 64em;
+  --citrusStylesSE-screen-limit-xlarge: 78em;
+  --citrusStylesSE-screen-limit-super: 116em;
+
+  /* Z Indexes */
+  --citrusStylesSE-z-over-content: 100;
+  --citrusStylesSE-z-over-control: 200;
+  --citrusStylesSE-z-over-page: 300;
+  --citrusStylesSE-z-over-screen: 400;
+  --citrusStylesSE-z-over-everything: 500;
 
   /* ===================== End Variables ===================== */
-
 
   /* ===================== All Blaze Variables ===================== */
   /* We can delete all of them but the examples component from Blaze-UI "examples" won't be working (This won't be affected on our "real" component */
 
-    --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
-    --citrusStylesSE-secondary-navy: #00205B; /* -Mostly used for bg color */
-    --citrusStylesSE-navy-021B4E: #021B4E; /* need new naming*/
-    --citrusStylesSE-navy-light: #1F52A0; /* -Mostly used for bg color */
-    --citrusStylesSE-blue-15-percent: #6EDCFA; /* -Mostly used for bg color */
-    --citrusStylesSE-white: #ffffff;
-    --citrusStylesSE-black: #000000;
-    --citrusStylesSE-black-light: #333333;
-    --citrusStylesSE-gray-light: #D8D8D8;
-    --citrusStylesSE-gray-F6F6F6: #F6F6F6; /* need new naming*/
-    --citrusStylesSE-silver: #F4F7FF; /* need new naming*/
-    --citrusStylesSE-pink-10-percent: #DF3995; /* -Mostly used for bg color */
+  --citrusStylesSE-primary-navy: #001952; /* -Mostly used for font color */
+  --citrusStylesSE-secondary-navy: #00205b; /* -Mostly used for bg color */
+  --citrusStylesSE-navy-021B4E: #021b4e; /* need new naming*/
+  --citrusStylesSE-navy-light: #1f52a0; /* -Mostly used for bg color */
+  --citrusStylesSE-blue-15-percent: #6edcfa; /* -Mostly used for bg color */
+  --citrusStylesSE-white: #ffffff;
+  --citrusStylesSE-black: #000000;
+  --citrusStylesSE-black-light: #333333;
+  --citrusStylesSE-gray-light: #d8d8d8;
+  --citrusStylesSE-gray-F6F6F6: #f6f6f6; /* need new naming*/
+  --citrusStylesSE-silver: #f4f7ff; /* need new naming*/
+  --citrusStylesSE-pink-10-percent: #df3995; /* -Mostly used for bg color */
 
-    --citrusStylesSE-gray-100: #f8f9fa;
-    --citrusStylesSE-gray-200: #e9ecef;
-    --citrusStylesSE-gray-300: #dee2e6;
-    --citrusStylesSE-gray-400: #ced4da;
-    --citrusStylesSE-gray-500: #adb5bd;
-    --citrusStylesSE-gray-600: #6c757d;
-    --citrusStylesSE-gray-700: #495057;
-    --citrusStylesSE-gray-800: #343a40;
-    --citrusStylesSE-gray-900: #212529;
-    --citrusStylesSE-primary: #0d6efd;
-    --citrusStylesSE-secondary: #6c757d;
-    --citrusStylesSE-success: #198754;
-    --citrusStylesSE-info: #0dcaf0;
-    --citrusStylesSE-warning: #ffc107;
-    --citrusStylesSE-danger: #dc3545;
-    --citrusStylesSE-light: #f8f9fa;
-    --citrusStylesSE-dark: #212529;
-    --citrusStylesSE-color--background: var(--citrusStylesSE-secondary);
-    --citrusStylesSE-color--background-offset: var(--citrusStylesSE-color--9);
-    --citrusStylesSE-color--background-offset-2: var(--citrusStylesSE-color--8);
-    --citrusStylesSE-color--text: var(--citrusStylesSE-color--0);
-    --citrusStylesSE-color--citrusStylesSE-text-inverse: var(--citrusStylesSE-color--background);
-    --citrusStylesSE-color--quiet: var(--citrusStylesSE-color--4);
-    --citrusStylesSE-color--00: #000;
-    --citrusStylesSE-color--0: #1f1f1f;
-    --citrusStylesSE-color--1: #3a3a3a;
-    --citrusStylesSE-color--2: #6a6a6a;
-    --citrusStylesSE-color--3: #8a8a8a;
-    --citrusStylesSE-color--4: #aaa;
-    --citrusStylesSE-color--5: #bababa;
-    --citrusStylesSE-color--6: #cacaca;
-    --citrusStylesSE-color--7: #dadada;
-    --citrusStylesSE-color--8: #eaeaea;
-    --citrusStylesSE-color--9: #fafafa;
-    --citrusStylesSE-color--10: #fff;
-    --citrusStylesSE-color--outline: #4267ff;
-    --citrusStylesSE-color--brand: #e717fa;
-    --citrusStylesSE-color--info: #4267ff;
-    --citrusStylesSE-color--warning: #ffa500;
-    --citrusStylesSE-color--success: #088a05;
-    --citrusStylesSE-color--error: #ee0202;
-    --citrusStylesSE-color--highlight: #ffef14;
-    --citrusStylesSE-color--citrusStylesSE-text-brand: var(--citrusStylesSE-color--10);
-    --citrusStylesSE-color--citrusStylesSE-text-info: var(--citrusStylesSE-color--10);
-    --citrusStylesSE-color--citrusStylesSE-text-warning: var(--citrusStylesSE-color--0);
-    --citrusStylesSE-color--citrusStylesSE-text-success: var(--citrusStylesSE-color--10);
-    --citrusStylesSE-color--citrusStylesSE-text-error: var(--citrusStylesSE-color--10);
-    --citrusStylesSE-color--citrusStylesSE-text-highlight: var(--citrusStylesSE-color--0);
-    --citrusStylesSE-color--transparent: transparent;
-    /* We need to discuss about brand color definitons since every brand has different color, so how we will define/use those colors */
+  --citrusStylesSE-gray-100: #f8f9fa;
+  --citrusStylesSE-gray-200: #e9ecef;
+  --citrusStylesSE-gray-300: #dee2e6;
+  --citrusStylesSE-gray-400: #ced4da;
+  --citrusStylesSE-gray-500: #adb5bd;
+  --citrusStylesSE-gray-600: #6c757d;
+  --citrusStylesSE-gray-700: #495057;
+  --citrusStylesSE-gray-800: #343a40;
+  --citrusStylesSE-gray-900: #212529;
+  --citrusStylesSE-primary: #0d6efd;
+  --citrusStylesSE-secondary: #6c757d;
+  --citrusStylesSE-success: #198754;
+  --citrusStylesSE-info: #0dcaf0;
+  --citrusStylesSE-warning: #ffc107;
+  --citrusStylesSE-danger: #dc3545;
+  --citrusStylesSE-light: #f8f9fa;
+  --citrusStylesSE-dark: #212529;
+  --citrusStylesSE-color--background: var(--citrusStylesSE-secondary);
+  --citrusStylesSE-color--background-offset: var(--citrusStylesSE-color--9);
+  --citrusStylesSE-color--background-offset-2: var(--citrusStylesSE-color--8);
+  --citrusStylesSE-color--text: var(--citrusStylesSE-color--0);
+  --citrusStylesSE-color--citrusStylesSE-text-inverse: var(
+    --citrusStylesSE-color--background
+  );
+  --citrusStylesSE-color--quiet: var(--citrusStylesSE-color--4);
+  --citrusStylesSE-color--00: #000;
+  --citrusStylesSE-color--0: #1f1f1f;
+  --citrusStylesSE-color--1: #3a3a3a;
+  --citrusStylesSE-color--2: #6a6a6a;
+  --citrusStylesSE-color--3: #8a8a8a;
+  --citrusStylesSE-color--4: #aaa;
+  --citrusStylesSE-color--5: #bababa;
+  --citrusStylesSE-color--6: #cacaca;
+  --citrusStylesSE-color--7: #dadada;
+  --citrusStylesSE-color--8: #eaeaea;
+  --citrusStylesSE-color--9: #fafafa;
+  --citrusStylesSE-color--10: #fff;
+  --citrusStylesSE-color--outline: #4267ff;
+  --citrusStylesSE-color--brand: #e717fa;
+  --citrusStylesSE-color--info: #4267ff;
+  --citrusStylesSE-color--warning: #ffa500;
+  --citrusStylesSE-color--success: #088a05;
+  --citrusStylesSE-color--error: #ee0202;
+  --citrusStylesSE-color--highlight: #ffef14;
+  --citrusStylesSE-color--citrusStylesSE-text-brand: var(
+    --citrusStylesSE-color--10
+  );
+  --citrusStylesSE-color--citrusStylesSE-text-info: var(
+    --citrusStylesSE-color--10
+  );
+  --citrusStylesSE-color--citrusStylesSE-text-warning: var(
+    --citrusStylesSE-color--0
+  );
+  --citrusStylesSE-color--citrusStylesSE-text-success: var(
+    --citrusStylesSE-color--10
+  );
+  --citrusStylesSE-color--citrusStylesSE-text-error: var(
+    --citrusStylesSE-color--10
+  );
+  --citrusStylesSE-color--citrusStylesSE-text-highlight: var(
+    --citrusStylesSE-color--0
+  );
+  --citrusStylesSE-color--transparent: transparent;
+  /* We need to discuss about brand color definitons since every brand has different color, so how we will define/use those colors */
 
-     /* Avatars */
-    --citrusStylesSE-avatar-color: var(--citrusStylesSE-color-text-brand);
-    --citrusStylesSE-avatar-background: var(--citrusStylesSE-color-brand);
-    --citrusStylesSE-avatar-border-radius: var(--citrusStylesSE-border-radius-rounded);
+  /* Avatars */
+  --citrusStylesSE-avatar-color: var(--citrusStylesSE-color-text-brand);
+  --citrusStylesSE-avatar-background: var(--citrusStylesSE-color-brand);
+  --citrusStylesSE-avatar-border-radius: var(
+    --citrusStylesSE-border-radius-rounded
+  );
 
-    /* Badges */
-    --citrusStylesSE-badge-color: var(--citrusStylesSE-color-text-inverse);
-    --citrusStylesSE-badge-color--ghost: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-badge-background: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-badge-border-color: transparent;
-    --citrusStylesSE-badge-border-color--ghost: var(--citrusStylesSE-badge-color--ghost);
-  
-    --citrusStylesSE-badge-color--brand: var(--citrusStylesSE-color-text-brand);
-    --citrusStylesSE-badge-color--brand-ghost: var(--citrusStylesSE-color-brand);
-    --citrusStylesSE-badge-background--brand: var(--citrusStylesSE-color-brand);
-    --citrusStylesSE-badge-border-color--brand: transparent;
-    --citrusStylesSE-badge-border-color--brand-ghost: var(--citrusStylesSE-badge-color--brand-ghost);
-  
-    --citrusStylesSE-badge-color--info: var(--citrusStylesSE-color-text-info);
-    --citrusStylesSE-badge-color--info-ghost: var(--citrusStylesSE-color-info);
-    --citrusStylesSE-badge-background--info: var(--citrusStylesSE-color-info);
-    --citrusStylesSE-badge-border-color--info: transparent;
-    --citrusStylesSE-badge-border-color--info-ghost: var(--citrusStylesSE-badge-color--info-ghost);
-  
-    --citrusStylesSE-badge-color--warning: var(--citrusStylesSE-color-text-warning);
-    --citrusStylesSE-badge-color--warning-ghost: var(--citrusStylesSE-color-warning);
-    --citrusStylesSE-badge-background--warning: var(--citrusStylesSE-color-warning);
-    --citrusStylesSE-badge-border-color--warning: transparent;
-    --citrusStylesSE-badge-border-color--warning-ghost: var(--citrusStylesSE-badge-color--warning-ghost);
-  
-    --citrusStylesSE-badge-color--success: var(--citrusStylesSE-color-text-success);
-    --citrusStylesSE-badge-color--success-ghost: var(--citrusStylesSE-color-success);
-    --citrusStylesSE-badge-background--success: var(--citrusStylesSE-color-success);
-    --citrusStylesSE-badge-border-color--success: transparent;
-    --citrusStylesSE-badge-border-color--success-ghost: var(--citrusStylesSE-badge-color--success-ghost);
-  
-    --citrusStylesSE-badge-color--error: var(--citrusStylesSE-color-text-error);
-    --citrusStylesSE-badge-color--error-ghost: var(--citrusStylesSE-color-error);
-    --citrusStylesSE-badge-background--error: var(--citrusStylesSE-color-error);
-    --citrusStylesSE-badge-border-color--error: transparent;
-    --citrusStylesSE-badge-border-color--error-ghost: var(--citrusStylesSE-badge-color--error-ghost);
+  /* Badges */
+  --citrusStylesSE-badge-color: var(--citrusStylesSE-color-text-inverse);
+  --citrusStylesSE-badge-color--ghost: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-badge-background: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-badge-border-color: transparent;
+  --citrusStylesSE-badge-border-color--ghost: var(
+    --citrusStylesSE-badge-color--ghost
+  );
 
-    
-    /* Borders */
-    --citrusStylesSE-border-width: 1px;
-    --citrusStylesSE-border-style: solid;
-    --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
-    --citrusStylesSE-border-radius-5: 5px;
-    --citrusStylesSE-border-radius: 6px;
-    --citrusStylesSE-border-radius-10: 10px;
-    --citrusStylesSE-border-radius-15: 15px;
-    --citrusStylesSE-border-radius-20: 20px;
-    --citrusStylesSE-border-radius-30: 30px;
-    --citrusStylesSE-border-radius-rounded: 30em;
+  --citrusStylesSE-badge-color--brand: var(--citrusStylesSE-color-text-brand);
+  --citrusStylesSE-badge-color--brand-ghost: var(--citrusStylesSE-color-brand);
+  --citrusStylesSE-badge-background--brand: var(--citrusStylesSE-color-brand);
+  --citrusStylesSE-badge-border-color--brand: transparent;
+  --citrusStylesSE-badge-border-color--brand-ghost: var(
+    --citrusStylesSE-badge-color--brand-ghost
+  );
 
-    /* Box shadows */
-    --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
-    --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
-    --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
+  --citrusStylesSE-badge-color--info: var(--citrusStylesSE-color-text-info);
+  --citrusStylesSE-badge-color--info-ghost: var(--citrusStylesSE-color-info);
+  --citrusStylesSE-badge-background--info: var(--citrusStylesSE-color-info);
+  --citrusStylesSE-badge-border-color--info: transparent;
+  --citrusStylesSE-badge-border-color--info-ghost: var(
+    --citrusStylesSE-badge-color--info-ghost
+  );
 
-    /* Buttons */
-    --citrusStylesSE-button-color: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
-    --citrusStylesSE-button-background: var(--citrusStylesSE-secondary);
-    --citrusStylesSE-button-color--ghost: var(--citrusStylesSE-color--text);
-    --citrusStylesSE-button-color--ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-inverse);
-    --citrusStylesSE-button-background--ghost: transparent;
-    --citrusStylesSE-button-color--close: var(--citrusStylesSE-color--text);
-    --citrusStylesSE-button-color--brand: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
-    --citrusStylesSE-button-color--brand-ghost: var(--citrusStylesSE-color--brand);
-    --citrusStylesSE-button-color--brand-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-brand);
-    --citrusStylesSE-button-background--brand: var(--citrusStylesSE-color--brand);
-    --citrusStylesSE-button-background--brand-ghost: transparent;
-    --citrusStylesSE-button-color--info: var(--citrusStylesSE-color--citrusStylesSE-text-info);
-    --citrusStylesSE-button-color--info-ghost: var(--citrusStylesSE-color--info);
-    --citrusStylesSE-button-color--info-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-info);
-    --citrusStylesSE-button-background--info: var(--citrusStylesSE-color--info);
-    --citrusStylesSE-button-background--info-ghost: transparent;
-    --citrusStylesSE-button-color--warning: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
-    --citrusStylesSE-button-color--warning-ghost: var(--citrusStylesSE-color--warning);
-    --citrusStylesSE-button-color--warning-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-warning);
-    --citrusStylesSE-button-background--warning: var(--citrusStylesSE-color--warning);
-    --citrusStylesSE-button-background--warning-ghost: transparent;
-    --citrusStylesSE-button-color--success: var(--citrusStylesSE-color--citrusStylesSE-text-success);
-    --citrusStylesSE-button-color--success-ghost: var(--citrusStylesSE-color--success);
-    --citrusStylesSE-button-color--success-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-success);
-    --citrusStylesSE-button-background--success: var(--citrusStylesSE-color--success);
-    --citrusStylesSE-button-background--success-ghost: transparent;
-    --citrusStylesSE-button-color--error: var(--citrusStylesSE-color--citrusStylesSE-text-error);
-    --citrusStylesSE-button-color--error-ghost: var(--citrusStylesSE-color--error);
-    --citrusStylesSE-button-color--error-ghost-hover: var(--citrusStylesSE-color--citrusStylesSE-text-error);
-    --citrusStylesSE-button-background--error: var(--citrusStylesSE-color--error);
-    --citrusStylesSE-button-background--error-ghost: transparent;
-    --citrusStylesSE-button-border-radius: var(--citrusStylesSE-border-radius);
-    /* End Buttons */
+  --citrusStylesSE-badge-color--warning: var(
+    --citrusStylesSE-color-text-warning
+  );
+  --citrusStylesSE-badge-color--warning-ghost: var(
+    --citrusStylesSE-color-warning
+  );
+  --citrusStylesSE-badge-background--warning: var(
+    --citrusStylesSE-color-warning
+  );
+  --citrusStylesSE-badge-border-color--warning: transparent;
+  --citrusStylesSE-badge-border-color--warning-ghost: var(
+    --citrusStylesSE-badge-color--warning-ghost
+  );
 
-    /* Colors */
-    --citrusStylesSE-color-background: var(--citrusStylesSE-color-10);
-    --citrusStylesSE-color-background-offset: var(--citrusStylesSE-color-9);
-    --citrusStylesSE-color-background-offset-2: var(--citrusStylesSE-color-8);
-    --citrusStylesSE-color-text: var(--citrusStylesSE-color-0);
-    --citrusStylesSE-color-text-inverse: var(--citrusStylesSE-color-background);
-    --citrusStylesSE-color-quiet: var(--citrusStylesSE-color-4);
+  --citrusStylesSE-badge-color--success: var(
+    --citrusStylesSE-color-text-success
+  );
+  --citrusStylesSE-badge-color--success-ghost: var(
+    --citrusStylesSE-color-success
+  );
+  --citrusStylesSE-badge-background--success: var(
+    --citrusStylesSE-color-success
+  );
+  --citrusStylesSE-badge-border-color--success: transparent;
+  --citrusStylesSE-badge-border-color--success-ghost: var(
+    --citrusStylesSE-badge-color--success-ghost
+  );
 
-    --citrusStylesSE-color-00: #000;
-    --citrusStylesSE-color-0: #1f1f1f;
-    --citrusStylesSE-color-1: #3a3a3a;
-    --citrusStylesSE-color-2: #6a6a6a;
-    --citrusStylesSE-color-3: #8a8a8a;
-    --citrusStylesSE-color-4: #aaa;
-    --citrusStylesSE-color-5: #bababa;
-    --citrusStylesSE-color-6: #cacaca;
-    --citrusStylesSE-color-7: #dadada;
-    --citrusStylesSE-color-8: #eaeaea;
-    --citrusStylesSE-color-9: #fafafa;
-    --citrusStylesSE-color-10: #fff;
+  --citrusStylesSE-badge-color--error: var(--citrusStylesSE-color-text-error);
+  --citrusStylesSE-badge-color--error-ghost: var(--citrusStylesSE-color-error);
+  --citrusStylesSE-badge-background--error: var(--citrusStylesSE-color-error);
+  --citrusStylesSE-badge-border-color--error: transparent;
+  --citrusStylesSE-badge-border-color--error-ghost: var(
+    --citrusStylesSE-badge-color--error-ghost
+  );
 
-    --citrusStylesSE-color-outline: #4267ff;
-    --citrusStylesSE-color-brand: #2c3e50;;
-    --citrusStylesSE-color-info: #4267ff;
-    --citrusStylesSE-color-warning: #ffa500;
-    --citrusStylesSE-color-success: #088a05;
-    --citrusStylesSE-color-error: #ee0202;
-    --citrusStylesSE-color-highlight: #ffef14;
+  /* Borders */
+  --citrusStylesSE-border-width: 1px;
+  --citrusStylesSE-border-style: solid;
+  --citrusStylesSE-border-color: var(--citrusStylesSE-primary);
+  --citrusStylesSE-border-radius-5: 5px;
+  --citrusStylesSE-border-radius: 6px;
+  --citrusStylesSE-border-radius-10: 10px;
+  --citrusStylesSE-border-radius-15: 15px;
+  --citrusStylesSE-border-radius-20: 20px;
+  --citrusStylesSE-border-radius-30: 30px;
+  --citrusStylesSE-border-radius-rounded: 30em;
 
-    --citrusStylesSE-color-text-brand: var(--citrusStylesSE-color-10);
-    --citrusStylesSE-color-text-info: var(--citrusStylesSE-color-10);
-    --citrusStylesSE-color-text-warning: var(--citrusStylesSE-color-0);
-    --citrusStylesSE-color-text-success: var(--citrusStylesSE-color-10);
-    --citrusStylesSE-color-text-error: var(--citrusStylesSE-color-10);
-    --citrusStylesSE-color-text-highlight: var(--citrusStylesSE-color-0);
+  /* Box shadows */
+  --citrusStylesSE-box-shadow: 0 0 1px rgb(0 0 0 / 60%);
+  --citrusStylesSE-box-shadow-high: 0 5px 10px -3px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-higher: 0 10px 25px -4px rgb(0 0 0 / 40%);
+  --citrusStylesSE-box-shadow-highest: 0 20px 55px -8px rgb(0 0 0 / 40%);
 
-    --citrusStylesSE-color-disabled: var(--citrusStylesSE-color-4);
-    --citrusStylesSE-color-disabled-background: var(--citrusStylesSE-color-8);
-    --citrusStylesSE-color-transparent: transparent;
-    
-    /* Disabled */
-    --citrusStylesSE-disabled-opacity: 0.5;
-    --citrusStylesSE-disabled-opacity: 0.5;
-    --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
-    --citrusStylesSE-color--citrusStylesSE-disabled-background: var(--citrusStylesSE-color--8);
-    
-    /* Grid */
-    --citrusStylesSE-grid-gutter: 1em;
+  /* Buttons */
+  --citrusStylesSE-button-color: var(
+    --citrusStylesSE-color--citrusStylesSE-text-inverse
+  );
+  --citrusStylesSE-button-background: var(--citrusStylesSE-secondary);
+  --citrusStylesSE-button-color--ghost: var(--citrusStylesSE-color--text);
+  --citrusStylesSE-button-color--ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-inverse
+  );
+  --citrusStylesSE-button-background--ghost: transparent;
+  --citrusStylesSE-button-color--close: var(--citrusStylesSE-color--text);
+  --citrusStylesSE-button-color--brand: var(
+    --citrusStylesSE-color--citrusStylesSE-text-brand
+  );
+  --citrusStylesSE-button-color--brand-ghost: var(
+    --citrusStylesSE-color--brand
+  );
+  --citrusStylesSE-button-color--brand-ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-brand
+  );
+  --citrusStylesSE-button-background--brand: var(--citrusStylesSE-color--brand);
+  --citrusStylesSE-button-background--brand-ghost: transparent;
+  --citrusStylesSE-button-color--info: var(
+    --citrusStylesSE-color--citrusStylesSE-text-info
+  );
+  --citrusStylesSE-button-color--info-ghost: var(--citrusStylesSE-color--info);
+  --citrusStylesSE-button-color--info-ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-info
+  );
+  --citrusStylesSE-button-background--info: var(--citrusStylesSE-color--info);
+  --citrusStylesSE-button-background--info-ghost: transparent;
+  --citrusStylesSE-button-color--warning: var(
+    --citrusStylesSE-color--citrusStylesSE-text-warning
+  );
+  --citrusStylesSE-button-color--warning-ghost: var(
+    --citrusStylesSE-color--warning
+  );
+  --citrusStylesSE-button-color--warning-ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-warning
+  );
+  --citrusStylesSE-button-background--warning: var(
+    --citrusStylesSE-color--warning
+  );
+  --citrusStylesSE-button-background--warning-ghost: transparent;
+  --citrusStylesSE-button-color--success: var(
+    --citrusStylesSE-color--citrusStylesSE-text-success
+  );
+  --citrusStylesSE-button-color--success-ghost: var(
+    --citrusStylesSE-color--success
+  );
+  --citrusStylesSE-button-color--success-ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-success
+  );
+  --citrusStylesSE-button-background--success: var(
+    --citrusStylesSE-color--success
+  );
+  --citrusStylesSE-button-background--success-ghost: transparent;
+  --citrusStylesSE-button-color--error: var(
+    --citrusStylesSE-color--citrusStylesSE-text-error
+  );
+  --citrusStylesSE-button-color--error-ghost: var(
+    --citrusStylesSE-color--error
+  );
+  --citrusStylesSE-button-color--error-ghost-hover: var(
+    --citrusStylesSE-color--citrusStylesSE-text-error
+  );
+  --citrusStylesSE-button-background--error: var(--citrusStylesSE-color--error);
+  --citrusStylesSE-button-background--error-ghost: transparent;
+  --citrusStylesSE-button-border-radius: var(--citrusStylesSE-border-radius);
+  /* End Buttons */
 
-    /* Spacing */
-    --citrusStylesSE-spacing-super: 3em;
-    --citrusStylesSE-spacing-xlarge: 2em;
-    --citrusStylesSE-spacing-large: 1.5em;
-    --citrusStylesSE-spacing-medium: 1em;
-    --citrusStylesSE-spacing-small: 0.5em;
-    --citrusStylesSE-spacing-xsmall: 0.25em;
-    --citrusStylesSE-spacing-tiny: 0.125em;
+  /* Colors */
+  --citrusStylesSE-color-background: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-background-offset: var(--citrusStylesSE-color-9);
+  --citrusStylesSE-color-background-offset-2: var(--citrusStylesSE-color-8);
+  --citrusStylesSE-color-text: var(--citrusStylesSE-color-0);
+  --citrusStylesSE-color-text-inverse: var(--citrusStylesSE-color-background);
+  --citrusStylesSE-color-quiet: var(--citrusStylesSE-color-4);
 
-    /* Screen widths */
-    --citrusStylesSE-screen-limit-xsmall: 20em;
-    --citrusStylesSE-screen-limit-small: 30em;
-    --citrusStylesSE-screen-limit-medium: 48em;
-    --citrusStylesSE-screen-limit-large: 64em;
-    --citrusStylesSE-screen-limit-xlarge: 78em;
-    --citrusStylesSE-screen-limit-super: 116em;
+  --citrusStylesSE-color-00: #000;
+  --citrusStylesSE-color-0: #1f1f1f;
+  --citrusStylesSE-color-1: #3a3a3a;
+  --citrusStylesSE-color-2: #6a6a6a;
+  --citrusStylesSE-color-3: #8a8a8a;
+  --citrusStylesSE-color-4: #aaa;
+  --citrusStylesSE-color-5: #bababa;
+  --citrusStylesSE-color-6: #cacaca;
+  --citrusStylesSE-color-7: #dadada;
+  --citrusStylesSE-color-8: #eaeaea;
+  --citrusStylesSE-color-9: #fafafa;
+  --citrusStylesSE-color-10: #fff;
 
-    /* Modals */
-    --citrusStylesSE-modal-background: var(--citrusStylesSE-card-background);
-    --citrusStylesSE-modal-background--ghost: transparent;
-    --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
-    --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
-    --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-outline: #4267ff;
+  --citrusStylesSE-color-brand: #2c3e50;
+  --citrusStylesSE-color-info: #4267ff;
+  --citrusStylesSE-color-warning: #ffa500;
+  --citrusStylesSE-color-success: #088a05;
+  --citrusStylesSE-color-error: #ee0202;
+  --citrusStylesSE-color-highlight: #ffef14;
 
-    /* Tabs */
-    --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background: transparent;
-    --citrusStylesSE-tab-heading-border-color: transparent;
+  --citrusStylesSE-color-text-brand: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-text-info: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-text-warning: var(--citrusStylesSE-color-0);
+  --citrusStylesSE-color-text-success: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-text-error: var(--citrusStylesSE-color-10);
+  --citrusStylesSE-color-text-highlight: var(--citrusStylesSE-color-0);
 
-    --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--active: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--active: var(--citrusStylesSE-color-2);
+  --citrusStylesSE-color-disabled: var(--citrusStylesSE-color-4);
+  --citrusStylesSE-color-disabled-background: var(--citrusStylesSE-color-8);
+  --citrusStylesSE-color-transparent: transparent;
 
-    --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--hover: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--hover: var(--citrusStylesSE-color-2);
+  /* Disabled */
+  --citrusStylesSE-disabled-opacity: 0.5;
+  --citrusStylesSE-disabled-opacity: 0.5;
+  --citrusStylesSE-color--disabled: var(--citrusStylesSE-color--4);
+  --citrusStylesSE-color--citrusStylesSE-disabled-background: var(
+    --citrusStylesSE-color--8
+  );
 
-    --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--brand: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--brand: var(--citrusStylesSE-color-brand);
+  /* Grid */
+  --citrusStylesSE-grid-gutter: 1em;
 
-    --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--info: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--info: var(--citrusStylesSE-color-info);
+  /* Spacing */
+  --citrusStylesSE-spacing-super: 3em;
+  --citrusStylesSE-spacing-xlarge: 2em;
+  --citrusStylesSE-spacing-large: 1.5em;
+  --citrusStylesSE-spacing-medium: 1em;
+  --citrusStylesSE-spacing-small: 0.5em;
+  --citrusStylesSE-spacing-xsmall: 0.25em;
+  --citrusStylesSE-spacing-tiny: 0.125em;
 
-    --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--warning: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--warning: var(--citrusStylesSE-color-warning);
+  /* Screen widths */
+  --citrusStylesSE-screen-limit-xsmall: 20em;
+  --citrusStylesSE-screen-limit-small: 30em;
+  --citrusStylesSE-screen-limit-medium: 48em;
+  --citrusStylesSE-screen-limit-large: 64em;
+  --citrusStylesSE-screen-limit-xlarge: 78em;
+  --citrusStylesSE-screen-limit-super: 116em;
 
-    --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--success: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--success: var(--citrusStylesSE-color-success);
+  /* Modals */
+  --citrusStylesSE-modal-background: var(--citrusStylesSE-card-background);
+  --citrusStylesSE-modal-background--ghost: transparent;
+  --citrusStylesSE-modal-border-radius: var(--citrusStylesSE-border-radius);
+  --citrusStylesSE-modal-close-color: var(--citrusStylesSE-color-0);
+  --citrusStylesSE-modal-close-color--ghost: var(--citrusStylesSE-color-10);
 
-    --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-tab-heading-background--error: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-tab-heading-border-color--error: var(--citrusStylesSE-color-error);
+  /* Tabs */
+  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background: transparent;
+  --citrusStylesSE-tab-heading-border-color: transparent;
 
-    --citrusStylesSE-tab-heading-border-radius: var(--citrusStylesSE-border-radius);
+  --citrusStylesSE-tab-heading-color--active: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--active: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--active: var(
+    --citrusStylesSE-color-2
+  );
 
-    /* Typography */
-    --citrusStylesSE-text-font-family-sans-serif: sans-serif;
-    --citrusStylesSE-text-font-family-serif: serif;
-    --citrusStylesSE-text-font-family-mono: monospace;
-    --citrusStylesSE-text-font-family: var(--citrusStylesSE-text-font-family-sans-serif);
-    --citrusStylesSE-text-font-size-super: 2em; /* 32px */
-    --citrusStylesSE-text-font-size-xlarge: 1.5em; /* 24px */
-    --citrusStylesSE-text-font-size-large: 1.25em; /* 20px */
-    --citrusStylesSE-text-font-size-medium: 1em; /* 16px */
-    --citrusStylesSE-text-font-size-small: 0.75em; /* 12px */
-    --citrusStylesSE-text-font-size-xsmall: 0.5em; /* 8px */
-    --citrusStylesSE-text-font-weight: normal;
-    --citrusStylesSE-text-font-weight-heavy: bold;
-    --citrusStylesSE-text-line-height: 1.55;
-    --citrusStylesSE-text-font-weight-Regular: 400;
-    --citrusStylesSE-text-font-weight-Medium: 500;
-    --citrusStylesSE-text-font-weight-Bold: 700;
-    --citrusStylesSE-text-font-weight-Black: 900;
-    --citrusStylesSE-font-family-PetcoRegular: "PetcoCircular-Regular";
-    --citrusStylesSE-font-family-PetcoMedium: "PetcoCircular-Medium";
-    --citrusStylesSE-font-family-PetcoBold: "PetcoCircular-Bold";
-    --citrusStylesSE-font-family-PetcoBlack: "PetcoCircular-Black";
+  --citrusStylesSE-tab-heading-color--hover: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--hover: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--hover: var(
+    --citrusStylesSE-color-2
+  );
 
+  --citrusStylesSE-tab-heading-color--brand: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--brand: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--brand: var(
+    --citrusStylesSE-color-brand
+  );
 
-    /* Tables */
-    --citrusStylesSE-table-caption-color: var(--citrusStylesSE-color-quiet);
-    --citrusStylesSE-table-striped-background: var(--citrusStylesSE-color-background-offset);
-    --citrusStylesSE-table-heading-background: var(--citrusStylesSE-color-background);
+  --citrusStylesSE-tab-heading-color--info: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--info: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--info: var(
+    --citrusStylesSE-color-info
+  );
 
-    --citrusStylesSE-table-row-color: var(--citrusStylesSE-color-text);
-    --citrusStylesSE-table-row-background: var(--citrusStylesSE-color-background);
+  --citrusStylesSE-tab-heading-color--warning: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--warning: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--warning: var(
+    --citrusStylesSE-color-warning
+  );
 
-    --citrusStylesSE-table-row-color--clickable: var(--citrusStylesSE-link-color);
-    --citrusStylesSE-table-row-background--clickable: var(--citrusStylesSE-color-background-offset-2);
+  --citrusStylesSE-tab-heading-color--success: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--success: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--success: var(
+    --citrusStylesSE-color-success
+  );
 
-    --citrusStylesSE-table-row-color--disabled: var(--citrusStylesSE-color-4);
-    --citrusStylesSE-table-row-background--disabled: inherit;
+  --citrusStylesSE-tab-heading-color--error: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-tab-heading-background--error: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-tab-heading-border-color--error: var(
+    --citrusStylesSE-color-error
+  );
 
-    --citrusStylesSE-table-heading-border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style) var(--citrusStylesSE-border-color);
+  --citrusStylesSE-tab-heading-border-radius: var(
+    --citrusStylesSE-border-radius
+  );
 
-     /* Timelines */
+  /* Typography */
+  --citrusStylesSE-text-font-family-sans-serif: sans-serif;
+  --citrusStylesSE-text-font-family-serif: serif;
+  --citrusStylesSE-text-font-family-mono: monospace;
+  --citrusStylesSE-text-font-family: var(
+    --citrusStylesSE-text-font-family-sans-serif
+  );
+  --citrusStylesSE-text-font-size-super: 2em; /* 32px */
+  --citrusStylesSE-text-font-size-xlarge: 1.5em; /* 24px */
+  --citrusStylesSE-text-font-size-large: 1.25em; /* 20px */
+  --citrusStylesSE-text-font-size-medium: 1em; /* 16px */
+  --citrusStylesSE-text-font-size-small: 0.75em; /* 12px */
+  --citrusStylesSE-text-font-size-xsmall: 0.5em; /* 8px */
+  --citrusStylesSE-text-font-weight: normal;
+  --citrusStylesSE-text-font-weight-heavy: bold;
+  --citrusStylesSE-text-line-height: 1.55;
+  --citrusStylesSE-text-font-weight-Regular: 400;
+  --citrusStylesSE-text-font-weight-Medium: 500;
+  --citrusStylesSE-text-font-weight-Bold: 700;
+  --citrusStylesSE-text-font-weight-Black: 900;
+  --citrusStylesSE-font-family-PetcoRegular: "PetcoCircular-Regular";
+  --citrusStylesSE-font-family-PetcoMedium: "PetcoCircular-Medium";
+  --citrusStylesSE-font-family-PetcoBold: "PetcoCircular-Bold";
+  --citrusStylesSE-font-family-PetcoBlack: "PetcoCircular-Black";
+
+  /* Tables */
+  --citrusStylesSE-table-caption-color: var(--citrusStylesSE-color-quiet);
+  --citrusStylesSE-table-striped-background: var(
+    --citrusStylesSE-color-background-offset
+  );
+  --citrusStylesSE-table-heading-background: var(
+    --citrusStylesSE-color-background
+  );
+
+  --citrusStylesSE-table-row-color: var(--citrusStylesSE-color-text);
+  --citrusStylesSE-table-row-background: var(--citrusStylesSE-color-background);
+
+  --citrusStylesSE-table-row-color--clickable: var(--citrusStylesSE-link-color);
+  --citrusStylesSE-table-row-background--clickable: var(
+    --citrusStylesSE-color-background-offset-2
+  );
+
+  --citrusStylesSE-table-row-color--disabled: var(--citrusStylesSE-color-4);
+  --citrusStylesSE-table-row-background--disabled: inherit;
+
+  --citrusStylesSE-table-heading-border: var(--citrusStylesSE-border-width)
+    var(--citrusStylesSE-border-style) var(--citrusStylesSE-border-color);
+
+  /* Timelines */
   --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-color-text);
   --citrusStylesSE-timeline-line-color: var(--citrusStylesSE-border-color);
-  --citrusStylesSE-timeline-spacing-color: var(--citrusStylesSE-color-background);
+  --citrusStylesSE-timeline-spacing-color: var(
+    --citrusStylesSE-color-background
+  );
 
-  --citrusStylesSE-timeline-item-color--brand: var(--citrusStylesSE-color-brand);
+  --citrusStylesSE-timeline-item-color--brand: var(
+    --citrusStylesSE-color-brand
+  );
   --citrusStylesSE-timeline-item-color--info: var(--citrusStylesSE-color-info);
-  --citrusStylesSE-timeline-item-color--warning: var(--citrusStylesSE-color-warning);
-  --citrusStylesSE-timeline-item-color--success: var(--citrusStylesSE-color-success);
-  --citrusStylesSE-timeline-item-color--error: var(--citrusStylesSE-color-error);
-  --citrusStylesSE-timeline-item-color--loading: var(--citrusStylesSE-timeline-item-color);
+  --citrusStylesSE-timeline-item-color--warning: var(
+    --citrusStylesSE-color-warning
+  );
+  --citrusStylesSE-timeline-item-color--success: var(
+    --citrusStylesSE-color-success
+  );
+  --citrusStylesSE-timeline-item-color--error: var(
+    --citrusStylesSE-color-error
+  );
+  --citrusStylesSE-timeline-item-color--loading: var(
+    --citrusStylesSE-timeline-item-color
+  );
 
-    /* Z Indexes */
-    --citrusStylesSE-z-over-content: 100;
-    --citrusStylesSE-z-over-control: 200;
-    --citrusStylesSE-z-over-page: 300;
-    --citrusStylesSE-z-over-screen: 400;
-    --citrusStylesSE-z-over-everything: 500;
+  /* Z Indexes */
+  --citrusStylesSE-z-over-content: 100;
+  --citrusStylesSE-z-over-control: 200;
+  --citrusStylesSE-z-over-page: 300;
+  --citrusStylesSE-z-over-screen: 400;
+  --citrusStylesSE-z-over-everything: 500;
 }
 
 /* ===================== End All Blaze Variables ===================== */
-
 
 /* ===================== Avatar ===================== */
 /* We are not using the Blaze Avatar so, we can delete this */
@@ -449,7 +573,6 @@
 
 /* ===================== End Avatar ===================== */
 
-  
 /* ===================== Accordion ===================== */
 /* Style the buttons that are used to open and close the accordion panel */
 .citrusStylesSE-accordion {
@@ -465,12 +588,13 @@
   transition: 0.4s;
 }
 
-.citrusStylesSE-accordion--active, .citrusStylesSE-accordion:hover {
+.citrusStylesSE-accordion--active,
+.citrusStylesSE-accordion:hover {
   background-color: #ccc;
 }
 
 .citrusStylesSE-accordion:after {
-  content: '\002B';
+  content: "\002B";
   color: var(--citrusStylesSE-black);
   font-weight: bold;
   float: right;
@@ -491,20 +615,21 @@
 
 /* ===================== End Accordion ===================== */
 
-
 /* ===================== Badges ===================== */
 /* We are not using the Blaze Badges so, we can delete this */
 
 .citrusStylesSE-badge {
   display: inline-block;
   margin: 0;
-  padding: var(--citrusStylesSE-spacing-xsmall) var(--citrusStylesSE-spacing-small);
+  padding: var(--citrusStylesSE-spacing-xsmall)
+    var(--citrusStylesSE-spacing-small);
   color: var(--citrusStylesSE-badge-color);
   font-weight: var(--citrusStylesSE-text-font-weight-heavy);
   font-size: 0.8em;
   line-height: 1.2;
   background: var(--citrusStylesSE-badge-background);
-  border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style) var(--citrusStylesSE-badge-border-color);
+  border: var(--citrusStylesSE-border-width) var(--citrusStylesSE-border-style)
+    var(--citrusStylesSE-badge-border-color);
   border-radius: var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-badge.citrusStylesSE-badge--ghost {
@@ -569,7 +694,6 @@
 }
 /* ===================== End Badges ===================== */
 
-
 /* ===================== Blaze Buttons ===================== */
 /* We are not using those buttons so, we could delete them */
 
@@ -609,7 +733,8 @@
 .citrusStylesSE-button:not(:disabled, [disabled]):active {
   filter: brightness(0.9);
 }
-.citrusStylesSE-button:disabled, .citrusStylesSE-button[disabled] {
+.citrusStylesSE-button:disabled,
+.citrusStylesSE-button[disabled] {
   cursor: not-allowed;
   opacity: var(--citrusStylesSE-disabled-opacity);
 }
@@ -630,14 +755,23 @@
 .citrusStylesSE-button.citrusStylesSE-button--close.citrusStylesSE-button--active {
   filter: brightness(0.95);
 }
-.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):not(:active):hover {
+.citrusStylesSE-button.citrusStylesSE-button--close:not(
+    :disabled,
+    [disabled]
+  ):not(:active):hover {
   filter: brightness(0.95);
 }
-.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):focus {
+.citrusStylesSE-button.citrusStylesSE-button--close:not(
+    :disabled,
+    [disabled]
+  ):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
-.citrusStylesSE-button.citrusStylesSE-button--close:not(:disabled, [disabled]):active {
+.citrusStylesSE-button.citrusStylesSE-button--close:not(
+    :disabled,
+    [disabled]
+  ):active {
   filter: brightness(0.9);
 }
 .citrusStylesSE-button.citrusStylesSE-button--block {
@@ -673,7 +807,10 @@
   border: 1px solid var(--citrusStylesSE-button-color);
 }
 
-.citrusStylesSE-button.citrusStylesSE-button--ghost:not(:disabled, [disabled]):focus {
+.citrusStylesSE-button.citrusStylesSE-button--ghost:not(
+    :disabled,
+    [disabled]
+  ):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
@@ -681,27 +818,37 @@
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--brand {
   --citrusStylesSE-color: var(--citrusStylesSE-color--brand-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--brand-ghost);
-  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--brand-ghost-hover);
+  --citrusStylesSE-color--ghost-hover: var(
+    --citrusStylesSE-color--brand-ghost-hover
+  );
 }
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--info {
   --citrusStylesSE-color: var(--citrusStylesSE-color--info-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--info-ghost);
-  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--info-ghost-hover);
+  --citrusStylesSE-color--ghost-hover: var(
+    --citrusStylesSE-color--info-ghost-hover
+  );
 }
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--warning {
   --citrusStylesSE-color: var(--citrusStylesSE-color--warning-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--warning-ghost);
-  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--warning-ghost-hover);
+  --citrusStylesSE-color--ghost-hover: var(
+    --citrusStylesSE-color--warning-ghost-hover
+  );
 }
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--success {
   --citrusStylesSE-color: var(--citrusStylesSE-color--success-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--success-ghost);
-  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--success-ghost-hover);
+  --citrusStylesSE-color--ghost-hover: var(
+    --citrusStylesSE-color--success-ghost-hover
+  );
 }
 .citrusStylesSE-button.citrusStylesSE-button--ghost.citrusStylesSE-button--error {
   --citrusStylesSE-color: var(--citrusStylesSE-color--error-ghost);
   --citrusStylesSE-background: var(--citrusStylesSE-background--error-ghost);
-  --citrusStylesSE-color--ghost-hover: var(--citrusStylesSE-color--error-ghost-hover);
+  --citrusStylesSE-color--ghost-hover: var(
+    --citrusStylesSE-color--error-ghost-hover
+  );
 }
 .citrusStylesSE-button.citrusStylesSE-button--nude {
   width: auto;
@@ -721,11 +868,15 @@
   -webkit-appearance: none;
   appearance: none;
 }
-.citrusStylesSE-button.citrusStylesSE-button--nude:disabled, .citrusStylesSE-button.citrusStylesSE-button--nude[disabled] {
+.citrusStylesSE-button.citrusStylesSE-button--nude:disabled,
+.citrusStylesSE-button.citrusStylesSE-button--nude[disabled] {
   cursor: not-allowed;
   opacity: var(--citrusStylesSE-disabled-opacity);
 }
-.citrusStylesSE-button.citrusStylesSE-button--nude:not(:disabled, [disabled]):not(:active):focus {
+.citrusStylesSE-button.citrusStylesSE-button--nude:not(
+    :disabled,
+    [disabled]
+  ):not(:active):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
@@ -739,7 +890,6 @@
 }
 
 /* ===================== End Blaze Buttons ===================== */
-
 
 /* ===================== Common Class ===================== */
 /* All the Common Class added here */
@@ -765,12 +915,13 @@
   color: #000;
 }
 
-.citrusStylesSE-main { /* This class could be add on the body tag to remove the default maring and padding */
+.citrusStylesSE-main {
+  /* This class could be add on the body tag to remove the default maring and padding */
   margin: 0;
   padding: 0;
 }
 
-.citrusStylesSE-main img{
+.citrusStylesSE-main img {
   width: 100%;
 }
 
@@ -802,20 +953,22 @@
 }
 
 /* Show/Hide Class */
-.citrusStylesSE-d-hide{ /* Hide one desktop */
+.citrusStylesSE-d-hide {
+  /* Hide one desktop */
   display: none;
 }
 
-.citrusStylesSE-m-hide{ /* Hide one mobile */
+.citrusStylesSE-m-hide {
+  /* Hide one mobile */
   display: block;
 }
 
-.citrusStyleSE-btn-primary-underline-navy {
+.citrusStylesSE-btn-primary-underline-navy {
   display: block;
   text-align: center;
 }
 
-.citrusStyleSE-btn-primary-underline-navy .citrusStylesSE-url {
+.citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url {
   color: var(--citrusStylesSE-primary-navy);
   font-size: 16px;
   text-align: inherit;
@@ -824,13 +977,13 @@
   font-weight: 700;
 }
 
-.citrusStyleSE-btn-primary-underline-navy .citrusStylesSE-url:hover {
+.citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url:hover {
   color: var(--citrusStylesSE-primary-navy);
 }
 
 /*Common block for CTA Box-Button with background color */
-.citrusStyleSE-btn-primary-navy,
-.citrusStyleSE-btn-secondary-white {
+.citrusStylesSE-btn-primary-navy,
+.citrusStylesSE-btn-secondary-white {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -842,19 +995,18 @@
   margin: 0 auto;
 }
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .citrusStylesSE-no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.citrusStylesSE-no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .citrusStylesSE-no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.citrusStylesSE-no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 /* ===================== End Common Class ===================== */
-
 
 /* ===================== Card ===================== */
 /* All the Card styles added here */
@@ -877,7 +1029,8 @@
 }
 
 .citrusStylesSE-card__header {
-  padding: var(--citrusStylesSE-spacing-medium) var(--citrusStylesSE-spacing-medium) 0;
+  padding: var(--citrusStylesSE-spacing-medium)
+    var(--citrusStylesSE-spacing-medium) 0;
 }
 
 .citrusStylesSE-card__header .citrusStylesSE-heading {
@@ -929,34 +1082,56 @@
 }
 
 .citrusStylesSE-card__item--divider[role="separator"] {
-  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--divider);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--divider);
+  --citrusStylesSE-card-item-color: var(
+    --citrusStylesSE-card-item-color--divider
+  );
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--divider
+  );
   font-weight: var(--citrusStylesSE-text-font-weight-heavy);
 }
 
 .citrusStylesSE-card__item--brand {
-  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--brand);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--brand);
+  --citrusStylesSE-card-item-color: var(
+    --citrusStylesSE-card-item-color--brand
+  );
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--brand
+  );
 }
 
 .citrusStylesSE-card__item--info {
   --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--info);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--info);
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--info
+  );
 }
 
 .citrusStylesSE-card__item--warning {
-  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--warning);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--warning);
+  --citrusStylesSE-card-item-color: var(
+    --citrusStylesSE-card-item-color--warning
+  );
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--warning
+  );
 }
 
 .citrusStylesSE-card__item--success {
-  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--success);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--success);
+  --citrusStylesSE-card-item-color: var(
+    --citrusStylesSE-card-item-color--success
+  );
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--success
+  );
 }
 
 .citrusStylesSE-card__item--error {
-  --citrusStylesSE-card-item-color: var(--citrusStylesSE-card-item-color--error);
-  --citrusStylesSE-card-item-background: var(--citrusStylesSE-card-item-background--error);
+  --citrusStylesSE-card-item-color: var(
+    --citrusStylesSE-card-item-color--error
+  );
+  --citrusStylesSE-card-item-background: var(
+    --citrusStylesSE-card-item-background--error
+  );
 }
 
 .citrusStylesSE-card__item + .citrusStylesSE-card__footer--block {
@@ -975,7 +1150,9 @@
 
 .citrusStylesSE-card__control {
   --citrusStylesSE-button-color: var(--citrusStylesSE-card-control-color);
-  --citrusStylesSE-button-background: var(--citrusStylesSE-card-control-background);
+  --citrusStylesSE-button-background: var(
+    --citrusStylesSE-card-control-background
+  );
   -webkit-appearance: none;
   appearance: none;
   background: var(--citrusStylesSE-button-background);
@@ -1036,7 +1213,8 @@
 
 .citrusStylesSE-card--menu[role="menu"] {
   border: var(--citrusStylesSE-card-menu-border);
-  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
+  border-radius: 0 0 var(--citrusStylesSE-border-radius)
+    var(--citrusStylesSE-border-radius);
   display: inline-block;
   margin-top: 0.5em;
   max-height: 300px;
@@ -1050,7 +1228,9 @@
 .citrusStylesSE-card--menu[role="menu"]
   .citrusStylesSE-card__control[role="menuitem"] {
   --citrusStylesSE-button-color: var(--citrusStylesSE-card-control-color--menu);
-  --citrusStylesSE-button-background: var(--citrusStylesSE-card-control-background--menu);
+  --citrusStylesSE-button-background: var(
+    --citrusStylesSE-card-control-background--menu
+  );
 }
 
 .citrusStylesSE-card--accordion
@@ -1187,14 +1367,20 @@
 .citrusStylesSE-input-group .citrusStylesSE-field .citrusStylesSE-field {
   border-radius: 0;
 }
-.citrusStylesSE-input-group .citrusStylesSE-field:not(:first-child) .citrusStylesSE-field {
+.citrusStylesSE-input-group
+  .citrusStylesSE-field:not(:first-child)
+  .citrusStylesSE-field {
   border-left-width: 0;
 }
-.citrusStylesSE-input-group .citrusStylesSE-field:first-child .citrusStylesSE-field {
+.citrusStylesSE-input-group
+  .citrusStylesSE-field:first-child
+  .citrusStylesSE-field {
   border-bottom-left-radius: var(--citrusStylesSE-border-radius);
   border-top-left-radius: var(--citrusStylesSE-border-radius);
 }
-.citrusStylesSE-input-group .citrusStylesSE-field:last-child .citrusStylesSE-field {
+.citrusStylesSE-input-group
+  .citrusStylesSE-field:last-child
+  .citrusStylesSE-field {
   border-bottom-right-radius: var(--citrusStylesSE-border-radius);
   border-top-right-radius: var(--citrusStylesSE-border-radius);
 }
@@ -1219,7 +1405,9 @@
   border-bottom-left-radius: var(--citrusStylesSE-border-radius-rounded);
   border-top-left-radius: var(--citrusStylesSE-border-radius-rounded);
 }
-.citrusStylesSE-input-group--rounded .citrusStylesSE-field:last-child .citrusStylesSE-field {
+.citrusStylesSE-input-group--rounded
+  .citrusStylesSE-field:last-child
+  .citrusStylesSE-field {
   border-bottom-right-radius: var(--citrusStylesSE-border-radius-rounded);
   border-top-right-radius: var(--citrusStylesSE-border-radius-rounded);
 }
@@ -1256,10 +1444,12 @@
   border-radius: 0;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-button:first-child {
-  border-radius: var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius) 0 0;
+  border-radius: var(--citrusStylesSE-border-radius)
+    var(--citrusStylesSE-border-radius) 0 0;
 }
 .citrusStylesSE-input-group--stacked .citrusStylesSE-button:last-child {
-  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
+  border-radius: 0 0 var(--citrusStylesSE-border-radius)
+    var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-input-group--stacked
   .citrusStylesSE-field:not(:first-child)
@@ -1276,18 +1466,23 @@
 .citrusStylesSE-input-group--stacked
   .citrusStylesSE-field:first-child
   .citrusStylesSE-field {
-  border-radius: var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius) 0 0;
+  border-radius: var(--citrusStylesSE-border-radius)
+    var(--citrusStylesSE-border-radius) 0 0;
 }
-.citrusStylesSE-input-group--stacked .citrusStylesSE-field:last-child .citrusStylesSE-field {
-  border-radius: 0 0 var(--citrusStylesSE-border-radius) var(--citrusStylesSE-border-radius);
+.citrusStylesSE-input-group--stacked
+  .citrusStylesSE-field:last-child
+  .citrusStylesSE-field {
+  border-radius: 0 0 var(--citrusStylesSE-border-radius)
+    var(--citrusStylesSE-border-radius);
 }
 .citrusStylesSE-button.citrusStylesSE-button--info {
   --citrusStylesSE-button-color: var(--citrusStylesSE-button-color--info);
-  --citrusStylesSE-button-background: var(--citrusStylesSE-button-background--info);
+  --citrusStylesSE-button-background: var(
+    --citrusStylesSE-button-background--info
+  );
 }
 
 /* ===================== End Card ===================== */
-
 
 /* ===================== Containers ===================== */
 /* All sizes containers styles */
@@ -1432,11 +1627,10 @@
 
 /* ===================== End Containers ===================== */
 
-
 /* ===================== Petco Fonts ===================== */
- /* All the Fonts adding from local Font-Styles that will be reflected in the Petco Site */
+/* All the Fonts adding from local Font-Styles that will be reflected in the Petco Site */
 
- @font-face {
+@font-face {
   font-family: "PetcoCircular-Regular";
   src: url("font/PetcoCircular-Regular.woff2")
     /* for local use, we can use otf font that will match the font in local and staging */
@@ -1485,14 +1679,12 @@
   font-weight: var(--citrusStylesSE-text-font-weight-Black);
 }
 
-
 /* ===================== End Petco Fonts ===================== */
 
-
 /* ===================== Hero POV Carousels ===================== */
- /* All the Hero POV Carousels styles added here */
+/* All the Hero POV Carousels styles added here */
 
- .citrusStylesSE-carousel {
+.citrusStylesSE-carousel {
   overflow-x: hidden;
   position: relative;
   display: -webkit-box;
@@ -1540,7 +1732,6 @@
 }
 
 /* ===================== End Hero POV Carousels ===================== */
-
 
 /* ===================== Grid ===================== */
 /* All styles for grid */
@@ -1737,7 +1928,6 @@
 
 /* ===================== End Grid width===================== */
 
-
 /* ===================== Tables ===================== */
 /* All the Tables styles added here */
 /* Tables */
@@ -1773,7 +1963,10 @@
   max-width: 100%;
 }
 
-.citrusStylesSE-table--striped :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row:nth-of-type(odd) {
+.citrusStylesSE-table--striped
+  :not(
+    .citrusStylesSE-table__row--heading
+  ).citrusStylesSE-table__row:nth-of-type(odd) {
   color: inherit;
   background: var(--citrusStylesSE-table-striped-background);
 }
@@ -1796,7 +1989,9 @@
   border-bottom: var(--citrusStylesSE-table-heading-border);
 }
 
-.citrusStylesSE-table--clickable :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row:hover .citrusStylesSE-table__cell,
+.citrusStylesSE-table--clickable
+  :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row:hover
+  .citrusStylesSE-table__cell,
 .citrusStylesSE-table__row--clickable:hover .citrusStylesSE-table__cell {
   color: var(--citrusStylesSE-table-row-color--clickable);
   background: var(--citrusStylesSE-table-row-background--clickable);
@@ -1808,7 +2003,11 @@
   cursor: default;
 }
 
-.citrusStylesSE-table--clickable :not(.citrusStylesSE-table__row--heading).citrusStylesSE-table__row--disabled:hover .citrusStylesSE-table__cell,
+.citrusStylesSE-table--clickable
+  :not(
+    .citrusStylesSE-table__row--heading
+  ).citrusStylesSE-table__row--disabled:hover
+  .citrusStylesSE-table__cell,
 .citrusStylesSE-table__row--disabled:hover .citrusStylesSE-table__cell {
   color: var(--citrusStylesSE-table-row-color--disabled);
   background: var(--citrusStylesSE-table-row-background--disabled);
@@ -1823,7 +2022,6 @@
 }
 
 /* ===================== End Tables ===================== */
-
 
 /* ===================== Timeline ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */
@@ -1845,7 +2043,8 @@
   border-left: 1px solid var(--citrusStylesSE-timeline-line-color);
   content: "";
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item--last::before, .citrusStylesSE-timeline .citrusStylesSE-timeline-item--loading::before {
+.citrusStylesSE-timeline .citrusStylesSE-timeline-item--last::before,
+.citrusStylesSE-timeline .citrusStylesSE-timeline-item--loading::before {
   border-left-style: none;
   content: "";
 }
@@ -1864,54 +2063,80 @@
   top: -0.55em;
   margin: 0 0 0 1em;
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--brand::after {
-  --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-timeline-item-color--brand);
+.citrusStylesSE-timeline
+  .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--brand::after {
+  --citrusStylesSE-timeline-item-color: var(
+    --citrusStylesSE-timeline-item-color--brand
+  );
   content: "";
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--info::after {
-  --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-timeline-item-color--info);
+.citrusStylesSE-timeline
+  .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--info::after {
+  --citrusStylesSE-timeline-item-color: var(
+    --citrusStylesSE-timeline-item-color--info
+  );
   content: "";
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--warning::after {
-  --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-timeline-item-color--warning);
+.citrusStylesSE-timeline
+  .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--warning::after {
+  --citrusStylesSE-timeline-item-color: var(
+    --citrusStylesSE-timeline-item-color--warning
+  );
   content: "";
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--success::after {
-  --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-timeline-item-color--success);
+.citrusStylesSE-timeline
+  .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--success::after {
+  --citrusStylesSE-timeline-item-color: var(
+    --citrusStylesSE-timeline-item-color--success
+  );
   content: "";
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--error::after {
-  --citrusStylesSE-timeline-item-color: var(--citrusStylesSE-timeline-item-color--error);
+.citrusStylesSE-timeline
+  .citrusStylesSE-timeline-item.citrusStylesSE-timeline-item--error::after {
+  --citrusStylesSE-timeline-item-color: var(
+    --citrusStylesSE-timeline-item-color--error
+  );
   content: "";
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate .citrusStylesSE-timeline-item::before, .citrusStylesSE-timeline.citrusStylesSE-timeline--alternate .citrusStylesSE-timeline-item::after {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate
+  .citrusStylesSE-timeline-item::before,
+.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate
+  .citrusStylesSE-timeline-item::after {
   left: 50%;
   content: "";
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate .citrusStylesSE-timeline-item::after {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate
+  .citrusStylesSE-timeline-item::after {
   margin: 0 0 0 -0.25em;
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate .citrusStylesSE-timeline-item__body {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate
+  .citrusStylesSE-timeline-item__body {
   left: 50%;
   width: 50%;
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate .citrusStylesSE-timeline-item--left .citrusStylesSE-timeline-item__body {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--alternate
+  .citrusStylesSE-timeline-item--left
+  .citrusStylesSE-timeline-item__body {
   left: 0;
   margin: 0 0 0 -1em;
   text-align: right;
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--loading .citrusStylesSE-timeline-item--last::before {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--loading
+  .citrusStylesSE-timeline-item--last::before {
   border-left-style: dashed;
   content: "";
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--loading .citrusStylesSE-timeline-item--loading::after {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--loading
+  .citrusStylesSE-timeline-item--loading::after {
   background-color: transparent;
   border: 2px solid var(--citrusStylesSE-timeline-item-color--loading);
 }
-.citrusStylesSE-timeline.citrusStylesSE-timeline--loading .citrusStylesSE-timeline-item--loading .citrusStylesSE-timeline-item__body {
+.citrusStylesSE-timeline.citrusStylesSE-timeline--loading
+  .citrusStylesSE-timeline-item--loading
+  .citrusStylesSE-timeline-item__body {
   opacity: var(--citrusStylesSE-disabled-opacity);
 }
-.citrusStylesSE-timeline .citrusStylesSE-timeline-item:after{
+.citrusStylesSE-timeline .citrusStylesSE-timeline-item:after {
   background-color: var(--citrusStylesSE-timeline-item-color);
   border-radius: 100%;
   box-shadow: 0 0 0 4px var(--citrusStylesSE-timeline-spacing-color);
@@ -1922,7 +2147,7 @@
   width: 0.5em;
 }
 
-.citrusStylesSE--timeline .citrusStylesSE--timeline-item:before{
+.citrusStylesSE--timeline .citrusStylesSE--timeline-item:before {
   border-left: 1px solid var(--citrusStylesSE-timeline-line-color);
   content: "";
   height: 100%;
@@ -1932,7 +2157,6 @@
   top: 0;
 }
 /* ===================== End Timeline ===================== */
-
 
 /* ===================== Utility Class ===================== */
 /* Utility styles - need to be added rest of the utitlity styles */
@@ -2665,7 +2889,6 @@
 }
 /* ===================== End Utility Class ===================== */
 
-
 /* ===================== Headings ===================== */
 /* All the headings styles */
 .citrusStylesSE-super {
@@ -2693,19 +2916,18 @@
 }
 
 .citrusStylesSE-heading__sub {
-  font-size: calc(var(--citrusStylesSE-text-font-size-medium)*.8);
-  opacity: .6;
+  font-size: calc(var(--citrusStylesSE-text-font-size-medium) * 0.8);
+  opacity: 0.6;
   padding: 0;
 }
 /* ===================== End Headings ===================== */
-
 
 /* ===================== List ===================== */
 /* All the list styles */
 
 ul.citrusStylesSE-list,
 ol.citrusStylesSE-list,
-.citrusStylesSE-list[role=list] {
+.citrusStylesSE-list[role="list"] {
   display: block;
   margin: 0;
   padding: 0 0 0 var(--citrusStylesSE-spacing-medium);
@@ -2713,65 +2935,79 @@ ol.citrusStylesSE-list,
 }
 ul.citrusStylesSE-list ul.citrusStylesSE-list,
 ul.citrusStylesSE-list ol.citrusStylesSE-list,
-ul.citrusStylesSE-list .citrusStylesSE-list[role=list],
+ul.citrusStylesSE-list .citrusStylesSE-list[role="list"],
 ol.citrusStylesSE-list ul.citrusStylesSE-list,
 ol.citrusStylesSE-list ol.citrusStylesSE-list,
-ol.citrusStylesSE-list .citrusStylesSE-list[role=list],
-.citrusStylesSE-list[role=list] ul.citrusStylesSE-list,
-.citrusStylesSE-list[role=list] ol.citrusStylesSE-list,
-.citrusStylesSE-list[role=list] .citrusStylesSE-list[role=list] {
+ol.citrusStylesSE-list .citrusStylesSE-list[role="list"],
+.citrusStylesSE-list[role="list"] ul.citrusStylesSE-list,
+.citrusStylesSE-list[role="list"] ol.citrusStylesSE-list,
+.citrusStylesSE-list[role="list"] .citrusStylesSE-list[role="list"] {
   padding: 0 0 0 var(--citrusStylesSE-spacing-medium);
 }
 ul.citrusStylesSE-list .citrusStylesSE-list__item,
 ol.citrusStylesSE-list .citrusStylesSE-list__item,
-.citrusStylesSE-list[role=list] .citrusStylesSE-list__item {
+.citrusStylesSE-list[role="list"] .citrusStylesSE-list__item {
   padding: 0;
 }
 ul.citrusStylesSE-list .citrusStylesSE-list__item--unstyled,
 ol.citrusStylesSE-list .citrusStylesSE-list__item--unstyled,
-.citrusStylesSE-list[role=list] .citrusStylesSE-list__item--unstyled {
+.citrusStylesSE-list[role="list"] .citrusStylesSE-list__item--unstyled {
   list-style: none;
 }
 ul.citrusStylesSE-list.citrusStylesSE-list--unstyled,
 ol.citrusStylesSE-list.citrusStylesSE-list--unstyled,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--unstyled {
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--unstyled {
   padding: 0;
   list-style: none;
 }
 ul.citrusStylesSE-list.citrusStylesSE-list--ordered,
 ol.citrusStylesSE-list.citrusStylesSE-list--ordered,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--ordered {
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--ordered {
   padding: 0;
   list-style: none;
   counter-reset: ordered;
 }
-ul.citrusStylesSE-list.citrusStylesSE-list--ordered .citrusStylesSE-list__item::before,
-ol.citrusStylesSE-list.citrusStylesSE-list--ordered .citrusStylesSE-list__item::before,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--ordered .citrusStylesSE-list__item::before {
+ul.citrusStylesSE-list.citrusStylesSE-list--ordered
+  .citrusStylesSE-list__item::before,
+ol.citrusStylesSE-list.citrusStylesSE-list--ordered
+  .citrusStylesSE-list__item::before,
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--ordered
+  .citrusStylesSE-list__item::before {
   padding: 0 var(--citrusStylesSE-spacing-small) 0 0;
   content: counters(ordered, ".") " ";
   counter-increment: ordered;
 }
 ul.citrusStylesSE-list.citrusStylesSE-list--inline,
 ol.citrusStylesSE-list.citrusStylesSE-list--inline,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--inline {
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--inline {
   padding: 0;
 }
 ul.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list--inline,
 ol.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list--inline,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--inline .citrusStylesSE-list--inline {
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--inline
+  .citrusStylesSE-list--inline {
   padding: 0;
 }
 ul.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list__item,
 ol.citrusStylesSE-list.citrusStylesSE-list--inline .citrusStylesSE-list__item,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--inline .citrusStylesSE-list__item {
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--inline
+  .citrusStylesSE-list__item {
   display: inline-block;
   width: auto;
   padding-right: var(--citrusStylesSE-spacing-medium);
 }
-ul.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before,
-ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before,
-.citrusStylesSE-list[role=list].citrusStylesSE-list--inline:not(.citrusStylesSE-list--unstyled) .citrusStylesSE-list__item::before {
+ul.citrusStylesSE-list.citrusStylesSE-list--inline:not(
+    .citrusStylesSE-list--unstyled
+  )
+  .citrusStylesSE-list__item::before,
+ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(
+    .citrusStylesSE-list--unstyled
+  )
+  .citrusStylesSE-list__item::before,
+.citrusStylesSE-list[role="list"].citrusStylesSE-list--inline:not(
+    .citrusStylesSE-list--unstyled
+  )
+  .citrusStylesSE-list__item::before {
   padding: 0 var(--citrusStylesSE-spacing-small) 0 0;
   content: "•";
 }
@@ -2807,91 +3043,121 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 /* ===================== Responsiveness ===================== */
 /* All the Responsiveness styles */
 
-@media (max-width: 19.99em) {  /* width 319.99px */
-  .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (max-width: 19.99em) {
+  /* width 319.99px */
+  .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
 
-@media (min-width: 20em) and (max-width: 29.99em) { /* min-width:320px and max-width: 479.99*/
-  .citrusStylesSE-grid.citrusStylesSE-grid--small-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (min-width: 20em) and (max-width: 29.99em) {
+  /* min-width:320px and max-width: 479.99*/
+  .citrusStylesSE-grid.citrusStylesSE-grid--small-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--small-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--small-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--small-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
 
-@media (min-width: 30em) and (max-width: 47.99em) { /* min-width:480px and max-width: 767.99*/
-  .citrusStylesSE-grid.citrusStylesSE-grid--medium-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (min-width: 30em) and (max-width: 47.99em) {
+  /* min-width:480px and max-width: 767.99*/
+  .citrusStylesSE-grid.citrusStylesSE-grid--medium-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--medium-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--medium-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--medium-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
 
-@media (min-width: 48em) and (max-width: 63.99em) { /* min-width:768px and max-width: 1023.99*/
-  .citrusStylesSE-grid.citrusStylesSE-grid--large-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (min-width: 48em) and (max-width: 63.99em) {
+  /* min-width:768px and max-width: 1023.99*/
+  .citrusStylesSE-grid.citrusStylesSE-grid--large-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--large-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--large-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--large-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
 
-@media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
-  .citrusStylesSE-grid.citrusStylesSE-grid--xlarge-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (min-width: 64em) and (max-width: 77.99em) {
+  /* min-width:1024px and max-width: 1247.99*/
+  .citrusStylesSE-grid.citrusStylesSE-grid--xlarge-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--xlarge-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--xlarge-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--xlarge-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
 
-@media (min-width: 64em) { /* min-width:1024px */
-  .citrusStylesSE-grid.citrusStylesSE-grid--super-fit > .citrusStylesSE-grid__cell:not([class*=".citrusStylesSE-grid__cell--width"]) {
+@media (min-width: 64em) {
+  /* min-width:1024px */
+  .citrusStylesSE-grid.citrusStylesSE-grid--super-fit
+    > .citrusStylesSE-grid__cell:not(
+      [class*=".citrusStylesSE-grid__cell--width"]
+    ) {
     flex: 1;
   }
   .citrusStylesSE-grid.citrusStylesSE-grid--super-full {
     flex-wrap: wrap;
   }
-  .citrusStylesSE-grid.citrusStylesSE-grid--super-full > .citrusStylesSE-grid__cell {
+  .citrusStylesSE-grid.citrusStylesSE-grid--super-full
+    > .citrusStylesSE-grid__cell {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 
   /* CTA Box-Button with background color */
-  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url {
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
     border-radius: var(--citrusStylesSE-border-radius-5);
     background: var(--citrusStylesSE-primary-navy);
     color: var(--citrusStylesSE-white);
@@ -2905,17 +3171,17 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     padding: 1.125em 0;
   }
 
-  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
-  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:focus-visible{
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
     outline: none;
   }
 
-  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:hover {
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-white);
   }
 
   /* CTA Box-Button with white background color */
-  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url {
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
     border-radius: var(--citrusStylesSE-border-radius-5);
     background: var(--citrusStylesSE-white);
     color: var(--citrusStylesSE-primary-navy);
@@ -2929,16 +3195,16 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     padding: 1.125em 0;
   }
 
-  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:hover {
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
-
 }
 
-@media (max-width: 63.999em) { /* max-width: 1023.99px */
+@media (max-width: 63.999em) {
+  /* max-width: 1023.99px */
 
   /* Reverse CTA for Box-Button - without background color on Mobile */
-  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url {
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
     color: var(--citrusStylesSE-primary-navy);
     padding: 0;
     font-size: 16px;
@@ -2948,18 +3214,17 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     font-weight: 700;
   }
 
-  
-  .citrusStyleSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
-  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url:focus-visible{
+  .citrusStylesSE-btn-primary-navy .citrusStylesSE-url:focus-visible,
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url:focus-visible {
     outline: none;
   }
 
-  .citrusStyleSE-btn-primary-navy a:hover {
+  .citrusStylesSE-btn-primary-navy a:hover {
     color: var(--citrusStylesSE-primary-navy);
   }
 
   /* Reverse CTA for Box-Button - white without background color on Mobile */
-  .citrusStyleSE-btn-secondary-white .citrusStylesSE-url {
+  .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
     color: var(--citrusStylesSE-white);
     padding: 0;
     font-size: 16px;
@@ -2969,43 +3234,38 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
     font-weight: 700;
   }
 
-  .citrusStyleSE-btn-secondary-white a:hover {
+  .citrusStylesSE-btn-secondary-white a:hover {
     color: var(--citrusStylesSE-white);
   }
-
 }
 
-@media (min-width: 48em) { /* min-width: 768px */
-  
+@media (min-width: 48em) {
+  /* min-width: 768px */
 }
 
 @media (max-width: 47.99em) {
   /* max-width:767.99px, all the mobile styles can be used this break-point*/
 
-  
   /* Show/Hide Class */
-  .citrusStylesSE-d-hide{ /* Hide one desktop */
+  .citrusStylesSE-d-hide {
+    /* Hide one desktop */
     display: block;
   }
 
-  .citrusStylesSE-m-hide{ /* Hide one mobile */
+  .citrusStylesSE-m-hide {
+    /* Hide one mobile */
     display: none;
   }
 
-  
   /* Hero POV flex directions column in mobile */
-  .citrusStylesSE-carousel__inner--item{
+  .citrusStylesSE-carousel__inner--item {
     flex-direction: column;
   }
-
-
 }
 
 /* Small Devices - below 320px */
 @media (max-width: 19.99em) {
-
 }
-
 
 @media (min-width: 20em) {
   .citrusStylesSE-grid__cell--hidden\@xsmall {
@@ -5136,7 +5396,6 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 
 /* ===================== End Responsiveness ===================== */
 
-
 /* ===================== Splide CSS ===================== */
 /* default splide js library style */
 .splide__container {
@@ -5514,10 +5773,9 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
 
 /* ===================== End Splide CSS ===================== */
 
-
 /* ===================== Tabs ===================== */
 /* All the Tabs styles */
-.citrusStylesSE-tabs[role=tablist] {
+.citrusStylesSE-tabs[role="tablist"] {
   display: block;
 }
 
@@ -5536,7 +5794,7 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   overflow-y: hidden;
 }
 
-.citrusStylesSE-tab-heading[role=tab] {
+.citrusStylesSE-tab-heading[role="tab"] {
   width: auto;
   margin: 0;
   padding: 0;
@@ -5560,54 +5818,116 @@ ol.citrusStylesSE-list.citrusStylesSE-list--inline:not(.citrusStylesSE-list--uns
   color: var(--citrusStylesSE-tab-heading-color);
   white-space: nowrap;
   background: var(--citrusStylesSE-tab-heading-background);
-  border-bottom: var(--citrusStylesSE-spacing-xsmall) solid var(--citrusStylesSE-tab-heading-border-color);
-  border-radius: var(--citrusStylesSE-tab-heading-border-radius) var(--citrusStylesSE-tab-heading-border-radius) 0 0;
+  border-bottom: var(--citrusStylesSE-spacing-xsmall) solid
+    var(--citrusStylesSE-tab-heading-border-color);
+  border-radius: var(--citrusStylesSE-tab-heading-border-radius)
+    var(--citrusStylesSE-tab-heading-border-radius) 0 0;
 }
-.citrusStylesSE-tab-heading[role=tab]:disabled, .citrusStylesSE-tab-heading[role=tab][disabled] {
+.citrusStylesSE-tab-heading[role="tab"]:disabled,
+.citrusStylesSE-tab-heading[role="tab"][disabled] {
   cursor: not-allowed;
   opacity: var(--citrusStylesSE-disabled-opacity);
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled, [disabled]):not(:active):focus {
+.citrusStylesSE-tab-heading[role="tab"]:not(:disabled, [disabled]):not(
+    :active
+  ):focus {
   border-color: var(--citrusStylesSE-border-color-focus);
   box-shadow: var(--citrusStylesSE-box-shadow-focus);
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--hover);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--hover);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--hover);
+.citrusStylesSE-tab-heading[role="tab"]:not(:disabled):hover {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--hover
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--hover
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--hover
+  );
 }
-.citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--active);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--active);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--active);
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--active
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--active
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--active
+  );
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--brand, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--brand {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--brand);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--brand);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--brand);
+.citrusStylesSE-tab-heading[role="tab"]:not(
+    :disabled
+  ):hover.citrusStylesSE-tab-heading--brand,
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--brand {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--brand
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--brand
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--brand
+  );
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--info, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--info {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--info);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--info);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--info);
+.citrusStylesSE-tab-heading[role="tab"]:not(
+    :disabled
+  ):hover.citrusStylesSE-tab-heading--info,
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--info {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--info
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--info
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--info
+  );
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--warning, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--warning {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--warning);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--warning);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--warning);
+.citrusStylesSE-tab-heading[role="tab"]:not(
+    :disabled
+  ):hover.citrusStylesSE-tab-heading--warning,
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--warning {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--warning
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--warning
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--warning
+  );
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--success, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--success {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--success);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--success);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--success);
+.citrusStylesSE-tab-heading[role="tab"]:not(
+    :disabled
+  ):hover.citrusStylesSE-tab-heading--success,
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--success {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--success
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--success
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--success
+  );
 }
-.citrusStylesSE-tab-heading[role=tab]:not(:disabled):hover.citrusStylesSE-tab-heading--error, .citrusStylesSE-tab-heading[role=tab].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--error {
-  --citrusStylesSE-tab-heading-color: var(--citrusStylesSE-tab-heading-color--error);
-  --citrusStylesSE-tab-heading-background: var(--citrusStylesSE-tab-heading-background--error);
-  --citrusStylesSE-tab-heading-border-color: var(--citrusStylesSE-tab-heading-border-color--error);
+.citrusStylesSE-tab-heading[role="tab"]:not(
+    :disabled
+  ):hover.citrusStylesSE-tab-heading--error,
+.citrusStylesSE-tab-heading[role="tab"].citrusStylesSE-tab-heading--active.citrusStylesSE-tab-heading--error {
+  --citrusStylesSE-tab-heading-color: var(
+    --citrusStylesSE-tab-heading-color--error
+  );
+  --citrusStylesSE-tab-heading-background: var(
+    --citrusStylesSE-tab-heading-background--error
+  );
+  --citrusStylesSE-tab-heading-border-color: var(
+    --citrusStylesSE-tab-heading-border-color--error
+  );
 }
 
-.citrusStylesSE-tabs__tab[role=tabpanel] {
+.citrusStylesSE-tabs__tab[role="tabpanel"] {
   padding: var(--citrusStylesSE-spacing-medium);
 }
 
