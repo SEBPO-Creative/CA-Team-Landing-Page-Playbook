@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content 3 up with half background</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        /* Section styles start here */
+        .citrusStylesSE-content3up {
+            position: relative;
+        }
+
+        .citrusStylesSE-content3up--bg {
+            background-color: #E1F3E8;
+            height: 220px;
+            width: 100%;
+            position: absolute;
+            top: 250px;
+        }
+
+        .citrusStylesSE-grid {
+            width: 850px;
+            max-width: 100%;
+            margin: auto;
+            overflow: auto;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .citrusStylesSE-content3up .citrusStylesSE-grid__cell img {
+            max-width: 177.18px;
+        }
+
+        /* Custom class need to match or update in css library */
+        .citrusStylesSE-container--xlarge-1440 {
+            max-width: 90em;
+        }
+
+        .citrusStylesSE-content3up a {
+            text-decoration: none;
+        }
+
+        .citrusStylesSE-content3up a h3,
+        p {
+            color: var(--citrusStylesSE-primary-navy);
+        }
+
+        .citrusStylesSE-content3up .citrusStylesSE-grid__cell a {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .citrusStylesSE-cta__underline {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .citrusStylesSE-grid.citrusStylesSE-grid--small-full {
+            flex-wrap: nowrap;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .citrusStylesSE-grid::-webkit-scrollbar,
+        .citrusStylesSE-content3up .citrusStylesSE-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .citrusStylesSE-grid::-webkit-scrollbar,
+        .citrusStylesSE-content3up .citrusStylesSE-grid {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        @media (min-width: 48em) and (max-width: 63.99em) {
+            .citrusStylesSE-grid.citrusStylesSE-grid--large-full {
+                flex-wrap: nowrap;
+            }
+
+            .citrusStylesSE-grid.citrusStylesSE-grid--large-full>.citrusStylesSE-grid__cell {
+                flex: 0 0 35%;
+            }
+        }
+
+        @media (max-width: 47.93em) {
+            .citrusStylesSE-content3up .citrusStylesSE-grid__cell {
+                min-width: 45%;
+            }
+        }
+
+        @media screen and (min-width: 320px) {
+            .citrusStylesSE-content3up .citrusStylesSE-grid__cell a {
+                padding: var(--citrusStylesSE-spacing-small);
+                display: block;
+                max-width: 215px;
+            }
+
+            .citrusStylesSE-grid__cell {
+                padding: 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .citrusStylesSE-content3up .citrusStylesSE-grid__cell a {
+                padding: var(--citrusStylesSE-spacing-large);
+                display: block;
+            }
+        }
+
+        @media (max-width: 47.93em) {
+            .citrusStylesSE-content3up .citrusStylesSE-grid {
+                overflow-x: auto;
+            }
+        }
+
+
+        @media (min-width: 20em) and (max-width: 29.99em) {
+            .citrusStylesSE-grid.citrusStylesSE-grid--small-full>.citrusStylesSE-grid__cell {
+                flex: 0 0 70%;
+            }
+
+            .citrusStylesSE-content3up--bg {
+                top: 230px;
+                height: 240px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .citrusStylesSE-grid.citrusStylesSE-grid--xsmall-full>.citrusStylesSE-grid__cell {
+                flex: 0 0 70%;
+            }
+
+            .citrusStylesSE-content3up--bg {
+                top: 230px;
+                height: 270px;
+            }
+        }
+
+        /* ----------------------------------------- */
+    </style>
+</head>
+
+<body>
+    <main class="citrusStylesSE-container citrusStylesSE-container--xlarge-1440">
+        <section class="citrusStylesSE-content3up">
+            <div class="citrusStylesSE-section__title">
+                <h2 class="citrusStylesSE-header2">Section Title Goes Here</h2>
+            </div>
+            <!-- Title styles could be a commmon style -->
+            <div class="citrusStylesSE-content3up--bg "></div>
+            <div
+                class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-fit citrusStylesSE-grid--large-full ">
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-content3up--icon">
+                    <a href="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-solutions1" alt="">
+                        <h3 class="citrusStylesSE-PetcoBold">Title Goes Here</h3>
+                        <p class="citrusStylesSE-PetcoRegular">Product Details Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                            <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                Now</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-content3up--icon">
+                    <a href="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-solutions1" alt="">
+                        <h3 class="citrusStylesSE-PetcoBold">Title Goes Here</h3>
+                        <p class="citrusStylesSE-PetcoRegular">Product Details Goes Here</p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                            <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                Now</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-content3up--icon">
+                    <a href="">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-solutions1" alt="">
+                        <h3 class="citrusStylesSE-PetcoBold">Title Goes Here</h3>
+                        <p class="citrusStylesSE-PetcoRegular">Product Details Goes Here
+                        </p>
+                        <div class="citrusStylesSE-btn-primary-underline-navy">
+                            <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop
+                                Now</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+</body>
+
+</html>

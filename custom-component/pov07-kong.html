@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero POV - Kong</title>
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+            /* Carousels - POV */
+            .citrusStylesSE-pov__img {
+                max-width: 190px;
+                align-items: center;
+            }
+
+            .citrusStylesSE-carousel__inner--item {
+                justify-content: flex-start;
+                background-size: 100% 100%;
+                min-height: 330px;
+            }
+
+            .citrusStylesSE-kong__pov1 {
+                background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov1-dsk.png);
+            }
+
+            .citrusStylesSE-kong__pov2 {
+                background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov2-dsk.png);
+            }
+
+            .citrusStylesSE-kong__pov3 {
+                background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov3-dsk.png);
+            }
+
+            .citrusStylesSE-pov__text{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                padding: 1em 1em 1em 2em;
+            }
+
+            .citrusStylesSE-kong__copy {
+                gap: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .citrusStylesSE-kong__logo{
+                max-width: 110px;
+                margin: 0;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-header1{
+                text-align: left;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+                position: relative;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-header1 sup {
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
+                padding: 0 0 0 1px;
+                position: absolute;
+                top: -2px;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-para{
+                text-align: left;
+                margin: 0;
+                color: var(--citrusStylesSE-white);
+                text-align: left;
+                max-width: 60%;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-para { 
+                max-width: 70%;
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .citrusStylesSE-kong .citrusStylesSE-btn-secondary-white {
+                margin: 0;
+                justify-content: flex-start;
+            }
+
+            /* ===================== Responsive Media Break-Point ===================== */
+            /* All the common used break-point adding here */
+            @media (min-width: 64em) and (max-width: 77.99em) {
+            /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
+                .citrusStylesSE-kong__logo {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    max-width: 350px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    gap: 0.7em;
+                    padding: 0.5em 1em 1em 2em;
+                }
+            
+            }
+
+            @media (min-width: 64em) { /* min-width: 1024px */
+
+                .citrusStylesSE-kong .citrusStylesSE-header1{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
+                    line-height: 35px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
+                    width: 165px;
+                    padding: 0.75em 0;
+                    border: 1px solid var(--citrusStylesSE-white);
+                    background: transparent;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__img {
+                    display: flex;
+                }
+
+            }
+
+            @media (min-width: 48em) and (max-width: 63.99em) { 
+
+                .citrusStylesSE-kong__logo {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-header1 {
+                    max-width: 350px;
+                    font-size: 20px !important;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__img {
+                    display: flex;
+                }
+
+           }
+
+            @media (max-width: 63.999em) {  /* max-width:1023.99px */
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: auto;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__img {
+                    max-width: 130px;
+                }
+
+                .citrusStylesSE-kong__logo {
+                    max-width: 100px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-header1{
+                    font-size: var(--citrusStylesSE-text-font-size-large);
+                    color: var(--citrusStylesSE-white);
+                    max-width: 290px;
+                    line-height: 20px;
+                    margin: 0;   
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-btn-primary-navy .citrusStylesSE-url{
+                    color: var(--citrusStylesSE-white);
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
+                    color: var(--citrusStylesSE-white);
+                    text-align: left;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    gap: 0.5em;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
+                    line-height: 25px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__logo {
+                    padding: 0 0 10px;
+                    max-width: 140px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    line-height: 17px;
+                }
+
+
+            }
+
+            @media (min-width: 48em) { /* min-width:768px*/
+                .citrusStylesSE-kong .citrusStylesSE-btn-primary-navy {
+                    justify-content: flex-start;
+                    gap: 10px;
+                }   
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov2 .citrusStylesSE-pov__text,
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-pov__text {
+                    padding-left: 30%;
+                }
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                /* Hero POV */
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov1 {
+                    background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov1-mob.png);
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov2 {
+                    background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov2-mob.png);
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov3 {
+                    background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov3-mob.png);
+                }
+
+                .citrusStylesSE-carousel__inner--item {
+                    min-height: 540px;
+                    justify-content: end;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-pov__text {
+                    padding: 2em 1em 3em;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-header1,
+                .citrusStylesSE-kong .citrusStylesSE-para {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1 {
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
+                    line-height: 24px;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    text-align: center;
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-para {
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-kong__pov3 .citrusStylesSE-para {
+                    max-width: 90%;
+                }
+
+                .citrusStylesSE-kong .citrusStylesSE-carousel__inner--item {
+                    background-size: cover;
+                }
+            }
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+<body>
+    <main class="citrusStylesSE-main">
+		<!-- POV section start -->
+		<section class="citrusStylesSE-carousel citrusStylesSE-container citrusStylesSE-kong">
+			<div class="citrusStylesSE-carousel__inner">
+				<!-- POV 01 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-kong__pov1">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-kong__copy">
+                            <div class="citrusStylesSE-kong__logo">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
+                            </div>
+                            <h2 class="citrusStylesSE-header1">IT’S NOT JUST A TOY, IT’S A KONG</h2>
+                            <p class="citrusStylesSE-para">Explore the variety of entertaining toys and reward your pet with fun.</p>
+                            <div class="citrusStylesSE-btn-secondary-white">
+                                <a href="" class="citrusStylesSE-url">Shop All</a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!-- POV 02 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-kong__pov2">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-kong__copy">
+                            <div class="citrusStylesSE-kong__logo">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
+                            </div>
+                            <h2 class="citrusStylesSE-header1">DOGS NEED TO PLAY<sup>®</sup></h2>
+                            <p class="citrusStylesSE-para">KONG toys encourage play, satisfy instinctual needs and strengthen the bond between dog and pet parent.</p>
+                            <div class="citrusStylesSE-btn-secondary-white">
+                                <a href="" class="citrusStylesSE-url">Shop Dog</a>
+                            </div> 
+                        </div>
+                     </div>
+				</div>
+                <!-- POV 03 -->
+				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-kong__pov3">
+                    <div class="citrusStylesSE-pov__text">
+                        <div class="citrusStylesSE-kong__copy">
+                            <div class="citrusStylesSE-kong__logo">
+                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/kong_logo_white" alt="">
+                            </div>
+                            <h2 class="citrusStylesSE-header1">CATS NEED TO PLAY<sup>®</sup></h2>
+                            <p class="citrusStylesSE-para">KONG toys are designed to tap into your cat’s natural curiosity and hunting instinct.</p>
+                            <div class="citrusStylesSE-btn-secondary-white">
+                                <a href="" class="citrusStylesSE-url">Shop Cat</a>
+                            </div> 
+                        </div>
+                     </div>
+				</div>
+			</div>
+			<div class="citrusStylesSE-carousel-controls">
+				<span class="prev"></span> <span class="next"></span>
+			</div>
+			<div class="citrusStylesSE-carousel-indicators"></div>
+		</section><!-- End POV section -->
+	</main>
+    <!-- custom js code for POV section -->
+	<script src="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.js"></script>
+</body>
+
+</html>

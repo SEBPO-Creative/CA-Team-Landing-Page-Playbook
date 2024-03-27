@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom-Hero-lifecycle Banner</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
+    <style>
+        /* Bottom-Hero-lifecycle Banner Style */
+        .citrusStylesSE-grid__cell {
+            padding: 0;
+        }
+
+        .citrusStylesSE-educationMedia--lifecyle-section {
+            max-width: 100%;
+            margin: auto;
+            background-color: #F4F7FF;
+            margin-top: 100px;
+        }
+
+        .citrusStylesSE-educationMedia-lifecyle--container {
+            height: 225px;
+            margin: auto;
+        }
+
+        .citrusStylesSE-educationMedia--lifecyle-section .citrusStylesSE-grid {
+            align-items: center;
+        }
+
+        .citrusStylesSE-educationMedia--lifecyle-section img {
+            width: 100%;
+        }
+
+        .citrusStylesSE-section__title p{
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .citrusStylesSE-section__title p.citrusStylesSE-hero-disclaimer {
+            font-size: var(--citrusStylesSE-text-font-size-small);
+            margin-top: calc(var(--citrusStylesSE-spacing-medium) - 1px);
+        }
+
+
+        .citrusStylesSE-educationMedia--lifecyle-section__item img {
+            max-width: 476px;
+        }
+
+
+        @media screen and (max-width:1024px) {
+            .citrusStylesSE-cta__box--color a {
+                width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .citrusStylesSE-educationMedia-lifecyle--container {
+                height: unset;
+            }
+
+            .citrusStylesSE-educationMedia--lifecyle-section .citrusStylesSE-grid{
+                flex-direction: column;
+            }
+
+            .citrusStylesSE-educationMedia--lifecyle-section__item img {
+                margin-top: -50px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 47.99em) {
+            .citrusStylesSE-educationMedia--lifecyle-section .citrusStylesSE-grid {
+                flex-wrap: wrap;
+            }
+        }
+        /* ----------------------------------------- */
+    </style>
+</head>
+
+<body>
+
+    <section class="citrusStylesSE-educationMedia--lifecyle-section">
+        <div class="citrusStylesSE-container">
+            <div
+                class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--large-fit citrusStylesSE-educationMedia-lifecyle--container">
+                <!-- Left column -->
+                <div
+                    class="citrusStylesSE-grid__cell citrusStylesSE-left citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall citrusStyleSE-educationMedia--products-cell">
+                    <div class="citrusStylesSE-educationMedia--lifecyle-section__item">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/petarmor-Image-27"
+                            alt="">
+                    </div>
+                </div>
+                <!-- Right column -->
+                <div
+                    class="citrusStylesSE-grid__cell citrusStylesSE-centered citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-100@xsmall citrusStyleSE-educationMedia--details-cell">
+                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                        <h3 class="citrusStylesSE-header3 citrusStylesSE-PetcoBold">Protect your pet family</h3>
+                        <p class="citrusStylesSE-PetcoRegular">Trusted by over 2 million pet parents*, PetArmor helps you confidently care for your pet at home with convenient, affordable and easy-to-use products.</p>
+                        <p class="citrusStylesSE-hero-disclaimer citrusStylesSE-PetcoRegular">*Numerator panel. Data on file.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

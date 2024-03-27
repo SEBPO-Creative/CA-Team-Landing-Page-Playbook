@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial</title>
+  <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+  <style>
+
+    /*----- Override Splide Slider CSS ------*/
+    .citrusStylesSE-testimonial .splide__arrow {
+      background: #ccc;
+      border: 0;
+      cursor: pointer;
+      height: 2em;
+      opacity: .7;
+    }
+
+    .citrusStylesSE-testimonial .splide__arrow svg {
+      fill: var(--citrusStylesSE-black);
+    }
+
+    .citrusStylesSE-testimonial .splide__arrow:disabled {
+      opacity: 0;
+    }
+
+    .citrusStylesSE-testimonial .splide__arrow {
+      background: unset !important;
+    }
+    /*------ Override Splide Slider CSS End ------*/
+
+    /* Testimonila Card Style */
+    .citrusStylesSE-testimonial {
+      overflow: hidden;
+      background: var(--citrusStylesSE-white);
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+
+    .citrusStylesSE-testimonial-container {
+      max-width: 1246px;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+
+    .citrusStylesSE-testimonial-header {
+      text-align: center;
+    }
+
+    .citrusStylesSE-testimonial-header>h2 {
+      color: var(--citrusStylesSE-black);
+      font-size: var(--citrusStylesSE-text-font-size-xlarge);
+      display: block;
+      padding-bottom: 40px;
+      line-height: 1;
+    }
+
+    .citrusStylesSE-testimonial p {
+      font-size: var(--citrusStylesSE-text-font-size-medium);
+      color: var(--citrusStylesSE-black);
+      display: block;
+      line-height: 1.4;
+    }
+
+    .citrusStylesSE-testimonials-container {
+      display: block;
+      margin: 0 auto;
+      width: 1000px;
+    }
+
+    .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials {
+      background-color: #bce5f6;
+      padding: 50px 50px 50px 200px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 0 0 0 10%;
+      font-size: 16px;
+      min-height: 260px;
+    }
+
+    .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials-img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      margin-top: -25px;
+      margin-left: 0;
+      left: 120px;
+    }
+
+    .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials h2 {
+      font-size: calc(var(--citrusStylesSE-text-font-size-super) + 4px);
+      line-height: 36px;
+      color: var(--citrusStylesSE-primary-navy);
+      margin: 0 0 18px 0;
+    }
+
+    .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials p {
+      margin: 10px 0;
+      font-weight: normal;
+      font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 2px);
+      line-height: 29px;
+      color: var(--citrusStylesSE-primary-navy);
+    }
+    /*------ Testimonila Card Style End ------*/
+
+
+    /*------ Testimonila Card Style Responsive Styles ------*/
+    @media all and (max-width:1280px) {
+      .citrusStylesSE-testimonials-container {
+        width: 70%;
+      }
+    }
+
+    @media all and (max-width:991px) {
+      .citrusStylesSE-testimonial-block {
+        background-color: #bce5f6;
+      }
+
+      .citrusStylesSE-testimonial-container {
+        width: 82%;
+      }
+
+      .citrusStylesSE-testimonials h2 {
+        font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 4px);
+      }
+
+      .citrusStylesSE-testimonials p {
+        font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+        line-height: 20px;
+      }
+
+      .citrusStylesSE-testimonials b {
+        font-size: var(--citrusStylesSE-text-font-size-medium);
+        line-height: 17px;
+      }
+
+      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials {
+        padding: unset;
+      }
+
+      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials-img {
+        top: unset;
+        left: unset;
+        margin: 0 auto;
+        position: relative !important;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media all and (max-width:768px) {
+      .citrusStylesSE-testimonial-block {
+        margin-top: 0px;
+        background-color: #bce5f6;
+      }
+
+      .citrusStylesSE-testimonial-container {
+        width: 90%;
+      }
+
+      .citrusStylesSE-testimonial-header>h2 {
+        padding-bottom: 10px;
+        font-size: 20px;
+        width: 58%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials h2 {
+        font-size: var(--citrusStylesSE-text-font-size-xlarge);
+      }
+
+      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials p {
+        font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 1px);
+        line-height: 17px;
+      }
+
+      .citrusStylesSE-testimonials-container {
+        width: 85%;
+      }
+
+      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials {
+        padding: 10px;
+        margin: 0;
+      }
+
+      .citrusStylesSE-testimonial .splide__arrow {
+        display: none;
+      }
+    }
+
+    @media all and (max-width:575px) {
+      .citrusStylesSE-testimonial {
+        padding-top: 40px;
+        padding-bottom: 42px;
+      }
+    }
+
+    @media all and (max-width:413px) {
+      .citrusStylesSE-testimonial-block {
+        background-color: #bce5f6;
+      }
+
+      .citrusStylesSE-testimonials-container {
+        width: 85%;
+      }
+
+      .citrusStylesSE-testimonials {
+        padding: 10px;
+        margin: 0;
+      }
+
+      .citrusStylesSE-testimonials-img {
+        top: unset;
+        left: unset;
+        margin: 0 auto;
+        position: relative !important;
+        margin-bottom: 20px;
+      }
+    }
+    /*------ Testimonila Card Style Responsive Styles End ------*/
+  </style>
+</head>
+
+<body>
+  <!--===================== Testimonial Card Carousel ==============================-->
+  <section class="citrusStylesSE-testimonial citrusStylesSE-testimonial-block">
+    <div class="citrusStylesSE-testimonial-container">
+      <!-- common header -->
+      <div class="citrusStylesSE-testimonial-header">
+        <h2 class="citrusStylesSE-PetcoBold">JustFoodForDogs transforms dogs’ lives</h2>
+      </div>
+      <div id="citrusStylesSE-testimonial-slider" class="citrusStylesSE-testimonials splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- single item 1-->
+            <li class="splide__slide">
+              <div class="citrusStylesSE-testimonials-container">
+                <div class="citrusStylesSE-testimonials">
+                  <img class="citrusStylesSE-testimonials-img"
+                    src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment1" alt="">
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                    exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
+                  <br>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
+                </div>
+              </div>
+            </li>
+            <!-- single item 2-->
+            <li class="splide__slide">
+              <div class="citrusStylesSE-testimonials-container">
+                <div class="citrusStylesSE-testimonials">
+                  <img class="citrusStylesSE-testimonials-img"
+                    src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment2"
+                    alt="Picture of a happy dog outside">
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                    exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
+                  <br>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
+                </div>
+              </div>
+            </li>
+            <!-- single item 3-->
+            <li class="splide__slide">
+              <div class="citrusStylesSE-testimonials-container">
+                <div class="citrusStylesSE-testimonials">
+                  <img class="citrusStylesSE-testimonials-img"
+                    src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment3"
+                    alt="Picture of a happy, black and white dog">
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                    exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
+                  <br>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===================== End Testimonial Card Carousel ==============================-->
+  <script src="https://ca-team-landing-page-playbook.pages.dev/splide.js"></script>
+
+  <!-- Testimonial Js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", (function () {
+      new Splide("#citrusStylesSE-testimonial-slider", {
+        type: "region", autoplay: true, arrows: !0, pagination: !1, drag: !0, speed: 1e3, perPage: 1
+      }
+      ).mount()
+    }
+    ));
+  </script>
+
+
+</body>
+
+</html>

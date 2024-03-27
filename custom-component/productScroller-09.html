@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Species Product Carousel</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        /* Universal styles */
+        .citrusStylesSE--main {
+            width: 100%;
+            max-width: 1440px;
+            margin: auto;
+        }
+
+        /* Overflow Scrollbar */
+        .citrusStylesSE-species--item::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .citrusX__productCarousel-wrapper,
+        .citrusStylesSE-species--item {
+            scrollbar-width: none;
+        }
+
+        /* End Universal CSS */
+
+        /* Dog Cat Category Section Combined CSS */
+        .citrusStylesSE-species--item {
+            width: 100%;
+            max-width: 1273px;
+            margin: auto;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-species {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-tab-area {
+            overflow: hidden;
+        }
+
+        .citrusStylesSE-species-tab-container.citrusStylesSE-species-tab-container {
+            max-width: 1273px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-species__product {
+            display: none;
+        }
+
+        .citrusStylesSE-species__product img {
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-tab-card--image img {
+            max-width: 100%;
+            max-height: 175px;
+        }
+
+        .citrusStylesSE-product-tab--card>a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .citrusStylesSE-product-tab--card p {
+            color: var(--citrusStylesSE-black-light);
+            font-size: var(--citrusStylesSE-spacing-medium);
+            line-height: 22px;
+            text-align: left;
+            margin: 20px 0 10px;
+            text-decoration: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            max-height: 4em;
+            /*standard size is 4em*/
+            font-weight: 500;
+        }
+
+        .citrusStylesSE-species__product .citrusStylesSE-product-tab--card,
+        .citrusStylesSE-species__product .citrusStylesSE-product-tab--card p {
+            text-align: center;
+        }
+
+        .citrusStylesSE-species--cardBody {
+            padding-top: 20px;
+        }
+        .citrusStylesSE-species--cardBody a{
+            text-decoration: none;
+        }
+
+        .citrusStylesSE-species--cardBody h3 {
+           color: var(--citrusStylesSE-black);
+        }
+
+        .citrusStylesSE-species--cardBody p {
+            margin-top: 10px;
+        }
+
+        p.citrusStylesSE-species--details {
+            margin: auto;
+            padding: 10px 35px;
+            -webkit-line-clamp: 4;
+            min-height: 4em;
+            max-height: unset;
+        }
+
+        .citrusStylesSE-product--cta {
+            border: 0;
+            background: none;
+            text-decoration: underline;
+            color: var(--citrusStylesSE-primary-navy);
+            font-size: var(--citrusStylesSE-PetcoRegular);
+            line-height: 22px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .citrusStylesSE-tab-card--image {
+            padding: 0 10px;
+            margin: auto;
+        }
+
+        .citrusStylesSE__tab_show {
+            display: block;
+        }
+
+        .citrusStylesSE-species--tab {
+            text-transform: uppercase;
+            padding: 12px 20px;
+            padding-top: 0;
+            margin: 0px 10px;
+            font-size: 14px;
+            text-decoration: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 10px solid transparent;
+            cursor: pointer;
+            color: #9b9b9b;
+            line-height: 0.3;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .citrusStylesSE-species--tab span {
+            padding: 15px 0;
+        }
+
+        .citrusStylesSE-species--tab.citrusStylesSE-species-active-tab {
+            color: var(--citrusStylesSE-primary-navy);
+            border-bottom: 10px solid var(--citrusStylesSE-primary-navy);
+            border-radius: 0;
+        }
+
+        .citrusStylesSE-species {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--citrusStylesSE-navy-021B4E);
+        }
+
+        #citrusX__boringToBon {
+            padding-bottom: 10px !important;
+        }
+
+        /* hide arrow */
+        .citrusX_hide_arrow .splide__arrows {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* product section */
+            .citrusStylesSE-species--tab-content {
+                width: 95%;
+                margin: auto;
+            }
+
+            .citrusStylesSE-species {
+                margin: 0 auto 20px;
+            }
+
+            p.citrusStylesSE-species--details {
+                min-height: 4em !important;
+                padding: 10px !important;
+            }
+
+            .splide__arrow {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Landing Page Wrapper -->
+    <main class="citrusStylesSE--main">
+        <!-- Dog Cat boring to bon  carousel section -->
+        <section class="citrusStylesSE-tab-area">
+            <div class="citrusStylesSE-species-tab-container">
+                <div class="citrusStylesSE-section__title">
+                    <h2 class="citrusStylesSE-header2">Section Title Goes Here</h2>
+                    <p class="citrusStylesSE-para">Section Subhead Goes Here</p>
+                </div>
+                <!-- product tab main content -->
+                <!-- Species Item -->
+                <div class="citrusStylesSE-species--item">
+                    <div id="citrusStylesSE-species" class="citrusStylesSE-species">
+                        <button class="citrusStylesSE-species--tab citrusStylesSE-PetcoBold citrusStylesSE-species-active-tab"
+                            onclick="citrusStylesSE__filter_species('citrusStylesSE-dog-product')">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Dog"
+                                alt="Dog icon" />
+                            <span>DOG</span>
+                        </button>
+                        <button class="citrusStylesSE-species--tab citrusStylesSE-PetcoBold"
+                            onclick="citrusStylesSE__filter_species('citrusStylesSE-cat-product')">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/nulo-Icon_Cat"
+                                alt="Cat icon" />
+                            <span>CAT</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- tab button -->
+                <!-- Species Product Content -->
+                <div class=" citrusStylesSE-species--tab-content">
+                    <!-- Dog FOOD product -->
+                    <div id="citrusStylesSE-dog-product" class="splide citrusStylesSE-species--products">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <!-- tab item 01-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-dog-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Dog"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 02-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-dog-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Freeze-Dried-Raw_Dog"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 03-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-dog-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Meaty-Pouches_Dog"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 04-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-dog-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Bone-Broth_Dog"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Dog FOOD product -->
+
+                    <!-- CAT FOOD product -->
+                    <div id="citrusStylesSE-cat-product" class="splide citrusStylesSE-species--products">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <!-- tab item 01-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-cat-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Cat"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 02-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-cat-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Cat"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 03-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-cat-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Cat"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                                <!-- tab item 04-->
+                                <div class="citrusStylesSE-species__product citrusStylesSE-cat-product splide__slide">
+                                    <div class="citrusStylesSE-product-tab--card">
+                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">
+                                            <div class="citrusStylesSE-tab-card--image">
+                                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Nulo_Kibble_Cat"
+                                                    alt="" />
+                                            </div>
+                                            <div class="citrusStylesSE-species--cardBody">
+                                                <h3 class="citrusStylesSE-PetcoBold">Title</h3>
+                                                <p class="citrusStylesSE-species--details citrusStylesSE-PetcoRegular">
+                                                    Product Name and Description Goes Here
+                                                </p>
+                                                <div class="citrusStylesSE-btn-primary-underline-navy">
+                                                    <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                        onclick="clickTrackLink(this)">Shop
+                                                        Now</a>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- tab item -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End TREATS FOOD product row 03 -->
+                </div>
+                <!-- End Species Product Content -->
+                <!-- product tab main content -->
+            </div>
+        </section>
+        <!-- End Dog Cat boring to bon carousel section -->
+    </main>
+    <!-- End Landing Page -->
+
+    <!-- JS Dependency Start-->
+    <script src="https://ca-team-landing-page-playbook.pages.dev/splide.js"></script>
+
+    <!-- dogCat.js -->
+    <script>
+        /**----------------------
+   * product scroller js ---
+   --------------------------*/
+        // tab  carouseljs
+        // initialize product scroller
+        advanceArrowsDogCat("citrusStylesSE-dog-product");
+        function advanceArrowsDogCat(idx) {
+            var splideElement = "#" + idx;
+            var splideDefaultOptions = {
+                arrows: true,
+                type: "slide",
+                start: 0,
+                focus: 0,
+                pagination: false,
+                rewindSpeed: 500,
+                speed: 500,
+                pauseOnHover: true,
+                perPage: 4,
+                perMove: 1,
+                gap: 20,
+                omitEnd: true,
+                breakpoints: {
+                    375: {
+                        perPage: 1.4,
+                    },
+                    425: {
+                        perPage: 1.4,
+                    },
+                    520: {
+                        perPage: 1.4,
+                    },
+                    575: {
+                        perPage: 1.5,
+                    },
+                    991: {
+                        perPage: 2.5,
+                    },
+                    1024: {
+                        perPage: 3,
+                    },
+                    1200: {
+                        perPage: 4,
+                    },
+                },
+            };
+            new Splide(splideElement, splideDefaultOptions).mount();
+        }
+
+        /* ************************************************************************************** */
+        //for tab sweater & loader added
+        document.addEventListener("DOMContentLoaded", function () {
+            citrusStylesSE__filter_species("citrusStylesSE-dog-product");
+        });
+        // for dog filter function
+        function citrusStylesSE__filter_species(c) {
+            var x, i;
+            x = document.getElementsByClassName("citrusStylesSE-species__product");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "citrusStylesSE__tab_show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], " citrusStylesSE__tab_show");
+            }
+            advanceArrowsDogCat(c);
+        }
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        document.addEventListener("DOMContentLoaded", function () {
+            // for dog active class filter
+            var dogBtnContainer = document.getElementById("citrusStylesSE-species");
+            var dogBtns =
+                dogBtnContainer.getElementsByClassName("citrusStylesSE-species--tab");
+            addActiveClass(dogBtns, "citrusStylesSE-species-active-tab");
+        });
+        function addActiveClass(element, activeClass) {
+            for (var i = 0; i < element.length; i++) {
+                element[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName(activeClass);
+                    current[0].className = current[0].className.replace(
+                        " " + activeClass,
+                        ""
+                    );
+                    this.className += " " + activeClass;
+                });
+            }
+        }//for Dog best seller tab switcher
+
+    </script>
+    <!-- End JS Dependency -->
+</body>
+
+</html>

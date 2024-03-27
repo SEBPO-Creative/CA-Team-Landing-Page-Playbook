@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Banner with Buttons</title>
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+			/* Common Styles */
+
+            /* Hero Banner with bg*/
+
+            .citrusStylesSE-heroButtons{
+                background: var(--citrusStylesSE-secondary-navy);
+            }
+
+            .citrusStylesSE-header2{
+                padding: 30px 0 0;
+                text-transform: uppercase;
+            }
+
+            .citrusStylesSE-grid__cell{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .citrusStylesSE-grid__cell:nth-child(1) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                padding: 0 1em;
+            }
+
+            .citrusStylesSE-grid__cell:nth-child(2) {
+                background: #88d6f7;
+            }
+
+            .citrusStylesSE-heroButtons__logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .citrusStylesSE-heroButtons__logo img{
+                max-width: 130px;
+                padding: 0 1em;
+            }
+
+            .citrusStylesSE-heroButtons__pack {
+                max-width: 436px;
+                margin: 0 auto;
+                min-height: 312px;
+            }
+
+
+            @media (min-width: 64em) { /* min-width: 1024px */
+
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-super);
+                    color: var(--citrusStylesSE-white);
+                    line-height: var(--citrusStylesSE-text-font-size-super);
+                }
+
+                .citrusStylesSE-btn-secondary-white .citrusStylesSE-url{
+                    width: 150px;
+                }
+
+                .citrusStylesSE-grid__cell:nth-child(1) {
+                    padding: 0 2em;
+                }
+
+            }
+
+            @media (min-width: 48em){
+                /* min-width:768px ^all the desktop-tab contents*/
+                .citrusStylesSE-heroButtons__logo img:nth-child(1){
+                    border-right: 4px solid var(--citrusStylesSE-white)
+                }
+            }
+
+            @media (max-width: 63.999em) {
+
+                .citrusStylesSE-grid{
+                    justify-content: flex-start;
+                }
+
+                .citrusStylesSE-header2{
+                    color: var(--citrusStylesSE-white);
+                    padding: 20px 0;
+                }
+
+                .citrusStylesSE-heroButtons__logo {
+                    justify-content: flex-start;
+                }
+
+                .citrusStylesSE-btn-secondary-white{
+                    width: 40%;
+                }
+
+                .citrusStylesSE-grid__cell:nth-child(1){
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+
+                .citrusStylesSE-grid__cell:nth-child(2) {
+                    width: 40%;
+                }
+
+                .citrusStylesSE-heroButtons__pack img{
+                    margin-left: -10%;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
+                    line-height: var(--citrusStylesSE-text-font-size-xlarge);
+                }
+
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                /* Hero Banner with bg */
+                .citrusStylesSE-grid__cell:nth-child(1) {
+                    align-items: flex-start;
+                }
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 2px);
+                    line-height: normal;
+                    color: var(--citrusStylesSE-white);
+                }
+                
+                .citrusStylesSE-btn-secondary-white {
+                    width: 100%;
+                    justify-content: flex-start;
+                    padding: 0 0 0 10px;
+                }
+
+                .citrusStylesSE-heroButtons__logo img{
+                    max-width: 85px;
+                    padding: 0;
+                }
+
+                
+                .citrusStylesSE-header2{
+                    text-align: left;
+                    padding: 20px 0 20px 10px;
+                }
+
+                .citrusStylesSE-heroButtons__pack {
+                    min-height: 214px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                
+            }
+
+            @media screen and (max-width: 29.99em) {
+                .citrusStylesSE-heroButtons__logo img {
+                    max-width: 75px;
+                }
+            }
+
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+<body>
+    <main class="citrusStylesSE-main">
+		<!-- Hero Banner start -->
+		<section class="citrusStylesSE-container citrusStylesSE-heroButtons">
+			<div class="citrusStylesSE-grid citrusStylesSE-grid--center">
+                <div class="citrusStylesSE-grid__cell">
+                    <div class="citrusStylesSE-textWrapper">
+                        <div class="citrusStylesSE-heroButtons__logo">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-logo-white" alt="AltText">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-true-chews" alt="AltText">
+                        </div>
+                        <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">The answer is True.™</h2>
+                    </div>
+                    <div class="citrusStylesSE-btn-secondary-white">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-grid__cell">
+                    <div class="citrusStylesSE-heroButtons__pack">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-hero_pov1" alt="AltText">
+                    </div>
+                </div>
+            </div>
+		</section><!-- Hero Banner End -->
+	</main>
+</body>
+
+</html>

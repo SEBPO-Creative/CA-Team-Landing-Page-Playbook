@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Content Type 02</title>
+    <!-- css library -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        .citrusStylesSE-comparisonTable::-webkit-scrollbar,
+        .citrusRoyal-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .citrusStylesSE-comparisonTable {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        #citrusStylesSE-comparisonContainer-fluid {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .citrusStylesSE-comparisonTable {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-comparisonContainer {
+            width: 1085px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        .citrusStylesSE-comparison__row {
+            padding: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr repeat(3, 2fr);
+            height: 100%;
+            align-items: center;
+            border-bottom: 1px solid #e2e2e2;
+        }
+
+        .citrusStylesSE-comTitle h2 {
+            margin: 0;
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+            color: var(--citrusStylesSE-black);
+        }
+
+        .citrusStylesSE-comparison__row:first-child {
+            margin-top: 50px;
+            border-bottom: none;
+            padding: 0;
+        }
+
+        #citrusStylesSE-titleRow {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .citrusStylesSE-comparison__titleLogo img {
+            width: 204px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-0,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-1,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: var(--citrusStylesSE-font-family-PetcoRegular) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-0 img,
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-1 img {
+            width: 250px;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__row .citrusStylesSE-col-2 img {
+            width: 105px;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-comparison__rowTitle,
+        .citrusStylesSE-comparison__rowText {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+
+        .citrusStylesSE-comparison__rowTitle img,
+        .citrusStylesSE-comparison__rowText img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .citrusStylesSE-featurePackage-title01 p,
+        .citrusStylesSE-featurePackage-title02 p,
+        .citrusStylesSE-featurePackage-title03 p {
+            margin: 0;
+            padding: 0 30px;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .citrusStylesSE-featurePackage-title01 p,
+        .citrusStylesSE--heder01 {
+            color: #74613c;
+            line-height: 19px;
+        }
+
+        .citrusStylesSE-featurePackage-title02 p,
+        .citrusStylesSE--heder02 {
+            color: #701283;
+            line-height: 19px;
+        }
+
+        .citrusStylesSE-featurePackage-title03 p,
+        .citrusStylesSE--heder03 {
+            color: #628fb5;
+        }
+
+        .citrusStylesSE-comparison__rowTitle p {
+            margin: 0;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+            line-height: 19px;
+        }
+
+        .citrusStylesSE-comparison__rowText p {
+            font-family: var(--citrusStylesSE-font-family-PetcoRegular) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+            color: var(--citrusStylesSE-black-light);
+        }
+
+        .citrusStylesSE-rowBorder-0 {
+            border-bottom: none;
+        }
+
+        .citrusStylesSE-mb-30 {
+            margin-bottom: 30px;
+        }
+
+        p.citrusStylesSE-disclaimer {
+            margin: auto;
+            width: 868px;
+            max-width: 100%;
+            color: var(--citrusStylesSE-black);
+        }
+
+        /*----------------------------------- responsive styling------------------------------------- */
+        @media all and (min-width: 768px) and (max-width: 1200px) {
+            .citrusStylesSE-comparisonContainer {
+                padding-left: 5%;
+            }
+        }
+
+        @media all and (max-width: 767px) {
+
+            p.citrusStylesSE-disclaimer {
+                margin-top: 0;
+                padding-bottom: 20px;
+            }
+
+            .citrusStylesSE-comparisonContainer {
+                width: 870px;
+            }
+
+            .citrusStylesSE-comparisonContainer {
+                padding-left: 5%;
+            }
+
+            .citrusStylesSE-comparison__row {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media all and (max-width: 360px) {
+            p.citrusStylesSE-disclaimer {
+                padding-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="citrusStylesSE-container">
+        <div class="citrusStylesSE-section__title">
+            <h2 class="citrusStylesSE-header2">Waterproof formulas proven to protect for a full 30 days</h2>
+        </div>
+        <div class="citrusStylesSE-comparisonTable">
+            <div class="citrusStylesSE-comparisonContainer">
+                <!-- product title row -->
+                <div class="citrusStylesSE-comparison__row citrusStylesSE-comTitle">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-col-1">
+                        <h2>FRONTLINE<sup>®</sup> Gold for Dogs or Cats</h2>
+                    </div>
+                    <div class="citrusStylesSE-col-1">
+                        <h2>FRONTLINE<sup>®</sup> Plus for Dogs or Cats</h2>
+                    </div>
+                    <div class="citrusStylesSE-col-2">
+                        <h2>FRONTLINE<sup>®</sup> Shield for Dogs</h2>
+                    </div>
+                </div>
+                <!-- title row -->
+                <div id="citrusStylesSE-titleRow" class="citrusStylesSE-comparison__row">
+                    <div class="citrusStylesSE-comparison__titleLogo citrusStylesSE-m-hide">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-Frontline-Logo"
+                            alt="Frontline Brand Products">
+                    </div>
+                    <div class="citrusStylesSE-col-0">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product01-image-top"
+                            alt="Pack shots of Frontline Gold for Dogs and Cats">
+                    </div>
+                    <div class="citrusStylesSE-col-1">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product02-image-top"
+                            alt="Pack shots of Frontline Plus for Dogs and Cats">
+                    </div>
+                    <div class="citrusStylesSE-col-2">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-find-the-right-shield-dog"
+                            alt="Pack shot of Frontline Shield for Dogs">
+                    </div>
+                </div><!-- row -->
+                <div class="citrusStylesSE-comparison__row">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-featurePackage-title01">
+                        <p>Triple-action formula that works to break the flea life cycle</p>
+                    </div>
+                    <div class="citrusStylesSE-featurePackage-title02">
+                        <p>Fast-acting, long-lasting<br>flea & tick protection</p>
+                    </div>
+                    <div class="citrusStylesSE-featurePackage-title03">
+                        <p>Repels ticks that may transmit Lyme disease and mosquitoes that may transmit heartworm
+                            disease</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="citrusStylesSE-comparison__row">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowTitle">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product01.1-Dropper-Icon"
+                            alt="Applicator icon">
+                        <p class="citrusStylesSE--heder01">Easy-to-use applicator</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowTitle">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product02.1-Hand-Heart-Icon"
+                            alt="Heart in hands icon">
+                        <p class="citrusStylesSE--heder02">Trusted by pet owners for over 20 years*</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowTitle">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product03.1-Ticks-Mosquitoes-Icon"
+                            alt="Ticks, mosquitoes and flies icon">
+                        <p class="citrusStylesSE--heder03">Repellency action against ticks, mosquitoes and stable flies
+                        </p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="citrusStylesSE-comparison__row">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product01.2-Gold-Flea-Icon"
+                            alt="Flea icon">
+                        <p>Kills fleas, eggs and larvae</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product02.2-Purple-Flea-Icon"
+                            alt="Flea icon">
+                        <p>Kills fleas, eggs and larvae</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product03.2-Blue-Flea-Icon"
+                            alt="Flea icon">
+                        <p>Kills fleas, eggs and larvae</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="citrusStylesSE-comparison__row">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product01.3-Gold-Tick-Icon"
+                            alt="Tick icon">
+                        <p>Kills ticks</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product02.3-Purple-Tick-Icon"
+                            alt="Tick icon">
+                        <p>Kills ticks</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product03.3-Blue-Tick-Icon"
+                            alt="Tick icon">
+                        <p>Kills ticks</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product01.4-Gold-Lice-Icon"
+                            alt="Lice icon">
+                        <p>Kills chewing lice</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product02.4-Purple-Lice-Icon"
+                            alt="Lice icon">
+                        <p>Kills chewing lice</p>
+                    </div>
+                    <div class="citrusStylesSE-comparison__rowText">
+                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-product03.4-Blue-Lice-Icon"
+                            alt="Lice icon">
+                        <p>Kills chewing lice</p>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0 citrusStylesSE-mb-30">
+                    <div class="citrusStylesSE-m-hide">
+                        <!-- this div stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-gold"
+                            manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlinegold:shop now"
+                            onclick="clickTrackLink(this);">Shop Now</a>
+                    </div>
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-plus"
+                            manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlineplus:shop now"
+                            onclick="clickTrackLink(this);">Shop Now</a>
+                    </div>
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-shield"
+                            manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlineshield:shop now"
+                            onclick="clickTrackLink(this);">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="citrusStylesSE-disclaimer">*Data
+            showing 20
+            years of trust in killing fleas & ticks is on file at Boehringer Ingelheim. FRONTLINE<sup>®</sup> is a
+            registered trademark of Boehringer Ingelheim Animal Health France, used under license.
+            <br class="citrusStylesSE-d-hide">US-PET-0695-2022
+        </p>
+    </section>
+</body>
+
+</html>

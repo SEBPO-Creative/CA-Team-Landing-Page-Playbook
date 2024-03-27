@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hero Banner with Background images</title>
+        <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+        <style>
+
+            .citrusStylesSE-para{
+                text-align: center;
+                padding: 10px 0 15px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .citrusStylesSE-grid{
+                min-height: 312px;
+                background-size: 100% 100%;
+            }
+
+            .citrusStylesSE-grid__cell:nth-child(2){
+                padding: 0 2em;
+            }
+
+            .citrusStylesSE-para{
+                padding: 20px 0;
+            }
+
+            @media (min-width: 64em) { /* min-width: 1024px */
+
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
+                    color: var(--citrusStylesSE-primary-navy);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
+                }
+
+                .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+            }
+
+            @media (min-width: 48em){
+                /* min-width:768px ^all the desktop-tab contents*/
+                .citrusStylesSE-grid{
+                    background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_footer-x");
+                    background-repeat: no-repeat;
+                }
+            }
+
+            @media (max-width: 63.999em) {
+
+                .citrusStylesSE-grid {
+                    min-height: 250px;
+                }
+
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-large);
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-para{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-small) - 2px);
+                    color: var(--citrusStylesSE-primary-navy);
+                    text-align: center;
+                    padding: 15px 0;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
+                    line-height: var(--citrusStylesSE-text-font-size-xlarge);
+                }
+
+                .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    padding: 15px 0;
+                }
+
+            }
+
+            @media (max-width: 47.99em) { /* max-width: 767.99px */
+
+                /* Hero Banner with bg */
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    padding: 15px 0;
+                    color: var(--citrusStylesSE-primary-navy);
+                }
+
+                .citrusStylesSE-grid__cell {
+                    flex: 0 0 100%;
+                    padding: 1em;
+                }
+
+                .citrusStylesSE-grid__cell:nth-child(2){
+                    padding: 1.5em 1em;
+                }
+
+                .citrusStylesSE-grid{
+                    flex-direction: column;
+                }
+
+                
+            }
+
+		
+
+            /* ----------------------------------------- */
+        </style>
+    </head>
+
+<body>
+    <main class="citrusStylesSE-main">
+		<!-- Hero Banner start -->
+		<section class="citrusStylesSE-container citrusStylesSE-heroBanner">
+			<div class="citrusStylesSE-grid citrusStylesSE-grid--xlarge-fit citrusStylesSE-grid--center">
+                <div class="citrusStylesSE-grid__cell">
+                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_mobile-footer" alt="" class="citrusStylesSE-d-hide">
+                </div>
+                <div class="citrusStylesSE-grid__cell">
+                    <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">About ORIJEN dog and cat nutrition</h2>
+                    <p class="citrusStylesSE-para citrusStylesSE-centered">Made with at least 85%* premium animal ingredients, ORIJEN offers essential protein, vitamins and minerals your pet needs to thrive.</p>
+                </div>
+            </div>
+		</section><!-- Hero Banner End -->
+	</main>
+</body>
+
+</html>

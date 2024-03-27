@@ -1,0 +1,568 @@
+<!-- DES-1819 design -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Content Type 01</title>
+    <!-- css library -->
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+
+    <style>
+        /* hide scroll bar */
+        .citrusStylesSE-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* hide scroll bar IE firefox */
+        .citrusStylesSE-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .citrusStylesSE-table--container {
+            width: 1440px;
+            max-width: 100%;
+            margin: auto;
+            overflow: auto;
+        }
+
+        .citrusStylesSE-table {
+            width: 1440px;
+        }
+
+        .citrusStylesSE-table .citrusStylesSE-table--row {
+            position: relative;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .citrusStylesSE-table .citrusStylesSE-table--row .citrusStylesSE-table--col-2 {
+            width: 263px;
+        }
+
+        .citrusStylesSE-table .citrusStylesSE-table--row.thead .citrusStylesSE-table--col-2 img {
+            max-width: 210px;
+        }
+
+        .citrusStylesSE-table--row .citrusStylesSE-table--col-2 {
+            border-right: 5px solid rgba(100, 201, 209, 0.3);
+            border-left: 5px solid rgba(100, 201, 209, 0.3);
+        }
+
+        .citrusStylesSE-table--row.thead .citrusStylesSE-table--col-2 {
+            border-top: 5px solid rgba(100, 201, 209, 0.3);
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .citrusStylesSE-table--row .citrusStylesSE-table--col-2.bottom-radius-border {
+            border-bottom: 5px solid rgba(100, 201, 209, 0.3);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .citrusStylesSE-table .thead img {
+            padding: 3em 0;
+            max-width: 133px;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-table--Cell-title h2 {
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+            color: var(--citrusStylesSE-black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 73px;
+            font-weight: 700;
+        }
+
+        .citrusStylesSE-bottom-border {
+            border-bottom: 1px solid #aeaeae;
+        }
+
+        .citrusStylesSE-check-mark,
+        .citrusTrio__radio {
+            height: 73px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .citrusStylesSE-check-mark img {
+            width: 17.17px;
+            height: 20px;
+            object-fit: contain;
+            margin: auto;
+        }
+
+        .citrusTrio__radio img {
+            width: 14.31px;
+            height: 15px;
+            object-fit: contain;
+            margin: auto;
+        }
+
+        .bg-gray-100 {
+            background: #d9d9d9;
+        }
+
+        .bg-gray {
+            background: rgba(217, 217, 217, 0.3);
+        }
+
+        .citrusStylesSE-chart-cta {
+            margin: auto;
+            margin-top: 11px;
+            margin-bottom: 20px;
+            width: 203px;
+            height: 63px;
+            padding: 0;
+            line-height: 63px;
+            border-radius: 5px;
+            background: var(--citrusStylesSE-primary-navy);
+        }
+
+        .chart-disclaimer {
+            width: 400px;
+            position: absolute;
+            left: 33%;
+            top: 27px;
+        }
+
+        .chart-disclaimer .citrusStylesSE-disclaimer {
+            margin: 0 0 0 10px;
+            text-align: left;
+            font-size: var(--citrusStylesSE-text-font-size-small) !important;
+        }
+
+        .citrusStylesSE-url {
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
+            color: var(--citrusStylesSE-white);
+        }
+
+        @media screen and (max-width: 767px) {
+
+            .citrusStylesSE-table {
+                width: 1000px;
+            }
+
+            .citrusStylesSE-table .citrusStylesSE-table--row .citrusStylesSE-table--col-2 {
+                width: 182px;
+            }
+
+            .citrusStylesSE-table .citrusStylesSE-table--row.thead .citrusStylesSE-table--col-2 img {
+                max-width: 140px;
+            }
+
+            .citrusStylesSE-table .thead img {
+                padding: 1em 0;
+                max-width: 98px;
+                text-align: center;
+            }
+
+            .citrusStylesSE-table--row.citrusStylesSE-table--Cell-title h2 {
+                font-size: var(--citrusStylesSE-text-font-size-medium);
+            }
+
+            .citrusStylesSE-table--Cell-title h2 {
+                font-size: var(--citrusStylesSE-text-font-size-small);
+                height: 49px;
+            }
+
+            .citrusStylesSE-check-mark,
+            .citrusTrio__radio {
+                height: 49px;
+            }
+
+            .citrusStylesSE-chart-cta {
+                width: max-content;
+                background: unset;
+            }
+
+            .citrusStylesSE-url {
+                color: var(--citrusStylesSE-primary-navy);
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="citrusStylesSE-container">
+        <div class="citrusStylesSE-section__title">
+            <h2 class="citrusStylesSE-header2">The Simparica Trio difference</h2>
+        </div>
+        <div class="citrusStylesSE-container citrusStylesSE-table--container">
+            <div class="citrusStylesSE-table">
+                <!-- row 01 -->
+                <div class="citrusStylesSE-table--row thead">
+                    <div class="citrusStylesSE-table--col-1">
+                        <!-- stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots1"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-table--col-3">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots2"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots3"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-table--col-5">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots4"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots5"
+                            alt="">
+                    </div>
+                    <div class="citrusStylesSE-table--col-7">
+                        <img class="citrusStylesSE-img"
+                            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots6"
+                            alt="">
+                    </div>
+                </div>
+                <!-- row 02 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-table--Cell-title citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1">
+                        <h2 class="citrusStylesSE-header2">Benefit*</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <h2 class="citrusStylesSE-header2">Simparica Trio </h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3">
+                        <h2 class="citrusStylesSE-header2">Nexgard Plus </h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <h2 class="citrusStylesSE-header2">Heartgard Plus </h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5">
+                        <h2 class="citrusStylesSE-header2">Bravecto</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <h2 class="citrusStylesSE-header2">Credelio</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7">
+                        <h2 class="citrusStylesSE-header2">Interceptor Plus </h2>
+                    </div>
+                </div>
+                <!-- row 03 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Prevents Lyme <br>Infections**</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 04 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Prevents Heartworm <br>Disease</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 05 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Kills 5 Types <br>of Ticks</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 citrusStylesSE-table--Cell-title bg-gray">
+                        <h2 class="citrusStylesSE-header2">4 Types</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6 citrusStylesSE-table--Cell-title">
+                        <h2 class="citrusStylesSE-header2">4 Types</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 06 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Kills Fleas</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 07 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Treats Roundworms <br>and Hookworms</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 08 -->
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
+                    <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
+                        <h2 class="citrusStylesSE-header2">Approved for Dogs <br>8 Weeks and Older</h2>
+                    </div>
+                    <div class="citrusStylesSE-table--col-2">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-4">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-5 bg-gray">
+                        <div class="citrusTrio__radio">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__radio"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-6">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-7 bg-gray">
+                        <div class="citrusStylesSE-check-mark">
+                            <img class="citrusStylesSE-img"
+                                src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__check-mark"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 09 -->
+                <div class="citrusStylesSE-table--row">
+                    <div class="citrusStylesSE-table--col-1">
+                        <!-- this should be stay blank -->
+                    </div>
+                    <div class="citrusStylesSE-table--col-2 bottom-radius-border">
+                        <div class="citrusStylesSE-chart-cta">
+                            <a class="citrusStylesSE-url"
+                                href="https://www.petco.com/shop/en/petcostore/brand/simparica-trio"
+                                manual_cm_sp="sponsoredbrandpage:simparicatrio:comparisonchart:1:thesimparicatriodifference:shopnow"
+                                onclick="clickTrackLink(this);">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="citrusStylesSE-table--col-3 chart-disclaimer">
+                        <p class="citrusStylesSE-disclaimer">
+                            *Source: brand websites 10/6/2023.
+                            <br>
+                            **As a direct result of killing deer ticks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

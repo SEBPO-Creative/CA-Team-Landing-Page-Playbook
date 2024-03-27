@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article2up-in-image-copy</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <style>
+        .citrusStylesSE-article2up {
+            overflow: auto;
+        }
+
+        .citrusStylesSE-article2up--container {
+            width: 1094px;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .citrusStylesSE-article2up--card {
+            background-color: var(--citrusStylesSE-silver);
+        }
+
+        .citrusStylesSE-article2up-card--image {
+            height: 300px;
+            background-color: var(--citrusStylesSE-secondary-navy);
+        }
+
+        .citrusStylesSE-article2up-card--image img {
+            width: 100%;
+            height: inherit;
+            object-fit: contain;
+        }
+
+        .citrusStylesSE-article2up-card--details {
+            height: 214px;
+            flex-direction: column;
+        }
+
+        .citrusStylesSE-article2up-card--details h3 {
+            font-size: var(--citrusStylesSE-text-font-size-large);
+            line-height: initial;
+            color: var(--citrusStylesSE-black);
+            margin: 0;
+        }
+
+        .citrusStylesSE-article2up-card--details h2,
+        .citrusStylesSE-article2up-card--details p {
+            margin: 0;
+        }
+
+        .citrusStylesSE-article2up-card--details p {
+            padding: 25px 25px 30px 25px;
+            font-size: var(--citrusStylesSE-text-font-size-medium);
+            line-height: calc(var(--citrusStylesSE-text-font-size-large) + 1px);
+            color: var(--citrusStylesSE-black);
+        }
+
+        .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .citrusStylesSE-article-in-image-section {
+            height: 100%;
+        }
+
+        .citrusStylesSE-article-image-copy {
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .citrusStylesSE-article-image-copy img {
+            max-width: 130px;
+            margin: 0 auto;
+        }
+
+        .citrusStylesSE-article-image-copy h4 {
+            margin: 0;
+            color: var(--citrusStylesSE-white);
+            font-size: var(--citrusStylesSE-text-font-size-medium);
+            line-height: var(--citrusStylesSE-text-font-size-medium);
+            padding-top: calc(var(--citrusStylesSE-spacing-medium) + 4px);
+            min-height: calc(var(--citrusStylesSE-spacing-super) - 6px );
+        }
+
+        #citrusStylesSE-article-image-copy--middle-column {
+            border-left: 5px solid rgb(255, 255, 255);
+            border-right: 5px solid rgb(255, 255, 255);
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .citrusStylesSE-article2up::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .citrusStylesSE-article2up {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        @media screen and (max-width: 767px) {
+            .citrusStylesSE-article2up--container {
+                width: 900px;
+            }
+
+            .citrusStylesSE-article2up-card--image {
+                height: 314px;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 300px;
+            }
+
+            #citrusStylesSE-article-image-copy--middle-column {
+                border-left: 3px solid rgb(255, 255, 255);
+                border-right: 3px solid rgb(255, 255, 255);
+            }
+
+            .citrusStylesSE-article-image-copy h3 {
+                font-size: calc(var(--citrusStylesSE-text-font-size-xsmall)+2px);
+                line-height: calc(var(--citrusStylesSE-spacing-small) + 2px);
+            }
+        }
+
+        @media screen and (max-width: 520px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 230px;
+            }
+        }
+
+        @media screen and (max-width: 475px) {
+            .citrusStylesSE-article2up-card--image {
+                height: 220px;
+            }
+
+            .citrusStylesSE-article-image-copy img {
+                max-width: 60px;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .citrusStylesSE-article2up-card--details h3 {
+                font-size: var(--citrusStylesSE-text-font-size-medium);
+            }
+
+            .citrusStylesSE-article2up-card--details p {
+                padding: 15px 15px;
+            }
+
+            .citrusStylesSE-article2up-card--image {
+                height: 210px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Article 2 up Box In iamge Copy Box Start -->
+    <section class="citrusStylesSE-article2up">
+        <div
+            class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-fit citrusStylesSE-grid--small-fit citrusStylesSE-grid--medium-fit citrusStylesSE-grid--no-gutter citrusStylesSE-article2up--container">
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-30@xsmall citrusStylesSE-article2up--card">
+                <div class="citrusStylesSE-article2up-card--image">
+                    <img alt="placeholder" class="citrusStylesSE-image"
+                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_product1">
+                </div>
+                <div class="citrusStylesSE-article2up-card--details citrusStylesSE-grid citrusStylesSE-grid--center ">
+                    <h3 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">
+                        Heading Goes Here, 18px - 20px.
+                    </h3>
+                    <p class="citrusStylesSE-centered citrusStylesSE-PetcoRegular">Subhead line goes here. 14px-16px. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-50@large citrusStylesSE-grid__cell--width-50@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall citrusStylesSE-article2up--card">
+                <div class="citrusStylesSE-article2up-card--image">
+                    <div class="citrusStylesSE-grid citrusStylesSE-article-in-image-section">
+                        <div class="citrusStylesSE-grid citrusStylesSE-grid__cell citrusStylesSE-article-image-copy ">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
+                                alt="">
+                            <h4 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">PetcoCircular-Bold. font size 16px</h4>
+                        </div>
+                        <div class="citrusStylesSE-grid citrusStylesSE-grid__cell citrusStylesSE-article-image-copy"
+                            id="citrusStylesSE-article-image-copy--middle-column">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
+                                alt="">
+                            <h4 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">Font size 16px</h4>
+                        </div>
+                        <div class="citrusStylesSE-grid citrusStylesSE-grid__cell citrusStylesSE-article-image-copy">
+                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_tidyCat_exploere_icon1"
+                                alt="">
+                            <h4 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">PetcoCircular-Bold.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="citrusStylesSE-article2up-card--details citrusStylesSE-grid citrusStylesSE-grid--center ">
+                    <h3 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">
+                        Heading Goes Here, 18px - 20px.
+                    </h3>
+                    <p class="citrusStylesSE-centered citrusStylesSE-PetcoRegular">Subhead line goes here. 14px-16px. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Article 2 up Box In iamge Copy Box -->
+</body>
+
+</html>
