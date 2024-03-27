@@ -8,25 +8,17 @@
     <title>Education - FAQ -- Hero Banner</title>
     <!-- citrusStylesSE library css -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         :root {
-            --citrusStylesSE-grid-gutter: .75em;
-            --citrusStylesSE-border-radius-8: 8px;
+            --citrusStylesSE-grid-gutter: .50em;
         }
-
-        .citrusStylesSE-section__title {
-            padding: 2.5em 1em;
-            text-align: center;
-        }
-
-        .citrusStylesSE-grid--cards
+        .citrusStylesSE-grid__cards
         {
         width: 74em;
         max-width: 100%;
         overflow-x: auto;
         margin: auto;
-        padding: 0.5em 0;
+        padding: var(--citrusStylesSE-spacing-small) 0;
         }
         .citrusStylesSE-card
         {
@@ -34,7 +26,11 @@
         background-color: #f1efd9;
         border-radius: 0;
         }
-        .citrusStylesSE-card .citrusStylesSE-section__title
+        .citrusStylesSE-grid__cards__elm {
+            padding:  var(--citrusStylesSE-spacing-xlarge) var(--citrusStylesSE-spacing-medium);
+            text-align: center;
+        }
+        .citrusStylesSE-card .citrusStylesSE-grid__cards__elm
         {
             min-height: 90px;
         }
@@ -42,26 +38,23 @@
             width: 100%;
             object-fit: contain;
         }
-        .citrusStylesSE-section__title .citrusStylesSE-para
+        .citrusStylesSE-grid__cards__elm .citrusStylesSE-para
         {
             max-width: 270px;
+            padding: var(--citrusStylesSE-spacing-small) var(--citrusStylesSE-spacing-small);
             margin: 0 auto;
         }
-        /* overflow scroll bar hide */
-        .citrusStylesSE-grid--cards::-webkit-scrollbar,
-        .citrusStylesSE-grid--cards::-webkit-scrollbar {
-        display: none;
-        }
 
-        @media all and (max-width: 1100px) {
-            .citrusStylesSE-card .citrusStylesSE-section__title
+        @media all and (max-width: 68.999em) {
+            .citrusStylesSE-card .citrusStylesSE-grid__cards__elm
             {
                 min-height: 160px;
-                padding: 1.5em 1em;
+                padding: var(--citrusStylesSE-spacing-medium) var(--citrusStylesSE-spacing-small);
+                
             }
         }
 
-        @media all and (max-width: 767px) {
+        @media all and (max-width: 47.999em) {
             .citrusStylesSE-card {
             width: 267px;
             }
@@ -70,7 +63,7 @@
             }
         }
 
-        @media all and (max-width: 375px) {
+        @media all and (max-width: 23.999em) {
             .citrusStylesSE__sectionTitle {
                 font-size: 20px;
                 line-height: 24px;
@@ -92,13 +85,13 @@
             <h2 class="citrusStylesSE-header2">ACANA commitments</h2>
         </div>
 
-        <div class="citrusStylesSE-grid citrusStylesSE-grid--cards">
+        <div class="citrusStylesSE-grid citrusStylesSE-grid__cards citrusStylesSE-no-scrollbar">
             <div class="citrusStylesSE-grid__cell">
                 <div class="citrusStylesSE-card">
                     <div class="citrusStylesSE-card__img">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_whole_food_nutrition" alt="">
                     </div>
-                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <div class="citrusStylesSE-grid__cards__elm citrusStylesSE-centered">
                       <h3 class="citrusStylesSE-header3">Whole food nutrition</h3>
                       <p class="citrusStylesSE-para">Complete and balanced recipes made with ingredients you know and love.</p>
                     </div>
@@ -110,7 +103,7 @@
                     <div class="citrusStylesSE-card__img">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_care_at_every_step" alt="">
                     </div>
-                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <div class="citrusStylesSE-grid__cards__elm citrusStylesSE-centered">
                       <h3 class="citrusStylesSE-header3">Care at every step</h3>
                       <p class="citrusStylesSE-para">Nutritious ingredients delivered daily by trusted suppliers.</p>
                     </div>
@@ -122,7 +115,7 @@
                     <div class="citrusStylesSE-card__img">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_visible_vibrancy" alt="">
                     </div>
-                    <div class="citrusStylesSE-section__title citrusStylesSE-centered">
+                    <div class="citrusStylesSE-grid__cards__elm citrusStylesSE-centered">
                       <h3 class="citrusStylesSE-header3">Visible vibrancy and health</h3>
                       <p class="citrusStylesSE-para">Carefully crafted to help support your pet’s long-term wellbeing.</p>
                     </div>

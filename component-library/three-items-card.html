@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
+    <link rel="stylesheet" href="../demo.css">
+    <link rel="stylesheet" href="../prism.css">
+</head>
+<body>
+   
+	<main class="citrusStylesSE-container citrusStylesSE-container--large">
+		<h1 class="citrusStylesSE-heading u-super">Grid</h1>
+		<p class="citrusStylesSE-paragraph">The grid is the easiest way to produce a fluid responsive layout. Its easy to use and very flexible.</p>
+		<p class="citrusStylesSE-paragraph">color key:</p>
+		<div class="citrusStylesSE-grid-key citrusStylesSE-grid-key--grid">
+			— grids are pink
+		</div>
+		<div class="citrusStylesSE-grid-key citrusStylesSE-grid-key--grid-cell">
+			— cells are blue
+		</div>
+		<div class="citrusStylesSE-grid-key citrusStylesSE-grid-key--padding">
+			— padding is green
+		</div>
+		<p></p>
+		<h2 class="citrusStylesSE-heading u-xlarge" id="basic">Basic Grid</h2>
+		<p class="citrusStylesSE-paragraph">Use the <code class="u-code">.citrusStylesSE-grid</code> class to wrap your <code class="u-code">.citrusStylesSE-grid__cell</code> elements.</p>
+		<div aria-label="Demo component" class="demo-markup-source citrusStylesSE-letter-box-small">
+			<div class="citrusStylesSE-grid citrusStylesSE-grid--demo">
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-grid-text">
+						first
+					</div>
+				</div>
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-grid-text">
+						second
+					</div>
+				</div>
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-grid-text">
+						third
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="citrusStylesSE-letter-box-small">
+			<pre class="u-pre"><code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1">
+				<span class="hljs-tag">&lt;
+					<span class="hljs-name">div</span> 
+						<span class="hljs-attr">class</span>=<span class="hljs-string">
+					"citrusStylesSE-grid citrusStylesSE-grid--demo"
+				</span>
+				&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid__cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid-text"</span>&gt;</span>first<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid__cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid-text"</span>&gt;</span>second<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid__cell"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid-text"</span>&gt;</span>third<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+		</div>
+		
+
+		<section class="citrusStylesSE-container citrusStylesSE-container--xlarge">
+
+			<pre class="u-pre">
+				<code aria-hidden="" class="u-code u-code--multiline language-html hljs language-xml" contenteditable="" tabindex="-1">
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-section__title"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-header3"</span>&gt;</span>Love is in the Details<sup>&#174;</sup><span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+		<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid citrusStylesSE-grid--cards"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-grid__cell"</span>&gt;</span>
+				<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card"</span>&gt;</span>
+					<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"citrusStylesSE-card__img"</span>&gt;</span>
+						<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://placehold.co/722x460/png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+					<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+				<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+			<div class="citrusStylesSE-section__title">
+				<h3 class="citrusStylesSE-header3">Love is in the Details<sup>&#174;</sup></h3>
+			</div>
+
+
+			<div class="citrusStylesSE-grid citrusStylesSE-grid--cards">
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-card">
+						<div class="citrusStylesSE-card__img">
+							<img src="https://placehold.co/722x460/png" alt="">
+						</div>
+						<div class="citrusStylesSE-card__body">
+						  <h3>Crafted with 40 years of love</h3>
+						  <p>Fancy Feast has been setting the standard for delicious, gourmet cat food since 1982.</p>
+						</div>
+					  </div>
+				</div>
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-card">
+						<div class="citrusStylesSE-card__img">
+							<img src="https://placehold.co/722x460/png" alt="">
+						</div>
+						<div class="citrusStylesSE-card__body">
+						  <h3>Irresistible recipes</h3>
+						  <p>From smooth patés to delightfully crunchy morsels and delicate broths, there’s a plate for any palate.</p>
+						</div>
+					  </div>
+				</div>
+				<div class="citrusStylesSE-grid__cell">
+					<div class="citrusStylesSE-card">
+						<div class="citrusStylesSE-card__img">
+							<img src="https://placehold.co/722x460/png" alt="">
+						</div>
+						<div class="citrusStylesSE-card__body">
+						  <h3>High-quality nutrition</h3>
+						  <p>Real seafood, poultry or beef. Aged cheddar. A touch of milk. Fancy Feast knows what cats crave.</p>
+						</div>
+					  </div>
+				</div>                   
+			</div>
+			<div class="citrusStylesSE-letter-box-large">
+				<div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+					<a href="" class="citrusStylesSE-url">Shop Fancy Feast</a>
+				</div>
+			</div>
+			<div class="citrusStylesSE-section__title">
+				<h3 class="citrusStylesSE-header3">Impeccable delights for your cat</h3>
+			</div>
+				</code>	
+			</pre>
+		</section>
+
+	</main>
+
+       
+        <!-- Prism js -->
+        <script src="../prism.js"></script>
+</body>
+</html>
