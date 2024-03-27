@@ -898,15 +898,20 @@
 .citrusStylesSE-header2,
 .citrusStylesSE-header3,
 .citrusStylesSE-header4 {
-  font-family: "PetcoCircular-Bold", arial !important;
-  font-weight: 700; /* Might not need to use for default: 700, font-weight since it was declared on the @font-face */
+  font-family: var(--citrusStylesSE-font-family-PetcoBold);
+  font-weight: var(--citrusStylesSE-text-font-weight-Bold); /* Might not need to use for default: 700, font-weight since it was declared on the @font-face */
   margin: 0;
 }
 
 .citrusStylesSE-para {
   margin: 0;
-  font-family: "PetcoCircular-Regular", arial !important;
-  font-weight: normal; /* Might not need to use font-weight since it was declared on the @font-face */
+  font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+  font-weight: var(--citrusStylesSE-text-font-weight-Regular); /* Might not need to use font-weight since it was declared on the @font-face */
+}
+
+.citrusStylesSE-disclaimer {
+  font-family: var(--citrusStylesSE-font-family-PetcoRegular);
+  font-weight: var(--citrusStylesSE-text-font-weight-Regular); 
 }
 
 .citrusStylesSE-url {
@@ -936,15 +941,17 @@
 
 .citrusStylesSE-section__title .citrusStylesSE-header2,
 .citrusStylesSE-header3 {
-  font-size: 25px; /* Can be change as per mock */
+  font-size: var(--citrusStylesSE-text-font-size-xlarge); /* Can be change as per mock */
   text-align: inherit;
   color: var(--citrusStylesSE-black);
+  font-family: var(--citrusStylesSE-font-family-PetcoBold);
 }
 
 .citrusStylesSE-section__title .citrusStylesSE-para {
   color: var(--citrusStylesSE-black);
   padding: 1em 0 0;
   text-align: inherit;
+  font-family: var(--citrusStylesSE-font-family-PetcoRegular);
 }
 
 .citrusStylesSE-grid__cell {
@@ -970,15 +977,33 @@
 
 .citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url {
   color: var(--citrusStylesSE-primary-navy);
-  font-size: 16px;
+  font-size: var(--citrusStylesSE-text-font-size-medium);
   text-align: inherit;
   text-decoration: underline;
-  font-family: "PetcoCircular-Bold", arial !important;
-  font-weight: 700;
+  font-family: var(--citrusStylesSE-font-family-PetcoBold);
+  font-weight: var(--citrusStylesSE-text-font-weight-Bold);
 }
 
 .citrusStylesSE-btn-primary-underline-navy .citrusStylesSE-url:hover {
   color: var(--citrusStylesSE-primary-navy);
+}
+
+.citrusStylesSE-btn-primary-underline-white {
+  display: block;
+  text-align: center;
+}
+
+.citrusStylesSE-btn-primary-underline-white .citrusStylesSE-url {
+  color: var(--citrusStylesSE-white);
+  font-size: 16px;
+  text-align: inherit;
+  text-decoration: underline;
+  font-family: var(--citrusStylesSE-font-family-PetcoBold);
+  font-weight: var(--citrusStylesSE-text-font-weight-Bold);
+}
+
+.citrusStylesSE-btn-primary-underline-white .citrusStylesSE-url:hover {
+  color: var(--citrusStylesSE-white);
 }
 
 /*Common block for CTA Box-Button with background color */
