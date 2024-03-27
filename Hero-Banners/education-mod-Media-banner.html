@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Mod - Media Banner</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         .citrusStylesSE-twoCol__lifestyle {
             background: #f5f5f5;
@@ -20,37 +19,22 @@
         }
 
         .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-lifestyle__Image {
-            width: 100%;
-            max-width: 550px;
-            height: 100%;
             position: relative;
-        }
-
-        .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-lifestyle__Image img {
-            width: 100%;
-            height: 100%;
         }
 
         .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-lifestyle__Image .citrusStylesSE-Lifestyle_text-block {
             position: absolute;
             bottom: 0px;
             left: 0px;
-            color: #001952;
-            border-radius: 0 10px 0 0;
-            font-size: 16px;
-            line-height: 20px;
             width: 100%;
-            margin: auto;
             text-align: center;
         }
 
-        .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-Lifestyle_text-block h4 {
+        .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-Lifestyle_text-block .citrusStylesSE-para {
             margin: auto;
-            padding: 20px;
-            font-size: 14px;
-            line-height: 16px;
-            color: white;
-            font-family: "PetcoCircularTT-Bold", arial !important;
+            padding: var(--citrusStylesSE-spacing-medium) var(--citrusStylesSE-spacing-small);
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 2px);
+            color: var(--citrusStylesSE-white);
         }
 
         .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-para {
@@ -61,9 +45,16 @@
         .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-letter-box-large {
             padding-bottom: 0 !important;
         }
+        .citrusStylesSE-twoCol__lifestyle__right
+        {
+            padding: 20px 10px;
+        }
+        .citrusStylesSE-twoCol__lifestyle__right .citrusStylesSE-para {
+            padding: 15px 0;
+        }
 
 
-        @media screen and (max-width:767px) {
+        @media screen and (max-width:47.999em) {
             .citrusStylesSE-twoCol__lifestyle {
                 margin-top: 0px;
             }
@@ -78,23 +69,26 @@
 
             .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-lifestyle__Image {
                 width: 100%;
-                max-width: 100%;
                 position: relative;
             }
 
             .citrusStylesSE-twoCol__lifestyle .citrusStylesSE-lifestyle__Image img {
                 top: 0;
             }
+            .citrusStylesSE-twoCol__lifestyle__right
+            {
+                padding: 30px 10px;
+            }
         }
     </style>
 </head>
 
 
-<body>
+<body class="citrusStylesSE-main">
     <section class="citrusStylesSE-container--large citrusStylesSE-container--large citrusStylesSE-twoCol__lifestyle">
         <div
             class="citrusStylesSE-grid citrusStylesSE-grid--xsmall-full citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm citrusStylesSE-grid__cell--width-45@large citrusStylesSE-grid__cell--width-45@medium citrusStylesSE-grid__cell--width-50@xsmall">
                 <div class="citrusStylesSE-lifestyle__Image">
 
                     <img class="citrusStylesSE-m-hide"
@@ -105,19 +99,18 @@
                         alt="">
 
                     <div class="citrusStylesSE-Lifestyle_text-block">
-                        <h4>All-American athlete and founder Michael Landa and his dog Max</h4>
+                        <p class="citrusStylesSE-para">All-American athlete and founder Michael Landa and his dog&nbsp;Max</p>
                     </div>
 
                 </div>
             </div>
-            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm">
-                <div class="citrusStylesSE-section__title citrusStylesSE-centered">
-                    <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">Enrich the way you feed your&nbsp;pet
-                    </h2>
+            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm citrusStylesSE-grid__cell--width-55@large citrusStylesSE-grid__cell--width-55@medium citrusStylesSE-grid__cell--width-50@xsmall">
+                <div class="citrusStylesSE-twoCol__lifestyle__right">
+                    <h3 class="citrusStylesSE-header3 citrusStylesSE-centered">Enrich the way you feed your&nbsp;pet</h3>
                     <p class="citrusStylesSE-para citrusStylesSE-centered">Nulo recipes feature industry-leading levels
                         of animal-based protein your pet needs to thrive.</p>
                     <div class="citrusStylesSE-letter-box-large">
-                        <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+                        <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
                             <a href="" class="citrusStylesSE-url">Shop Now</a>
                         </div>
                     </div>
