@@ -13,66 +13,49 @@
 
             /* Hero Banner with bg*/
 
-            .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2{
-                text-align: center;
+            .citrusStylesSE-header2{
                 max-width: 250px;
                 margin: 0 auto;
             }
 
-            .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-disclaimer{
-                text-align: center;
+            .citrusStylesSE-disclaimer{
                 max-width: 600px;
                 margin: 0 auto;
-                font-size: 12px;
-                font-family: "PetcoCircular-Regular", arial !important;
+                font-size: var(--citrusStylesSE-text-font-size-small);
             }
 
             .citrusStylesSE-grid__cell{
-                padding-left: 0;
-                padding-right: 0;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
                 gap: 8px;
             }
 
-            .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid{
-                align-items: center;
+            .citrusStylesSE-wrapper {
                 background-size: 100% 100%;
             }
 
-            .citrusStylesSE-heroBanner__withButtons img{
+            .citrusStylesSE-banners__logo{
                 max-width: 115px;
                 margin: 0 auto;
             }
 
-            /* ===================== Responsive Media Break-Point ===================== */
-            /* All the common used break-point adding here */
-            @media (min-width: 64em) and (max-width: 77.99em) {
-            /* min-width:1024px and max-width: 1247.99*/
-
-            
-            }
-
             @media (min-width: 64em) { /* min-width: 1024px */
 
-                .citrusStyleSE-btn-secondary-white .citrusStylesSE-url {
+                .citrusStylesSE-btn-secondary-white .citrusStylesSE-url {
                     width: 126px;
                     padding: 0.6em 0;
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2{
-                    font-size: 35px;
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-super);
                     color: var(--citrusStylesSE-white);
-                    line-height: 35px;
+                    line-height: var(--citrusStylesSE-text-font-size-super);
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-disclaimer{
+                .citrusStylesSE-disclaimer{
                     color: var(--citrusStylesSE-white);
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid {
+                .citrusStylesSE-wrapper{
                     min-height: 230px;
                 }
 
@@ -80,7 +63,7 @@
 
             @media (min-width: 48em){
                 /* min-width:768px ^all the desktop-tab contents*/
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid{
+                .citrusStylesSE-wrapper {
                     background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/Bi-Hero-dsk");
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
@@ -89,15 +72,11 @@
 
             @media (min-width: 48em) and (max-width: 63.99em) { 
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2 {
+                .citrusStylesSE-header2 {
                     max-width: 210px;
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid {
-                    min-height: 125px 
-                }
-
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid {
+                .citrusStylesSE-wrapper {
                     min-height: 190px;
                 }
 
@@ -105,22 +84,21 @@
 
             @media (max-width: 63.999em) {
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2{
-                    font-size: 18px;
-                    line-height: 19px;
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    line-height: var(--citrusStylesSE-text-font-size-medium);
                     color: var(--citrusStylesSE-white);
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-disclaimer{
+                .citrusStylesSE-disclaimer{
                     color: var(--citrusStylesSE-white);
-                    text-align: center;
                 }
 
                 .citrusStylesSE-grid__cell {
                     gap: 4px;
                 }
 
-                .citrusStylesSE-heroBanner__withButtons img {
+                .citrusStylesSE-banners__logo {
                     max-width: 90px;
                 }
 
@@ -128,9 +106,9 @@
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2{
-                    font-size: 25px;
-                    line-height: 25px;
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-large) + 1);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-large) + 1);
                 }
 
             }
@@ -138,32 +116,29 @@
             @media (max-width: 47.99em) { /* max-width: 767.99px */
 
                 /* Hero Banner with bg and two buttons */
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid{
+                .citrusStylesSE-wrapper {
                     background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/Bi-Hero-mob");
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                     max-height: 290px;
                     min-height: 290px;
-                    justify-content: center;
                     flex-direction: column;
                     justify-content: end;
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-header2{
-                    font-size: 18px;
-                    line-height: normal;
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-large));
+                    line-height: var(--citrusStylesSE-text-font-size-medium);
                     color: var(--citrusStylesSE-white);
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-disclaimer{
+                .citrusStylesSE-disclaimer{
                     text-align: center;
                     color: var(--citrusStylesSE-white);
                 }
 
-                .citrusStylesSE-heroBanner__withButtons .citrusStylesSE-grid__cell {
-                    flex: 0 0 100%;
-                    padding: 1em;
-                    justify-content: end;
+                .citrusStylesSE-grid__cell {
+                    padding: var(--citrusStylesSE-spacing-medium);
                     gap: 8px;
                 }
 
@@ -180,14 +155,14 @@
     <main class="citrusStylesSE-main">
 		<!-- Hero Banner start -->
 		<section class="citrusStylesSE-container citrusStylesSE-heroBanner__withButtons">
-			<div class="citrusStylesSE-grid">
-                <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@medium">
-                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-Frontline-Logo-wh" alt="">
-                    <h2 class="citrusStylesSE-header2">#1 NAME IN FLEA & TICK PROTECTION*</h2>
-                   <div class="citrusStyleSE-btn-secondary-white">
+			<div class="citrusStylesSE-grid citrusStylesSE-wrapper citrusStylesSE-grid--center">
+                <div class="citrusStylesSE-grid__cell citrusStylesSE-grid--center citrusStylesSE-grid__dir--col citrusStylesSE-grid__cell--no-gutter citrusStylesSE-grid__cell--width-100@small citrusStylesSE-grid__cell--width-100@xsmall citrusStylesSE-grid__cell--width-100@medium  citrusStylesSE-grid--bottom">
+                    <img class="citrusStylesSE-banners__logo" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-Frontline-Logo-wh" alt="">
+                    <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">#1 NAME IN FLEA & TICK PROTECTION*</h2>
+                   <div class="citrusStylesSE-btn-secondary-white">
                         <a href="" class="citrusStylesSE-url">Shop Now</a>
                    </div>
-                    <p class="citrusStylesSE-disclaimer">*Data on file at Boehringer Ingelheim.</p>
+                    <p class="citrusStylesSE-disclaimer citrusStylesSE-centered">*Data on file at Boehringer Ingelheim.</p>
                 </div>
             </div>
 		</section><!-- Hero Banner End -->
