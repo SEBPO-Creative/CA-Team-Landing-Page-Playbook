@@ -1750,6 +1750,12 @@
 .citrusStylesSE-grid--wrap {
   flex-wrap: wrap;
 }
+.citrusStylesSE-grid__dir--col{
+  flex-direction: column;
+}
+.citrusStylesSE-grid__dir--row{
+  flex-direction: row;
+}
 .citrusStylesSE-grid--top {
   align-items: flex-start;
 }

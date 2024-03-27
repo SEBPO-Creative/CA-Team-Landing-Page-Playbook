@@ -38,11 +38,9 @@
             }
 
             .citrusStylesSE-header4{
-                color: #00205b;
+                color: var(--citrusStylesSE-primary-navy);
                 margin: 0;
-                font-size: 17px;
-                font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 1px);
-                font-weight: 700;
+                font-size: var(--citrusStylesSE-text-font-size-medium);
                 text-decoration: underline;
             }
 
@@ -68,9 +66,16 @@
                 width: 90%;
             }
 
-            @media screen and (min-width: 78em) {
+            @media (min-width: 78em) {
                 iframe {
                     min-height: 200px;
+                }
+            }
+
+            @media (max-width: 47.99em) {
+                .citrusStylesSE-content4up__video iframe {
+                    min-height: 13em;
+                    min-width: 70vw;
                 }
             }
 
@@ -88,7 +93,7 @@
                     <p class="citrusStylesSE-para">Select from multiple options based on your dog’s size.</p>
                 </div>
                
-                <div class="citrusStylesSE-grid citrusStylesSE-grid--xlarge-fit citrusStylesSE-no-scrollbar">
+                <div class="citrusStylesSE-grid citrusStylesSE-grid--xlarge-fit citrusStylesSE-no-scrollbar citrusStylesSE-overflow-x">
                     <!-- Video 01 -->
                     <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@Large citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-35@medium citrusStylesSE-grid__cell--width-75@xsmall">
                         <iframe src="https://www.youtube.com/embed/4Dmpn7IeOTU" title="How does Seresto® work?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
