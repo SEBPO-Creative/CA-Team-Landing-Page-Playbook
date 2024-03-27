@@ -8,8 +8,6 @@
     <!-- css library -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
-        /* overflow scroll bar hide */
-        /* Hide scrollbar for Chrome, Safari and Opera */
         .citrusStylesSE-comparisonTable::-webkit-scrollbar,
         .citrusRoyal-wrapper::-webkit-scrollbar {
             display: none;
@@ -18,12 +16,9 @@
         /* Hide scrollbar for IE, Edge and Firefox */
         .citrusStylesSE-comparisonTable {
             -ms-overflow-style: none;
-            /* IE and Edge */
             scrollbar-width: none;
-            /* Firefox */
         }
 
-        /* Comparison Chart /Find the right solution for your pet  */
         #citrusStylesSE-comparisonContainer-fluid {
             margin-top: 30px;
             width: 100%;
@@ -52,8 +47,8 @@
 
         .citrusStylesSE-comTitle h2 {
             margin: 0;
-            font-size: 15px;
-            color: #000;
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+            color: var(--citrusStylesSE-black);
         }
 
         .citrusStylesSE-comparison__row:first-child {
@@ -80,8 +75,8 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            font-family: "PetcoCircularTT-Regular", arial !important;
-            font-size: 13px;
+            font-family: var(--citrusStylesSE-font-family-PetcoRegular) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
         }
 
         .citrusStylesSE-comparison__row .citrusStylesSE-col-0 img,
@@ -113,8 +108,8 @@
         .citrusStylesSE-featurePackage-title03 p {
             margin: 0;
             padding: 0 30px;
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-size: 13px;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
             font-weight: bold;
             text-align: center;
         }
@@ -138,16 +133,15 @@
 
         .citrusStylesSE-comparison__rowTitle p {
             margin: 0;
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-size: 13px;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
             line-height: 19px;
-            font-weight: bold;
         }
 
         .citrusStylesSE-comparison__rowText p {
-            font-family: "PetcoCircularTT-Regular", arial !important;
-            font-size: 13px;
-            color: #333333;
+            font-family: var(--citrusStylesSE-font-family-PetcoRegular) !important;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+            color: var(--citrusStylesSE-black-light);
         }
 
         .citrusStylesSE-rowBorder-0 {
@@ -158,57 +152,27 @@
             margin-bottom: 30px;
         }
 
-        .citrusStylesSE-comparison__rowCta {
-            text-align: center;
-        }
-
-        .citrusStylesSE-comparison__rowCta a {
-            font-family: "PetcoCircularTT-Bold", arial !important;
-            font-size: 16px;
-            font-weight: bold;
-            color: #001952;
-        }
-
         p.citrusStylesSE-disclaimer {
             margin: auto;
             width: 868px;
             max-width: 100%;
-            color: #000;
-        }
-
-        /* common styling */
-        .citrusStylesSE-desktop__hide {
-            display: none;
-        }
-
-        .citrusStylesSE-mobile__hide {
-            display: block;
+            color: var(--citrusStylesSE-black);
         }
 
         /*----------------------------------- responsive styling------------------------------------- */
-        @media all and (min-width: 769px) and (max-width: 1200px) {
+        @media all and (min-width: 768px) and (max-width: 1200px) {
             .citrusStylesSE-comparisonContainer {
                 padding-left: 5%;
             }
         }
 
-        @media all and (max-width: 768px) {
-
-            /* common styling */
-            .citrusStylesSE-desktop__hide {
-                display: block;
-            }
-
-            .citrusStylesSE-mobile__hide {
-                display: none;
-            }
+        @media all and (max-width: 767px) {
 
             p.citrusStylesSE-disclaimer {
                 margin-top: 0;
                 padding-bottom: 20px;
             }
 
-            /* Comparison Chart / Find the right solution for your pet  */
             .citrusStylesSE-comparisonContainer {
                 width: 870px;
             }
@@ -239,7 +203,7 @@
             <div class="citrusStylesSE-comparisonContainer">
                 <!-- product title row -->
                 <div class="citrusStylesSE-comparison__row citrusStylesSE-comTitle">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-col-1">
@@ -254,7 +218,7 @@
                 </div>
                 <!-- title row -->
                 <div id="citrusStylesSE-titleRow" class="citrusStylesSE-comparison__row">
-                    <div class="citrusStylesSE-comparison__titleLogo citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-comparison__titleLogo citrusStylesSE-m-hide">
                         <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/bi-Frontline-Logo"
                             alt="Frontline Brand Products">
                     </div>
@@ -272,7 +236,7 @@
                     </div>
                 </div><!-- row -->
                 <div class="citrusStylesSE-comparison__row">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-featurePackage-title01">
@@ -288,7 +252,7 @@
                 </div>
                 <!-- row -->
                 <div class="citrusStylesSE-comparison__row">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-comparison__rowTitle">
@@ -310,7 +274,7 @@
                 </div>
                 <!-- row -->
                 <div class="citrusStylesSE-comparison__row">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-comparison__rowText">
@@ -331,7 +295,7 @@
                 </div>
                 <!-- row -->
                 <div class="citrusStylesSE-comparison__row">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-comparison__rowText">
@@ -352,7 +316,7 @@
                 </div>
                 <!-- row -->
                 <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
                     <div class="citrusStylesSE-comparison__rowText">
@@ -373,21 +337,24 @@
                 </div>
                 <!-- row -->
                 <div class="citrusStylesSE-comparison__row citrusStylesSE-rowBorder-0 citrusStylesSE-mb-30">
-                    <div class="citrusStylesSE-mobile__hide">
+                    <div class="citrusStylesSE-m-hide">
                         <!-- this div stay blank -->
                     </div>
-                    <div class="citrusStylesSE-comparison__rowCta">
-                        <a href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-gold"
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-gold"
                             manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlinegold:shop now"
                             onclick="clickTrackLink(this);">Shop Now</a>
                     </div>
-                    <div class="citrusStylesSE-comparison__rowCta">
-                        <a href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-plus"
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-plus"
                             manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlineplus:shop now"
                             onclick="clickTrackLink(this);">Shop Now</a>
                     </div>
-                    <div class="citrusStylesSE-comparison__rowCta">
-                        <a href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-shield"
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a class="citrusStylesSE-url"
+                            href="https://www.petco.com/shop/en/petcostore/category/trending-shops/frontline-formulas/frontline-shield"
                             manual_cm_sp="sponsoredbrandpage:boehringer ingelheim:chart:1:frontlineshield:shop now"
                             onclick="clickTrackLink(this);">Shop Now</a>
                     </div>
@@ -398,7 +365,7 @@
             showing 20
             years of trust in killing fleas & ticks is on file at Boehringer Ingelheim. FRONTLINE<sup>®</sup> is a
             registered trademark of Boehringer Ingelheim Animal Health France, used under license.
-            <br class="citrusStylesSE-desktop__hide">US-PET-0695-2022
+            <br class="citrusStylesSE-d-hide">US-PET-0695-2022
         </p>
     </section>
 </body>

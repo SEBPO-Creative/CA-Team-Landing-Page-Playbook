@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
         /* upgrade style */
-        .citrusStylesSE-cta__underline {
+        .citrusStylesSE-btn-primary-underline-navy {
             text-align: left;
             padding: 8px 0;
         }
 
         .citrusStylesSE-header3 {
-            font-size: 20px;
+            font-size: var(--citrusStylesSE-text-font-size-large);
         }
 
         .citrusStylesSE-table--chart {
@@ -26,7 +26,6 @@
         }
 
         .citrusStylesSE-table--row {
-            display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #e2e2e2;
@@ -41,19 +40,14 @@
             margin: auto;
         }
 
-        .citrusStylesSE-card--top-img img {
-            width: 100%;
-            max-width: 100%;
-        }
-
         .citrusStylesSE-card .citrusStylesSE-card--body p {
-            font-size: 13px;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
             min-height: 48px;
         }
 
         .citrusStylesSE-description p {
-            font-size: 13px;
-            color: #000;
+            font-size: calc(var(--citrusStylesSE-text-font-size-small) + 1px);
+            color: var(--citrusStylesSE-black);
             line-height: 18px;
             padding: 5px 0;
         }
@@ -95,7 +89,7 @@
 
             .citrusStylesSE-card,
             .citrusStylesSE-description .citrusStylesSE-header3 {
-                font-size: 12px;
+                font-size: var(--citrusStylesSE-text-font-size-small);
                 padding-left: 10px;
             }
 
@@ -112,12 +106,13 @@
             <h2 class="citrusStylesSE-header2">Find your perfect Defence</h2>
         </div>
         <div class="citrusStylesSE-table--chart">
-            <div class="citrusStylesSE-table--row">
+            <div class="citrusStylesSE-grid citrusStylesSE-table--row">
                 <div class="citrusStylesSE-table--col">
                     <div class="citrusStylesSE-card">
                         <div class="citrusStylesSE-card_top">
                             <div class="citrusStylesSE-card--top-img">
-                                <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-bdp-in"
+                                <img class="citrusStylesSE-img"
+                                    src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-bdp-in"
                                     alt="" />
                             </div>
                             <div class="citrusStylesSE-card--body"></div>
@@ -129,7 +124,8 @@
                         <div class="citrusStylesSE-card">
                             <div class="citrusStylesSE-card_top">
                                 <div class="citrusStylesSE-card--top-img">
-                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense1"
+                                    <img class="citrusStylesSE-img"
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense1"
                                         alt="" />
                                 </div>
                                 <div class="citrusStylesSE-card--body">
@@ -137,7 +133,7 @@
                                         Dig Defence 25-Pack No-Dig Small/Medium Animal
                                         Barrier, 8” L X 32” W
                                     </p>
-                                    <div class="citrusStylesSE-cta__underline">
+                                    <div class="citrusStylesSE-btn-primary-underline-navy">
                                         <span class="citrusStylesSE-url">Shop Now</span>
                                     </div>
                                 </div>
@@ -150,7 +146,8 @@
                         <div class="citrusStylesSE-card">
                             <div class="citrusStylesSE-card_top">
                                 <div class="citrusStylesSE-card--top-img">
-                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense2"
+                                    <img class="citrusStylesSE-img"
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense2"
                                         alt="" />
                                 </div>
                                 <div class="citrusStylesSE-card--body">
@@ -158,7 +155,7 @@
                                         Dig Defence 25-Pack No-Dig Large Animal Barrier, 10”
                                         L X 32” W
                                     </p>
-                                    <div class="citrusStylesSE-cta__underline">
+                                    <div class="citrusStylesSE-btn-primary-underline-navy">
                                         <span class="citrusStylesSE-url">Shop Now</span>
                                     </div>
                                 </div>
@@ -171,7 +168,8 @@
                         <div class="citrusStylesSE-card">
                             <div class="citrusStylesSE-card_top">
                                 <div class="citrusStylesSE-card--top-img">
-                                    <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense3"
+                                    <img class="citrusStylesSE-img"
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/digd-defense3"
                                         alt="" />
                                 </div>
                                 <div class="citrusStylesSE-card--body">
@@ -179,7 +177,7 @@
                                         Dig Defence 15-Pack No-Dig XL Animal Barrier for Max
                                         Protection, 15” L X 24” W
                                     </p>
-                                    <div class="citrusStylesSE-cta__underline">
+                                    <div class="citrusStylesSE-btn-primary-underline-navy">
                                         <span class="citrusStylesSE-url">Shop Now</span>
                                     </div>
                                 </div>
@@ -188,7 +186,7 @@
                     </a>
                 </div>
             </div>
-            <div class="citrusStylesSE-table--row">
+            <div class="citrusStylesSE-grid citrusStylesSE-table--row">
                 <div class="citrusStylesSE-table--col">
                     <div class="citrusStylesSE-description">
                         <h3 class="citrusStylesSE-header3">Unit Dimensions</h3>
@@ -216,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="citrusStylesSE-table--row">
+            <div class="citrusStylesSE-grid citrusStylesSE-table--row">
                 <div class="citrusStylesSE-table--col">
                     <div class="citrusStylesSE-description">
                         <h3 class="citrusStylesSE-header3">Protection Coverage by Pack Size</h3>
@@ -244,7 +242,7 @@
                     </div>
                 </div>
             </div>
-            <div class="citrusStylesSE-table--row citrusStylesSE-noBorder">
+            <div class="citrusStylesSE-grid citrusStylesSE-table--row citrusStylesSE-noBorder">
                 <div class="citrusStylesSE-table--col">
                     <div class="citrusStylesSE-description">
                         <h3 class="citrusStylesSE-header3">Use by Model</h3>

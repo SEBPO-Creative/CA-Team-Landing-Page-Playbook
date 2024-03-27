@@ -21,7 +21,6 @@
             scrollbar-width: none;
         }
 
-        /* comparison imran */
         .citrusStylesSE-table--container {
             width: 1440px;
             max-width: 100%;
@@ -72,9 +71,9 @@
         }
 
         .citrusStylesSE-table--Cell-title h2 {
-            font-family: "PetcoCircular-Bold", arial, sans-serif;
-            font-size: 18px;
-            color: #000;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
+            color: var(--citrusStylesSE-black);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -82,7 +81,7 @@
             font-weight: 700;
         }
 
-        .bottom-border {
+        .citrusStylesSE-bottom-border {
             border-bottom: 1px solid #aeaeae;
         }
 
@@ -116,7 +115,7 @@
             background: rgba(217, 217, 217, 0.3);
         }
 
-        .chart-cta {
+        .citrusStylesSE-chart-cta {
             margin: auto;
             margin-top: 11px;
             margin-bottom: 20px;
@@ -125,7 +124,7 @@
             padding: 0;
             line-height: 63px;
             border-radius: 5px;
-            background: #001952;
+            background: var(--citrusStylesSE-primary-navy);
         }
 
         .chart-disclaimer {
@@ -138,11 +137,11 @@
         .chart-disclaimer .citrusStylesSE-disclaimer {
             margin: 0 0 0 10px;
             text-align: left;
-            font-size: 12px !important;
+            font-size: var(--citrusStylesSE-text-font-size-small) !important;
         }
 
         .citrusStylesSE-url {
-            font-family: "PetcoCircular-Bold", arial;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
             color: var(--citrusStylesSE-white);
         }
 
@@ -167,11 +166,11 @@
             }
 
             .citrusStylesSE-table--row.citrusStylesSE-table--Cell-title h2 {
-                font-size: 16px;
+                font-size: var(--citrusStylesSE-text-font-size-medium);
             }
 
             .citrusStylesSE-table--Cell-title h2 {
-                font-size: 12px;
+                font-size: var(--citrusStylesSE-text-font-size-small);
                 height: 49px;
             }
 
@@ -180,7 +179,7 @@
                 height: 49px;
             }
 
-            .chart-cta {
+            .citrusStylesSE-chart-cta {
                 width: max-content;
                 background: unset;
             }
@@ -237,33 +236,33 @@
                     </div>
                 </div>
                 <!-- row 02 -->
-                <div class="citrusStylesSE-table--row citrusStylesSE-table--Cell-title bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-table--Cell-title citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1">
-                        <h2>Benefit*</h2>
+                        <h2 class="citrusStylesSE-header2">Benefit*</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
-                        <h2>Simparica Trio </h2>
+                        <h2 class="citrusStylesSE-header2">Simparica Trio </h2>
                     </div>
                     <div class="citrusStylesSE-table--col-3">
-                        <h2>Nexgard Plus </h2>
+                        <h2 class="citrusStylesSE-header2">Nexgard Plus </h2>
                     </div>
                     <div class="citrusStylesSE-table--col-4">
-                        <h2>Heartgard Plus </h2>
+                        <h2 class="citrusStylesSE-header2">Heartgard Plus </h2>
                     </div>
                     <div class="citrusStylesSE-table--col-5">
-                        <h2>Bravecto</h2>
+                        <h2 class="citrusStylesSE-header2">Bravecto</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-6">
-                        <h2>Credelio</h2>
+                        <h2 class="citrusStylesSE-header2">Credelio</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-7">
-                        <h2>Interceptor Plus </h2>
+                        <h2 class="citrusStylesSE-header2">Interceptor Plus </h2>
                     </div>
                 </div>
                 <!-- row 03 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Prevents Lyme <br>Infections**</h2>
+                        <h2 class="citrusStylesSE-header2">Prevents Lyme <br>Infections**</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -309,9 +308,9 @@
                     </div>
                 </div>
                 <!-- row 04 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Prevents Heartworm <br>Disease</h2>
+                        <h2 class="citrusStylesSE-header2">Prevents Heartworm <br>Disease</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -357,9 +356,9 @@
                     </div>
                 </div>
                 <!-- row 05 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Kills 5 Types <br>of Ticks</h2>
+                        <h2 class="citrusStylesSE-header2">Kills 5 Types <br>of Ticks</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -369,7 +368,7 @@
                         </div>
                     </div>
                     <div class="citrusStylesSE-table--col-3 citrusStylesSE-table--Cell-title bg-gray">
-                        <h2>4 Types</h2>
+                        <h2 class="citrusStylesSE-header2">4 Types</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-4">
                         <div class="citrusTrio__radio">
@@ -386,7 +385,7 @@
                         </div>
                     </div>
                     <div class="citrusStylesSE-table--col-6 citrusStylesSE-table--Cell-title">
-                        <h2>4 Types</h2>
+                        <h2 class="citrusStylesSE-header2">4 Types</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-7 bg-gray">
                         <div class="citrusTrio__radio">
@@ -397,9 +396,9 @@
                     </div>
                 </div>
                 <!-- row 06 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Kills Fleas</h2>
+                        <h2 class="citrusStylesSE-header2">Kills Fleas</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -445,9 +444,9 @@
                     </div>
                 </div>
                 <!-- row 07 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Treats Roundworms <br>and Hookworms</h2>
+                        <h2 class="citrusStylesSE-header2">Treats Roundworms <br>and Hookworms</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -493,9 +492,9 @@
                     </div>
                 </div>
                 <!-- row 08 -->
-                <div class="citrusStylesSE-table--row bottom-border">
+                <div class="citrusStylesSE-table--row citrusStylesSE-bottom-border">
                     <div class="citrusStylesSE-table--col-1 citrusStylesSE-table--Cell-title bg-gray-100">
-                        <h2>Approved for Dogs <br>8 Weeks and Older</h2>
+                        <h2 class="citrusStylesSE-header2">Approved for Dogs <br>8 Weeks and Older</h2>
                     </div>
                     <div class="citrusStylesSE-table--col-2">
                         <div class="citrusStylesSE-check-mark">
@@ -546,7 +545,7 @@
                         <!-- this should be stay blank -->
                     </div>
                     <div class="citrusStylesSE-table--col-2 bottom-radius-border">
-                        <div class="citrusStylesSE-cta__box--color chart-cta">
+                        <div class="citrusStylesSE-chart-cta">
                             <a class="citrusStylesSE-url"
                                 href="https://www.petco.com/shop/en/petcostore/brand/simparica-trio"
                                 manual_cm_sp="sponsoredbrandpage:simparicatrio:comparisonchart:1:thesimparicatriodifference:shopnow"

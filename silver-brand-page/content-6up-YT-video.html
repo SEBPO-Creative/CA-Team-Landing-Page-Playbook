@@ -8,7 +8,6 @@
     <title>content-6up-YT-video</title>
     <!-- css library -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
         .citrusStylesSE-container * {
             -webkit-box-sizing: border-box;
@@ -46,26 +45,26 @@
         }
 
         .citrusStylesSE-single--item h1 {
-            color: #011952;
-            font-size: 18px;
+            color: var(--citrusStylesSE-primary-navy);
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
             padding: 5px;
             margin: 10px 0;
         }
 
         .citrusStylesSE-single--item p {
-            color: #000;
-            font-size: 16px;
+            color: var(--citrusStylesSE-black);
+            font-size: var(--citrusStylesSE-text-font-size-medium);
             padding: 10px;
             line-height: 1.4;
         }
 
         .citrusStylesSE-single--item a {
             margin: 20px 0 10px 0;
-            color: #001952;
-            font-size: 16px;
+            color: var(--citrusStylesSE-primary-navy);
+            font-size: var(--citrusStylesSE-text-font-size-medium);
             display: block;
             text-decoration: underline;
-            font-family: "PetcoCircular-Bold", sans-serif;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
         }
 
         /* Video Popup */
@@ -87,7 +86,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: #fff;
+            background: var(--citrusStylesSE-white);
             box-shadow: 2px 2px 10px 0px rgb(166 161 161 / 85%);
             padding: 10px;
             border-radius: 10px;
@@ -99,8 +98,8 @@
             right: 5px;
             top: 5px;
             z-index: 99999;
-            color: #333;
-            background: #fff;
+            color: var(--citrusStylesSE-black-light);
+            background: var(--citrusStylesSE-white);
             width: 20px;
             border-radius: 50%;
             height: 20px;
@@ -108,13 +107,13 @@
             align-items: center;
             justify-content: center;
             border: 1px solid #efefef;
-            font-size: 20px;
+            font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 4px);
             padding: 1px 0 0;
             cursor: pointer;
         }
 
         .citrusStylesSE-show--video span:hover {
-            color: #fff;
+            color: var(--citrusStylesSE-white);
             background: #e4425c;
             border: 1px solid #e4425c;
         }
