@@ -17,8 +17,7 @@
                 background: var(--citrusStylesSE-secondary-navy);
             }
 
-            .citrusStylesSE-heroButtons .citrusStylesSE-header2{
-                text-align: center;
+            .citrusStylesSE-header2{
                 padding: 30px 0 0;
                 text-transform: uppercase;
             }
@@ -57,20 +56,13 @@
                 min-height: 312px;
             }
 
-            /* ===================== Responsive Media Break-Point ===================== */
-            /* All the common used break-point adding here */
-            @media (min-width: 64em) and (max-width: 77.99em) {
-            /* min-width:1024px and max-width: 1247.99*/
-
-            
-            }
 
             @media (min-width: 64em) { /* min-width: 1024px */
 
-                .citrusStylesSE-heroButtons .citrusStylesSE-header2{
-                    font-size: 35px;
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-super);
                     color: var(--citrusStylesSE-white);
-                    line-height: 35px;
+                    line-height: var(--citrusStylesSE-text-font-size-super);
                 }
 
                 .citrusStylesSE-btn-secondary-white .citrusStylesSE-url{
@@ -90,18 +82,13 @@
                 }
             }
 
-            @media (min-width: 48em) and (max-width: 63.99em) { 
-
-
-           }
-
             @media (max-width: 63.999em) {
 
-                .citrusStylesSE-heroButtons .citrusStylesSE-grid{
+                .citrusStylesSE-grid{
                     justify-content: flex-start;
                 }
 
-                .citrusStylesSE-heroButtons .citrusStylesSE-header2{
+                .citrusStylesSE-header2{
                     color: var(--citrusStylesSE-white);
                     padding: 20px 0;
                 }
@@ -131,9 +118,9 @@
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
 
-                .citrusStylesSE-heroButtons .citrusStylesSE-header2{
-                    font-size: 25px;
-                    line-height: 25px;
+                .citrusStylesSE-header2{
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
+                    line-height: var(--citrusStylesSE-text-font-size-xlarge);
                 }
 
             }
@@ -144,13 +131,13 @@
                 .citrusStylesSE-grid__cell:nth-child(1) {
                     align-items: flex-start;
                 }
-                .citrusStylesSE-heroButtons .citrusStylesSE-header2{
-                    font-size: 18px;
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 2px);
                     line-height: normal;
                     color: var(--citrusStylesSE-white);
                 }
                 
-                .citrusStylesSE-heroButtons .citrusStylesSE-btn-secondary-white {
+                .citrusStylesSE-btn-secondary-white {
                     width: 100%;
                     justify-content: flex-start;
                     padding: 0 0 0 10px;
@@ -162,7 +149,7 @@
                 }
 
                 
-                .citrusStylesSE-heroButtons .citrusStylesSE-header2{
+                .citrusStylesSE-header2{
                     text-align: left;
                     padding: 20px 0 20px 10px;
                 }
@@ -182,7 +169,6 @@
                 }
             }
 
-		
 
             /* ----------------------------------------- */
         </style>
@@ -199,7 +185,7 @@
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-logo-white" alt="AltText">
                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/truechew-true-chews" alt="AltText">
                         </div>
-                        <h2 class="citrusStylesSE-header2">The answer is True.™</h2>
+                        <h2 class="citrusStylesSE-header2 citrusStylesSE-centered">The answer is True.™</h2>
                     </div>
                     <div class="citrusStylesSE-btn-secondary-white">
                         <a href="" class="citrusStylesSE-url">Shop Now</a>
