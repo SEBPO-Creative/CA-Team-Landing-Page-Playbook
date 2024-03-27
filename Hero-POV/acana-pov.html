@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
 
         <style>
-			/* Common Styles */
-
             /* Carousels - POV */
             .citrusStylesSE-carousel__inner{
                 background: #BCE5F6;
@@ -51,11 +49,9 @@
 
             .citrusStylesSE-acana .citrusStylesSE-pov__text{
                 padding: 0 0 0 2em;
-                display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                flex-direction: row;
-                gap: 20px;
+                gap: calc(var(--citrusStylesSE-spacing-medium) + 4px);
             }
 
             .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__text {
@@ -68,13 +64,13 @@
                 margin: 0;
             }
 
-            .citrusStylesSE-acana .citrusStylesSE-pov__logo{
+            .citrusStylesSE-pov__logo{
                 max-width: 150px;
                 margin: 0 auto;
                 padding: 0 0 20px;
             }
 
-            .citrusStylesSE-acana .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__logo {
+            .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__logo {
                 max-width: 130px;
             }
 
@@ -89,7 +85,7 @@
             }
 
             .citrusStylesSE-acana .citrusStylesSE-disclaimer {
-                font-size: 12px;
+                font-size: calc(var(--citrusStylesSE-spacing-medium) - 4px);
                 margin: 0;
                 padding: 10px 0;
             }
@@ -103,12 +99,10 @@
             /* All the common used break-point adding here */
             @media (min-width: 64em) and (max-width: 77.99em) {
             /* min-width:1024px and max-width: 1247.99*/
-
                 .citrusStylesSE-carousel__inner--item {
                     max-height: unset;
                     min-height: unset;
                 }
-            
             }
 
             @media (min-width: 64em) { /* min-width: 1024px */
@@ -118,13 +112,12 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 35px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
                     color: var(--citrusStylesSE-primary-navy);
-                    line-height: 35px;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     color: var(--citrusStylesSE-primary-navy);
                 }
 
@@ -133,11 +126,11 @@
             @media (min-width: 48em) and (max-width: 63.99em) { 
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    font-size: 20px !important;
+                    font-size: calc(var(--citrusStylesSE-spacing-medium) + 4px) !important;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px !important;
+                    font-size: calc(var(--citrusStylesSE-spacing-medium) - 2px) !important;
                 }
            }
 
@@ -149,9 +142,8 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 20px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 4px);
                     color: var(--citrusStylesSE-primary-navy);
-                    font-size: 20px;
                     max-width: 290px;
                     line-height: 20px;
                     margin: 0;   
@@ -166,7 +158,7 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px;
+                    font-size: calc(var(--citrusStylesSE-spacing-medium) - 2px);
                     color: var(--citrusStylesSE-primary-navy);
                     text-align: left;
                     padding: 10px 0;
@@ -190,7 +182,7 @@
 
                 .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__text {
                     padding: 0 0 0 1em;
-                    gap: 10px;
+                    gap: calc(var(--citrusStylesSE-spacing-medium) - 6px);
                 }
 
                 .citrusStylesSE-acana__copy {
@@ -202,8 +194,8 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
-                    line-height: 25px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
+                    line-height: calc(var(----citrusStylesSE-spacing-large) + 1px);
                 }
 
                 .citrusStylesSE-acana .citrusStylesSE-pov__logo {
@@ -216,14 +208,13 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
-                    line-height: 17px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    line-height: calc(var(--citrusStylesSE-spacing-medium) + 1px);
                     padding: 8px 0 12px;
                 }
 
                 .citrusStylesSE-acana .citrusStylesSE-btn-primary-navy {
-                    gap: 10px;
-
+                    gap: calc(var(--citrusStylesSE-spacing-medium) - 6px);
                 } 
 
             }
@@ -231,7 +222,7 @@
             @media (min-width: 48em) { /* min-width:768px*/
                 .citrusStylesSE-acana .citrusStylesSE-btn-primary-navy {
                     justify-content: flex-start;
-                    gap: 10px;
+                    gap: calc(var(--citrusStylesSE-spacing-medium) - 6px);
 
                 }   
             }
@@ -281,30 +272,24 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     text-align: center;
                     padding: 10px 0 20px;
                     max-width: 90%;
                 }
 
                 .citrusStylesSE-acana .citrusStylesSE-disclaimer {
-                    font-size: 14px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
                 }
 
                 .citrusStylesSE-btn-primary-navy, .citrusStylesSE-btn-secondary-white {
-                    gap: 30px;
+                    gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px);
                 }
 
                 .citrusStylesSE-acana__pov2 .citrusStylesSE-pov__img {
                     display: flex;
                 }
-
-
-
-                
             }
-
-		
 
             /* ----------------------------------------- */
         </style>
@@ -318,9 +303,9 @@
 				<!-- POV 01 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-acana__pov1">
                     <div class="citrusStylesSE-pov__img citrusStylesSE-d-hide">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero1_desktop_hide" alt="">
+                        <img class="citrusStylesSE-img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero1_desktop_hide" alt="">
                     </div>
-                    <div class="citrusStylesSE-pov__text">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid citrusStylesSE-grid__dir--row">
                         <div class="citrusStylesSE-acana__copy">
                             <h2 class="citrusStylesSE-header1">NUTRITION THEY NEED, FLAVOR THEY LOVE</h2>
                             <p class="citrusStylesSE-para">Rich in animal protein, ACANA<sup>®</sup> recipes satisfy your cat completely with premium nutrition and flavor.</p>
@@ -329,13 +314,13 @@
                             </div>
                         </div>
                         <div class="citrusStylesSE-pov__logo citrusStylesSE-m-hide">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_acana_logo" alt="">
+                            <img class="citrusStylesSE-img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_acana_logo" alt="">
                         </div>
                     </div>
 				</div>
 				<!-- POV 02 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-acana__pov2">
-                    <div class="citrusStylesSE-pov__text">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid citrusStylesSE-grid__dir--row">
                         <div class="citrusStylesSE-acana__copy">
                             <h2 class="citrusStylesSE-header1">OBSESSIVELY GOOD INGREDIENTS™</h2>
                             <div class="citrusStylesSE-btn-primary-navy">
@@ -345,19 +330,19 @@
                             <p class="citrusStylesSE-disclaimer">Ingredients may vary, depicted pre-processing. Quantities ≠ one serving. Retailer decides price. Based on MSRP, average cost per day.</p>   
                         </div>
                         <div class="citrusStylesSE-pov__logo citrusStylesSE-m-hide">
-                            <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_acana_logo" alt="">
+                            <img class="citrusStylesSE-img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_acana_logo" alt="">
                         </div>
                      </div>
-                    <div class="citrusStylesSE-pov__img citrusStylesSE-d-hide">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero2_desktop_hide_newSpetember" alt="">
+                    <div class="citrusStylesSE-pov__img">
+                        <img class="citrusStylesSE-img citrusStylesSE-d-hide" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero2_desktop_hide_newSpetember" alt="">
                     </div>
 				</div>
                 <!-- POV 03 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-acana__pov3">
                     <div class="citrusStylesSE-pov__img citrusStylesSE-d-hide">
-                        <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero3_desktop_hide" alt="">
+                        <img class="citrusStylesSE-img" src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusAcana_hero3_desktop_hide" alt="">
                     </div>
-                    <div class="citrusStylesSE-pov__text">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid citrusStylesSE-grid__dir--row">
                         <div class="citrusStylesSE-acana__copy">
                             <h2 class="citrusStylesSE-header1">KIBBLE + JERKY</h2>
                             <p class="citrusStylesSE-para">Together at last.</p>

@@ -9,10 +9,8 @@
         <title>Hero POV - Kong</title>
         <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
         <style>
-			/* Common Styles */
-
             /* Carousels - POV */
-            .citrusStylesSE-kong .citrusStylesSE-pov__img {
+            .citrusStylesSE-pov__img {
                 max-width: 190px;
                 align-items: center;
             }
@@ -23,20 +21,19 @@
                 min-height: 330px;
             }
 
-            .citrusStylesSE-kong .citrusStylesSE-kong__pov1 {
+            .citrusStylesSE-kong__pov1 {
                 background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov1-dsk.png);
             }
 
-            .citrusStylesSE-kong .citrusStylesSE-kong__pov2 {
+            .citrusStylesSE-kong__pov2 {
                 background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov2-dsk.png);
             }
 
-            .citrusStylesSE-kong .citrusStylesSE-kong__pov3 {
+            .citrusStylesSE-kong__pov3 {
                 background-image: url(https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-kong-pov3-dsk.png);
             }
 
-
-            .citrusStylesSE-kong .citrusStylesSE-pov__text{
+            .citrusStylesSE-pov__text{
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -44,13 +41,13 @@
                 padding: 1em 1em 1em 2em;
             }
 
-            .citrusStylesSE-kong .citrusStylesSE-kong__copy {
+            .citrusStylesSE-kong__copy {
                 gap: 1em;
                 display: flex;
                 flex-direction: column;
             }
 
-            .citrusStylesSE-kong .citrusStylesSE-kong__logo{
+            .citrusStylesSE-kong__logo{
                 max-width: 110px;
                 margin: 0;
             }
@@ -63,7 +60,7 @@
             }
 
             .citrusStylesSE-kong .citrusStylesSE-header1 sup {
-                font-size: 14px;
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
                 padding: 0 0 0 1px;
                 position: absolute;
                 top: -2px;
@@ -118,12 +115,12 @@
             @media (min-width: 64em) { /* min-width: 1024px */
 
                 .citrusStylesSE-kong .citrusStylesSE-header1{
-                    font-size: 35px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
                     line-height: 35px;
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-btn-primary-navy .citrusStylesSE-url {
@@ -171,9 +168,8 @@
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-header1{
-                    font-size: 20px;
+                    font-size: var(--citrusStylesSE-text-font-size-large);
                     color: var(--citrusStylesSE-white);
-                    font-size: 20px;
                     max-width: 290px;
                     line-height: 20px;
                     margin: 0;   
@@ -184,7 +180,7 @@
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-para{
-                    font-size: 14px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
                     color: var(--citrusStylesSE-white);
                     text-align: left;
                 }
@@ -198,7 +194,7 @@
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
 
                 .citrusStylesSE-kong .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
                     line-height: 25px;
                 }
 
@@ -208,7 +204,7 @@
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     line-height: 17px;
                 }
 
@@ -263,12 +259,12 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    font-size: 24px;
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
                     line-height: 24px;
                 }
 
                 .citrusStylesSE-kong .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     text-align: center;
                     max-width: 90%;
                 }
@@ -284,7 +280,6 @@
                 .citrusStylesSE-kong .citrusStylesSE-carousel__inner--item {
                     background-size: cover;
                 }
-              
             }
             /* ----------------------------------------- */
         </style>

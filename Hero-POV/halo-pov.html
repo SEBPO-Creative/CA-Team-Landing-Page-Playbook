@@ -9,8 +9,6 @@
         <title>Hero POV - Halo</title>
         <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
         <style>
-			/* Common Styles */
-
             /* Carousels - POV */
             .citrusStylesSE-halo .citrusStylesSE-pov__img {
                 max-width: 190px;
@@ -32,15 +30,15 @@
             }
 
             .citrusStylesSE-halo .citrusStylesSE-pov__text{
-                display: flex;
+                /* display: flex; */
                 align-items: center;
                 justify-content: flex-start;
-                flex-direction: row;
+                /* flex-direction: row; */
                 gap: 20px;
             }
 
             .citrusStylesSE-halo__pov1 .citrusStylesSE-pov__text{
-                padding: 1.5em;
+                padding: var(--citrusStylesSE-spacing-large);
             }
 
             .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text{
@@ -88,6 +86,10 @@
                 padding-right: 0;
             }
 
+            .citrusStylesSE-halo__pov1 .citrusStylesSE-btn-primary-navy{
+                margin-left: 0;
+            }
+
             .citrusStylesSE-halo .citrusStylesSE-carousel-indicators {
                 left: calc(100% / 2 - 34.5px);
             }
@@ -98,7 +100,7 @@
             /* min-width:1024px and max-width: 1247.99*/
 
                 .citrusStylesSE-halo__pov1 .citrusStylesSE-pov__text {
-                    padding: 1.5em 0;
+                    padding: var(--citrusStylesSE-spacing-large) 0;
                 }
 
                 .citrusStylesSE-halo__logo {
@@ -110,7 +112,7 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    padding: 1em 0;
+                    padding: var(--citrusStylesSE-spacing-medium) 0;
                     max-width: 350px;
                 }
 
@@ -119,7 +121,7 @@
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
-                    gap: 30px !important;
+                    gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px) !important;
                 }
             
             }
@@ -127,15 +129,15 @@
             @media (min-width: 64em) { /* min-width: 1024px */
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 35px;
-                    line-height: 35px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 3px);
+                    /* line-height: calc(var(--citrusStylesSE-spacing-xlarge) + 3px); */
                     font-family: var(--citrusStylesSE-font-family-PetcoBold);
                     font-weight: var(--citrusStylesSE-text-font-weight-Bold)
 
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     color: var(--citrusStylesSE-primary-navy);
                 }
 
@@ -147,9 +149,7 @@
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-halo__copy {
-                    flex-direction: row;
-                    display: flex;
-                    gap: 30px;
+                    gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px);
                 }
 
                 .citrusStylesSE-halo__pov2 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
@@ -179,7 +179,7 @@
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
                     padding: 1em 0;
                     max-width: 350px;
-                    font-size: 20px !important;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 4px) !important;
                 }
 
                 .citrusStylesSE-halo .citrusStylesSE-pov__img {
@@ -203,11 +203,10 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 20px;
                     color: var(--citrusStylesSE-white);
-                    font-size: 20px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 4px);
                     max-width: 290px;
-                    line-height: 20px;
+                    line-height: calc(var(--citrusStylesSE-text-font-size-medium) + 4px);
                     margin: 0;   
                     padding: 0.5em 0 0.5em 0
                 }
@@ -221,7 +220,7 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
                     color: var(--citrusStylesSE-white);
                     text-align: left;
                     padding: 10px 0;
@@ -259,8 +258,8 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
-                    line-height: 25px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
                 }
 
                 .citrusStylesSE-halo .citrusStylesSE-pov__logo {
@@ -273,14 +272,13 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
-                    line-height: 17px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-medium) + 1px);
                     padding: 8px 0 12px;
                 }
 
                 .citrusStylesSE-halo .citrusStylesSE-btn-primary-navy {
-                    gap: 10px;
-
+                    gap: calc(var(--citrusStylesSE-spacing-small) + 2px);
                 } 
 
             }
@@ -288,8 +286,7 @@
             @media (min-width: 48em) { /* min-width:768px*/
                 .citrusStylesSE-halo .citrusStylesSE-btn-primary-navy {
                     justify-content: flex-start;
-                    gap: 10px;
-
+                    gap: calc(var(--citrusStylesSE-spacing-small) + 2px);
                 }   
             }
 
@@ -320,20 +317,20 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    font-size: 24px;
-                    line-height: 24px;
+                    font-size: var(--citrusStylesSE-text-font-size-xlarge);
+                    line-height: var(--citrusStylesSE-text-font-size-xlarge);
                     padding: 1em 0;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     text-align: center;
                     padding: 10px 0 20px;
                     max-width: 90%;
                 }
 
                 .citrusStylesSE-btn-primary-navy, .citrusStylesSE-btn-primary-navy {
-                    gap: 30px;
+                    gap: calc(var(--citrusStylesSE-spacing-xlarge) - 2px);
                 }
 
                 .citrusStylesSE-halo__copy {
@@ -359,8 +356,6 @@
               
             }
 
-		
-
             /* ----------------------------------------- */
         </style>
     </head>
@@ -373,12 +368,12 @@
 				<!-- POV 01 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-halo__pov1">
                     <div class="citrusStylesSE-pov__img citrusStylesSE-m-hide">
-                        <img src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-pov1.png" alt="">
+                        <img class="citrusStylesSE-img" src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-pov1.png" alt="">
                     </div>
-                    <div class="citrusStylesSE-pov__text">
-                        <div class="citrusStylesSE-halo__copy">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid citrusStylesSE-grid__dir--col">
+                        <div class="citrusStylesSE-halo__copy citrusStylesSE-grid citrusStylesSE-grid__dir--col">
                             <div class="citrusStylesSE-halo__logo">
-                                <img src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-logo.png" alt="">
+                                <img class="citrusStylesSE-img" src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-logo.png" alt="">
                             </div>
                             <h2 class="citrusStylesSE-header1">NATURAL <b>NUTRITION,</b>
                                 BACKED BY <b>SCIENCE</b> </h2>
@@ -391,12 +386,12 @@
 				<!-- POV 02 -->
 				<div class="citrusStylesSE-carousel__inner--item citrusStylesSE-halo__pov2">
                     <div class="citrusStylesSE-pov__img citrusStylesSE-m-hide">
-                        <img src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-pov2.png" alt="">
+                        <img class="citrusStylesSE-img" src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-pov2.png" alt="">
                     </div>
-                    <div class="citrusStylesSE-pov__text">
-                        <div class="citrusStylesSE-halo__copy">
+                    <div class="citrusStylesSE-pov__text citrusStylesSE-grid citrusStylesSE-grid__dir--row">
+                        <div class="citrusStylesSE-halo__copy citrusStylesSE-grid citrusStylesSE-grid__dir--row">
                             <div class="citrusStylesSE-halo__logo">
-                                <img src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-logo.png" alt="">
+                                <img class="citrusStylesSE-img" src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-halo-logo.png" alt="">
                             </div>
                             <div class="citrusStylesSE-wrapper">
                                 <h2 class="citrusStylesSE-header1">OBSESSIVELY GOOD INGREDIENTS™</h2>

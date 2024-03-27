@@ -9,8 +9,6 @@
         <title>Hero POV - Merrick</title>
         <link rel="stylesheet" type="text/css" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
         <style>
-			/* Common Styles */
-
             /* Carousels - POV */
             .citrusStylesSE-carousel__inner{
                 background-image: url("https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-merrick-pov-bg.png");
@@ -49,7 +47,7 @@
             }
 
             .citrusStylesSE-btn-secondary-white{
-                gap: 20px;
+                gap: calc(var(--citrusStylesSE-spacing-medium) + 4px);
             }
 
             .citrusStylesSE-grid__cell{
@@ -71,12 +69,12 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 36px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-super) + 4px);
                     color: var(--citrusStylesSE-white);
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 18px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
                     color: var(--citrusStylesSE-white);
                 }
 
@@ -104,22 +102,22 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
-                    font-size: 20px !important;
+                    font-size: var(--citrusStylesSE-text-font-size-large) !important;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px !important;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px) !important;
                 }
            }
 
             @media (max-width: 63.999em) {
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 20px;
+                    font-size: var(--citrusStylesSE-text-font-size-large);
                     color: var(--citrusStylesSE-white);
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 14px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px);
                     color: var(--citrusStylesSE-white);
                     text-align: center;
                     padding: 10px 0;
@@ -129,11 +127,11 @@
 
             @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                 }
             }
 
@@ -156,14 +154,14 @@
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: 25px;
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
                     max-width: 290px;
                     line-height: 25px;
                     margin: 0 auto;
                 }
 
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: 16px;
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
                     text-align: center;
                     padding: 10px 0 20px;
                     max-width: 350px;
@@ -174,9 +172,6 @@
                 }
                 
             }
-
-		
-
             /* ----------------------------------------- */
         </style>
     </head>
