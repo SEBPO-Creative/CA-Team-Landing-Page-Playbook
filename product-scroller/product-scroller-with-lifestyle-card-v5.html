@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
     <style>
         /*Default css*/
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-
-        /*** <!-- Product Scroller Lifestyle Card --> ***/
+        /*** Product Scroller Lifestyle Card ***/
         .citrusStylesSE-product-scroller-lifestyle {
             overflow: hidden;
             background: #F4F6F6;
@@ -29,7 +23,7 @@
             margin: 0 auto;
             overflow: hidden;
         }
-        
+
         .citrusStylesSE-lifestyle__container {
             background-color: #c1f8f1;
         }
@@ -72,20 +66,13 @@
         }
 
         .citrusStylesSE-lifestyle__bottom-content>h4 {
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: bold;
             font-size: 20px;
             display: block;
         }
 
-        .citrusStylesSE-lifestyle__bottom-content>p {
-            font-family: "PetcoCircular-Regular", arial !important;
-        }
-
         .citrusStylesSE-product-scroller__item>p {
-            font-family: "PetcoCircular-Regular", arial !important;
-            color: #333;
-            font-size: 16px;
+            color: var(--citrusStylesSE-black-light);
+            font-size: var(--citrusStylesSE-text-font-size-medium);
             text-align: left;
             margin: 20px 0 10px;
             text-decoration: none;
@@ -98,15 +85,9 @@
             font-weight: 500;
         }
 
-        .citrusStylesSE-product-scroller__item>a {
-            color: #001952;
-            font-size: 16px;
-            display: block;
-            font-family: "PetcoCircular-Bold", arial !important;
-            text-decoration: underline;
-            font-weight: 700;
+        .citrusStylesSE-product-scroller__item .citrusStylesSE-btn-primary-underline-navy{
+            text-align: left;
         }
-
 
         @media all and (max-width: 1301px) {
             .citrusStylesSE-productScroller--container {
@@ -176,7 +157,7 @@
 
         @media all and (max-width: 374px) {
             .citrusStylesSE-lifestyle__bottom-content>h4 {
-                font-size: 18px;
+                font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
             }
         }
     </style>
@@ -201,24 +182,39 @@
                                             <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_amazing-product_3"
                                                 alt="" />
                                         </a>
-                                        <p>ORIJEN Amazing Grains Original High Protein Dry Dog Food, 22.5 lbs.</p>
-                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                                        <p class="citrusStylesSE-PetcoRegular">ORIJEN Amazing Grains Original High
+                                            Protein Dry Dog Food, 22.5 lbs.</p>
+                                        <div
+                                            class="citrusStylesSE-btn-primary-underline-navy ">
+                                            <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                onclick="clickTrackLink(this)">Shop Now</a>
+                                        </div>
                                     </div>
                                     <!-- single item 02 -->
                                     <div class="citrusStylesSE-product-scroller__item splide__slide">
                                         <a href="" manual_cm_sp="" onclick="clickTrackLink(this);"><img
                                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_amazing-product_3"
                                                 alt="" /></a>
-                                        <p>ORIJEN Amazing Grains High Protein Large Breed Dry Puppy Food, 22.5 lbs.</p>
-                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                                        <p class="citrusStylesSE-PetcoRegular">ORIJEN Amazing Grains High Protein Large
+                                            Breed Dry Puppy Food, 22.5 lbs.</p>
+                                        <div
+                                            class="citrusStylesSE-btn-primary-underline-navy ">
+                                            <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                onclick="clickTrackLink(this)">Shop Now</a>
+                                        </div>
                                     </div>
                                     <!-- single item 03-->
                                     <div class="citrusStylesSE-product-scroller__item splide__slide">
                                         <a href="" manual_cm_sp="" onclick="clickTrackLink(this);"><img
                                                 src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_orijin_amazing-product_3"
                                                 alt="" /></a>
-                                        <p>ORIJEN Amazing Grains High Protein Dry Puppy Food, 22.5 lbs.</p>
-                                        <a href="" manual_cm_sp="" onclick="clickTrackLink(this);">Shop Now</a>
+                                        <p class="citrusStylesSE-PetcoRegular">ORIJEN Amazing Grains High Protein Dry
+                                            Puppy Food, 22.5 lbs.</p>
+                                        <div
+                                            class="citrusStylesSE-btn-primary-underline-navy ">
+                                            <a href="" class="citrusStylesSE-url" manual_cm_sp=""
+                                                onclick="clickTrackLink(this)">Shop Now</a>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -233,8 +229,9 @@
                                 alt="" /></a>
 
                         <div class="citrusStylesSE-lifestyle__bottom-content">
-                            <h4>New! ORIJEN Amazing Grains <sup>™</sup></h4>
-                            <p>Power your dog’s every day with nutrient-dense animal protein and hand-selected grains.
+                            <h4 class="citrusStylesSE-PetcoBold">New! ORIJEN Amazing Grains <sup>™</sup></h4>
+                            <p class="citrusStylesSE-PetcoRegular">Power your dog’s every day with nutrient-dense animal
+                                protein and hand-selected grains.
                             </p>
                         </div>
                     </div>

@@ -7,12 +7,6 @@
   <title>Testimonial</title>
   <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
 
     /*----- Override Splide Slider CSS ------*/
     .citrusStylesSE-testimonial .splide__arrow {
@@ -24,7 +18,7 @@
     }
 
     .citrusStylesSE-testimonial .splide__arrow svg {
-      fill: #000;
+      fill: var(--citrusStylesSE-black);
     }
 
     .citrusStylesSE-testimonial .splide__arrow:disabled {
@@ -39,7 +33,7 @@
     /* Testimonila Card Style */
     .citrusStylesSE-testimonial {
       overflow: hidden;
-      background: #fff;
+      background: var(--citrusStylesSE-white);
       padding-top: 45px;
       padding-bottom: 40px;
     }
@@ -57,20 +51,16 @@
     }
 
     .citrusStylesSE-testimonial-header>h2 {
-      color: #000;
-      font-size: 25px;
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-weight: 700;
+      color: var(--citrusStylesSE-black);
+      font-size: var(--citrusStylesSE-text-font-size-xlarge);
       display: block;
       padding-bottom: 40px;
       line-height: 1;
     }
 
     .citrusStylesSE-testimonial p {
-      font-size: 16px;
-      color: #000;
-      font-family: "PetcoCircular-Regular", arial !important;
-      font-weight: 400;
+      font-size: var(--citrusStylesSE-text-font-size-medium);
+      color: var(--citrusStylesSE-black);
       display: block;
       line-height: 1.4;
     }
@@ -101,30 +91,18 @@
     }
 
     .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials h2 {
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-weight: 600;
-      font-size: 36px;
+      font-size: calc(var(--citrusStylesSE-text-font-size-super) + 4px);
       line-height: 36px;
-      color: #001952;
+      color: var(--citrusStylesSE-primary-navy);
       margin: 0 0 18px 0;
     }
 
     .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials p {
       margin: 10px 0;
-      font-family: "PetcoCircular-Regular", arial !important;
       font-weight: normal;
-      font-size: 26px;
+      font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 2px);
       line-height: 29px;
-      color: #001952;
-    }
-
-    .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials b {
-      margin: 10px 0;
-      font-family: "PetcoCircular-Bold", arial !important;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 21px;
-      color: #001952;
+      color: var(--citrusStylesSE-primary-navy);
     }
     /*------ Testimonila Card Style End ------*/
 
@@ -146,16 +124,16 @@
       }
 
       .citrusStylesSE-testimonials h2 {
-        font-size: 28px;
+        font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 4px);
       }
 
       .citrusStylesSE-testimonials p {
-        font-size: 18px;
+        font-size: calc(var(--citrusStylesSE-text-font-size-medium) + 2px);
         line-height: 20px;
       }
 
       .citrusStylesSE-testimonials b {
-        font-size: 16px;
+        font-size: var(--citrusStylesSE-text-font-size-medium);
         line-height: 17px;
       }
 
@@ -191,16 +169,11 @@
       }
 
       .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials h2 {
-        font-size: 24px;
+        font-size: var(--citrusStylesSE-text-font-size-xlarge);
       }
 
       .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials p {
-        font-size: 15px;
-        line-height: 17px;
-      }
-
-      .citrusStylesSE-testimonials-container .citrusStylesSE-testimonials b {
-        font-size: 15px;
+        font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 1px);
         line-height: 17px;
       }
 
@@ -257,7 +230,7 @@
     <div class="citrusStylesSE-testimonial-container">
       <!-- common header -->
       <div class="citrusStylesSE-testimonial-header">
-        <h2>JustFoodForDogs transforms dogs’ lives</h2>
+        <h2 class="citrusStylesSE-PetcoBold">JustFoodForDogs transforms dogs’ lives</h2>
       </div>
       <div id="citrusStylesSE-testimonial-slider" class="citrusStylesSE-testimonials splide">
         <div class="splide__track">
@@ -268,11 +241,11 @@
                 <div class="citrusStylesSE-testimonials">
                   <img class="citrusStylesSE-testimonials-img"
                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment1" alt="">
-                  <h2>Loprem's Story</h2>
-                  <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
                     exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
                   <br>
-                  <p><b>- Mr. Lorem Ipsum</b></p>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
                 </div>
               </div>
             </li>
@@ -283,11 +256,11 @@
                   <img class="citrusStylesSE-testimonials-img"
                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment2"
                     alt="Picture of a happy dog outside">
-                  <h2>Loprem's Story</h2>
-                  <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
                     exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
                   <br>
-                  <p><b>- Mr. Lorem Ipsum</b></p>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
                 </div>
               </div>
             </li>
@@ -298,11 +271,11 @@
                   <img class="citrusStylesSE-testimonials-img"
                     src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/JFFD_comment3"
                     alt="Picture of a happy, black and white dog">
-                  <h2>Loprem's Story</h2>
-                  <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
+                  <h2 class="citrusStylesSE-PetcoBold">Loprem's Story</h2>
+                  <p class="citrusStylesSE-PetcoRegular">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, explicabo! Voluptate,
                     exercitationem minima aut ratione recusandae magni vitae impedit quo! ”</p>
                   <br>
-                  <p><b>- Mr. Lorem Ipsum</b></p>
+                  <p class="citrusStylesSE-PetcoBold">- Mr. Lorem Ipsum</p>
                 </div>
               </div>
             </li>

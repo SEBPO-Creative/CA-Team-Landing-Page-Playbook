@@ -8,7 +8,6 @@
     <title>Education - FAQ -- Hero Banner</title>
     <!-- citrusStylesSE library css -->
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
 
     <style>
         .citrusStylesSE-position-relative {
@@ -17,7 +16,6 @@
 
         .citrusStylesSE-__heroImage-box img {
             width: 100%;
-            /* max-width: 1440px; */
             object-fit: cover;
         }
 
@@ -26,7 +24,6 @@
             width: 90%;
             height: 100%;
             top: 0;
-            display: flex;
             justify-content: space-between;
             align-items: center;
             margin: auto 5%;
@@ -61,31 +58,34 @@
         }
 
         a.citrusStylesSE-hero--rightCTA {
-            font-family: "PetcoCircular-Bold", arial;
+            font-family: var(--citrusStylesSE-font-family-PetcoBold);
             display: block;
             min-width: 127px;
             line-height: 50px;
             font-size: 16px;
             font-weight: 900;
-            color: #fff;
-            background: #00205b;
-            border: 1px solid #00205b;
+            color: var(--citrusStylesSE-white);
+            background: var(--citrusStylesSE-secondary-navy);
+            border: 1px solid var(--citrusStylesSE-secondary-navy);
             border-radius: 7px;
             text-transform: uppercase;
-            text-decoration: none;
             transition: background 1s ease;
         }
 
         .citrusStylesSE-disclaimer--hero {
             font-size: 12px;
             line-height: 12px;
-            color: #00205b;
+            color: var(--citrusStylesSE-secondary-navy);
             font-weight: 600;
             text-align: center;
             padding-top: 10px;
         }
 
-        @media all and (min-width: 922px) and (max-width: 1100px) {
+        @media all and (min-width: 922px) and (max-width: 1280px) {
+            .citrusStylesSE-__heroImage-copy {
+                width: 92%;
+            }
+
             .citrusStylesSE-spotlightCopy h1 {
                 font-size: 22px;
             }
@@ -97,6 +97,10 @@
             .citrusStylesSE-spotlightCopy p {
                 font-size: 17px;
                 line-height: 17px;
+            }
+
+            a.citrusStylesSE-hero--rightCTA {
+                line-height: 45px;
             }
         }
 
@@ -121,6 +125,10 @@
             .citrusStylesSE-spotlightCopy p {
                 font-size: 14px;
                 line-height: 17px;
+            }
+
+            a.citrusStylesSE-hero--rightCTA {
+                line-height: 45px;
             }
         }
 
@@ -175,12 +183,16 @@
         }
 
         @media all and (min-width: 476px) and (max-width: 767px) {
+            .citrusStylesSE-__heroImage-copy {
+                margin-left: 2%;
+            }
+
             .citrusStylesSE-spotlightCopy h1 {
                 font-size: 28px;
             }
 
             .citrusStylesSE-spotlightCopy h1 span {
-                font-size: 60px;
+                font-size: 55px;
             }
 
             .citrusStylesSE-spotlightCopy p {
@@ -210,7 +222,7 @@
                     class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid__cell--center@medium citrusStylesSE-hero-left">
                     <div class="citrusStylesSE-spotlightLogo citrusStylesSE-grid__cell--center">
                         <img class="citrusStylesSE-display-none citrusStylesSE-display-block@medium"
-                            src="https://citrusad-sebpo.github.io/Brand-Spotlight-Pages/Education-FAQ/assets/images/citrusStylesSE-spotlightLogoBoxieCat.png"
+                            src="https://citrusad-sebpo.github.io/Brand-Spotlight-Pages/Education-FAQ/assets/images/SpotLightLogoBoxieCat.png"
                             alt="">
                     </div>
                     <div class="citrusStylesSE-grid__cell--center citrusStylesSE-spotlightCopy">

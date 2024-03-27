@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>article2up</title>
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
-    <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/finalized.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         .citrusStylesSE-article2up {
             overflow: auto;
         }
@@ -21,7 +14,7 @@
         .citrusStylesSE-article2up--container {
             width: 1094px;
             margin: auto;
-            gap: 20px;
+            gap: calc(var(--citrusStylesSE-spacing-medium) + 4px);
         }
 
         .citrusStylesSE-article2up--card {
@@ -46,17 +39,13 @@
 
         .citrusStylesSE-article2up-card--details {
             height: 214px;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
         }
 
         .citrusStylesSE-article2up-card--details h3 {
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-size: 20px;
+            font-size: var(--citrusStylesSE-text-font-size-large);
             line-height: initial;
-            font-weight: 700;
-            color: #000000;
+            color: var(--citrusStylesSE-black);
             margin: 0;
         }
 
@@ -67,11 +56,9 @@
 
         .citrusStylesSE-article2up-card--details p {
             padding: 25px 25px 30px 25px;
-            font-family: PetcoCircular-Regular, arial !important;
-            font-size: 16px;
-            line-height: 21px;
-            font-weight: 500;
-            color: #000000;
+            font-size: var(--citrusStylesSE-text-font-size-medium);
+            line-height: calc(var(--citrusStylesSE-text-font-size-large) + 1px);
+            color: var(--citrusStylesSE-black);
         }
 
         .citrusStylesSE-article2up-card--details .citrusStylesSE-letter-box-super {
@@ -79,13 +66,14 @@
             padding-bottom: 0 !important;
         }
 
-        .citrusStylesSE-article2up::-webkit-scrollbar, 
+        .citrusStylesSE-article2up::-webkit-scrollbar,
         .citrusStylesSE-article2up--container::-webkit-scrollbar {
             /* Safari and Chrome */
             display: none;
         }
 
-        .citrusStylesSE-article2up,.citrusStylesSE-article2up--container{
+        .citrusStylesSE-article2up,
+        .citrusStylesSE-article2up--container {
             -ms-overflow-style: none;
             /* Internet Explorer 10+ */
             scrollbar-width: none;
@@ -107,7 +95,6 @@
             .citrusStylesSE-article2up--container {
                 gap: 40px;
             }
-
         }
 
         @media screen and (max-width: 680px) {
@@ -134,7 +121,6 @@
             }
         }
 
-
         @media screen and (max-width: 375px) {
             .citrusStylesSE-article2up-card--image {
                 height: 210px;
@@ -153,36 +139,36 @@
                     <img alt="placeholder" class="citrusStylesSE-image"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/Ollie-food-philosophy_image">
                 </div>
-                <div class="citrusStylesSE-article2up-card--details">
-                    <h3 class="citrusStylesSE-centered">
+                <div class="citrusStylesSE-article2up-card--details citrusStylesSE-grid citrusStylesSE-grid--center">
+                    <h3 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">
                         Heading Goes Here, 18px - 20px.
                     </h3>
-                    <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
+                    <p class="citrusStylesSE-centered citrusStylesSE-PetcoRegular">Subhead line goes here. 14px-16px.
+                        Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop Now</a>
                     </div>
                 </div>
             </div>
             <div class="citrusStylesSE-grid__cell citrusStylesSE-article2up--card">
                 <div class="citrusStylesSE-article2up-card--image">
-                    <iframe src="https://www.youtube.com/embed/eL_MaSCgA8A" title="ABC" 
+                    <iframe src="https://www.youtube.com/embed/eL_MaSCgA8A" title="ABC"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <div class="citrusStylesSE-article2up-card--details">
-                    <h3 class="citrusStylesSE-centered">
+                <div class="citrusStylesSE-article2up-card--details citrusStylesSE-grid citrusStylesSE-grid--center">
+                    <h3 class="citrusStylesSE-centered citrusStylesSE-PetcoBold">
                         Heading Goes Here, 18px - 20px.
                     </h3>
-                    <p class="citrusStylesSE-centered">Subhead line goes here. 14px-16px. Lorem
+                    <p class="citrusStylesSE-centered citrusStylesSE-PetcoRegular">Subhead line goes here. 14px-16px.
+                        Lorem
                         ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
-                    <div class="citrusStylesSE-cta__underline citrusStylesSE-letter-box-super">
-                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    <div class="citrusStylesSE-btn-primary-underline-navy">
+                        <a href="" class="citrusStylesSE-url" manual_cm_sp="" onclick="clickTrackLink(this)">Shop Now</a>
                     </div>
-
-
                 </div>
             </div>
         </div>
