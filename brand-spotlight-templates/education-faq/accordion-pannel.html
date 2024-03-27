@@ -129,13 +129,13 @@
         }
 
         .citrusStylesSE__accordion:after {
-            font-family: "PetcoCircular-Bold", arial !important;
+            /* font-family: "PetcoCircular-Bold", arial !important; */
             content: "\002B";
-            color: #001952;
+            color: var(--citrusStylesSE-primary-navy);
             float: right;
             margin-left: 0px;
-            font-size: 50px;
-            font-weight: 700;
+            font-size: calc(var(--citrusStylesSE-text-font-size-super) + var(--citrusStylesSE-text-font-size-large) - 2px);
+            /* font-weight: 700; */
             cursor: pointer;
         }
 
@@ -148,7 +148,7 @@
 
         .citrusStylesSE__accordionPanel {
             padding: 0 18px;
-            background-color: white;
+            background-color: var(--citrusStylesSE-white);
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
@@ -163,19 +163,16 @@
             font-size: 24px;
             line-height: 30px;
             font-weight: 700;
-            color: #001952;
-            font-family: "PetcoCircular-Bold", arial !important;
+            color: var(--citrusStylesSE-primary-navy);
         }
 
         .citrusStylesSE-accordion-title-pannel p,
         .citrusStylesSE__accordionPanel p {
             font-size: 16px;
             line-height: 20px;
-            font-weight: 400;
             padding-bottom: 18px;
-            font-family: "petcocircular-regular", arial !important;
             padding-right: 9%;
-            color: #000;
+            color: var(--citrusStylesSE-black);
         }
 
         .citrusStylesSE-accordion--item {
@@ -187,9 +184,7 @@
         .citrusStylesSE-accordion--item button {
             font-size: 20px;
             line-height: 25px;
-            font-weight: 700;
-            color: #001952;
-            font-family: "PetcoCircular-Bold", arial !important;
+            color: var(--citrusStylesSE-primary-navy);
         }
 
 
@@ -208,10 +203,8 @@
             flex-shrink: 0;
             text-transform: uppercase;
             border-radius: 5px;
-            background: #00205B;
-            color: #fff;
-            font-family: "PetcoCircular-Bold", arial !important;
-            font-weight: 700;
+            background: var(--citrusStylesSE-secondary-navy);
+            color: var(--citrusStylesSE-white);
         }
 
         .citrusStylesSE-text-content {
@@ -235,7 +228,7 @@
             }
 
             .citrusStylesSE-accordion--button button {
-                color: #001952;
+                color: var(--citrusStylesSE-primary-navy);
                 text-transform: capitalize;
                 background: unset;
                 border: none;
@@ -312,49 +305,49 @@
             <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--width-70">
                 <div class="citrusStylesSE-text-content">
                     <div class="citrusStylesSE-accordion-title-pannel">
-                        <h2>Accordion with symbols</h2>
-                        <p>In this example we have added a "plus" sign to each button. When the user clicks on the
+                        <h2 class="citrusStylesSE-PetcoBold">Accordion with symbols</h2>
+                        <p class="citrusStylesSE-PetcoRegular">In this example we have added a "plus" sign to each button. When the user clicks on the
                             button, the "plus" sign is replaced with a "minus" sign.</p>
                     </div>
                     <div class="citrusStylesSE-accordion--item">
-                        <button class="citrusStylesSE__accordion">Accordion Item Headline 1</button>
+                        <button class="citrusStylesSE__accordion citrusStylesSE-PetcoBold">Accordion Item Headline 1</button>
                         <div class="citrusStylesSE__accordionPanel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            <p class="citrusStylesSE-PetcoRegular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
 
                     <div class="citrusStylesSE-accordion--item">
-                        <button class="citrusStylesSE__accordion">Accordion Item Headline 2</button>
+                        <button class="citrusStylesSE__accordion citrusStylesSE-PetcoBold">Accordion Item Headline 2</button>
                         <div class="citrusStylesSE__accordionPanel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            <p class="citrusStylesSE-PetcoRegular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
 
                     <div class="citrusStylesSE-accordion--item">
-                        <button class="citrusStylesSE__accordion">Accordion Item Headline 3</button>
+                        <button class="citrusStylesSE__accordion citrusStylesSE-PetcoBold">Accordion Item Headline 3</button>
                         <div class="citrusStylesSE__accordionPanel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            <p class="citrusStylesSE-PetcoRegular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
 
                     <div class="citrusStylesSE-accordion--item">
-                        <button class="citrusStylesSE__accordion">Accordion Item Headline 4</button>
+                        <button class="citrusStylesSE__accordion citrusStylesSE-PetcoBold">Accordion Item Headline 4</button>
                         <div class="citrusStylesSE__accordionPanel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            <p class="citrusStylesSE-PetcoRegular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
 
                     <div class="citrusStylesSE-accordion--button">
-                        <button type="button" class="citrusStylesSE-button citrusStylesSE-button--info">Button</button>
-                        <button type="button" class="citrusStylesSE-button citrusStylesSE-button--info">Button</button>
+                        <button type="button" class="citrusStylesSE-PetcoBold citrusStylesSE-button ">Button</button>
+                        <button type="button" class="citrusStylesSE-PetcoBold citrusStylesSE-button ">Button</button>
                     </div>
                 </div>
             </div>
