@@ -51,14 +51,6 @@
                 width: 100%;
             }
 
-             .citrusStylesSE-grid__cell {
-                flex: unset;
-            }
-
-            .citrusStylesSE-grid {
-                overflow-x: auto;
-            }
-
 
             @media screen and (min-width: 64em) and (max-width: 77.99em) {  /* min-width: 1024px and max-width: 1247.99px */
 
@@ -69,14 +61,10 @@
 
             @media screen and (max-width: 63.99em) {  /* max-width: 1023.99px */
 
-                .citrusStylesSE-grid__cell {
-                    flex: 0 0 100%;
-                }
-
                 .citrusStylesSE-wrapper .citrusStylesSE-para {
                     min-height: 60px;
                 }
-                            }
+            }
 			
 			@media screen and (min-width: 20em) {
 
@@ -98,6 +86,14 @@
                 .citrusStylesSE-section4up{
                     padding: var(--citrusStylesSE-spacing-small);
                 }
+
+            }
+
+            @media (max-width: 19.999em) {
+                .citrusStylesSE-section4up .citrusStylesSE-grid__cell {
+                    min-width: 80%;
+                    padding: 0 0.5em;
+                }
             }
 
 
@@ -115,8 +111,8 @@
                         <p class="citrusStylesSE-para">Select from multiple options based on your dog’s size.</p>
                     </div>
                     <div class="citrusStylesSE-wrapper">
-                        <div class="citrusStylesSE-grid">
-                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                        <div class="citrusStylesSE-grid citrusStylesSE-grid--xlarge-fit citrusStylesSE-no-scrollbar citrusStylesSE-overflow-x">
+                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
                                 <a href="" class="citrusStylesSE-url">
                                     <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options1" alt="">
                                     <div class="citrusStylesSE-text__wrapper">
@@ -125,7 +121,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
                                 <a href="" class="citrusStylesSE-url">
                                     <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options2" alt="">
                                     <div class="citrusStylesSE-text__wrapper">
@@ -134,7 +130,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
                                 <a href="" class="citrusStylesSE-url">
                                     <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options3" alt="">
                                     <div class="citrusStylesSE-text__wrapper">
@@ -143,7 +139,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-40@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
+                            <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--no-gutter citrusStylesSE-centered citrusStylesSE-grid__cell--width-25@xlarge citrusStylesSE-grid__cell--width-40@medium citrusStylesSE-grid__cell--width-50@small citrusStylesSE-grid__cell--width-70@xsmall">
                                 <a href="" class="citrusStylesSE-url">
                                     <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrus_petmate_options4" alt="">
                                     <div class="citrusStylesSE-text__wrapper">
