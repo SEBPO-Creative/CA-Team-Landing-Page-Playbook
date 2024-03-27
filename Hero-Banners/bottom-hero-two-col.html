@@ -31,17 +31,9 @@
             padding: 1em 1em;
             text-align: left;
         }
+
         .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
-            color:#fff;
-        }
-
-
-        .citrusStylesSE-desktop__version {
-            display: block;
-        }
-
-        .citrucitrusStyleSE-mobile__version {
-            display: none;
+            color: var(--citrusStylesSE-white);
         }
 
         .citrusStylesSE-grid__cell {
@@ -49,7 +41,6 @@
         }
 
         .citrucitrusStyleSE-product__image {
-            display: flex;
             justify-content: center;
             align-items: center;
             padding: 0 5%;
@@ -84,14 +75,6 @@
         }
 
         @media screen and (max-width:767px) {
-            .citrusStylesSE-desktop__version {
-                display: none;
-            }
-
-            .citrucitrusStyleSE-mobile__version {
-                display: block;
-            }
-
             .citrusStylesSE-order2-sm {
                 order: 2;
             }
@@ -123,12 +106,13 @@
             
             .citrusStylesSE-section__title .citrusStylesSE-header3, .citrusStylesSE-section__title .citrusStylesSE-para{
                 text-align: center;
-                color:#000;
+                color: var(--citrusStylesSE-black);
             }
            
             .citrusStylesSE-cta__box-white .citrusStylesSE-url {
-                color: #000;
+                color: var(--citrusStylesSE-black);
             }
+            
             .citrusStylesSE-cta__box, .citrusStylesSE-cta__box-white {
                 justify-content: center;
             }
@@ -163,11 +147,11 @@
                 </div>
             </div>
             <div class="citrusStylesSE-grid__cell">
-                <div class="citrucitrusStyleSE-product__image">
-                    <img class="citrusStylesSE-desktop__version"
+                <div class="citrucitrusStyleSE-product__image citrusStylesSE-grid">
+                    <img class="citrusStylesSE-m-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/purebites_footer-product"
                         alt="" />
-                    <img class="citrucitrusStyleSE-mobile__version"
+                    <img class="citrusStylesSE-d-hide"
                         src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/purebites_footer-product"
                         alt="" />
                 </div>
