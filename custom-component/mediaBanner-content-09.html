@@ -8,24 +8,19 @@
   <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
 
   <style>
-    /* Product Banner Section */
     .citrusStylesSE__productBanner {
       background-color: rgba(100, 201, 209, 25%);
       margin-top: 98px;
     }
 
-    .citrusStylesSE__productBanner .citrusStylesSE__productBanner-product img {
+    .citrusStylesSE__productBanner-product img {
       margin-top: -5em;
       margin-right: 38px;
       margin-left: 5%;
       max-width: 470px;
     }
 
-    .citrusStylesSE-section__title {
-      padding: 4.5em 1em;
-    }
-
-    .citrusStylesSE-para {
+    citrusStylesSE__productBanner .citrusStylesSE-para {
       max-width: 450px;
       margin: 0 auto;
     }
@@ -34,13 +29,7 @@
       padding-bottom: 0 !important;
     }
 
-    /* Product Banner Section e */
     @media screen and (max-width:767px) {
-
-      .citrusStylesSE-section__title {
-        padding: 2.5em 1em;
-      }
-
       .citrusStylesSE__productBanner .citrusStylesSE-grid {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
@@ -48,7 +37,7 @@
         flex-direction: column-reverse;
       }
 
-      .citrusStylesSE__productBanner .citrusStylesSE__productBanner-product img {
+      .citrusStylesSE__productBanner-product img {
         margin: 0px;
         max-width: 90%;
       }
@@ -57,11 +46,12 @@
 </head>
 
 <body>
-  <main class="citrusStylesSE-main citrusStylesSE-container--xlarge-1440">
+  <main class="citrusStylesSE-container citrusStylesSE-container--xlarge-1440">
     <section class="citrusStylesSE__productBanner citrusStylesSE-container--super\@super">
       <div class="citrusStylesSE-grid citrusStylesSE-grid--no-gutter citrusStylesSE-grid--center">
         <div class="citrusStylesSE-grid__cell citrusStylesSE__productBanner-product citrusStylesSE-right">
-          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots1" alt="">
+          <img class="citrusStylesSE-img"
+            src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/citrusTrio__comparision--shots1" alt="">
         </div>
         <div class="citrusStylesSE-grid__cell">
           <div class="citrusStylesSE-section__title citrusStylesSE-centered">
@@ -70,7 +60,7 @@
               convenient to administer and offers combined protection.</p>
             <!-- CTA Box -->
             <div class="citrusStylesSE-letter-box-large">
-              <div class="citrusStylesSE-cta__box citrusStylesSE-grid citrusStylesSE-grid--center">
+              <div class="citrusStylesSE-btn-primary-navy">
                 <a href="" class="citrusStylesSE-url">Shop Now</a>
               </div>
             </div>
