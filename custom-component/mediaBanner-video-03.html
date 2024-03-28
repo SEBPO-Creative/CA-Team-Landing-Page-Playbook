@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://ca-team-landing-page-playbook.pages.dev/CitrusStylesSE.css">
 </head>
 <style>
-    section {
+    .citrusStylesSE-video {
         background: #6edcfa20;
         position: relative;
         margin: auto;
         margin-top: 90px;
+        max-width: 1440px;
     }
 
     .citrusStyleSE-iframe {
@@ -35,20 +36,8 @@
         padding: 0 20px 20px;
     }
 
-    .citrusStylesSE-bannerCTA {
-        width: 212px;
-        height: 55px;
-        flex-shrink: 0;
-        text-transform: uppercase;
-        border-radius: 5px;
-        background: #00205B;
-        color: #fff;
-        font-family: "PetcoCircular-Bold", arial !important;
-        font-weight: 700;
-    }
-
     @media screen and (max-width:767px) {
-        section {
+        .citrusStylesSE-video {
             margin-top: 0px;
         }
 
@@ -62,26 +51,17 @@
 
         .citrusStylesSE-grid-text {
             padding: 0 20px;
+            padding-bottom: 20px;
         }
 
         .citrusStyleSE-iframe iframe {
             top: 0;
         }
-
-        .citrusStylesSE-bannerCTA {
-            color: #001952;
-            background: none;
-            width: fit-content;
-            height: fit-content;
-            text-transform: capitalize;
-            text-decoration: underline;
-            padding-bottom: 40px;
-        }
     }
 </style>
 
 <body>
-    <section class="citrusStylesSE-container--large citrusStylesSE-container--super">
+    <section class="citrusStylesSE-container--large citrusStylesSE-container--super citrusStylesSE-video banner">
         <div
             class="citrusStylesSE-grid citrusStylesSE-grid--small-full citrusStylesSE-grid--medium-full citrusStylesSE-grid--no-gutter">
             <div class="citrusStylesSE-grid__cell citrusStylesSE-order2-sm">
@@ -93,12 +73,13 @@
             </div>
             <div class="citrusStylesSE-grid__cell citrusStylesSE-grid__cell--center citrusStylesSE-order1-sm">
                 <div class="citrusStylesSE-grid-text">
-                    <h2 class="citrusStylesSE-heading citrusStylesSE-centered">Leave old school clay and chemicals in
+                    <h2 class="citrusStylesSE-heading citrusStylesSE-centered citrusStylesSE-PetcoBold">Leave old school clay and chemicals in
                         the dust</h2>
-                    <p class="citrusStylesSE-centered citrusStyleSE-paragraph">Made entirely of sustainably sourced wood
+                    <p class="citrusStylesSE-centered citrusStyleSE-paragraph citrusStylesSE-PetcoRegular">Made entirely of sustainably sourced wood
                         or paper fiber free of fragrance,chemicals and dyes.</p>
-                    <button type="button" class="citrusStylesSE-button citrusStylesSE-bannerCTA">Shop
-                        Now</button>
+                    <div class="citrusStylesSE-btn-primary-navy citrusStylesSE-grid citrusStylesSE-grid--center">
+                        <a href="" class="citrusStylesSE-url">Shop Now</a>
+                    </div>
                 </div>
             </div>
         </div>
