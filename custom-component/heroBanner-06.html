@@ -48,7 +48,7 @@
                 .citrusStylesSE-header2{
                     font-size: var(--citrusStylesSE-text-font-size-super);
                     color: var(--citrusStylesSE-white);
-                    line-height: var(--citrusStylesSE-text-font-size-super);
+                    line-height: 32px;
                 }
 
                 .citrusStylesSE-disclaimer{
@@ -57,6 +57,19 @@
 
                 .citrusStylesSE-wrapper{
                     min-height: 230px;
+                }
+
+            }
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-header2{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-large) + 1);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-large) + 1);
+                }
+
+                .citrusStylesSE-wrapper {
+                    min-height: 200px;
                 }
 
             }
@@ -77,7 +90,7 @@
                 }
 
                 .citrusStylesSE-wrapper {
-                    min-height: 190px;
+                    min-height: 160px;
                 }
 
            }
@@ -100,15 +113,6 @@
 
                 .citrusStylesSE-banners__logo {
                     max-width: 90px;
-                }
-
-            }
-
-            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
-
-                .citrusStylesSE-header2{
-                    font-size: calc(var(--citrusStylesSE-text-font-size-large) + 1);
-                    line-height: calc(var(--citrusStylesSE-text-font-size-large) + 1);
                 }
 
             }
