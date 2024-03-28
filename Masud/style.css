@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common CSS */
+.petco-wrapper p {
+    margin: 0;
+}
+
+.section-gap {
+    margin: 40px 0;
+}
+
+@media screen and (max-width:1439px) {
+    .petco-wrapper {
+        margin: 0 2% !important;
+    }
+}
+
+/* End Common CSS */
+
+
+
+.petco-nav-bg {
+    background-color: #001952;
+}
+
+.navbar-expand-lg .navbar-nav {
+    justify-content: end !important;
+}
+
+.navbar-toggler span {
+    color: #fff;
+    filter: invert(55248%) sepia(13%) saturate(307%) hue-rotate(120deg) brightness(100%) contrast(100%);
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar-brand :nth-child(2) {
+    position: relative;
+    top: 13px;
+}
+
+.nav-item a {
+    color: #fff !important;
+}
+
+
+/* ---------------------- */
+/* ----- SOP Start ----- */
+.sop-title {
+    color: #001952 !important;
+    font-size: 45px !important;
+}
+
+.sop-headline {
+    color: #001952 !important;
+    font-size: 25px !important;
+    padding-bottom: 15px;
+}
+
+.sop-sub-title {
+    color: #001952 !important;
+    font-size: 20px !important;
+}
+
+.sop-sub-headline {
+    color: #001952 !important;
+    font-size: 15px !important;
+}
+
+@media screen and (max-width:1024px) {
+    .sop-title {
+        font-size: 30px !important;
+    }
+}
+
+/* ----- SOP END ----- */
+/* ---------------------*/
+
+
+/* Preview Section */
+.petco-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.preview-container {
+    padding: 0 5%;
+    padding-bottom: 40px;
+}
+
+.preview-container h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.petco-wrapper img {
+    max-width: 100%;
+}
+
+.style-guideline {
+    padding-top: 40px;
+}
+
+.preview-section {
+    margin-top: 40px;
+}
+
+.preview-section__title {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-pov-type {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-pov-type a {
+    width: 211px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #001952;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    font-family: "PetcoCircular-Bold", arial !important;
+}
+
+/* ------ Category ------ */
+.category-title,
+.checklist-title {
+    padding-top: 40px;
+}
+
+/* ------ Category ------ */
+
+/* Compopnent */
+td img {
+    max-width: 550px !important;
+    height: 100px;
+}
+
+/* .component-tr {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.component-tr th, 
+.component-tr td {
+    vertical-align: middle;
+}
+
+@media screen and (max-width:680px) {
+    td img {
+        max-width: 300px !important;
+    }
+}
+
+@media screen and (max-width:680px) {
+    td img {
+        max-width: 150px !important;
+    }
+}
+
+/* Compopnent */
+@media screen and ((min-width: 992px)) {
+    .navbar-expand-lg .navbar-nav {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .navbar-brand :nth-child(2) {
+        display: none;
+    }
+}
+
+/* Footer */
+footer{
+    text-align: left;
+}
+
+@media screen and (max-width:1024px) {
+    footer{
+        text-align: center;
+    }
+}
+/* Footer */
