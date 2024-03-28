@@ -52,11 +52,6 @@
                 margin: 0 auto;
             }
 
-            .citrusStylesSE-grid__cell{
-                padding-left: 0;
-                padding-right: 0;
-            }
-
             /* ===================== Responsive Media Break-Point ===================== */
             /* All the common used break-point adding here */
             @media (min-width: 64em) and (max-width: 77.99em) {
@@ -96,6 +91,27 @@
 
             }
 
+
+            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
+
+                .citrusStylesSE-pov__text .citrusStylesSE-header1{
+                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
+                    line-height: 25px;
+                }
+
+                .citrusStylesSE-jffd .citrusStylesSE-pov__logo {
+                    padding: 0 0 10px;
+                    max-width: 180px;
+                }
+
+                .citrusStylesSE-pov__text .citrusStylesSE-para{
+                    font-size: var(--citrusStylesSE-text-font-size-medium);
+                    line-height: calc(var(--citrusStylesSE-text-font-size-medium) + 1px);
+                    padding: 8px 0 10px;
+                }
+
+            }
+
             @media (min-width: 48em) and (max-width: 63.99em) { 
 
                 .citrusStylesSE-pov__text .citrusStylesSE-header1 {
@@ -105,7 +121,7 @@
                 .citrusStylesSE-pov__text .citrusStylesSE-para{
                     font-size: calc(var(--citrusStylesSE-text-font-size-medium) - 2px) !important;
                 }
-           }
+            }
 
             @media (max-width: 63.999em) {
 
@@ -136,24 +152,10 @@
 
             }
 
-            @media (min-width: 64em) and (max-width: 77.99em) { /* min-width:1024px and max-width: 1247.99*/
-
-                .citrusStylesSE-pov__text .citrusStylesSE-header1{
-                    font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
-                    line-height: 25px;
+            @media (min-width: 48em) {
+                .citrusStylesSE-pov__text {
+                    margin-top: -1em;
                 }
-
-                .citrusStylesSE-jffd .citrusStylesSE-pov__logo {
-                    padding: 0 0 10px;
-                    max-width: 180px;
-                }
-
-                .citrusStylesSE-pov__text .citrusStylesSE-para{
-                    font-size: var(--citrusStylesSE-text-font-size-medium);
-                    line-height: 17px;
-                    padding: 8px 0 12px;
-                }
-
             }
 
             @media (max-width: 47.99em) { /* max-width: 767.99px */
@@ -169,8 +171,8 @@
                 }
 
                 .citrusStylesSE-carousel__inner--item{
-                    max-height: 423px;
-                    min-height: 423px;
+                    max-height: 443px;
+                    min-height: 443px;
                 }
 
                 .citrusStylesSE-jffd .citrusStylesSE-pov__text{
@@ -181,9 +183,13 @@
                     max-height: unset;
                 }
 
+                .citrusStylesSE-pov__text {
+                    min-height: 220px;
+                }
+
                 .citrusStylesSE-pov__text .citrusStylesSE-header1{
                     font-size: calc(var(--citrusStylesSE-text-font-size-xlarge) + 1px);
-                    max-width: 290px;
+                    max-width: 100%;
                     line-height: 25px;
                     margin: 0 auto;
                 }
@@ -194,6 +200,8 @@
                     padding: 10px 0 20px;
                     max-width: 350px;
                 }
+
+                
             }
             /* ----------------------------------------- */
         </style>
@@ -254,7 +262,7 @@
                             <img src="https://sebpo-creative.github.io/CitrusAd-LP/Template-Project-Images/citrus-jffd-logo.png" alt="">
                         </div>
                         <h2 class="citrusStylesSE-header1">#1 VET-RECOMMENDED FRESH FOOD BRAND</h2>
-                        <p class="citrusStylesSE-para">Recipes formulated by a team of veterinarians who conduct published, peer-reviewed research to demonstrate the food’s efficacy.</p>
+                        <p class="citrusStylesSE-para">Recipes formulated by a team of veterinarians who conduct published.</p>
                         <div class="citrusStylesSE-btn-secondary-white">
                             <a href="" class="citrusStylesSE-url">Shop Now</a>
                         </div>
